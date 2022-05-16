@@ -1,0 +1,301 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"aViolentRumbleIn": {
+				"content": [
+					"/=A violent rumble in the ground silences him. His face grows concerned.=/",
+					{
+						"divert": "eyvindJuno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindAfterAFewM": {
+				"content": [
+					"/=After a few moments of silence, he smiles.=/",
+					{
+						"divert": "eyvindManyPeople"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindAndIWantTo": {
+				"content": [
+					"[eyvind] \"And I want to use your bow to fire an arrow through a line of enemies.\"",
+					{
+						"divert": "heroYeahButThatT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindBeforeYouS": {
+				"content": [
+					"/=Before you settle down to rest, Eyvind beckons to you.=/",
+					{
+						"divert": "eyvindHaveYouMem"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindEyvindsIns": {
+				"content": [
+					"/=Eyvind's instructions are easy to follow, but tough to repeat accurately more than twice in a row.=/",
+					{
+						"divert": "eyvindYoureGetti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindEyvindThin": {
+				"content": [
+					"/=Eyvind thinks about your question.=/",
+					{
+						"divert": "eyvindIfYoureEnj"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindHaveYouMem": {
+				"content": [
+					"[eyvind] \"Have you memorized the basic threads of mending yet?\"",
+					{
+						"divert": "heroIthinkSoItsH"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindIfYoureEnj": {
+				"content": [
+					"[eyvind] \"If you're enjoying learning how to do something, why should you ever stop?\"",
+					{
+						"divert": "itIsYourTurnToTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindInSpellwea": {
+				"content": [
+					"[eyvind] \"In spellweaving, the lack of motion is just as important as the patterned movements.\"",
+					{
+						"divert": "EyvindYouListenA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindJuno": {
+				"content": [
+					"[eyvind] \"Juno!\"",
+					{
+						"divert": "heBoltsThroughTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindManyPeople": {
+				"content": [
+					"[eyvind] \"Many people feel there is always something to say or do, but you understand that's false. Good.\"",
+					{
+						"divert": "HeroHisComplimen"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindPartOfWeav": {
+				"content": [
+					"[eyvind] \"Part of weaving is knowing what pattern you're looking to create before you ever begin.\"",
+					{
+						"divert": "heroRightSoIWant"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindSpellweavi": {
+				"content": [
+					"[eyvind] \"Spellweaving is creating, and every creator feels they're not good enough at some point. But you keep trying.\"",
+					{
+						"divert": "heroAndHowLongBe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindTheMenderN": {
+				"content": [
+					"/=The mender nods, but watches you silently.=/",
+					{
+						"linkPath": "eyvindPartOfWeav",
+						"option": "\"Are you going to show me more?\""
+					},
+					{
+						"linkPath": "eyvindSpellweavi",
+						"option": "\"Maybe I'm not cut out for mending.\""
+					},
+					{
+						"linkPath": "EyvindAfterAFewM",
+						"option": "Say nothing"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindTheMenderS": {
+				"content": [
+					"/=The mender smiles. =/",
+					{
+						"divert": "eyvindAndIWantTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindWellStartS": {
+				"content": [
+					"[eyvind] \"We'll start small. I'll show you a pattern so tiny it will feel like you're doing nothing, but it's the foundation of many great woven spells.\"",
+					{
+						"divert": "EyvindEyvindsIns"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindYouListenA": {
+				"content": [
+					"/=[eyvind] You listen attentively as he compares it to music and begins instructing you.=/",
+					{
+						"divert": "eyvindWellStartS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindYoureGetti": {
+				"content": [
+					"[eyvind] \"You're getting it, you just need to relax and--\"",
+					{
+						"divert": "aViolentRumbleIn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heBoltsThroughTh": {
+				"content": [
+					"/=He bolts through the shaking woods faster than you imagined he could move.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAndHowLongBe": {
+				"content": [
+					"[$hero] \"And how long before you just admit you're no good at it and stop?\"",
+					{
+						"divert": "EyvindEyvindThin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroHisComplimen": {
+				"content": [
+					"/=His compliment makes you blush.=/",
+					{
+						"divert": "eyvindInSpellwea"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIthinkSoItsH": {
+				"content": [
+					"[$hero] \"I...think so. It's hard to find time to practice, though. It feels like someone always needs something.\"",
+					{
+						"divert": "EyvindTheMenderN"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroRightSoIWant": {
+				"content": [
+					"[$hero] \"Right. So, I want to mend a wound like you did with Iver's arm.\"",
+					{
+						"divert": "EyvindTheMenderS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYeahButThatT": {
+				"content": [
+					"[$hero] \"Yeah, but that took me years to...oh, I get it.\"",
+					{
+						"divert": "eyvindWellStartS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"itIsYourTurnToTh": {
+				"content": [
+					"/=It is your turn to think about his response.=/",
+					{
+						"divert": "eyvindWellStartS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=eyvind",
+					{
+						"linkPath": "EyvindBeforeYouS",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "9qbv"
+}
