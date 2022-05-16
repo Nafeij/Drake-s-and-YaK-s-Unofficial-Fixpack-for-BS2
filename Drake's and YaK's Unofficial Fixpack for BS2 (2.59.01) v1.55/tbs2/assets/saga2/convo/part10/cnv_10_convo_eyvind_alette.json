@@ -189,7 +189,7 @@
 			},
 			"EyvindYouListenA": {
 				"content": [
-					"/=[eyvind] You listen attentively as he compares it to music and begins instructing you.=/",
+					"/=You listen attentively as he compares it to music and begins instructing you.=/",
 					{
 						"divert": "eyvindWellStartS"
 					},
