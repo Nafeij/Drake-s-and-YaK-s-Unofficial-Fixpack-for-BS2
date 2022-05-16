@@ -1,0 +1,417 @@
+{
+	"data": {
+		"initial": "iverSmokeFromAVi",
+		"stitches": {
+			"bolverkKeepGoing": {
+				"content": [
+					"[bolverk] \"Keep going,\" Bolverk growls, \"we'll see what the dead are carrying!\" The varl's comment defies tradition, but so do many things about him.",
+					{
+						"linkPath": "oddleifABarnIsTh",
+						"option": "Push on to the village to investigate"
+					},
+					{
+						"linkPath": "heroNoYouSaySome",
+						"option": "Turn back to the ships"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyItsEmptyHe": {
+				"content": [
+					"[convoy] \"It's empty,\" he says. \"Others went north days ago, taking what little was left. Not sure what stopped the trade carts or where all the fish went, but those buildings are only good for signaling help now.\"",
+					{
+						"divert": "youStareAtTheMan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyOnTheBanks": {
+				"content": [
+					"[convoy] On the banks, a small force of strangers head towards a supply ship, but stop when they notice your return. A man riddled with desperation steps forward. \"Sorry for the ruse - hunger makes men take risks, you know?\"",
+					{
+						"linkPath": "dagrToWhereSaysT",
+						"option": "\"Walk away. Now.\""
+					},
+					{
+						"linkPath": "convoyItsEmptyHe",
+						"option": "\"What about burning your village?\""
+					},
+					{
+						"linkPath": "heroBeforeAnyone",
+						"option": "Put an arrow in him"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheOtherSh": {
+				"content": [
+					"[convoy] The other ships follow your lead while nearly everyone averts their eyes from the smoking village. Rugga looks impressed.",
+					{
+						"flagName": "rugga_decision+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheVillage": {
+				"content": [
+					"[convoy] The village is stripped of anything useful. Those around you are frustrated by the wasted effort.",
+					{
+						"divert": "ruggaAfterASlowT"
+					},
+					{
+						"flagName": "day+0.5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyYouArriveI": {
+				"content": [
+					"[convoy] You arrive in time to see a group of armed strangers throwing your people from a ship full of supplies and pushing away from the bank. From behind an arrow-riddled shield, their leader nods to you.",
+					{
+						"divert": "ruggaYouHelpPull"
+					},
+					{
+						"flagName": "supplies-15"
+					},
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"flagName": "8_ship_additions+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"dagrToWhereSaysT": {
+				"content": [
+					"[dagr] \"To where?\" says the man, looking at the people behind him. \"I asked these people to stay, told them everything would be fine when the trade carts arrived. No food for three days, river's barren of fish.\"",
+					{
+						"divert": "youStareAtTheMan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroBeforeAnyone": {
+				"content": [
+					"[$hero] Before anyone utters a word, your arrow strikes the man in the chest. His people scatter as he crumbles and your clansmen, including Rugga, are awed by how you handled the possible threat.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"flagName": "rugga_decision+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroNoYouSaySome": {
+				"content": [
+					"[$hero] \"No,\" you say. \"Something's not right.\" You stop and shout, \"Return to the ships!\" The Raven leader growls at you as everyone turns to head back, but he follows.",
+					{
+						"divert": "convoyOnTheBanks"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheManLooksL": {
+				"content": [
+					"[$hero] The man looks like he has more to say, but keeps quiet and nods his thanks. He and his people have finished the food before you even push off. Rugga does not look impressed.",
+					{
+						"flagName": "supplies-3"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWereDeadWith": {
+				"content": [
+					"[$hero] \"We're dead without supplies!\" he shouts, but your archers and varl keep the strangers from attacking. Clansmen clap you on the shoulder as your ships sail away. Governor Rugga looks amused.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"flagName": "rugga_decision+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhenTheShips": {
+				"content": [
+					"[$hero] When the ships land, you and a few others rush toward the smoke, but the closer you get, the stranger the situation. There's no sounds of battle or people panicking to put out fires.",
+					{
+						"divert": "bolverkKeepGoing"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouGotEveryR": {
+				"content": [
+					"[$hero] \"You got every right to pin us with arrows and you offer us food and a way out of here.\" The man's eyes look wet and he blinks rapidly. \"We'll earn our keep.\" You hear Rugga snort his disapproval.",
+					{
+						"flagName": "num_fighters+30"
+					},
+					{
+						"flagName": "supplies-3"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"flagName": "8_ship_additions+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverImNoGoodAtTh": {
+				"content": [
+					"[iver] \"I'm no good at this,\" the gruff varl says. \"Rotten trick, but you might try something similar in his situation.\"",
+					{
+						"divert": "youStareAtTheMan"
+					},
+					{
+						"flagName": "iver_adviceb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverItsNotThatIv": {
+				"content": [
+					"[iver] \"It's not that,\" Iver says. \"It's just that if you try for too much, sometimes you're worse off than not trying at all.\"",
+					{
+						"divert": "youConsiderWhatT"
+					},
+					{
+						"flagName": "iver_advice"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIverCocksAnE": {
+				"content": [
+					"[iver] Iver cocks an eyebrow. \"And who will resupply /=them =/when they realize the trade routes are blocked by dredge?\" You give him a look and wave the ships to shore.",
+					{
+						"divert": "heroWhenTheShips"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverSmokeFromAVi": {
+				"content": [
+					"[iver] Smoke from a village catches everyone's attention and the longships begin to slow. \"I doubt these scraps of wood we're floating on can hold many more,\" Iver says. You feel the governor's gaze on you and he slowly shakes his head.",
+					{
+						"divert": "youConsiderWhatT"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"iverWhileEveryon": {
+				"content": [
+					"[iver] While everyone looks for buckets and water, some varl carry a full yox trough to douse the barn. The door and front wall are soon smoking charred remains, easily kicked open. Unfortunately, there is nothing of note inside.",
+					{
+						"divert": "ruggaAfterASlowT"
+					},
+					{
+						"flagName": "day+0.5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifABarnIsTh": {
+				"content": [
+					"[oddleif] A barn is the only thing burning. No one is around. \"Unusual,\" Oddleif says. \"Some kind of trick?\"",
+					{
+						"linkPath": "convoyYouArriveI",
+						"option": "\"Feels that way. Let's get back to the ships!\""
+					},
+					{
+						"linkPath": "convoyTheVillage",
+						"option": "\"Not sure, but let's look for supplies while we're here.\""
+					},
+					{
+						"linkPath": "iverWhileEveryon",
+						"option": "\"Maybe that fire trapped someone else.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAfterASlowT": {
+				"content": [
+					"[rugga] After a slow trudge back to the others, Rugga stands aboard a ship, shaking his head. \"Some thieving bandits ambushed us and took off in a supply ship while you were on your do-good mission,\" he says. \"We'll be even more crowded now. Glad you're at the helm.\"",
+					{
+						"divert": "ruggaYouSlowlyTr"
+					},
+					{
+						"flagName": "supplies-15"
+					},
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"flagName": "8_ship_additions+1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"ruggaYouHelpPull": {
+				"content": [
+					"[rugga] You help pull people from the water and find them places on the remaining crowded ships. Governor Rugga silently stares at you.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYouSlowlyTr": {
+				"content": [
+					"[rugga] You slowly trudge back to the ships and find Rugga pacing. \"We were ambushed by some bandits while you were away,\" he says. \"They took off in a ship with supplies, so we'll be even more crowded now. Makes me think we shouldn't be helping anyone but ourselves from now on.\" Others voice their agreement.",
+					{
+						"flagName": "supplies-15"
+					},
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"flagName": "8_ship_additions+1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"divert": "iverSmokeFromAVi"
+					},
+					{
+						"flagName": "onef_betrayal=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youConsiderWhatT": {
+				"content": [
+					"/=You consider what to do.=/",
+					{
+						"linkPath": "heroWhenTheShips",
+						"option": "\"We'll help as many as we can.\""
+					},
+					{
+						"linkPath": "iverIverCocksAnE",
+						"option": "\"They might resupply us for our trouble.\""
+					},
+					{
+						"linkPath": "iverItsNotThatIv",
+						"notIfConditions": [
+							{
+								"notIfCondition": "iver_advice"
+							}
+						],
+						"option": "\"You want me to turn my back on them?\""
+					},
+					{
+						"linkPath": "convoyTheOtherSh",
+						"option": "Ignore the village and head down river"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "iver_advice"
+					}
+				]
+			},
+			"youStareAtTheMan": {
+				"content": [
+					"/=You stare at the man and his people.=/",
+					{
+						"linkPath": "heroWereDeadWith",
+						"option": "\"You shouldn't have tried to steal from us. We're leaving.\""
+					},
+					{
+						"linkPath": "heroYouGotEveryR",
+						"option": "\"If you come with us, you fight alongside us.\""
+					},
+					{
+						"linkPath": "heroTheManLooksL",
+						"option": "\"I don't trust you to join us, but we'll leave you with a meal.\""
+					},
+					{
+						"linkPath": "iverImNoGoodAtTh",
+						"notIfConditions": [
+							{
+								"notIfCondition": "iver_adviceb"
+							}
+						],
+						"option": "\"Iver, what should we do with them?\""
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "iver_adviceb"
+					}
+				]
+			}
+		}
+	},
+	"url_key": "rhvm"
+}

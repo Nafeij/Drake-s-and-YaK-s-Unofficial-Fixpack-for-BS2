@@ -1,0 +1,118 @@
+{
+	"data": {
+		"initial": "oliGoodNewsYouDu",
+		"stitches": {
+			"bolverkGetRidOfT": {
+				"content": [
+					"[bolverk] \"Get rid of that mess!\" you shout. \"We'd be better off gutting you and feeding on your flesh.\" Oli looks shocked and hurt, but does as you instruct - begrudgingly.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouHurlTh": {
+				"content": [
+					"[bolverk] You hurl the basket of berries an impressive distance. Oli stares at it, jaw dropped, like a child who lost a toy down a mountain. He has the sense to say nothing, at least not in front of you.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouHurlTh1": {
+				"content": [
+					"[bolverk] You hurl the basket of berries an impressive distance. You look back at the drooling Oli and shout, \"The rest of you keep that fool from looking for anything else!\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliGoodNewsYouDu": {
+				"content": [
+					"[oli] \"Good news, you dullards!\" Oli shouts. \"I've been collecting these little clusters of berries.\" He holds up a short stem with three leaves and three berries each. \"Problem is, I can't remember if the leaves are poison or the berries.\" He seems oblivious to the trouble he could cause.",
+					{
+						"linkPath": "oliHeLooksAround",
+						"option": "\"Eat the berries, Oli, and we'll see what happens.\""
+					},
+					{
+						"linkPath": "oliOliGrinsWhile",
+						"option": "\"Try the leaves and we'll see if you get sick.\""
+					},
+					{
+						"linkPath": "bolverkGetRidOfT",
+						"option": "Threaten him for being a fool"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"oliHeLooksAround": {
+				"content": [
+					"[oli] He looks around. \"Why's everyone staring?\" he asks while popping some of the red berries in his mouth. He smacks his lips and has a few more. Hours later, he's back to drinking and looks fine.",
+					{
+						"linkPath": "ravensAFewOfTheO",
+						"option": "\"The rest of you can do what you want.\""
+					},
+					{
+						"linkPath": "bolverkYouHurlTh",
+						"option": "Throw the basket out"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliOliGrinsWhile": {
+				"content": [
+					"[oli] Oli grins while tearing off the leaves and shoving them into his mouth. He laughs and drinks as usual for a half-hour before heaving violently. Even after his stomach is thoroughly empty, he lays across a wagon, unable to move. The other Ravens get a good laugh out of it.",
+					{
+						"linkPath": "ravensAFewRavens",
+						"option": "\"The rest of you can do what you want.\""
+					},
+					{
+						"linkPath": "bolverkYouHurlTh1",
+						"option": "Toss the basket away"
+					},
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ravensAFewOfTheO": {
+				"content": [
+					"[convoy_ravens] A few of the others grab some of the berries while marching. No one seems worse for eating them, though you're forced to suffer Oli's self-elated grin awhile.",
+					{
+						"divert": "ravensAFewRavens"
+					},
+					{
+						"flagName": "supplies+9"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "o1"
+					}
+				]
+			},
+			"ravensAFewRavens": {
+				"content": [
+					"[convoy_ravens] A few Ravens risk eating the berries while marching. They seem fine even after a few hours, so the men congratulate the nearly comatose Oli for his sacrifice.",
+					{
+						"flagName": "supplies+15"
+					},
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "9p5f"
+}

@@ -1,0 +1,631 @@
+{
+	"data": {
+		"initial": "skipMarkbolverkM",
+		"stitches": {
+			"allOfTheClansmen": {
+				"content": [
+					"/=All of the clansmen and fighters back away and whisper.=/",
+					{
+						"divert": "folkaShesTalking"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkFolkaTurn": {
+				"content": [
+					"/=Folka turns and stares at you.=/",
+					{
+						"linkPath": "zefrHeIsWoundedA",
+						"option": "\"Not a chance. We're leaving.\""
+					},
+					{
+						"linkPath": "folkaThisIsAMist",
+						"option": "\"I want to hear more. Let's get him in a cart.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkShellGetO": {
+				"content": [
+					"[bolverk] \"She'll get over it.\"",
+					{
+						"divert": "zefrThanksYouAga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkTheRoarOf": {
+				"content": [
+					"/=The roar of your rage brings your axes down fast, the air no longer hampering you. The blades bite deeply through the stonesinger's armor.=/",
+					{
+						"divert": "zefrMonster"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheyLooke": {
+				"content": [
+					"[bolverk] \"They looked like some kind of dredge to me. So does this one.\"",
+					{
+						"divert": "zefrThisOneIsAme"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWellPutHi": {
+				"content": [
+					"[bolverk] \"We'll put him in one of the carts. This better not bite me on the ass.\"",
+					{
+						"divert": "zefrThanksYouAga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWeveKille": {
+				"content": [
+					"[bolverk] \"We've killed plenty. Why help this one?\"",
+					{
+						"divert": "zefrHeIsNotAttac"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkYouGruntA": {
+				"content": [
+					"/=You grunt and shout for everyone to follow you.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouKnowOn": {
+				"content": [
+					"[bolverk] \"You know one of these slags?\"",
+					{
+						"divert": "zefrIKnowQuiteAF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"Dredgestonesinge": {
+				"content": [
+					"/=She makes a dull noise, almost a hum. The stonesinger responds in kind.=/",
+					{
+						"divert": "zefrHeSaysGreeti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaAndWhereDoY": {
+				"content": [
+					"[folka] \"And where do you plan to heal him?\"",
+					{
+						"divert": "zefrInACartOnOur"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaAnotherValk": {
+				"content": [
+					"[folka] \"Another Valka making you do her bidding.\"",
+					{
+						"divert": "zefrHeIsWoundedA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkHeMi": {
+				"content": [
+					"[folka bolverk] \"He might be trying to get close to the cart. Trying to free the Sundr at the first chance.\"",
+					{
+						"divert": "folkaBolverkTheR"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkIfYo": {
+				"content": [
+					"[folka bolverk] \"If you take that thing with us, we'll lose Ravens and clansmen as soon as we clear this cave. You know this.\"",
+					{
+						"divert": "folkaBolverkIfYo1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkIfYo1": {
+				"content": [
+					"[folka bolverk] \"If you take that thing with us, we'll lose Ravens and clansmen as soon as we clear this cave. You know this.\"",
+					{
+						"linkPath": "zefrBolverkThisI",
+						"option": "\"We're leaving, Valka. Without that thing.\""
+					},
+					{
+						"linkPath": "folkaLooksAngryB",
+						"option": "\"The Ravens can get over it. We're taking the dredge with us.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkShes": {
+				"content": [
+					"[folka bolverk] \"She's talking to it. She's faen talking to it!\"",
+					{
+						"linkPath": "zefrHeIsWoundedA",
+						"option": "\"Get away from it, Valka.\""
+					},
+					{
+						"linkPath": "ZefrTheValkaAgai",
+						"option": "\"Ask it what those things were.\""
+					},
+					{
+						"linkPath": "youDrawYourAxesZ",
+						"option": "Kill it"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkTheR": {
+				"content": [
+					"[folka bolverk] \"The Ravens are already questioning what they've signed up for without a dredge among us.\"",
+					{
+						"divert": "youWatchTheValka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaLooksAngryB": {
+				"content": [
+					"/=Folka looks angry but walks away instead of saying anything else.=/",
+					{
+						"divert": "zefrThankYou"
+					},
+					{
+						"flagName": "@hide=folka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaLooksFuriou": {
+				"content": [
+					"/=Folka looks furious.=/",
+					{
+						"divert": "folkaAnotherValk"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaPullsYouAsi": {
+				"content": [
+					"/=Folka pulls you aside and whispers.=/",
+					{
+						"divert": "folkaBolverkHeMi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaShesTalking": {
+				"content": [
+					"[folka] \"She's talking to it. She's faen talking to it!\"",
+					{
+						"divert": "folkaBolverkShes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaThisIsAMist": {
+				"content": [
+					"[folka] \"This is a mistake. This isn't like you. We kill those things, not invite them into camp.\"",
+					{
+						"divert": "theShieldmaidenW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iZefrScowlsAndTu": {
+				"content": [
+					"/=Zefr scowls and turns to the stonesinger one last time, murmuring a noise that is weakly returned.=/",
+					{
+						"divert": "zefrHeImpliedHeU"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakFolkaFo": {
+				"content": [
+					"/=Folka turns and stares at you.=/",
+					{
+						"divert": "BolverkFolkaTurn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakFolkaGa": {
+				"content": [
+					"/=Folka gasps and you find yourself growling, but Zefr ignores the response. =/",
+					{
+						"divert": "Dredgestonesinge"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheGlaresAtYouAs": {
+				"content": [
+					"/=She glares at you as you pull out Claw and honor the stonesinger's last request.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkbolverkM": {
+				"content": [
+					"{skip} mark1=bolverk mark2=zefr mark3=folka mark4=dredge_stonesinger_ally",
+					{
+						"divert": "zefrThoseCreatur"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theEffortToGetCl": {
+				"content": [
+					"/=The effort to get close enough is exhausting. You squeeze your axes in each fist.=/",
+					{
+						"divert": "zefrIKnowTheDred"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theShieldmaidenW": {
+				"content": [
+					"/=The shieldmaiden walks off instead of saying anything else. Zefr looks at you.=/",
+					{
+						"divert": "bolverkShellGetO"
+					},
+					{
+						"flagName": "@hide=folka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youDrawYourAxesZ": {
+				"content": [
+					"/=You draw your axes. Zefr looks up and the air around you hardens. Each step is like walking under water. =/",
+					{
+						"divert": "zefrDoNotMakeThi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youWatchTheValka": {
+				"content": [
+					"/=You watch the Valka hum back and forth with the stonesinger for a moment before noticing the Ravens shaking their heads.=/",
+					{
+						"divert": "folkaBolverkIfYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrBolverkIKnow": {
+				"content": [
+					"[zefr bolverk] \"I know dredge have been the enemy for centuries, but this is bigger than the hatred of man, varl, and dredge.\"",
+					{
+						"linkPath": "iZefrScowlsAndTu",
+						"option": "\"I said we're leaving.\""
+					},
+					{
+						"linkPath": "zefrMakesMoreNoi",
+						"option": "\"Bring him. Find out what he knows.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrBolverkThisI": {
+				"content": [
+					"[zefr] \"Bolverk, this is a mistake. We need information about the dredge and he can provide it.\"",
+					{
+						"divert": "zefrIKnowTheDred1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrDoNotMakeThi": {
+				"content": [
+					"[zefr] \"Do not make this mistake, Bolverk! He is the only source of information we have on the dredge - why they are here, what those creatures were.\"",
+					{
+						"divert": "theEffortToGetCl"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrHeImpliedHeU": {
+				"content": [
+					"[zefr] \"He implied he understands and asks for a quick death.\"",
+					{
+						"divert": "sheGlaresAtYouAs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrHeIsNotAttac": {
+				"content": [
+					"[zefr] \"He is not attacking. He could have valuable information. He is in pain. The list goes on.\"",
+					{
+						"divert": "folkaPullsYouAsi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrHeIsWoundedA": {
+				"content": [
+					"[zefr] \"He is wounded and needs our help. All dredge are not the same.\"",
+					{
+						"divert": "bolverkWeveKille"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrHeSaysGreeti": {
+				"content": [
+					"[zefr] \"He says 'Greetings' and that he...dreamed of you?\"",
+					{
+						"divert": "allOfTheClansmen"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrHeSaysTheyAr": {
+				"content": [
+					"[zefr] \"He says they are...a nightmare. Then something about mercy and he thanks you.\"",
+					{
+						"divert": "zefrTheirLanguag"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrIDidNotMeanT": {
+				"content": [
+					"[zefr] \"I did not mean to weave around you.\"",
+					{
+						"divert": "folkaLooksFuriou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrIKnowQuiteAF": {
+				"content": [
+					"[zefr] \"I know quite a few.\"",
+					{
+						"divert": "pageBreakFolkaGa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrIKnowTheDred": {
+				"content": [
+					"[zefr] \"I know the dredge have been your enemies for centuries, but this is bigger than the hatred of man, varl, and dredge.\"",
+					{
+						"divert": "zefrPleaseDont"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrIKnowTheDred1": {
+				"content": [
+					"[zefr] \"I know the dredge have been the enemy for centuries, but this is bigger than the hatred of man, varl, and dredge.\"",
+					{
+						"divert": "zefrBolverkIKnow"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrInACartOnOur": {
+				"content": [
+					"[zefr] \"In a cart on our way to Manaharr.\"",
+					{
+						"divert": "pageBreakFolkaFo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrMakesMoreNoi": {
+				"content": [
+					"/=Zefr makes more noises and the dredge relaxes. She lifts him into a cart and he hums something before going quiet.=/",
+					{
+						"divert": "zefrTheirLanguag1"
+					},
+					{
+						"flagName": "stonesinger_state=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrMonster": {
+				"content": [
+					"[zefr] \"Monster.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrPleaseDont": {
+				"content": [
+					"[zefr] \"Please. Don't.\"",
+					{
+						"linkPath": "BolverkTheRoarOf",
+						"option": "Swing your axe"
+					},
+					{
+						"linkPath": "zefrIDidNotMeanT",
+						"option": "Step back"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrThanksYouAga": {
+				"content": [
+					"/=Zefr thanks you again as the stonesinger is lifted into a cart. He hums something you cannot understand.=/",
+					{
+						"flagName": "stonesinger_state=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrThankYou": {
+				"content": [
+					"[zefr] \"Thank you.\"",
+					{
+						"divert": "bolverkWellPutHi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrTheirLanguag": {
+				"content": [
+					"[zefr] \"Their language is difficult for me, but I can learn more from him once he is healed.\"",
+					{
+						"divert": "folkaAndWhereDoY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrTheirLanguag1": {
+				"content": [
+					"[zefr] \"Their language is still strange to me, but I believe he meant the tunnel ahead on the right will lead us outside.\"",
+					{
+						"divert": "BolverkYouGruntA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ZefrTheValkaAgai": {
+				"content": [
+					"/=The Valka again makes unfamiliar sounds like a skald trying to find the right tune and the stonesinger responds.=/",
+					{
+						"divert": "zefrHeSaysTheyAr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrThisOneIsAme": {
+				"content": [
+					"[zefr] \"/=This one=/ is a...mender of sorts.\"",
+					{
+						"divert": "bolverkYouKnowOn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrThoseCreatur": {
+				"content": [
+					"[zefr] \"Those creatures were like nothing I've ever seen before.\"",
+					{
+						"divert": "bolverkTheyLooke"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "qvx3"
+}

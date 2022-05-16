@@ -1,0 +1,33 @@
+{
+	"data": {
+		"initial": "iverAFinalBlowDi",
+		"stitches": {
+			"iverAFinalBlowDi": {
+				"content": [
+					"[iver] A final blow directed at your head is deflected and giant horns slam into the dredge surrounding you. Iver pulls you to your feet and away from combat as other fighters from your caravan rush in to finish off the enemy.",
+					{
+						"divert": "iverIverAndOther"
+					},
+					{
+						"pageNum": 1
+					},
+					{
+						"notIfCondition": "battle_victory"
+					}
+				]
+			},
+			"iverIverAndOther": {
+				"content": [
+					"[iver] Iver and other fighters arrive as you kill the last dredge willing to stand against you. \"Rook,\" the varl says, looking around, \"Why?\" You turn to him, but are overwhelmed by fatigue and drop to your knees.",
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "battle_victory"
+					}
+				]
+			}
+		}
+	},
+	"url_key": "qxjq"
+}

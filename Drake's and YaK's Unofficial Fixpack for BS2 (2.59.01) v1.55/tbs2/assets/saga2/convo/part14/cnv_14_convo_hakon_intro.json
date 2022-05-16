@@ -1,0 +1,224 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"hakonBecauseIWan": {
+				"content": [
+					"[hakon] \"Because I want to make the best decisions for what's left of us varl.\"",
+					{
+						"divert": "hakonIdontWantTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonHaYoureRigh": {
+				"content": [
+					"[hakon] \"Ha! You're right - we'd be at war.\"",
+					{
+						"divert": "theThoughtOfFigh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonIdontWantTo": {
+				"content": [
+					"[hakon] \"I...don't want to be remembered as the king who led them to their deaths.\"",
+					{
+						"divert": "heroThenKeepThem"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonIJustLostHa": {
+				"content": [
+					"[hakon] \"I just lost half of my people in the Old Wood!\"",
+					{
+						"divert": "heroItsLikeIverT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonItJustSeems": {
+				"content": [
+					"[hakon] \"It just seems like they were better prepared to lead our kind than I am.\"",
+					{
+						"divert": "heroThatsProbabl"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonIWonderWhat": {
+				"content": [
+					"[hakon] \"I wonder what the old kings, like Throstr and Skrymir, would do in my place.\"",
+					{
+						"linkPath": "hakonHaYoureRigh",
+						"option": "\"They probably wouldn't talk to a human.\""
+					},
+					{
+						"linkPath": "hakonIJustLostHa",
+						"option": "\"They would've kept their people alive. Same as you.\""
+					},
+					{
+						"linkPath": "hakonBecauseIWan",
+						"option": "\"Why?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonLetsGetWhat": {
+				"content": [
+					"[hakon] \"Let's get what we need and get going. Maybe it'll be as easy as you make it sound.\"",
+					{
+						"divert": "youGiveTheVarlAn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonLooksAtYouT": {
+				"content": [
+					"/=Hakon looks at you, the confusion leaving his face.=/",
+					{
+						"divert": "hakonLetsGetWhat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonThatHasntBe": {
+				"content": [
+					"[hakon] \"That hasn't been our luck. No sense thinking things will change now.\"",
+					{
+						"divert": "youLaughALittleB"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonTheCapitals": {
+				"content": [
+					"[hakon] \"The capital's only a few days away now.\"",
+					{
+						"divert": "heroIKnowIdLikeT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIKnowIdLikeT": {
+				"content": [
+					"[$hero] \"I know. I'd like to believe we'll make it without any more problems, but--\"",
+					{
+						"divert": "hakonThatHasntBe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroItsLikeIverT": {
+				"content": [
+					"[$hero] \"It's like Iver told me, you can't prepare for a giant Serpent attacking. Not even ancient kings could do that.\"",
+					{
+						"divert": "heroJustKeepThem"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroJustKeepThem": {
+				"content": [
+					"[$hero] \"Just keep them alive. No matter what happens in Arberrang, protect your people.\"",
+					{
+						"divert": "hakonLooksAtYouT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThatsProbabl": {
+				"content": [
+					"[$hero] \"That's probably just skald songs making it seem that way.\"",
+					{
+						"divert": "heroJustKeepThem"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThenKeepThem": {
+				"content": [
+					"[$hero] \"Then keep them alive. No matter what happens in Arberrang, protect your people.\"",
+					{
+						"divert": "hakonLooksAtYouT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=hakon",
+					{
+						"linkPath": "hakonTheCapitals",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theThoughtOfFigh": {
+				"content": [
+					"/=The thought of fighting Hakon and his varl makes you shiver.=/",
+					{
+						"divert": "hakonItJustSeems"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youGiveTheVarlAn": {
+				"content": [
+					"/=You give the varl an encouraging smile. It's the best you can do.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youLaughALittleB": {
+				"content": [
+					"/=You laugh a little but notice the distant look in Hakon's eyes as he looks towards the varl tents.=/",
+					{
+						"divert": "hakonIWonderWhat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "rjvz"
+}

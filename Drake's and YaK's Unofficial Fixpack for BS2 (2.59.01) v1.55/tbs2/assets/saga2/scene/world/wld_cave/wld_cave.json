@@ -1,0 +1,2340 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 2
+        },
+        {
+          "type": "DRIVING_SPEED"
+        },
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_11_bolverk_speak_bolverk_00",
+          "speaker": "bolverk",
+          "time": 4,
+          "type": "SPEAK"
+        },
+        {
+          "time": 2,
+          "type": "WAIT"
+        },
+        {
+          "type": "CAMERA_GLOBAL_LOCK",
+          "varvalue": 1
+        },
+        {
+          "type": "CAMERA_CARAVAN_ANCHOR"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp"
+        },
+        {
+          "anchor": "pan_camera",
+          "instant": true,
+          "type": "CAMERA_PAN",
+          "varvalue": 50
+        },
+        {
+          "time": 3,
+          "type": "WAIT"
+        },
+        {
+          "msg": "$SPEAK:s2_11_bolverk_speak_zefr_00",
+          "speaker": "zefr",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "time": 3,
+          "type": "WAIT"
+        },
+        {
+          "time": 0.25,
+          "type": "FADEOUT"
+        },
+        {
+          "msg": "$saga2_preview_end_message",
+          "prereq": "previewbuild",
+          "time": -1,
+          "type": "FLASH_PAGE",
+          "url": "saga_titles.swf/assets.text_page_vinque"
+        },
+        {
+          "prereq": "previewbuild",
+          "time": 5,
+          "type": "WAIT"
+        },
+        {
+          "happening": "12_start",
+          "id": "sav_chapter_12",
+          "prereq": "!previewbuild",
+          "type": "SAVE_STORE"
+        },
+        {
+          "happening": "12_start",
+          "prereq": "!previewbuild",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_bolverk_speak",
+      "triggers": [
+        {
+          "location": "11_bolverk_speak",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch11/11m5",
+          "type": "MUSIC_ONESHOT"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        }
+      ],
+      "id": "music_11m5",
+      "triggers": [
+        {
+          "location": "music_11m5",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "scene": "saga2/scene/stage/stg_cave/stg_cave.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part11/cnv_11_convo_meetdytch.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "nikels.talk",
+          "varvalue": -1
+        },
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "ravens_training_checkpoint",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_convo_meetdytch",
+      "triggers": [
+        {
+          "location": "11_convo_meetdytch",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_camp.json.z"
+        },
+        {
+          "happening": "cave_entrance",
+          "instant": true,
+          "restore_scene": false,
+          "scene": "saga2/scene/camp/cmp_cave/cmp_cave.json.z",
+          "type": "CAMP"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_camp_enabled",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_pop_camp",
+      "triggers": [
+        {
+          "location": "11_pop_camp",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_warped_dredge.json.z"
+        },
+        {
+          "happening": "battle_warped1",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_pop_darkdredge",
+      "triggers": [
+        {
+          "location": "11_pop_darkdredge",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_exit_cave.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 1
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_variance",
+          "varvalue": 1
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_gravity",
+          "varvalue": 1
+        },
+        {
+          "param": "0xffffffff",
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_color"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp"
+        }
+      ],
+      "id": "11_pop_exit_cave",
+      "triggers": [
+        {
+          "location": "11_pop_exit_cave",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "nikels.talk"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_eyeless.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "zefr.party_required",
+          "varvalue": 1
+        },
+        {
+          "happening": "11_battle_eyeless",
+          "instant": true,
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_pop_eyeless",
+      "triggers": [
+        {
+          "location": "11_pop_eyeless",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_gud_help.json.z"
+        },
+        {
+          "happening": "battle_mineopening",
+          "prereqs": [
+            {
+              "varname": "11_battle_mineopening",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_pop_gud_help",
+      "triggers": [
+        {
+          "location": "11_pop_gud_help",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_water_dream.json.z"
+        }
+      ],
+      "id": "11_pop_water",
+      "triggers": [
+        {
+          "location": "11_pop_water",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_ropebridge.json.z"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.6
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "bak.talk",
+          "varvalue": -1
+        }
+      ],
+      "id": "11_pop_ropebridge",
+      "triggers": [
+        {
+          "location": "11_pop_ropebridge",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_stonesinger_directions.json.z"
+        },
+        {
+          "happening": "battle_warped2",
+          "prereqs": [
+            {
+              "varname": "11_battle_warped2",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "location": "11_clearance",
+          "prereqs": [
+            {
+              "varname": "11_battle_warped2",
+              "varvalue": 0
+            }
+          ],
+          "scene": "saga2/scene/world/wld_cave/wld_cave.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "11_pop_stonesinger_decision",
+      "triggers": [
+        {
+          "location": "11_pop_stonesinger_decision",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "sparr.talk",
+          "varvalue": -1
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_tunneltrouble.json.z"
+        },
+        {
+          "happening": "battle_tunnel",
+          "prereqs": [
+            {
+              "varname": "11_tunnel_battle",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_pop_tunneltrouble",
+      "triggers": [
+        {
+          "location": "11_pop_tunneltrouble",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "zefr.party_required"
+        },
+        {
+          "id": "saga2/music/ch11/11m4-L1",
+          "type": "MUSIC_START"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_posteyeless.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "bak.talk"
+        },
+        {
+          "id": "nikels",
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "sparr.talk"
+        }
+      ],
+      "id": "11_post_eyeless"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_rnd_gold.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_rnd_gold",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_rnd_gold"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_rnd_lightberries.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_rnd_lightberries",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_rnd_lightberries"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_rnd_mystikal1.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_rnd_mystikal1",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_rnd_mystikal1"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_rnd_mystikal2.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_rnd_mystikal2",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_rnd_mystikal2"
+    },
+    {
+      "actions": [
+        {
+          "happening": "11_rnd_gold",
+          "prereqs": [
+            {
+              "varname": "11_rnd_gold",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "11_rnd_grass",
+          "prereqs": [
+            {
+              "varname": "11_rnd_grass",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "11_rnd_lightberries",
+          "prereqs": [
+            {
+              "varname": "11_rnd_lightberries",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "11_rnd_mystikal1",
+          "prereqs": [
+            {
+              "varname": "11_rnd_mystikal1",
+              "varvalue": 0
+            },
+            {
+              "varname": "11_dytch_intro",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "11_rnd_mystikal2",
+          "prereqs": [
+            {
+              "varname": "11_rnd_mystikal2",
+              "varvalue": 0
+            },
+            {
+              "varname": "11_rnd_mystikal1",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING",
+          "weights": [
+            {
+              "varname": "11_rnd_mystikal2",
+              "varvalue": 2
+            }
+          ]
+        }
+      ],
+      "id": "11_rnd_quests",
+      "random": true,
+      "triggers": [
+        {
+          "location": "11_rnd_quests",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_rnd_grass.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_rnd_grass",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_rnd_grass"
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s2_11_sigbjorn_speak_sigbjorn_00",
+          "prereqs": [
+            {
+              "varname": "sigbjorn_state",
+              "varvalue": 1
+            }
+          ],
+          "speaker": "sigbjorn",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "11_sigbjorn_speak",
+      "triggers": [
+        {
+          "location": "11_sigbjorn_speak",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_11_sparr_speak_sparr_00",
+          "speaker": "sparr",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "11_sparr_speak",
+      "triggers": [
+        {
+          "location": "11_sparr_speak",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        }
+      ],
+      "id": "11_speed",
+      "triggers": [
+        {
+          "location": "11_speed",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_11_zefr_speak_zefr_00",
+          "speaker": "zefr",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "11_zefr_speak",
+      "triggers": [
+        {
+          "location": "11_zefr_speak",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "gudmundr",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "type": "PARTY_CLEAR"
+        },
+        {
+          "id": "gudmundr",
+          "type": "PARTY_ADD"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "gudmundr_state",
+          "varvalue": 1
+        },
+        {
+          "id": "bolverk",
+          "type": "PARTY_ADD"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "gudmundr.party_required",
+          "varvalue": 1
+        },
+        {
+          "board_id": "board_0",
+          "bucket": "dredge_full",
+          "scene": "saga2/scene/battle/btl_cave_entrance/btl_cave_entrance.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "gudmundr.party_required"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_mineopening_victory.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_mineopening_fail.json.z"
+        },
+        {
+          "id": "gudmundr",
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "VARIABLE_SET",
+          "varname": "gudmundr_state"
+        }
+      ],
+      "id": "battle_mineopening"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "danger",
+          "varvalue": 20
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_vile_skulker",
+          "varvalue": 1
+        },
+        {
+          "board_id": "board_0",
+          "bucket": "test_skulker",
+          "scene": "saga2/scene/battle/btl_cave2/btl_cave2.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_vile_skulker"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "danger",
+          "varvalue": 12
+        }
+      ],
+      "id": "battle_tunnel"
+    },
+    {
+      "actions": [
+        {
+          "scene": "saga2/scene/battle/btl_cave1/btl_cave1.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_what_were_those.json.z"
+        },
+        {
+          "scene": "saga2/scene/stage/stg_cave/stg_cave.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part11/cnv_11_convo_tunnelstonesinger.json.z"
+        }
+      ],
+      "id": "battle_warped1"
+    },
+    {
+      "actions": [
+        {
+          "board_id": "board_1",
+          "scene": "saga2/scene/battle/btl_cave2/btl_cave2.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_post_warped2.json.z"
+        },
+        {
+          "location": "11_clearance",
+          "scene": "saga2/scene/world/wld_cave/wld_cave.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "battle_warped2"
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.8
+        }
+      ],
+      "id": "cavern_slowdown",
+      "triggers": [
+        {
+          "location": "cavern_slowdown",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "scene": "saga2/scene/godstone/cls_godstone_cave/cls_godstone_cave.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "cls_cavetown",
+      "triggers": [
+        {
+          "location": "cls_cavetown",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp",
+          "varvalue": 1
+        },
+        {
+          "id": "saga2/music/ch11/11m2-L1",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_11m2_l1",
+      "triggers": [
+        {
+          "location": "music_11m2_l1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MUSIC_OUTRO"
+        }
+      ],
+      "id": "music_out",
+      "triggers": [
+        {
+          "location": "music_out",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp",
+          "varvalue": 1
+        },
+        {
+          "id": "saga2/music/ch11/11m2-L2",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_11m2_l2",
+      "triggers": [
+        {
+          "location": "music_11m2_l2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "travel_music_in_camp",
+          "varvalue": 1
+        },
+        {
+          "id": "saga2/music/ch11/11m4-L2",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_11m4_l2",
+      "triggers": [
+        {
+          "location": "music_11m4_l2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "game_progress",
+          "varvalue": 32
+        },
+        {
+          "id": "sav_world_cave",
+          "type": "SAVE_STORE"
+        }
+      ],
+      "id": "save",
+      "triggers": [
+        {
+          "location": "save",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "num_fighters",
+          "varvalue": 84
+        },
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "num_peasants",
+          "varvalue": 450
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_MODIFY",
+          "varname": "supplies",
+          "varvalue": 100
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "biome",
+          "varvalue": 5
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_variance"
+        },
+        {
+          "param": "0xff95d1f5",
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_color"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_gravity",
+          "varvalue": 10
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 0.02
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_travel_hidden"
+        },
+        {
+          "also_party": true,
+          "id": "zefr",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "also_party": true,
+          "id": "nikels",
+          "type": "ROSTER_ADD"
+        }
+      ],
+      "id": "start",
+      "triggers": [
+        {
+          "location": "start",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "happening": "forage",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_forage_1",
+      "triggers": [
+        {
+          "location": "11_forage_1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "happening": "forage",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "11_forage_2",
+      "triggers": [
+        {
+          "location": "11_forage_2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_bolverkdream2.json.z"
+        },
+        {
+          "instant": true,
+          "scene": "saga2/scene/cinema/cin_bolverkdream2/cin_bolverkdream2.json.z",
+          "type": "SCENE"
+        }
+      ],
+      "id": "11_pop_bolverkdream2",
+      "triggers": [
+        {
+          "location": "11_pop_bolverkdream2",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 8305.625,
+      "x": -2175.0000000000005,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/9_sky.png",
+            "localrect": {
+              "height": 966,
+              "width": 1180,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "9_sky_1",
+            "offset": {
+              "x": -1376,
+              "y": -586
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_9_sky",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 80,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 1094,
+                    "y": -2
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -1850,
+                    "y": -2
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/cloud_6.png",
+            "localrect": {
+              "height": 141,
+              "width": 1564,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_6_1",
+            "offset": {
+              "x": 1080,
+              "y": -2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 926.7,
+                    "y": 155
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -1012.55,
+                    "y": 155
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/cloud_2.png",
+            "localrect": {
+              "height": 142,
+              "width": 1059,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_2_1",
+            "offset": {
+              "x": 890,
+              "y": 155
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/8_back_a.png",
+            "localrect": {
+              "height": 816,
+              "width": 1332,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "8_back_a_1",
+            "offset": {
+              "x": 433,
+              "y": -8
+            },
+            "scale": {
+              "x": 1.0999908447265625,
+              "y": 1.0999908447265625
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 140,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": -1276.75,
+                    "y": 310
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": 1456.7,
+                    "y": 310
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/cloud_3.png",
+            "localrect": {
+              "height": 134,
+              "width": 615,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_3_1",
+            "offset": {
+              "x": 142.35,
+              "y": 218
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_8_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/8_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1841,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "8_back_b_1",
+            "offset": {
+              "x": -167,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "darkness_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.2
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": -1516.75,
+                    "y": 183.3
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": 1480.05,
+                    "y": 183.3
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/cloud_5.png",
+            "localrect": {
+              "height": 165,
+              "width": 625,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_5_1",
+            "offset": {
+              "x": 358,
+              "y": 187
+            },
+            "scale": {
+              "x": 2,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/7_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2089,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_back_a_1",
+            "offset": {
+              "x": -245,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 65,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": -3495.05,
+                    "y": 970
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -235,
+                    "y": 970
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/cloud_6.png",
+            "localrect": {
+              "height": 141,
+              "width": 1564,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_6_2",
+            "offset": {
+              "x": -250,
+              "y": 966
+            },
+            "scale": {
+              "x": 2,
+              "y": -2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/6_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2051,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_a_2",
+            "offset": {
+              "x": -406,
+              "y": -1
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/5_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_a_1",
+            "offset": {
+              "x": 715,
+              "y": 3
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/5_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1942,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_b_1",
+            "offset": {
+              "x": 2715,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/light_shafts.png",
+            "localrect": {
+              "height": 513,
+              "width": 750,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "light_shafts_1",
+            "offset": {
+              "x": 1672,
+              "y": 144
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/4_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1994,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_a_1",
+            "offset": {
+              "x": 473,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/4_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1963,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_b_1",
+            "offset": {
+              "x": 2467,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/4_back_c.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1818,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_c_1",
+            "offset": {
+              "x": 4430,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/4_back_d.png",
+            "localrect": {
+              "height": 475,
+              "width": 811,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_d_1",
+            "offset": {
+              "x": 6248,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.9
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/4_back_pink.png",
+            "localrect": {
+              "height": 776,
+              "width": 1930,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_pink_1",
+            "offset": {
+              "x": 1740,
+              "y": 396
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "4_back_light",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.9
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_back_a.png",
+            "localrect": {
+              "height": 1013,
+              "width": 1940,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": -855,
+              "y": 148
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1994,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": 1085,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_back_c.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1997,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_c_1",
+            "offset": {
+              "x": 3079,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_back_d.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1978,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_d_1",
+            "offset": {
+              "x": 5076,
+              "y": 4
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_back_e.png",
+            "localrect": {
+              "height": 268,
+              "width": 460,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_e_1",
+            "offset": {
+              "x": 7043,
+              "y": 383
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "screen",
+            "bmp": "saga2/scene/world/wld_cave/3_glow_back.png",
+            "localrect": {
+              "height": 470,
+              "width": 894,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_glow_back_1",
+            "offset": {
+              "x": 2411,
+              "y": 570
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/pink_light1.png",
+            "localrect": {
+              "height": 552,
+              "width": 1157,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "pink_light1_1",
+            "offset": {
+              "x": 2321,
+              "y": 616
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/pink_light2.png",
+            "localrect": {
+              "height": 552,
+              "width": 1157,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "pink_light2_1",
+            "offset": {
+              "x": 2274,
+              "y": 614
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "pink_light",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_front_a.png",
+            "localrect": {
+              "height": 1004,
+              "width": 1994,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": -807,
+              "y": 156
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_front_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": 1185,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_front_c.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1997,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_c_1",
+            "offset": {
+              "x": 3185,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_front_d.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1472,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_d_1",
+            "offset": {
+              "x": 5182,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/3_walk_front_e.png",
+            "localrect": {
+              "height": 645,
+              "width": 620,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_e_1",
+            "offset": {
+              "x": 6654,
+              "y": 532
+            },
+            "scale": {
+              "x": 1.4,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1.2,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "tailpos": 1,
+                  "target": 1.2,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_cave/3_glow.png",
+            "localrect": {
+              "height": 280,
+              "width": 1195,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_glow_1",
+            "offset": {
+              "x": 2158,
+              "y": 881
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_a.png",
+            "localrect": {
+              "height": 344,
+              "width": 1719,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a_1",
+            "offset": {
+              "x": -992,
+              "y": 485
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_b.png",
+            "localrect": {
+              "height": 350,
+              "width": 1801,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b_1",
+            "offset": {
+              "x": 3429,
+              "y": 468
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_c.png",
+            "localrect": {
+              "height": 272,
+              "width": 971,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_c_1",
+            "offset": {
+              "x": 7184,
+              "y": 624
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_a2.png",
+            "localrect": {
+              "height": 342,
+              "width": 887,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a2_1",
+            "offset": {
+              "x": 2059,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_b2.png",
+            "localrect": {
+              "height": 222,
+              "width": 1385,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b2_1",
+            "offset": {
+              "x": 3582,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/2_close_c2.png",
+            "localrect": {
+              "height": 121,
+              "width": 723,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_c2_1",
+            "offset": {
+              "x": 6930,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/1_close_right.png",
+            "localrect": {
+              "height": 581,
+              "width": 1007,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_right_1",
+            "offset": {
+              "x": 11701,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/1_close_a.png",
+            "localrect": {
+              "height": 211,
+              "width": 1404,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_a_1",
+            "offset": {
+              "x": -1813,
+              "y": 742
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/1_close_c.png",
+            "localrect": {
+              "height": 219,
+              "width": 1028,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_c_1",
+            "offset": {
+              "x": 11032,
+              "y": 730
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 2.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_cave/black_shadow.png",
+            "landscapeParams": [
+              {
+                "controlId": "shadow_right",
+                "targetProperty": "alpha"
+              }
+            ],
+            "localrect": {
+              "height": 581,
+              "width": 683,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "shadow_right",
+            "offset": {
+              "x": 1367,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_cave/black_shadow.png",
+            "landscapeParams": [
+              {
+                "controlId": "shadow_left",
+                "targetProperty": "alpha"
+              }
+            ],
+            "localrect": {
+              "height": 581,
+              "width": 683,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "shadow_left",
+            "offset": {
+              "x": 1363,
+              "y": 0
+            },
+            "scale": {
+              "x": -2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "shadow",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "pan_camera",
+            "offset": {
+              "x": -825.5,
+              "y": -219
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "end_camera",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      }
+    ],
+    "travels": [
+      {
+        "id": "travel_1",
+        "locations": [
+          {
+            "id": "start",
+            "position": 301
+          },
+          {
+            "id": "music_11m2_l1",
+            "position": 305
+          },
+          {
+            "id": "save",
+            "position": 401
+          },
+          {
+            "id": "11_pop_gud_help",
+            "position": 693
+          },
+          {
+            "id": "11_pop_camp",
+            "loadBarrier": true,
+            "position": 961
+          },
+          {
+            "id": "11_rnd_quests",
+            "position": 1202
+          },
+          {
+            "id": "11_convo_meetdytch",
+            "loadBarrier": true,
+            "position": 1361
+          },
+          {
+            "id": "11_rnd_quests",
+            "position": 1510
+          },
+          {
+            "id": "bk_11_skulkers",
+            "position": 1610
+          },
+          {
+            "id": "11_pop_tunneltrouble",
+            "position": 1712
+          },
+          {
+            "id": "11_forage_1",
+            "position": 1812
+          },
+          {
+            "id": "11_pop_water",
+            "position": 2003
+          },
+          {
+            "id": "11_pop_ropebridge",
+            "position": 2275
+          },
+          {
+            "id": "music_out",
+            "position": 2372
+          },
+          {
+            "id": "11_speed",
+            "position": 2465
+          },
+          {
+            "id": "bk_11_godstone",
+            "position": 2500
+          },
+          {
+            "id": "cls_cavetown",
+            "loadBarrier": true,
+            "position": 2645
+          },
+          {
+            "id": "exit_cavetown",
+            "position": 2804
+          },
+          {
+            "id": "11_rnd_quests",
+            "position": 2969
+          },
+          {
+            "id": "11_forage_2",
+            "position": 3054
+          },
+          {
+            "id": "11_pop_bolverkdream2",
+            "loadBarrier": true,
+            "position": 3327
+          },
+          {
+            "id": "11_sparr_speak",
+            "position": 3479
+          },
+          {
+            "id": "cavern_slowdown",
+            "position": 3590
+          },
+          {
+            "id": "11_zefr_speak",
+            "position": 3775
+          },
+          {
+            "id": "bk_11_eyeless",
+            "position": 4032
+          },
+          {
+            "id": "11_pop_eyeless",
+            "loadBarrier": true,
+            "position": 4156
+          },
+          {
+            "id": "11_post_eyeless",
+            "position": 4484
+          },
+          {
+            "id": "11_pop_darkdredge",
+            "loadBarrier": true,
+            "position": 5048
+          },
+          {
+            "id": "music_11m4_l2",
+            "position": 5050
+          },
+          {
+            "id": "11_pop_stonesinger_decision",
+            "position": 5297
+          },
+          {
+            "id": "11_clearance",
+            "position": 5520
+          },
+          {
+            "id": "11_pop_exit_cave",
+            "position": 5792
+          },
+          {
+            "id": "music_11m5",
+            "position": 5793
+          },
+          {
+            "id": "music_out",
+            "position": 6145
+          },
+          {
+            "id": "11_bolverk_speak",
+            "position": 6150
+          },
+          {
+            "id": "end",
+            "position": 6301
+          }
+        ],
+        "paramControls": [
+          {
+            "boundPosEnd": 100000,
+            "boundPosStart": 0,
+            "id": "shadow_right",
+            "lerpPosEnd": 1058,
+            "lerpPosStart": 635,
+            "valueEnd": 1,
+            "valueStart": 0
+          },
+          {
+            "boundPosEnd": 100000,
+            "boundPosStart": 0,
+            "id": "shadow_left",
+            "lerpPosEnd": 6150,
+            "lerpPosStart": 5800,
+            "valueEnd": 0,
+            "valueStart": 1
+          }
+        ],
+        "splinex": [
+          "5507 -289",
+          "5374 -286",
+          "5218 -296",
+          "5051 -331",
+          "4972 -305",
+          "4924 -280",
+          "4880 -262",
+          "4811 -226",
+          "4656 -202",
+          "4489 -119",
+          "4314 -42",
+          "4190 -39",
+          "4057 39",
+          "3968 75",
+          "3909 100",
+          "3834 136",
+          "3680 137",
+          "3621 124",
+          "3457 106",
+          "3384 91",
+          "3315 88",
+          "3268 70",
+          "3223 65",
+          "3158 77",
+          "3102 70",
+          "3047 84",
+          "2974 75",
+          "2934 88",
+          "2827 140",
+          "2735 153",
+          "2585 142",
+          "2455 140",
+          "2281 143",
+          "2097 216",
+          "1956 274",
+          "1775 381",
+          "1688 417",
+          "1487 449",
+          "1305 428",
+          "1148 371",
+          "989 342",
+          "823 365",
+          "646 388",
+          "461 346",
+          "405 321",
+          "351 301",
+          "243 237",
+          "163 171",
+          "50 135",
+          "-69 103",
+          "-175 53",
+          "-239 10",
+          "-281 15",
+          "-453 -44",
+          "-505 -28",
+          "-641 -24",
+          "-990 142",
+          "-1379 276",
+          "-1763 379"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "caves",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

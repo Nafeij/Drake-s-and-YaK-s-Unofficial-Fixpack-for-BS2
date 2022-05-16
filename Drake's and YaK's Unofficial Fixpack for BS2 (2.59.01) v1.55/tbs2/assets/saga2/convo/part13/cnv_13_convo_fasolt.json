@@ -1,0 +1,700 @@
+{
+	"data": {
+		"initial": "skipMarkbolverkM",
+		"stitches": {
+			"bolverkAGirlDaug": {
+				"content": [
+					"[bolverk] \"A girl, daughter of a hunter named Rook. Shot the Sundr with some sort of Valka arrow.\"",
+					{
+						"divert": "FasoltTheVarlsDe"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"bolverkAHunterNa": {
+				"content": [
+					"[bolverk] \"A hunter named Rook. Shot the Sundr with some sort of Valka arrow.\"",
+					{
+						"divert": "bolverkAGirlDaug"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"bolverkAHunterNa1": {
+				"content": [
+					"[bolverk] \"A hunter named Rook shot the Sundr with some Valka arrow.\"",
+					{
+						"divert": "bolverkTheDaught"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"BolverkFasoltGro": {
+				"content": [
+					"/=Fasolt grows quiet.=/",
+					{
+						"linkPath": "fasoltMoreDeathT",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_whathappened"
+							}
+						],
+						"option": "\"What happened back there?\""
+					},
+					{
+						"linkPath": "fasoltThisStuffB",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_makeit"
+							}
+						],
+						"option": "\"How did you make it through the fields of dredge?\""
+					},
+					{
+						"linkPath": "fasoltWhatMakesY",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_revenge"
+							}
+						],
+						"option": "\"Stick with us and you can get some revenge.\""
+					},
+					{
+						"linkPath": "fasoltBolverkOhW",
+						"ifConditions": [
+							{
+								"ifCondition": "_count>1"
+							}
+						],
+						"option": "\"The Battle of Boersgard was a bloodbath too.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkINeedFigh": {
+				"content": [
+					"[bolverk] \"I need fighters and there's a lot more humans to choose from these days.\"",
+					{
+						"divert": "theScowlLeavesFa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkLastIKnew": {
+				"content": [
+					"[bolverk] \"Last I knew. He was leading their group to Arberrang. Why?\"",
+					{
+						"divert": "fasoltBecauseIve1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"bolverkNoBellowe": {
+				"content": [
+					"[bolverk] \"No, Bellower killed him before falling. His daughter is leading their group to Arberrang now. Why?\"",
+					{
+						"divert": "fasoltBecauseIve"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"bolverkRookDiedB": {
+				"content": [
+					"[bolverk] \"Rook died, but Alette is leading the caravan to Arberrang. Hakon and the other varl are with them.\"",
+					{
+						"divert": "bolverkTheGirlDi"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"bolverkSinceWhen": {
+				"content": [
+					"[bolverk] \"Since when have dredge ever left us alone?\"",
+					{
+						"divert": "fasoltTheyllStil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheDaught": {
+				"content": [
+					"[bolverk] \"The daughter of a hunter named Rook shot the Sundr with some Valka arrow.\"",
+					{
+						"divert": "fasoltFiguresIMe"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"bolverkTheGirlDi": {
+				"content": [
+					"[bolverk] \"The girl died, but Rook's leading his caravan to Arberrang. Hakon and the other varl are with them.\"",
+					{
+						"divert": "fasoltHumansDieL"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"bolverkThenBello": {
+				"content": [
+					"[bolverk] \"Then Bellower showed up with an army. A human took him down.\"",
+					{
+						"divert": "fasoltAHumanTheI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheRavens": {
+				"content": [
+					"[bolverk] \"The Ravens were called in to keep people from rioting. Trying to get those people to leave was useless.\"",
+					{
+						"divert": "bolverkThenBello"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWhyDidntM": {
+				"content": [
+					"[bolverk] \"Why didn't more of you flee?\"",
+					{
+						"divert": "fasoltJorundrHeD"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltAHumanTheI": {
+				"content": [
+					"[fasolt] \"A human? The immortal Bellower's dead?!\"",
+					{
+						"divert": "hisQuestionMakes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltAndIfWeFae": {
+				"content": [
+					"[fasolt] \"And if we faen cut one off, he just grew another.\"",
+					{
+						"divert": "whyDoYouFeelProu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltAndTheyKil": {
+				"content": [
+					"[fasolt] \"And they killed plenty of us. There were a couple dozen more of us only a day or two ago. Prayed to the dead gods for help, but got nothing.\"",
+					{
+						"divert": "pageBreakFasoltF"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"fasoltBecauseIve": {
+				"content": [
+					"[fasolt] \"Because I've come all this way with a faen message for her father from our former king...but she'll do.\"",
+					{
+						"divert": "bolverkLastIKnew"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"fasoltBecauseIve1": {
+				"content": [
+					"[fasolt] \"Because I've come all this way with a faen message for him from our former king.\"",
+					{
+						"divert": "fasoltsEyesAccen"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"fasoltBellowerLe": {
+				"content": [
+					"[fasolt] \"Bellower led an incredible force against us...with such precision.\"",
+					{
+						"divert": "fasoltHeMovedHis"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltBolverkOhW": {
+				"content": [
+					"[fasolt bolverk] \"Oh? What happened?\"",
+					{
+						"divert": "bolverkTheRavens"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltEinartoftW": {
+				"content": [
+					"[fasolt] \"Einartoft was a massacre.\"",
+					{
+						"divert": "pageBreakFasoltF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltFiguresIMe": {
+				"content": [
+					"[fasolt] \"Figures. I met the man and his whelp before. Didn't think they'd amount to Sundr-Slayers though.\"",
+					{
+						"divert": "bolverkRookDiedB"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltHeMovedHis": {
+				"content": [
+					"[fasolt] \"He moved his hordes of fighters around like his own arms and legs.\"",
+					{
+						"divert": "fasoltAndIfWeFae"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltHumansDieL": {
+				"content": [
+					"[fasolt] \"Humans die like flies, don't they?\"",
+					{
+						"divert": "heSpitsOnTheGrou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltIAlwaysFig": {
+				"content": [
+					"[fasolt] \"I always figured the Ravens were a myth. A varl always being around so many humans doesn't make any sense.\"",
+					{
+						"divert": "bolverkINeedFigh"
+					},
+					{
+						"flagName": "_count=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltIfYoureHea": {
+				"content": [
+					"[fasolt] \"If you're heading west, I'll stay with you to the Old Ford.\"",
+					{
+						"divert": "fasoltIllBeHeadi"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"fasoltIfYoureHea1": {
+				"content": [
+					"[fasolt] \"If you're heading west, Kvig and I will stick with you and cut south to Arberrang at Old Ford.\"",
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"fasoltIllBeHeadi": {
+				"content": [
+					"[fasolt] \"I'll be heading to Arberrang soon.\"",
+					{
+						"divert": "youHaveMoreQuest"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"fasoltImAliveByL": {
+				"content": [
+					"[fasolt] \"I'm alive by luck alone - no skill with a weapon or desire to kill could have seen me through that.\"",
+					{
+						"divert": "fasoltEinartoftW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltIsRookStil": {
+				"content": [
+					"[fasolt] \"Is Rook still alive?\"",
+					{
+						"divert": "bolverkNoBellowe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltIWasLeftFo": {
+				"content": [
+					"[fasolt] \"I was left for dead. Woke up to actual ravens pecking my face. Damn near got my eyes.\"",
+					{
+						"divert": "pageBreakFasoltF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltJorundrHeD": {
+				"content": [
+					"[fasolt] \"Jorundr. He decided to make a stand.\"",
+					{
+						"divert": "fasoltIWasLeftFo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltMoreDeathT": {
+				"content": [
+					"[fasolt] \"More death than I've seen in all my centuries combined.\"",
+					{
+						"divert": "fasoltBellowerLe"
+					},
+					{
+						"flagName": "_whathappened"
+					},
+					{
+						"flagName": "_count+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltMostSeemsT": {
+				"content": [
+					"[fasolt] \"Most. Seems to be a number of them hunting something or /=someone =/though.\"",
+					{
+						"divert": "fasoltAndTheyKil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltsEyesAccen": {
+				"content": [
+					"/=Fasolt's eyes, accented by the torn skin, look deadly.=/",
+					{
+						"divert": "fasoltIfYoureHea"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltTheresMore": {
+				"content": [
+					"[fasolt] \"There's more dredge than rats and after Grofheim and Einartoft, we...the varl are done.",
+					{
+						"divert": "pageBreakFasoltF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltTheTruthIs": {
+				"content": [
+					"[fasolt] \"The truth is, I could kill a hundred of these slags a day and not be fulfilled.\"",
+					{
+						"divert": "fasoltTheresMore"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"FasoltTheVarlsDe": {
+				"content": [
+					"/=The varl's demeanor changes. He's growling.=/",
+					{
+						"divert": "fasoltIsRookStil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltTheyllStil": {
+				"content": [
+					"[fasolt] \"They'll still kill you if you stick your ass on the ground for too long, but I'm telling you what I've faen seen. Most of those stone bastards seem to be running scared.\"",
+					{
+						"divert": "fasoltMostSeemsT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltTheyMightA": {
+				"content": [
+					"[fasolt] \"They might all be armed, but they're mostly families. Most won't bother you if you leave them alone.\"",
+					{
+						"divert": "bolverkSinceWhen"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltThisStuffB": {
+				"content": [
+					"[fasolt] \"This stuff behind us? Faen easy. Those aren't all dredge warriors.\"",
+					{
+						"divert": "fasoltTheyMightA"
+					},
+					{
+						"flagName": "_makeit"
+					},
+					{
+						"flagName": "_count+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltWaitWhichH": {
+				"content": [
+					"[fasolt] \"Wait, which human?\"",
+					{
+						"divert": "bolverkAHunterNa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltWellHeadSo": {
+				"content": [
+					"[fasolt] \"We'll head south to Arberrang soon. Hakon will want to see Kvig.\"",
+					{
+						"divert": "fasoltIfYoureHea1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"fasoltWhatMakesY": {
+				"content": [
+					"[fasolt] \"What makes you think I'm interested in anything like that?\"",
+					{
+						"divert": "heHoldsYourStare"
+					},
+					{
+						"flagName": "_revenge"
+					},
+					{
+						"flagName": "_count+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heHoldsYourStare": {
+				"content": [
+					"/=He holds your stare for a moment before laughing an unexpected, cruel laugh.=/",
+					{
+						"divert": "fasoltTheTruthIs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heSpitsOnTheGrou": {
+				"content": [
+					"/=He spits on the ground.=/",
+					{
+						"divert": "fasoltWellHeadSo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hisQuestionMakes": {
+				"content": [
+					"/=His question makes you tense, though you're unclear why.=/",
+					{
+						"linkPath": "fasoltWaitWhichH",
+						"ifConditions": [
+							{
+								"ifCondition": "!saga1_bridge_destroyed"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "bolverkAHunterNa1",
+						"notIfConditions": [
+							{
+								"notIfCondition": "!saga1_bridge_destroyed"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakFasoltF": {
+				"content": [
+					"/=Fasolt grows quiet.=/",
+					{
+						"divert": "BolverkFasoltGro"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkbolverkM": {
+				"content": [
+					"{skip} mark1=bolverk mark2=fasolt mark3=folka",
+					{
+						"linkPath": "fasoltIAlwaysFig",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theScowlLeavesFa": {
+				"content": [
+					"/=The scowl leaves Fasolt's face for the first time, a distant look in his eyes.=/",
+					{
+						"divert": "fasoltImAliveByL"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"whyDoYouFeelProu": {
+				"content": [
+					"/=Why do you feel proud?=/",
+					{
+						"divert": "bolverkWhyDidntM"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youHaveMoreQuest": {
+				"content": [
+					"/=You have more questions, but decide to leave the varl to his brooding thoughts.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "z9qz"
+}

@@ -1,0 +1,54 @@
+{
+	"data": {
+		"initial": "bolverkEyelessFa",
+		"stitches": {
+			"bolverkEyelessFa": {
+				"content": [
+					"[bolverk] Eyeless falls to the ground. Suddenly, the chaotic sounds of battle quieten and the surrounding dredge lower their weapons in shock. A group of dredge guards break through the crowd and begin lifting Eyeless' body. Then you see her arm move. The Sundr is still alive.",
+					{
+						"divert": "convoyravensTher"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyravensTheR": {
+				"content": [
+					"[convoy_ravens] The Ravens wipe their blades on their tunics and once again begin their throaty chanting. Thrilled, they run with you toward the body of Eyeless.",
+					{
+						"flagName": "13_battle_kill_eyeless"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensTher": {
+				"content": [
+					"[convoy_ravens] There is a chance to finish Eyeless if you and a few others are willing to risk charging the dredge. There's no telling what will happen if she's allowed to recover...but, you feel a pang of sadness at the thought of killing her.",
+					{
+						"linkPath": "convoyravensTheR",
+						"option": "\"On me! Today, we kill a Sundr!\""
+					},
+					{
+						"linkPath": "convoyravensWhil",
+						"option": "\"While they're stunned, move! To Manaharr!\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensWhil": {
+				"content": [
+					"[convoy_ravens] While Eyeless is carried back into her ranks, your wounded are dragged back toward the town.",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "4c9c"
+}

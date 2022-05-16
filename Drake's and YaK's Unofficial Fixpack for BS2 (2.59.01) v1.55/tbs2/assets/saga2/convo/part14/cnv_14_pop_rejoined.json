@@ -1,0 +1,27 @@
+{
+	"data": {
+		"initial": "convoyTheCartsJu",
+		"stitches": {
+			"convoyTheCartsJu": {
+				"content": [
+					"[convoy] The carts have just started moving away from the village when you hear a girl shout, \"Papa?!\" You turn to see where she is looking and gasp. From the east, over ground you recently crossed, comes a large number of missing clansmen, fighters, and varl. \"Is that Rugga?\" someone asks. At the front of the group is the former governor of Boersgard.",
+					{
+						"divert": "ruggaHusbandsRun"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"ruggaHusbandsRun": {
+				"content": [
+					"[rugga] Husbands run out to their wives, and children scream in excitement for the parents they believed to be dead. You make your way out to greet the group as well, but Rugga holds up his hand as you near.",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "j8w5"
+}

@@ -1,0 +1,722 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"egilAleoSaysWere": {
+				"content": [
+					"[egil] \"Aleo says we're destined to bring all clans together.\"",
+					{
+						"divert": "heroAleosASkaldG"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilAletteILoveY": {
+				"content": [
+					"[egil] \"Alette, I love you.\"",
+					{
+						"divert": "hisToneIsSincere"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilAletteILoveY1": {
+				"content": [
+					"[egil] \"Alette, I love you.\"",
+					{
+						"divert": "hisToneIsSincere"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilAletteItsAMi": {
+				"content": [
+					"[egil] \"Alette, it's a miracle that I'm still alive, so I've got to tell you something before my luck fades.\"",
+					{
+						"divert": "egilHeroAletteIt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilAletteYoureT": {
+				"content": [
+					"[egil] \"Alette, you're the strongest and smartest woman I've ever known.\"",
+					{
+						"divert": "egilYourBeautySh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilAndYouDontHa": {
+				"content": [
+					"[egil] \"And you don't have to love me back, but I had to say it.\"",
+					{
+						"divert": "pageBreakHeExhal"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilButIfThingsE": {
+				"content": [
+					"[egil] \"But if things ever settle down, in Arberrang or wherever, maybe we can talk.\"",
+					{
+						"divert": "heroThatSoundsGo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilDontFeelLike": {
+				"content": [
+					"[egil] \"Don't feel like you have to say anything. Honestly.\"",
+					{
+						"divert": "egilYouveGotTheC"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilHeroAletteIt": {
+				"content": [
+					"[egil $hero] \"Alette, it's a miracle that I'm still alive, so I've got to tell you something before my luck fades.\"",
+					{
+						"linkPath": "egilThankYouButN",
+						"option": "\"Don't say that. We'll keep each other alive.\""
+					},
+					{
+						"linkPath": "gilStandsTallerA",
+						"option": "Lean forward and smile"
+					},
+					{
+						"linkPath": "egilWhatButWereI",
+						"option": "\"Maybe now's not the time.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIfAndWhenYou": {
+				"content": [
+					"[egil] \"If and when you know you love me too, you come find me, okay?\"",
+					{
+						"divert": "yourEyesFeelWetA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIHopeThisDoe": {
+				"content": [
+					"[egil] \"I hope this doesn't change anything between us.\"",
+					{
+						"divert": "heProudlyWalksAw"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIIDidntWantT": {
+				"content": [
+					"[egil] \"I...I didn't want to force it out like that, but I needed you to hear it from me.\"",
+					{
+						"linkPath": "egilOnlyIfYouWan",
+						"option": "\"We can talk about this again in Arberrang.\""
+					},
+					{
+						"linkPath": "egilReallyWhy",
+						"option": "\"I wish you hadn't have said that.\""
+					},
+					{
+						"linkPath": "egilImActuallyGl",
+						"option": "Say nothing"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIIShouldveHa": {
+				"content": [
+					"[egil] \"I...I should've had my shield up for that one, huh?\"",
+					{
+						"divert": "hesHurtButNotAng"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIJustNeededY": {
+				"content": [
+					"[egil] \"I just needed you to hear it from me and I'm glad you wanted to hear it.\"",
+					{
+						"divert": "egilIfAndWhenYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIKnewThatWas": {
+				"content": [
+					"[egil] \"I knew that was a possibility, but...\"",
+					{
+						"divert": "egilWellImGladIS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilImActuallyGl": {
+				"content": [
+					"[egil] \"I'm actually glad you're not saying anything because you don't need to.\"",
+					{
+						"divert": "egilIHopeThisDoe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilItsStillNeat": {
+				"content": [
+					"[egil] \"It's still neat to think we're part of something bigger.\"",
+					{
+						"divert": "hisWonderIsRefre"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilIveFeltThisW": {
+				"content": [
+					"[egil] \"I've felt this way a long time, so the only difference is now we both know.\"",
+					{
+						"divert": "heroThatsABigDif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilNnoItDoesntH": {
+				"content": [
+					"[egil] \"N...no. It doesn't have to.\"",
+					{
+						"divert": "egilIveFeltThisW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilNoneOfThatCh": {
+				"content": [
+					"[egil] \"None of that changes the fact that I love you.\"",
+					{
+						"divert": "theTwoOfYouStand"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilOnlyIfYouWan": {
+				"content": [
+					"[egil] \"Only if you want to. I won't hold you to it.\"",
+					{
+						"divert": "heLooksUpTheGods"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilReallyWhy": {
+				"content": [
+					"[egil] \"Really? Why?\"",
+					{
+						"divert": "heroBecauseItMak"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilShrugs": {
+				"content": [
+					"/=Egil shrugs.=/",
+					{
+						"divert": "egilItsStillNeat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilSorryAleoTri": {
+				"content": [
+					"[egil] \"Sorry. Aleo tried to help me put my thoughts into words.\"",
+					{
+						"divert": "egilAletteILoveY1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilThankYouButN": {
+				"content": [
+					"[egil] \"Thank you, but neither one of us could have saved each other like Eyvind saved Juno.\"",
+					{
+						"divert": "heroOkayGiantSer"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EgilTheYoungMans": {
+				"content": [
+					"/=The young man's shoulders start to droop, but he summons his courage.=/",
+					{
+						"divert": "egilNoneOfThatCh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilWellImGladIS": {
+				"content": [
+					"[egil] \"Well, I'm glad I said it. Thanks for not leading me on.\"",
+					{
+						"divert": "heWalksAwayBefor"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilWeveComeAllT": {
+				"content": [
+					"[egil] \"We've come all this way. We've fought dredge, killed a Sundr.\"",
+					{
+						"divert": "egilAleoSaysWere"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilWhatButWereI": {
+				"content": [
+					"[egil] \"What? But we're...I mean, Lauga's godstone--\"",
+					{
+						"divert": "heroItsJustAGods"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilYesBeautiful": {
+				"content": [
+					"[egil] \"Yes. Beautiful.\"",
+					{
+						"divert": "heIsntLookingAtT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EgilYouHearTheUn": {
+				"content": [
+					"/=You hear the unmistakable clank of Egil's shield behind you.=/",
+					{
+						"divert": "heroLaugasGodsto"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilYourBeautySh": {
+				"content": [
+					"[egil] \"Your beauty shames...the dawn's light on a clear spring morning.\"",
+					{
+						"divert": "youRaiseAnEyebro"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilYouveGotTheC": {
+				"content": [
+					"[egil] \"You've got the clan to save and I don't want to be another concern for you.\"",
+					{
+						"divert": "youSmileAtHim"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"egilYouyouWere": {
+				"content": [
+					"[egil] \"You...you were?\"",
+					{
+						"divert": "heroDontActSoSur"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"gilStandsTallerA": {
+				"content": [
+					"/=Gil stands taller and steps closer to you.=/",
+					{
+						"divert": "egilAletteYoureT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heExhalesRelieve": {
+				"content": [
+					"/=He exhales, relieved of a great burden.=/",
+					{
+						"linkPath": "egilDontFeelLike",
+						"option": "\"I...I don't know what to say.\""
+					},
+					{
+						"linkPath": "egilYouyouWere",
+						"option": "\"I was hoping you'd say that.\""
+					},
+					{
+						"linkPath": "heListensAndAllo",
+						"option": "\"Thank you, Gil, but I don't feel the same way.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heIsntLookingAtT": {
+				"content": [
+					"/=He isn't looking at the godstone.=/",
+					{
+						"divert": "egilWeveComeAllT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heListensAndAllo": {
+				"content": [
+					"/=He listens and allows your words to set in.=/",
+					{
+						"divert": "egilIIShouldveHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heLooksUpTheGods": {
+				"content": [
+					"/=He looks up the godstone and takes a deep breath before smiling and leaving you to your thoughts.=/",
+					{
+						"flagName": "14_egil_love=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heProudlyWalksAw": {
+				"content": [
+					"/=He proudly walks away with you watching him go.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAleosASkaldG": {
+				"content": [
+					"[$hero] \"Aleo's a skald, Gil. Storytelling is his job.\"",
+					{
+						"divert": "egilShrugs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroBecauseItMak": {
+				"content": [
+					"[$hero] \"Because it makes things different between you and me now.",
+					{
+						"divert": "egilNnoItDoesntH"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroDontActSoSur": {
+				"content": [
+					"[$hero] \"Don't act so surprised! You're a brave fighter who always treats me with respect.\"",
+					{
+						"divert": "heroIHopeYouKnow"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIHopeYouKnow": {
+				"content": [
+					"[$hero] \"I hope you know I feel strongly for you, but until everyone is safe in Arberrang--\"",
+					{
+						"divert": "egilIJustNeededY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroINeedToFocus": {
+				"content": [
+					"[$hero] \"I need to focus on what the caravan is doing next, so you'll have to excuse me.\"",
+					{
+						"divert": "youLeaveGilAtThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroItsJustAGods": {
+				"content": [
+					"[$hero] \"It's just a godstone. The gods are dead.\"",
+					{
+						"divert": "heroWereHereForA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroLaugasGodsto": {
+				"content": [
+					"[$hero] \"Lauga's godstone is beautiful, isn't it?\"",
+					{
+						"divert": "egilYesBeautiful"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroOkayGiantSer": {
+				"content": [
+					"[$hero] \"Okay, giant Serpents aren't part of our deal.\"",
+					{
+						"divert": "theTwoOfYouLaugh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThatsABigDif": {
+				"content": [
+					"[$hero] \"That's a big difference, Gil.\"",
+					{
+						"divert": "heroINeedToFocus"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThatSoundsGo": {
+				"content": [
+					"[$hero] \"That sounds good, Gil. Thank you.\"",
+					{
+						"flagName": "14_egil_love=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWereHereForA": {
+				"content": [
+					"[$hero] \"We're here for a short rest before continuing on to Arberrang - the clansmen aren't safe yet.\"",
+					{
+						"divert": "EgilTheYoungMans"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hesHurtButNotAng": {
+				"content": [
+					"/=He's hurt but not angry.=/",
+					{
+						"divert": "egilIKnewThatWas"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heWalksAwayBefor": {
+				"content": [
+					"/=He walks away before anything more can be said. You realize nothing more could be said.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hisToneIsSincere": {
+				"content": [
+					"/=His tone is sincere. His eyes hold no expectations.=/",
+					{
+						"divert": "egilAndYouDontHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hisWonderIsRefre": {
+				"content": [
+					"/=His wonder is refreshing. You smile at him. He looks up at the godstone and takes a deep breath.=/",
+					{
+						"divert": "egilAletteItsAMi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakHeExhal": {
+				"content": [
+					"/=He exhales, relieved of a great burden.=/",
+					{
+						"divert": "heExhalesRelieve"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=egil",
+					{
+						"divert": "EgilYouHearTheUn"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theTwoOfYouLaugh": {
+				"content": [
+					"/=The two of you laugh a bit and Gil relaxes.=/",
+					{
+						"divert": "egilAletteILoveY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theTwoOfYouStand": {
+				"content": [
+					"/=The two of you stand quietly for a moment, his words hanging in the air.=/",
+					{
+						"divert": "egilIIDidntWantT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youLeaveGilAtThe": {
+				"content": [
+					"/=You leave Gil at the godstone, and immediately think about other issues.=/",
+					{
+						"flagName": "14_egil_love=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youRaiseAnEyebro": {
+				"content": [
+					"/=You raise an eyebrow at him.=/",
+					{
+						"divert": "egilSorryAleoTri"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"yourEyesFeelWetA": {
+				"content": [
+					"/=Your eyes feel wet as you smile and nod. Egil grabs your hand and kisses it before leaving.=/",
+					{
+						"flagName": "14_egil_love=2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youSmileAtHim": {
+				"content": [
+					"/=You smile at him.=/",
+					{
+						"divert": "egilButIfThingsE"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "j8xv"
+}

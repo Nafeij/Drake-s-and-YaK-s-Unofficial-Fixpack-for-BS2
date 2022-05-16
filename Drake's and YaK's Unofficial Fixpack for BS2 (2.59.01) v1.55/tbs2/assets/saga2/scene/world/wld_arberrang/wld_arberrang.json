@@ -1,0 +1,1488 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "happening": "forage",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "14_forage_1",
+      "triggers": [
+        {
+          "location": "14_forage_1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "HALT",
+          "varvalue": 1
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_dredgetale1.json.z"
+        },
+        {
+          "happening": "14_battle_dredgetale",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "14_pop_dredgetale1",
+      "triggers": [
+        {
+          "location": "14_pop_dredgetale1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_battle_hunting_active",
+          "varvalue": 1
+        },
+        {
+          "type": "PARTY_CLEAR"
+        },
+        {
+          "prereq": "hero_alette",
+          "type": "VARIABLE_SET",
+          "varname": "alette.party_required",
+          "varvalue": 1
+        },
+        {
+          "prereq": "hero_rook",
+          "type": "VARIABLE_SET",
+          "varname": "rook.party_required",
+          "varvalue": 1
+        },
+        {
+          "assemble_heroes": false,
+          "scene": "saga2/scene/battle/btl_dredge_story/btl_dredge_story.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "alette.party_required"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "rook.party_required"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_battle_hunting_active"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_dredgetale2_fail.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_dredgetale2_victory.json.z"
+        },
+        {
+          "type": "HALT"
+        },
+        {
+          "bucket": "dredge_early",
+          "prereqs": [
+            {
+              "varname": "14_battle_dredge",
+              "varvalue": 1
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_forest_wilderness/btl_forest_wilderness.json.z",
+          "type": "BATTLE"
+        }
+      ],
+      "id": "14_battle_dredgetale"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part12/cnv_12_pop_fieldgate.json.z"
+        }
+      ],
+      "id": "12_pop_fieldgate ",
+      "triggers": [
+        {
+          "location": "12_pop_fieldgate",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "HALT",
+          "varvalue": 1
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_horseborn.json.z"
+        },
+        {
+          "happening": "14_battle_horseborn",
+          "type": "HAPPENING"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_horseborn_outcome.json.z"
+        },
+        {
+          "type": "VIDEO",
+          "url": "saga2/video/ch14_canary.720.flv"
+        },
+        {
+          "scene": "saga2/scene/stage/stg_wilderness_forest/stg_wilderness_forest.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part14/cnv_14_convo_canary.json.z"
+        },
+        {
+          "type": "HALT"
+        },
+        {
+          "id": "canary",
+          "prereqs": [
+            {
+              "varname": "14_horseborn_join",
+              "varvalue": 1
+            }
+          ],
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "canary",
+          "prereqs": [
+            {
+              "varname": "14_horseborn_join",
+              "varvalue": 1
+            }
+          ],
+          "type": "VARIABLE_SET",
+          "varname": "canary_state",
+          "varvalue": 1
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "14_horseborn_join",
+              "varvalue": 1
+            }
+          ],
+          "type": "VARIABLE_MODIFY",
+          "varname": "num_fighters",
+          "varvalue": 0
+        },
+        {
+          "location": "14_posthorse",
+          "scene": "saga2/scene/world/wld_arberrang/wld_arberrang.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "14_pop_horseborn",
+      "triggers": [
+        {
+          "location": "14_pop_horseborn",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "bucket": "horseborn_melee",
+          "scene": "saga2/scene/battle/btl_fieldgate/btl_fieldgate.json.z",
+          "type": "BATTLE"
+        }
+      ],
+      "id": "14_battle_horseborn"
+    },
+    {
+      "actions": [
+        {
+          "happening": "forage",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "14_forage_2",
+      "triggers": [
+        {
+          "location": "14_forage_2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.7
+        },
+        {
+          "id": "saga2_vo/vo/vo_14_godstone_lauga_rook",
+          "prereq": "hero_rook",
+          "subtitle": "saga2/locale/en/vo_14_godstone_lauga.sbv.z",
+          "type": "VO"
+        },
+        {
+          "id": "saga2_vo/vo/vo_14_godstone_lauga_alette",
+          "prereq": "hero_alette",
+          "subtitle": "saga2/locale/en/vo_14_godstone_lauga.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "14_vo_lauga",
+      "triggers": [
+        {
+          "location": "14_vo_lauga",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.75
+        },
+        {
+          "scene": "saga2/scene/godstone/cls_godstone_fieldgate/cls_godstone_fieldgate.json.z",
+          "type": "TRAVEL"
+        },
+        {
+          "id": "saga2/music/ch14/12mG4",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "14_close_godstone",
+      "triggers": [
+        {
+          "location": "14_close_godstone",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_meetclans.json.z"
+        }
+      ],
+      "id": "14_pop_meetclans",
+      "triggers": [
+        {
+          "location": "14_pop_meetclans",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_peace.json.z"
+        },
+        {
+          "happening": "firsttime",
+          "instant": true,
+          "scene": "saga2/scene/village/vlg_arberrang/vlg_arberrang.json.z",
+          "type": "CAMP"
+        }
+      ],
+      "id": "14_pop_peace",
+      "triggers": [
+        {
+          "location": "14_pop_peace",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch14/12m2-L1",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_12m2-L1",
+      "triggers": [
+        {
+          "location": "12m2-L1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MUSIC_OUTRO"
+        }
+      ],
+      "id": "music_out",
+      "triggers": [
+        {
+          "location": "music_out",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch14/12m2-L2",
+          "type": "MUSIC_ONESHOT"
+        }
+      ],
+      "id": "music_12m2-L2",
+      "triggers": [
+        {
+          "location": "music_12m2-L2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "happening": "14_rnd_horsies1",
+          "prereqs": [
+            {
+              "varname": "14_rnd_horsies1",
+              "varvalue": 0
+            },
+            {
+              "varname": "14_horseborn_join",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "14_rnd_varlbirthday",
+          "prereqs": [
+            {
+              "varname": "14_rnd_varlbirthday",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "14_rnd_stream",
+          "prereqs": [
+            {
+              "varname": "14_rnd_stream",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "14_rnd_quests",
+      "random": true,
+      "triggers": [
+        {
+          "location": "14_rnd_quests",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_rnd_horsies1.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_rnd_horsies1",
+          "varvalue": 1
+        }
+      ],
+      "id": "14_rnd_horsies1",
+      "triggers": [
+        {
+          "location": "12_pop_travelquesta2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_rnd_varlbirthday.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_rnd_varlbirthday",
+          "varvalue": 1
+        }
+      ],
+      "id": "14_rnd_varlbirthday",
+      "triggers": [
+        {
+          "location": "12_pop_travelquesta2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_rnd_stream.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_rnd_stream",
+          "varvalue": 1
+        }
+      ],
+      "id": "14_rnd_stream",
+      "triggers": [
+        {
+          "location": "12_pop_travelquesta2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.7
+        }
+      ],
+      "id": "slow_arberrang_approach",
+      "triggers": [
+        {
+          "location": "slow_arberrang_approach",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2_vo/vo/vo_14_arberrang_rook",
+          "prereq": "hero_rook",
+          "subtitle": "saga2/locale/en/vo_14_arberrang.sbv.z",
+          "type": "VO"
+        },
+        {
+          "id": "saga2_vo/vo/vo_14_arberrang_alette",
+          "prereq": "hero_alette",
+          "subtitle": "saga2/locale/en/vo_14_arberrang.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "14_vo_arberrang",
+      "triggers": [
+        {
+          "location": "14_vo_arberrang",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 7642.9000000000015,
+      "x": -1365.5,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/7_sky1.png",
+            "localrect": {
+              "height": 885,
+              "width": 1765,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky1_1",
+            "offset": {
+              "x": -30,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/7_sky2.png",
+            "localrect": {
+              "height": 885,
+              "width": 1699,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky2_1",
+            "offset": {
+              "x": 1735,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 170,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 3505.05,
+                    "y": 58
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -1965,
+                    "y": 58
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.3
+            },
+            "bmp": "saga2/scene/world/wld_arberrang/cloud_sml.png",
+            "localrect": {
+              "height": 75,
+              "width": 856,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_sml_1",
+            "offset": {
+              "x": 1296,
+              "y": 58
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 100,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 3555.05,
+                    "y": 498
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -1750,
+                    "y": 498
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.5
+            },
+            "bmp": "saga2/scene/world/wld_arberrang/cloud_2.png",
+            "localrect": {
+              "height": 60,
+              "width": 741,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_2_1",
+            "offset": {
+              "x": 1490,
+              "y": 498
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 110,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 3675.05,
+                    "y": 580
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": -2490.05,
+                    "y": 580
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.2
+            },
+            "bmp": "saga2/scene/world/wld_arberrang/cloud_1.png",
+            "localrect": {
+              "height": 79,
+              "width": 1125,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_1_1",
+            "offset": {
+              "x": 1418,
+              "y": 580
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.14
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/6_back_misting.png",
+            "localrect": {
+              "height": 207,
+              "width": 1141,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_misting_1",
+            "offset": {
+              "x": 1927,
+              "y": 366
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/5_back1.png",
+            "localrect": {
+              "height": 205,
+              "width": 590,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back1_1",
+            "offset": {
+              "x": 1883,
+              "y": 701
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/5_back2.png",
+            "localrect": {
+              "height": 351,
+              "width": 1539,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back2_1",
+            "offset": {
+              "x": 2698,
+              "y": 516
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/5_back3.png",
+            "localrect": {
+              "height": 611,
+              "width": 964,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back3_1",
+            "offset": {
+              "x": 4237,
+              "y": 256
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/4_back1.png",
+            "localrect": {
+              "height": 175,
+              "width": 1131,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back1_1",
+            "offset": {
+              "x": 2555,
+              "y": 696
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/4_back2.png",
+            "localrect": {
+              "height": 303,
+              "width": 1307,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back2_1",
+            "offset": {
+              "x": 3686,
+              "y": 568
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/4_back3.png",
+            "localrect": {
+              "height": 448,
+              "width": 1186,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back3_1",
+            "offset": {
+              "x": 4993,
+              "y": 423
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk_back1.png",
+            "localrect": {
+              "height": 562,
+              "width": 1274,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back1_1",
+            "offset": {
+              "x": 913,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk_back2.png",
+            "localrect": {
+              "height": 80,
+              "width": 435,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back2_1",
+            "offset": {
+              "x": 2508,
+              "y": 477
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk_back3.png",
+            "localrect": {
+              "height": 310,
+              "width": 1026,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back3_1",
+            "offset": {
+              "x": 2966,
+              "y": 556
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk_back4.png",
+            "localrect": {
+              "height": 404,
+              "width": 1975,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back4_1",
+            "offset": {
+              "x": 4167,
+              "y": 605
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk_back5.png",
+            "localrect": {
+              "height": 403,
+              "width": 1509,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back5_1",
+            "offset": {
+              "x": 6142,
+              "y": 507
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/godstone.png",
+            "localrect": {
+              "height": 30,
+              "width": 121,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "godstone_1",
+            "offset": {
+              "x": 2605,
+              "y": 477
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk1.png",
+            "localrect": {
+              "height": 879,
+              "width": 1999,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk1_1",
+            "offset": {
+              "x": 0,
+              "y": 282
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk2.png",
+            "localrect": {
+              "height": 684,
+              "width": 1898,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk2_1",
+            "offset": {
+              "x": 1999,
+              "y": 477
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk3.png",
+            "localrect": {
+              "height": 378,
+              "width": 1918,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk3_1",
+            "offset": {
+              "x": 3897,
+              "y": 783
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_walk4.png",
+            "localrect": {
+              "height": 434,
+              "width": 1835,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk4_1",
+            "offset": {
+              "x": 5815,
+              "y": 727
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_arberrang_lettering.png",
+            "localrect": {
+              "height": 142,
+              "width": 366,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_arberrang_lettering_1",
+            "offset": {
+              "x": 895,
+              "y": 49
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/3_hb_add.png",
+            "ifCondition": "!14_hb",
+            "localrect": {
+              "height": 93,
+              "width": 175,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_hb_add_1",
+            "offset": {
+              "x": 4031,
+              "y": 841
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "horseborn_add",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim": "common/vfx/vfx.world/vfx_smoke.clip",
+            "bmp": "",
+            "localrect": {
+              "height": 352,
+              "width": 179,
+              "x": -38,
+              "y": -308
+            },
+            "nameId": "vfx_smoke_1",
+            "offset": {
+              "x": 8524.15,
+              "y": 789.3
+            },
+            "scale": {
+              "x": 1.6234421730041504,
+              "y": 1.6234421730041504
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1.4,
+                  "tailpos": 1,
+                  "target": 0.4,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.4,
+                  "tailpos": 1,
+                  "target": 1.4,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "screen",
+            "bmp": "saga2/scene/world/wld_arberrang/light_rays.png",
+            "localrect": {
+              "height": 581,
+              "width": 1419,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "light_rays_1",
+            "offset": {
+              "x": -10,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close3.png",
+            "localrect": {
+              "height": 63,
+              "width": 1034,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close3_1",
+            "offset": {
+              "x": 5471,
+              "y": 1043
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close_cleft.png",
+            "localrect": {
+              "height": 69,
+              "width": 498,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_cleft_1",
+            "offset": {
+              "x": 1452,
+              "y": 1031
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close_round_break.png",
+            "localrect": {
+              "height": 85,
+              "width": 802,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_round_break_1",
+            "offset": {
+              "x": 2701,
+              "y": 995
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close_tolir.png",
+            "localrect": {
+              "height": 275,
+              "width": 736,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_tolir_1",
+            "offset": {
+              "x": 7653,
+              "y": 635
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close_trees.png",
+            "localrect": {
+              "height": 270,
+              "width": 253,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_trees_1",
+            "offset": {
+              "x": 5040,
+              "y": 627
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close_trees2.png",
+            "localrect": {
+              "height": 134,
+              "width": 224,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_trees2_1",
+            "offset": {
+              "x": 6468,
+              "y": 898
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/2_close1.png",
+            "localrect": {
+              "height": 40,
+              "width": 797,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close1_1",
+            "offset": {
+              "x": 882,
+              "y": 1088
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/1_close1.png",
+            "localrect": {
+              "height": 46,
+              "width": 1536,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close1_1",
+            "offset": {
+              "x": 2522,
+              "y": 1074
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_arberrang/1_close2.png",
+            "localrect": {
+              "height": 598,
+              "width": 1268,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close2_1",
+            "offset": {
+              "x": 8133,
+              "y": -26
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.6,
+        "splines": [
+          {
+            "ease": "Linear",
+            "easeIn": true,
+            "easeOut": true,
+            "id": "arberrang_pan",
+            "points": [
+              {
+                "pos": "9790.15 412.5"
+              },
+              {
+                "pos": "8692.65 410"
+              },
+              {
+                "pos": "4392.55 457.5"
+              },
+              {
+                "pos": "1392.5 485"
+              }
+            ],
+            "tailpos": 0.8
+          }
+        ]
+      }
+    ],
+    "travels": [
+      {
+        "id": "travel_1",
+        "locations": [
+          {
+            "id": "start",
+            "position": 626
+          },
+          {
+            "id": "12m2-L1",
+            "position": 972
+          },
+          {
+            "id": "14_rnd_quests",
+            "position": 1557
+          },
+          {
+            "id": "14_forage_1",
+            "position": 1781
+          },
+          {
+            "id": "bk_14_hunting",
+            "position": 1987
+          },
+          {
+            "id": "14_pop_dredgetale1",
+            "loadBarrier": true,
+            "position": 2085
+          },
+          {
+            "id": "14_rnd_quests",
+            "position": 2402
+          },
+          {
+            "id": "music_out",
+            "position": 2622
+          },
+          {
+            "id": "14_rnd_quests",
+            "position": 2633
+          },
+          {
+            "id": "bk_14_bridge",
+            "position": 2794
+          },
+          {
+            "id": "field_gate",
+            "mapkey": true,
+            "position": 2827
+          },
+          {
+            "id": "14_pop_horseborn",
+            "loadBarrier": true,
+            "position": 2871
+          },
+          {
+            "id": "14_posthorse",
+            "position": 3306
+          },
+          {
+            "id": "_music_12m2-L2",
+            "position": 3419
+          },
+          {
+            "id": "14_rnd_quests",
+            "position": 3616
+          },
+          {
+            "id": "14_forage_2",
+            "position": 3832
+          },
+          {
+            "id": "music_out",
+            "position": 3874
+          },
+          {
+            "id": "14_rnd_quests",
+            "position": 4065
+          },
+          {
+            "id": "bk_14_godstone_lauga",
+            "position": 4080
+          },
+          {
+            "id": "14_vo_lauga",
+            "position": 4100
+          },
+          {
+            "id": "14_close_godstone",
+            "loadBarrier": true,
+            "position": 4340
+          },
+          {
+            "id": "14_depart_godstone",
+            "position": 4454
+          },
+          {
+            "id": "music_12m2-L2",
+            "position": 4470
+          },
+          {
+            "id": "bk_14_arberrang",
+            "position": 4676
+          },
+          {
+            "id": "slow_arberrang_approach",
+            "position": 4784
+          },
+          {
+            "id": "14_vo_arberrang",
+            "position": 4830
+          },
+          {
+            "id": "14_pop_meetclans",
+            "position": 5309
+          },
+          {
+            "id": "14_pop_peace",
+            "loadBarrier": true,
+            "position": 5578
+          },
+          {
+            "id": "end",
+            "position": 6276
+          }
+        ],
+        "splinex": [
+          "6340 212",
+          "5604 217",
+          "5233 243",
+          "4877 314",
+          "4669 326",
+          "4443 310",
+          "4143 260",
+          "3796 274",
+          "3577 261",
+          "3437 270",
+          "3192 266",
+          "2897 277",
+          "2747 272",
+          "2723 268",
+          "2666 267",
+          "2641 270",
+          "2511 238",
+          "2337 168",
+          "2186 115",
+          "2097 108",
+          "2007 111",
+          "1872 94",
+          "1771 66",
+          "1643 5",
+          "1568 -35",
+          "1434 -71",
+          "1302 -82",
+          "1196 -76",
+          "1013 -59",
+          "838 -57",
+          "652 -88",
+          "432 -153",
+          "145 -219",
+          "-227 -263",
+          "-596 -221",
+          "-1101 -86"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

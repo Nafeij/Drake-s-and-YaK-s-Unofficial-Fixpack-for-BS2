@@ -1,0 +1,156 @@
+{
+	"data": {
+		"initial": "junoWhenJunoStan",
+		"stitches": {
+			"convoyWaterfalls": {
+				"content": [
+					"[convoy] \"Waterfalls, smashed towns, horseborn, and giant snakes,\" one father says. \"You got no clue what's coming!\" Others shout their agreements, but he calls for them to be quiet. \"Neither do any of us and that's the truth. So we stick to your banner.\" The others lose the fight in their eyes and nod.",
+					{
+						"flagName": "morale+5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouWantToSay": {
+				"content": [
+					"[$hero] You want to say something to your friend, but he holds up his large hand. \"Don't take this the wrong way, but save it for those who can make use of your encouragement.\" He turns and says, \"I'll see what I can find out from those menders.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIDoubtTheEnt": {
+				"content": [
+					"[iver] \"I doubt the entire caravan ever needs to know what happened back there,\" Iver says, \"but I'm going to see what I can find out from those two.\" It's good to hear him curious about something.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIHopeYouKnow": {
+				"content": [
+					"[iver] \"I hope you know what you're doing,\" the giant says. \"We'll wind up with an army, all right, but no one left to protect.\"",
+					{
+						"flagName": "day+3"
+					},
+					{
+						"flagName": "@happening=12_train"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverLetsHopeSoIv": {
+				"content": [
+					"[iver] \"Let's hope so,\" Iver says. \"Or at least some sense of purpose.\"",
+					{
+						"flagName": "day+1.5"
+					},
+					{
+						"flagName": "num_peasants-100"
+					},
+					{
+						"flagName": "num_fighters+100"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverOkayIverSays": {
+				"content": [
+					"[iver] \"Okay,\" Iver says, and walks off without any argument.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverSureIverSays": {
+				"content": [
+					"[iver] \"Sure,\" Iver says, \"but I'm going to find out what I can from those menders first.\" He starts walking but turns around. \"How many more fighters do you think we need anyway?\"",
+					{
+						"linkPath": "iverIHopeYouKnow",
+						"option": "\"Train as many as you can in three days.\""
+					},
+					{
+						"linkPath": "iverLetsHopeSoIv",
+						"ifConditions": [
+							{
+								"ifCondition": "num_peasants>=100"
+							}
+						],
+						"option": "\"A hundred new fighters will give us all a bit of courage.\""
+					},
+					{
+						"linkPath": "iverOkayIverSays",
+						"option": "\"A fair point. Forget it.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverTheTwoMender": {
+				"content": [
+					"[iver] The two menders are given privacy, but out of fear more than respect. Iver shakes his horned head. \"I'm not sure where all this is leading, but these clansmen - what's left of them - aren't doing so good.\"",
+					{
+						"linkPath": "iverYoureGetting",
+						"option": "\"They'll be fine. We all will.\""
+					},
+					{
+						"linkPath": "joinNextconvoyWh",
+						"option": "\"I'll speak to the bigger families and try to calm them.\""
+					},
+					{
+						"linkPath": "iverSureIverSays",
+						"option": "\"Train more fighters. That should keep them distracted.\""
+					},
+					{
+						"linkPath": "iverIDoubtTheEnt",
+						"option": "\"We won't get any answers until Juno is ready to talk.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverYoureGetting": {
+				"content": [
+					"[iver] \"You're getting good at that lie,\" Iver says. \"I know it's necessary for all the others, but don't shovel that mess my way. Nothing's been fine since the dredge arrived in Skogr, and I'm starting to doubt it ever will be again.\"",
+					{
+						"divert": "heroYouWantToSay"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextconvoyWh": {
+				"content": [
+					"[convoy] \"While you're doing that,\" Iver says, \"I'll see what I can find out from the menders.\" You find a few family leaders and do your best to assure them that things will calm down.",
+					{
+						"divert": "convoyWaterfalls"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWhenJunoStan": {
+				"content": [
+					"[juno] When Juno climbs down from the cart that was carrying her, clansmen recite old prayers or pull their children behind them. She takes in their frightened stares with grace, but beckons to Eyvind to join her away from the caravan.",
+					{
+						"divert": "iverTheTwoMender"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "8b6m"
+}

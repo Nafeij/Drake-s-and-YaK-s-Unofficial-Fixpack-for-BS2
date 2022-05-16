@@ -1,0 +1,294 @@
+{
+	"data": {
+		"initial": "josurrWhatYouDid",
+		"stitches": {
+			"josurrHeBarelyCo": {
+				"content": [
+					"[josurr] He barely composes himself before saying, \"You saved them! The families of Lundar are alive because of you.\" The old man's smile fades. \"Our fighters are dead, and most of the grain stores are gone. Never thought I'd say this, but near two hundred of us would gladly follow you wherever you're going.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"flagName": "@happening=item_heirloom"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrHeSniffsAn": {
+				"content": [
+					"[josurr] He sniffs and regains his composure. \"I wish you'd have saved people instead of food, but who knows? Maybe you've saved more by keeping the rest of us fed.\" The old man sighs. \"So many families lost and most of our fighters too. Guess I'm not really thanking you properly, but you'll find the merchants willing to help you.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrHeSniffsAn1": {
+				"content": [
+					"[josurr] He sniffs and regains his composure. \"I wish you'd have saved the people in those homes. Who cares about the market and the folks in the great hall?\" The old man sighs. \"Still, you've done a great thing here; I should be more thankful. I'm sure the merchants will make you a deal.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrHeStaresHa": {
+				"content": [
+					"[josurr] He stares hard at you. \"Good people died in those houses, and our food was looted while the well-to-do hid with fighters in that great hall. And that's who you saved!\" The man spits. \"Take them! Take those bastards with you when you go or we'll string them up!\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrHeSuddenly": {
+				"content": [
+					"[josurr] He suddenly smiles. \"Everyone that matters is alive and there's plenty to feed them too! I can't thank you enough, but I bet the merchants will make a deal with you.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"flagName": "@happening=item_heirloom"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrOhTheManSa": {
+				"content": [
+					"[josurr] \"Oh,\" the man says, face falling. \"I suppose we'll be alright on our own, then. Of course we will.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrRoEchDerdr": {
+				"content": [
+					"[josurr] Ro'Ech, Derdriu, and Scathach suddenly catch the man's attention and he sneers. \"Do these three belong to you? I reckon the people around here would pay good coin to see them gutted.\"",
+					{
+						"divert": "oddleifOddleifLo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrWellMyDogB": {
+				"content": [
+					"[josurr] \"Well, my dog bit one of the attackers too, but I don't let it in my shop. Keep those pets on short leashes.\"",
+					{
+						"divert": "oddleifItIsAllYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrWereUsedTo": {
+				"content": [
+					"[josurr] \"We're used to hardships, have no doubt,\" the man says. \"And here, to show my thanks.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "num_peasants+181"
+					},
+					{
+						"flagName": "supplies+120"
+					},
+					{
+						"flagName": "@happening=item_heirloom"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrWhatYouDid": {
+				"content": [
+					"[josurr] \"What you did here...\" the old man says, but his voice cracks.",
+					{
+						"linkPath": "josurrHeSniffsAn",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_lundar_splitattempt"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_battle_market"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrHeBarelyCo",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_lundar_splitattempt"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_battle_homes"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrHeStaresHa",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_lundar_splitattempt"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_battle_greathall"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrYouSavedEv",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_market_save"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_greathall_save"
+							},
+							{
+								"ifCondition": "10_homes_save"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrHeSuddenly",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_greathall_save"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_homes_save"
+							},
+							{
+								"ifCondition": "10_market_save"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrHeSniffsAn1",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_homes_save"
+							}
+						],
+						"ifConditions": [
+							{
+								"ifCondition": "10_greathall_save"
+							},
+							{
+								"ifCondition": "10_market_save"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "josurrYouTriedHe",
+						"notIfConditions": [
+							{
+								"notIfCondition": "10_greathall_save"
+							},
+							{
+								"notIfCondition": "10_market_save"
+							},
+							{
+								"notIfCondition": "10_homes_save"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"josurrYouSavedEv": {
+				"content": [
+					"[josurr] \"You saved everyone you could, even those who think they're better than the rest of us.\" The old man smiles. \"It'll be tough without all the stored goods we had at the market, but we'll manage. Thank you.\"",
+					{
+						"divert": "josurrRoEchDerdr"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"flagName": "@happening=item_heirloom"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"josurrYouTriedHe": {
+				"content": [
+					"[josurr] \"You tried,\" he says. \"No one can fault you for that. But everything's gone: the landowners, the farmers, and the food. I'm not sure what we do now.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifItIsAllYo": {
+				"content": [
+					"[oddleif] It is all you can do to keep Oddleif from arguing with the man. She storms off, muttering things best not repeated.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifOddleifLo": {
+				"content": [
+					"[oddleif] Oddleif looks flushed. \"Belong to...no. And no one is gutting anyone; they just helped save your town.\"",
+					{
+						"divert": "josurrWellMyDogB"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "554n"
+}

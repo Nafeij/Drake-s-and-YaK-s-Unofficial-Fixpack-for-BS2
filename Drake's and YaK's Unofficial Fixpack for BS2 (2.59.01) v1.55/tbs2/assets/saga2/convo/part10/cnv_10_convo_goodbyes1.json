@@ -1,0 +1,550 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"beforeYouCanResp": {
+				"content": [
+					"/=Before you can respond, Juno and Eyvind arrive. Her hollow appearance catches you off guard.=/",
+					{
+						"divert": "junoIverToldYouO"
+					},
+					{
+						"flagName": "@show=juno"
+					},
+					{
+						"flagName": "@show=eyvind"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"blankStitch": {
+				"content": [
+					{
+						"divert": "HeroIDaysHavePas"
+					},
+					{
+						"flagName": "@hide=eyvind"
+					},
+					{
+						"flagName": "@hide=juno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindThatsNotEn": {
+				"content": [
+					"[eyvind] \"That's not entirely true. We've been working on something Juno learned about at Geirraðr's godstone.\"",
+					{
+						"divert": "junoThatsRightLe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroButIWouldveN": {
+				"content": [
+					"[$hero] \"But I would've never made it this far without you.\"",
+					{
+						"divert": "iverHeroThenIveD"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroButThesePeop": {
+				"content": [
+					"[$hero] \"But these people depend on me. I gave them my oath we would get to Arberrang.\"",
+					{
+						"divert": "iverHeroThenKeep"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroButThisCarav": {
+				"content": [
+					"[$hero] \"But this caravan needs the three of you. I need you to help get these people to Arberrang.\"",
+					{
+						"divert": "eyvindThatsNotEn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroButWereAlmos": {
+				"content": [
+					"[$hero] \"But we're almost to Arberrang.\"",
+					{
+						"divert": "iverHeroAndThenW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroHaveYouLooke": {
+				"content": [
+					"[$hero] \"Have you looked around lately? We lost almost half the damn caravan and now you three want to leave too?\"",
+					{
+						"divert": "heroWhyWouldYouD"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"HeroIDaysHavePas": {
+				"content": [
+					"/=Days have passed since Eyvind pulled Juno from the Serpent. Though the menders are mostly back to their normal selves, the clansmen continue to keep their distance. =/",
+					{
+						"divert": "heroImNotSureImS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroImNotSureImS": {
+				"content": [
+					"[$hero] \"I'm not sure I'm still cut out for this. We've lost a lot of people.\"",
+					{
+						"divert": "heroImWorriedAbo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"heroImWorriedAbo": {
+				"content": [
+					"[$hero] \"I'm worried about all the people we're missing. Scattering like that in the Old Wood...I feel guilty.\"",
+					{
+						"divert": "iverHeroYouCantP"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"heroThatWasNever": {
+				"content": [
+					"[$hero] \"That was never meant for you.\"",
+					{
+						"divert": "iverGruntsHisAmu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhatHeCouldW": {
+				"content": [
+					"[$hero] \"What he could. What's this all about?\"",
+					{
+						"divert": "junoWeAreNoLonge"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhatJoinThem": {
+				"content": [
+					"[$hero] \"What? Join them where?\"",
+					{
+						"divert": "iverHeroTheyHave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhyWouldYouD": {
+				"content": [
+					"[$hero] \"Why would you do this to me? Why now? Look at what's left of this caravan.\"",
+					{
+						"divert": "iverHeroIveSeenW"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"heroYouHelpMeAnd": {
+				"content": [
+					"[$hero] \"You help me and this entire caravan every day.\"",
+					{
+						"divert": "iverHeroImGladYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouKeepSayin": {
+				"content": [
+					"[$hero] \"You keep saying 'you' instead of 'we'. Are you trying to tell me something?\"",
+					{
+						"divert": "theGiantVarlSigh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAllThreeOfUs": {
+				"content": [
+					"[iver] \"All three of us.\"",
+					{
+						"divert": "heroHaveYouLooke"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAndHereIThou": {
+				"content": [
+					"[iver] \"And here I thought I didn't have a father. Can I go if I finish my chores?\"",
+					{
+						"divert": "iverIveNeverHadA"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"iverGruntsHisAmu": {
+				"content": [
+					"/=Iver grunts his amusement.=/",
+					{
+						"divert": "iverHeroTheTruth"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroAndThenW": {
+				"content": [
+					"[iver $hero] \"And then what? The human capital full of varl, and fearing war from the dredge.\"",
+					{
+						"divert": "iverHeroYouDoWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroAnOpport": {
+				"content": [
+					"[iver $hero] \"An opportunity to do something, to help out.\"",
+					{
+						"divert": "heroYouHelpMeAnd"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroBesidesW": {
+				"content": [
+					"[iver $hero] \"Besides, what else can you do? You'll stay alive, and as long as you do, these people are going to follow you.\"",
+					{
+						"divert": "heroYouKeepSayin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroImGladYo": {
+				"content": [
+					"[iver $hero] \"I'm glad you feel that way. I wish it was enough.\"",
+					{
+						"divert": "iverHeroImNotSur"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroImNotSur": {
+				"content": [
+					"[iver $hero] \"I'm not sure what I'm getting myself into with these two, but it feels right. I've always tried to follow that.\"",
+					{
+						"divert": "beforeYouCanResp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroIveSeenW": {
+				"content": [
+					"[iver $hero] \"I've seen who is left. A bunch of humans and varl who depend on you and Hakon, not me.\"",
+					{
+						"divert": "heroButIWouldveN"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroJunoAndE": {
+				"content": [
+					"[iver $hero] \"Juno and Eyvind. They want me to join them.\"",
+					{
+						"divert": "heroWhatJoinThem"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroNoDoubtW": {
+				"content": [
+					"[iver $hero] \"No doubt whatever they have planned will be dangerous, but sticking with you hasn't really been the safest route either.\"",
+					{
+						"divert": "heroButWereAlmos"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroThenIveD": {
+				"content": [
+					"[iver $hero] \"Then I've done my job. This isn't easy, but don't make it harder than it has to be.\"",
+					{
+						"divert": "beforeYouCanResp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroThenKeep": {
+				"content": [
+					"[iver $hero] \"Then keep going. From the moment you left Skogr, you knew everyone wouldn't make it, but the rest of you can.\"",
+					{
+						"divert": "iverHeroBesidesW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroTheTruth": {
+				"content": [
+					"[iver $hero] \"The truth is I've been looking for something for awhile now, and this might be it.\"",
+					{
+						"divert": "iverHeroAnOpport"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroTheyHave": {
+				"content": [
+					"[iver $hero] \"They haven't filled me in on most of the plans, but they said I'm needed and that we're leaving the caravan.\"",
+					{
+						"divert": "iverHeroTheyHave1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroTheyHave1": {
+				"content": [
+					"[iver $hero] \"They haven't filled me in on most of the plans, but they said I'm needed and that we're leaving the caravan.\"",
+					{
+						"linkPath": "iverWhateverHapp",
+						"option": "\"Absolutely not.\""
+					},
+					{
+						"linkPath": "iverAllThreeOfUs",
+						"option": "\"Leaving? All three of you?\""
+					},
+					{
+						"linkPath": "iverAndHereIThou",
+						"option": "\"I'll need to talk to them about this.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroYouCantP": {
+				"content": [
+					"[iver $hero] \"You can't prepare for a giant snake busting up your camp.\"",
+					{
+						"divert": "heroButThesePeop"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroYouDoWha": {
+				"content": [
+					"[iver $hero] \"You do what you have to do, but that's no place for me.\"",
+					{
+						"divert": "beforeYouCanResp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIveNeverHadA": {
+				"content": [
+					"[iver] \"I've never had a mother. And the way you're acting, I don't think I'd want one.\"",
+					{
+						"divert": "youSigh"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"iverWhateverHapp": {
+				"content": [
+					"[iver] \"Whatever happened to the idea that everyone here can leave when they want?\"",
+					{
+						"divert": "heroThatWasNever"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoBeyondThatTh": {
+				"content": [
+					"[juno] \"Beyond that, the Serpent's attack has clarified our need to move quickly, something we cannot do with all of you.\"",
+					{
+						"divert": "heroButThisCarav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIverToldYouO": {
+				"content": [
+					"[juno] \"Iver told you of our plans?\"",
+					{
+						"divert": "heroWhatHeCouldW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoThatsRightLe": {
+				"content": [
+					"[juno] \"That's right. Lend me your map.\"",
+					{
+						"divert": "pageBreakConfuse"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWeAreNoLonge": {
+				"content": [
+					"[juno] \"We are no longer good for the caravan. Our presence not only scares the clansmen, but puts them in real danger.\"",
+					{
+						"divert": "junoBeyondThatTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakConfuse": {
+				"content": [
+					"/=Confused, you hand your map to the Valka. She and Eyvind hold it at the corners while tracing patterns with spear and staff.=/",
+					{
+						"divert": "theMapGlowsFaint"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=juno mark3=iver mark4=eyvind",
+					{
+						"linkPath": "blankStitch",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theGiantVarlSigh": {
+				"content": [
+					"/=The giant varl sighs.=/",
+					{
+						"divert": "iverHeroJunoAndE"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theMapGlowsFaint": {
+				"content": [
+					"/=The map glows faintly, and loose threads from her cloak and his tunic snake through the aged material. The image pulses; it looks alive.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youSigh": {
+				"content": [
+					"/=You sigh.=/",
+					{
+						"divert": "iverHeroNoDoubtW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "zr62"
+}

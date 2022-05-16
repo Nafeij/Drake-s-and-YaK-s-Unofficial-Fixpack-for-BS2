@@ -1,0 +1,303 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"clansmenStartMum": {
+				"content": [
+					"/=Clansmen start mumbling, and you are not certain their on your side.=/",
+					{
+						"divert": "ruggaIllLetItGoT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hePointsAtEveryo": {
+				"content": [
+					"/=He points at everyone pulling trees off the trail and helping others who are injured.=/",
+					{
+						"divert": "ruggaTheyGetToTa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroYouLungeAtTh": {
+				"content": [
+					"/=You lunge at the man, and Dagr intercepts you. Years of training allow him to block your attacks without even scratching you in return.=/",
+					{
+						"divert": "ruggaThatsEnough"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDoBetterOrT": {
+				"content": [
+					"[rugga] \"Do better. Or these people will run you off.\"",
+					{
+						"divert": "youLeaveTheGover"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDontGetQuie": {
+				"content": [
+					"[rugga] \"Don't get quiet now, Rook. You speak up when a decision needs to be made, but get quiet when that choice goes south?\"",
+					{
+						"divert": "clansmenStartMum"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIKnowYouDid": {
+				"content": [
+					"[rugga] \"I know you did, girl. But trying and failing is still just failing. That's a hard truth.\"",
+					{
+						"divert": "ruggaDoBetterOrT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIllLetItGoT": {
+				"content": [
+					"[rugga] \"I'll let it go today, Rook, but someday, all these people won't.\"",
+					{
+						"divert": "youTurnYourBackO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIThinkWeLos": {
+				"content": [
+					"[rugga] \"I think we lost people today. Regardless of whether that was because of you, it falls on you.\"",
+					{
+						"divert": "ruggaDoBetterOrT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaMakesYouWon": {
+				"content": [
+					"[rugga] \"Makes you wonder, doesn't it? You wonder if saving Ettingbekr would have stopped this fire.\"",
+					{
+						"divert": "ruggaMakesYouWon1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaMakesYouWon1": {
+				"content": [
+					"[rugga] \"Makes you wonder, doesn't it? You wonder if saving Ettingbekr would have stopped this fire.\"",
+					{
+						"linkPath": "ruggaOfCourseWer",
+						"option": "\"Drop it, Rugga.\""
+					},
+					{
+						"linkPath": "ruggaDontGetQuie",
+						"option": "Say nothing"
+					},
+					{
+						"linkPath": "HeroYouLungeAtTh",
+						"option": "Attack Rugga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaMaybeMaybeN": {
+				"content": [
+					"[rugga] \"Maybe. Maybe not. It doesn't matter though, does it? When lives are lost, you're blamed.\"",
+					{
+						"divert": "ruggaDoBetterOrT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaOfCourseWer": {
+				"content": [
+					"[rugga] \"Of course. We're just supposed to cope with the results of your choices, not talk about them.\"",
+					{
+						"divert": "clansmenStartMum"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaSharesALook": {
+				"content": [
+					"/=Rugga shares a look with Dagr and chuckles.=/",
+					{
+						"divert": "ruggaYouWantToBe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThatsEnough": {
+				"content": [
+					"[rugga] \"That's enough.\"",
+					{
+						"divert": "youPullAwayFromD"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"RuggaTheGovernor": {
+				"content": [
+					"/=The governor and his guard stare at you from across a charred and fallen tree.=/",
+					{
+						"divert": "ruggaMakesYouWon"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"RuggaTheGovernor1": {
+				"content": [
+					"/=The governor and his guard step over a charred and fallen log to stand by your side.=/",
+					{
+						"divert": "ruggaThisDoesntL"
+					},
+					{
+						"flagName": "rugga_decision-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheyGetToTa": {
+				"content": [
+					"[rugga] \"They get to talk about their feelings. You get to learn quickly and lead.\"",
+					{
+						"divert": "ruggaDoBetterOrT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThisDoesntL": {
+				"content": [
+					"[rugga] \"This doesn't look good, you know? People are saying you could've saved Ettingbekr and prevented this.\"",
+					{
+						"linkPath": "ruggaIThinkWeLos",
+						"option": "\"And what do you think?\""
+					},
+					{
+						"linkPath": "ruggaMaybeMaybeN",
+						"option": "\"There was no way to see this coming.\""
+					},
+					{
+						"linkPath": "ruggaIKnowYouDid",
+						"ifConditions": [
+							{
+								"ifCondition": "10_ettingbekr_fire2"
+							}
+						],
+						"option": "\"I tried!\""
+					},
+					{
+						"linkPath": "ruggaSharesALook",
+						"option": "\"I feel bad enough without talking about it.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYouWantToBe": {
+				"content": [
+					"[rugga] \"You want to be a leader? Stop talking about your feelings.\"",
+					{
+						"divert": "hePointsAtEveryo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=rugga mark4=dagr",
+					{
+						"linkPath": "RuggaTheGovernor",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_rook"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "RuggaTheGovernor1",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_alette"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"youLeaveTheGover": {
+				"content": [
+					"/=You leave the governor and his guard and help Eyvind and Juno with the wounded.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youPullAwayFromD": {
+				"content": [
+					"/=You pull away from Dagr, angrier than before.=/",
+					{
+						"divert": "ruggaIllLetItGoT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youTurnYourBackO": {
+				"content": [
+					"/=You turn your back on him and get to the head of the caravan.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "gbwc"
+}

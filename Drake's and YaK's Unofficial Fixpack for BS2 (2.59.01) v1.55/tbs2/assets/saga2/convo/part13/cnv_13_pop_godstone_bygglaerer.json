@@ -1,0 +1,108 @@
+{
+	"data": {
+		"initial": "sparrYouNaifsWat",
+		"stitches": {
+			"bolverkASwiftKic": {
+				"content": [
+					"[bolverk] A swift kick and their stones go flying. The kids squeal and run, one slipping and almost falling over the cliff. \"Not bad,\" Sparr says. \"Not Bygglaerer's first lesson, but breaking things down was definitely something this god knew well. Look.\" The old man points to a trinket the kids must have left under the pile of stones.",
+					{
+						"divert": "sparrAnUneasyFee"
+					},
+					{
+						"flagName": "@happening=item_hammer"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkGoOnYouYe": {
+				"content": [
+					"[bolverk] \"Go on!\" you yell. The kids flee instantly, slipping on the ice, but making it back to the others safely. Sparr chuckles. \"How do you think all these other piles were made?\" He places a stone on another cairn as you start to walk away.",
+					{
+						"divert": "sparrAnUneasyFee"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkOnTheDist": {
+				"content": [
+					"[bolverk] On the distant fields below is a mass of dredge too numerous to count. Waves of them are pouring over the hills, though they don't move like an attacking force. \"There's a banner among them!\" Folka says near you, \"but I can't make out the crest.\" You wave off her comment and roar a command: \"Move!\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheSoundO": {
+				"content": [
+					"[bolverk] The sound of snickering draws your attention and you see some kids grabbing stones from other cairns to build a new one of their own.",
+					{
+						"linkPath": "bolverkGoOnYouYe",
+						"option": "Shout for them to knock it off"
+					},
+					{
+						"linkPath": "bolverkASwiftKic",
+						"option": "Knock theirs over and run them off"
+					},
+					{
+						"linkPath": "bolverkTheStoneY",
+						"option": "Grab a stone and toss it to them to add"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheStoneY": {
+				"content": [
+					"[bolverk] The stone you pick is bigger than anything they're using, but they're amazed that you contributed. The kids find a way to support its weight on top of all of theirs, laughing and chasing each other away when it's all finished.",
+					{
+						"divert": "sparrAnUneasyFee"
+					},
+					{
+						"flagName": "morale+15"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sparrAnUneasyFee": {
+				"content": [
+					"[sparr] An uneasy feeling washes over you and you scan the Ravens, clansmen, and Bellower's cart for any threat. \"Bloodaxe,\" Sparr says in a tone stripped of all humor. \"My eyes are too old to trust what I'm seeing down there...\" You follow his gaze and growl.",
+					{
+						"divert": "bolverkOnTheDist"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sparrYouNaifsWat": {
+				"content": [
+					"[sparr] \"You naifs watch your step around these cairns,\" Sparr says, hacking. \"Many a foolish pilgrim has given their life at the base of this frozen cliff. And don't try working one of the stones free either, or you'll bring the whole damn thing down on us.\" He glares at Oli, who pulls his hands away from a stone quickly.",
+					{
+						"divert": "thePiecesOfByggl"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"thePiecesOfByggl": {
+				"content": [
+					"The pieces of Bygglaerer's godstone, put together without mortar or daub, represent the mastery of the god's own skill. In life, he traveled the land, laying the world’s cavernous foundations and raising mountains. He was ever regarded by the other gods with a wary respect, for one who knows how to put things together will also know how to take them apart.",
+					{
+						"divert": "bolverkTheSoundO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "jnvb"
+}

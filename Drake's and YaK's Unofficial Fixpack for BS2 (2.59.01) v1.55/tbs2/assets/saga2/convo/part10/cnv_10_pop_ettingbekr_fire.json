@@ -1,0 +1,198 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"convoyHoursLater": {
+				"content": [
+					"[convoy] Hours later, the fire either changes direction or burns itself out, but the caravan is finally able to halt and assess the damage. It is not good. You catch a brief, shamed glance from Hakon.",
+					{
+						"divert": "hakonThatWasNoWa"
+					},
+					{
+						"flagName": "num_peasants-63"
+					},
+					{
+						"flagName": "num_fighters-17"
+					},
+					{
+						"flagName": "num_varl-9"
+					},
+					{
+						"flagName": "morale-20"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheBurning": {
+				"content": [
+					"[convoy] The burning of Ettingbekr is spreading.",
+					{
+						"linkPath": "hakonHakonInstan",
+						"option": "Have the varl lead a charge away from the fire"
+					},
+					{
+						"linkPath": "convoyYouTakePri",
+						"option": "\"Stay calm and follow me!\""
+					},
+					{
+						"linkPath": "convoyTheNewsFro",
+						"option": "Send scouts to find the direction of the fire's movement"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheNewsFro": {
+				"content": [
+					"[convoy] The news from the scouts is not good. The fire is moving in from several sides, and the caravan begins to route itself in the only viable direction. Pushing and shoving turn into a panicked rush, and while the caravan escapes the worst of the forest fire, not everyone makes it through the ordeal.",
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"flagName": "num_peasants-8"
+					},
+					{
+						"flagName": "num_fighters-3"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyWhateverHa": {
+				"content": [
+					"[convoy] Whatever happened in that small village, the consequences have spread rapidly.",
+					{
+						"linkPath": "hakonHakonInstan",
+						"option": "Have the varl lead a charge away from the fire"
+					},
+					{
+						"linkPath": "convoyYouTakePri",
+						"option": "\"Stay calm and follow me!\""
+					},
+					{
+						"linkPath": "convoyTheNewsFro",
+						"option": "Send scouts to find the direction of the fire's movement"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyYouTakePri": {
+				"content": [
+					"[convoy] You take pride in how responsive the caravan is to your leadership. Relying on everyone to tell you if the smoke is getting thicker in certain directions, you manage to keep most everyone moving safely through the woods until the fire dies away.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"flagName": "num_peasants-2"
+					},
+					{
+						"flagName": "num_fighters-2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonHakonInstan": {
+				"content": [
+					"[hakon] Hakon instantly shouts for the varl to run. The panic in the giants' eyes is multiplied in their movements. The scene is like stampeding yox, crazed and directionless.",
+					{
+						"divert": "yrsaNoNoYrsaCrie"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonThatWasNoWa": {
+				"content": [
+					"[hakon] \"That was no way for a varl to die,\" the giant says through gritted teeth. \"Especially Mogr. I saw him, heard him screaming. He...\" Hakon lowers his horns and says no more.",
+					{
+						"flagName": "@happening=10_mogr_dead"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "mogr_state"
+					}
+				]
+			},
+			"joinNextconvoySi": {
+				"content": [
+					"[convoy] Since your defeat in Ettingbekr, you cannot get clear of the smell of smoke. Your frequent glances around reveal nothing but the thick and colorful foliage of the Old Wood, but soon, shouts of \"Fire!\" cannot be denied.",
+					{
+						"divert": "convoyTheBurning"
+					},
+					{
+						"flagName": "10_scorched"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextconvoyTh": {
+				"content": [
+					"[convoy] The smell of smoke has continued to build since you decided not to assist the town of Ettingbekr. The thick and colorful foliage of the Old Wood keeps visibility to a minimum, but the shouts of \"Fire!\" from the rear of the caravan are undeniable.",
+					{
+						"divert": "convoyWhateverHa"
+					},
+					{
+						"flagName": "10_scorched"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "joinNextconvoyTh",
+						"ifConditions": [
+							{
+								"ifCondition": "10_ettingbekr_fire"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "joinNextconvoySi",
+						"ifConditions": [
+							{
+								"ifCondition": "10_ettingbekr_fire2"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"yrsaNoNoYrsaCrie": {
+				"content": [
+					"[yrsa] \"No. No!\" Yrsa cries. \"They're heading straight towards it!\" Before you can recall the varl and the clansmen chasing them, orange flames envelop the surrounding trees. The varl change direction, catching humans underfoot. Smoke overtakes many.",
+					{
+						"divert": "convoyHoursLater"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "bj4n"
+}

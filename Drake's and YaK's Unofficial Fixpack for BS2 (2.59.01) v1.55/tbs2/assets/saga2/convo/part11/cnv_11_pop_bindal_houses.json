@@ -1,0 +1,116 @@
+{
+	"data": {
+		"initial": "bolverkRoughlyHa",
+		"stitches": {
+			"bolverkOddForAHo": {
+				"content": [
+					"[bolverk] \"Odd for a house,\" you say, noticing the size. You bang on the ornate door as a precaution. Nothing. Entering, you find scattered toys and hand-carved runes on wooden blocks. Slumped in a chair and snoring is a middle-aged woman. \"Doubt she'll mind,\" says Oli, walking over and prying a wine skin from her hands.",
+					{
+						"divert": "oliPapaOliDrawsA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkRoughlyHa": {
+				"content": [
+					"[bolverk] Roughly half the Ravens are around to help you wind through the paths between the old, leaning houses. \"To the mines!\" you shout, banging on doors. Families stumble out of their homes, asking no questions of you, and head to the mines.",
+					{
+						"divert": "oliAfterAFewPath"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyhumanTheCh": {
+				"content": [
+					"[convoy_human] The chaos at the mine entrance halts at your arrival. \"Bolverk Bloodaxe with a drunk woman over one shoulder and a dozen children in tow,\" Valka Zefr says. \"And they say the gods are dead.\" The villagers laugh while frantic mothers scoop up their children.",
+					{
+						"divert": "convoyravensTheC"
+					},
+					{
+						"flagName": "num_peasants+13"
+					},
+					{
+						"flagName": "morale+20"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensTheC": {
+				"content": [
+					"[convoy_ravens] The celebrations end when a loud slam on the gates announces the arrival of the dredge. \"Everyone into the mine now!\" shouts Zefr.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliAfterAFewPath": {
+				"content": [
+					"[oli] After a few paths are cleared, Oli whistles to get your attention. \"Big house over here,\" he says, grinning. \"Might be worth checking out.\"",
+					{
+						"linkPath": "bolverkOddForAHo",
+						"option": "Look through the house for any valuables"
+					},
+					{
+						"linkPath": "oliLooksEmptyExc",
+						"option": "\"See anything through the windows?\""
+					},
+					{
+						"linkPath": "oliOliFrownsNotS",
+						"option": "\"Forget it. Keep moving.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliLooksEmptyExc": {
+				"content": [
+					"[oli] \"Looks empty except for a woman who likes her drink as much as me,\" he says. \"She's passed out.\" Recognizing an excuse to enter and look around, you say, \"It's our job to save her.\" Oli laughs and agrees.",
+					{
+						"divert": "bolverkOddForAHo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliOliFrownsNotS": {
+				"content": [
+					"[oli] Oli frowns. \"Not sure what's going on here. Ravens working for free and all.\" You glare at the man and he drops it, moving on to the next house.",
+					{
+						"divert": "zefrYouArriveAtT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oliPapaOliDrawsA": {
+				"content": [
+					"[oli] \"Papa?\" Oli draws an axe as a small girl peeks around a wall. She's wiping her eyes. \"What is this?\" you ask. Oli tucks away his weapon and looks around the wall. \"It's like a barn for children,\" he says. \"They're all back there sleeping. They'd have missed the mines without us!\"",
+					{
+						"divert": "convoyhumanTheCh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrYouArriveAtT": {
+				"content": [
+					"[zefr] You arrive at the mine in time to see a few other Ravens leading the yox-drawn cart into the opening. \"Thank you,\" Zefr says as a loud slam on the gates announces the arrival of the dredge. She turns and shouts, \"Everyone into the mine now!\"",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "623w"
+}

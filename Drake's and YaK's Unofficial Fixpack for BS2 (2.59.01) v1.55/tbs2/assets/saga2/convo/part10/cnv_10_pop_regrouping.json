@@ -1,0 +1,37 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"convoySeveralHum": {
+				"content": [
+					"[convoy] Several humans and a few varl wander out of the Old Wood to rejoin the caravan. Almost all look dazed, moving by rote rather than purpose; not much different than you and the scant few left of the caravan. Iver pulls you aside.",
+					{
+						"flagName": "num_peasants*1.2"
+					},
+					{
+						"flagName": "num_fighters*1.15"
+					},
+					{
+						"flagName": "num_varl*1.19"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "convoySeveralHum",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "w6r6"
+}

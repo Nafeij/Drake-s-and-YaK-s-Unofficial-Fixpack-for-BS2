@@ -1,0 +1,89 @@
+{
+	"data": {
+		"initial": "heroByTheTimeYou",
+		"stitches": {
+			"hakonWhatYouCant": {
+				"content": [
+					"[hakon] \"What? You can't shove this barricade forward yourself, human?\" Hakon smiles, excited by the war, the very thing at which he excels.",
+					{
+						"flagName": "14_arberrang_battle_choice=3"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroByTheTimeYou": {
+				"content": [
+					"[$hero] By the time your caravan is inside Arberrang's outer wall, the gate is mostly compromised. Rugga's forces are on your heels, and they brought bears.",
+					{
+						"divert": "kingCutThemOffOr"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"heroTheRoarOfBat": {
+				"content": [
+					"[$hero] The roar of battle swells to deafening levels. You focus on the drum beat that is your heart, ready your weapon, and push forward to deliver death.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingCutThemOffOr": {
+				"content": [
+					"[king] \"Cut them off or they'll overrun us!\" shouts King Meinolf, before wincing and grabbing his side where Rugga stabbed him.",
+					{
+						"linkPath": "heroTheRoarOfBat",
+						"option": "\"You heard him! Charge!\""
+					},
+					{
+						"linkPath": "oddleifOddleifAn",
+						"option": "\"I want archers behind those barricades!\""
+					},
+					{
+						"linkPath": "scathachWithASha",
+						"option": "\"Horseborn! Run in and take out that bear master!\""
+					},
+					{
+						"linkPath": "hakonWhatYouCant",
+						"ifConditions": [
+							{
+								"ifCondition": "ludin_state"
+							}
+						],
+						"option": "\"Hakon, can you stop them at the gate?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifOddleifAn": {
+				"content": [
+					"[oddleif] Oddleif and your other archers find protected positions and more arrows are laid at their feet. She nods to you and the battle begins.",
+					{
+						"flagName": "14_arberrang_battle_choice=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"scathachWithASha": {
+				"content": [
+					"[scathach] With a shake of his mane, Scattach rushes forward. The other horseborn follow his lead.",
+					{
+						"flagName": "14_arberrang_battle_choice=2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "f3vz"
+}

@@ -1,0 +1,429 @@
+{
+	"data": {
+		"initial": "skipMarkserpentM",
+		"stitches": {
+			"aMemoryEntersYou": {
+				"content": [
+					"/=A memory enters your mind: You've spoken with this Serpent once before. =/",
+					{
+						"linkPath": "serpentFalseIAmC",
+						"option": "\"You should not be here, so nothing is yours.\""
+					},
+					{
+						"linkPath": "serpentEachBreat",
+						"option": "\"I haven't used any power.\""
+					},
+					{
+						"linkPath": "serpentYouRepell",
+						"option": "\"So you swallow me?\""
+					},
+					{
+						"linkPath": "serpentYouStoleI",
+						"option": "\"And how can I give it back?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"anotherShudder": {
+				"content": [
+					"/=Another shudder.=/",
+					{
+						"divert": "junoIFeelItTooWe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"everythingShakes": {
+				"content": [
+					"/=Everything shakes violently.=/",
+					{
+						"divert": "serpentHaveIBeco"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAMistakeWasM": {
+				"content": [
+					"[juno] \"A mistake was made, but this is not your time.\"",
+					{
+						"divert": "serpentThisIsMyO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAndAllowYouT": {
+				"content": [
+					"[juno] \"And allow you to destroy all that lives? To what end?\"",
+					{
+						"divert": "serpentToTheEndJ"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAndIfIKeptYo": {
+				"content": [
+					"[juno] \"And if I kept you from it long enough, would you starve?\"",
+					{
+						"divert": "serpentBringingG"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAndSoMustYou": {
+				"content": [
+					"[juno] \"And so must you. The others with me will find a way to stop you.\"",
+					{
+						"divert": "theSpaceShudders"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIFeelItTooWe": {
+				"content": [
+					"[juno] \"I feel it too. We are /=both=/ dying!\"",
+					{
+						"divert": "serpentNoSatisfa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoThenTheOutco": {
+				"content": [
+					"[juno] \"Then the outcome is the same. There must be another way.\"",
+					{
+						"divert": "everythingShakes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoVnekDiSmJoul": {
+				"content": [
+					"[juno] \"Vănek di sím joķull...\"",
+					{
+						"divert": "pageBreakTheSerp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWouldYouBeAb": {
+				"content": [
+					"[juno] \"Would you be able to stop what is coming?\"",
+					{
+						"divert": "serpentYouSpeakO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"JunoYouBlinkAndT": {
+				"content": [
+					"/=You blink, and the Serpent catches your hesitation.=/",
+					{
+						"divert": "serpentJunoSoThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYouveBeenHun": {
+				"content": [
+					"[juno] \"You've been hunting me.\"",
+					{
+						"divert": "serpentSuchArrog"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakATerrib": {
+				"content": [
+					" /=A terrible pain rips through you both.=/",
+					{
+						"divert": "theTwoOfYouShrie"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakTheSerp": {
+				"content": [
+					"/=The Serpent hisses. There's a flash of light.=/",
+					{
+						"divert": "pageBreakATerrib"
+					},
+					{
+						"flagName": "@happening=flashlight"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentBesidesIf": {
+				"content": [
+					"[serpent] \"Besides, if you truly desire the same as me, release your grip on that which currently sustains you.\"",
+					{
+						"divert": "junoAndAllowYouT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentBringingG": {
+				"content": [
+					"[serpent] \"Bringing gods back to life would be easier. You must have a weakness.\"",
+					{
+						"divert": "junoAndSoMustYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentEachBreat": {
+				"content": [
+					"[serpent] \"Each breath of yours is mine. Your every step is fueled by power created for me.\"",
+					{
+						"divert": "everythingShakes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentFalseIAmC": {
+				"content": [
+					"[serpent] \"False. I am created by a god to become a god. It is /=you =/who should no longer be here.\"",
+					{
+						"divert": "junoAMistakeWasM"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentHaveIBeco": {
+				"content": [
+					"[serpent] \"Have I become so pathetic I cannot even consume /=you=/?\"",
+					{
+						"linkPath": "serpentIKnowOfNo",
+						"option": "\"Why must you consume me?\""
+					},
+					{
+						"linkPath": "serpentYourSchem",
+						"option": "\"Perhaps we want the same thing.\""
+					},
+					{
+						"linkPath": "serpentWhenWhatI",
+						"option": "\"Release me!\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentIKnowOfNo": {
+				"content": [
+					"[serpent] \"I know of no other way. Everything I seek is just behind your thin shell of flesh, yet something keeps me from it.\"",
+					{
+						"divert": "junoAndIfIKeptYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentJunoSoThe": {
+				"content": [
+					"[serpent juno] \"So, there is one you cannot control. He would be my salvation, but...\"",
+					{
+						"divert": "anotherShudder"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentNoSatisfa": {
+				"content": [
+					"[serpent] \"No satisfaction in mutual destruction. Impatience has undone me. Frustrating to learn a solution too late.\"",
+					{
+						"divert": "theSpaceShakesHo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentSuchArrog": {
+				"content": [
+					"[serpent] \"Such arrogance. I consume what parts of this world I can, but your use of a power that is rightfully mine is no longer tolerable.\"",
+					{
+						"divert": "aMemoryEntersYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentTheOthers": {
+				"content": [
+					"[serpent] \"The others? Could they be your end as well? But you can control them all.\"",
+					{
+						"divert": "JunoYouBlinkAndT"
+					},
+					{
+						"flagName": "@happening=bolverk_ghost"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentThisIsMyO": {
+				"content": [
+					"[serpent] \"This is my only time. Because of you.\"",
+					{
+						"divert": "everythingShakes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentToTheEndJ": {
+				"content": [
+					"[serpent] \"To /=the =/end. Just as this world started, so must it cease. All things have an end.\"",
+					{
+						"divert": "junoAndSoMustYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentWhenWhatI": {
+				"content": [
+					"[serpent] \"When what I need is now within me? I only need to dissolve your grasp to wrest control. You must weaken.\"",
+					{
+						"divert": "junoAndSoMustYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentYouRepell": {
+				"content": [
+					"[serpent] \"You repelled my attacks but managed to die in your own ways. Yet you maintain a grip on my power. Absorbing you as a meal makes sense.\"",
+					{
+						"divert": "everythingShakes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentYourSchem": {
+				"content": [
+					"[serpent] \"Your schemes are insignificant. Would you humor a gnat's requests?\"",
+					{
+						"divert": "serpentBesidesIf"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentYouSpeakO": {
+				"content": [
+					"[serpent] \"You speak of the dark tide. Yes, I would stop it for I will consume it and everything.\"",
+					{
+						"divert": "junoThenTheOutco"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"serpentYouStoleI": {
+				"content": [
+					"[serpent] \"You stole it. You must know how to unsteal it. But would you willingly return what you've taken? Doubtful.\"",
+					{
+						"divert": "junoWouldYouBeAb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkserpentM": {
+				"content": [
+					"{skip} mark1=serpent mark2=juno",
+					{
+						"divert": "junoYouveBeenHun"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theSpaceShakesHo": {
+				"content": [
+					"/=The space shakes horribly one last time.=/",
+					{
+						"divert": "junoVnekDiSmJoul"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theSpaceShudders": {
+				"content": [
+					"/=The space shudders again.=/",
+					{
+						"divert": "serpentTheOthers"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theTwoOfYouShrie": {
+				"content": [
+					"/=The two of you shriek simultaneously, and your vision dims.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "r9pv"
+}

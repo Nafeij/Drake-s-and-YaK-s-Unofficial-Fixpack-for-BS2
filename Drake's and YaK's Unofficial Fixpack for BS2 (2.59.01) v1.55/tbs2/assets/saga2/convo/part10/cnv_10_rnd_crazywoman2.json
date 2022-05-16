@@ -1,0 +1,124 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"convoyISupposeIS": {
+				"content": [
+					"[convoy] \"I suppose I should thank you for saving me!\" a woman's voice echoes from somewhere around you. \"But you left me to rot, and that won't keep the white leaves from piling up at your door!\"",
+					{
+						"divert": "convoyThereSomeo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyThereSomeo": {
+				"content": [
+					"[convoy] \"There!\" someone shouts. You see a woman throw a burning flask in the air, which arcs before breaking on the ground between a yox and its cart. Singed animal fur fills the air, and the yox bolts, scattering and ruining supplies. When you look back, the woman is gone, but you're sure it was the /=witch=/ you cut free from the tree.",
+					{
+						"flagName": "supplies-25"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyYouSavedMe": {
+				"content": [
+					"[convoy] \"You saved me!\" a woman shouts from somewhere among the clansmen. \"You saved me when the others would've let me die!\" You recognize the woman as the /=witch=/ you cut free from the tree. \"White leaves will blow once more across the plains and punish those who stood in our way!\"",
+					{
+						"divert": "heroYouStepTowar"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroSuchAPromisi": {
+				"content": [
+					"[$hero] \"Such a promising young woman,\" she says, making motions like stroking your hair from where she stands. \"Maybe you'll join us someday. For now, take the food my people have hidden in the next copse of trees.\" Without another word, she walks off into the countryside, alone.",
+					{
+						"flagName": "supplies+75"
+					},
+					{
+						"flagName": "num_peasants-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhatAHandsom": {
+				"content": [
+					"[$hero] \"What a handsome man,\" she says, reaching crooked fingers toward your face, but stopping before she touches you. \"My people have hidden food in the next copse of trees. Take it in good health.\" Without another word, she walks off into the countryside, alone.",
+					{
+						"flagName": "supplies+75"
+					},
+					{
+						"flagName": "num_peasants-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouStepTowar": {
+				"content": [
+					"[$hero] You step toward her, calming the gathering crowd. \"I'm not sure what you're talking about, but no one is standing in your way if you wish to leave.\" When the woman sees you, she smiles.",
+					{
+						"linkPath": "heroWhatAHandsom",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_rook"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "heroSuchAPromisi",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_alette"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "10_crazy_woman2=1"
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "convoyYouSavedMe",
+						"ifConditions": [
+							{
+								"ifCondition": "10_crazy_woman2=1"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "convoyISupposeIS",
+						"ifConditions": [
+							{
+								"ifCondition": "10_crazy_woman2=2"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "66j2"
+}

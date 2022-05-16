@@ -1,0 +1,1043 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"blankStitch": {
+				"content": [
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonThatsEnough": {
+				"content": [
+					"[hakon] \"That's enough! Both of you are bickering like children instead of leaders!\"",
+					{
+						"divert": "kingYoureAlready"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hakonTheSundrWas": {
+				"content": [
+					"[hakon] \"The Sundr was real. The varl lives lost at Grofheim and Einartoft can vouch for him.\"",
+					{
+						"divert": "heroAndMyVictori"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "ludin_state"
+					}
+				]
+			},
+			"heGlaresAtHakon": {
+				"content": [
+					"/=He glares at Hakon.=/",
+					{
+						"divert": "kingThereWasATim"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroAllPartiesLo": {
+				"content": [
+					"/=All parties look angry and tense...and then they look at you.=/",
+					{
+						"linkPath": "kingGoodImGranti",
+						"option": "\"My banner, my people, are my only concern.\""
+					},
+					{
+						"linkPath": "ruggaYouSeeMeino",
+						"option": "\"Rugga's right: too many will die out here for so few inside."
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAndMyVictori": {
+				"content": [
+					"[$hero] \"And my victories have continued with every clansman's life I've saved on our way here.\"",
+					{
+						"divert": "youLookAtHakonFo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "ludin_state"
+					}
+				]
+			},
+			"heroAndWhenYouTw": {
+				"content": [
+					"[$hero] \"And when you two wear each other down, who's left if the dredge attack?\"",
+					{
+						"divert": "ruggaMeinolfDoes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroBellowerIsRe": {
+				"content": [
+					"[$hero] \"Bellower /=is =/real and my victories have continued with every clansman's life I've saved on our way here.\"",
+					{
+						"divert": "kingWellSaidTheR"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "ludin_state"
+					}
+				]
+			},
+			"heroButHakonAndT": {
+				"content": [
+					"[$hero] \"But Hakon and the other varl--\"",
+					{
+						"divert": "kingIDontCareDid"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIDoubtEither": {
+				"content": [
+					"[$hero] \"I doubt either of you will be in charge of anything when that Darkness washes over us!\"",
+					{
+						"divert": "kingIveGotTheVal"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroImTheClanLea": {
+				"content": [
+					"[$hero] \"I'm the clan leader of Skogr and I've fought to save every one of my clansmen.\"",
+					{
+						"divert": "heroThatIsWhyThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIRealizeYour": {
+				"content": [
+					"[$hero] \"I realize you're upset about Lud--\"",
+					{
+						"divert": "kingYouHaveNoIde"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroNoButILostMy": {
+				"content": [
+					"[$hero] \"No, but I lost my father at the Battle of Boersgard. I'm sorry about Ludin.\"",
+					{
+						"divert": "KingKingMeinolfS"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"heroNoButIveLost": {
+				"content": [
+					"[$hero] \"No, but I've lost a daughter. Recently. I'm sorry about Ludin.\"",
+					{
+						"divert": "heroNoButILostMy"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"heroNoSomeDidntL": {
+				"content": [
+					"[$hero] \"No, some didn't like it. But some people didn't like my dad either.\"",
+					{
+						"divert": "kingMeinolfWatch"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThatIsWhyThe": {
+				"content": [
+					"[$hero] \"/=That =/is why they follow me.\"",
+					{
+						"divert": "theKingStaresAtY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheDifferenc": {
+				"content": [
+					"[$hero] \"The difference between me showing you respect or not. Please don't try to make me feel small by calling me /=girl =/or /=child.\"=/",
+					{
+						"divert": "kingButYouAreA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThenAllowThi": {
+				"content": [
+					"[$hero] \"Then allow this good man to bring his clan inside your walls.\"",
+					{
+						"divert": "kingThereAreOthe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAgainHowHave": {
+				"content": [
+					"[king] \"Again, how have /=you=/ come to speak for them? Did you fool them like the people of that rotten town you governed?\"",
+					{
+						"divert": "ruggaTheOnlyFool"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAllOfThem": {
+				"content": [
+					"[king] \"All of them?\"",
+					{
+						"divert": "heroNoSomeDidntL"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAndEvenIfThe": {
+				"content": [
+					"[king] \"And even if they fail, I'll still be able to watch this bastard fall to that Darkness from my walls.\"",
+					{
+						"divert": "ruggaTheresTheTr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAndWhatDiffe": {
+				"content": [
+					"[king] \"And what difference does that make?\"",
+					{
+						"divert": "heroTheDifferenc"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAndWhyShould": {
+				"content": [
+					"[king] \"And why shouldn't I have you faen killed right now?\"",
+					{
+						"divert": "heroIRealizeYour"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingAPlaceInside": {
+				"content": [
+					"[king] \"A place inside the walls this faen man and those varl will never be allowed again!\"",
+					{
+						"divert": "kingAPlaceInside1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "ludin_state"
+					}
+				]
+			},
+			"kingAPlaceInside1": {
+				"content": [
+					"[king] \"A place inside the walls alongside the varl. A place this faen man will never be allowed again!\"",
+					{
+						"divert": "hakonThatsEnough"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "ludin_state"
+					}
+				]
+			},
+			"kingApologiesWon": {
+				"content": [
+					"[king] \"Apologies won't bring him back. I loved that boy. Damn it!\"",
+					{
+						"divert": "heGlaresAtHakon"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingButEvenIfBel": {
+				"content": [
+					"[king] \"But even if Bellower was real and you were the one to defeat him, what does one victory actually amount to?\"",
+					{
+						"divert": "hakonTheSundrWas"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingButMySonsSaf": {
+				"content": [
+					"[king] \"But my son's safety lay with these varl and now...now he's gone.\"",
+					{
+						"divert": "youTryToMakeEyec"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingButYouAreA": {
+				"content": [
+					"[king] \"But you are a--\"",
+					{
+						"divert": "heroImTheClanLea"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingGoodImGranti": {
+				"content": [
+					"[king] \"Good. I'm granting you and your people - even those horseborn - entrance into my walls, but move quickly.\"",
+					{
+						"divert": "ruggaYouStillDon"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingHaHumilityAn": {
+				"content": [
+					"[king] \"Ha! Humility and confidence all in the same breath.\"",
+					{
+						"divert": "kingYouRemindMeO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingHeDoesntHave": {
+				"content": [
+					"[king] \"He doesn't have to! I'll find a place for the people under your banner, Rook.\"",
+					{
+						"divert": "kingSheDoesntHav"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"kingHeroTellMeGi": {
+				"content": [
+					"[king $hero] \"Tell me, girl, why are you leading an entire caravan of humans and horseborn? Why didn't one of the men take point?\"",
+					{
+						"linkPath": "kingAllOfThem",
+						"option": "\"The clans trusted my father and learned to trust me.\""
+					},
+					{
+						"linkPath": "kingAndWhatDiffe",
+						"option": "\"My name is Alette, King Meinolf."
+					},
+					{
+						"linkPath": "kingSoIHeardThou",
+						"option": "\"Because I'm a Sundr-Slayer.\""
+					},
+					{
+						"linkPath": "KingTheKingFixes",
+						"option": "\"Tell me why I shouldn't join these clans in fighting you.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingICanSeeTheRe": {
+				"content": [
+					"[king] \"I can see the resolve in your eyes. You've seen things beyond your years.\"",
+					{
+						"divert": "kingUnfortunatel"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingIdHopedYouDi": {
+				"content": [
+					"[king] \"I'd hoped you died in Boersgard. How is it you've come to speak for all of these clans?\"",
+					{
+						"divert": "ruggaThePeopleYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingIDontCareDid": {
+				"content": [
+					"[king] \"I don't care! Did Jorundr's kendr die while traveling with human protection? No!\"",
+					{
+						"divert": "kingButMySonsSaf"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingIEarnedMyThr": {
+				"content": [
+					"[king] \"I earned my throne by strength, Rugga. I can demonstrate on you how I'd handle dredge.\"",
+					{
+						"divert": "ruggaAndWhatFail"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingIfIOpenedThe": {
+				"content": [
+					"[king] \"If I opened the gates to everyone out here, the capital would tear itself apart from the inside.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingISeeThatHors": {
+				"content": [
+					"[king] \"I see that. Horseborn included. But what good is that when you've led them here?\"",
+					{
+						"divert": "kingNoneOfYouSee"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingIveGotTheVal": {
+				"content": [
+					"[king] \"I've got the Valka and menders seeing to that inside. They'll come up with something.\"",
+					{
+						"divert": "kingAndEvenIfThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"KingKingMeinolfS": {
+				"content": [
+					"/=King Meinolf slumps a bit.=/",
+					{
+						"divert": "kingApologiesWon"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingMeinolfWatch": {
+				"content": [
+					"/=King Meinolf watches you for a moment before chuckling.=/",
+					{
+						"divert": "kingThatsAValuab"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingNoneOfYouSee": {
+				"content": [
+					"[king] \"None of you seem to understand that Arberrang can only hold so many, can only feed so many.\"",
+					{
+						"divert": "kingIfIOpenedThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingSheDoesntHav": {
+				"content": [
+					"[king] \"She doesn't have to! I'll find a place for the people under your banner, Alette.\"",
+					{
+						"divert": "kingAPlaceInside"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"kingSoIHeardThou": {
+				"content": [
+					"[king] \"So I heard. Though some might say it was your father who did all the work there too.\"",
+					{
+						"divert": "youSayNothing1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingTellMeGirlWh": {
+				"content": [
+					"[king] \"Tell me, girl, why are you leading an entire caravan of humans and horseborn? Why didn't one of the men take point?\"",
+					{
+						"divert": "kingHeroTellMeGi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingThatsAValuab": {
+				"content": [
+					"[king] \"That's a valuable lesson learned - the sooner you realize you can't please everyone, the sooner you can get to doing something worthwhile.\"",
+					{
+						"divert": "kingUnfortunatel"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingThatsRightIH": {
+				"content": [
+					"[king] \"That's right. I /=have =/heard about this, but Ludin made it seem like your daughter actually did the work there.\"",
+					{
+						"divert": "youSayNothing"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"KingTheKingFixes": {
+				"content": [
+					"/=The king fixes you with a stare and you realize you are holding your breath.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingThereAreOthe": {
+				"content": [
+					"[king] \"There are other good men among these clans. It doesn't change how many Arberrang can hold or feed.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingTheresNothin": {
+				"content": [
+					"[king] \"There's nothing good in any of this, but I'll take a small amount of comfort in your death.\"",
+					{
+						"divert": "ruggaYoureAPetty"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingThereWasATim": {
+				"content": [
+					"[king] \"There was a time I'd have gladly invited varl into my great hall, day or night, but not now.\"",
+					{
+						"divert": "heroButHakonAndT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingUnfortunatel": {
+				"content": [
+					"[king] \"Unfortunately, it doesn't change how many Arberrang can support.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingWellSaidTheR": {
+				"content": [
+					"[king] \"Well said. The results of daily tasks are more than any outcome on the battlefield.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingWithThatMany": {
+				"content": [
+					"[king] \"With that many, you might get through a wall or two, but you'll die at the foot of the Black Wall.\"",
+					{
+						"divert": "ruggaListenToThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingYouHaveNoIde": {
+				"content": [
+					"[king] \"You have no idea what I'm feeling. Have you ever lost a son?\"",
+					{
+						"divert": "heroNoButIveLost"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingYoureAlready": {
+				"content": [
+					"[king] \"You're already dead to me, giant. You and the paltry few of your kind that are left.\"",
+					{
+						"divert": "ruggaAndYouGiant"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "ludin_state"
+					}
+				]
+			},
+			"kingYouRemindMeO": {
+				"content": [
+					"[king] \"You remind me of the village chieftain from my childhood - a good man.\"",
+					{
+						"divert": "heroThenAllowThi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"kingYouWillNever": {
+				"content": [
+					"[king] \"/=You =/will never enter my gates again.\"",
+					{
+						"divert": "kingIdHopedYouDi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakAllPart": {
+				"content": [
+					"/=All parties look angry and tense...and then they look at you.=/",
+					{
+						"divert": "HeroAllPartiesLo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakiHakonG": {
+				"content": [
+					"/=Hakon growls and flexes his grip on his axe.=/",
+					{
+						"divert": "pageBreakAllPart"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAletteLookA": {
+				"content": [
+					"[rugga] \"Alette, look at your people out there - /=our =/people.\"",
+					{
+						"divert": "ruggaTheyNeedFoo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"ruggaAndWhatFail": {
+				"content": [
+					"[rugga] \"And what? Fail to kill me again?\"",
+					{
+						"divert": "ruggaRookLookAtY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAndYouGiant": {
+				"content": [
+					"[rugga] \"And you, giant. Joining this king after all we did to keep your people alive. Traitor!\"",
+					{
+						"divert": "pageBreakiHakonG"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "ludin_state"
+					}
+				]
+			},
+			"ruggaDidTheSundr": {
+				"content": [
+					"[rugga] \"Did the Sundr-Slayer convince you to open your gates to your people?\"",
+					{
+						"divert": "kingYouWillNever"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDontMakeUsB": {
+				"content": [
+					"[rugga] \"Don't make us breach your walls. We'll just have to repair them once we're inside.\"",
+					{
+						"divert": "ruggaHeroDontMak"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaHeroDontMak": {
+				"content": [
+					"[rugga $hero] \"Don't make us breach your walls. We'll just have to repair them once we're inside.\"",
+					{
+						"linkPath": "heroAndWhenYouTw",
+						"option": "Remind them of the rumors of dredge"
+					},
+					{
+						"linkPath": "heroIDoubtEither",
+						"option": "Point out the approaching Darkness"
+					},
+					{
+						"linkPath": "kingWithThatMany",
+						"option": "Stay quiet"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIThoughtITa": {
+				"content": [
+					"[rugga] \"I thought I taught you better, Alette. This isn't how you play the game.\"",
+					{
+						"flagName": "14_not_with_rugga"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"ruggaListenToThe": {
+				"content": [
+					"[rugga] \"Listen to the pride in this king's voice when he speaks of killing thousands of his people.\"",
+					{
+						"divert": "kingTheresNothin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaMeinolfDoes": {
+				"content": [
+					"[rugga] \"Meinolf doesn't know the first thing about fighting dredge. He's been insulated too long.\"",
+					{
+						"divert": "kingIEarnedMyThr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaRookLookAtY": {
+				"content": [
+					"[rugga] \"Rook, look at your people out there - /=our=/ people.\"",
+					{
+						"divert": "ruggaAletteLookA"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"ruggaTheOnlyFool": {
+				"content": [
+					"[rugga] \"The only fool here is the outnumbered king believing he still has a say in what happens now.\"",
+					{
+						"divert": "ruggaDontMakeUsB"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThePeopleYo": {
+				"content": [
+					"[rugga] \"The people you've turned your back on? Seems they needed a leader they could trust.\"",
+					{
+						"divert": "kingAgainHowHave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheresTheTr": {
+				"content": [
+					"[rugga] \"There's the true heart of the Meinolf I know.\"",
+					{
+						"divert": "ruggaRookLookAtY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheyNeedFoo": {
+				"content": [
+					"[rugga] \"They need food and clean water - not that poison in the river. They need protection.\"",
+					{
+						"divert": "ruggaYouCannotAl"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYouCannotAl": {
+				"content": [
+					"[rugga] \"You cannot allow this /=king =/to keep us from safety after all this way!\"",
+					{
+						"divert": "kingHeDoesntHave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYoureAPetty": {
+				"content": [
+					"[rugga] \"You're a petty king, and no longer deserve the title.\"",
+					{
+						"divert": "ruggaRookLookAtY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYouSeeMeino": {
+				"content": [
+					"[rugga] \"You see, Meinolf? He knows how the game works. Now...\"",
+					{
+						"divert": "ruggaYouSeeMeino1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"ruggaYouSeeMeino1": {
+				"content": [
+					"[rugga] \"You see, Meinolf? She knows how the game works. Now...\"",
+					{
+						"divert": "theFormerGoverno"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"ruggaYouStillDon": {
+				"content": [
+					"[rugga] \"You still don't know how to play the game, Rook.\"",
+					{
+						"divert": "ruggaIThoughtITa"
+					},
+					{
+						"flagName": "14_not_with_rugga"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=hakon mark3=rugga mark4=king",
+					{
+						"linkPath": "ruggaDidTheSundr",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theFormerGoverno": {
+				"content": [
+					"/=The former governor's eyes look full of mischief.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theKingStaresAtY": {
+				"content": [
+					"/=The king stares at you and finally nods.=/",
+					{
+						"divert": "kingICanSeeTheRe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youLookAtHakonFo": {
+				"content": [
+					"/=You look at Hakon for support, but he remains quiet.=/",
+					{
+						"divert": "heroBellowerIsRe"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "ludin_state"
+					}
+				]
+			},
+			"youSayNothing": {
+				"content": [
+					"/=You say nothing.=/",
+					{
+						"divert": "kingButEvenIfBel"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youSayNothing1": {
+				"content": [
+					"/=You say nothing.=/",
+					{
+						"divert": "kingButEvenIfBel"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youTryToMakeEyec": {
+				"content": [
+					"/=You try to make eye-contact with Hakon, but he's looking at the ground in shame.=/",
+					{
+						"linkPath": "blankStitch",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_rook"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "kingTellMeGirlWh",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_alette"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "nghv"
+}

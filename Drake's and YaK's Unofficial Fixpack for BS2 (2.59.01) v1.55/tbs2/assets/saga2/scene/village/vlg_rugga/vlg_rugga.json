@@ -1,0 +1,680 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchor": {
+    "x": 1307,
+    "y": 0
+  },
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cameraStart": {
+    "x": 284,
+    "y": 0
+  },
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "type": "MARKET_RESET_ITEMS"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_ch14_intro.json.z"
+        },
+        {
+          "scene": "saga2/scene/stage/stg_village_snow/stg_village_snow.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part14/cnv_14_convo_hakon_intro.json.z"
+        }
+      ],
+      "id": "14_intro"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part14/cnv_14_pop_rejoined.json.z"
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_wilderness_forest/stg_wilderness_forest.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part14/cnv_14_convo_rugga_arrives.json.z"
+        },
+        {
+          "id": "acv_alliance_rugga",
+          "prereq": "!14_battle_rugga",
+          "type": "ACHIEVEMENT"
+        },
+        {
+          "prereq": "!14_battle_rugga",
+          "scene": "saga2/scene/world/wld_arberrang/wld_arberrang.json.z",
+          "type": "TRAVEL"
+        },
+        {
+          "happening": "14_battle_rugga",
+          "prereq": "14_battle_rugga",
+          "type": "HAPPENING"
+        },
+        {
+          "expression": "num_fighters+(12_caravan_half_fighters*0.8)",
+          "prereq": "!14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_fighters"
+        },
+        {
+          "expression": "num_fighters+(12_caravan_half_fighters*0.5)",
+          "prereq": "14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_fighters"
+        },
+        {
+          "expression": "num_peasants+(12_caravan_half_peasants*0.8)",
+          "prereq": "!14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_peasants"
+        },
+        {
+          "expression": "num_peasants+(12_caravan_half_peasants*0.5)",
+          "prereq": "14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_peasants"
+        },
+        {
+          "expression": "num_varl+(12_caravan_half_varl*0.8)",
+          "prereq": "!14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_varl"
+        },
+        {
+          "expression": "num_varl+(12_caravan_half_varl*0.5)",
+          "prereq": "14_battle_rugga",
+          "type": "VARIABLE_SET",
+          "varname": "num_varl"
+        }
+      ],
+      "id": "14_click_leave",
+      "prereq": "14_start",
+      "triggers": [
+        {
+          "click": "click_leave",
+          "type": "CLICK"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 4564,
+      "x": -1365.5,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/7_sky_0x0.png",
+            "localrect": {
+              "height": 550,
+              "width": 1380,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_0x0_1",
+            "offset": {
+              "x": -34,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/7_sky_2048x0.png",
+            "localrect": {
+              "height": 550,
+              "width": 1420,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_2048x0_1",
+            "offset": {
+              "x": 1346,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/5_back_0x0.png",
+            "localrect": {
+              "height": 434,
+              "width": 1865,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_0x0_1",
+            "offset": {
+              "x": -205,
+              "y": 144
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/5_back_2048x0.png",
+            "localrect": {
+              "height": 578,
+              "width": 1730,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_2048x0_1",
+            "offset": {
+              "x": 1660,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/4_back_0x0.png",
+            "localrect": {
+              "height": 818,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_0x0_1",
+            "offset": {
+              "x": 312,
+              "y": 274
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/4_back_2048x0.png",
+            "localrect": {
+              "height": 818,
+              "width": 91,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_2048x0_1",
+            "offset": {
+              "x": 2164,
+              "y": 56
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/4_back_0x0.png",
+            "localrect": {
+              "height": 818,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_1_0x0",
+            "offset": {
+              "x": -9,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/4_back_2048x0.png",
+            "localrect": {
+              "height": 818,
+              "width": 91,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_1_2048x0",
+            "offset": {
+              "x": 2039,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/4_back2.png",
+            "localrect": {
+              "height": 818,
+              "width": 1980,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back2_1",
+            "offset": {
+              "x": 2130,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/map_click.png",
+            "clickable": true,
+            "hover": "saga2/scene/village/vlg_rugga/map_hover.png",
+            "localrect": {
+              "height": 215,
+              "width": 282,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_map",
+            "offset": {
+              "x": 1812,
+              "y": 229
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/market_click.png",
+            "clickable": true,
+            "hover": "saga2/scene/village/vlg_rugga/market_hover.png",
+            "localrect": {
+              "height": 173,
+              "width": 275,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_market",
+            "offset": {
+              "x": 2247,
+              "y": 176
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/heroes_click.png",
+            "clickable": true,
+            "hover": "saga2/scene/village/vlg_rugga/heroes_hover.png",
+            "localrect": {
+              "height": 353,
+              "width": 626,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_heroes",
+            "offset": {
+              "x": 2436,
+              "y": 223
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_left2",
+            "offset": {
+              "x": 1621.8,
+              "y": 512
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_left3",
+            "offset": {
+              "x": 1841.5,
+              "y": 377
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_left4",
+            "offset": {
+              "x": 2512.75,
+              "y": 469
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_right5",
+            "offset": {
+              "x": 2617.5,
+              "y": 233
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_left6",
+            "offset": {
+              "x": 3065.5,
+              "y": 162
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_right7",
+            "offset": {
+              "x": 1544.5,
+              "y": 682
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "4_back_clicks",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/3_walk_back_0x0.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_1_0x0",
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/3_walk_back_2048x0.png",
+            "localrect": {
+              "height": 1162,
+              "width": 400,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_1_2048x0",
+            "offset": {
+              "x": 2048,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/3_walk_back2_0x0.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back2_1_0x0",
+            "offset": {
+              "x": 2448,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/3_walk_back2_2048x0.png",
+            "localrect": {
+              "height": 1162,
+              "width": 75,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back2_1_2048x0",
+            "offset": {
+              "x": 4496,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/rest_click.png",
+            "clickable": true,
+            "hover": "saga2/scene/village/vlg_rugga/rest_hover.png",
+            "localrect": {
+              "height": 278,
+              "width": 682,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_rest",
+            "offset": {
+              "x": 2330,
+              "y": 514
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "bmp": "",
+            "nameId": "talk_left1",
+            "offset": {
+              "x": 2502.35,
+              "y": 606.75
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/click_leave.png",
+            "clickable": true,
+            "hover": "saga2/scene/village/vlg_rugga/hover_leave.png",
+            "localrect": {
+              "height": 266,
+              "width": 453,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_leave",
+            "offset": {
+              "x": 2948,
+              "y": 789
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/scene/lettering_leave.png",
+            "localrect": {
+              "height": 117,
+              "width": 177,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_leave",
+            "offset": {
+              "x": 3031,
+              "y": 789
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "3_walk_clicks",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/2_close_left.png",
+            "localrect": {
+              "height": 581,
+              "width": 1045,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_left_1",
+            "offset": {
+              "x": 77,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/2_close_right.png",
+            "localrect": {
+              "height": 1162,
+              "width": 893,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_right_1",
+            "offset": {
+              "x": 3961,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/2_close_left2.png",
+            "localrect": {
+              "height": 232,
+              "width": 1011,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_left2_1",
+            "offset": {
+              "x": 2165,
+              "y": 699
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/1_close_left.png",
+            "localrect": {
+              "height": 581,
+              "width": 1533,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_left_1",
+            "offset": {
+              "x": -293,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/village/vlg_rugga/1_close_right.png",
+            "localrect": {
+              "height": 581,
+              "width": 1885,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_right_1",
+            "offset": {
+              "x": 2516,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.6
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

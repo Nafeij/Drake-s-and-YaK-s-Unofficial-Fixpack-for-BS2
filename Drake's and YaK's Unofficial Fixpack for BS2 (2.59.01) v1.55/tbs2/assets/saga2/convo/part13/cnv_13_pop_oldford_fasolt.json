@@ -1,0 +1,158 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"bolverkAStreamOf": {
+				"content": [
+					"[bolverk] A stream of foul words in deep tones catches your attention. Two varl, one in horrible shape, storm across the bridge.",
+					{
+						"divert": "bolverkAStreamOf1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_einartoft"
+					},
+					{
+						"notIfCondition": "13_krumr_fasolt"
+					}
+				]
+			},
+			"bolverkAStreamOf1": {
+				"content": [
+					"[bolverk] A stream of foul words in deep tones catches your attention. A handful of varl are crossing the bridge. One of them, a shieldbanger, is in horrible condition.",
+					{
+						"divert": "bolverkOnceBackI"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_einartoft"
+					},
+					{
+						"ifCondition": "13_krumr_fasolt"
+					}
+				]
+			},
+			"bolverkOnceBackI": {
+				"content": [
+					"[bolverk] Once back in the village, the deep tones of the scarred varl utter curses you've never heard before. Then he sees you.",
+					{
+						"divert": "fasoltYouTheFaen"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_battle_einartoft"
+					}
+				]
+			},
+			"bolverkTheseHuma": {
+				"content": [
+					"[bolverk] \"These humans are the Ravens,\" you say. \"And I'm Bello...ungh, I'm Bolverk. Who are you and why do you look like you were spit out by a Cold Bear?\" The varl stares at you and then cracks what might be a smile beneath all the facial wounds.",
+					{
+						"divert": "fasoltFasoltForm"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltFasoltForm": {
+				"content": [
+					"[fasolt] \"Fasolt, former commander of what was Einartoft,\" he says. \"You might recognize this one beside me.\" You glance at the varl, one with barely any horns or beard. \"Kvig?\" you ask. \"What in the depths?\" Kvig is the youngest varl - the last one made.",
+					{
+						"divert": "fasoltWereAllTha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltWereAllTha": {
+				"content": [
+					"[fasolt] \"We're all that's left of those who fled Grofheim and stood against Bellower at Einartoft,\" Fasolt says. \"Kvig, run and get us some damn drinks and some meat. Bolverk and I need to talk.\"",
+					{
+						"flagName": "@happening=add_fasolt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"fasoltYouTheFaen": {
+				"content": [
+					"[fasolt] \"You the faen leader of these pathetic humans?\" the shieldbanger asks you.",
+					{
+						"divert": "krumrHeresTheBas"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_krumr_fasolt"
+					}
+				]
+			},
+			"fasoltYouTheFaen1": {
+				"content": [
+					"[fasolt] \"You the faen leader of these pathetic humans?\" the shieldbanger asks you.",
+					{
+						"divert": "bolverkTheseHuma"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_krumr_fasolt"
+					},
+					{
+						"ifCondition": "krumr_state"
+					}
+				]
+			},
+			"krumrHeresTheBas": {
+				"content": [
+					"[krumr] \"Here's the bastard I was telling you about,\" the old warleader says to the other varl. He points at you. \"We lost a dozen out there, you ass. Think on that in the next fight.\" The giants around him look too tired to care.",
+					{
+						"divert": "fasoltYouTheFaen1"
+					},
+					{
+						"flagName": "num_varl+14"
+					},
+					{
+						"flagName": "@happening=add_krumr"
+					},
+					{
+						"flagName": "@happening=add_fasolt"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_krumr_fasolt"
+					},
+					{
+						"ifCondition": "krumr_state"
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "bolverkAStreamOf",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "mczg"
+}

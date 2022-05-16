@@ -1,0 +1,1055 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"asYouFallBackInA": {
+				"content": [
+					"/=As you fall back in a defensive posture, you nod to Oddleif who is nocking another arrow.=/",
+					{
+						"flagName": "14_battle_rugga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"dagrShiftsSlight": {
+				"content": [
+					"/=Dagr shifts slightly. You are shocked by how such small change puts you on guard.=/",
+					{
+						"linkPath": "ruggaRelaxRookIW",
+						"ifConditions": [
+							{
+								"ifCondition": "rugga_decision>2"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "ruggaItsNotThatY",
+						"ifConditions": [
+							{
+								"ifCondition": "rugga_decision<3"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"dagrShiftsSlight1": {
+				"content": [
+					"/=Dagr shifts slightly and you almost jump back, unaccustomed to him moving. Your heart beats quickly.=/",
+					{
+						"linkPath": "ruggaWhyAreYouSo",
+						"ifConditions": [
+							{
+								"ifCondition": "rugga_decision>2"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "ruggaYoureYoungS",
+						"ifConditions": [
+							{
+								"ifCondition": "rugga_decision<3"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"DagrYouGlanceAtT": {
+				"content": [
+					"/=You glance at the silent guard, but he neither confirms nor denies the story.=/",
+					{
+						"divert": "ruggaTheOldWoodW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"DagrYouLookToThe": {
+				"content": [
+					"/=You look to the guard for confirmation, but Dagr gives you nothing.=/",
+					{
+						"divert": "ruggaWeWaitedFor1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heAndHisGuardHea": {
+				"content": [
+					"/=He and his guard head towards the village for food and sleep before you head out.=/ ",
+					{
+						"flagName": "day+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heGrinsButYouDou": {
+				"content": [
+					"/=He grins, but you doubt it's a joke.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroBelieveItOrN": {
+				"content": [
+					"[$hero] \"Believe it or not, that's exactly what we are.\"",
+					{
+						"divert": "ruggaISupposeWel"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroImSureYouCou": {
+				"content": [
+					"[$hero] \"I'm sure you could all use a bite at least, if not a few hours to close your eyes.\"",
+					{
+						"divert": "ruggaIfThatsWhat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIThinkYouSho": {
+				"content": [
+					"[$hero] \"I think you should all get some food and a few hours of sleep.\"",
+					{
+						"divert": "ruggaTheOthersWi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroMaybeNotFami": {
+				"content": [
+					"[$hero] \"Maybe not family, but we have become a clan.\"",
+					{
+						"divert": "ruggaHatredSpans"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroMyFatherTaug": {
+				"content": [
+					"[$hero] \"My father taught me a good deal about survival.\"",
+					{
+						"divert": "ruggaButDidntYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheSameWithU": {
+				"content": [
+					"[$hero] \"The same with us, but our scouts never returned.\"",
+					{
+						"divert": "ruggaScratchesTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWeDidTheSame": {
+				"content": [
+					"[$hero] \"We did the same thing! But our scouts haven't returned.\"",
+					{
+						"divert": "ruggaScratchesTh1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroYouDecideWha": {
+				"content": [
+					"/=You decide what to say next.=/",
+					{
+						"linkPath": "ruggaOurClanIsTh",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_collecting"
+							}
+						],
+						"option": "\"Thank you for collecting the rest of our clan.\""
+					},
+					{
+						"linkPath": "ruggaIMightAskYo",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_serpent"
+							}
+						],
+						"option": "\"What happened to you after the Serpent attacked?\""
+					},
+					{
+						"linkPath": "ruggaThatsUpToTh",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_rest"
+							}
+						],
+						"option": "\"Do you need to rest before we move on?\""
+					},
+					{
+						"linkPath": "ruggaBeforeYouDo",
+						"ifConditions": [
+							{
+								"ifCondition": "_count"
+							}
+						],
+						"option": "\"I'm going to speak to some of the others.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroYoureNotSure": {
+				"content": [
+					"/=You're not sure what to say next.=/",
+					{
+						"linkPath": "ruggaDontFoolYou",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_collecting"
+							}
+						],
+						"option": "\"I'm really happy you found the rest of our clansmen.\""
+					},
+					{
+						"linkPath": "ruggaIMightAskYo1",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_serpent"
+							}
+						],
+						"option": "\"What happened to you after the Serpent attacked?\""
+					},
+					{
+						"linkPath": "ruggaICantMakeTh",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_rest"
+							}
+						],
+						"option": "\"I bet you're tired. We can wait if you want to sleep.\""
+					},
+					{
+						"linkPath": "ruggaBeforeYouDo1",
+						"ifConditions": [
+							{
+								"ifCondition": "_count"
+							}
+						],
+						"option": "\"I should check on the others.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouSeemToBeH": {
+				"content": [
+					"[$hero] \"You seem to be hard to kill as well.\"",
+					{
+						"divert": "ruggaRememberTha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hisSmileIsGenuin": {
+				"content": [
+					"/=His smile is genuine, and you feel more at ease.=/",
+					{
+						"divert": "ruggaNowWellSeeA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hisToneIsStrange": {
+				"content": [
+					"/=His tone is strange, like he's been rehearsing this statement, along with that unnerving grin=//=.=/",
+					{
+						"divert": "heroImSureYouCou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakDagrLun": {
+				"content": [
+					"/=Dagr lunges at you, but an arrow slams into his shield, disrupting his attack.=/",
+					{
+						"divert": "asYouFallBackInA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakHeroYou": {
+				"content": [
+					"/=You decide what to say next.=/",
+					{
+						"divert": "HeroYouDecideWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakHisTone": {
+				"content": [
+					"/=His tone is not exactly threatening, but not warm either.=/",
+					{
+						"divert": "pageBreakHeroYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakYouGlan": {
+				"content": [
+					"/=You glance at Dagr and get nothing but his stony gaze in return.=/",
+					{
+						"divert": "HeroYouDecideWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakYoureNo": {
+				"content": [
+					"/=You're not sure what to say next.=/",
+					{
+						"divert": "HeroYoureNotSure"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAndWhatClan": {
+				"content": [
+					"[rugga] \"And what clan leader leaves half his people behind, scattered and scared?\"",
+					{
+						"divert": "youNowNoticeTheF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAnytimeThey": {
+				"content": [
+					"[rugga] \"Anytime they slowed down, I'd ask if they felt the ground rumbling.\"",
+					{
+						"divert": "heGrinsButYouDou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaAsMuchAsIHa": {
+				"content": [
+					"[rugga] \"As much as I hate to admit it, you've done a decent job with these people.\"",
+					{
+						"divert": "youStareAtHimWai"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaBeforeYouDo": {
+				"content": [
+					"[rugga] \"Before you do...\"",
+					{
+						"divert": "dagrShiftsSlight"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaBeforeYouDo1": {
+				"content": [
+					"[rugga] \"Before you do...\"",
+					{
+						"divert": "dagrShiftsSlight1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaButDidntYou": {
+				"content": [
+					"[rugga] \"But didn't your father...never mind.\"",
+					{
+						"divert": "pageBreakYoureNo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaButImPlease": {
+				"content": [
+					"[rugga] \"But I'm pleased you're here. Now, get us to the capital; we're so close.\"",
+					{
+						"divert": "youreAsSilentAsD"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDontBeSurpr": {
+				"content": [
+					"[rugga] \"Don't be surprised if petty arguments and bad blood rule the day.\"",
+					{
+						"divert": "HeroYouDecideWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDontFoolYou": {
+				"content": [
+					"[rugga] \"Don't fool yourself into thinking everyone standing near that banner feels like family.\"",
+					{
+						"divert": "heroMaybeNotFami"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_collecting"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaDontThinkAF": {
+				"content": [
+					"[rugga] \"Don't think a few weeks on the road together changes that.\"",
+					{
+						"divert": "HeroYoureNotSure"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaFamiliesHav": {
+				"content": [
+					"[rugga] \"Families have long memories. Hatred can span generations.\"",
+					{
+						"divert": "ruggaDontBeSurpr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaFearCanReal": {
+				"content": [
+					"[rugga] \"Fear can really get people moving.\"",
+					{
+						"divert": "ruggaAnytimeThey"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaHatredSpans": {
+				"content": [
+					"[rugga] \"Hatred spans generations. Some of these people have feuds older than the great wars.\"",
+					{
+						"divert": "ruggaDontThinkAF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaICantMakeTh": {
+				"content": [
+					"[rugga] \"I can't make that call, and neither can you. The clansmen will tell us what they want to do.\"",
+					{
+						"divert": "thisSoundsLikeSo"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_rest"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIfThatsWhat": {
+				"content": [
+					"[rugga] \"If that's what they want.\"",
+					{
+						"divert": "pageBreakYouGlan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIHopeItCont": {
+				"content": [
+					"[rugga] \"I hope it continues. You've done well on the ships, in Lundar, and even in the Old Wood.\"",
+					{
+						"divert": "ruggaNowWithArbe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIHopeYouDid": {
+				"content": [
+					"[rugga] \"I hope you didn't get all cleaned up for me, Rook.\"",
+					{
+						"divert": "ruggaWasItTooMuc"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIHopeYouUnd": {
+				"content": [
+					"[rugga] \"I hope you understand why you have to die.\"",
+					{
+						"divert": "pageBreakDagrLun"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIMightAskYo": {
+				"content": [
+					"[rugga] \"I might ask you the same. Dagr and I tried to save a few families before running.\"",
+					{
+						"divert": "DagrYouGlanceAtT"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_serpent"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIMightAskYo1": {
+				"content": [
+					"[rugga] \"I might ask you the same. Dagr and I were scattered like the rest, but we tried to help who we could.\"",
+					{
+						"divert": "ruggaTheOldWoodW1"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_serpent"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIMightNotHa": {
+				"content": [
+					"[rugga] \"I might not have agreed with all of your decisions on the river, or in Lundar, or in the Old Wood, but you did alright.\"",
+					{
+						"divert": "ruggaLookIKnowIm"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIStartedPus": {
+				"content": [
+					"[rugga] \"I started pushing everyone hard, only sending a couple of men to Tolir for supplies.\"",
+					{
+						"divert": "heroTheSameWithU"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIStartedPus1": {
+				"content": [
+					"[rugga] \"I started pushing everyone hard, only sending a couple of men to Tolir for supplies.\"",
+					{
+						"divert": "heroWeDidTheSame"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaISupposeWel": {
+				"content": [
+					"[rugga] \"I suppose we'll see. We won't be the only ones seeking shelter in Arberrang.\"",
+					{
+						"divert": "ruggaFamiliesHav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"RuggaItsAsHardAs": {
+				"content": [
+					"/=It's as hard as ever to read the governor's face, and Dagr naturally says nothing.=/",
+					{
+						"linkPath": "ruggaIHopeYouDid",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_rook"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "ruggaIWasntSureI",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_alette"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaItsNotThatY": {
+				"content": [
+					"[rugga] \"It's not that you're a bad man, Rook, but you've made some bad choices.\"",
+					{
+						"divert": "ruggaOnTheShipsI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaIWasntSureI": {
+				"content": [
+					"[rugga] \"I wasn't sure I'd ever see you again, Alette.\"",
+					{
+						"divert": "heroMyFatherTaug"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaLetsNotMake": {
+				"content": [
+					"[rugga] \"Let's not make this uncomfortable.\"",
+					{
+						"divert": "heAndHisGuardHea"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaLookIKnowIm": {
+				"content": [
+					"[rugga] \"Look, I know I'm an ass. I know you weren't thrilled to see me arriving.\"",
+					{
+						"divert": "ruggaButImPlease"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaNowWellSeeA": {
+				"content": [
+					"[rugga] \"/=Now=/, we'll see about some food and rest.\"",
+					{
+						"divert": "theGovernorAndHi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaNowWithArbe": {
+				"content": [
+					"[rugga] \"Now, with Arberrang just over the horizon, I want to be nearby when a young woman brings an army.\"",
+					{
+						"divert": "hisSmileIsGenuin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaOnTheShipsI": {
+				"content": [
+					"[rugga] \"On the ships, in the bogs, in Lundar. Depths, even in the Old Wood!\"",
+					{
+						"divert": "ruggaAndWhatClan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaOnTheShipsI1": {
+				"content": [
+					"[rugga] \"On the ships, in the bogs, in Lundar. Depths, even in the Old Wood!\"",
+					{
+						"divert": "ruggaYourChoices"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaOurClanIsTh": {
+				"content": [
+					"[rugga] \"/=Our =/clan? Is that really what we are? One clan?\"",
+					{
+						"divert": "heroBelieveItOrN"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_collecting"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaRelaxRookIW": {
+				"content": [
+					"[rugga] \"Relax, Rook. I wanted to offer a treaty of sorts between us.\"",
+					{
+						"divert": "ruggaAsMuchAsIHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaRememberTha": {
+				"content": [
+					"[rugga] \"Remember that.\"",
+					{
+						"divert": "pageBreakHisTone"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaScratchesTh": {
+				"content": [
+					"/=Rugga scratches the scar around his neck.=/",
+					{
+						"divert": "ruggaThatsOddNei"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaScratchesTh1": {
+				"content": [
+					"/=Rugga scratches the scar around his neck.=/",
+					{
+						"divert": "ruggaThatsOddNei1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThatsOddNei": {
+				"content": [
+					"[rugga] \"That's odd. Neither did ours. But here we are, most of us still alive.\"",
+					{
+						"divert": "HeroYouDecideWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThatsOddNei1": {
+				"content": [
+					"[rugga] \"That's odd. Neither did ours. But here we are, most of us still alive.\"",
+					{
+						"divert": "HeroYoureNotSure"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaThatsUpToTh": {
+				"content": [
+					"[rugga] \"That's up to the clansmen and fighters - I'm only a servant of the people.\"",
+					{
+						"divert": "hisToneIsStrange"
+					},
+					{
+						"flagName": "_count"
+					},
+					{
+						"flagName": "_rest"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheOldWoodW": {
+				"content": [
+					"[rugga] \"The Old Wood was like a maze, but we finally escaped, picking up others along the way.\"",
+					{
+						"divert": "ruggaWeWaitedFor"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheOldWoodW1": {
+				"content": [
+					"[rugga] \"The Old Wood was like a maze, but we finally escaped, picking up others along the way.\"",
+					{
+						"divert": "DagrYouLookToThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaTheOthersWi": {
+				"content": [
+					"[rugga] \"The others will make up their minds. A leader guides.\"",
+					{
+						"divert": "HeroYoureNotSure"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaWasItTooMuc": {
+				"content": [
+					"[rugga] \"Was it too much for you to just die when that Serpent struck?\"",
+					{
+						"divert": "heroYouSeemToBeH"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaWeWaitedFor": {
+				"content": [
+					"[rugga] \"We waited for you until we were damn near out of food.\"",
+					{
+						"divert": "ruggaIStartedPus"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaWeWaitedFor1": {
+				"content": [
+					"[rugga] \"We waited for others as long as we could. Any longer and we would've starved.\"",
+					{
+						"divert": "ruggaIStartedPus1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaWhyAreYouSo": {
+				"content": [
+					"[rugga] \"Why are you so nervous, Alette? We've had fair exchanges so far.\"",
+					{
+						"divert": "ruggaIHopeItCont"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYourChoices": {
+				"content": [
+					"[rugga] \"Your choices cost a lot of lives. I can't let you keep killing or leaving your clan behind.\"",
+					{
+						"divert": "youNoticeTheFigh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYoureADange": {
+				"content": [
+					"[rugga] \"You're a danger to these people.\"",
+					{
+						"divert": "ruggaIHopeYouUnd"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggaYoureYoungS": {
+				"content": [
+					"[rugga] \"You're young, strong, and beautiful, Alette, but I really hoped you'd be a better leader.\"",
+					{
+						"divert": "ruggaOnTheShipsI1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=rugga mark4=dagr",
+					{
+						"linkPath": "RuggaItsAsHardAs",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theGovernorAndHi": {
+				"content": [
+					"/=The governor and his guard walk toward the village.=/",
+					{
+						"flagName": "day+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"thisSoundsLikeSo": {
+				"content": [
+					"/=This sounds like something he has rehearsed, along with his smile. =/",
+					{
+						"divert": "heroIThinkYouSho"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youNoticeTheFigh": {
+				"content": [
+					"/=You notice the fighters gathering behind him.=/",
+					{
+						"divert": "ruggaIHopeYouUnd"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youNowNoticeTheF": {
+				"content": [
+					"/=You now notice the fighters gathered behind him.=/",
+					{
+						"divert": "ruggaYoureADange"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youreAsSilentAsD": {
+				"content": [
+					"/=You're as silent as Dagr.=/",
+					{
+						"divert": "ruggaLetsNotMake"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youStareAtHimWai": {
+				"content": [
+					"/=You stare at him, waiting for the insult. He laughs.=/",
+					{
+						"divert": "ruggaIMightNotHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "9cw3"
+}

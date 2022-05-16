@@ -1,0 +1,370 @@
+{
+  "achievements": [
+    {
+      "iconurl": "saga2/achievement/icon/acv_test.png",
+      "id": "_acv_local",
+      "local": true,
+      "renownreward": 5,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_match_reward.png",
+      "id": "_acv_ch8_riverdebris_not_done_yet",
+      "local": true,
+      "renownreward": 5,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_match_reward.png",
+      "id": "_acv_ch9_cartfight_prove_dominance",
+      "local": true,
+      "renownreward": 10,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_match_reward.png",
+      "id": "_acv_ch9_forestvlg_break_through",
+      "local": true,
+      "renownreward": 5,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_match_reward.png",
+      "id": "_acv_ch10_lundar_dagr_joins",
+      "local": true,
+      "renownreward": 5,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_match_reward.png",
+      "id": "_acv_ch14_hunting_fast",
+      "local": true,
+      "renownreward": 10,
+      "type": "OBJECTIVE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_kill_a_sundr.png",
+      "id": "acv_2_complete_kill_a_sundr",
+      "local": true,
+      "renownreward": 10,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_treasure_hunter.png",
+      "id": "acv_2_complete_treasure_hunter",
+      "local": true,
+      "progressCount": 3,
+      "progressVar": "prg_items_gained_10",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_forced_march.png",
+      "id": "acv_2_complete_forced_march",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_master_tactician.png",
+      "id": "acv_2_complete_master_tactician",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_warmonger.png",
+      "id": "acv_2_complete_warmonger",
+      "local": true,
+      "progressCount": 32,
+      "progressVar": "prg_battles_fought",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_against_all_odds.png",
+      "id": "acv_against_all_odds",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_culling_frenzy.png",
+      "id": "acv_culling_frenzy",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_sneaky.png",
+      "id": "acv_sneaky",
+      "local": true,
+      "progressCount": 5,
+      "progressVar": "prg_sneaky_kills",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_alliance_rugga.png",
+      "id": "acv_alliance_rugga",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_training_sven.png",
+      "id": "acv_training_sven",
+      "local": true,
+      "renownreward": 15,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_training_holfi.png",
+      "id": "acv_training_holfi",
+      "local": true,
+      "renownreward": 15,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_demolition.png",
+      "id": "acv_demolition",
+      "local": true,
+      "progressCount": 30,
+      "progressVar": "prg_demolition",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_berserk.png",
+      "id": "acv_class_berserk",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_shieldmaiden.png",
+      "id": "acv_class_shieldmaiden",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_poet.png",
+      "id": "acv_class_poet",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_horseborn_female.png",
+      "id": "acv_class_horseborn_female",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_horseborn_male.png",
+      "id": "acv_class_horseborn_male",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_axe_thrower.png",
+      "id": "acv_class_axe_thrower",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_wanderer.png",
+      "id": "acv_class_wanderer",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_zefr.png",
+      "id": "acv_class_zefr",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_slaughterer.png",
+      "id": "acv_class_slaughterer",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_tracker.png",
+      "id": "acv_class_tracker",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_class_summoned_bear.png",
+      "id": "acv_class_summoned_bear",
+      "local": true,
+      "progressCount": 3,
+      "renownreward": 5,
+      "type": "CLASS_UNLOCK"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_normal.png",
+      "id": "acv_2_complete_normal",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_hard.png",
+      "id": "acv_2_complete_hard",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_challenge.png",
+      "id": "acv_2_complete_challenge",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_quartermaster.png",
+      "id": "acv_2_complete_quartermaster",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_complete_high_spirits.png",
+      "id": "acv_2_complete_high_spirits",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_journey_rook.png",
+      "id": "acv_journey_rook",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_journey_alette.png",
+      "id": "acv_journey_alette",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_2_import_save.png",
+      "id": "acv_2_import_save",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_aselei.png",
+      "id": "acv_godstone_aselei",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_irynx.png",
+      "id": "acv_godstone_irynx",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_baldringr.png",
+      "id": "acv_godstone_baldringr",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_veznan.png",
+      "id": "acv_godstone_veznan",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_geirradr.png",
+      "id": "acv_godstone_geirradr",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_bygglaerer.png",
+      "id": "acv_godstone_bygglaerer",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_godstone_lauga.png",
+      "id": "acv_godstone_lauga",
+      "local": true,
+      "renownreward": 5,
+      "type": "LOCATION"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_leader_clansmen.png",
+      "id": "acv_leader_clansmen",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_leader_fighters.png",
+      "id": "acv_leader_fighters",
+      "local": true,
+      "progressCount": 600,
+      "progressVar": "prg_fighters",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_eyeless_possess.png",
+      "id": "acv_eyeless_possess",
+      "local": true,
+      "progressCount": 10,
+      "progressVar": "prg_eyeless_possess",
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_bolverk_varl_dregs.png",
+      "id": "acv_bolverk_varl_dregs",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    },
+    {
+      "iconurl": "saga2/achievement/icon/acv_bolverk_keep_your_wits.png",
+      "id": "acv_bolverk_keep_your_wits",
+      "local": true,
+      "renownreward": 5,
+      "type": "COMPLETE"
+    }
+  ]
+}

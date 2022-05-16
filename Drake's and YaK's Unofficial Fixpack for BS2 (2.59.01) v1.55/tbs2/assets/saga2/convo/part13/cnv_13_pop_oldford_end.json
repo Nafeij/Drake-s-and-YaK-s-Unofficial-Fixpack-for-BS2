@@ -1,0 +1,137 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"bolverkFatigueSl": {
+				"content": [
+					"[bolverk] Fatigue slows your muscles as you take the reins of the yox pulling Bellower's cart. Thousands of eyes watch you, the scared faces of so many dredge left on the battlefield pull at you.",
+					{
+						"divert": "bolverkYourMindF"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "13_battle_kill_eyeless"
+					}
+				]
+			},
+			"bolverkYourMindF": {
+				"content": [
+					"[bolverk] Your mind fills with images of Eyvind on the tower. Of dredge twisting, warping in darkness. Shaking. Slobbering. Roaring. You fight to regain control of your mind.",
+					{
+						"divert": "theDredgeBeginMo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensTheD": {
+				"content": [
+					"[convoy_ravens] The dredge watch you fall and immediately turn back to Eyeless, protecting her and carrying her away. You feel hands similarly pulling you away from the battlefield. A part of you yearns to stay with the dredge.",
+					{
+						"divert": "bolverkFatigueSl"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "battle_victory"
+					},
+					{
+						"ifCondition": "13_battle_kill_eyeless"
+					}
+				]
+			},
+			"folkaBolverkFolk": {
+				"content": [
+					"[folka] \"Bolverk!\" Folka shouts. \"Take the cart! Get to Manaharr! We'll hold them here as long as we can!\" The shieldmaiden's voice clears your head for a moment. You see her turning proudly, commanding Ravens into formation and Gudmundr to lead the clansmen to Arberrang.",
+					{
+						"divert": "folkaBolverkFolk1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "gudmundr_state"
+					}
+				]
+			},
+			"folkaBolverkFolk1": {
+				"content": [
+					"[folka] \"Bolverk!\" Folka shouts. \"Take the cart! Get to Manaharr! We'll hold them here as long as we can!\" The shieldmaiden's voice clears your head for a moment. You see her turning proudly, commanding Ravens into formation.",
+					{
+						"divert": "folkaSheLooksBac"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "!gudmundr_state"
+					}
+				]
+			},
+			"folkaSheLooksBac": {
+				"content": [
+					"[folka] She looks back at you, holding your gaze. \"We'll be right behind you. Go!\" Then she joins the shield wall, lending strength to those around her.",
+					{
+						"divert": "zefrBolverkValka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaWeJustKille": {
+				"content": [
+					"[folka] \"We just killed a faen Sundr,\" Folka says. You know it had to be done, but you find yourself unable to speak. Are you crying? You shake your head, trying to clear your thoughts, but the scared faces of so many dredge left on the battlefield pull at you.",
+					{
+						"divert": "bolverkFatigueSl"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "13_battle_kill_eyeless"
+					},
+					{
+						"ifCondition": "battle_victory"
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "folkaWeJustKille",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theDredgeBeginMo": {
+				"content": [
+					"The dredge begin moving south along the river, not as an army, but as people fleeing danger. Many of them start crossing the Old Ford bridge. ",
+					{
+						"divert": "folkaBolverkFolk"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrBolverkValka": {
+				"content": [
+					"[zefr] \"Bolverk,\" Valka Zefr says, pulling your attention from the Raven banner near the bridge. \"We must leave. Now!\" The Valka. Their meddling caused this. All of it! You rub at a pain in your chest. Zefr flinches at the look in your eyes, but you forget her and begin marching toward Manaharr. Toward vengeance.",
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "b4n4"
+}

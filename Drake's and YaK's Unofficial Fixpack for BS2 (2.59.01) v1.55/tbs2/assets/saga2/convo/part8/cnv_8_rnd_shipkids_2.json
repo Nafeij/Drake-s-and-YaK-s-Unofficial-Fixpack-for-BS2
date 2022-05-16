@@ -1,0 +1,190 @@
+{
+	"data": {
+		"initial": "convoyTheRiverSu",
+		"stitches": {
+			"convoyAnyCheerin": {
+				"content": [
+					"[convoy] Any cheering ends when the man makes it onto the ship. While Faksi coughs up water and survives, Danr, the oldest, is dead.",
+					{
+						"divert": "heroAsTheRiverCa"
+					},
+					{
+						"flagName": "num_peasants-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyAWiryManQu": {
+				"content": [
+					"[convoy] A wiry man quickly knots a rope around his waist and leaps in. Just before the line pulls taut, he breaks the river's surface with both boys in his arms and is hauled in.",
+					{
+						"divert": "convoyAnyCheerin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyLinesFromT": {
+				"content": [
+					"[convoy] Lines from the rear ship slap across the water where the boys were last seen. Seconds grind by before clansmen start hauling on the ropes. \"Faksi!\" the mother cries as one son is rescued. The other boy is never found.",
+					{
+						"divert": "heroAsTheRiverCa"
+					},
+					{
+						"flagName": "num_peasants-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheRiverSu": {
+				"content": [
+					"[convoy] The river suddenly gets rough and the water is moving much faster. Rowers try their best to avoid rocks, but the longships weren't built for such maneuvers. Each impact is jarring.",
+					{
+						"linkPath": "heroTheShipsRock",
+						"notIfConditions": [
+							{
+								"notIfCondition": "8_rnd_shipkids_2_bad"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "convoyWhileBraci",
+						"ifConditions": [
+							{
+								"ifCondition": "8_rnd_shipkids_2_bad"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyTheRowersA": {
+				"content": [
+					"[convoy] The rowers, already jostled by rocks, attempt to fight the current but more oars buckle under the strain. Swears echo around you as several ships lose control and take heavy hits, spilling supplies rather than people.",
+					{
+						"divert": "heroWithFoodAndB"
+					},
+					{
+						"flagName": "supplies-5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyWhileBraci": {
+				"content": [
+					"[convoy] While bracing for more collisions, you hear a mother's shout. \"Faksi! Danr! My sons! There!\" The two rowdy boys have fallen overboard and slip under the turbulent waters quickly. You're longship is too far ahead for you to jump in to save them.",
+					{
+						"linkPath": "convoyLinesFromT",
+						"option": "\"Throw ropes to them!\""
+					},
+					{
+						"linkPath": "convoyAWiryManQu",
+						"option": "Shout for someone to tie off and jump in"
+					},
+					{
+						"linkPath": "convoyYourExplan",
+						"option": "Wait to see where the boys resurface"
+					},
+					{
+						"linkPath": "convoyTheRowersA",
+						"option": "\"Slow the ships! Everyone search for them!\""
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "8_rnd_shipkids_2_bad"
+					}
+				]
+			},
+			"convoyYourExplan": {
+				"content": [
+					"[convoy] Your explanation for waiting falls flat and the mother screams, \"They'll die because of you!\" Most others seem to agree.",
+					{
+						"divert": "convoyAWiryManQu"
+					},
+					{
+						"flagName": "your_fault"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAsTheRiverCa": {
+				"content": [
+					"[$hero] As the river calms, the mother's mourning affects everyone. You wonder if there was more you could've done.",
+					{
+						"divert": "iverAsTheRiverCa"
+					},
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "your_fault"
+					}
+				]
+			},
+			"heroTheShipsRock": {
+				"content": [
+					"[$hero] The ships rock and a few oars snap between stones and each other, but remarkably, the fleet survives with only minor damage. As the river calms, several parents thank you for reminding them to keep their children close.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWithFoodAndB": {
+				"content": [
+					"[$hero] With food and both boys lost, more than just the mother's mourning affects you. Some clansmen stare at you while others can't seem to look you in the eye.",
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"flagName": "num_peasants-2"
+					},
+					{
+						"flagName": "renown-2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAsTheRiverCa": {
+				"content": [
+					"[iver] As the river calms, the mother's tirade of how you killed her son puts everyone on edge. \"No one really blames you,\" Iver says, \"but they're all upset and that generally lands on you. We just keep going.\"",
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"flagName": "renown-4"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "your_fault"
+					}
+				]
+			}
+		}
+	},
+	"url_key": "93b8"
+}

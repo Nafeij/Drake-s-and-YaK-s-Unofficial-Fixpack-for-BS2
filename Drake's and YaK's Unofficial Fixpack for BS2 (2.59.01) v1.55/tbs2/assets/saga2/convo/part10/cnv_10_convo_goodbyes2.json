@@ -1,0 +1,1145 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"eyvindAgreedIveG": {
+				"content": [
+					"[eyvind] \"Agreed. I've got more faith in your success than our own.\"",
+					{
+						"divert": "heroIsThatSuppos"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindAletteIllM": {
+				"content": [
+					"[eyvind] \"Alette, I'll miss our talks, but we both have plenty to keep us busy. Take care.\"",
+					{
+						"divert": "heroYouAsWellEyv"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "10_alette_mender"
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"eyvindAletteImSo": {
+				"content": [
+					"[eyvind] \"Alette, I'm so proud of you. There are hidden patterns on your bow which will only become clear with practice. Take care.\"",
+					{
+						"divert": "eyvindAletteIllM"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					},
+					{
+						"ifCondition": "10_alette_mender"
+					}
+				]
+			},
+			"eyvindBecauseI": {
+				"content": [
+					"[eyvind] \"Because I--\"",
+					{
+						"divert": "junoEyvindThatsE"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindBeWellRook": {
+				"content": [
+					"[eyvind] \"Be well, Rook.\"",
+					{
+						"divert": "eyvindAletteImSo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"eyvindEvenTheCha": {
+				"content": [
+					"[eyvind] \"Even the chasms opening across the land are displayed, but your path to Arberrang is clear.\"",
+					{
+						"divert": "junoSpeedWillBeY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"EyvindEyvindGive": {
+				"content": [
+					"/=Eyvind gives you both a weak smile and shrugs.=/",
+					{
+						"divert": "junoEyvindsWords"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindIWasTrying": {
+				"content": [
+					"[eyvind] \"I was trying--\"",
+					{
+						"divert": "heroOrWhenTheSer"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindJunoClansW": {
+				"content": [
+					"[eyvind juno] \"Clans will vie for power the way they always do, even in the face of destruction.\"",
+					{
+						"divert": "junoRememberYouA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindJunoJustUs": {
+				"content": [
+					"[eyvind juno] \"Just use what you've learned on this journey to keep the others alive.\"",
+					{
+						"divert": "pageBreakHeroYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindTheDarknes": {
+				"content": [
+					"[eyvind] \"The darkness is a mistake, a part of this world never meant for you, or us, or anyone alive today.\"",
+					{
+						"divert": "heroThenWhyIsItH"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindWeRealizeT": {
+				"content": [
+					"[eyvind] \"We realize this isn't easy for you; it's not easy for anyone now.\"",
+					{
+						"divert": "iverHeroStillYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroDepthsWeMigh": {
+				"content": [
+					"[$hero] \"Depths! We might have been able to save Jorundr and the other varl at Einartoft if it wasn't for you two!\"",
+					{
+						"divert": "iverHeroStopYour"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroDontExpectMe": {
+				"content": [
+					"[$hero] \"Don't expect me to trust you. Just take care of Iver.\"",
+					{
+						"divert": "junoTheValkaGive"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "_anger"
+					}
+				]
+			},
+			"heroEveryoneOnYo": {
+				"content": [
+					"[$hero] \"Everyone on your feet! We're pushing to Arberrang!\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroHowManyDiedW": {
+				"content": [
+					"[$hero] \"How many died when we floated across that chasm?\"",
+					{
+						"divert": "eyvindIWasTrying"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroHowWillIKnow": {
+				"content": [
+					"[$hero] \"How will I know if you succeed?\"",
+					{
+						"divert": "junoYoullKnowBec"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroICantMakeYou": {
+				"content": [
+					"[$hero] \"I can't make you tell me all the secrets you're keeping, Valka, but I know you're keeping them.\"",
+					{
+						"divert": "heroDontExpectMe"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "_anger"
+					}
+				]
+			},
+			"heroIShouldGetTh": {
+				"content": [
+					"[$hero] \"I should get the clan ready to head up the coast and west to Arberrang.\"",
+					{
+						"divert": "iverHeroIfYouWer"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIsThatSuppos": {
+				"content": [
+					"[$hero] \"Is that supposed to make me feel better?\"",
+					{
+						"divert": "iverOrMe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroOrWhenTheSer": {
+				"content": [
+					"[$hero] \"Or when the Serpent came for you?\"",
+					{
+						"divert": "junoICouldntHave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThankYouIver": {
+				"content": [
+					"[$hero] \"Thank you, Iver. You're probably right.\"",
+					{
+						"divert": "eyvindBeWellRook"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"heroThatDoesntRe": {
+				"content": [
+					"[$hero] \"That doesn't really put me at ease.\"",
+					{
+						"divert": "eyvindJunoJustUs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThenIHopeLuc": {
+				"content": [
+					"[$hero] \"Then I hope luck is with you as well. Take care of Iver.\"",
+					{
+						"divert": "heroICantMakeYou"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "_anger"
+					}
+				]
+			},
+			"heroThenWhyIsItH": {
+				"content": [
+					"[$hero] \"Then why is it here?\"",
+					{
+						"divert": "eyvindBecauseI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTillWeSeeEac": {
+				"content": [
+					"[$hero] \"Till we see each other again, then?\"",
+					{
+						"divert": "iverHeroDependsO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouAsWellEyv": {
+				"content": [
+					"[$hero] \"You as well, Eyvind.\"",
+					{
+						"divert": "heroYouSayNothin"
+					},
+					{
+						"flagName": "@hide=iver"
+					},
+					{
+						"flagName": "@hide=eyvind"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "_anger"
+					}
+				]
+			},
+			"HeroYouConsiderW": {
+				"content": [
+					"/=You consider what to say.=/",
+					{
+						"linkPath": "iverHeroAOnearme",
+						"option": "\"I still don't understand why you need Iver.\""
+					},
+					{
+						"linkPath": "yourAngerHitsThe",
+						"option": "\"There are so few of us because of you two!\""
+					},
+					{
+						"linkPath": "junoIHearTheConc",
+						"option": "\"Is this...is this all I need?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouSayNothin": {
+				"content": [
+					"[$hero] /=You say nothing to Eyvind, still doubting the intentions of the menders.=/",
+					{
+						"divert": "iverAndEyvindFin"
+					},
+					{
+						"flagName": "@hide=iver"
+					},
+					{
+						"flagName": "@hide=eyvind"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "_anger"
+					}
+				]
+			},
+			"HeroYouShakeYour": {
+				"content": [
+					"/=You shake your head but refuse to look at the varl.=/",
+					{
+						"divert": "junoIversStrengt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iNoWordsComeToMi": {
+				"content": [
+					"/=No words come to mind, so you simply nod.=/",
+					{
+						"divert": "junoYouAndTheRes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAndEyvindFin": {
+				"content": [
+					"/=Iver and Eyvind find a small fishing skiff. The once clear water of the Fiska Bay is turning green and foul as the varl hauls the vessel toward the receding tide.=/",
+					{
+						"divert": "junoImSorryForTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverBeforeIGoITh": {
+				"content": [
+					"[iver] \"Before I go, I think it's time you became Alette again.\"",
+					{
+						"divert": "iverYourHoodMigh"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"iverExhalesLoudl": {
+				"content": [
+					"/=Iver exhales loudly, like he is releasing a breath he has held in for ages.=/",
+					{
+						"divert": "iverInAllMyYears"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroAOnearme": {
+				"content": [
+					"[iver $hero] \"A one-armed varl brings good luck.\"",
+					{
+						"divert": "HeroYouShakeYour"
+					},
+					{
+						"flagName": "_iver"
+					},
+					{
+						"flagName": "_counter+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroDependsO": {
+				"content": [
+					"[iver $hero] \"Depends on where we're going. I might like it there better than being around you.\"",
+					{
+						"divert": "iverHeroInSomeFo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"iverHeroIfYouWer": {
+				"content": [
+					"[iver $hero] \"If you were anyone else, I'd stick around to help, but there's no one alive better suited to take care of these folks.\"",
+					{
+						"divert": "youLookAtTheGian"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroInSomeFo": {
+				"content": [
+					"[iver $hero] \"In some form or another, I imagine.\"",
+					{
+						"divert": "theTwoOfYouSmile"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"iverHeroStillYou": {
+				"content": [
+					"[iver $hero] \"Still, you could've made it seem a /=little=/ harder to say goodbye.\"",
+					{
+						"divert": "iverHeroTheGiant"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroStopYour": {
+				"content": [
+					"[iver $hero] \"Stop. You're mad and that's fine, but don't start blaming them for everything that's gone wrong under the sun.\"",
+					{
+						"divert": "JunoJunoAndEyvin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroTheGiant": {
+				"content": [
+					"[iver $hero] /=The giant varl gives you a fake frown.=/",
+					{
+						"divert": "junoYouAndTheRes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIDoubtThatWi": {
+				"content": [
+					"[iver] \"I doubt that will change even if I live another century or two, and it sure won't change with distance. Understand?\"",
+					{
+						"divert": "iNoWordsComeToMi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverInAllMyYears": {
+				"content": [
+					"[iver] \"In all my years, I've never had another friend than you.\"",
+					{
+						"divert": "iverInAllMyYears1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"iverInAllMyYears1": {
+				"content": [
+					"[iver] \"In all my years, you and your father are the only two I could call friends.\"",
+					{
+						"divert": "iverIDoubtThatWi"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"IverIverArchesHi": {
+				"content": [
+					"/=Iver arches his eyebrows and looks at the Valka who is staring at you.=/",
+					{
+						"divert": "junoButLeavingNo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverOhAndRookDoE": {
+				"content": [
+					"[iver] \"Oh, and Rook? Do everyone a favor: Clean yourself up. Depths! You're about to see your king.\"",
+					{
+						"divert": "lookingDownAtYou"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"iverOrMe": {
+				"content": [
+					"[iver] \"Or /=me=/?\"",
+					{
+						"divert": "EyvindEyvindGive"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverThesePeopleD": {
+				"content": [
+					"[iver] \"These people deserve to look their leader in the eye.\"",
+					{
+						"divert": "heroThankYouIver"
+					},
+					{
+						"flagName": "10_alette_final_look"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"iverYourHoodMigh": {
+				"content": [
+					"[iver] \"Your hood might still serve you in a fight, but otherwise, pull it down.\"",
+					{
+						"divert": "iverThesePeopleD"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"junoAndEvenThenY": {
+				"content": [
+					"[juno] \"And even then, you will perish if /=we=/ do not succeed.\"",
+					{
+						"divert": "junoSoHateUsIfYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAndEvenThenY1": {
+				"content": [
+					"[juno] \"And even then, you will perish if /=we=/ do not succeed.\"",
+					{
+						"divert": "heroHowWillIKnow"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoButLeavingNo": {
+				"content": [
+					"[juno] \"But leaving now is our only chance to stop that number from rising.\"",
+					{
+						"divert": "junoWhatWillAssa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoContinueToPu": {
+				"content": [
+					"[juno] \"Continue to push hard for the capital. With luck, my small force will face and defeat the Darkness before it reaches you. I hope our efforts will not be in vain.\"",
+					{
+						"divert": "heroThenIHopeLuc"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoEyvindsWords": {
+				"content": [
+					"[juno] \"Eyvind's words are true, but we must succeed. All of us.\"",
+					{
+						"divert": "junoWhatWillAssa1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoEyvindThatsE": {
+				"content": [
+					"[juno] \"Eyvind, that's enough!\"",
+					{
+						"divert": "theValkaLooksAtY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoHeroItsTheSa": {
+				"content": [
+					"[juno $hero] \"It's the same resolve you use daily, and you will have Hakon and the remaining varl with you for strength.\"",
+					{
+						"linkPath": "iverExhalesLoudl",
+						"option": "\"But Iver's my friend.\""
+					},
+					{
+						"linkPath": "eyvindWeRealizeT",
+						"option": "Nod your understanding"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoHeroSpeedWil": {
+				"content": [
+					"[juno $hero] \"Speed will be your ally now. With so few, you should be able to outpace whatever comes your way.\"",
+					{
+						"divert": "HeroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoHoldOnUntilT": {
+				"content": [
+					"[juno] \"Hold on until the Darkness breaks.\"",
+					{
+						"divert": "pageBreakJunoSil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoICouldntHave": {
+				"content": [
+					"[juno] \"I couldn't have--\"",
+					{
+						"divert": "heroDepthsWeMigh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIHearTheConc": {
+				"content": [
+					"[juno] \"I hear the concern in your voice, the doubt and fear. But you are more prepared than you know.\"",
+					{
+						"divert": "eyvindAgreedIveG"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoImSorryForTh": {
+				"content": [
+					"[juno] \"I'm sorry for the hardship that has become your life.\"",
+					{
+						"divert": "junoThoughItProb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoItsTheSameRe": {
+				"content": [
+					"[juno] \"It's the same resolve you use daily, and you will have Hakon and the remaining varl with you for strength.\"",
+					{
+						"divert": "junoHeroItsTheSa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIversStrengt": {
+				"content": [
+					"[juno] \"Iver's strength and resolve will be necessary for us in the days ahead.\"",
+					{
+						"divert": "junoItsTheSameRe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIveSpokenAbo": {
+				"content": [
+					"[juno] \"I've spoken about a Darkness enshrouding the land, and now you bear witness to it on your map.\"",
+					{
+						"divert": "junoTheSkyWillSo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIWishICouldP": {
+				"content": [
+					"[juno] \"I wish I could promise you nothing but safety, but Arberrang will be the refuge for so many.\"",
+					{
+						"divert": "eyvindJunoClansW"
+					},
+					{
+						"flagName": "_counter+1"
+					},
+					{
+						"flagName": "_arb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"JunoJunoAndEyvin": {
+				"content": [
+					"/=Juno and Eyvind share a guilty look.=/",
+					{
+						"divert": "junoYoureRightWe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoJunosFaceIsS": {
+				"content": [
+					"[juno] /=Juno's face is solemn as she nods and follows Eyvind and Iver without another word. You turn to the caravan=/.",
+					{
+						"divert": "heroEveryoneOnYo"
+					},
+					{
+						"flagName": "@hide=juno"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "_anger"
+					}
+				]
+			},
+			"junoRememberYouA": {
+				"content": [
+					"[juno] \"Remember, you are a Sundr-Slayer. Your reputation will help you a great deal.\"",
+					{
+						"divert": "heroThatDoesntRe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoSoHateUsIfYo": {
+				"content": [
+					"[juno] \"So, hate us if you need to, but stay alive. Hold out for as long as you can.\"",
+					{
+						"divert": "junoHoldOnUntilT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoSpeedWillBeY": {
+				"content": [
+					"[juno] \"Speed will be your ally now. With so few, you should be able to outpace whatever comes your way.\"",
+					{
+						"divert": "HeroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoStaresAtYouY": {
+				"content": [
+					"/=Juno stares at you. Your concern about the darkness starts to fade until Eyvind touches her shoulder.=/",
+					{
+						"divert": "eyvindTheDarknes"
+					},
+					{
+						"flagName": "_darkness"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoTheGodsMayBe": {
+				"content": [
+					"[juno] \"The gods may be dead, but a few of their secrets remain.\"",
+					{
+						"divert": "junoIveSpokenAbo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoTheSkyWillSo": {
+				"content": [
+					"[juno] \"The sky will soon reflect the truth shown here.\"",
+					{
+						"divert": "eyvindEvenTheCha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoTheValkaGive": {
+				"content": [
+					"[juno] /=The Valka gives you a small smile before following the other two. You turn to the caravan.=/",
+					{
+						"divert": "junoJunosFaceIsS"
+					},
+					{
+						"flagName": "@hide=juno"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "_anger"
+					}
+				]
+			},
+			"junoThoughItProb": {
+				"content": [
+					"[juno] \"Though it probably means little to hear it from me, you've done great work in making it this far.\"",
+					{
+						"divert": "junoContinueToPu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWereTryingTo": {
+				"content": [
+					"[juno] \"We're trying to do what we have to.\"",
+					{
+						"divert": "pageBreakYouNoti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWhatWillAssa": {
+				"content": [
+					"[juno] \"What will assault you in Arberrang will require every bit of your wits and strength to survive.\"",
+					{
+						"divert": "junoAndEvenThenY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoWhatWillAssa1": {
+				"content": [
+					"[juno] \"What will assault you in Arberrang will require every bit of your wits and strength to survive.\"",
+					{
+						"divert": "junoAndEvenThenY1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYouAndTheRes": {
+				"content": [
+					"[juno] \"You and the rest of the caravan are needed in Arberrang. What will assault you there will require every bit of your wits and strength to survive.\"",
+					{
+						"divert": "junoAndEvenThenY1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYoullKnowBec": {
+				"content": [
+					"[juno] \"You'll know because you'll still be alive.\"",
+					{
+						"divert": "junoYouMustGetTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYouMustGetTo": {
+				"content": [
+					"[juno] \"You must get to the capital. You must stay alive. No matter what occurs, hold out as long as you can.\"",
+					{
+						"divert": "junoHoldOnUntilT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYoureRightWe": {
+				"content": [
+					"[juno] \"You're right. We /=have=/ cost the lives of many.\"",
+					{
+						"divert": "IverIverArchesHi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"lookingDownAtYou": {
+				"content": [
+					"/=Looking down at your clothes and hands, you actually laugh and concede the point.=/",
+					{
+						"divert": "iverBeforeIGoITh"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"pageBreakHeroYou": {
+				"content": [
+					"/=You consider what to say.=/",
+					{
+						"linkPath": "junoStaresAtYouY",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_darkness"
+							}
+						],
+						"option": "\"You keep saying a darkness, but what is it?\""
+					},
+					{
+						"linkPath": "junoIWishICouldP",
+						"notIfConditions": [
+							{
+								"notIfCondition": "_arb"
+							}
+						],
+						"option": "\"What can I expect in Arberrang?\""
+					},
+					{
+						"linkPath": "heroIShouldGetTh",
+						"option": "Prepare to leave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakJunoSil": {
+				"content": [
+					"/=Silence follows her words.=/",
+					{
+						"divert": "pageBreakHeroYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakYouNoti": {
+				"content": [
+					"/=You notice her spear moving ever so slightly before your mind moves to other things.=/",
+					{
+						"divert": "pageBreakHeroYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=juno mark3=iver mark4=eyvind",
+					{
+						"linkPath": "junoTheGodsMayBe",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theTwoOfYouSmile": {
+				"content": [
+					"/=The two of you smile.=/",
+					{
+						"divert": "iverOhAndRookDoE"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theValkaLooksAtY": {
+				"content": [
+					"/=The Valka looks at you, and for a moment, her hard-eyed expression cracks.=/",
+					{
+						"divert": "junoWereTryingTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youLookAtTheGian": {
+				"content": [
+					"/=You look at the giant varl who has been with you through so much.=/",
+					{
+						"divert": "heroTillWeSeeEac"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"yourAngerHitsThe": {
+				"content": [
+					"/=Your anger hits the two menders like a rough slap.=/",
+					{
+						"divert": "heroHowManyDiedW"
+					},
+					{
+						"flagName": "_anger"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "zqf5"
+}

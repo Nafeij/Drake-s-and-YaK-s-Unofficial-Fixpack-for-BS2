@@ -1,0 +1,146 @@
+{
+	"data": {
+		"initial": "heroYouCannotBel",
+		"stitches": {
+			"convoyhumanTheyW": {
+				"content": [
+					"[convoy_human] They walk off, leaving you hurting, but alive. You struggle to your feet and make it back to the rest of your caravan.",
+					{
+						"divert": "heroAsSoonAsYouF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAsSoonAsYouF": {
+				"content": [
+					"[$hero] As soon as you find a stump on which to sit, you spot the man you had hoped to never see again. Rugga, backed by nearly fifty fighters, approaches your camp. Everyone stops working and the mood of the caravan turns dark as you face him.",
+					{
+						"divert": "ruggaNotEveryone"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "14_rugga_battle"
+					}
+				]
+			},
+			"heroAsSoonAsYouF1": {
+				"content": [
+					"[$hero] As soon as you find a stump on which to sit, you spot Rugga coming toward you, backed by Dagr and nearly fifty fighters. Everyone watches out of curiousity more than concern.",
+					{
+						"divert": "ruggaIveDiscover"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "14_rugga_battle"
+					},
+					{
+						"ifCondition": "dagr_state"
+					}
+				]
+			},
+			"heroTheFightersF": {
+				"content": [
+					"[$hero] The fighters fall and others nod their approval of you defending your clan. You're tired and irritated as you shuffle back to the front of the caravan.",
+					{
+						"linkPath": "heroAsSoonAsYouF",
+						"ifConditions": [
+							{
+								"ifCondition": "battle_victory"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "convoyhumanTheyW",
+						"notIfConditions": [
+							{
+								"notIfCondition": "battle_victory"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "battle_victory"
+					}
+				]
+			},
+			"heroYouCannotBel": {
+				"content": [
+					"[$hero] You cannot believe you came all this way to fall to thugs. The leader steps near you and kicks you in the ribs. \"If it were up to me, I'd gut everyone of these plow-pullers,\" he says. \"Keep them tied up and away from us humans.\"",
+					{
+						"divert": "heroTheFightersF"
+					},
+					{
+						"pageNum": 1
+					},
+					{
+						"notIfCondition": "battle_victory"
+					}
+				]
+			},
+			"ruggaHeLaughsAtY": {
+				"content": [
+					"[rugga] He laughs at your incredulous look. \"I'm just as surprised, but I need to talk to you in private.\" You nod and the two of you enter a large, empty tent.",
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "14_rugga_battle"
+					}
+				]
+			},
+			"ruggaIveDiscover": {
+				"content": [
+					"[rugga] \"I've discovered what these battle lines are all about,\" Rugga says. \"The king's shut his people out. These clans are here to see that he feeds and protects his people as he is supposed to...and they've chosen me to lead that cause.\"",
+					{
+						"divert": "ruggaHeLaughsAtY"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "14_rugga_battle"
+					}
+				]
+			},
+			"ruggaNotEveryone": {
+				"content": [
+					"[rugga] \"Not everyone is as willing to accept your...other members, are they?\" His smile is infuriating. \"I've been chosen to lead these clans against this king who has decided not to protect or feed his people. We should talk about your role and side in this, just you and me.\"",
+					{
+						"divert": "ruggaTheFighters"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "14_rugga_battle"
+					}
+				]
+			},
+			"ruggaTheFighters": {
+				"content": [
+					"[rugga] The fighters behind the governor step forward, the front line to the other forces he clearly commands. You nod and have a large tent brought forward.",
+					{
+						"divert": "heroAsSoonAsYouF1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "14_rugga_battle"
+					}
+				]
+			}
+		}
+	},
+	"url_key": "rf8h"
+}

@@ -1,0 +1,1041 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchor": {
+    "x": 728,
+    "y": 0
+  },
+  "cameraAnchorSpeed": 300,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cameraStart": {
+    "x": 40,
+    "y": 0
+  },
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_speak_folka_folka_00",
+          "speaker": "folka",
+          "time": 4,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_folka",
+      "triggers": [
+        {
+          "location": "speak_folka",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_speak_oli_oli_00",
+          "speaker": "oli",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_oli",
+      "triggers": [
+        {
+          "location": "speak_oli",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_speak_folka2_folka_00",
+          "speaker": "folka",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_folka2",
+      "triggers": [
+        {
+          "location": "speak_folka2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_bindalgates.json.z"
+        },
+        {
+          "id": "saga2/music/ch9/9m4",
+          "type": "MUSIC_ONESHOT"
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_village_interior2/stg_village_interior2.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part9/cnv_9_convo_meetzefr.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "game_progress",
+          "varvalue": 20
+        },
+        {
+          "happening": "10_start",
+          "id": "sav_chapter_10",
+          "type": "SAVE_STORE"
+        },
+        {
+          "happening": "10_start",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "9_pop_bindalgates",
+      "triggers": [
+        {
+          "location": "9_pop_bindalgates",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MARKET_RESET_ITEMS"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "market_available_supplies",
+          "varvalue": 113
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "market_supplies_per_renown",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_travel_hidden"
+        },
+        {
+          "type": "WAIT_READY"
+        }
+      ],
+      "id": "ch_11"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_bindal_barn"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_cartopen.json.z"
+        },
+        {
+          "type": "VIDEO",
+          "url": "saga2/video/ch11_bolverk_cart.720.flv"
+        },
+        {
+          "happening": "post_bellower",
+          "instant": true,
+          "param": "nopan",
+          "restore_scene": false,
+          "scene": "saga2/scene/close/cls_bindal/cls_bindal.json.z",
+          "type": "CAMP"
+        }
+      ],
+      "id": "barn",
+      "triggers": [
+        {
+          "click": "click_barn",
+          "type": "CLICK"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "id": "saga2/music/ch11/11m1b",
+          "type": "MUSIC_ONESHOT"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_postcart_reveal.json.z"
+        },
+        {
+          "scene": "saga2/scene/stage/stg_village_interior2/stg_village_interior2.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part11/cnv_11_convo_bindal_needs.json.z"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "11_bindal_bail",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_bindal_bail.json.z"
+        },
+        {
+          "happening": "11_battle_rescue",
+          "prereqs": [
+            {
+              "varname": "11_outside_battle",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "ch_11_decision",
+          "prereqs": [
+            {
+              "varname": "11_bindal_bail",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "post_bellower"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "11_bindal_decision_clicks",
+          "varvalue": 1
+        },
+        {
+          "instant": true,
+          "param": "nopan",
+          "restore_scene": false,
+          "scene": "saga2/scene/close/cls_bindal/cls_bindal.json.z",
+          "type": "CAMP"
+        }
+      ],
+      "id": "ch_11_decision"
+    },
+    {
+      "actions": [
+        {
+          "id": "folka",
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "bucket": "dredge_full",
+          "restore_scene": false,
+          "scene": "saga2/scene/battle/btl_snow_wilderness/btl_snow_wilderness.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "id": "folka",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_post_battleoutside.json.z"
+        },
+        {
+          "happening": "11_cave",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "battle_outside"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_bindal_houses.json.z"
+        },
+        {
+          "happening": "11_cave",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "click_houses",
+      "triggers": [
+        {
+          "click": "click_houses",
+          "type": "CLICK"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_bindal_greathall.json.z"
+        },
+        {
+          "happening": "11_cave",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "click_greathall",
+      "triggers": [
+        {
+          "click": "click_greathall",
+          "type": "CLICK"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part11/cnv_11_pop_bindal_gates.json.z"
+        },
+        {
+          "happening": "11_cave",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "click_gate",
+      "triggers": [
+        {
+          "click": "click_gate",
+          "type": "CLICK"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch9/9m3",
+          "type": "MUSIC_ONESHOT"
+        }
+      ],
+      "id": "music_9m3",
+      "triggers": [
+        {
+          "location": "music_9m3",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 6050.125,
+      "x": -1325.1249999999995,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/7_sky.png",
+            "localrect": {
+              "height": 292,
+              "width": 1036,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_1",
+            "offset": {
+              "x": 1003,
+              "y": -13
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/6_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_a_1",
+            "offset": {
+              "x": 1663,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/5_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2001,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_a_1",
+            "offset": {
+              "x": 550,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/5_back_b.png",
+            "localrect": {
+              "height": 1099,
+              "width": 1965,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_b_1",
+            "offset": {
+              "x": 2551,
+              "y": 63
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/4_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1987,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_a_1",
+            "offset": {
+              "x": -147,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/4_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1995,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_b_1",
+            "offset": {
+              "x": 1840,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/4_back_c.png",
+            "localrect": {
+              "height": 582,
+              "width": 1724,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_c_1",
+            "offset": {
+              "x": 3835,
+              "y": 580
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.9
+      },
+      {
+        "ifCondition": "camped",
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/click_houses.png",
+            "clickable": true,
+            "hover": "saga2/scene/close/cls_bindal/hover_houses.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 161,
+              "width": 366,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_houses",
+            "offset": {
+              "x": 2443,
+              "y": 321
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/click_market.png",
+            "clickable": true,
+            "hover": "saga2/scene/close/cls_bindal/hover_market.png",
+            "localrect": {
+              "height": 210,
+              "width": 410,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_market",
+            "offset": {
+              "x": 2307,
+              "y": 339
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/lettering_market.png",
+            "localrect": {
+              "height": 134,
+              "width": 164,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_market",
+            "offset": {
+              "x": 2307,
+              "y": 339
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/lettering_houses.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 79,
+              "width": 201,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_houses",
+            "offset": {
+              "x": 2608,
+              "y": 321
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "4_clicks",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.9
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_back_a.png",
+            "localrect": {
+              "height": 1065,
+              "width": 1870,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": 15,
+              "y": 98
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_back_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 212,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": 1885,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_back_c.png",
+            "localrect": {
+              "height": 768,
+              "width": 1759,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_c_1",
+            "offset": {
+              "x": 2097,
+              "y": 395
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_back_d.png",
+            "localrect": {
+              "height": 1120,
+              "width": 609,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_d_1",
+            "offset": {
+              "x": 3856,
+              "y": 43
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_back_e.png",
+            "localrect": {
+              "height": 453,
+              "width": 1590,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_e_1",
+            "offset": {
+              "x": 4465,
+              "y": 710
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "ifCondition": "camped",
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/click_barn.png",
+            "clickable": true,
+            "hover": "saga2/scene/close/cls_bindal/hover_barn.png",
+            "ifCondition": "11_bindal_barn",
+            "localrect": {
+              "height": 268,
+              "width": 353,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_barn",
+            "offset": {
+              "x": 2089,
+              "y": 312
+            },
+            "smoothing": true,
+            "visible": false
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/click_greathall.png",
+            "clickable": true,
+            "hover": "saga2/scene/close/cls_bindal/hover_greathall.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 352,
+              "width": 606,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_greathall",
+            "offset": {
+              "x": 1521,
+              "y": 116
+            },
+            "smoothing": true,
+            "visible": false
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/click_gate.png",
+            "clickable": true,
+            "hover": "saga2/scene/close/cls_bindal/hover_gate.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 195,
+              "width": 351,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "click_gate",
+            "offset": {
+              "x": 1671,
+              "y": 423
+            },
+            "smoothing": true,
+            "visible": false
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/lettering_gate.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 85,
+              "width": 188,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_gate",
+            "offset": {
+              "x": 1834,
+              "y": 507
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/lettering_barn.png",
+            "ifCondition": "11_bindal_barn",
+            "localrect": {
+              "height": 109,
+              "width": 140,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_barn",
+            "offset": {
+              "x": 2181,
+              "y": 312
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/lettering_greathall.png",
+            "ifCondition": "11_bindal_decision_clicks",
+            "localrect": {
+              "height": 99,
+              "width": 310,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_greathall",
+            "offset": {
+              "x": 1817,
+              "y": 229
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "3_clicks",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_front_a.png",
+            "localrect": {
+              "height": 558,
+              "width": 1989,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": -1,
+              "y": 607
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_front_b.png",
+            "localrect": {
+              "height": 545,
+              "width": 1970,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": 1988,
+              "y": 620
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_front_c.png",
+            "localrect": {
+              "height": 481,
+              "width": 1228,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_c_1",
+            "offset": {
+              "x": 3958,
+              "y": 684
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/3_walk_front_d.png",
+            "localrect": {
+              "height": 151,
+              "width": 999,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_d_1",
+            "offset": {
+              "x": 5186,
+              "y": 1014
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/2_close_a.png",
+            "localrect": {
+              "height": 581,
+              "width": 252,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a_1",
+            "offset": {
+              "x": 2951,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/2_close_b.png",
+            "localrect": {
+              "height": 581,
+              "width": 91,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b_1",
+            "offset": {
+              "x": 3958,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/2_close_c.png",
+            "localrect": {
+              "height": 581,
+              "width": 761,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_c_1",
+            "offset": {
+              "x": 4527,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/close/cls_bindal/1_close_a.png",
+            "localrect": {
+              "height": 581,
+              "width": 513,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_a_1",
+            "offset": {
+              "x": 54,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/1_close_b.png",
+            "localrect": {
+              "height": 581,
+              "width": 946,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_b_1",
+            "offset": {
+              "x": 3775,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/close/cls_bindal/1_close_c.png",
+            "localrect": {
+              "height": 581,
+              "width": 677,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_c_1",
+            "offset": {
+              "x": 6809,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.6
+      }
+    ],
+    "travels": [
+      {
+        "close": true,
+        "id": "travel_1",
+        "locations": [
+          {
+            "id": "start",
+            "position": 1014
+          },
+          {
+            "id": "music_9m3",
+            "position": 1407
+          },
+          {
+            "id": "speak_folka",
+            "position": 1858
+          },
+          {
+            "id": "speak_oli",
+            "position": 2629
+          },
+          {
+            "id": "speak_folka2",
+            "position": 3925
+          },
+          {
+            "id": "9_pop_bindalgates",
+            "position": 4554
+          },
+          {
+            "id": "end",
+            "position": 5205
+          }
+        ],
+        "splinex": [
+          "5692 506",
+          "5368 573",
+          "2054 287",
+          "1525 211",
+          "1085 125",
+          "459 33",
+          "-266 146",
+          "-138 55"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

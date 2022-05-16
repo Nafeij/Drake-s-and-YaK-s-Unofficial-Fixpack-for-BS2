@@ -1,0 +1,212 @@
+{
+	"data": {
+		"initial": "convoyAScoutRuns",
+		"stitches": {
+			"convoyAScoutRuns": {
+				"content": [
+					"[convoy] A scout runs up to you. \"There's a woman tied to a tree up ahead. Got four guards watching her.\" The strange news draws a good deal of attention from the caravan.",
+					{
+						"divert": "joinNextheroTheB"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyIfThatsNot": {
+				"content": [
+					"[convoy] \"If that's not enough,\" the guard says, \"she was seen squeezing mistletoe berries into water troughs. Think I heard that makes you sick.\" The other guards bob their heads in agreement.",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyThatsNotOn": {
+				"content": [
+					"[convoy] \"That's not on us,\" the guard responds. \"But if you want to set her free, we'd be bigger fools than you to get in your way.\"",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheGuardLo": {
+				"content": [
+					"[convoy] The guard looks shocked. \"We're not getting near her,\" he says, and the four of them run off in different directions.",
+					{
+						"divert": "heroYouCutTheWom"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheGuardLo1": {
+				"content": [
+					"[convoy] The guard looks shocked and shakes his head. \"Foolish idea and you're on your own with letting her go.\" All four guards run off in different directions.",
+					{
+						"divert": "heroYouWaveTheCa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyWeDontLike": {
+				"content": [
+					"[convoy] \"We don't like it either,\" the guard says, \"but thanks for leaving us to it.\" As the caravan rolls by, the woman screams curses and hexes, leaving most feeling sorry for her or scared.",
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroThisHeresAWi": {
+				"content": [
+					"[$hero] \"This here's a witch,\" one guard says. \"Plaguing our clan, making everyone really sick. But we caught her and brought her way out here.\" The others nod. \"She's to be tied here for five days without food or water, then cut loose. Been three days so far.\"",
+					{
+						"divert": "joinNextconvoyBu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouConsiderW": {
+				"content": [
+					"[$hero] /=You consider what to do.=/",
+					{
+						"linkPath": "joinNextconvoyEv",
+						"notIfConditions": [
+							{
+								"notIfCondition": "mistletoe"
+							}
+						],
+						"option": "\"How do you know she's a witch?\""
+					},
+					{
+						"linkPath": "convoyTheGuardLo",
+						"option": "\"Let her go. She can join us.\""
+					},
+					{
+						"linkPath": "convoyTheGuardLo1",
+						"option": "\"Let her go and everyone go their own way.\""
+					},
+					{
+						"linkPath": "convoyWeDontLike",
+						"option": "\"I don't like it, but this isn't our concern.\""
+					},
+					{
+						"linkPath": "joinNextyrsaYrsa",
+						"notIfConditions": [
+							{
+								"notIfCondition": "yrsa"
+							}
+						],
+						"option": "\"Yrsa, any thoughts?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouCutTheWom": {
+				"content": [
+					"[$hero] You cut the woman free and she slumps to the ground, weak. A few others help you get her into a cart and give her some water. She smiles at you once before falling asleep.",
+					{
+						"flagName": "10_crazy_woman2"
+					},
+					{
+						"flagName": "num_peasants+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouWaveTheCa": {
+				"content": [
+					"[$hero] You wave the caravan on and stay behind to cut the woman free. She slumps to the ground, weak. You leave her water and a small amount of food. As you walk away, she screams gibberish that chills you, but you don't look back.",
+					{
+						"flagName": "10_crazy_woman2=2"
+					},
+					{
+						"flagName": "supplies-1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextconvoyBu": {
+				"content": [
+					"[convoy] \"But she'll die on her own after that long with nothing to eat or drink,\" you say.",
+					{
+						"divert": "convoyThatsNotOn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextconvoyEv": {
+				"content": [
+					"[convoy] Everyone looks at the woman who is grinning a toothless grin. She scratches at the tree bark and calls out the dead gods one by one.",
+					{
+						"divert": "convoyIfThatsNot"
+					},
+					{
+						"flagName": "mistletoe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextheroTheB": {
+				"content": [
+					"[$hero] The bound woman is ranting and spitting at the four guards when you arrive and ask, \"What's going on here?\"",
+					{
+						"divert": "heroThisHeresAWi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"joinNextyrsaYrsa": {
+				"content": [
+					"[yrsa] Yrsa smiles and saunters toward the tied woman. She says a few quiet words to the prisoner and looks her over before returning.",
+					{
+						"divert": "yrsaMySuggestion"
+					},
+					{
+						"flagName": "yrsa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"yrsaMySuggestion": {
+				"content": [
+					"[yrsa] \"My suggestion?\" she says. \"Burn her and the tree to the ground.\"",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "5r3w"
+}

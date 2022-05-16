@@ -1,0 +1,612 @@
+{
+	"data": {
+		"initial": "skipMarkbolverkM",
+		"stitches": {
+			"bolverkAndIfIJus": {
+				"content": [
+					"[bolverk] \"And if I just leave it in the woods somewhere?\"",
+					{
+						"divert": "junoIWillKnowAsW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkFineTheRa": {
+				"content": [
+					"[bolverk] \"Fine. The Ravens' Oath: it'll be done.\"",
+					{
+						"divert": "junoNodsAndWalks"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkIfTheyMak": {
+				"content": [
+					"[bolverk] \"If they make it across that chasm, it'll be war. War's always been good for business.\"",
+					{
+						"divert": "folkaSmirksButHe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkIWontFall": {
+				"content": [
+					"[bolverk] \"I won't fall for that stupid fire trick again!\"",
+					{
+						"divert": "FolkaFolkaIgnore"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkJunoGetOn": {
+				"content": [
+					"[bolverk juno] \"Get on with it!\"",
+					{
+						"divert": "junoIKnowYourRav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkNowWeHave": {
+				"content": [
+					"[bolverk] \"Now we have a job.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkSinceWhen": {
+				"content": [
+					"[bolverk] \"Since when has that stopped you?\"",
+					{
+						"divert": "FolkaTheShieldma"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheyreAcr": {
+				"content": [
+					"[bolverk] \"They're across that damn chasm! That job is done.\"",
+					{
+						"divert": "junoAgreedButThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkThinkItWa": {
+				"content": [
+					"[bolverk] \"Think it was stupid of me to challenge Hakon?\"",
+					{
+						"divert": "folkaBolverkNotR"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkValkaSecr": {
+				"content": [
+					"[bolverk] \"Valka secrets.\"",
+					{
+						"divert": "junoYouWouldTurn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWeMakeItT": {
+				"content": [
+					"[bolverk] \"We make it to Bindal, get a job, and things get back to normal. We always survive.\"",
+					{
+						"divert": "folkaAndWhatAbou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWhatDoYou": {
+				"content": [
+					"[bolverk] \"What do you want?\"",
+					{
+						"divert": "junoIKnowYourRav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkYouGlareA": {
+				"content": [
+					"/=You glare at the clansmen and varl settled among the ruins of Ormsdalr and feel the rumbling growl in your chest.=/",
+					{
+						"divert": "folkaEveryonellB"
+					},
+					{
+						"flagName": "@hide=juno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkYouGrowlB": {
+				"content": [
+					"/=You growl, but she's right.=/",
+					{
+						"divert": "bolverkFineTheRa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkYouGruntI": {
+				"content": [
+					"/=You grunt in disgust.=/",
+					{
+						"divert": "bolverkValkaSecr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaAndWhatAbou": {
+				"content": [
+					"[folka] \"And what about all those dredge?\"",
+					{
+						"divert": "bolverkIfTheyMak"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaAndYourWayJ": {
+				"content": [
+					"[folka] \"And your way just landed us on our asses.\"",
+					{
+						"divert": "bolverkWeMakeItT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkNotR": {
+				"content": [
+					"[folka bolverk] \"Not really my place to say.\"",
+					{
+						"divert": "bolverkSinceWhen"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaEveryonellB": {
+				"content": [
+					"[folka] \"Everyone'll be ready to leave as soon as you start walking north.\"",
+					{
+						"divert": "bolverkIWontFall"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"FolkaFolkaIgnore": {
+				"content": [
+					"/=Folka ignores your comment.=/",
+					{
+						"divert": "folkaTheNewMembe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaHaventYouSa": {
+				"content": [
+					"[folka] \"Haven't you said enough?\"",
+					{
+						"divert": "folkaHaventYouSa1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaHaventYouSa1": {
+				"content": [
+					"[folka] \"Haven't you said enough?\"",
+					{
+						"linkPath": "folkaWellIWontIl",
+						"option": "\"I'll hear her out.\""
+					},
+					{
+						"linkPath": "JunoJunoLooksBot",
+						"option": "\"Folka's right; we're done talking.\""
+					},
+					{
+						"linkPath": "junoAJobOpportun",
+						"option": "\"What's to keep me from gutting you right here?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaIllFinishPa": {
+				"content": [
+					"[folka] \"I'll finish packing.\"",
+					{
+						"divert": "bolverkWhatDoYou"
+					},
+					{
+						"flagName": "@hide=folka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaNowWhat": {
+				"content": [
+					"[folka] \"Now what?\"",
+					{
+						"divert": "bolverkNowWeHave"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkasEyebrowsRi": {
+				"content": [
+					"/=Folka's eyebrows rise at the sound of work.=/",
+					{
+						"divert": "folkaIllFinishPa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaSmirksButHe": {
+				"content": [
+					"/=Folka smirks but her face hardens as Juno approaches.=/",
+					{
+						"divert": "junoBolverkCould"
+					},
+					{
+						"flagName": "@show=juno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaThatWaterfa": {
+				"content": [
+					"[folka] \"That waterfall surprised us all. Of course, it'll be nice to be on our own again.\"",
+					{
+						"divert": "bolverkWeMakeItT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaTheNewMembe": {
+				"content": [
+					"[folka] \"The new members from the other caravan will probably need a beating or two--\"",
+					{
+						"divert": "bolverkThinkItWa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"FolkaTheShieldma": {
+				"content": [
+					"/=The shieldmaiden grins.=/",
+					{
+						"divert": "folkaWeCouldveAt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaWeCouldveAt": {
+				"content": [
+					"[folka] \"We could've at least waited to hear their plans first, then decided.\"",
+					{
+						"divert": "folkaWeCouldveAt1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaWeCouldveAt1": {
+				"content": [
+					"[folka] \"We could've at least waited to hear their plans first, then decided.\"",
+					{
+						"linkPath": "folkaAndYourWayJ",
+						"option": "\"You play it too safe.\""
+					},
+					{
+						"linkPath": "folkaThatWaterfa",
+						"option": "\"Their plans almost took us over a faen waterfall.\""
+					},
+					{
+						"linkPath": "folkaWeCouldveDo",
+						"option": "\"I decided we'll find work in Bindal.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaWeCouldveDo": {
+				"content": [
+					"[folka] \"We could've done that without you butting heads with the leader of the remaining varl.\"",
+					{
+						"divert": "folkaAndWhatAbou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaWellIWontIl": {
+				"content": [
+					"[folka] \"Well, I won't. I'll finish the packing.\"",
+					{
+						"divert": "JunoTheTwoOfYouW"
+					},
+					{
+						"flagName": "@hide=folka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAgreedButThe": {
+				"content": [
+					"[juno] \"Agreed, but the cart you've been hauling has become too troublesome. It needs to be sunk in the deepest waters around.\"",
+					{
+						"divert": "BolverkYouGruntI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoAJobOpportun": {
+				"content": [
+					"[juno] \"A job opportunity that only I can offer.\"",
+					{
+						"divert": "folkasEyebrowsRi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoBolverkCould": {
+				"content": [
+					"[juno] \"Bolverk, could I have a word with you?\"",
+					{
+						"divert": "folkaHaventYouSa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoBolverkYouWo": {
+				"content": [
+					"[juno bolverk] \"You would turn down the Mender Council's coin?\"",
+					{
+						"linkPath": "junoIfYouNeededT",
+						"option": "\"What's in the cart?\""
+					},
+					{
+						"linkPath": "junoPaymentUponC",
+						"option": "\"Where's the coin?\""
+					},
+					{
+						"linkPath": "junoThinkWhatYou",
+						"option": "\"Is this some kind of pity offer, weaver?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIfYouNeededT": {
+				"content": [
+					"[juno] \"If you needed to know, I would've told you.\"",
+					{
+						"divert": "junoSufficeItToS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIKnowYourRav": {
+				"content": [
+					"[juno] \"I know your Ravens need work. Without work and coin, that banner of yours is worthless.\"",
+					{
+						"divert": "youStepTowardsHe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoInBoersgardW": {
+				"content": [
+					"[juno] \"In Boersgard, we made an arrangement for you to protect this large cart until we were away from the dredge threat.\"",
+					{
+						"divert": "bolverkTheyreAcr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIWillKnowAsW": {
+				"content": [
+					"[juno] \"I will know, as will the other Valka. Besides, the Ravens always finish their jobs. That reputation means everything to you.\"",
+					{
+						"divert": "BolverkYouGrowlB"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"JunoJunoLooksBot": {
+				"content": [
+					"/=Juno looks both calm and perturbed simultaneously. She stares at Folka for an extended moment before the shieldmaiden turns to leave.=/",
+					{
+						"divert": "folkaIllFinishPa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoNodsAndWalks": {
+				"content": [
+					"/=Juno nods and walks away. Folka watches her leave and returns to your side.=/",
+					{
+						"divert": "folkaNowWhat"
+					},
+					{
+						"flagName": "@hide=juno"
+					},
+					{
+						"flagName": "@show=folka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoPaymentUponC": {
+				"content": [
+					"[juno] \"Payment upon completion - you have a Valka's oath. The Blue River to the northwest will be your best option.\"",
+					{
+						"divert": "bolverkAndIfIJus"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoShesProtecti": {
+				"content": [
+					"[juno] \"She's protective of you.\"",
+					{
+						"divert": "bolverkJunoGetOn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoSufficeItToS": {
+				"content": [
+					"[juno] \"Suffice it to say you have a Valka's oath for a great deal of coin once you have sunk that cart. The Blue River northwest of Bindal is my suggestion.\"",
+					{
+						"divert": "bolverkAndIfIJus"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"JunoTheTwoOfYouW": {
+				"content": [
+					"/=The two of you watch Folka stomp off, but not too far.=/",
+					{
+						"divert": "junoShesProtecti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoThinkWhatYou": {
+				"content": [
+					"[juno] \"Think what you want, but if you're headed to Bindal, the Blue River isn't much further. Valka's oath: you'll be paid well upon completion.\"",
+					{
+						"divert": "bolverkAndIfIJus"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoYouWouldTurn": {
+				"content": [
+					"[juno] \"You would turn down the mender Council's coin?\"",
+					{
+						"divert": "junoBolverkYouWo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkbolverkM": {
+				"content": [
+					"{skip} mark1=bolverk mark2=folka mark4=juno",
+					{
+						"linkPath": "BolverkYouGlareA",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"youStepTowardsHe": {
+				"content": [
+					"/=You step towards her, towering above the tall Valka, though she stands resolute.=/",
+					{
+						"divert": "junoInBoersgardW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "vr62"
+}

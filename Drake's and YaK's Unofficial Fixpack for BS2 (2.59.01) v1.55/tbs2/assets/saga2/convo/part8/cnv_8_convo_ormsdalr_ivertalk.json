@@ -1,0 +1,419 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"asYouMakeYourWay": {
+				"content": [
+					"/=As you make your way to the door, you turn to look at Iver.=/",
+					{
+						"divert": "iverHeroGoThePeo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"beforeIverCanRes": {
+				"content": [
+					"/=Before Iver can respond, Oddleif abruptly enters the room.=/",
+					{
+						"divert": "oddleifGoodYoure"
+					},
+					{
+						"flagName": "@show=oddleif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroHeLooksAsBad": {
+				"content": [
+					"[$hero] \"He looks as bad as me.\"",
+					{
+						"divert": "beforeIverCanRes"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroINeverWantHi": {
+				"content": [
+					"[$hero] \"I never want him doing something like that again.\"",
+					{
+						"divert": "iverHeroIllLetYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroLetThemEvery": {
+				"content": [
+					"[$hero] \"Let them. Everyone makes their own choice to follow us or not.\"",
+					{
+						"divert": "oddleifIKnowButT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroOutOfEveryon": {
+				"content": [
+					"[$hero] \"Out of everyone.\"",
+					{
+						"divert": "iverHeroNoDoubtA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroSoWhyEvenFol": {
+				"content": [
+					"[$hero] \"So why even follow me? I get people killed.\"",
+					{
+						"divert": "iverHeroImNotDoi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWheresJunoIF": {
+				"content": [
+					"[$hero] \"Where's Juno? I figured she'd be by Eyvind's side.\"",
+					{
+						"divert": "justAsIverShrugs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"impressiveAsHisS": {
+				"content": [
+					"/=Impressive as his strength may be, you notice how the use of power taxed the mender. He looks...older.=/",
+					{
+						"divert": "heroWheresJunoIF"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverBesidesBolve": {
+				"content": [
+					"[iver] \"Besides, Bolverk's a rabid dog best kept away from clansmen.\"",
+					{
+						"divert": "oddleifButTheRav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroAnotherV": {
+				"content": [
+					"[iver $hero] \"Another varl isn't going to help that situation. I'll stay here with the mender.\"",
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"iverHeroGoThePeo": {
+				"content": [
+					"[iver $hero] \"Go. The people should see you handle something like this without me around.\"",
+					{
+						"divert": "iverHeroAnotherV"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"iverHeroIllLetYo": {
+				"content": [
+					"[iver $hero] \"I'll let /=you =/tell that to the man who can pull lightning from the sky and lift rocks to form bridges.\"",
+					{
+						"divert": "impressiveAsHisS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroImNotDoi": {
+				"content": [
+					"[iver $hero] \"I'm not doing this again. If you can't see the number of people out there still alive because of you, nothing I say will change it.\"",
+					{
+						"divert": "withNothingToSay"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroItTookAL": {
+				"content": [
+					"[iver $hero] \"It took a lot out of him.\"",
+					{
+						"divert": "heroOutOfEveryon"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroItTookAL1": {
+				"content": [
+					"[iver $hero] \"It took a lot out of him.\"",
+					{
+						"divert": "heroINeverWantHi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroNoDoubtA": {
+				"content": [
+					"[iver $hero] \"No doubt. A lot of families lost members out there.\"",
+					{
+						"divert": "heroSoWhyEvenFol"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIfTheyveMade": {
+				"content": [
+					"[iver] \"If they've made up their minds to go, they'll leave whenever you're not looking.\"",
+					{
+						"divert": "oddleifAndTheRav"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"IverIverStandsSt": {
+				"content": [
+					"/=Iver stands stoically by Eyvind's pallet, watching the mender's breathing.=/",
+					{
+						"divert": "iverHeroItTookAL"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"IverIverStandsSt1": {
+				"content": [
+					"/= Iver stands stoically by Eyvind's pallet, watching the unconscious mender's breathing.=/",
+					{
+						"divert": "iverHeroItTookAL1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverMaybeButThen": {
+				"content": [
+					"[iver] \"Maybe, but then what? Do you plan on tying up all the Ravens and dragging them to Arberrang?\"",
+					{
+						"divert": "iverBesidesBolve"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"justAsIverShrugs": {
+				"content": [
+					"/=Just as Iver shrugs, Oddleif abruptly enters the room.=/",
+					{
+						"divert": "oddleifGoodYoure"
+					},
+					{
+						"flagName": "@show=oddleif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifAndTheRav": {
+				"content": [
+					"[oddleif] \"And the Ravens have been hoarding supplies this whole time and they're trying to take off with them.\"",
+					{
+						"divert": "oddleifJunoAndHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifButTheRav": {
+				"content": [
+					"[oddleif] \"But the Ravens have been hoarding supplies this whole time and they're trying to take off with them.\"",
+					{
+						"divert": "oddleifJunoAndHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifGoodYoure": {
+				"content": [
+					"[oddleif] \"Good, you're here. It's the Ravens - they're trying to leave and some of our people want to go with them.\"",
+					{
+						"divert": "oddleifHeroGoodY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifHeroGoodY": {
+				"content": [
+					"[oddleif $hero] \"Good, you're here. It's the Ravens - they're trying to leave and some of our people want to go with them.\"",
+					{
+						"linkPath": "oddleifWeNearlyW",
+						"option": "\"What? Why?\""
+					},
+					{
+						"linkPath": "oddleifIKnowButT",
+						"option": "\"Let them. It's their choice.\""
+					},
+					{
+						"linkPath": "iverMaybeButThen",
+						"option": "\"Iver, think we can stop them?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifIKnowButT": {
+				"content": [
+					"[oddleif] \"I know, but they've been hoarding supplies this whole time and they're trying to take off with them!\"",
+					{
+						"divert": "oddleifJunoAndHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifImNotSayi": {
+				"content": [
+					"[oddleif] \"I'm not saying any of that is your fault, but people are scared.\"",
+					{
+						"divert": "iverIfTheyveMade"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifJunoAndHa": {
+				"content": [
+					"[oddleif] \"Juno and Hakon are trying to talk sense to Bolverk, so it's desperate.\"",
+					{
+						"divert": "asYouMakeYourWay"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"oddleifWeNearlyW": {
+				"content": [
+					"[oddleif] \"We nearly went over a waterfall in ships and lost a lot of people following some Valka across floating rocks.\"",
+					{
+						"divert": "oddleifImNotSayi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"punctuatedStitch": {
+				"content": [
+					{
+						"divert": "IverIverStandsSt"
+					},
+					{
+						"flagName": "@hide=oddleif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"punctuatedStitch1": {
+				"content": [
+					{
+						"divert": "IverIverStandsSt1"
+					},
+					{
+						"flagName": "@hide=oddleif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=oddleif mark3=iver",
+					{
+						"linkPath": "punctuatedStitch",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_rook"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"linkPath": "punctuatedStitch1",
+						"ifConditions": [
+							{
+								"ifCondition": "hero_alette"
+							}
+						],
+						"option": "{branch}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"withNothingToSay": {
+				"content": [
+					"/=With nothing to say, you look down at the resting mender. The spellweaving took a toll on him. =/",
+					{
+						"divert": "heroHeLooksAsBad"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "pnr5"
+}

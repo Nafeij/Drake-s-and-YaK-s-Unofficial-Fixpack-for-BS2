@@ -1,0 +1,703 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"blankStitch": {
+				"content": [
+					{
+						"divert": "canarySorryForFi"
+					},
+					{
+						"flagName": "@hide=scathach"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryGoodGreeti": {
+				"content": [
+					"[canary] \"Good greetings. Our stories tell of stranger who come help us.\"",
+					{
+						"divert": "canaryYouTwoLegs"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryHerdBeliev": {
+				"content": [
+					"[canary] \"Herd believes leader. We follow you. Herd grow strong.\"",
+					{
+						"divert": "sheBowsAgainMoti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryHerdGrowOr": {
+				"content": [
+					"[canary] \"Herd grow or get small at different times for different meanings. For now, strong.\"",
+					{
+						"divert": "shePointsAtTheAp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryILeadHerdI": {
+				"content": [
+					"[canary] \"I lead herd. I am...\"",
+					{
+						"divert": "theNextWordIsLon"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryIWatchFigh": {
+				"content": [
+					"[canary] \"I watch fight. I see your strength. I know you are stranger from stories.\"",
+					{
+						"divert": "canaryNowWeSorry"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryJoinButNot": {
+				"content": [
+					"[canary] \"Join but not join?\"",
+					{
+						"divert": "heroItWillTakeTi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryLargeSnake": {
+				"content": [
+					"[canary] \"Large snake, not from this plain.\"",
+					{
+						"divert": "theSerpentItCert"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryMistakeTho": {
+				"content": [
+					"[canary] \"Mistake. Thought you want to kill us.\"",
+					{
+						"divert": "canaryIWatchFigh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryMyHerdFeed": {
+				"content": [
+					"[canary] \"My herd feed my herd. Feed your herd too. Our herd.\"",
+					{
+						"divert": "sheMotionsToOthe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryNotTodayBu": {
+				"content": [
+					"[canary] \"Not today, but different day. Herds fight but forget.\"",
+					{
+						"divert": "heroHumansRememb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryNowWeSorry": {
+				"content": [
+					"[canary] \"Now we sorry. We follow you.\"",
+					{
+						"divert": "heroCanaryWhy"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canarySaveUsWeLo": {
+				"content": [
+					"[canary] \"Save us. We look strong, but weak against...\"",
+					{
+						"divert": "sheSearchesForTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canarySmilesAndS": {
+				"content": [
+					"/=Canary smiles and stomps the ground rhythmically with a hoof.=/",
+					{
+						"divert": "canaryThatEasyCa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canarySorryForFi": {
+				"content": [
+					"[canary] \"Sorry for fight, not know it you.\"",
+					{
+						"divert": "sheSpeaksYourLan"
+					},
+					{
+						"flagName": "14_horseborn_join"
+					},
+					{
+						"flagName": "14_hb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryThatEasyCa": {
+				"content": [
+					"[canary] \"That easy. 'Canary', yes. And you?\"",
+					{
+						"divert": "heroCanaryRook"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryThisOurSto": {
+				"content": [
+					"[canary] \"This our story. We hold true. You see these things.\"",
+					{
+						"divert": "heroTheSunHasSto"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryTrgecnnthe": {
+				"content": [
+					"[canary] \"Trìgecánnthàe not good. Think he lead. Need death.\"",
+					{
+						"divert": "pageBreakScathac"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"canaryUnderstand": {
+				"content": [
+					"[canary] \"Understand. Herd is strong now. Herd will last. Thank.\"",
+					{
+						"divert": "sheBowsAgainMoti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryWeFollowYo": {
+				"content": [
+					"[canary] \"We follow you and join your herd.\"",
+					{
+						"divert": "heroCanaryWhy"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryWhenNightw": {
+				"content": [
+					"[canary] \"When night-wall here, maybe herd weak, but for now, strong.\"",
+					{
+						"divert": "sheBowsAgainMoti"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryWhenSunSto": {
+				"content": [
+					"[canary] \"When sun stops and plains break and a god appears, follow two legs that walk along four.\"",
+					{
+						"divert": "canaryThisOurSto"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryYouHaveSee": {
+				"content": [
+					"[canary] \"You have seen the god too. You know these signs. You lead us. We follow.\"",
+					{
+						"divert": "scathachApproach"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryYouNotNeed": {
+				"content": [
+					"[canary] \"/=You =/not need believe. /=We =/believe.\"",
+					{
+						"divert": "canaryWeFollowYo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryYouTwoLegs": {
+				"content": [
+					"[canary] \"You 'two legs that walk along four'. My kind with you already.\"",
+					{
+						"divert": "pageBreakShePoin"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"canaryYouWillNee": {
+				"content": [
+					"[canary] \"You will need us. We will be there. We your herd, want us or not.\"",
+					{
+						"divert": "sheTurnsAwayToTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"hePointsAtTheLar": {
+				"content": [
+					"/=He points at the large horseborn.=/",
+					{
+						"divert": "heroYourFighterK"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"heroCanaryCanary": {
+				"content": [
+					"[$hero canary] \"Canary?\"",
+					{
+						"divert": "canarySmilesAndS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroCanaryLooksA": {
+				"content": [
+					"/=Canary looks at you with a steady gaze instead of the constant movement you experience with Derdriu.=/",
+					{
+						"linkPath": "heroMostOfTheHor",
+						"option": "Warn her that not everyone likes horseborn"
+					},
+					{
+						"linkPath": "canaryJoinButNot",
+						"option": "\"You can join, but keep your distance from the others.\""
+					},
+					{
+						"linkPath": "canaryMyHerdFeed",
+						"option": "\"We can't feed your people.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroCanaryRook": {
+				"content": [
+					"[$hero canary] \"Rook.\"",
+					{
+						"divert": "heroMyNameIsAlet"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_rook"
+					}
+				]
+			},
+			"heroCanaryWhy": {
+				"content": [
+					"[$hero canary] \"Why?\"",
+					{
+						"divert": "sheIssuesASlewOf"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroHumansRememb": {
+				"content": [
+					"[$hero] \"Humans remember things a long time. Varl even longer.\"",
+					{
+						"divert": "canaryHerdBeliev"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroItWillTakeTi": {
+				"content": [
+					"[$hero] \"It will take time for the others to accept you.\"",
+					{
+						"divert": "heroWeWillHaveGu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroManyOfMyPeop": {
+				"content": [
+					"[$hero] \"Many of my people won't want to be near your people.\"",
+					{
+						"divert": "canaryNotTodayBu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroMostOfTheHor": {
+				"content": [
+					"[$hero] \"Most of the horseborn we've met have caused us harm, including you.\"",
+					{
+						"divert": "heroManyOfMyPeop"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroMyNameIsAlet": {
+				"content": [
+					"[$hero] \"My name is Alette.\"",
+					{
+						"divert": "canaryGoodGreeti"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "hero_alette"
+					}
+				]
+			},
+			"HeroShePointsToT": {
+				"content": [
+					"/=She points to the horseborn in your ranks.=/",
+					{
+						"linkPath": "canaryYouNotNeed",
+						"option": "\"That doesn't make me the stranger in your stories.\""
+					},
+					{
+						"linkPath": "canarySaveUsWeLo",
+						"option": "\"And how am I supposed to help you?\""
+					},
+					{
+						"linkPath": "canaryMistakeTho",
+						"option": "\"You attacked us! I should kill you.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheSunHasSto": {
+				"content": [
+					"[$hero] \"The sun has stopped and I've seen the ground breaking but what god are you talking about?\"",
+					{
+						"divert": "canaryLargeSnake"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWeWillHaveGu": {
+				"content": [
+					"[$hero] \"We will have guards watching you to make sure we can trust you.\"",
+					{
+						"divert": "canaryUnderstand"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhatDoYouMea": {
+				"content": [
+					"[$hero] \"What do you mean? And who are you?\"",
+					{
+						"divert": "canaryILeadHerdI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYourFighterK": {
+				"content": [
+					"[$hero] \"Your fighter killed one of Scathach's herd.\"",
+					{
+						"divert": "pageBreakCanaryC"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"pageBreakCanaryC": {
+				"content": [
+					"/=Canary calls for Trìgecánnthàe and the large male approaches.=/",
+					{
+						"divert": "sheStudiesHisSmu"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"pageBreakCanaryC1": {
+				"content": [
+					"/=Canary looks at you with a steady gaze instead of the constant movement you experience with Derdriu.=/",
+					{
+						"divert": "HeroCanaryLooksA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakScathac": {
+				"content": [
+					"/=Scathach watches the male die, appeased. He nods to you, and walks away.=/",
+					{
+						"divert": "pageBreakCanaryC1"
+					},
+					{
+						"flagName": "@hide=scathach"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"pageBreakShePoin": {
+				"content": [
+					"/=She points to the horseborn in your ranks.=/",
+					{
+						"divert": "HeroShePointsToT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"scathachApproach": {
+				"content": [
+					"/=Scathach approaches swiftly.=/",
+					{
+						"divert": "scathachRoEchDie"
+					},
+					{
+						"flagName": "@show=scathach"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"scathachRoEchDie": {
+				"content": [
+					"[scathach] \"Ro'Ech die...from him!\"",
+					{
+						"divert": "hePointsAtTheLar"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"sheBowsAgainMoti": {
+				"content": [
+					"/=She bows again, motions to her people, and all the horseborn join your ranks at a respectful distance.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheIssuesASlewOf": {
+				"content": [
+					"/=She issues a slew of sounds in her native language before translating.=/",
+					{
+						"divert": "canaryWhenSunSto"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheMotionsToOthe": {
+				"content": [
+					"/=She motions to others who bring forth carts filled with grain and barrels of fish.=/",
+					{
+						"divert": "canaryHerdGrowOr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"shePointsAtTheAp": {
+				"content": [
+					"/=She points at the approaching darkness.=/",
+					{
+						"divert": "canaryWhenNightw"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheSearchesForTh": {
+				"content": [
+					"/=She searches for the words, but can only point all around.=/",
+					{
+						"divert": "canaryWhenSunSto"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheSpeaksYourLan": {
+				"content": [
+					"/=She speaks your language with confidence.=/",
+					{
+						"divert": "heroWhatDoYouMea"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sheStudiesHisSmu": {
+				"content": [
+					"/=She studies his smug face before killing him with a hidden dagger.=/",
+					{
+						"divert": "canaryTrgecnnthe"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "roech_state"
+					}
+				]
+			},
+			"sheTurnsAwayToTh": {
+				"content": [
+					"/=She turns away to the horseborn and waves them northward. They are quickly out of sight.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=canary mark3=scathach",
+					{
+						"linkPath": "blankStitch",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theNextWordIsLon": {
+				"content": [
+					"/=The next word is long, shrill, and confusing, but certain sounds stand out.=/",
+					{
+						"divert": "heroCanaryCanary"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theSerpentItCert": {
+				"content": [
+					"/=The Serpent. It certainly could be a god.=/",
+					{
+						"divert": "canaryYouHaveSee"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "mjw3"
+}

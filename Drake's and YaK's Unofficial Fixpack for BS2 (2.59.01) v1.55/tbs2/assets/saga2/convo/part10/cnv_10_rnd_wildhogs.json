@@ -1,0 +1,220 @@
+{
+	"data": {
+		"initial": "convoyhumanGameT",
+		"stitches": {
+			"convoyhumanEvery": {
+				"content": [
+					"[convoy_human] Everyone in the group starts smiling and tossing coins in a purse before heading down the trail. When it branches, two hunters sprint left and three think the center trail looks promising.",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanGameT": {
+				"content": [
+					"[convoy_human] \"Game trail,\" one of a few gathered hunters says, looking at a beaten path of grass. \"No telling what we might find down it, but it'll fill some stomachs.\"",
+					{
+						"linkPath": "heroAStrongPartO",
+						"option": "Let the hunters hunt"
+					},
+					{
+						"linkPath": "convoyhumanEvery",
+						"option": "Make a wager for who brings back the biggest kill"
+					},
+					{
+						"linkPath": "convoyhumanTheHu",
+						"option": "\"We need to keep moving.\""
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyhumanOneHu": {
+				"content": [
+					"[convoy_human] One hunter was wounded, but it will heal. The two others brought back a large boar, but you are clearly the victor.",
+					{
+						"divert": "convoyYouGiveEve"
+					},
+					{
+						"flagName": "renown+5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTheHu": {
+				"content": [
+					"[convoy_human] The hunters look defeated and one spits on the ground. \"When we're out of food, I'll remind you of this,\" he says, rejoining his family.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTheMa": {
+				"content": [
+					"[convoy_human] The man's wound is mild, easy enough for Eyvind to heal. Back at the caravan, you spot the other two hunters smiling. They brought down a rather large boar together.",
+					{
+						"divert": "convoyTheTwoHunt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTheOt": {
+				"content": [
+					"[convoy_human] The other hunters are late in returning, and two of them are helping the third. The man's leg is bleeding but it will heal. \"Didn't see the other male coming,\" one hunter says. \"Just glad we all got clear.\"",
+					{
+						"divert": "convoyTheTwoHunt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTheTw": {
+				"content": [
+					"[convoy_human] The two hunters who came this way are working together to take down a large boar. They handle the dangerous beast deftly with a few arrows and a spear. Though you could keep looking, besting their kill by yourself could prove fatal.",
+					{
+						"divert": "convoyhumanTheOt"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTwoHo": {
+				"content": [
+					"[convoy_human] Two hours later, you hear the hunters returned with a decent-size boar. One hunter was also injured but will recover.",
+					{
+						"flagName": "supplies+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheTwoHunt": {
+				"content": [
+					"[convoy] The two hunters split the winnings and drinks are shared while the injured man's leg is mended. Later, the entire caravan enjoys the stories of the hunt while feasting.",
+					{
+						"flagName": "morale+15"
+					},
+					{
+						"flagName": "supplies+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyYouGiveEve": {
+				"content": [
+					"[convoy] You give everyone back their coin and drinks are shared while the injured man's leg is mended. Later, the entire caravan enjoys the stories of the hunt while feasting.",
+					{
+						"flagName": "morale+15"
+					},
+					{
+						"flagName": "supplies+25"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAStrongPartO": {
+				"content": [
+					"[$hero] A strong part of you yearns to join them, but there are other tasks to attend to including discussions with Hakon about the roles of varl and humans in the caravan.",
+					{
+						"divert": "convoyhumanTwoHo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheOtherHunt": {
+				"content": [
+					"[$hero] The other hunters took paths with cloven hoof tracks. There is a chance you could kill the largest hog among them. To the right are rabbit tracks and possibly something much bigger, but its hard to tell.",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"flagName": "search"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhenYouCatch": {
+				"content": [
+					"[$hero] When you catch up with the other hunters, they need help. A boar and a sow have already charged them when a young male surprises them and gores one man's leg. Your arrows and their spears take down the young boar. The other hogs vanish.",
+					{
+						"divert": "convoyhumanTheMa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouChooseToH": {
+				"content": [
+					"[$hero] You choose to hunt alone and move down the path quietly. Sure enough, a couple of hares bolt for cover before you can sight them. But it's not you they're afraid of. The scent hits you as a bear crashes through the brush nearby. You instinctively aim and fire, scoring a shot no one will ever believe.",
+					{
+						"divert": "heroYouShotPound"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouConsiderW": {
+				"content": [
+					"[$hero] /=You consider what to do.=/",
+					{
+						"linkPath": "heroTheOtherHunt",
+						"notIfConditions": [
+							{
+								"notIfCondition": "search"
+							}
+						],
+						"option": "Search the ground for any clues"
+					},
+					{
+						"linkPath": "convoyhumanTheTw",
+						"option": "Follow the hunters to the left"
+					},
+					{
+						"linkPath": "heroWhenYouCatch",
+						"option": "Follow the hunters down the center trail"
+					},
+					{
+						"linkPath": "heroYouChooseToH",
+						"option": "Take off to the right on your own"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouShotPound": {
+				"content": [
+					"[$hero] You shot 537 pounds of meat. However, you are only able to carry 100 pounds back to the caravan.",
+					{
+						"divert": "convoyhumanOneHu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "vb8r"
+}

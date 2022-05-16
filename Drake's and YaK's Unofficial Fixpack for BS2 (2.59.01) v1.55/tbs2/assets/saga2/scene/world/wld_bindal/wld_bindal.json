@@ -1,0 +1,2163 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "scene": "saga2/scene/godstone/cls_godstone_bindal/cls_godstone_bindal.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "9_close_godstone",
+      "triggers": [
+        {
+          "location": "9_close_godstone",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_defended.json.z"
+        },
+        {
+          "happening": "battle_village",
+          "instant": true,
+          "prereqs": [
+            {
+              "varname": "9_battle_village",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "battle_village",
+          "instant": true,
+          "prereqs": [
+            {
+              "varname": "9_battle_village_charge",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "9_close_village",
+      "triggers": [
+        {
+          "location": "9_close_village",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "prereqs": [
+            {
+              "varname": "mogun_state",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_bolvteaches_nomogun.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "mogun_state",
+              "varvalue": 1
+            }
+          ],
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_wilderness_forest/stg_wilderness_forest.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part9/cnv_9_convo_bolvteaches.json.z"
+        },
+        {
+          "location": "9_convo_bolvteaches",
+          "prereqs": [
+            {
+              "varname": "9_cartfight",
+              "varvalue": 0
+            }
+          ],
+          "scene": "saga2/scene/world/wld_bindal/wld_bindal.json.z",
+          "type": "TRAVEL"
+        },
+        {
+          "type": "PARTY_CLEAR"
+        },
+        {
+          "id": "bolverk",
+          "type": "PARTY_ADD"
+        },
+        {
+          "happening": "battle_cart",
+          "prereqs": [
+            {
+              "varname": "9_cartfight",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "id": "mogun",
+          "prereqs": [
+            {
+              "varname": "9_kill_mogun",
+              "varvalue": 1
+            }
+          ],
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "mogun",
+          "prereqs": [
+            {
+              "varname": "9_mogun_injured",
+              "varvalue": 1
+            }
+          ],
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "mogun",
+          "prereqs": [
+            {
+              "varname": "9_mogun_injured",
+              "varvalue": 1
+            }
+          ],
+          "type": "UNIT_INJURE"
+        }
+      ],
+      "id": "9_convo_bolvteaches",
+      "triggers": [
+        {
+          "location": "9_convo_bolvteaches",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.38
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_variance",
+          "varvalue": 0.5
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.7
+        }
+      ],
+      "id": "9_fog_up",
+      "triggers": [
+        {
+          "location": "9_fog_up",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.55
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_variance",
+          "varvalue": 1
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.6
+        }
+      ],
+      "id": "9_foggier",
+      "triggers": [
+        {
+          "location": "9_foggier",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2_vo/vo/vo_09_bindal_bolverk",
+          "subtitle": "saga2/locale/en/vo_09_bindal.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "vo_09_bindal_bolverk",
+      "triggers": [
+        {
+          "location": "vo_09_bindal_bolverk",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 5
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 3
+        }
+      ],
+      "id": "9_increase_snow",
+      "triggers": [
+        {
+          "location": "9_increase_snow",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 8
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 8
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.15
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_variance",
+          "varvalue": 0.5
+        },
+        {
+          "param": "0xffffff",
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_color"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.8
+        }
+      ],
+      "id": "9_increase_snow2",
+      "triggers": [
+        {
+          "location": "9_increase_snow2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/scene/battle/music/ch9.btlmusic.json.z",
+          "type": "BATTLE_MUSIC"
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_bandits.json.z"
+        }
+      ],
+      "id": "9_pop_bandits",
+      "triggers": [
+        {
+          "location": "9_pop_bandits",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_drunkoli.json.z"
+        },
+        {
+          "type": "MUSIC_OUTRO"
+        },
+        {
+          "happening": "battle_oli",
+          "type": "HAPPENING"
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_wilderness_forest/stg_wilderness_forest.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part9/cnv_9_convo_oli.json.z"
+        },
+        {
+          "id": "oli",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "itm_2_dodge_2",
+          "prereqs": [
+            {
+              "varname": "9_battle_oli_down",
+              "varvalue": 0
+            }
+          ],
+          "speaker": "oli",
+          "suppress_flytext": true,
+          "type": "ITEM_ADD"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "oli_state",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "9_battle_oli_down"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "9_oli_quests",
+          "varvalue": 1
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "9_meet_oli",
+          "varvalue": 1
+        },
+        {
+          "location": "9_pop_drunkoli",
+          "scene": "saga2/scene/world/wld_bindal/wld_bindal.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "9_pop_drunkoli",
+      "triggers": [
+        {
+          "location": "9_pop_drunkoli",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 4
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 4
+        }
+      ],
+      "id": "9_increase_snow_early",
+      "triggers": [
+        {
+          "location": "9_increase_snow_early",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_strangedream.json.z"
+        },
+        {
+          "type": "MUSIC_OUTRO"
+        },
+        {
+          "instant": true,
+          "type": "CAMP"
+        }
+      ],
+      "id": "9_pop_strangedream",
+      "triggers": [
+        {
+          "location": "9_pop_strangedream",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_refs.json.z"
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_wilderness_snow/stg_wilderness_snow.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part9/cnv_9_convo_bak_refugees.json.z"
+        },
+        {
+          "happening": "battle_bak",
+          "prereqs": [
+            {
+              "varname": "9_battle_bak",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "battle_bakless",
+          "prereqs": [
+            {
+              "varname": "9_battle_bakless",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "prereq": "9_battle_bak || 9_battle_bakless",
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_refbattle_outcome.json.z"
+        },
+        {
+          "id": "bak",
+          "prereq": "!9_battle_bak && !9_battle_bakless && bak_state",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "location": "9_post_refs",
+          "scene": "saga2/scene/world/wld_bindal/wld_bindal.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "9_pop_refugees",
+      "triggers": [
+        {
+          "location": "9_pop_refugees",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "HALT",
+          "varvalue": 1
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_snowstorm1.json.z"
+        },
+        {
+          "instant": true,
+          "time": 2,
+          "type": "FADEOUT"
+        },
+        {
+          "type": "HALT"
+        },
+        {
+          "instant": true,
+          "scene": "saga2/scene/cinema/cin_bolverkdream1/cin_bolverkdream1.json.z",
+          "type": "SCENE"
+        }
+      ],
+      "id": "9_pop_snowstorm",
+      "triggers": [
+        {
+          "location": "9_pop_snowstorm",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_tobindal.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.4
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_variance",
+          "varvalue": 0.5
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        },
+        {
+          "scene": "saga2/scene/close/cls_bindal/cls_bindal.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "9_pop_tobindal",
+      "triggers": [
+        {
+          "location": "9_pop_tobindal",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_rnd_brothers_varl.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "9_rnd_brothers_varl",
+          "varvalue": 1
+        }
+      ],
+      "id": "9_rnd_brothers_varl"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_rnd_hunting.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "9_rnd_hunting",
+          "varvalue": 1
+        }
+      ],
+      "id": "9_rnd_hunting"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_rnd_oli_gather1.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "9_rnd_oli_gather1",
+          "varvalue": 1
+        }
+      ],
+      "id": "9_rnd_oli_gather1"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_rnd_oli_gather2.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "9_rnd_oli_gather2",
+          "varvalue": 1
+        }
+      ],
+      "id": "9_rnd_oli_gather2"
+    },
+    {
+      "actions": [
+        {
+          "happening": "9_rnd_hunting",
+          "instant": true,
+          "prereqs": [
+            {
+              "varname": "9_rnd_hunting",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "9_rnd_oli_gather1",
+          "prereqs": [
+            {
+              "varname": "9_rnd_oli_gather1",
+              "varvalue": 0
+            },
+            {
+              "varname": "9_meet_oli",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "9_rnd_oli_gather2",
+          "prereqs": [
+            {
+              "varname": "9_rnd_oli_gather1",
+              "varvalue": 1
+            },
+            {
+              "varname": "9_rnd_oli_gather2",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING",
+          "weights": [
+            {
+              "varname": "9_rnd_oli_gather2",
+              "varvalue": 2
+            }
+          ]
+        },
+        {
+          "happening": "9_rnd_brothers_varl",
+          "prereqs": [
+            {
+              "varname": "9_rnd_brothers_varl",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "9_rnd_snowtracks",
+          "prereqs": [
+            {
+              "varname": "9_rnd_snowtracks",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "9_rnd_quests",
+      "random": true,
+      "triggers": [
+        {
+          "location": "9_rnd_quests",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_rnd_snowtracks.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "9_rnd_snowtracks",
+          "varvalue": 1
+        }
+      ],
+      "id": "9_rnd_snowtracks"
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2_vo/vo/vo_09_godstone_irynx_bolverk",
+          "subtitle": "saga2/locale/en/vo_09_godstone_irynx.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "9_vo_irynx",
+      "triggers": [
+        {
+          "location": "9_vo_irynx",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "board_id": "board_bak",
+          "bucket": "bandits",
+          "restore_scene": false,
+          "scene": "saga2/scene/battle/btl_snow_wilderness/btl_snow_wilderness.json.z",
+          "type": "BATTLE"
+        }
+      ],
+      "id": "battle_bak"
+    },
+    {
+      "actions": [
+        {
+          "board_id": "board_0,board_1,board_2,board_3,board_4,board_5,board_6",
+          "bucket": "bandits",
+          "restore_scene": false,
+          "scene": "saga2/scene/battle/btl_snow_wilderness/btl_snow_wilderness.json.z",
+          "type": "BATTLE"
+        }
+      ],
+      "id": "battle_bakless"
+    },
+    {
+      "actions": [
+        {
+          "id": "mogun",
+          "prereqs": [
+            {
+              "varname": "mogun_state",
+              "varvalue": 1
+            }
+          ],
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "bolverk",
+          "type": "VARIABLE_SET",
+          "varname": "bolverk.party_required",
+          "varvalue": 1
+        },
+        {
+          "bucket": "bandits",
+          "restore_scene": false,
+          "scene": "saga2/scene/battle/btl_cart_fight/btl_cart_fight.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "DRIVING_SPEED"
+        },
+        {
+          "location": "9_convo_bolvteaches",
+          "scene": "saga2/scene/world/wld_bindal/wld_bindal.json.z",
+          "type": "TRAVEL"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "9_mogun_fights",
+              "varvalue": 1
+            },
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_lesson_mogun.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_bolvteaches_fail.json.z"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        }
+      ],
+      "id": "battle_cart"
+    },
+    {
+      "actions": [
+        {
+          "id": "oli",
+          "prereq": "9_battle_oli_down",
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "oli",
+          "prereq": "!9_battle_oli_down",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "type": "PARTY_CLEAR"
+        },
+        {
+          "id": "bolverk",
+          "type": "PARTY_ADD"
+        },
+        {
+          "id": "oli",
+          "prereq": "!9_battle_oli_down",
+          "type": "VARIABLE_SET",
+          "varname": "oli.party_required",
+          "varvalue": 1
+        },
+        {
+          "id": "bolverk",
+          "type": "VARIABLE_SET",
+          "varname": "bolverk.party_required",
+          "varvalue": 1
+        },
+        {
+          "bucket": "dredge_full",
+          "restore_scene": false,
+          "scene": "saga2/scene/battle/btl_wilderness2_oli/btl_wilderness2_oli.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "id": "oli",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "oli",
+          "prereq": "9_battle_oli_down",
+          "type": "UNIT_INJURE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "oli.party_required"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "bolverk.party_required"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_olifight_fail.json.z"
+        }
+      ],
+      "id": "battle_oli"
+    },
+    {
+      "actions": [
+        {
+          "board_id": "board_0",
+          "bucket": "village_defenders",
+          "prereqs": [
+            {
+              "varname": "9_battle_village",
+              "varvalue": 1
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_village2_defended/btl_village2_defended.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "board_id": "board_1",
+          "bucket": "village_defenders",
+          "prereqs": [
+            {
+              "varname": "9_battle_village_charge",
+              "varvalue": 1
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_village2_defended/btl_village2_defended.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_defended_fail.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part9/cnv_9_pop_defended_victory.json.z"
+        },
+        {
+          "happening": "village_camp",
+          "instant": true,
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 1
+            }
+          ],
+          "time": 3,
+          "type": "HAPPENING",
+          "varname": "day",
+          "varvalue": 1
+        }
+      ],
+      "id": "battle_village"
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch9/9m1-L1",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_9m1-L1",
+      "triggers": [
+        {
+          "location": "music_9m1-L1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch9/9m1-L2",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_9m1-L2",
+      "triggers": [
+        {
+          "location": "music_9m1-L2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch9/9m2-L1",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_9m2-L1",
+      "triggers": [
+        {
+          "location": "music_9m2-L1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch9/9m2-L2",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_9m2-L2",
+      "triggers": [
+        {
+          "location": "music_9m2-L2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MUSIC_OUTRO"
+        }
+      ],
+      "id": "music_out",
+      "triggers": [
+        {
+          "location": "music_out",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "game_progress",
+          "varvalue": 10
+        },
+        {
+          "id": "sav_chapter_09",
+          "type": "SAVE_STORE"
+        }
+      ],
+      "id": "sav_ch_9",
+      "triggers": [
+        {
+          "location": "sav_ch_9",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "MARKET_RESET_ITEMS"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "market_available_supplies",
+          "varvalue": 20
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "market_supplies_per_renown",
+          "varvalue": 1
+        },
+        {
+          "type": "MARKET_RESET_ITEMS"
+        },
+        {
+          "instant": true,
+          "scene": "saga2/scene/village/vlg_forest2/vlg_forest2.json.z",
+          "type": "CAMP"
+        }
+      ],
+      "id": "village_camp"
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 8996.347564935066,
+      "x": -1365.5,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/7_sky_a.png",
+            "localrect": {
+              "height": 348,
+              "width": 974,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_a_1",
+            "offset": {
+              "x": 486,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/7_sky_b.png",
+            "localrect": {
+              "height": 581,
+              "width": 776,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_b_1",
+            "offset": {
+              "x": 2434,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/6_back_d.png",
+            "localrect": {
+              "height": 645,
+              "width": 1746,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_d_1",
+            "offset": {
+              "x": 528,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/7_sky_small.png",
+            "localrect": {
+              "height": 228,
+              "width": 278,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_small_1",
+            "offset": {
+              "x": 92,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.2
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/6_back_a.png",
+            "localrect": {
+              "height": 740,
+              "width": 1767,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_a_1",
+            "offset": {
+              "x": 272,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/6_back_f.png",
+            "localrect": {
+              "height": 460,
+              "width": 697,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_f_1",
+            "offset": {
+              "x": 3534,
+              "y": 256
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.35
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/6_back_c2.png",
+            "localrect": {
+              "height": 591,
+              "width": 974,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_c2_1",
+            "offset": {
+              "x": 3128,
+              "y": 78
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/5_back_d.png",
+            "localrect": {
+              "height": 444,
+              "width": 1289,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_d_1",
+            "offset": {
+              "x": 777,
+              "y": 251
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/6_back_c.png",
+            "localrect": {
+              "height": 537,
+              "width": 799,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_c_1",
+            "offset": {
+              "x": 2336,
+              "y": 158
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/5_back_a.png",
+            "localrect": {
+              "height": 357,
+              "width": 992,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_a_1",
+            "offset": {
+              "x": 1573,
+              "y": 372
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/5_back_b.png",
+            "localrect": {
+              "height": 163,
+              "width": 1254,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_b_1",
+            "offset": {
+              "x": 3595,
+              "y": 607
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/5_back_c.png",
+            "localrect": {
+              "height": 510,
+              "width": 1145,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_c_1",
+            "offset": {
+              "x": 4980,
+              "y": 653
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.55
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/4_back_a.png",
+            "localrect": {
+              "height": 957,
+              "width": 1959,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_a_1",
+            "offset": {
+              "x": -1,
+              "y": -2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/4_back_b.png",
+            "localrect": {
+              "height": 579,
+              "width": 1904,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_b_1",
+            "offset": {
+              "x": 1958,
+              "y": 382
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/4_back_c.png",
+            "localrect": {
+              "height": 504,
+              "width": 1340,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_c_1",
+            "offset": {
+              "x": 3862,
+              "y": 222
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/4_back_d.png",
+            "localrect": {
+              "height": 577,
+              "width": 1294,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_d_1",
+            "offset": {
+              "x": 5802,
+              "y": 588
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.8
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 20,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 7656,
+                    "y": 770
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": 9895.15,
+                    "y": 770
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_bindal/yellow_clouds.png",
+            "localrect": {
+              "height": 107,
+              "width": 1255,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "yellow_clouds_1",
+            "offset": {
+              "x": 7756,
+              "y": 770
+            },
+            "scale": {
+              "x": -2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "yellow_clouds_2",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.8
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": -1563,
+                    "y": 660
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": 3430.05,
+                    "y": 660
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_bindal/cloud.png",
+            "localrect": {
+              "height": 161,
+              "width": 1605,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_1",
+            "offset": {
+              "x": -1463,
+              "y": 660
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_back_a.png",
+            "localrect": {
+              "height": 281,
+              "width": 1870,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": 1036,
+              "y": 698
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_back_b.png",
+            "localrect": {
+              "height": 350,
+              "width": 1726,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": 2906,
+              "y": 512
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_back_c.png",
+            "localrect": {
+              "height": 336,
+              "width": 1814,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_c_1",
+            "offset": {
+              "x": 4632,
+              "y": 398
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_back_d.png",
+            "localrect": {
+              "height": 344,
+              "width": 1806,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_d_1",
+            "offset": {
+              "x": 6446,
+              "y": 590
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/lettering_bindal.png",
+            "localrect": {
+              "height": 80,
+              "width": 273,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_bindal_1",
+            "offset": {
+              "x": 1292,
+              "y": 608
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/lettering_ormsdalr.png",
+            "localrect": {
+              "height": 98,
+              "width": 284,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_ormsdalr_1",
+            "offset": {
+              "x": 7886,
+              "y": 689
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_back_godhill.png",
+            "localrect": {
+              "height": 316,
+              "width": 1873,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_godhill_1",
+            "offset": {
+              "x": 4075,
+              "y": 440
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_front_a.png",
+            "localrect": {
+              "height": 641,
+              "width": 1948,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": 0,
+              "y": 522
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_front_b.png",
+            "localrect": {
+              "height": 426,
+              "width": 1748,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": 1948,
+              "y": 737
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_front_c.png",
+            "localrect": {
+              "height": 645,
+              "width": 1959,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_c_1",
+            "offset": {
+              "x": 3696,
+              "y": 518
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_front_d.png",
+            "localrect": {
+              "height": 593,
+              "width": 1621,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_d_1",
+            "offset": {
+              "x": 5655,
+              "y": 570
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/3_walk_front_e.png",
+            "localrect": {
+              "height": 399,
+              "width": 976,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_e_1",
+            "offset": {
+              "x": 7276,
+              "y": 764
+            },
+            "smoothing": true
+          },
+          {
+            "anim": "saga2/scene/world/wld_bindal/vfx.circling_vultures/circling_vultures.clip",
+            "bmp": "",
+            "localrect": {
+              "height": 404,
+              "width": 198,
+              "x": -156,
+              "y": -404
+            },
+            "nameId": "circling_vultures_1",
+            "offset": {
+              "x": 6076,
+              "y": 962
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": {
+                    "x": 5562,
+                    "y": 950
+                  },
+                  "tailpos": 1,
+                  "target": {
+                    "x": 9082,
+                    "y": 950
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.5
+            },
+            "bmp": "saga2/scene/world/wld_bindal/yellow_clouds.png",
+            "localrect": {
+              "height": 107,
+              "width": 1255,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "yellow_clouds_1",
+            "offset": {
+              "x": 5662,
+              "y": 950
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "yellow_clouds",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": []
+            },
+            "bmp": "saga2/scene/world/wld_bindal/yellow_fog.png",
+            "localrect": {
+              "height": 220,
+              "width": 1058,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "yellow_fog_1",
+            "offset": {
+              "x": 6885,
+              "y": 738
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "yellow_fog",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/2_close_a.png",
+            "localrect": {
+              "height": 103,
+              "width": 1268,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a_1",
+            "offset": {
+              "x": 2108,
+              "y": 961
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/2_close_b.png",
+            "localrect": {
+              "height": 149,
+              "width": 1386,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b_1",
+            "offset": {
+              "x": 5527,
+              "y": 867
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/2_close_c.png",
+            "localrect": {
+              "height": 116,
+              "width": 192,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_c_1",
+            "offset": {
+              "x": 9656,
+              "y": 936
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/2_close_d.png",
+            "localrect": {
+              "height": 90,
+              "width": 241,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_d_1",
+            "offset": {
+              "x": 10140,
+              "y": 983
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/1_close_a.png",
+            "localrect": {
+              "height": 581,
+              "width": 1141,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_a_1",
+            "offset": {
+              "x": -3,
+              "y": -1
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/1_close_b.png",
+            "localrect": {
+              "height": 325,
+              "width": 1241,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_b_1",
+            "offset": {
+              "x": 2596,
+              "y": 515
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/1_close_c.png",
+            "localrect": {
+              "height": 137,
+              "width": 412,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_c_1",
+            "offset": {
+              "x": 10586,
+              "y": 889
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/1_close_d.png",
+            "localrect": {
+              "height": 121,
+              "width": 342,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_d_1",
+            "offset": {
+              "x": 12073,
+              "y": 923
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.6
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_bindal/0_close_a.png",
+            "localrect": {
+              "height": 261,
+              "width": 773,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "0_close_a_1",
+            "offset": {
+              "x": 2161,
+              "y": -586
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/0_close_b.png",
+            "localrect": {
+              "height": 186,
+              "width": 424,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "0_close_b_1",
+            "offset": {
+              "x": 10360,
+              "y": -582
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_0_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 2
+      }
+    ],
+    "travels": [
+      {
+        "id": "travel_1",
+        "locations": [
+          {
+            "id": "start",
+            "position": 132
+          },
+          {
+            "id": "music_9m1-L1",
+            "position": 140
+          },
+          {
+            "id": "sav_ch_9",
+            "position": 232
+          },
+          {
+            "id": "9_rnd_quests",
+            "position": 457
+          },
+          {
+            "id": "9_convo_bolvteaches",
+            "position": 892
+          },
+          {
+            "id": "bk_9_oli",
+            "position": 1350
+          },
+          {
+            "id": "9_pop_drunkoli",
+            "loadBarrier": true,
+            "position": 1356
+          },
+          {
+            "id": "music_9m1-L2",
+            "position": 1360
+          },
+          {
+            "id": "bk_9_defended_village",
+            "position": 1687
+          },
+          {
+            "id": "9_close_village",
+            "position": 1746
+          },
+          {
+            "id": "9_rnd_quests",
+            "position": 2264
+          },
+          {
+            "id": "9_vo_irynx",
+            "position": 2364
+          },
+          {
+            "id": "music_out",
+            "position": 2621
+          },
+          {
+            "id": "9_close_godstone",
+            "loadBarrier": true,
+            "position": 2679
+          },
+          {
+            "id": "9_post_irynx",
+            "position": 2875
+          },
+          {
+            "id": "music_9m2-L1",
+            "position": 2900
+          },
+          {
+            "id": "9_increase_snow_early",
+            "position": 3106
+          },
+          {
+            "id": "9_pop_strangedream",
+            "position": 3255
+          },
+          {
+            "id": "9_pop_bandits",
+            "position": 3554
+          },
+          {
+            "id": "music_out",
+            "position": 3813
+          },
+          {
+            "id": "bk_9_bak",
+            "position": 3820
+          },
+          {
+            "id": "9_pop_refugees",
+            "loadBarrier": true,
+            "position": 3871
+          },
+          {
+            "id": "9_post_refs",
+            "position": 3900
+          },
+          {
+            "id": "9_rnd_quests",
+            "position": 4415
+          },
+          {
+            "id": "9_increase_snow",
+            "position": 4656
+          },
+          {
+            "id": "bk_9_snow",
+            "position": 4850
+          },
+          {
+            "id": "9_increase_snow2",
+            "position": 4872
+          },
+          {
+            "id": "music_9m2-L2",
+            "position": 4950
+          },
+          {
+            "id": "9_fog_up",
+            "position": 5225
+          },
+          {
+            "id": "9_pop_snowstorm",
+            "loadBarrier": true,
+            "position": 5299
+          },
+          {
+            "id": "9_rnd_quests",
+            "position": 5784
+          },
+          {
+            "id": "music_out",
+            "position": 5790
+          },
+          {
+            "id": "9_foggier",
+            "position": 5882
+          },
+          {
+            "id": "vo_09_bindal_bolverk",
+            "position": 5900
+          },
+          {
+            "id": "9_pop_tobindal",
+            "position": 6186
+          },
+          {
+            "id": "end",
+            "position": 6321
+          }
+        ],
+        "splinex": [
+          "6728 333",
+          "6390 307",
+          "6310 283",
+          "6182 228",
+          "6055 194",
+          "6034 192",
+          "6006 184",
+          "5979 192",
+          "5861 187",
+          "5708 143",
+          "5566 125",
+          "5377 121",
+          "5179 126",
+          "5034 125",
+          "4911 115",
+          "4768 106",
+          "4685 102",
+          "4596 96",
+          "4462 64",
+          "4316 19",
+          "4089 -47",
+          "3803 -126",
+          "3581 -132",
+          "3427 -103",
+          "3204 -9",
+          "3108 28",
+          "2820 103",
+          "2674 132",
+          "2344 157",
+          "2075 169",
+          "1869 191",
+          "1598 242",
+          "1419 286",
+          "1158 361",
+          "859 368",
+          "619 341",
+          "442 305",
+          "263 268",
+          "-34 207",
+          "-274 166"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

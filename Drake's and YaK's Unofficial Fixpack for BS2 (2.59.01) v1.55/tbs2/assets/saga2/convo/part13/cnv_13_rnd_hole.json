@@ -1,0 +1,162 @@
+{
+	"data": {
+		"initial": "sparrSeveralRave",
+		"stitches": {
+			"bolverkNoSoonerH": {
+				"content": [
+					"[bolverk] No sooner has the word left your mouth than you see Folka look at you. \"Were you trying to be funny? Craven and Raven?\" You ignore her and head for the hole.",
+					{
+						"divert": "convoyravensItsA"
+					},
+					{
+						"flagName": "_craven"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensAndM": {
+				"content": [
+					"[convoy_ravens] \"And more faen mud!\" he shouts, throwing two handfuls at others. Caught off guard, a couple of other men fall into the pit. The Ravens start laughing and calling for a fight, and for a moment, the world feels familiar again - unbroken.",
+					{
+						"flagName": "morale+20"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensEver": {
+				"content": [
+					"[convoy_ravens] Everyone seems pleased to be moving away from some mysterious hole in the ground.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensEver1": {
+				"content": [
+					"[convoy_ravens] Everyone looks relieved to be moving away from the strange depression in the ground.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensItsA": {
+				"content": [
+					"[convoy_ravens] It's as described: big, deep, surrounded by scrawlings in the surrounding rock, and...disturbing.",
+					{
+						"linkPath": "convoyravensTheM",
+						"ifConditions": [
+							{
+								"ifCondition": "_craven"
+							}
+						],
+						"option": "Toss the scout in to see what he finds"
+					},
+					{
+						"linkPath": "convoyravensEver1",
+						"option": "\"Let's move on. No more surprises.\""
+					},
+					{
+						"linkPath": "convoyravensShov",
+						"option": "\"Someone get in there. Now!\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensShov": {
+				"content": [
+					"[convoy_ravens] Shoving turns into fighting and soon a dozen Ravens fall into the pit. You take pride in their quick reaction, forming a tight ring, guarding each other's back. When no snakes appear, they start looking for anything of value. Only one fighter finds anything - an old clasp - and gives it to you as you haul him out.",
+					{
+						"flagName": "@happening=item_clasp"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensTheM": {
+				"content": [
+					"[convoy_ravens] The man yelps as he falls into the hole with a pleasing thud. He spits out dirt, swears loudly, and starts looking around. \"There's not a faen thing down here!\" he shouts. \"Just mud, rock, and--\" He stops and bends down. Everyone leans in, straining to see what he's pulling out of the ground.",
+					{
+						"divert": "convoyravensAndM"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensTheO": {
+				"content": [
+					"[convoy_ravens] The others all cheer at your words, the memory of the cave still fresh in their minds.",
+					{
+						"flagName": "morale+10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyravensWeCo": {
+				"content": [
+					"[convoy_ravens] \"We couldn't tell,\" a scout says. \"No trees around, just a deep hole in the ground about four yox-length across. My arms were like chicken skin just looking at it.\"",
+					{
+						"linkPath": "bolverkNoSoonerH",
+						"option": "\"Let's have a look, you craven.\""
+					},
+					{
+						"linkPath": "convoyravensEver",
+						"option": "\"Forget it. Not interested in any more surprises.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sparrIDidntSayAn": {
+				"content": [
+					"[sparr] \"I didn't say anything because there isn't much to say,\" Sparr says, wheezing. \"I've seen a few holes like that other places around the world. One had a bag of jewels buried right in the center.\" Everyone starts getting excited. \"Another one,\" Sparr says louder, \"fell away into a pit of adders. Heard a man die a more painful death in that one than anything on the battlefield.\" The buzz of excitement dies.",
+					{
+						"linkPath": "convoyravensItsA",
+						"option": "\"Let's check it out.\""
+					},
+					{
+						"linkPath": "convoyravensEver",
+						"option": "\"No more surprises. Let's move!\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"sparrSeveralRave": {
+				"content": [
+					"[sparr] Several Ravens report a large hole in the ground nearby. \"There's strange marks all around it,\" one says. \"Some look fresh, others...well, others look like they've been there as long as the mountains.\" Sparr looks up. \"This hole have smooth sides? About as deep as a varl?\" he asks. The men nod and Sparr grunts.",
+					{
+						"linkPath": "convoyravensWeCo",
+						"option": "\"What's in the hole?\""
+					},
+					{
+						"linkPath": "sparrIDidntSayAn",
+						"option": "\"Don't make me beat some answers out of you, old man.\""
+					},
+					{
+						"linkPath": "convoyravensTheO",
+						"option": "\"Stay away from anything that leads back into the ground.\""
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "brf5"
+}

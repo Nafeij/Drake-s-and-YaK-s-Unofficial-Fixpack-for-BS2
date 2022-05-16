@@ -1,0 +1,127 @@
+{
+	"data": {
+		"initial": "zefrZefrLooksUpA",
+		"stitches": {
+			"bolverkLaughingA": {
+				"content": [
+					"[bolverk] \"Laughing at me?\" You hit the stone until your fists are bloody and your vision just as red. The gem shatters with a loud crack and the stone splinters around it. Folka throws her shield over several children, but a chunk of stone hits her in the nose hard enough to break it.",
+					{
+						"divert": "zefrAsTheDustSet"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouAreSoo": {
+				"content": [
+					"[bolverk] You are soon sweating and frothing at the corners of your mouth. Are the others laughing at you? Giggles from children cause you to spin about, changing their expressions to fear.",
+					{
+						"divert": "bolverkLaughingA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouPushAM": {
+				"content": [
+					"[bolverk] You push a man aside and start working your hands at the stone. As you toil, you get more and more furious at the stone and the men’s baleful eyes on you cause you to start shouting at them.",
+					{
+						"divert": "bolverkYouAreSoo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanGemsO": {
+				"content": [
+					"[convoy_human] Gems of various size and shape are found embedded in the surrounding stones. The clansmen are soon hammering away in an attempt to pry a particularly large gem loose. The ringing of hammers echoes through the deep.",
+					{
+						"linkPath": "convoyhumanSomeL",
+						"option": "\"Stop. You're making too much noise.\""
+					},
+					{
+						"linkPath": "bolverkYouPushAM",
+						"option": "Try your luck at prying one out"
+					},
+					{
+						"linkPath": "convoyhumanTheCl",
+						"option": "Say nothing and watch them work"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanItTak": {
+				"content": [
+					"[convoy_human] It takes only minutes for them to skillfully pry the gem from its deep socket. Talented workers who should be learned from, not dominated. A man from behind claps you on the back, smiling. The miners walk forward and place the red gem in your hands with grateful smiles.",
+					{
+						"flagName": "11_tearstone_removed"
+					},
+					{
+						"flagName": "@happening=item_redtear"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanSomeL": {
+				"content": [
+					"[convoy_human] Some look angry but the fear of the unknown down here is enough to keep them from saying anything. They all move away, though a few look back longingly at the stone.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyhumanTheCl": {
+				"content": [
+					"[convoy_human] The clansmen go about their work. You never knew that these men had the skills they do; two leverage the ends of large picks while two men in the front guide the tips. These men are miners.",
+					{
+						"divert": "convoyhumanItTak"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrAsTheDustSet": {
+				"content": [
+					"[zefr] As the dust settles, you feel exhausted. The clansmen stare at you with fear in their eyes. Zefr tends to the wounded, completely ignoring you.",
+					{
+						"flagName": "morale-15"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrSheWandersAr": {
+				"content": [
+					"[zefr] She wanders around the glowing pools of the godstone. \"If we are correct, Vez'nan was not their only god, but he became one of the most powerful at the cost of everything dear to him.\" She looks at you. \"Of course, if what you hold dear is something like control, maybe there is power in letting go.\"",
+					{
+						"divert": "convoyhumanGemsO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrZefrLooksUpA": {
+				"content": [
+					"[zefr] Zefr looks up at the giant, shaped formation, glittering with strange, glowing patterns. \"The Valka know almost nothing about this ancient race's culture, let alone their god, Vez'nan. The name alone might be wrong, but we have a framework of letters based on repeated patterns found around here.\"",
+					{
+						"divert": "zefrSheWandersAr"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			}
+		}
+	},
+	"url_key": "8hgz"
+}

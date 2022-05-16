@@ -1,0 +1,488 @@
+{
+	"data": {
+		"initial": "skipMarkbolverkM",
+		"stitches": {
+			"bolverkAreYouLoo": {
+				"content": [
+					"[bolverk] \"Are you looking for coin?\"",
+					{
+						"divert": "nikelsBolverkWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkLetUsKnow": {
+				"content": [
+					"[bolverk] \"Let us know in Manaharr.\"",
+					{
+						"divert": "nikelsNodsAsYouW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkMaybeOrMa": {
+				"content": [
+					"[bolverk] \"Maybe. Or maybe he just hasn't seen many bad things.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkNikelsFro": {
+				"content": [
+					"/=Nikels frowns at her.=/",
+					{
+						"linkPath": "NikelsNikelssSho",
+						"option": "Say nothing"
+					},
+					{
+						"linkPath": "nikelsKillFor",
+						"option": "\"Would you kill someone for coin?\""
+					},
+					{
+						"linkPath": "nikelsYeahButICa",
+						"option": "\"The answer to whatever you're asking is no.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWhyDoYouC": {
+				"content": [
+					"[bolverk] \"Why do you care? Aren't you Zefr's lackey?\"",
+					{
+						"divert": "nikelsWellAppren"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkYouShrugY": {
+				"content": [
+					"/=You shrug your indifference.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkItSu": {
+				"content": [
+					"[folka bolverk] \"It sure sounded like you were wanting payment.\"",
+					{
+						"divert": "nikelsIWasntThat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkWeve": {
+				"content": [
+					"[folka bolverk] \"We've had people after us for money before. It never goes well for them, does it?\"",
+					{
+						"divert": "folkaLooksAtYouA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkWhat": {
+				"content": [
+					"[folka bolverk] \"What do you think about him?\"",
+					{
+						"divert": "folkaBolverkWhat1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaBolverkWhat1": {
+				"content": [
+					"[folka bolverk] \"What do you think about him?\"",
+					{
+						"linkPath": "nikelsOkayThenAl",
+						"option": "\"I'll decide in Manaharr.\""
+					},
+					{
+						"linkPath": "nikelsYeahButICa",
+						"option": "\"No.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaCouldntYouW": {
+				"content": [
+					"[folka] \"Couldn't you work with a blacksmith or something?\"",
+					{
+						"divert": "pageBreakNikelsN"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"FolkaFolkaWalksU": {
+				"content": [
+					"/=Folka walks up and clamps a hand on one of Nikels' now sagging shoulders.=/",
+					{
+						"divert": "folkaMostOfWhatW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaHeStillThin": {
+				"content": [
+					"[folka] \"He still thinks it's all an adventure. But it'll take more strength than you've got to crush his spirit.\"",
+					{
+						"divert": "BolverkYouShrugY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaKidItsBestN": {
+				"content": [
+					"[folka] \"Kid, it's best not to keep pushing.\"",
+					{
+						"divert": "theMenderLooksEm"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaLooksAtYouA": {
+				"content": [
+					"/=Folka looks at you and you shake your head and growl. Nikels looks terrified.=/",
+					{
+						"divert": "nikelsIJustWante"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaMostOfWhatW": {
+				"content": [
+					"[folka] \"Most of what we do never makes it into the skald songs.\"",
+					{
+						"divert": "nikelsIGuessINee"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"folkaNotTheBestT": {
+				"content": [
+					"[folka] \"Not the best timing, but he's got heart.\"",
+					{
+						"divert": "bolverkMaybeOrMa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsBolverkIWa": {
+				"content": [
+					"[nikels] \"Bolverk, I was thinking - well, wondering - about what it takes to become a Raven.\"",
+					{
+						"divert": "nikelsIveNeverHe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsBolverkWha": {
+				"content": [
+					"[nikels bolverk] \"What? No.\"",
+					{
+						"divert": "folkaBolverkItSu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIGuessINee": {
+				"content": [
+					"[nikels] \"I guess I need to think on this a bit more.\"",
+					{
+						"divert": "bolverkLetUsKnow"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIJustWante": {
+				"content": [
+					"[nikels] \"I just wanted to join the Ravens! If...if you could use my mending abilities.\"",
+					{
+						"divert": "theShieldmaidenL"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIMeanIGues": {
+				"content": [
+					"[nikels] \"I mean, I guess. If that was the job.\"",
+					{
+						"divert": "FolkaFolkaWalksU"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIveMendedA": {
+				"content": [
+					"[nikels] \"I've mended a good deal of the Ravens' armor after the recent battles. That's worth something, right?\"",
+					{
+						"divert": "bolverkAreYouLoo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIveNeverHe": {
+				"content": [
+					"[nikels] \"I've never heard stories about a test or trials to join. Is there a test?\"",
+					{
+						"divert": "bolverkWhyDoYouC"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsIWasntThat": {
+				"content": [
+					"[nikels] \"I wasn't. That's not--\"",
+					{
+						"divert": "folkaBolverkWeve"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsKillFor": {
+				"content": [
+					"[nikels] \"Kill for...\"",
+					{
+						"divert": "theMendersFacePa"
+					},
+					{
+						"flagName": "11_nikels_raven=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"NikelsNikelssSho": {
+				"content": [
+					"/=Nikels' shoulders sag a bit.=/",
+					{
+						"divert": "nikelsIveMendedA"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsNodsAsYouW": {
+				"content": [
+					"/=Nikels nods as you walk off.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsOhAJokeIGe": {
+				"content": [
+					"[nikels] \"Oh, a joke. I get it.\"",
+					{
+						"divert": "folkaBolverkWhat"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsOkayThenAl": {
+				"content": [
+					"[nikels] \"Okay then. Alright. Well, I'll leave you to thinking about it. Thank you.\"",
+					{
+						"divert": "theMenderWalksOf"
+					},
+					{
+						"flagName": "11_nikels_raven=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsPartOfOurT": {
+				"content": [
+					"[nikels] \"Part of our training requires world experience.\"",
+					{
+						"divert": "folkaCouldntYouW"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsReallyNike": {
+				"content": [
+					"[nikels] \"Really?\" Nikels says. \"I mean, great. I mean, I will. Thank you.\" He walks off beaming. Folka shakes her head and chuckles.",
+					{
+						"flagName": "11_nikels_raven=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"NikelsTheYoungMe": {
+				"content": [
+					"/=The young mender stands tall and proud as you approach.=/",
+					{
+						"divert": "nikelsBolverkIWa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsWellAppren": {
+				"content": [
+					"[nikels] \"Well, apprentice, yes. I'm a full mender training to become a Valka.\"",
+					{
+						"divert": "nikelsPartOfOurT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsWellWhenTh": {
+				"content": [
+					"[nikels] \"Well, when there's an opening in the Ravens, I'll be waiting.\"",
+					{
+						"divert": "folkaHeStillThin"
+					},
+					{
+						"flagName": "@hide=nikels"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsYeahButICa": {
+				"content": [
+					"[nikels] \"Yeah, but I can--\"",
+					{
+						"divert": "folkaKidItsBestN"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakNikelsN": {
+				"content": [
+					"/=Nikels frowns at her.=/",
+					{
+						"divert": "BolverkNikelsFro"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkbolverkM": {
+				"content": [
+					"{skip} mark1=bolverk mark2=nikels mark3=folka",
+					{
+						"linkPath": "NikelsTheYoungMe",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theMenderLooksEm": {
+				"content": [
+					"/=The mender looks embarrassed for a moment before speaking again. =/",
+					{
+						"divert": "nikelsWellWhenTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theMendersFacePa": {
+				"content": [
+					"/=The mender's face pales a bit.=/",
+					{
+						"divert": "nikelsIMeanIGues"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theMenderWalksOf": {
+				"content": [
+					"/=The mender walks off, beaming.=/",
+					{
+						"divert": "folkaNotTheBestT"
+					},
+					{
+						"flagName": "@hide=nikels"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theShieldmaidenL": {
+				"content": [
+					"/=The shieldmaiden looks at you and starts laughing. Even you chuckle. Once.=/",
+					{
+						"divert": "nikelsOhAJokeIGe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "5xfn"
+}

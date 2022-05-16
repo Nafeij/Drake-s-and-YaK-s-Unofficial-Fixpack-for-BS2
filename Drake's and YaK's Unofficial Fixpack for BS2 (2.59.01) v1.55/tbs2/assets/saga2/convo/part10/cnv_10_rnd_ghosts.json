@@ -1,0 +1,239 @@
+{
+	"data": {
+		"initial": "convoyPeculiarit",
+		"stitches": {
+			"convoyAFewMorePe": {
+				"content": [
+					"[convoy] A few more people are discovered missing as well when someone says, \"Wait. There's a third fire right over there.\"",
+					{
+						"linkPath": "heroWhosThereYou",
+						"option": "Call out to whoever might be around"
+					},
+					{
+						"linkPath": "heroSpreadOutAnd",
+						"option": "Search for the missing clansmen"
+					},
+					{
+						"linkPath": "heroTheClansmenA",
+						"option": "Risk searching the third flame"
+					},
+					{
+						"flagName": "num_peasants-4"
+					},
+					{
+						"flagName": "num_fighters-2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyPeculiarit": {
+				"content": [
+					"[convoy] Peculiarities are no stranger in the Old Wood, but the discovery of a blue-tinged campfire in the distance creates quite a stir among the clansmen. The varl ignore it completely, but fighters and families alike want a closer look.",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"convoyTheBlueFir": {
+				"content": [
+					"[convoy] The blue fires suddenly die and everyone scrambles back to the caravan. The clansmen insist on moving quickly.",
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyTheClansme": {
+				"content": [
+					"[convoy] The clansmen cheer your bravery and adventurous spirit. The celebratory sounds guide the missing clansmen back to the caravan and all are unharmed but one: the young man known as Kaif. He won't speak, but occasionally jerks his chin to the right.",
+					{
+						"flagName": "morale+15"
+					},
+					{
+						"flagName": "10_ghosts_kaif"
+					},
+					{
+						"flagName": "num_peasants+4"
+					},
+					{
+						"flagName": "num_fighters+8"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyWhenTheCar": {
+				"content": [
+					"[convoy] When the caravan keeps moving, quite a few clansmen turn around and rejoin you. Others carry on their exploration. An hour later, a young man named Kaif returns, visibly shaken. He won't speak, but occasionally jerks his chin to the right.",
+					{
+						"flagName": "num_peasants-15"
+					},
+					{
+						"flagName": "num_fighters-8"
+					},
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"flagName": "10_ghosts_kaif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"convoyYouArriveA": {
+				"content": [
+					"[convoy] You arrive at the next flame and again see no signs of who might have sparked the fire. \"Where's Kaif?\" a young woman asks. \"He was right here with me.\"",
+					{
+						"divert": "convoyAFewMorePe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroARatherLarge": {
+				"content": [
+					"[$hero] A rather large group of you move toward the blue fire, keeping an eye out for any possible danger. Nothing and no one is there. Other than the crackling fire, the site is abandoned. A clansman calls out, \"There's another one!\" Another blue fire has cropped up in the woods.",
+					{
+						"linkPath": "heroSomeLookOutA",
+						"option": "Turn back to the caravan"
+					},
+					{
+						"linkPath": "convoyYouArriveA",
+						"option": "Approach the next flame"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroNoTellingWho": {
+				"content": [
+					"[$hero] \"No telling who or what's out there,\" you say. \"Let's stay together and keep moving.\" By the looks on their faces, you clearly dashed a few dreams, but the clansmen all return.",
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroSomeLookOutA": {
+				"content": [
+					"[$hero] Some look out at the second blue flame with longing, but eventually follow your lead and return to the caravan. The stories woven around seeing the blue fire up close are quite elaborate and entertaining.",
+					{
+						"flagName": "morale+15"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroSpreadOutAnd": {
+				"content": [
+					"[$hero] \"Spread out and find them!\" you command. The fighters and clansmen eventually regroup after a time, having only found the young man named Kaif. He looks frail in the blue firelight, says nothing, and only occasionally jerks his chin to the right.",
+					{
+						"divert": "convoyTheBlueFir"
+					},
+					{
+						"flagName": "num_peasants+1"
+					},
+					{
+						"flagName": "10_ghosts_kaif"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroTheClansmenA": {
+				"content": [
+					"[$hero] The clansmen are torn. Some follow you while others head back toward the caravan. The third fire is as deserted as the first two, but a fresh mound of dirt has a small item atop it.",
+					{
+						"divert": "convoyTheClansme"
+					},
+					{
+						"flagName": "num_fighters-6"
+					},
+					{
+						"flagName": "@happening=item_knife"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhosThereYou": {
+				"content": [
+					"[$hero] \"Who's there?\" you shout, but only the echo of your words respond. You turn to see most of the clansmen making their way back to the caravan and you call for everyone else to do the same. By the time you're back with the varl, a few more are reported missing.",
+					{
+						"flagName": "num_peasants-3"
+					},
+					{
+						"flagName": "num_fighters-3"
+					},
+					{
+						"flagName": "morale-10"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouConsiderW": {
+				"content": [
+					"[$hero] /=You consider what to do.=/",
+					{
+						"linkPath": "heroARatherLarge",
+						"option": "Join them"
+					},
+					{
+						"linkPath": "heroNoTellingWho",
+						"option": "Call everyone back"
+					},
+					{
+						"linkPath": "convoyWhenTheCar",
+						"option": "Keep moving, allowing the others to rejoin later"
+					},
+					{
+						"linkPath": "yrsaTheArchersEy",
+						"notIfConditions": [
+							{
+								"notIfCondition": "yrsa1"
+							}
+						],
+						"option": "\"Yrsa, have you ever seen anything like this?\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"yrsaTheArchersEy": {
+				"content": [
+					"[yrsa] The archer's eyes are wide and they dart around to various branches in the trees. \"Maybe,\" she says. \"Best to move along.\"",
+					{
+						"divert": "heroYouConsiderW"
+					},
+					{
+						"flagName": "yrsa1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "jvm5"
+}

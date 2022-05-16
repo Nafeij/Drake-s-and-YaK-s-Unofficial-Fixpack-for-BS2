@@ -1,0 +1,1044 @@
+{
+	"data": {
+		"initial": "skipMarkheroMark",
+		"stitches": {
+			"aleoAllTheseQues": {
+				"content": [
+					"[aleo] \"All these questions; I'm being rude. Please, join us. Let us feast in your honor.\"",
+					{
+						"divert": "iverNoTimeForTha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoAVarlLeaderS": {
+				"content": [
+					"[aleo] \"A varl leader saving a human village from...those things! Legends are made of much less.\"",
+					{
+						"divert": "iverHeroNoVarlLe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoBoersgardIsT": {
+				"content": [
+					"[aleo] \"Boersgard is the only other place I've seen in my life; this small village is all my family knows. Are things really as tragic as you're making them sound?\"",
+					{
+						"divert": "iverAleoProbably"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "quiet_counter<3"
+					}
+				]
+			},
+			"aleoButTheDredge": {
+				"content": [
+					"[aleo] \"But the dredge are gone. We defeated them.\"",
+					{
+						"divert": "heroYouveGotALot"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoButWhatAbout": {
+				"content": [
+					"[aleo] \"But what about the deep shaking in the ground? Only yesterday, we felt a rumble like none before.\"",
+					{
+						"divert": "aleoButWhatAbout1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoButWhatAbout1": {
+				"content": [
+					"[aleo] \"But what about the deep shaking in the ground? Only yesterday, we felt a rumble like none before.\"",
+					{
+						"linkPath": "aleoLooksShocked",
+						"option": "\"You think we have all the answers?\""
+					},
+					{
+						"linkPath": "aleoTheSerpentIn",
+						"option": "\"Could be the giant Serpent.\""
+					},
+					{
+						"linkPath": "iverLooksAtYouEx",
+						"option": "Say nothing"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoBybyYourClan": {
+				"content": [
+					"[aleo] \"By...by your clan? You're Sundr-Slayers?\"",
+					{
+						"divert": "theTermMakesIver"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoForgiveMeMay": {
+				"content": [
+					"[aleo] \"Forgive me - maybe it's this never-setting sun, or dredge, or the deaths of so many of my clansmen. I'm not myself.\"",
+					{
+						"divert": "theMansEyesAppra"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoHeadsOffToTh": {
+				"content": [
+					"/=Aleo heads off to the village to organize supplies.=/",
+					{
+						"divert": "iverHeroPeopleTh"
+					},
+					{
+						"flagName": "num_peasants+39"
+					},
+					{
+						"flagName": "num_fighters+12"
+					},
+					{
+						"flagName": "supplies+17"
+					},
+					{
+						"flagName": "@hide=aleo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"AleoHeStopsSpeak": {
+				"content": [
+					"/=He stops speaking as the village chieftain approaches.=/",
+					{
+						"divert": "aleoAVarlLeaderS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoImAleoTheSka": {
+				"content": [
+					"[aleo] \"I'm Aleo, the skald. Were you trying to drive the dredge all the way back north by yourself?\"",
+					{
+						"divert": "aleoImAleoTheSka1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoImAleoTheSka1": {
+				"content": [
+					"[aleo] \"I'm Aleo, the skald. Were you trying to drive the dredge all the way back north by yourself?\"",
+					{
+						"linkPath": "theSkaldLooksBac",
+						"option": "Remain silent"
+					},
+					{
+						"linkPath": "aleoLooksIntoYou",
+						"option": "\"I wouldn't stop there.\""
+					},
+					{
+						"linkPath": "aleoSoSoonButThe",
+						"option": "\"We should get ready to leave.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoImExchanging": {
+				"content": [
+					"[aleo] \"I'm exchanging information with you. It's a normal thing to do here.\"",
+					{
+						"divert": "heroGetUsedToThi"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoKillingASund": {
+				"content": [
+					"[aleo] \"Killing a Sundr is a big enough tale on its own, for now.\"",
+					{
+						"divert": "heroAleoThenLets"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoLooksIntoYou": {
+				"content": [
+					"/=Aleo looks into your eyes for a moment before recoiling.=/",
+					{
+						"divert": "aleoSomethingTer"
+					},
+					{
+						"flagName": "aleo_state=2"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoLooksShocked": {
+				"content": [
+					"/=Aleo looks shocked and confused.=/",
+					{
+						"divert": "aleoImExchanging"
+					},
+					{
+						"flagName": "aleo_state=3"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoLooksStunned": {
+				"content": [
+					"/=Aleo looks stunned by your words.=/",
+					{
+						"divert": "aleoNoImThankful"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoNoImThankful": {
+				"content": [
+					"[aleo] \"No, I'm thankful. It's just...\"",
+					{
+						"divert": "iTheSkaldLooksAr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoNonsenseYouv": {
+				"content": [
+					"[aleo] \"Nonsense! You've just arrived and defended us. Don't insult us by leaving before we thank you properly.\"",
+					{
+						"divert": "iverAleoIMeantAl"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "leave_suggestion"
+					}
+				]
+			},
+			"aleoNotToSoundUn": {
+				"content": [
+					"[aleo] \"Not to sound ungrateful, but this place...it's all we have. It's our home.\"",
+					{
+						"divert": "aleoNotToSoundUn1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoNotToSoundUn1": {
+				"content": [
+					"[aleo] \"Not to sound ungrateful, but this place...it's all we have. It's our home.\"",
+					{
+						"linkPath": "aleoLooksStunned",
+						"option": "\"We never should've stopped.\""
+					},
+					{
+						"linkPath": "iverRookNoWeDidn",
+						"option": "Nod quietly"
+					},
+					{
+						"linkPath": "iverHeroWantingT",
+						"option": "\"Don't be stupid. More dredge are coming.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoOfCourseMind": {
+				"content": [
+					"[aleo] \"Of course. Mind if I ask of news from Boersgard? We heard rumor the Sundr Bellower was laying waste to the town.\"",
+					{
+						"divert": "iverMoreThanARum"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoPackingAndTe": {
+				"content": [
+					"[aleo] \"Packing and tending to our dead will take some time, but I'll have everyone on the ships soon.\"",
+					{
+						"divert": "aleoHeadsOffToTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoRookIsRightI": {
+				"content": [
+					"[aleo] \"Rook is right. I hoped their defeat here today would keep the dredge away, but when voiced...\"",
+					{
+						"divert": "iTheSkaldLooksAr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoSoIverWeHear": {
+				"content": [
+					"[aleo] \"So, Iver, we heard rumors about the Sundr, Bellower, sacking Boersgard.\"",
+					{
+						"divert": "iverMoreThanARum"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoSomethingTer": {
+				"content": [
+					"[aleo] \"Something terrible must've happened to have such hatred for them.\"",
+					{
+						"divert": "iverATopicForAno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoSoSoonButThe": {
+				"content": [
+					"[aleo] \"So soon? But the villagers will want to throw a feast to honor you before you go.\"",
+					{
+						"divert": "iverAleoHeMeansA"
+					},
+					{
+						"flagName": "leave_suggestion"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoThatRemindsM": {
+				"content": [
+					"[aleo] \"That reminds me: we heard rumor the Sundr, Bellower, was laying waste to Boersgard.\"",
+					{
+						"divert": "iverMoreThanARum"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"aleoTheSerpentIn": {
+				"content": [
+					"[aleo] \"The Serpent in the Sun, Radormyr? I'm no holy man, but joking about dead gods feels wrong.\"",
+					{
+						"divert": "iverRookAboutAsO"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heHasBeenByYourS": {
+				"content": [
+					"/=He has been by your side through everything including the death of your daughter. Now you feel the weight of his full attention.=/",
+					{
+						"divert": "iverHeroWhatYouP"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAleoThenLets": {
+				"content": [
+					"[$hero aleo] \"Then let's get ready to leave.\"",
+					{
+						"divert": "aleoNotToSoundUn"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAletteWasMyR": {
+				"content": [
+					"[$hero] \"Alette was my reason for living after Aldis died.\"",
+					{
+						"divert": "iverHeroIRemembe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroAndShesStill": {
+				"content": [
+					"[$hero] \"And she's still gone! I shouldn't have let her fire that arrow.\"",
+					{
+						"divert": "iverHeroMaybeTha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroButTheyWeren": {
+				"content": [
+					"[$hero] \"But they weren't supposed to protect her! That was my job! And I let her die.\"",
+					{
+						"divert": "iverHeroYouCould"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroGetUsedToThi": {
+				"content": [
+					"[$hero] \"Get used to things not being normal anymore.\"",
+					{
+						"divert": "iverHeroEnoughWe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIDontCareAbo": {
+				"content": [
+					"[$hero] \"I don't care about a faen plan. They killed her.\"",
+					{
+						"divert": "iverHeroBellower"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroIKnowThisVil": {
+				"content": [
+					"[$hero] \"I know this village lost fighters today, so they have less of a chance defending themselves tomorrow.\"",
+					{
+						"divert": "aleoRookIsRightI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"HeroIverMovesYou": {
+				"content": [
+					"/=Iver moves you past the crowd of worried villagers ensuring you can stand on your own.=/",
+					{
+						"divert": "iverHeroIDontKno"
+					},
+					{
+						"flagName": "quiet_counter=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWhatChangedY": {
+				"content": [
+					"[$hero] \"What changed your mind?\"",
+					{
+						"divert": "iverHeroNotSureI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouveGotALot": {
+				"content": [
+					"[$hero] \"You've got a lot to learn about dredge.\"",
+					{
+						"divert": "iverHeroWeAllDo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heWalksTowardsTh": {
+				"content": [
+					"/=He walks towards the village, leaving you alone with your thoughts.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iAleoLooksBackAn": {
+				"content": [
+					"/=Aleo looks back and forth between you and Iver before nodding.=/",
+					{
+						"divert": "aleoPackingAndTe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iTheSkaldLooksAr": {
+				"content": [
+					"/=The skald looks around at the small huts of his village.=/",
+					{
+						"divert": "aleoBoersgardIsT"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAleoHeMeansA": {
+				"content": [
+					"[iver aleo] \"He means all of us, your people too.\"",
+					{
+						"divert": "aleoButTheDredge"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverAleoIMeantAl": {
+				"content": [
+					"[iver aleo] \"I meant all of us should be going. Your people too.\"",
+					{
+						"divert": "aleoNotToSoundUn"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "leave_suggestion"
+					}
+				]
+			},
+			"iverAleoProbably": {
+				"content": [
+					"[iver aleo] \"Probably worse.\"",
+					{
+						"divert": "iverHeroSinceRoo"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "quiet_counter<3"
+					}
+				]
+			},
+			"iverATopicForAno": {
+				"content": [
+					"[iver] \"A topic for another time, skald. Maybe.\"",
+					{
+						"divert": "aleoOfCourseMind"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroAndItWas": {
+				"content": [
+					"[iver $hero] \"And it was Rook here who ordered us to stop.\"",
+					{
+						"divert": "aleoForgiveMeMay"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroBellower": {
+				"content": [
+					"[iver $hero] \"Bellower killed her. And we killed him.\"",
+					{
+						"divert": "heroAndShesStill"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroEnoughWe": {
+				"content": [
+					"[iver $hero] \"Enough. We need to leave.\"",
+					{
+						"divert": "aleoNonsenseYouv"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroIDontKno": {
+				"content": [
+					"[iver $hero] \"I don't know what you were--\"",
+					{
+						"divert": "AleoHeStopsSpeak"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroIFeltThe": {
+				"content": [
+					"[iver $hero] \"I felt the same way back on the bridge in Einartoft.\"",
+					{
+						"divert": "heroWhatChangedY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroIRemembe": {
+				"content": [
+					"[iver $hero] \"I remember. But make this caravan your reason now; there's still plenty for you to do.\"",
+					{
+						"divert": "heWalksTowardsTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroKeepHold": {
+				"content": [
+					"[iver $hero] \"Keep holding it all in and you'll lose it when these people need you most.\"",
+					{
+						"divert": "heroAletteWasMyR"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroListenID": {
+				"content": [
+					"[iver $hero] \"Listen, I don't know what's in your head right now, but you dying won't bring your daughter back.\"",
+					{
+						"divert": "youClenchYourJaw"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroMaybeTha": {
+				"content": [
+					"[iver $hero] \"Maybe that's why you charged into those dredge alone: you think you deserve to die.\"",
+					{
+						"divert": "onlyTheLappingWa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroMoreThan": {
+				"content": [
+					"[iver $hero] \"More than the world will break if I'm left to do all the talking.\"",
+					{
+						"divert": "pageBreakIverOne"
+					},
+					{
+						"flagName": "iver_warning"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "quiet_counter=3"
+					}
+				]
+			},
+			"iverHeroNotMuchO": {
+				"content": [
+					"[iver $hero] \"Not much of a plan.\"",
+					{
+						"divert": "heroIDontCareAbo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroNotSureI": {
+				"content": [
+					"[iver $hero] \"Not sure it has changed, but these people? They need a leader - that better be enough to change yours.\"",
+					{
+						"divert": "heWalksTowardsTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroNoVarlLe": {
+				"content": [
+					"[iver $hero] \"No varl leader, just Iver. Those /=things =/were dredge, like the stories you probably heard as a kid.\"",
+					{
+						"divert": "iverHeroAndItWas"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroPeopleTh": {
+				"content": [
+					"[iver $hero] \"People thinking we're heroes now? The world is breaking in more ways than one.\"",
+					{
+						"divert": "iverHeroTheWorld"
+					},
+					{
+						"pageNum": 2
+					},
+					{
+						"ifCondition": "quiet_counter=1"
+					}
+				]
+			},
+			"iverHeroSinceRoo": {
+				"content": [
+					"[iver $hero] \"Since Rook's not talking, I'm telling you to pack and get on the ships. Now.\"",
+					{
+						"divert": "iAleoLooksBackAn"
+					},
+					{
+						"flagName": "aleo_state=3"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "quiet_counter>2"
+					}
+				]
+			},
+			"iverHeroThesePeo": {
+				"content": [
+					"[iver $hero] \"These people need you now more than they know. Their lives depend on your decisions.\"",
+					{
+						"divert": "heWalksTowardsTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroTheWorld": {
+				"content": [
+					"[iver $hero] \"The world breaking. Dredge mothers fighting alongside warriors. A giant Serpent. Not sure what to make of it all.\"",
+					{
+						"divert": "iverHeroMoreThan"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "quiet_counter=2"
+					}
+				]
+			},
+			"iverHeroWantingT": {
+				"content": [
+					"[iver $hero] \"Wanting to defend what's yours isn't stupid. You know that.\"",
+					{
+						"divert": "heroIKnowThisVil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroWeAllDo": {
+				"content": [
+					"[iver $hero] \"We all do.\"",
+					{
+						"divert": "aleoThatRemindsM"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroWhatYouP": {
+				"content": [
+					"[iver $hero] \"What you pulled out there - fighting the dredge alone - was that tied to Alette at all?\"",
+					{
+						"divert": "iverHeroWhatYouP1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroWhatYouP1": {
+				"content": [
+					"[iver $hero] \"What you pulled out there - fighting the dredge alone - was that tied to Alette at all?\"",
+					{
+						"linkPath": "iverHeroNotMuchO",
+						"option": "\"They'll pay for taking her from me.\""
+					},
+					{
+						"linkPath": "iverYouCantAffor",
+						"option": "\"Don't mention her name!\""
+					},
+					{
+						"linkPath": "iverHeroKeepHold",
+						"option": "\"I'm trying my best to hold it all together.\""
+					},
+					{
+						"linkPath": "iverHeroListenID",
+						"option": "\"The villagers could probably use your strength.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverHeroYouCould": {
+				"content": [
+					"[iver $hero] \"You couldn't have stopped that anymore than you could stop the wind blowing.\"",
+					{
+						"divert": "iverPlacesHisLar"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIDontKnowAbo": {
+				"content": [
+					"[iver] \"I don't know about losing a child, but I understand losing a friend. And that she was.\"",
+					{
+						"divert": "heWalksTowardsTh"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverLooksAtYouEx": {
+				"content": [
+					"/=Iver looks at you expectantly, then sighs.=/",
+					{
+						"divert": "aleoAllTheseQues"
+					},
+					{
+						"flagName": "quiet_counter+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverMoreThanARum": {
+				"content": [
+					"[iver] \"More than a rumor, but he's been dealt with.\"",
+					{
+						"divert": "aleoBybyYourClan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverNoTimeForTha": {
+				"content": [
+					"[iver] \"No time for that. We should be going.\"",
+					{
+						"divert": "aleoNonsenseYouv"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverPlacesHisLar": {
+				"content": [
+					"/=Iver places his large hand on your shoulder.=/",
+					{
+						"divert": "iverIDontKnowAbo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverRookAboutAsO": {
+				"content": [
+					"[iver $hero] \"About as opposite of Radormyr as it gets - this one's determined to swallow us all.\"",
+					{
+						"divert": "theSkaldLooksSke"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverRookNoWeDidn": {
+				"content": [
+					"[iver $hero] \"No. We didn't risk ourselves so the dredge could kill you tomorrow.\"",
+					{
+						"divert": "iTheSkaldLooksAr"
+					},
+					{
+						"flagName": "quiet_counter+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverYouCantAffor": {
+				"content": [
+					"[iver] \"You can't afford to act like that. She was important to everyone here.\"",
+					{
+						"divert": "heroButTheyWeren"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"onlyTheLappingWa": {
+				"content": [
+					"/=Only the lapping waves on the bank disturb the silence.=/",
+					{
+						"divert": "iverHeroIFeltThe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakIverOne": {
+				"content": [
+					"/=Iver, one of the giants known as varl, has fought dredge in the northern winters, personally killed the Sundr Raze, and lost an arm to the Sundr Bellower. =/",
+					{
+						"divert": "heHasBeenByYourS"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkheroMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=aleo mark3=iver",
+					{
+						"linkPath": "HeroIverMovesYou",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"theMansEyesAppra": {
+				"content": [
+					"/=The man's eyes appraise you and he quickly nods.=/",
+					{
+						"divert": "aleoImAleoTheSka"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theSkaldLooksBac": {
+				"content": [
+					"/=The skald looks back and forth between you and Iver, unsure on how to proceed.=/",
+					{
+						"divert": "aleoSoIverWeHear"
+					},
+					{
+						"flagName": "quiet_counter+1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theSkaldLooksSke": {
+				"content": [
+					"/=The skald looks skeptical.=/",
+					{
+						"divert": "aleoKillingASund"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"theTermMakesIver": {
+				"content": [
+					"/=The term makes Iver wince and ends Aleo's excitement. =/",
+					{
+						"divert": "aleoButWhatAbout"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youClenchYourJaw": {
+				"content": [
+					"/=You clench your jaw and look away.=/",
+					{
+						"divert": "iverHeroThesePeo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "64pv"
+}

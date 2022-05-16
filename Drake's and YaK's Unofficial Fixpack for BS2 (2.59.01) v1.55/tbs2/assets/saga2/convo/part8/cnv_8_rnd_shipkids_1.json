@@ -1,0 +1,79 @@
+{
+	"data": {
+		"initial": "convoyTimeOnTheC",
+		"stitches": {
+			"convoyTimeOnTheC": {
+				"content": [
+					"[convoy] Time on the cramped longships is proving too much for the children. They're climbing ropes, interrupting rowers, and constantly leaning over the sides to touch the water. Some varl and clansmen look annoyed.",
+					{
+						"linkPath": "heroWereAllMakin",
+						"option": "Remind everyone that this will soon be over"
+					},
+					{
+						"linkPath": "heroSomeIrritati",
+						"option": "Say nothing"
+					},
+					{
+						"linkPath": "heroSomeMothersG",
+						"option": "\"Keep your kids by your side. We're at war until Arberrang.\""
+					},
+					{
+						"linkPath": "heroYouOrderTheL",
+						"option": "Move families to specific longships"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"heroSomeIrritati": {
+				"content": [
+					"[$hero] Some irritation is expected, whether on boat or land. You ignore the energetic kids as best you can, focusing on what lies ahead. Others do the same with only minor complaints.",
+					{
+						"flagName": "8_rnd_shipkids_2_bad"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroSomeMothersG": {
+				"content": [
+					"[$hero] Some mothers give you irritated glances while a few varl smile in your direction. Regardless, there is no denying the children are safer by their parents' side.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroWereAllMakin": {
+				"content": [
+					"[$hero] \"We're all making sacrifices,\" you say loud enough for everyone to hear. \"But it won't be forever.\" You hear some grumbling but the members of the caravan mostly nod their agreement.",
+					{
+						"flagName": "morale+5"
+					},
+					{
+						"flagName": "8_rnd_shipkids_2_bad"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"heroYouOrderTheL": {
+				"content": [
+					"[$hero] You order the longships alongside each other before revealing your plan. Some are shocked and reluctantly follow, while others agree with your decision. The rearrangement takes more time than you expected, but the vessels are soon moving again with children only climbing over those with children of their own.",
+					{
+						"flagName": "8_rnd_shipkids_2_bad"
+					},
+					{
+						"flagName": "day+0.5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "j46w"
+}
