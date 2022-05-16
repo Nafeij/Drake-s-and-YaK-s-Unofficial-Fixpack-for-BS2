@@ -3611,7 +3611,7 @@
         {
           "type": "VARIABLE_SET",
           "varname": "krumr.talk",
-          "varvalue": -1
+          "varvalue": 1
         },
         {
           "suppress_flytext": true,

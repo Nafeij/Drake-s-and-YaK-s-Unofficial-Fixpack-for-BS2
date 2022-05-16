@@ -3,6 +3,8 @@
  
     [FIXED] (ENG) Typo: during Alette's final mending talk with Eyvind, before the serpent attacks, one line has a hanging character name, as follows: "[ evyind] You listen attentively..."
     
+    [RESTORED] A conversation between Bolverk and Krumr, in which he explain a few things on himself and why he decided to go with Bolverk. It was not implemented, but, im my opinion, it's a really nice addition. It will fire up as soon as you camp, at the beginning of Ch9;
+    
  1.40
 
     [FIXED] (ENG) Another three typos on the map, in the description of Skogr: "... the the beast …". The updated list of ALL changes in "strings.json", is here, download and open it in your browser)
@@ -43,7 +45,6 @@
     [FIXED] In the second part of the "Ship Kids" event, in Ch8, there is some odd text displayed and it removes on clansmen more than it's supposed to, now theese are [FIXED];
     [FIXED] When sailing the river and noticing a burning village, in Ch8, there is an unnecessary variable setted (dagre_alive=0) if you "Ignore the village and head down river". It should not affect the gameplay, but i could cause unobvious behaviour or unexpected bugs;
     [FIXED] In the ending of Ch8, there is a missing linkpath in the conversation with Iver and Oddleif, before Hakon confronts Bolverk;
-    [RESTORED] A conversation between Bolverk and Krumr, in which he explain a few things on himself and why he decided to go with Bolverk. It was not implemented, but, im my opinion, it's a really nice addition. It will fire up as soon as you camp, at the beginning of Ch9;
     [FIXED] In Ch9 you should experience FOUR random events, but due to some bugs and typo, only TWO happens, now this is [FIXED];
     [FIXED] In Ch9, the second part of Oli's "Gathering" random event is broken, not awarding the correct reward in one of the five possibilities, not showing another one of the possibilities and causing a console error due to a wrong speaker tag. Now it's [FIXED] and working as intended;
     [FIXED] In Ch10 "Hunting" random event, you will not get any supplies if you choose "Let the hunters hunt" , now you're awarded +10 supplies;
