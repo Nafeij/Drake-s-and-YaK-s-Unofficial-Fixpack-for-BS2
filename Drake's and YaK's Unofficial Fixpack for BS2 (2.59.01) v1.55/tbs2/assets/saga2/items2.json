@@ -1,0 +1,1533 @@
+{
+  "items": [
+    {
+      "icon": "common/item/icon/itm_str_1.png",
+      "id": "itm_str_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_str_2.png",
+      "id": "itm_str_2",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_str_3.png",
+      "id": "itm_str_3",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_arm_1.png",
+      "id": "itm_arm_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_arm_1b.png",
+      "id": "itm_arm_1b",
+      "omitFromMarketplace": true,
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_arm_2.png",
+      "id": "itm_arm_2",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_arm_3.png",
+      "id": "itm_arm_3",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_wil_1.png",
+      "id": "itm_wil_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_wil_2.png",
+      "id": "itm_wil_2",
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_wil_3.png",
+      "id": "itm_wil_3",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_brk_1.png",
+      "id": "itm_brk_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_brk_2.png",
+      "id": "itm_brk_2",
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_brk_3.png",
+      "id": "itm_brk_3",
+      "omitFromMarketplace": true,
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_mov_1.png",
+      "id": "itm_mov_1",
+      "omitFromMarketplace": true,
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_mov_2.png",
+      "id": "itm_mov_2",
+      "omitFromMarketplace": true,
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": -1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_resist_str_1.png",
+      "id": "itm_resist_str_1",
+      "omitFromMarketplace": true,
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "RESIST_STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_resist_str_2.png",
+      "id": "itm_resist_str_2",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 2,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_resist_str_2b.png",
+      "id": "itm_resist_str_2b",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "KILL_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_wil_1.png",
+      "id": "itm_rest_wil_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_wil_2.png",
+      "id": "itm_rest_wil_2",
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_wil_3.png",
+      "id": "itm_rest_wil_3",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_arm_1.png",
+      "id": "itm_rest_arm_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REST_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_arm_2.png",
+      "id": "itm_rest_arm_2",
+      "omitFromMarketplace": true,
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "REST_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_rest_arm_3.png",
+      "id": "itm_rest_arm_3",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "REST_ARMOR"
+        },
+        {
+          "amount": 2,
+          "stat": "AI_AGGRO_MOD"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_kill_wil_1.png",
+      "id": "itm_kill_wil_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "KILL_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_kill_wil_2.png",
+      "id": "itm_kill_wil_2",
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "KILL_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_kill_wil_3.png",
+      "id": "itm_kill_wil_3",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "KILL_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_dodge_1.png",
+      "id": "itm_dodge_1",
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_dodge_2.png",
+      "id": "itm_dodge_2",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 20,
+          "stat": "DODGE_BONUS"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_dodge_3.png",
+      "id": "itm_dodge_3",
+      "omitFromMarketplace": true,
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 15,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_dodge_3b.png",
+      "id": "itm_dodge_3b",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 20,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_aggro_plus_1.png",
+      "id": "itm_aggro_plus_1",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "AI_AGGRO_MOD"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_aggro_plus_2.png",
+      "id": "itm_aggro_plus_2",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "AI_AGGRO_MOD"
+        },
+        {
+          "amount": 5,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_aggro_minus_1.png",
+      "id": "itm_aggro_minus_1",
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": -1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_aggro_minus_2.png",
+      "id": "itm_aggro_minus_2",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": -2,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_wil_1.png",
+      "id": "itm_regen_wil_1",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_wil_2.png",
+      "id": "itm_regen_wil_2",
+      "omitFromMarketplace": true,
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 3,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_wil_3.png",
+      "id": "itm_regen_wil_3",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_wil_3b.png",
+      "id": "itm_regen_wil_3b",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_arm_1.png",
+      "id": "itm_regen_arm_1",
+      "omitFromMarketplace": true,
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_regen_arm_2.png",
+      "id": "itm_regen_arm_2",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "REGEN_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/item_crit_1.png",
+      "id": "item_crit_1",
+      "omitFromMarketplace": true,
+      "rank": 2,
+      "statmods": [
+        {
+          "amount": 10,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/item_crit_2.png",
+      "id": "item_crit_2",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 20,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/item_crit_3.png",
+      "id": "item_crit_3",
+      "omitFromMarketplace": true,
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 15,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/item_crit_3b.png",
+      "id": "item_crit_3b",
+      "omitFromMarketplace": true,
+      "rank": 1,
+      "statmods": [
+        {
+          "amount": 10,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_knockback_1.png",
+      "id": "itm_knockback_1",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 5,
+          "stat": "KNOCKBACK_STR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_knockback_2.png",
+      "id": "itm_knockback_2",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 4,
+          "stat": "KNOCKBACK_STR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_knockback_3.png",
+      "id": "itm_knockback_3",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "KNOCKBACK_STR"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_kill_stop.png",
+      "id": "itm_kill_stop",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "KILL_STOP"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_never_miss.png",
+      "id": "itm_never_miss",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "NEVER_MISS"
+        },
+        {
+          "amount": 10,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_never_miss_2.png",
+      "id": "itm_never_miss_2",
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "NEVER_MISS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_resist_lightning_1.png",
+      "id": "itm_2_tal_bonus_all_3",
+      "omitFromMarketplace": true,
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_ALL"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_resist_lightning_2.png",
+      "id": "itm_2_tal_bonus_all_4",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_resist_knockback_1.png",
+      "id": "itm_2_tal_bonus_brk_3",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_BRK"
+        },
+        {
+          "amount": 2,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 2,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_resist_knockback_2.png",
+      "id": "itm_2_tal_bonus_all_5",
+      "omitFromMarketplace": true,
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH_ATTACK"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_range_bonus_1.png",
+      "id": "itm_2_range_bonus_1",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RANGEMOD_RANGED"
+        },
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_BRK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_range_bonus_2.png",
+      "id": "itm_2_range_bonus_2",
+      "omitFromMarketplace": true,
+      "rank": 9,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RANGEMOD_RANGED"
+        },
+        {
+          "amount": -2,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 3,
+          "stat": "KNOCKBACK_STR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_str_1.png",
+      "id": "itm_2_str_1",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 25,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_arm_1.png",
+      "id": "itm_2_arm_1",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "RESIST_STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_wil_1.png",
+      "id": "itm_2_wil_1",
+      "omitFromMarketplace": true,
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "WILLPOWER"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_brk_1.png",
+      "id": "itm_2_brk_1",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "ARMOR_BREAK"
+        },
+        {
+          "amount": 1,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 1,
+          "stat": "REST_ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_mov_1.png",
+      "id": "itm_2_mov_1",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": -1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_resist_str_1.png",
+      "id": "itm_2_resist_str",
+      "rank": 5,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": -1,
+          "stat": "MOVEMENT"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_rest_wil_1.png",
+      "id": "itm_2_rest_wil_1",
+      "omitFromMarketplace": true,
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "REST_WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "REST_ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_rest_arm_1.png",
+      "id": "itm_2_mov_2",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 8,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 2,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": -1,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_dodge_1.png",
+      "id": "itm_2_divert_1",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 20,
+          "stat": "DIVERT_CHANCE"
+        },
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        },
+        {
+          "amount": 1,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_aggro_plus_1.png",
+      "id": "itm_2_aggro_plus_1",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "AI_AGGRO_MOD"
+        },
+        {
+          "amount": 2,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_regen_wil_1.png",
+      "id": "itm_2_regen_wil_1",
+      "omitFromMarketplace": true,
+      "rank": 9,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 20,
+          "stat": "DIVERT_CHANCE"
+        },
+        {
+          "amount": -1,
+          "stat": "MOVEMENT"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_crit_1.png",
+      "id": "itm_2_crit_1",
+      "rank": 9,
+      "statmods": [
+        {
+          "amount": 30,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": -2,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_knockback_1.png",
+      "id": "itm_2_knockback_1",
+      "omitFromMarketplace": true,
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "KNOCKBACK_STR"
+        },
+        {
+          "amount": 2,
+          "stat": "KILL_WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_kill_stop_1.png",
+      "id": "itm_2_kill_stop_1",
+      "omitFromMarketplace": true,
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "KILL_STOP"
+        },
+        {
+          "amount": -3,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 35,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_gdstn_oldwood.png",
+      "id": "itm_2_tal_bonus_all_2",
+      "omitFromMarketplace": true,
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 2,
+          "stat": "WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_gdstn_cave.png",
+      "id": "itm_2_tal_bonus_str_3",
+      "omitFromMarketplace": true,
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_STR"
+        },
+        {
+          "amount": 20,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": -4,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_arm_1.png",
+      "id": "itm_2_tal_bonus_arm_1",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_ARM"
+        },
+        {
+          "amount": 3,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_str_1.png",
+      "id": "itm_2_tal_bonus_str_1",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_STR"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 3,
+          "stat": "KNOCKBACK_STR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_wil_1.png",
+      "id": "itm_2_tal_bonus_wil_1",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_WIL"
+        },
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 3,
+          "stat": "WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_exe_1.png",
+      "id": "itm_2_tal_bonus_exe_1",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_EXE"
+        },
+        {
+          "amount": 3,
+          "stat": "KILL_WILLPOWER"
+        },
+        {
+          "amount": 2,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_brk_1.png",
+      "id": "itm_2_tal_bonus_brk_1",
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_BRK"
+        },
+        {
+          "amount": 3,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_arm_2.png",
+      "id": "itm_2_tal_bonus_arm_2",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_ARM"
+        },
+        {
+          "amount": 2,
+          "stat": "REST_ARMOR"
+        },
+        {
+          "amount": 10,
+          "stat": "DIVERT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_str_2.png",
+      "id": "itm_2_tal_bonus_str_2",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_STR"
+        },
+        {
+          "amount": 3,
+          "stat": "STRENGTH_ATTACK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_wil_2.png",
+      "id": "itm_2_tal_bonus_wil_2",
+      "omitFromMarketplace": true,
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_WIL"
+        },
+        {
+          "amount": 10,
+          "stat": "DIVERT_CHANCE"
+        },
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_exe_2.png",
+      "id": "itm_2_tal_bonus_exe_2",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_EXE"
+        },
+        {
+          "amount": 1,
+          "stat": "RANGEMOD_RANGED"
+        },
+        {
+          "amount": 10,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_brk_2.png",
+      "id": "itm_2_tal_bonus_brk_2",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_BRK"
+        },
+        {
+          "amount": 2,
+          "stat": "RANGEMOD_RANGED"
+        },
+        {
+          "amount": 2,
+          "stat": "ARMOR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_all_1.png",
+      "id": "itm_2_tal_bonus_all_1",
+      "rank": 9,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 3,
+          "stat": "ARMOR"
+        },
+        {
+          "amount": 20,
+          "stat": "DIVERT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_arm_3.png",
+      "id": "itm_2_tal_bonus_arm_3",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ARM"
+        },
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_STR"
+        },
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_EXE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_wil_3.png",
+      "id": "itm_2_tal_bonus_wil_3",
+      "rank": 7,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_WIL"
+        },
+        {
+          "amount": 1,
+          "stat": "REST_WILLPOWER"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_exe_3.png",
+      "id": "itm_2_tal_bonus_exe_3",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_EXE"
+        },
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        },
+        {
+          "amount": 1,
+          "stat": "MOVEMENT"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_str_2.png",
+      "id": "itm_2_str_2",
+      "rank": 4,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_ARMOR"
+        },
+        {
+          "amount": -1,
+          "stat": "MOVEMENT"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_dodge_2.png",
+      "id": "itm_2_dodge_2",
+      "omitFromMarketplace": true,
+      "rank": 3,
+      "statmods": [
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        },
+        {
+          "amount": 10,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 10,
+          "stat": "DIVERT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_mov_3.png",
+      "id": "itm_2_mov_3",
+      "rank": 8,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 5,
+          "stat": "ARMOR_BREAK"
+        },
+        {
+          "amount": -5,
+          "stat": "STRENGTH_ATTACK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_tal_bonus_brk_4.png",
+      "id": "itm_2_tal_bonus_brk_4",
+      "rank": 9,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "TAL_BONUS_BRK"
+        },
+        {
+          "amount": 30,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 1,
+          "stat": "RANGEMOD_RANGED"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_regen_arm_1.png",
+      "id": "itm_2_regen_arm_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_ARMOR"
+        },
+        {
+          "amount": 1,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_str_attack_1.png",
+      "id": "itm_2_str_attack_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 20,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_morale_1.png",
+      "id": "itm_2_morale_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 3,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_console_add1.png",
+      "id": "itm_2_console_xbo",
+      "omitFromMarketplace": true,
+      "rank": 6,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "TAL_BONUS_BRK"
+        },
+        {
+          "amount": 3,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_console_add2.png",
+      "id": "itm_2_console_ps4",
+      "omitFromMarketplace": true,
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 20,
+          "stat": "CRIT_CHANCE"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_arm_degen_1.png",
+      "id": "itm_2_arm_degen_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": -1,
+          "stat": "REGEN_ARMOR"
+        },
+        {
+          "amount": -1,
+          "stat": "REGEN_WILLPOWER"
+        },
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_ALL"
+        },
+        {
+          "amount": 20,
+          "stat": "CRIT_CHANCE"
+        },
+        {
+          "amount": 20,
+          "stat": "DIVERT_CHANCE"
+        },
+        {
+          "amount": 10,
+          "stat": "DODGE_BONUS"
+        },
+        {
+          "amount": -1,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 2,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    }
+  ]
+}

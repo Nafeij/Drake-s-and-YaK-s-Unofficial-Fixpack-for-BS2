@@ -1,0 +1,1033 @@
+{
+  "ambientParameter": 0,
+  "boards": [
+    {
+      "deploymentAreas": [],
+      "id": "board_0",
+      "layer": "battle",
+      "pos": {
+        "x": -382.7000000000001,
+        "y": -667.8
+      },
+      "spawners": [
+        {
+          "character": "bolverk",
+          "facing": "NE",
+          "location": {
+            "x": 6,
+            "y": 16
+          },
+          "team": "player0"
+        },
+        {
+          "character": "folka",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 16
+          },
+          "team": "player0"
+        },
+        {
+          "character": "sparr",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 16
+          },
+          "team": "player0"
+        },
+        {
+          "character": "oli",
+          "facing": "NE",
+          "location": {
+            "x": 5,
+            "y": 16
+          },
+          "team": "player0"
+        },
+        {
+          "character": "krumr",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 18
+          },
+          "requireParty": true,
+          "team": "player0"
+        },
+        {
+          "character": "sigbjorn",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 16
+          },
+          "requireParty": true,
+          "team": "player0"
+        },
+        {
+          "character": "dredge_grunt_b",
+          "facing": "SW",
+          "location": {
+            "x": 5,
+            "y": -4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_sun_slinger_3",
+          "facing": "SE",
+          "location": {
+            "x": -6,
+            "y": 14
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_sun_slinger_3",
+          "facing": "SE",
+          "location": {
+            "x": -6,
+            "y": 13
+          },
+          "team": "npc"
+        },
+        {
+          "character": "skulker_1",
+          "facing": "NE",
+          "location": {
+            "x": 7,
+            "y": 27
+          },
+          "team": "npc"
+        },
+        {
+          "character": "skulker_1",
+          "facing": "NE",
+          "location": {
+            "x": 11,
+            "y": 27
+          },
+          "team": "npc"
+        },
+        {
+          "character": "skulker_1",
+          "facing": "NE",
+          "location": {
+            "x": 10,
+            "y": 27
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_b",
+          "facing": "SE",
+          "location": {
+            "x": -4,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_b",
+          "facing": "SW",
+          "location": {
+            "x": 13,
+            "y": -5
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_b",
+          "facing": "NW",
+          "location": {
+            "x": 23,
+            "y": 7
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_b",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 27
+          },
+          "team": "npc"
+        }
+      ],
+      "triggers": [],
+      "unwalkableTiles": {
+        "tilesx": [
+          "-1 12",
+          "-1 13",
+          "-1 14",
+          "-1 15",
+          "-1 4",
+          "-1 5",
+          "-2 12",
+          "-2 13",
+          "-2 14",
+          "-2 15",
+          "-2 4",
+          "-2 5",
+          "-3 12",
+          "-3 13",
+          "-3 14",
+          "-3 15",
+          "-3 4",
+          "-3 5",
+          "-4 12",
+          "-4 13",
+          "-4 14",
+          "-4 15",
+          "-4 4",
+          "-4 5",
+          "-5 12",
+          "-5 13",
+          "-5 14",
+          "-5 15",
+          "-6 13",
+          "-6 14",
+          "-6 15",
+          "10 16",
+          "10 17",
+          "10 18",
+          "10 19",
+          "10 20",
+          "10 21",
+          "10 22",
+          "10 23",
+          "10 24",
+          "10 25",
+          "10 26",
+          "10 27",
+          "10 28",
+          "10 29",
+          "10 30",
+          "10 31",
+          "11 16",
+          "11 17",
+          "11 18",
+          "11 19",
+          "11 20",
+          "11 21",
+          "11 22",
+          "11 23",
+          "11 24",
+          "11 25",
+          "11 26",
+          "11 27",
+          "11 28",
+          "11 29",
+          "11 30",
+          "11 31",
+          "12 16",
+          "13 -1",
+          "13 -2",
+          "13 -3",
+          "13 -4",
+          "13 -5",
+          "13 16",
+          "14 -1",
+          "14 -2",
+          "14 -3",
+          "14 -4",
+          "14 -5",
+          "15 -1",
+          "15 -2",
+          "15 -3",
+          "15 -4",
+          "15 -5",
+          "16 7",
+          "16 8",
+          "17 7",
+          "17 8",
+          "18 7",
+          "18 8",
+          "19 7",
+          "19 8",
+          "20 7",
+          "20 8",
+          "21 7",
+          "21 8",
+          "22 7",
+          "22 8",
+          "23 7",
+          "23 8",
+          "4 -1",
+          "4 16",
+          "4 17",
+          "5 -1",
+          "5 -2",
+          "5 -3",
+          "5 -4",
+          "5 16",
+          "5 17",
+          "6 -1",
+          "6 -2",
+          "6 -3",
+          "6 -4",
+          "6 16",
+          "6 17",
+          "7 -1",
+          "7 -2",
+          "7 -3",
+          "7 16",
+          "7 17",
+          "7 18",
+          "7 19",
+          "7 20",
+          "7 21",
+          "7 22",
+          "7 23",
+          "7 24",
+          "7 25",
+          "7 26",
+          "7 27",
+          "7 28",
+          "7 29",
+          "7 30",
+          "7 31",
+          "8 -1",
+          "8 16",
+          "8 17",
+          "8 18",
+          "8 19",
+          "8 20",
+          "8 21",
+          "8 22",
+          "8 23",
+          "8 24",
+          "8 25",
+          "8 26",
+          "8 27",
+          "8 28",
+          "8 29",
+          "8 30",
+          "8 31",
+          "9 16",
+          "9 17",
+          "9 18",
+          "9 19",
+          "9 20",
+          "9 21",
+          "9 22",
+          "9 23",
+          "9 24",
+          "9 25",
+          "9 26",
+          "9 27",
+          "9 28",
+          "9 29",
+          "9 30",
+          "9 31"
+        ]
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 14",
+          "0 15",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 14",
+          "1 15",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 14",
+          "10 15",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 15",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 15",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 15",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 15",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "15 0",
+          "15 1",
+          "15 10",
+          "15 11",
+          "15 12",
+          "15 13",
+          "15 14",
+          "15 15",
+          "15 2",
+          "15 3",
+          "15 4",
+          "15 5",
+          "15 6",
+          "15 7",
+          "15 8",
+          "15 9",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 14",
+          "2 15",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 14",
+          "3 15",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 14",
+          "4 15",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 14",
+          "5 15",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 14",
+          "6 15",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 14",
+          "7 15",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 14",
+          "8 15",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 14",
+          "9 15",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    }
+  ],
+  "cameraAnchorSpeed": 1000,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1536,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 720,
+  "cameraMinWidth": 1024,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "type": "BATTLE_WAIT_DEPLOYMENT_START"
+        },
+        {
+          "type": "WAIT_SCENE_VISIBLE"
+        },
+        {
+          "enabled": false,
+          "type": "CAMERA_ZOOM",
+          "varvalue": 0.5
+        },
+        {
+          "id": "bolverk",
+          "param": "follow instant",
+          "type": "BATTLE_CAMERA_CENTER"
+        },
+        {
+          "anchor": "@6,7:@7,7",
+          "id": "bolverk",
+          "instant": true,
+          "param": "follow",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@8,9",
+          "id": "folka",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@9,10:@11,10:@11,8",
+          "id": "sigbjorn",
+          "instant": true,
+          "prereq": "sigbjorn.battle",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "anchor": "@5,7:@4,7:@4,4",
+          "id": "oli",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "anchor": "@4,13:@3,13:@3,9",
+          "id": "sparr",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "happening": "_move_krumr",
+          "prereqs": [
+            {
+              "varname": "krumr.battle",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "time": 3,
+          "type": "CAMERA_ZOOM",
+          "varvalue": 1.5
+        },
+        {
+          "msg": "$SPEAK:s2_auto_bolverk_00",
+          "param": "camera=0,-80",
+          "speaker": "bolverk",
+          "time": 4,
+          "type": "SPEAK"
+        },
+        {
+          "id": "world/saga2_dredge_presence/dredge_presence_oneshot",
+          "type": "SOUND_PLAY_EVENT"
+        },
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_auto_folka_02",
+          "param": "camera=0,-50",
+          "speaker": "folka",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "time": 3,
+          "type": "WAIT"
+        },
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_auto_sparr_00",
+          "param": "camera=0,-50",
+          "speaker": "sparr",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "time": 2,
+          "type": "WAIT"
+        },
+        {
+          "id": "world/saga2_dredge_presence/dredge_presence_oneshot",
+          "type": "SOUND_PLAY_EVENT"
+        },
+        {
+          "anchor": "@5,2",
+          "id": "npc+0+dredge_grunt_b",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@2,4",
+          "id": "npc+6+dredge_grunt_b",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@13,2",
+          "id": "npc+7+dredge_grunt_b",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@14,7",
+          "id": "npc+8+dredge_grunt_b",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@1,14",
+          "id": "npc+1+dredge_sun_slinger_3",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@7,15:@5,15",
+          "id": "npc+3+skulker_1",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@11,13",
+          "id": "npc+4+skulker_1",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "instant": true,
+          "time": 3,
+          "type": "CAMERA_ZOOM",
+          "varvalue": 1
+        },
+        {
+          "anchor": "@9,20",
+          "id": "npc+9+dredge_grunt_b",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@1,13",
+          "id": "npc+2+dredge_sun_slinger_3",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@10,15",
+          "id": "npc+5+skulker_1",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "instant": true,
+          "msg": "$SPEAK:s2_auto_bolverk_01",
+          "speaker": "bolverk",
+          "time": 2,
+          "type": "SPEAK"
+        },
+        {
+          "time": 2,
+          "type": "WAIT"
+        },
+        {
+          "type": "BATTLE_READY"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        }
+      ],
+      "automatic": true,
+      "id": "auto",
+      "transcendent": false
+    },
+    {
+      "actions": [
+        {
+          "anchor": "@8,17",
+          "id": "krumr",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "time": 3,
+          "type": "WAIT"
+        },
+        {
+          "anchor": "@8,13",
+          "id": "krumr",
+          "instant": true,
+          "type": "BATTLE_UNIT_MOVE"
+        }
+      ],
+      "id": "_move_krumr"
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 2000,
+      "width": 4000,
+      "x": -2389.5,
+      "y": -1280
+    },
+    "layers": [
+      {
+        "always": true,
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2/3_walk_back_1a_a.png",
+            "localrect": {
+              "height": 2000,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_1a_a_1",
+            "offset": {
+              "x": -385,
+              "y": -1282
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2/3_walk_back_1a_b.png",
+            "localrect": {
+              "height": 2000,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_1a_b_1",
+            "offset": {
+              "x": -2384,
+              "y": -1282
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2_attacked/fence2.png",
+            "localrect": {
+              "height": 305,
+              "width": 643,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fence2_1",
+            "offset": {
+              "x": -947,
+              "y": 195
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2_attacked/fence.png",
+            "localrect": {
+              "height": 512,
+              "width": 845,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fence_1",
+            "offset": {
+              "x": -192,
+              "y": -101
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back_a",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "always": true,
+        "nameId": "battle",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "randomGroup": "layer_3_walk_a",
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2_attacked/tree1.png",
+            "localrect": {
+              "height": 1360,
+              "width": 523,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "tree1_1",
+            "offset": {
+              "x": -1765,
+              "y": -1283
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2_attacked/trees1.png",
+            "localrect": {
+              "height": 883,
+              "width": 360,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "trees1_1",
+            "offset": {
+              "x": -1094,
+              "y": -1282
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2/1_close_1b.png",
+            "localrect": {
+              "height": 1200,
+              "width": 934,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_1b_1",
+            "offset": {
+              "x": -3210,
+              "y": -1711
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close_b",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "randomGroup": "layer_1_close",
+        "speed": 1.8
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/battle/btl_wilderness_snow2/1_close_1a.png",
+            "localrect": {
+              "height": 1397,
+              "width": 1216,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_1a_1",
+            "offset": {
+              "x": -255,
+              "y": -1690
+            },
+            "scale": {
+              "x": 1.7,
+              "y": 1.7
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close_a",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "randomGroup": "layer_1_close",
+        "speed": 1.8
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "battles_ext",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}
