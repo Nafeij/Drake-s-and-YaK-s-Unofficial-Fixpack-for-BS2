@@ -76,7 +76,7 @@ Drake's & YaK's Fixpack for BS2 - version 2.0
 
 This is the active branch of the original Fixpack for Banner Saga 2, by YaK of all Trades (YaK#2186) and Drake713.
 
-This corrects all the previous nasty bugs, inconsistencies and typos in the video game Banner Saga 1 by Stoic Studios!
+This corrects nasty bugs, inconsistencies and typos in the video game Banner Saga 2 by Stoic Studios.
 
 Many thanks to:
 Gestaltzerfall, who updated TBSDecompiler - http://www.mediafire.com/file/wun36alp6ojlkjk/TBS_Decompiler3.2.3.air/file
