@@ -124,7 +124,7 @@
 				"content": [
 					"[folka] \"Couldn't you work with a blacksmith or something?\"",
 					{
-						"divert": "BolverkNikelsFro"
+						"divert": "pageBreakNikelsN"
 					},
 					{
 						"pageNum": 0
@@ -133,7 +133,7 @@
 			},
 			"FolkaFolkaWalksU": {
 				"content": [
-					"/=Folka walks up and clamps a hand on one of Nikels's now sagging shoulders.=/",
+					"/=Folka walks up and clamps a hand on one of Nikels' now sagging shoulders.=/",
 					{
 						"divert": "folkaMostOfWhatW"
 					},
@@ -292,7 +292,7 @@
 						"divert": "theMendersFacePa"
 					},
 					{
-						"flagName": "11_nikels_raven=0"
+						"flagName": "nikels_raven=0"
 					},
 					{
 						"pageNum": 0
@@ -301,7 +301,7 @@
 			},
 			"NikelsNikelssSho": {
 				"content": [
-					"/=Nikels's shoulders sag a bit.=/",
+					"/=Nikels' shoulders sag a bit.=/",
 					{
 						"divert": "nikelsIveMendedA"
 					},
@@ -358,7 +358,7 @@
 				"content": [
 					"[nikels] \"Really?\" Nikels says. \"I mean, great. I mean, I will. Thank you.\" He walks off beaming. Folka shakes her head and chuckles.",
 					{
-						"flagName": "11_nikels_raven=1"
+						"flagName": "nikels_raven=1"
 					},
 					{
 						"pageNum": 0
@@ -406,6 +406,17 @@
 					"[nikels] \"Yeah, but I can--\"",
 					{
 						"divert": "folkaKidItsBestN"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakNikelsN": {
+				"content": [
+					"/=Nikels frowns at her.=/",
+					{
+						"divert": "BolverkNikelsFro"
 					},
 					{
 						"pageNum": 0

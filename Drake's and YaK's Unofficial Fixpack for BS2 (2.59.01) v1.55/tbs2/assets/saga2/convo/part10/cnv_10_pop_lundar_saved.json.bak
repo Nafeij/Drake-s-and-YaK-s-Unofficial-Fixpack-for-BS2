@@ -273,9 +273,6 @@
 				"content": [
 					"[josurr] \"You tried,\" he says. \"No one can fault you for that. But everything's gone: the landowners, the farmers, and the food. I'm not sure what we do now.\"",
 					{
-						"divert": "josurrRoEchDerdr"
-					},
-					{
 						"pageNum": 0
 					}
 				]

@@ -1513,17 +1513,6 @@
             "smoothing": true
           },
           {
-            "bmp": "saga2/locale/zh/lettering/lettering_bindal.png",
-            "langs": "zh",
-            "linked": "lettering_bindal_1",
-            "nameId": "zh_lettering_bindal",
-            "offset": {
-              "x": 1336,
-              "y": 560
-            },
-            "smoothing": true
-          },
-          {
             "bmp": "saga2/scene/world/wld_bindal/lettering_ormsdalr.png",
             "localrect": {
               "height": 98,
@@ -1535,17 +1524,6 @@
             "offset": {
               "x": 7886,
               "y": 689
-            },
-            "smoothing": true
-          },
-          {
-            "bmp": "saga2/locale/zh/lettering/lettering_ormsdalr.png",
-            "langs": "zh",
-            "linked": "lettering_ormsdalr_1",
-            "nameId": "zh_lettering_ormsdalr",
-            "offset": {
-              "x": 7892,
-              "y": 633
             },
             "smoothing": true
           }
@@ -1996,10 +1974,6 @@
           {
             "id": "9_rnd_quests",
             "position": 457
-          },
-          {
-            "id": "bk_9_convo_bolvteaches",
-            "position": 800
           },
           {
             "id": "9_convo_bolvteaches",

@@ -1289,7 +1289,7 @@
             "bmp": "saga2/scene/world/wld_cave/7_back_a.png",
             "localrect": {
               "height": 1162,
-              "width": 2048,
+              "width": 2089,
               "x": 0,
               "y": 0
             },
@@ -1353,7 +1353,7 @@
             "bmp": "saga2/scene/world/wld_cave/6_back_a.png",
             "localrect": {
               "height": 1162,
-              "width": 2048,
+              "width": 2051,
               "x": 0,
               "y": 0
             },

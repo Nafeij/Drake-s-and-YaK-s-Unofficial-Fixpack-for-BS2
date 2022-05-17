@@ -239,7 +239,7 @@
 				"content": [
 					"[fasolt] \"And they killed plenty of us. There were a couple dozen more of us only a day or two ago. Prayed to the dead gods for help, but got nothing.\"",
 					{
-						"divert": "BolverkFasoltGro"
+						"divert": "pageBreakFasoltF"
 					},
 					{
 						"pageNum": 0
@@ -303,7 +303,7 @@
 				"content": [
 					"[fasolt] \"Einartoft was a massacre.\"",
 					{
-						"divert": "BolverkFasoltGro"
+						"divert": "pageBreakFasoltF"
 					},
 					{
 						"pageNum": 0
@@ -422,7 +422,7 @@
 				"content": [
 					"[fasolt] \"I was left for dead. Woke up to actual ravens pecking my face. Damn near got my eyes.\"",
 					{
-						"divert": "BolverkFasoltGro"
+						"divert": "pageBreakFasoltF"
 					},
 					{
 						"pageNum": 0
@@ -483,7 +483,7 @@
 				"content": [
 					"[fasolt] \"There's more dredge than rats and after Grofheim and Einartoft, we...the varl are done.",
 					{
-						"divert": "BolverkFasoltGro"
+						"divert": "pageBreakFasoltF"
 					},
 					{
 						"pageNum": 0
@@ -622,7 +622,7 @@
 						"linkPath": "fasoltWaitWhichH",
 						"ifConditions": [
 							{
-								"ifCondition": "saga1_bridge_destroyed"
+								"ifCondition": "!saga1_bridge_destroyed"
 							}
 						],
 						"option": "{branch}"
@@ -631,10 +631,21 @@
 						"linkPath": "bolverkAHunterNa1",
 						"notIfConditions": [
 							{
-								"notIfCondition": "saga1_bridge_destroyed"
+								"notIfCondition": "!saga1_bridge_destroyed"
 							}
 						],
 						"option": "{branch}"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakFasoltF": {
+				"content": [
+					"/=Fasolt grows quiet.=/",
+					{
+						"divert": "BolverkFasoltGro"
 					},
 					{
 						"pageNum": 0

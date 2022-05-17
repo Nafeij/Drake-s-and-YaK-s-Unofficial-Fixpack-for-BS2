@@ -4,7 +4,7 @@
 		"stitches": {
 			"clansmenStartMum": {
 				"content": [
-					"/=Clansmen start mumbling, and you are not certain they are on your side.=/",
+					"/=Clansmen start mumbling, and you are not certain their on your side.=/",
 					{
 						"divert": "ruggaIllLetItGoT"
 					},

@@ -315,11 +315,22 @@
 					}
 				]
 			},
+			"pageBreakHeroYou": {
+				"content": [
+					"/=You decide what to say next.=/",
+					{
+						"divert": "HeroYouDecideWha"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
 			"pageBreakHisTone": {
 				"content": [
 					"/=His tone is not exactly threatening, but not warm either.=/",
 					{
-						"divert": "HeroYouDecideWha"
+						"divert": "pageBreakHeroYou"
 					},
 					{
 						"pageNum": 0

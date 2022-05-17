@@ -555,6 +555,17 @@
             "smoothing": true
           },
           {
+            "bmp": "common/locale/zh/lettering/lettering_market.png",
+            "langs": "zh",
+            "linked": "lettering_market",
+            "nameId": "zh_lettering_market",
+            "offset": {
+              "x": 2301,
+              "y": 362
+            },
+            "smoothing": true
+          },
+          {
             "bmp": "saga2/scene/close/cls_bindal/lettering_houses.png",
             "ifCondition": "11_bindal_decision_clicks",
             "localrect": {
@@ -567,6 +578,17 @@
             "offset": {
               "x": 2608,
               "y": 321
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/locale/zh/lettering/lettering_houses.png",
+            "langs": "zh",
+            "linked": "lettering_houses",
+            "nameId": "zh_lettering_houses",
+            "offset": {
+              "x": 2637,
+              "y": 300
             },
             "smoothing": true
           }
@@ -740,6 +762,17 @@
             "smoothing": true
           },
           {
+            "bmp": "common/locale/zh/lettering/lettering_gate.png",
+            "langs": "zh",
+            "linked": "lettering_gate",
+            "nameId": "zh_lettering_gate",
+            "offset": {
+              "x": 1868,
+              "y": 486
+            },
+            "smoothing": true
+          },
+          {
             "bmp": "saga2/scene/close/cls_bindal/lettering_barn.png",
             "ifCondition": "11_bindal_barn",
             "localrect": {
@@ -756,6 +789,17 @@
             "smoothing": true
           },
           {
+            "bmp": "saga2/locale/zh/lettering/lettering_barn.png",
+            "langs": "zh",
+            "linked": "lettering_barn",
+            "nameId": "zh_lettering_barn",
+            "offset": {
+              "x": 2189,
+              "y": 324
+            },
+            "smoothing": true
+          },
+          {
             "bmp": "saga2/scene/close/cls_bindal/lettering_greathall.png",
             "ifCondition": "11_bindal_decision_clicks",
             "localrect": {
@@ -768,6 +812,17 @@
             "offset": {
               "x": 1817,
               "y": 229
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/locale/zh/lettering/lettering_greathall.png",
+            "langs": "zh",
+            "linked": "lettering_greathall",
+            "nameId": "zh_lettering_greathall",
+            "offset": {
+              "x": 1832,
+              "y": 187
             },
             "smoothing": true
           }
@@ -987,7 +1042,6 @@
     "travels": [
       {
         "close": true,
-        "id": "travel_1",
         "locations": [
           {
             "id": "start",

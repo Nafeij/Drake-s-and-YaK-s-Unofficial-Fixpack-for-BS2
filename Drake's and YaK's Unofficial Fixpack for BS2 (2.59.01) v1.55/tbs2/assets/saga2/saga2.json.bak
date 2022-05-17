@@ -3487,6 +3487,16 @@
           "url": "saga2/convo/part9/cnv_9_pop_bolvteaches_fail.json.z"
         },
         {
+          "id": "mogun",
+          "prereq": "9_mogun_injured",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "mogun",
+          "prereq": "9_mogun_injured",
+          "type": "UNIT_INJURE"
+        },
+        {
           "type": "DRIVING_SPEED",
           "varvalue": 1
         }

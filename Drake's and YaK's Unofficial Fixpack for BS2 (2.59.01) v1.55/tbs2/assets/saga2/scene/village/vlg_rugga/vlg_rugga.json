@@ -313,6 +313,23 @@
             "smoothing": true
           },
           {
+            "bmp": "common/locale/zh/lettering/lettering_map.png",
+            "langs": "zh",
+            "linked": "click_map",
+            "localrect": {
+              "height": 68,
+              "width": 93,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_map",
+            "offset": {
+              "x": 1959,
+              "y": 188
+            },
+            "smoothing": true
+          },
+          {
             "bmp": "saga2/scene/village/vlg_rugga/market_click.png",
             "clickable": true,
             "hover": "saga2/scene/village/vlg_rugga/market_hover.png",
@@ -330,6 +347,24 @@
             "smoothing": true
           },
           {
+            "bmp": "common/locale/zh/lettering/lettering_market.png",
+            "langs": "zh",
+            "linked": "click_market",
+            "localrect": {
+              "height": 68,
+              "width": 77,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_market",
+            "offset": {
+              "x": 2335.85,
+              "y": 147.5
+            },
+            "rotation": 18.683681526656525,
+            "smoothing": true
+          },
+          {
             "bmp": "saga2/scene/village/vlg_rugga/heroes_click.png",
             "clickable": true,
             "hover": "saga2/scene/village/vlg_rugga/heroes_hover.png",
@@ -343,6 +378,23 @@
             "offset": {
               "x": 2436,
               "y": 223
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/locale/zh/lettering/lettering_heroes.png",
+            "langs": "zh",
+            "linked": "click_heroes",
+            "localrect": {
+              "height": 108,
+              "width": 122,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_heroes",
+            "offset": {
+              "x": 2782,
+              "y": 190
             },
             "smoothing": true
           },
@@ -500,6 +552,38 @@
             "smoothing": true
           },
           {
+            "bmp": "common/locale/zh/lettering/lettering_rest.png",
+            "langs": "zh",
+            "linked": "click_rest",
+            "localrect": {
+              "height": 58,
+              "width": 79,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_rest",
+            "offset": {
+              "x": 2637,
+              "y": 509
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/scene/icon_injury.png",
+            "localrect": {
+              "height": 54,
+              "width": 52,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "icon_injury",
+            "offset": {
+              "x": 2541,
+              "y": 566
+            },
+            "smoothing": true
+          },
+          {
             "anchor": true,
             "bmp": "",
             "nameId": "talk_left1",
@@ -538,6 +622,23 @@
             "offset": {
               "x": 3031,
               "y": 789
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "common/locale/zh/lettering/lettering_leave.png",
+            "langs": "zh",
+            "linked": "lettering_leave",
+            "localrect": {
+              "height": 71,
+              "width": 73,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_leave",
+            "offset": {
+              "x": 3028,
+              "y": 781
             },
             "smoothing": true
           }
