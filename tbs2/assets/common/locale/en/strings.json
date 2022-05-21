@@ -822,7 +822,7 @@
     "overkill": "Do 10 or more strength damage in a single hit",
     "overkill_brief": "10+ damage hit",
     "overkill_desc": "Your base damage is equal to your strength minus the enemy's armor. Puncture, Tale Worth Telling, and many other stacking bonuses can be brought into play.",
-    "pas_heavyimpact": "Use Heavy Impact to damage 3 enemies at once",
+    "pas_heavyimpact": "Use Heavy Impact to damage 2 enemies at once",
     "pas_heavyimpact_brief": "Heavy Impact",
     "pas_heavyimpact_desc": "When Hakon, or any varl warrior, attacks a target, all enemies adjacent to the target also take damage.",
     "pas_puncture": "Kill an enemy using Puncture",

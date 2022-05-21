@@ -1,0 +1,760 @@
+{
+  "scenarios": [
+    {
+      "board": "board_scenario_0",
+      "bucket": "scenario_set1_0",
+      "id": "scenario_set1_0",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "rule": {
+            "params": {
+              "ability": "abl_shieldwall_bonus"
+            },
+            "type": "ABILITY_ACTIVE"
+          },
+          "token": "pas_shieldwall"
+        },
+        {
+          "rules": [
+            {
+              "params": {
+                "ability": "",
+                "casterRequirements": {
+                  "tag": {
+                    "all": [
+                      "SPECIAL_PUNCTURE_BONUS"
+                    ]
+                  }
+                }
+              },
+              "type": "KILL"
+            }
+          ],
+          "token": "pas_puncture"
+        },
+        {
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_heavyimpact_damage_targets,abl_sunderingimpact_damage_targets",
+                "minimumTargets": 1
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "pas_heavyimpact"
+        }
+      ],
+      "renown": 10
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set1_1_alette",
+      "bucket_quota": 10,
+      "castMembers": [
+        "varl_shieldmaster_3",
+        "fighter_raidmaster_3",
+        "alette"
+      ],
+      "clearParty": true,
+      "id": "scenario_set1_1_alette",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "alette"
+          ],
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_threadtheneedle",
+                "minimumTargets": 2,
+                "targetRule": "ENEMY"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_threadtheneedle"
+        }
+      ],
+      "renown": 12
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set1_1_rook",
+      "bucket_quota": 10,
+      "castMembers": [
+        "fighter_archer_a",
+        "fighter_archer_b",
+        "fighter_raider_c",
+        "fighter_lancer_a",
+        "varl_shieldmaster_3",
+        "fighter_raidmaster_3",
+        "rook"
+      ],
+      "clearParty": true,
+      "id": "scenario_set1_1_rook",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "rook"
+          ],
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_markprey",
+                "minimumChildren": 4
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_markprey"
+        }
+      ],
+      "renown": 12
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set1_2",
+      "bucket_quota": 10,
+      "castMembers": [
+        "iver",
+        "oddleif"
+      ],
+      "clearParty": true,
+      "hints": [
+        {
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_batteringram",
+                "phase": "ABILITY_AND_CHILDREN_COMPLETE"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "fart message"
+        }
+      ],
+      "id": "scenario_set1_2",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "iver",
+            "oddleif"
+          ],
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_rainofarrows_damage_start",
+                "otherAbilitiesAny": "abl_batteringram",
+                "phase": "EXECUTING"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_rainofarrows"
+        }
+      ],
+      "renown": 14
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set1_3",
+      "bucket_quota": 10,
+      "castMembers": [
+        "iver",
+        "eyvind"
+      ],
+      "clearParty": true,
+      "id": "scenario_set1_3",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "eyvind"
+          ],
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_arc_lightning_strike",
+                "parentDepthMinimum": 3
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_arc_lightning"
+        }
+      ],
+      "renown": 16
+    },
+    {
+      "achievement": "acv_training_sven",
+      "board": "board_1",
+      "bucket": "scenario_set1_4",
+      "bucket_quota": 20,
+      "castMembers": [
+        "iver",
+        "eyvind",
+        "tryggvi",
+        "aleo",
+        "$hero",
+        "hakon",
+        "oddleif"
+      ],
+      "clearParty": true,
+      "id": "scenario_set1_4",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "rules": [
+            {
+              "params": {
+                "abilities": "abl_horn"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_horn"
+        },
+        {
+          "rules": [
+            {
+              "params": {
+                "abilities": "",
+                "annotatedStats_ability": [
+                  {
+                    "max": 100000,
+                    "min": 5,
+                    "stat": "UNDERDOG_BONUS"
+                  }
+                ],
+                "targetRule": "ENEMY"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_taleworthtelling"
+        },
+        {
+          "rules": [
+            {
+              "params": {
+                "abilities": "",
+                "annotatedStats_ability": [
+                  {
+                    "max": -10,
+                    "min": -10000,
+                    "stat": "STRENGTH"
+                  }
+                ],
+                "targetRule": "ENEMY"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "overkill"
+        },
+        {
+          "rules": [
+            {
+              "params": {
+              },
+              "type": "WIN"
+            }
+          ],
+          "token": "win"
+        }
+      ],
+      "renown": 18,
+      "spawn_tags": "scenario_set1_4"
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set2_0",
+      "bucket_quota": 10,
+      "castMembers": [
+        "bolverk",
+        "folka"
+      ],
+      "clearParty": true,
+      "hints": [
+        {
+          "rule": {
+            "params": {
+              "abilities": "_abl_frenzy_second_attack",
+              "parent": {
+                "abilities": "abl_melee_str",
+                "tags_ability": {
+                  "all": [
+                    "KILLING"
+                  ]
+                }
+              },
+              "tags_ability": {
+                "none": [
+                  "KILLING"
+                ]
+              },
+              "targetRule": "ENEMY"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_frenzy_tip_nokill_2"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_melee_str",
+              "tags_ability": {
+                "none": [
+                  "KILLING"
+                ]
+              },
+              "targetRule": "ENEMY"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_frenzy_tip_nokill_1"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "_abl_frenzy_second_attack",
+              "targetRule": "FRIENDLY"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_frenzy_tip_friend"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_champion",
+              "persisted_caster": {
+                "any": [
+                  {
+                    "ability": "_abl_champ_buff",
+                    "check_casted": true,
+                    "check_targeted": false,
+                    "effect": "",
+                    "num_max": 0,
+                    "num_min": 0
+                  }
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion_tip_aoe_0"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_champion",
+              "persisted_caster": {
+                "any": [
+                  {
+                    "ability": "_abl_champ_buff",
+                    "check_casted": true,
+                    "check_targeted": false,
+                    "effect": "",
+                    "num_max": 1,
+                    "num_min": 1
+                  }
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion_tip_aoe_1"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_champion",
+              "persisted_caster": {
+                "any": [
+                  {
+                    "ability": "_abl_champ_buff",
+                    "check_casted": true,
+                    "check_targeted": false,
+                    "effect": "",
+                    "num_max": 2,
+                    "num_min": 2
+                  }
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion_tip_aoe_2"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_champion",
+              "persisted_caster": {
+                "any": [
+                  {
+                    "ability": "_abl_champ_buff",
+                    "check_casted": true,
+                    "check_targeted": false,
+                    "effect": "",
+                    "num_max": 3,
+                    "num_min": 3
+                  }
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion_tip_aoe_3"
+        },
+        {
+          "requiredPlayerUnits": [
+            "folka"
+          ],
+          "rule": {
+            "params": {
+              "abilities": "_abl_champ_buff",
+              "persisted_caster": {
+                "any": [
+                  {
+                    "ability": "_abl_champ_buff",
+                    "check_casted": true,
+                    "check_targeted": false,
+                    "effect": "",
+                    "num_max": 4,
+                    "num_min": 4
+                  }
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion_tip_aoe_4"
+        }
+      ],
+      "id": "scenario_set2_0",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "bolverk"
+          ],
+          "rules": [
+            {
+              "params": {
+                "abilities": "_abl_frenzy_second_attack",
+                "parent": {
+                  "abilities": "abl_melee_str",
+                  "tags_ability": {
+                    "all": [
+                      "KILLING"
+                    ]
+                  },
+                  "targetRule": "ENEMY"
+                },
+                "tags_ability": {
+                  "all": [
+                    "KILLING"
+                  ]
+                },
+                "targetRule": "ENEMY"
+              },
+              "type": "ABILITY_EVENT"
+            }
+          ],
+          "token": "abl_frenzy"
+        },
+        {
+          "requiredPlayerUnits": [
+            "folka"
+          ],
+          "rule": {
+            "params": {
+              "abilities": "_abl_champ_recourse_caster",
+              "phase": "FINAL_COMPLETE"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_champion"
+        }
+      ],
+      "renown": 12,
+      "rosterMembers": [
+        "gudmundr",
+        "bak",
+        "eyvind",
+        "sparr"
+      ]
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set2_0",
+      "bucket_quota": 10,
+      "castMembers": [
+        "sparr",
+        "oli",
+        "folka"
+      ],
+      "clearParty": true,
+      "hints": [
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_axe_throw",
+              "parentDepthMaximum": 1,
+              "parentDepthMinimum": 1,
+              "tags_ability": {
+                "none": [
+                  "DAMAGED_STR"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_axe_throw_tip_miss_1"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_axe_throw",
+              "parentDepthMaximum": 2,
+              "parentDepthMinimum": 2,
+              "tags_ability": {
+                "none": [
+                  "DAMAGED_STR"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_axe_throw_tip_miss_2"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_axe_throw",
+              "parentDepthMaximum": 3,
+              "parentDepthMinimum": 3,
+              "tags_ability": {
+                "none": [
+                  "DAMAGED_STR"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_axe_throw_tip_miss_3"
+        }
+      ],
+      "id": "scenario_set2_1",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "oli"
+          ],
+          "rule": {
+            "params": {
+              "abilities": "abl_axe_throw",
+              "parentDepthMinimum": 3,
+              "tags_ability": {
+                "any": [
+                  "DAMAGED_STR"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_axe_throw"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_insult",
+              "conditions": {
+                "target": {
+                  "entityClass": {
+                    "any": [
+                      "berserk"
+                    ]
+                  }
+                }
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_insult"
+        },
+        {
+          "rules": [
+            {
+              "negate": true,
+              "params": {
+                "id": "bolverk"
+              },
+              "type": "TURN_START"
+            },
+            {
+              "params": {
+                "targetRequirements": {
+                  "entityDefId": {
+                    "all": [
+                      "bolverk"
+                    ]
+                  }
+                }
+              },
+              "type": "KILL"
+            }
+          ],
+          "token": "abl_insult_shutdown"
+        }
+      ],
+      "renown": 14,
+      "spawn_tags": "scenario_set2_shutdown"
+    },
+    {
+      "board": "board_1",
+      "bucket": "scenario_set2_0",
+      "bucket_quota": 10,
+      "castMembers": [
+        "dytch",
+        "zefr",
+        "folka"
+      ],
+      "clearParty": true,
+      "hints": [],
+      "id": "scenario_set2_2",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "count": 4,
+          "rule": {
+            "params": {
+              "abilities": "abl_runicgale_buff"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_runicgale"
+        },
+        {
+          "count": 3,
+          "rule": {
+            "params": {
+              "abilities": "abl_melee_str",
+              "tags_ability": {
+                "all": [
+                  "KILLING",
+                  "TRACK_ATTACK"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_track"
+        }
+      ],
+      "renown": 16
+    },
+    {
+      "achievement": "acv_training_holfi",
+      "board": "board_1",
+      "bucket": "scenario_set2_3",
+      "bucket_quota": 20,
+      "castMembers": [
+        "bolverk",
+        "folka",
+        "oli",
+        "sparr",
+        "zefr",
+        "dytch"
+      ],
+      "clearParty": true,
+      "hints": [
+        {
+          "rule": {
+            "params": {
+              "turnMaximum": 1,
+              "turnMinimum": 1
+            },
+            "type": "FREE_TURN"
+          },
+          "token": "abl_cull_the_weak_tip_keep_going"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "abl_cull_the_weak",
+              "tags_ability": {
+                "none": [
+                  "KILLING"
+                ]
+              }
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_cull_the_weak_tip_must_kill"
+        }
+      ],
+      "id": "scenario_set2_3",
+      "music": "saga2/scene/battle/music/training_scenario.btlmusic.json.z",
+      "objectives": [
+        {
+          "requiredPlayerUnits": [
+            "bolverk"
+          ],
+          "rule": {
+            "params": {
+              "turnMaximum": 3,
+              "turnMinimum": 3
+            },
+            "type": "FREE_TURN"
+          },
+          "token": "abl_cull_the_weak"
+        },
+        {
+          "count": 5,
+          "rule": {
+            "params": {
+              "abilities": "abl_horn"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "abl_horn_5"
+        },
+        {
+          "rule": {
+            "params": {
+              "abilities": "",
+              "annotatedStats_ability": [
+                {
+                  "max": -10,
+                  "min": -10000,
+                  "stat": "STRENGTH"
+                }
+              ],
+              "targetRule": "ENEMY"
+            },
+            "type": "ABILITY_EVENT"
+          },
+          "token": "overkill"
+        },
+        {
+          "rule": {
+            "type": "WIN"
+          },
+          "token": "win"
+        }
+      ],
+      "renown": 18,
+      "spawn_tags": "scenario_set2_3"
+    }
+  ]
+}
