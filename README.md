@@ -2,6 +2,8 @@
  
     [FIXED] Importing a save using a version of Saga 2 with the BS2 fixpack installed causes discrepancies with Nid's upgrade points. She receives 8 more points than she's supposed to and her base version has -2 points.
     
+    [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
+    
  2.0 
  
     [FIXED] (ENG) Typo: during Alette's final mending talk with Eyvind, before the serpent attacks, one line has a hanging character name, as follows: "[ evyind] You listen attentively..."
