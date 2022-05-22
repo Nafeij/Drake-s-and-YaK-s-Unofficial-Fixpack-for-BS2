@@ -2,7 +2,9 @@
  
     [FIXED] Importing a save using a version of Saga 2 with the BS2 fixpack installed causes discrepancies with Nid's upgrade points. She receives 8 more points than she's supposed to and her base version has -2 points.
     
-    [FIXED] Some of the animations are bugged during the chasm crossing sequence and the serpent sliding into the sea sequence. The sprites would suddenly pop into existence and start moving, i.e. they don't have a persistent start state. Due to a missing "start_visible": true flag
+    [FIXED] Some of the animations are bugged during the chasm crossing sequence and when the serpent slides into the sea. The sprites would suddenly pop into existence and start moving, i.e. they don't have a persistent start state. Due to a missing "start_visible": true flag
+    
+    [FIXED] Item duplication exploit: Whatever item Mogun has equipped will become duplicated if he is felled in his mutiny event. Similarly, equipping an item on Bolverk before the Insult/Axe storm training challenge causes his equipped item to become duped and bugged. Fixed by adding UNIT_TRANSFER_ITEM flags before each fight.
     
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     

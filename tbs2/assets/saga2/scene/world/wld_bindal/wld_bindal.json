@@ -736,6 +736,16 @@
               "varvalue": 1
             }
           ],
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "mogun",
+          "prereqs": [
+            {
+              "varname": "mogun_state",
+              "varvalue": 1
+            }
+          ],
           "type": "ROSTER_REMOVE"
         },
         {

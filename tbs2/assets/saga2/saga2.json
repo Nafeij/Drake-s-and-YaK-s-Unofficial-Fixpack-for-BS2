@@ -9706,6 +9706,16 @@
     {
       "actions": [
         {
+          "id": "bolverk",
+          "prereqs": [
+            {
+              "varname": "training_set2_stage",
+              "varvalue": 1
+            }
+          ],
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
           "assemble_heroes": false,
           "battle_scenario_id": "scenario_set2_$training_set2_stage",
           "scene": "saga2/scene/battle/btl_training/btl_training.json.z",

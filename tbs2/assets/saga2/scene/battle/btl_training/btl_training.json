@@ -686,7 +686,7 @@
           "team": "npc"
         },
         {
-          "character": "training_bolverk",
+          "character": "bolverk",
           "facing": "SE",
           "location": {
             "x": 7,
