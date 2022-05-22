@@ -1,0 +1,1636 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cameraStart": {
+    "x": 0,
+    "y": 0
+  },
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_travel_hidden",
+          "varvalue": 1
+        }
+      ],
+      "id": "setup_approach_waterfall"
+    },
+    {
+      "actions": [
+        {
+          "prereqs": [
+            {
+              "max": 1000,
+              "min": 10,
+              "varname": "renown"
+            }
+          ],
+          "type": "VARIABLE_SET",
+          "varname": "8_renown_folka",
+          "varvalue": 1
+        },
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_ashoreormsdalr.json.z"
+        },
+        {
+          "happening": "battle_8_ormsa_waterfall_landing",
+          "prereqs": [
+            {
+              "varname": "8_battle_ormsa",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "battle_8_ormsa_waterfall_landing_oddleif",
+          "prereqs": [
+            {
+              "varname": "8_battle_ormsa_oddleif",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "battle_8_ormsa_waterfall_landing_griss",
+          "prereqs": [
+            {
+              "varname": "8_battle_ormsa_griss",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "battle_8_ormsa_waterfall_landing_folka",
+          "prereqs": [
+            {
+              "varname": "8_battle_ormsa_folka",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "battle_victory",
+              "varvalue": 0
+            }
+          ],
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_waterfallbattle_fail.json.z"
+        },
+        {
+          "id": "folka",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "bolverk",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "id": "oddleif",
+          "type": "ROSTER_ADD"
+        },
+        {
+          "happening": "8_ashore_victory",
+          "makesave": true,
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "8_pop_ashoreormsdalr",
+      "triggers": [
+        {
+          "location": "8_pop_ashoreormsdalr",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch8/2mC2-S3",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "8_music_start",
+      "triggers": [
+        {
+          "location": "8_music_start",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "8_battle_ormsa_oddleif",
+          "varvalue": 1
+        }
+      ],
+      "id": "waterfall_odd"
+    },
+    {
+      "actions": [
+        {
+          "anchor": "caravan.0",
+          "msg": "$SPEAK:s2_speak_ubin_caravan.0_00",
+          "speaker": "narrator",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_ubin",
+      "triggers": [
+        {
+          "location": "speak_ubin",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "anchor": "caravan.0",
+          "msg": "$SPEAK:s2_speak_eyvind_caravan.0_00",
+          "speaker": "eyvind",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_eyvind",
+      "triggers": [
+        {
+          "location": "speak_eyvind",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "anchor": "caravan.0",
+          "msg": "$SPEAK:s2_speak_juno_caravan.0_00",
+          "speaker": "juno",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "speak_juno",
+      "triggers": [
+        {
+          "location": "speak_juno",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_over_chasm.json.z"
+        }
+      ],
+      "id": "8_pop_over_chasm",
+      "triggers": [
+        {
+          "location": "8_pop_over_chasm",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_dredgefollow.json.z"
+        }
+      ],
+      "id": "8_pop_dredgefollow",
+      "triggers": [
+        {
+          "location": "8_pop_dredgefollow",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch8/8m6",
+          "type": "MUSIC_START"
+        }
+      ],
+      "id": "music_start_8m6",
+      "triggers": [
+        {
+          "location": "music_start_8m6",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch8/8m6",
+          "param": "complete",
+          "type": "MUSIC_PARAM",
+          "varvalue": 0.5
+        }
+      ],
+      "id": "music_param_8m6_l2",
+      "triggers": [
+        {
+          "location": "music_param_8m6_l2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_lightenload.json.z"
+        }
+      ],
+      "id": "8_pop_lightenload",
+      "triggers": [
+        {
+          "location": "8_pop_lightenload",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part8/cnv_8_pop_finalpush.json.z"
+        }
+      ],
+      "id": "8_pop_finalpush",
+      "triggers": [
+        {
+          "location": "8_pop_finalpush",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "location": "start",
+          "scene": "saga2/scene/close/cls_ormsdalr/cls_ormsdalr.json.z",
+          "type": "TRAVEL"
+        }
+      ],
+      "id": "8_close_ormsdalr",
+      "triggers": [
+        {
+          "location": "8_close_ormsdalr",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "sediment_back_1_1",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "sediment_back_1_2",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "4_back_b2_1",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        }
+      ],
+      "id": "anim_rockdrop1",
+      "triggers": [
+        {
+          "location": "anim_rockdrop1",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "2_close_c_1",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "sediment_1_2",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        }
+      ],
+      "id": "anim_rockdrop2",
+      "triggers": [
+        {
+          "location": "anim_rockdrop2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "2_close_b_1",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "sediment_1_1",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "sediment_2_1",
+          "instant": true,
+          "type": "ANIM_PATH_START"
+        }
+      ],
+      "id": "anim_rockdrop3",
+      "triggers": [
+        {
+          "location": "anim_rockdrop3",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "sediment_back_2_1",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "5_back_a2_1",
+          "type": "ANIM_PATH_START"
+        }
+      ],
+      "id": "anim_rockdrop4",
+      "triggers": [
+        {
+          "location": "anim_rockdrop4",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 6237.083333333334,
+      "x": -299.4999999999982,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/7_sky_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1765,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_a_1",
+            "offset": {
+              "x": 293,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/7_sky_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1191,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_b_1",
+            "offset": {
+              "x": 2058,
+              "y": 0
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.15
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/6_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1707,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_a_1",
+            "offset": {
+              "x": 809,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/6_back_b.png",
+            "localrect": {
+              "height": 825,
+              "width": 1399,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_b_1",
+            "offset": {
+              "x": 2516,
+              "y": 338
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/clouds_back_6.png",
+            "localrect": {
+              "height": 581,
+              "width": 1039,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "clouds_back_6_1",
+            "offset": {
+              "x": 2096,
+              "y": -2
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "clouds_back_6",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "ease": "quad",
+                  "start": {
+                    "x": 2636.7,
+                    "y": 320
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2636.7,
+                    "y": 1218.35
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_back_2.png",
+            "localrect": {
+              "height": 347,
+              "width": 94,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_back_2_1",
+            "offset": {
+              "x": 2636,
+              "y": 320
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/5_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1689,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_a_1",
+            "offset": {
+              "x": 1110,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 20,
+                  "ease": "quad",
+                  "start": {
+                    "x": 2426,
+                    "y": 495
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2426,
+                    "y": 1213.35
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/5_back_a2.png",
+            "localrect": {
+              "height": 666,
+              "width": 346,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_a2_1",
+            "offset": {
+              "x": 2426,
+              "y": 495
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/5_back_b.png",
+            "localrect": {
+              "height": 597,
+              "width": 1522,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_b_1",
+            "offset": {
+              "x": 3441,
+              "y": 570
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/fog_2.png",
+            "localrect": {
+              "height": 291,
+              "width": 813,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fog_2_1",
+            "offset": {
+              "x": 949,
+              "y": 13
+            },
+            "scale": {
+              "x": 4,
+              "y": 4
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fog_2",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/4_back_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_a_1",
+            "offset": {
+              "x": 751,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/4_back_b.png",
+            "localrect": {
+              "height": 567,
+              "width": 1226,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_b_1",
+            "offset": {
+              "x": 3083,
+              "y": 595
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 20,
+                  "ease": "quad",
+                  "start": {
+                    "x": 4316,
+                    "y": 652.5
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 4316,
+                    "y": 1210
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_back_1.png",
+            "localrect": {
+              "height": 196,
+              "width": 101,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_back_1_1",
+            "offset": {
+              "x": 4275,
+              "y": 679
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 19,
+                  "ease": "quad",
+                  "start": {
+                    "x": 4230,
+                    "y": 782
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 4230,
+                    "y": 1228
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_back_1.png",
+            "localrect": {
+              "height": 196,
+              "width": 101,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_back_1_2",
+            "offset": {
+              "x": 4078,
+              "y": 871
+            },
+            "scale": {
+              "x": -1,
+              "y": -1
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 15,
+                  "ease": "quad",
+                  "start": {
+                    "x": 3941,
+                    "y": 585
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3950,
+                    "y": 1238
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/4_back_b2.png",
+            "localrect": {
+              "height": 576,
+              "width": 631,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_b2_1",
+            "offset": {
+              "x": 3941,
+              "y": 585
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/4_back_c.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1333,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_c_1",
+            "offset": {
+              "x": 4371,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/4_back_block.png",
+            "localrect": {
+              "height": 112,
+              "width": 445,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back_block_1",
+            "offset": {
+              "x": 5702,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 140,
+                  "start": {
+                    "x": -1455.05,
+                    "y": 505
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 5395.1,
+                    "y": 505
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.75
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/clouds_faint.png",
+            "localrect": {
+              "height": 124,
+              "width": 1625,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "clouds_faint_1",
+            "offset": {
+              "x": -366,
+              "y": 505
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/fog_1.png",
+            "localrect": {
+              "height": 573,
+              "width": 1991,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fog_1_1",
+            "offset": {
+              "x": 2504,
+              "y": 19
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fog_1",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/3_wall_a.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1030,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_wall_a_1",
+            "offset": {
+              "x": 1067,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/3_wall_b.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1101,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_wall_b_1",
+            "offset": {
+              "x": 2097,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/3_wall_c.png",
+            "localrect": {
+              "height": 581,
+              "width": 1586,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_wall_c_1",
+            "offset": {
+              "x": 4320,
+              "y": 582
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/3_wall_d.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1401,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_wall_d_1",
+            "offset": {
+              "x": 5906,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "nameId": "anchor_camera_pan_chasm",
+            "offset": {
+              "x": 2867.05,
+              "y": 574
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1,
+        "splines": [
+          {
+            "ease": "Quad",
+            "easeIn": true,
+            "easeOut": true,
+            "id": "camera_chasm",
+            "points": [
+              {
+                "pos": "7000 581"
+              },
+              {
+                "pos": "5400 581"
+              },
+              {
+                "pos": "4500 581"
+              },
+              {
+                "pos": "3000 581"
+              }
+            ],
+            "tailpos": 0.8
+          }
+        ]
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/yellow_fog_2_close.png",
+            "localrect": {
+              "height": 581,
+              "width": 1682,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "yellow_fog_2_close_1",
+            "offset": {
+              "x": 860,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 100,
+                  "start": {
+                    "x": 1390,
+                    "y": 778
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 9455.15,
+                    "y": 778
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.5
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/clouds.png",
+            "localrect": {
+              "height": 124,
+              "width": 1625,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "clouds_1",
+            "offset": {
+              "x": 5194,
+              "y": 778
+            },
+            "scale": {
+              "x": -2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsdalr/3_walk_front_clouds.png",
+            "localrect": {
+              "height": 200,
+              "width": 620,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_clouds_1",
+            "offset": {
+              "x": 7318,
+              "y": 97
+            },
+            "scale": {
+              "x": -1,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_bindal/lettering_ormsdalr.png",
+            "localrect": {
+              "height": 98,
+              "width": 284,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_ormsdalr_1",
+            "offset": {
+              "x": 2326,
+              "y": 8
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/locale/zh/lettering/lettering_ormsdalr.png",
+            "langs": "zh",
+            "linked": "lettering_ormsdalr_1",
+            "localrect": {
+              "height": 84,
+              "width": 184,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_ormsdalr",
+            "offset": {
+              "x": 2133.6,
+              "y": 100.25
+            },
+            "rotation": -13.830515964074436,
+            "smoothing": true
+          }
+        ],
+        "nameId": "clouds_3_walk",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/big_fog.png",
+            "localrect": {
+              "height": 1,
+              "width": 1,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "big_fog_1",
+            "offset": {
+              "x": 989,
+              "y": 0
+            },
+            "scale": {
+              "x": 6338,
+              "y": 1200
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "big_fog",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/2_close_a.png",
+            "localrect": {
+              "height": 679,
+              "width": 1402,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a_1",
+            "offset": {
+              "x": 1380,
+              "y": 485
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 7,
+                  "ease": "quad",
+                  "start": {
+                    "x": 2862,
+                    "y": 466
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2786.8,
+                    "y": 1206.7
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/2_close_b.png",
+            "localrect": {
+              "height": 697,
+              "width": 1153,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b_1",
+            "offset": {
+              "x": 2862,
+              "y": 466
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 11,
+                  "ease": "quad",
+                  "start": {
+                    "x": 3046.8,
+                    "y": 786.7
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3046.8,
+                    "y": 1250.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_1.png",
+            "localrect": {
+              "height": 151,
+              "width": 135,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_1_1",
+            "offset": {
+              "x": 3021,
+              "y": 792
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 9,
+                  "ease": "quad",
+                  "start": {
+                    "x": 2926,
+                    "y": 746
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2926,
+                    "y": 1262
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_2.png",
+            "localrect": {
+              "height": 188,
+              "width": 86,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_2_1",
+            "offset": {
+              "x": 2960,
+              "y": 764
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 8,
+                  "ease": "quad",
+                  "start": {
+                    "x": 5710,
+                    "y": 837
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 5745.1,
+                    "y": 1280.05
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/2_close_c.png",
+            "localrect": {
+              "height": 330,
+              "width": 869,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_c_1",
+            "offset": {
+              "x": 5710,
+              "y": 837
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 12,
+                  "ease": "quad",
+                  "start": {
+                    "x": 6065.1,
+                    "y": 925.05
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 6065.1,
+                    "y": 1265.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/sediment_1.png",
+            "localrect": {
+              "height": 151,
+              "width": 135,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "sediment_1_2",
+            "offset": {
+              "x": 6078,
+              "y": 924
+            },
+            "scale": {
+              "x": -2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/2_close_d.png",
+            "localrect": {
+              "height": 605,
+              "width": 1392,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_d_1",
+            "offset": {
+              "x": 7602,
+              "y": 580
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/yellow_fog_1_close.png",
+            "localrect": {
+              "height": 1158,
+              "width": 306,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "yellow_fog_1_close_1",
+            "offset": {
+              "x": 1917,
+              "y": 0
+            },
+            "scale": {
+              "x": 10,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 50,
+                  "start": {
+                    "x": -1663,
+                    "y": 810
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 10810.15,
+                    "y": 810
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.4
+            },
+            "bmp": "saga2/scene/world/wld_ormsachasm/clouds_front.png",
+            "localrect": {
+              "height": 181,
+              "width": 1804,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "clouds_front_1",
+            "offset": {
+              "x": -1563,
+              "y": 810
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fog_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.8
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/1_close_a.png",
+            "localrect": {
+              "height": 267,
+              "width": 805,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_a_1",
+            "offset": {
+              "x": 1913,
+              "y": 629
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/1_close_b.png",
+            "localrect": {
+              "height": 335,
+              "width": 794,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_b_1",
+            "offset": {
+              "x": 5539,
+              "y": 499
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_ormsachasm/1_close_c.png",
+            "localrect": {
+              "height": 243,
+              "width": 687,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_c_1",
+            "offset": {
+              "x": 9593,
+              "y": 722
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.8
+      }
+    ],
+    "travels": [
+      {
+        "locations": [
+          {
+            "id": "start",
+            "position": 631
+          },
+          {
+            "id": "8_music_start",
+            "position": 632
+          },
+          {
+            "id": "8_pop_ashoreormsdalr",
+            "loadBarrier": true,
+            "position": 801
+          }
+        ],
+        "ships": true,
+        "speed": 30,
+        "splinex": [
+          "6298 -389",
+          "6211 -387",
+          "5850 -387",
+          "5336 -396",
+          "5153 -393",
+          "4521 -394"
+        ]
+      },
+      {
+        "locations": [
+          {
+            "id": "start_chasm_caravan",
+            "position": 865
+          },
+          {
+            "id": "music_start_8m6",
+            "position": 870
+          },
+          {
+            "id": "8_pop_dredgefollow",
+            "position": 1169
+          },
+          {
+            "id": "anim_rockdrop1",
+            "position": 1269
+          },
+          {
+            "id": "speak_ubin",
+            "position": 1549
+          },
+          {
+            "id": "8_pop_over_chasm",
+            "position": 2160
+          },
+          {
+            "id": "anim_rockdrop2",
+            "position": 2309
+          },
+          {
+            "id": "music_param_8m6_l2",
+            "position": 2830
+          },
+          {
+            "id": "8_pop_lightenload",
+            "position": 2835
+          },
+          {
+            "id": "speak_eyvind",
+            "position": 3220
+          },
+          {
+            "id": "speak_juno",
+            "position": 3495
+          },
+          {
+            "id": "anim_rockdrop3",
+            "position": 3626
+          },
+          {
+            "id": "8_pop_finalpush",
+            "position": 4030
+          },
+          {
+            "id": "anim_rockdrop4",
+            "position": 4130
+          },
+          {
+            "id": "8_close_ormsdalr",
+            "loadBarrier": true,
+            "position": 4404
+          },
+          {
+            "id": "end",
+            "position": 5171
+          }
+        ],
+        "reactors": [
+          {
+            "id": "magic_bridge"
+          }
+        ],
+        "speed": 30,
+        "splinex": [
+          "6013 -462",
+          "5663 -428",
+          "5053 -410",
+          "4854 -394",
+          "4747 -386",
+          "2814 -108",
+          "1290 -390",
+          "980 -410",
+          "720 -420"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

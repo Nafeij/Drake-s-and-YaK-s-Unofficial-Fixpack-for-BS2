@@ -1,0 +1,1931 @@
+{
+  "ambientParameter": 0,
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "id": "eyvind",
+          "type": "UNIT_APPEARANCE",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "biome",
+          "varvalue": 2
+        },
+        {
+          "param": "0xffffffff",
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_color"
+        },
+        {
+          "id": "world/saga2_narrative/tbs2_serpent_travel_moment",
+          "type": "SOUND_PLAY_EVENT"
+        },
+        {
+          "id": "serpent_1a",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "serpent_1b",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.9
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_gravity",
+          "varvalue": 0.1
+        },
+        {
+          "id": "juno",
+          "type": "UNIT_APPEARANCE",
+          "varvalue": 1
+        }
+      ],
+      "id": "serpent_move",
+      "triggers": [
+        {
+          "location": "serpent_move",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "serpent_2a",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "serpent_2b",
+          "type": "ANIM_PATH_START"
+        }
+      ],
+      "id": "serpent_move_tail"
+    },
+    {
+      "actions": [
+        {
+          "type": "HALT",
+          "varvalue": 1
+        },
+        {
+          "time": 3,
+          "type": "WAIT"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        },
+        {
+          "type": "HALT"
+        },
+        {
+          "id": "splash_2",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "splash_1",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "cloud_1",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": -4
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 4
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_gravity",
+          "varvalue": 1
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_variance",
+          "varvalue": 2
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "happening": "serpent_move_tail",
+          "type": "HAPPENING"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "id": "world/saga2_narrative/tbs2_serpent_travel_water_impact",
+          "type": "SOUND_PLAY_EVENT"
+        }
+      ],
+      "id": "caravan_stop",
+      "triggers": [
+        {
+          "location": "caravan_stop",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_pop_regrouping.json.z"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "12_serpent_shown",
+          "varvalue": 1
+        },
+        {
+          "scene": "saga2/scene/stage/stg_wilderness_forest/stg_wilderness_forest.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part12/cnv_12_convo_scattering.json.z"
+        }
+      ],
+      "id": "10_pop_regrouping",
+      "triggers": [
+        {
+          "location": "10_pop_regrouping",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_pop_juno_postserpent.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_travel_hidden"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_pop_juno_postserpent",
+      "triggers": [
+        {
+          "location": "10_pop_juno_postserpent",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "cloud_2",
+          "type": "ANIM_PATH_START"
+        },
+        {
+          "id": "cloud_2",
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 3
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_variance",
+          "varvalue": 1
+        }
+      ],
+      "id": "cloud_2",
+      "triggers": [
+        {
+          "location": "cloud_2",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_wind",
+          "varvalue": 2
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "weather_snow_density",
+          "varvalue": 0.1
+        }
+      ],
+      "id": "snow_normal",
+      "triggers": [
+        {
+          "location": "snow_normal",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.6
+        },
+        {
+          "id": "saga2_vo/vo/vo_12_fiskivik_rook",
+          "prereq": "hero_rook",
+          "subtitle": "saga2/locale/en/vo_12_fiskivik.sbv.z",
+          "type": "VO"
+        },
+        {
+          "id": "saga2_vo/vo/vo_12_fiskivik_alette",
+          "prereq": "hero_alette",
+          "subtitle": "saga2/locale/en/vo_12_fiskivik.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "12_vo_fiskivik",
+      "triggers": [
+        {
+          "location": "12_vo_fiskivik",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 1
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_fiskivik/stg_fiskivik.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part10/cnv_10_convo_goodbyes1.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "map_s2",
+          "varvalue": 12
+        },
+        {
+          "happening": "pan_cin_map_s2",
+          "restore_scene": false,
+          "type": "CAMP_MAP"
+        },
+        {
+          "restore_scene": false,
+          "scene": "saga2/scene/stage/stg_fiskivik/stg_fiskivik.json.z",
+          "type": "CONVO",
+          "url": "saga2/convo/part10/cnv_10_convo_goodbyes2.json.z"
+        },
+        {
+          "anchor": "7",
+          "id": "alette",
+          "param": "abl_mend",
+          "prereq": "hero_alette && 10_alette_mender",
+          "type": "UNIT_ABILITY_ADD"
+        },
+        {
+          "id": "iver",
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "eyvind",
+          "type": "ROSTER_REMOVE"
+        },
+        {
+          "happening": "12_end",
+          "instant": true,
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "10_convo_goodbyes",
+      "triggers": [
+        {
+          "location": "10_convo_goodbyes",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga2/music/ch12/10m11",
+          "type": "MUSIC_ONESHOT"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "type": "CAMERA_GLOBAL_LOCK",
+          "varvalue": 1
+        },
+        {
+          "anchor": "pan_skiff",
+          "type": "CAMERA_PAN",
+          "varvalue": 70
+        },
+        {
+          "type": "CAMERA_CARAVAN_ANCHOR"
+        },
+        {
+          "time": 3,
+          "type": "FADEOUT"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "game_progress",
+          "varvalue": 60
+        },
+        {
+          "happening": "13_start",
+          "id": "sav_chapter_13",
+          "type": "SAVE_STORE"
+        },
+        {
+          "happening": "13_start",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "pan_to_skiff"
+    },
+    {
+      "actions": [
+        {
+          "happening": "10_rnd_wildhogs",
+          "prereqs": [
+            {
+              "varname": "10_rnd_wildhogs",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_crazywoman",
+          "prereqs": [
+            {
+              "varname": "10_rnd_crazywoman",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_crazywoman2",
+          "prereqs": [
+            {
+              "varname": "10_rnd_crazywoman",
+              "varvalue": 1
+            },
+            {
+              "varname": "10_rnd_crazywoman2",
+              "varvalue": 0
+            },
+            {
+              "max": 2,
+              "min": 1,
+              "varname": "10_crazy_woman2"
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_ghosts",
+          "prereqs": [
+            {
+              "varname": "10_rnd_ghosts",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_enter_oldwood",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_ghosts2",
+          "prereqs": [
+            {
+              "varname": "10_rnd_ghosts",
+              "varvalue": 1
+            },
+            {
+              "varname": "10_enter_oldwood",
+              "varvalue": 1
+            },
+            {
+              "varname": "10_rnd_ghosts2",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_painter",
+          "prereqs": [
+            {
+              "varname": "10_rnd_painter",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_enter_oldwood",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_kraggers1",
+          "prereqs": [
+            {
+              "varname": "10_rnd_kraggers1",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_enter_plains",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_kraggers2",
+          "prereqs": [
+            {
+              "varname": "10_rnd_kraggers1",
+              "varvalue": 1
+            },
+            {
+              "varname": "10_rnd_kraggers2",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_enter_plains",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING",
+          "weights": [
+            {
+              "varname": "10_rnd_kraggers2",
+              "varvalue": 2
+            }
+          ]
+        },
+        {
+          "happening": "10_rnd_kraggers3",
+          "prereqs": [
+            {
+              "varname": "10_rnd_kraggers3",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_rnd_kraggers2",
+              "varvalue": 1
+            },
+            {
+              "varname": "10_enter_plains",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING",
+          "weights": [
+            {
+              "varname": "10_rnd_kraggers3",
+              "varvalue": 2
+            }
+          ]
+        },
+        {
+          "happening": "10_rnd_drifters1",
+          "prereqs": [
+            {
+              "varname": "10_rnd_drifters1",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "10_rnd_drifters2",
+          "prereqs": [
+            {
+              "varname": "10_rnd_drifters2",
+              "varvalue": 0
+            },
+            {
+              "varname": "10_rnd_drifters_join",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING",
+          "weights": [
+            {
+              "varname": "10_rnd_gypsies2",
+              "varvalue": 2
+            }
+          ]
+        },
+        {
+          "happening": "10_rnd_traveling_merchant",
+          "prereqs": [
+            {
+              "varname": "10_rnd_traveling_merchant",
+              "varvalue": 0
+            }
+          ],
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "10_rnd_quests",
+      "random": true,
+      "triggers": [
+        {
+          "location": "10_rnd_quests",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_kraggers1.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_kraggers1",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_kraggers1"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_kraggers2.json.z"
+        },
+        {
+          "happening": "battle_rnd_kraggers",
+          "prereqs": [
+            {
+              "varname": "10_rnd_krags_btl",
+              "varvalue": 1
+            }
+          ],
+          "type": "HAPPENING"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_kraggers2",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_kraggers2"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_kraggers3.json.z"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "10_rnd_krag_btl_finale",
+              "varvalue": 1
+            },
+            {
+              "varname": "biome",
+              "varvalue": 3
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_grassland/btl_grassland.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "10_rnd_krag_btl_finale",
+              "varvalue": 1
+            },
+            {
+              "varname": "biome",
+              "varvalue": 4
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_oldwood/btl_oldwood.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "prereqs": [
+            {
+              "varname": "10_rnd_krag_btl_finale",
+              "varvalue": 1
+            },
+            {
+              "varname": "biome",
+              "varvalue": 2
+            }
+          ],
+          "scene": "saga2/scene/battle/btl_forest_wilderness/btl_forest_wilderness.json.z",
+          "type": "BATTLE"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_kraggers3",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_kraggers3"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_ghosts.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_ghosts",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_ghosts"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_ghosts2.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_ghosts2",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_ghosts2"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_wildhogs.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_wildhogs",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_wildhogs"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_crazywoman.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_crazywoman",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_crazywoman"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_crazywoman2.json.z"
+        },
+        {
+          "suppress_flytext": true,
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_crazywoman2",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_crazywoman2"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_painter.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_painter",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_painter"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_drifters1.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_drifters1",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_drifters1"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_drifters2.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_drifters2",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_drifters2"
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga2/convo/part10/cnv_10_rnd_traveling_merchant.json.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "10_rnd_traveling_merchant",
+          "varvalue": 1
+        }
+      ],
+      "id": "10_rnd_traveling_merchant"
+    },
+    {
+      "actions": [
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "time": 2,
+          "type": "WAIT"
+        },
+        {
+          "type": "DRIVING_SPEED",
+          "varvalue": 0.5
+        }
+      ],
+      "id": "serpent_exit_begin"
+    },
+    {
+      "actions": [
+        {
+          "type": "MUSIC_OUTRO"
+        }
+      ],
+      "id": "music_out",
+      "triggers": [
+        {
+          "location": "music_out",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 7672.87792207792,
+      "x": -2202.6309523809505,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/7_sky.png",
+            "localrect": {
+              "height": 581,
+              "width": 1366,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "7_sky_1",
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/6_back1.png",
+            "localrect": {
+              "height": 52,
+              "width": 425,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back1_1",
+            "offset": {
+              "x": 2390,
+              "y": 859
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/6_back2.png",
+            "localrect": {
+              "height": 83,
+              "width": 1099,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back2_1",
+            "offset": {
+              "x": 1861,
+              "y": 724
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/5_back1.png",
+            "localrect": {
+              "height": 454,
+              "width": 808,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back1_1",
+            "offset": {
+              "x": 3197,
+              "y": 58
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/4_back1.png",
+            "localrect": {
+              "height": 363,
+              "width": 884,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "4_back1_1",
+            "offset": {
+              "x": 3894,
+              "y": 298
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/back_trees.png",
+            "localrect": {
+              "height": 228,
+              "width": 719,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "back_trees_1",
+            "offset": {
+              "x": 4784,
+              "y": 583
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "back_trees",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.85
+      },
+      {
+        "ifCondition": "10_poison_water",
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": []
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/skiff.png",
+            "localrect": {
+              "height": 29,
+              "width": 111,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "skiff",
+            "offset": {
+              "x": 1243,
+              "y": 993
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "nameId": "pan_skiff",
+            "offset": {
+              "x": 504,
+              "y": 949.15
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "skiff",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "ifCondition": "10_poison_water",
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/poison_water1.png",
+            "localrect": {
+              "height": 100,
+              "width": 1168,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "poison_water1_1",
+            "offset": {
+              "x": 728,
+              "y": 945
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/poison_water1.png",
+            "localrect": {
+              "height": 100,
+              "width": 1168,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "poison_water1_2",
+            "offset": {
+              "x": 916,
+              "y": 1245
+            },
+            "scale": {
+              "x": 2,
+              "y": -2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/poison_water1.png",
+            "localrect": {
+              "height": 100,
+              "width": 1168,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "poison_water1_3",
+            "offset": {
+              "x": 2117,
+              "y": 957
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/poison_water2.png",
+            "localrect": {
+              "height": 152,
+              "width": 1378,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "poison_water2_1",
+            "offset": {
+              "x": 221.9,
+              "y": 874
+            },
+            "scale": {
+              "x": 1.573299765586853,
+              "y": 1.366446614265442
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "poison_water",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 18,
+                  "ease": "quad",
+                  "start": {
+                    "x": 4450,
+                    "y": 510
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 550,
+                    "y": 1330
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/serpent_2a.png",
+            "ifCondition": "!12_serpent_shown",
+            "localrect": {
+              "height": 521,
+              "width": 1870,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "serpent_2a",
+            "offset": {
+              "x": 4450,
+              "y": 510
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 18,
+                  "ease": "quad",
+                  "start": {
+                    "x": 6320,
+                    "y": 510
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2420,
+                    "y": 1330
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/serpent_2b.png",
+            "ifCondition": "!12_serpent_shown",
+            "localrect": {
+              "height": 521,
+              "width": 1789,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "serpent_2b",
+            "offset": {
+              "x": 6320,
+              "y": 510
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "ease": "quad",
+                  "start": {
+                    "x": 4266,
+                    "y": 464
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 4050,
+                    "y": 354
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 9,
+                  "ease": "quad",
+                  "start": {
+                    "x": 4050,
+                    "y": 354
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3350,
+                    "y": 1048
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/serpent_1a.png",
+            "ifCondition": "!12_serpent_shown",
+            "localrect": {
+              "height": 668,
+              "width": 1882,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "serpent_1a",
+            "offset": {
+              "x": 4266,
+              "y": 464
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "ease": "quad",
+                  "start": {
+                    "x": 6148,
+                    "y": 464
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 5932,
+                    "y": 354
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 9,
+                  "ease": "quad",
+                  "start": {
+                    "x": 5932,
+                    "y": 354
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 5232,
+                    "y": 1048
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_visible": true
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/serpent_1b.png",
+            "ifCondition": "!12_serpent_shown",
+            "localrect": {
+              "height": 668,
+              "width": 1097,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "serpent_1b",
+            "offset": {
+              "x": 6148,
+              "y": 464
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "ease": "quad",
+                  "easeIn": false,
+                  "start": {
+                    "x": 4074,
+                    "y": 843
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3810,
+                    "y": 490
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 10,
+                  "ease": "quad",
+                  "start": {
+                    "x": 3810,
+                    "y": 490
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3544.3,
+                    "y": 971.45
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/splash.png",
+            "localrect": {
+              "height": 613,
+              "width": 1309,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "splash_1",
+            "offset": {
+              "x": 4174,
+              "y": 843
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 2,
+                  "ease": "quad",
+                  "easeIn": false,
+                  "start": {
+                    "x": 3997,
+                    "y": 832
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3887.6,
+                    "y": 575
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "quad",
+                  "start": {
+                    "x": 3887.6,
+                    "y": 575
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3695.1,
+                    "y": 1017.55
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/splash.png",
+            "localrect": {
+              "height": 613,
+              "width": 1309,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "splash_2",
+            "offset": {
+              "x": 4097,
+              "y": 832
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 10,
+                  "ease": "quad",
+                  "easeIn": false,
+                  "start": {
+                    "x": 3154,
+                    "y": 942
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3675.05,
+                    "y": 718.35
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 12,
+                  "ease": "quad",
+                  "start": {
+                    "x": 3675.05,
+                    "y": 718.35
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 4265.05,
+                    "y": 956.7
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/cloud.png",
+            "localrect": {
+              "height": 171,
+              "width": 1329,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_1",
+            "offset": {
+              "x": 3806,
+              "y": 926
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "autostart": false,
+              "looping": false,
+              "nodes": [
+                {
+                  "duration_secs": 10,
+                  "ease": "quad",
+                  "easeIn": false,
+                  "start": {
+                    "x": 1853,
+                    "y": 1012
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 2760.05,
+                    "y": 756.65
+                  },
+                  "type": "MOVE"
+                },
+                {
+                  "duration_secs": 12,
+                  "ease": "quad",
+                  "start": {
+                    "x": 2760.05,
+                    "y": 756.65
+                  },
+                  "start_secs": -1,
+                  "target": {
+                    "x": 3645,
+                    "y": 1176
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga2/scene/world/wld_fiskivik2/cloud.png",
+            "localrect": {
+              "height": 171,
+              "width": 1329,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_2",
+            "offset": {
+              "x": 1853,
+              "y": 1012
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "serpent",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.9
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/poison_water_always.png",
+            "localrect": {
+              "height": 112,
+              "width": 961,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "poison_water_always_1",
+            "offset": {
+              "x": 1689,
+              "y": 933
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "water_poison",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_back1.png",
+            "localrect": {
+              "height": 71,
+              "width": 479,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back1_1",
+            "offset": {
+              "x": 2383,
+              "y": 1009
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_back2.png",
+            "localrect": {
+              "height": 192,
+              "width": 1275,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back2_1",
+            "offset": {
+              "x": 3906,
+              "y": 920
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_back3.png",
+            "localrect": {
+              "height": 558,
+              "width": 1655,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back3_1",
+            "offset": {
+              "x": 5183,
+              "y": 530
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_front1.png",
+            "localrect": {
+              "height": 248,
+              "width": 1872,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front1_1",
+            "offset": {
+              "x": 2053,
+              "y": 960
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_front2.png",
+            "localrect": {
+              "height": 205,
+              "width": 1600,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front2_1",
+            "offset": {
+              "x": 3925,
+              "y": 892
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/3_walk_front3.png",
+            "localrect": {
+              "height": 419,
+              "width": 1314,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front3_1",
+            "offset": {
+              "x": 5525,
+              "y": 678
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/lettering_fiskivik.png",
+            "localrect": {
+              "height": 85,
+              "width": 237,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lettering_fiskivik_1",
+            "offset": {
+              "x": 2496,
+              "y": 866
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/locale/zh/lettering/lettering_fiskivik.png",
+            "langs": "zh",
+            "linked": "lettering_fiskivik_1",
+            "localrect": {
+              "height": 83,
+              "width": 242,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "zh_lettering_fiskivik",
+            "offset": {
+              "x": 2476,
+              "y": 801
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/2_close1.png",
+            "localrect": {
+              "height": 119,
+              "width": 1348,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close1_1",
+            "offset": {
+              "x": 3091,
+              "y": 948
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/2_close2.png",
+            "localrect": {
+              "height": 192,
+              "width": 1153,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close2_1",
+            "offset": {
+              "x": 5787,
+              "y": 802
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/2_close_twintrees.png",
+            "localrect": {
+              "height": 574,
+              "width": 342,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_twintrees_1",
+            "offset": {
+              "x": 6581,
+              "y": -5
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/1_close1.png",
+            "localrect": {
+              "height": 66,
+              "width": 1601,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close1_1",
+            "offset": {
+              "x": 4128,
+              "y": 1034
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/1_close2.png",
+            "localrect": {
+              "height": 84,
+              "width": 1072,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close2_1",
+            "offset": {
+              "x": 7300,
+              "y": 998
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/1_close_tree1.png",
+            "localrect": {
+              "height": 581,
+              "width": 435,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_tree1_1",
+            "offset": {
+              "x": 8424,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/world/wld_fiskivik2/1_close_tree2.png",
+            "localrect": {
+              "height": 581,
+              "width": 347,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_tree2_1",
+            "offset": {
+              "x": 7910,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.6
+      }
+    ],
+    "travels": [
+      {
+        "locations": [
+          {
+            "id": "start",
+            "position": 219
+          },
+          {
+            "id": "serpent_leave",
+            "position": 1446
+          },
+          {
+            "id": "serpent_move",
+            "position": 1805
+          },
+          {
+            "id": "caravan_stop",
+            "position": 2051
+          },
+          {
+            "id": "cloud_2",
+            "position": 2291
+          },
+          {
+            "id": "bk_12_postserpent",
+            "position": 2391
+          },
+          {
+            "id": "snow_normal",
+            "position": 2504
+          },
+          {
+            "id": "10_pop_regrouping",
+            "loadBarrier": true,
+            "position": 2624
+          },
+          {
+            "id": "10_pop_juno_postserpent",
+            "position": 3048
+          },
+          {
+            "id": "bk_12_fiskivik",
+            "position": 3700
+          },
+          {
+            "id": "12_vo_fiskivik",
+            "position": 3745
+          },
+          {
+            "id": "10_convo_goodbyes",
+            "loadBarrier": true,
+            "position": 4223
+          },
+          {
+            "id": "end",
+            "position": 4564
+          }
+        ],
+        "splinex": [
+          "5850 368",
+          "5460 354",
+          "5189 330",
+          "4784 415",
+          "4535 445",
+          "4283 443",
+          "3878 390",
+          "3729 401",
+          "3536 370",
+          "3268 369",
+          "2860 430",
+          "2699 439",
+          "2356 434",
+          "2182 422",
+          "2001 414",
+          "1756 416",
+          "1664 424",
+          "1563 431",
+          "1244 464",
+          "917 512",
+          "491 516"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}
