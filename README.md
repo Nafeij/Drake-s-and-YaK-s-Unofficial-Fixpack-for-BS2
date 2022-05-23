@@ -7,6 +7,8 @@
     [FIXED] Item duplication exploit: Whatever item Mogun has equipped will become duplicated if he is felled in his mutiny event. Similarly, equipping an item on Bolverk before the Insult/Axe storm training challenge causes his equipped item to become duped and bugged. Fixed by adding UNIT_TRANSFER_ITEM flags before each fight.
     A related bug causes the player to lose whatever item he has equipped if they so choose to dismiss Hogun.
     
+    [FIXED] Bug in which horseborn lose their first active abilities at rank 7.
+    
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     
  2.0 
