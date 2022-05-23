@@ -8378,6 +8378,10 @@
       "actions": [
         {
           "id": "hogun",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hogun",
           "type": "ROSTER_REMOVE"
         },
         {
