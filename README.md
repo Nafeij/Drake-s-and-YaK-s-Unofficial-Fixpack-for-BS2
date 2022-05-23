@@ -5,6 +5,7 @@
     [FIXED] Some of the animations are bugged during the chasm crossing sequence and when the serpent slides into the sea. The sprites would suddenly pop into existence and start moving, i.e. they don't have a persistent start state. Due to a missing "start_visible": true flag
     
     [FIXED] Item duplication exploit: Whatever item Mogun has equipped will become duplicated if he is felled in his mutiny event. Similarly, equipping an item on Bolverk before the Insult/Axe storm training challenge causes his equipped item to become duped and bugged. Fixed by adding UNIT_TRANSFER_ITEM flags before each fight.
+    A related bug causes the player to lose whatever item he has equipped if they so choose to dismiss Hogun.
     
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     
