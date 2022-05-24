@@ -1,0 +1,120 @@
+{
+	"data": {
+		"initial": "skip",
+		"stitches": {
+			"bolverkEyelessGr": {
+				"content": [
+					"[bolverk] Eyeless grows quiet in the distance. You watch the Sundr shake and struggle to maintain its form. Then it fades, like snow blowing over a hilltop. A few more rocks tumble down and you grab the sagging Valka before she is crushed.",
+					{
+						"divert": "bolverkOnceYouHa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkOnceYouHa": {
+				"content": [
+					"[bolverk] Once you have met up with everyone else, you tally the numbers. The losses are not as bad as they could have been.",
+					{
+						"divert": "zefrIDoubtThatEn"
+					},
+					{
+						"flagName": "num_peasants-12"
+					},
+					{
+						"flagName": "num_fighters-9"
+					},
+					{
+						"flagName": "morale-5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsHereValkaZ": {
+				"content": [
+					"[nikels] \"Here, Valka Zefr!\" the young mender says, helping an older woman to her feet nearby. Zefr grabs Nikels and whispers to him. The young mender's eyes go wide, but he nods solemnly.",
+					{
+						"divert": "nikelsHeTurnsToY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"nikelsHeTurnsToY": {
+				"content": [
+					"[nikels] He turns to you and says, \"Thanks for making me feel like I had a chance.\" A large rock falls nearby and he stumbles away, back towards Eyeless. Nikels begins tracing a pattern in the air.",
+					{
+						"divert": "nikelsHeTurnsToY1"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"ifCondition": "11_nikels_raven"
+					}
+				]
+			},
+			"nikelsHeTurnsToY1": {
+				"content": [
+					"[nikels] He turns to you and says, \"I'm sorry if I was a nuisance.\" A large rock falls nearby and he stumbles away, back towards Eyeless. Nikels begins tracing a pattern in the air.",
+					{
+						"divert": "zefrYouYellForEv"
+					},
+					{
+						"pageNum": 0
+					},
+					{
+						"notIfCondition": "11_nikels_raven"
+					}
+				]
+			},
+			"skip": {
+				"content": [
+					"{skip}",
+					{
+						"linkPath": "zefrEyelessIsTry",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"zefrEyelessIsTry": {
+				"content": [
+					"[zefr] \"Eyeless is trying to bring the cave down on our heads!\" Zefr screams. \"I can stop her, but it--\" The Valka abruptly grows quiet and scans the people running for their lives. \"Just keep them all together. Nikels!\"",
+					{
+						"divert": "nikelsHereValkaZ"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrIDoubtThatEn": {
+				"content": [
+					"[zefr] \"I doubt that ended her,\" Zefr says. \"And there are many passages here which Eyeless knows all too well. She's been tracking us. We need to leave these caves immediately.\" You pause and say, \"What you did with that mender boy--\" Zefr turns her head. \"We can discuss Nikels' sacrifice another time. We must move.\" You give the command and no one hesitates to obey.",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrYouYellForEv": {
+				"content": [
+					"[zefr] You yell for everyone to keep moving, tossing those who stop to turn around. When you look back, Zefr is standing behind Nikels, tracing an alternate pattern. The young man glows for only a moment, hair flapping as if a giant gust is blowing past him, then he crumbles.",
+					{
+						"divert": "bolverkEyelessGr"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "5hgz"
+}
