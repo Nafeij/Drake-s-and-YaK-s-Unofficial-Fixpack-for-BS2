@@ -52,27 +52,48 @@
     [TWEAKED] The starting difficulty setting from "Normal" to "Hard". Too often i have started a new game and noticed it was at "Normal" instead of "Hard" only after quite a while, maybe screwing also the achievment for hard in the meanwhile. So the change, since switching from "Hard" to "Normal" don't break any achievement. It's a personal tweak, but so minimal that i won't create a keep updated totally different pack just for my personal use, so it's included
     
     [FIXED] In the first part of Ch8 "Ship Kids" there is a bug that prevented the second part to occur, now it's [FIXED];
-    [FIXED] In the second part of the "Ship Kids" event, in Ch8, there is some odd text displayed and it removes on clansmen more than it's supposed to, now theese are [FIXED];
-    [FIXED] When sailing the river and noticing a burning village, in Ch8, there is an unnecessary variable setted (dagre_alive=0) if you "Ignore the village and head down river". It should not affect the gameplay, but i could cause unobvious behaviour or unexpected bugs;
-    [FIXED] In the ending of Ch8, there is a missing linkpath in the conversation with Iver and Oddleif, before Hakon confronts Bolverk;
-    [RESTORED] A conversation between Bolverk and Krumr, in which he explain a few things on himself and why he decided to go with Bolverk. It was not implemented, but, im my opinion, it's a really nice addition. It will fire up as soon as you camp, at the beginning of Ch9;
-    [FIXED] In Ch9 you should experience FOUR random events, but due to some bugs and typo, only TWO happens, now this is [FIXED];
-    [FIXED] In Ch9, the second part of Oli's "Gathering" random event is broken, not awarding the correct reward in one of the five possibilities, not showing another one of the possibilities and causing a console error due to a wrong speaker tag. Now it's [FIXED] and working as intended;
-    [FIXED] In Ch10 "Hunting" random event, you will not get any supplies if you choose "Let the hunters hunt" , now you're awarded +10 supplies;
-    [FIXED] When you defend Lundar, in Ch10, the event are handled in an odd manner and you could end getting two times the reward (and the clansmen joining) or nothing at all. Now all the events is redon in a much more rational and correct way, without inconsistencies;
-    [FIXED] When you search houses in Bindal, Ch11, it's clearly stated that you return with an old drunk lady and 12 childern, but no clansmen are added. Now you get +13 clansmen;
-    [TWEAKED] A converstaion between Bolverk and Sparr, in Ch11, that would trigger only if, in the event in which some clansmen go missing in the caves, you end up in a battle with skulkers (not if you manage to avoid the fight). What a waste, it's an enjoiable conversation! Now it will always triggers after that event, regardless of your choices, not just if you have to fight;
-    [FIXED] A bug in Ch11 that prevented some lines of text showing just before Nikels sacrifice himself, depinding on if you've told him there is NO WAY he could be a Raven or given him a possibility, when you'll arrive in Manharr;
-    [FIXED] At the end of Ch11, choosing "Step back" in the conversation regarding the Stonesinger, abruptly ends the dialogue;
-    [FIXED] In the first part of Ch10/12 "Witch" random event, no clasnmen is added if the old lady joins you, nor supplies are removed when you give her food and water, now it's [FIXED];
-    [FIXED] In the second part of Ch12 "Witch" random event, not clansmen is removed when the "witch" depart, now it's [FIXED];
-    [FIXED] In Ch12 "Blue Fires" random event no morale is awarded when "The clansmen cheer your bravery and adventurous spirit", now you get +15 morale;
-    [FIXED] (ENG) A typo in a Ch12 conversation with Rugga, after the fire in Ettingbekr event;
-    [FIXED] In the dialogue at the end of Ch12, a line of text shows twice;
-    [FIXED] In Ch13 "Hole" random event, "The others all cheer at your words" but no morale it's awarded, now you get +10 morale;
-    [FIXED] In Ch13, Fasolt would like to take revenge of Rook/Alette for destroying the bridge in Saga1 when they don't and acts in a normal way if they've destroyed it. Now the conditions are correctly switched;
-    [RESTORED] In Ch14 a random event that should have triggered after Canary and his herd join you, but it was probably left out (or it was a bug, who knows). It involves clansmen complaining on horseborns, cause they are "naked". Tweaking this event also have the side effect of letting Canary be avaible in the roster at the end of her first conversation, after the bridge battle, and not only in the last Arberrang battle. Probably in an early version of the game that series of events was planned to be a bit more complex, since in the gamefiles there are also leftovers of her joining with around 300 fighters and more. Anyway i don't want to umbalance the game, so just the text is [RESTORED] and you will not gain any fighters nor supplies;
-    [FIXED] In Ch14, during the last fight in Arberrang sided with the King, chosing "Hakon, can you stop them at the gate?" will start a battle with the default "Charge" unit placement, now it's [FIXED] and in this case Hakon is properly ahead of the other units in a really forward (and risky) position.
+
+    [FIXED] In the second part of the "Ship Kids" event, in Ch8, there is some odd text displayed and it removes on clansmen more than it's supposed to, now theese are [FIXED];
+
+    [FIXED] When sailing the river and noticing a burning village, in Ch8, there is an unnecessary variable setted (dagre_alive=0) if you "Ignore the village and head down river". It should not affect the gameplay, but i could cause unobvious behaviour or unexpected bugs;
+
+    [FIXED] In the ending of Ch8, there is a missing linkpath in the conversation with Iver and Oddleif, before Hakon confronts Bolverk;
+
+    [RESTORED] A conversation between Bolverk and Krumr, in which he explain a few things on himself and why he decided to go with Bolverk. It was not implemented, but, im my opinion, it's a really nice addition. It will fire up as soon as you camp, at the beginning of Ch9;
+
+    [FIXED] In Ch9 you should experience FOUR random events, but due to some bugs and typo, only TWO happens, now this is [FIXED];
+
+    [FIXED] In Ch9, the second part of Oli's "Gathering" random event is broken, not awarding the correct reward in one of the five possibilities, not showing another one of the possibilities and causing a console error due to a wrong speaker tag. Now it's [FIXED] and working as intended;
+
+    [FIXED] In Ch10 "Hunting" random event, you will not get any supplies if you choose "Let the hunters hunt" , now you're awarded +10 supplies;
+
+    [FIXED] When you defend Lundar, in Ch10, the event are handled in an odd manner and you could end getting two times the reward (and the clansmen joining) or nothing at all. Now all the events is redon in a much more rational and correct way, without inconsistencies;
+
+    [FIXED] When you search houses in Bindal, Ch11, it's clearly stated that you return with an old drunk lady and 12 childern, but no clansmen are added. Now you get +13 clansmen;
+
+    [TWEAKED] A converstaion between Bolverk and Sparr, in Ch11, that would trigger only if, in the event in which some clansmen go missing in the caves, you end up in a battle with skulkers (not if you manage to avoid the fight). What a waste, it's an enjoiable conversation! Now it will always triggers after that event, regardless of your choices, not just if you have to fight;
+
+    [FIXED] A bug in Ch11 that prevented some lines of text showing just before Nikels sacrifice himself, depinding on if you've told him there is NO WAY he could be a Raven or given him a possibility, when you'll arrive in Manharr;
+
+    [FIXED] At the end of Ch11, choosing "Step back" in the conversation regarding the Stonesinger, abruptly ends the dialogue;
+
+    [FIXED] In the first part of Ch10/12 "Witch" random event, no clasnmen is added if the old lady joins you, nor supplies are removed when you give her food and water, now it's [FIXED];
+
+    [FIXED] In the second part of Ch12 "Witch" random event, not clansmen is removed when the "witch" depart, now it's [FIXED];
+
+    [FIXED] In Ch12 "Blue Fires" random event no morale is awarded when "The clansmen cheer your bravery and adventurous spirit", now you get +15 morale;
+
+    [FIXED] (ENG) A typo in a Ch12 conversation with Rugga, after the fire in Ettingbekr event;
+
+    [FIXED] In the dialogue at the end of Ch12, a line of text shows twice;
+
+    [FIXED] In Ch13 "Hole" random event, "The others all cheer at your words" but no morale it's awarded, now you get +10 morale;
+
+    [FIXED] In Ch13, Fasolt would like to take revenge of Rook/Alette for destroying the bridge in Saga1 when they don't and acts in a normal way if they've destroyed it. Now the conditions are correctly switched;
+
+    [RESTORED] In Ch14 a random event that should have triggered after Canary and his herd join you, but it was probably left out (or it was a bug, who knows). It involves clansmen complaining on horseborns, cause they are "naked". Tweaking this event also have the side effect of letting Canary be avaible in the roster at the end of her first conversation, after the bridge battle, and not only in the last Arberrang battle. Probably in an early version of the game that series of events was planned to be a bit more complex, since in the gamefiles there are also leftovers of her joining with around 300 fighters and more. Anyway i don't want to umbalance the game, so just the text is [RESTORED] and you will not gain any fighters nor supplies;
+
+    [FIXED] In Ch14, during the last fight in Arberrang sided with the King, chosing "Hakon, can you stop them at the gate?" will start a battle with the default "Charge" unit placement, now it's [FIXED] and in this case Hakon is properly ahead of the other units in a really forward (and risky) position.
 
 
 [1]: These changes to work need some new strings/branch of dialogues, so they fully work only in English. In the other localizations their mechanics (rewards, bonus, malus etc.) work, but a “Missing text” message will be displayed instead of the current text. Sorry, I can’t translate those things in every localization, it would be really time consuming and I can’t even speak most of them!
@@ -101,7 +122,8 @@ Please report any bugs in Issues.
 
 ------------------------------------------------------------------
 INSTALLATION:
-    Just uncompress the .zip in your "../steamapps/common" folder. It will ask you to overwrite some files, it's all right! The archive comes with backups just in case! (the ones with a .orig extension).
+    Select 'CODE > Download ZIP'. Uncompress the zip archive and place the /tbs2 folder in your "../steamapps/common" folder. It will ask you to overwrite some files.
+    
 UNINSTALLATION:
     Just delete the files and rename the backups OR verify the integrity of game files in Steam.
     
