@@ -503,7 +503,7 @@
 				"content": [
 					"[zefr] \"In a cart on our way to Manaharr.\"",
 					{
-						"divert": "pageBreakFolkaFo"
+						"divert": "BolverkFolkaTurn"
 					},
 					{
 						"pageNum": 0
