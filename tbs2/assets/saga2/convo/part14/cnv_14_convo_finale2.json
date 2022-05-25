@@ -695,7 +695,7 @@
 				"content": [
 					"/=Hakon growls and flexes his grip on his axe.=/",
 					{
-						"divert": "pageBreakAllPart"
+						"divert": "HeroAllPartiesLo"
 					},
 					{
 						"pageNum": 0
