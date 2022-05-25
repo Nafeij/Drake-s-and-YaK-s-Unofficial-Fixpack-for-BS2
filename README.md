@@ -9,7 +9,7 @@
     
     [FIXED] Bug in which horseborn lose their first active abilities at rank 7.
     
-    [FIXED] A few typos
+    [FIXED] Several typos in conversations and cutscene subtitles.
     
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     
