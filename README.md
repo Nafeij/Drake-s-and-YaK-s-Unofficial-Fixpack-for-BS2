@@ -11,6 +11,10 @@
     
     [FIXED] Several typos in conversations and cutscene subtitles.
     
+    [FIXED] -WILL and -ARM per turn effects can cause willpower and armor stats to go negative. Fixed by adding Math.max cap in \engine\battle\entity\model\BattleEntity
+    
+    [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
+    
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     
  2.0 
