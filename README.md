@@ -15,6 +15,8 @@
     
     [FIXED] Several typos in conversations, popups and cutscene subtitles.
     
+    [TWEAKED] Gave Stonesingers +1 range
+    
     [TWEAKED] Nerfed the first training challenge in Saga 2. Only two enemies need to be damaged by Heavy Impact to pass the objective.
     
  2.0 

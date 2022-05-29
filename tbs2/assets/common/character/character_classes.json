@@ -4355,6 +4355,11 @@
           "stat": "MOVEMENT"
         },
         {
+          "max": 1,
+          "min": 1,
+          "stat": "RANGEMOD_MELEE"
+        },
+        {
           "max": 6,
           "min": 6,
           "stat": "RANK"

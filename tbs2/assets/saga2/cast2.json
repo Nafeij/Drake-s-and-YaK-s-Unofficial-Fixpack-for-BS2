@@ -3522,6 +3522,10 @@
           "value": 4
         },
         {
+          "stat": "RANGEMOD_MELEE",
+          "value": 1
+        },
+        {
           "stat": "RANK",
           "value": 4
         },
