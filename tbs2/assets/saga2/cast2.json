@@ -2723,6 +2723,10 @@
           "value": 1
         },
         {
+          "stat": "RANGEMOD_MELEE",
+          "value": 1
+        },
+        {
           "stat": "MOVEMENT",
           "value": 2
         },
@@ -2771,6 +2775,10 @@
         },
         {
           "stat": "ARMOR_BREAK",
+          "value": 1
+        },
+        {
+          "stat": "RANGEMOD_MELEE",
           "value": 1
         },
         {
