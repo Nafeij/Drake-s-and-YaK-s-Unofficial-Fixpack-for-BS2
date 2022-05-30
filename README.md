@@ -131,6 +131,4 @@ INSTALLATION:
 UNINSTALLATION:
     Just delete the files and rename the backups OR verify the integrity of game files in Steam.
     
-------------------------------------------------------------------
-
-Mirrors -  | 
+------------------------------------------------------------------ 
