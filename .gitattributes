@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.json linguist-detectable
+*.json.z linguist-detectable linguist-language=JSON
+*.story linguist-detectable linguist-language=JSON
+*.swf linguist-detectable linguist-language=ActionScript
