@@ -1,3 +1,16 @@
+ 3.1
+    [FIXED] Classed-based chievements for kills continue to trigger and grant 5 Renown after the first time unlocking them, per battle, within the same playthrough. Fortunately, the game saves a variable named in the format `"acv_..._unlk"` when this happens, so we can check for it in `\engine\saga\Saga.triggerVariableHandler` and prevent multiple unlocks in the same save.
+    
+    [FIXED] If one of your heroes with an item gets killed, and is possessed by Eyeless, defeating your hero grants you a duplicate of that item. The game also tags possesed entities with a unique `"POSSESSED"` tag, which can be checked in `engine\battle\entitiy\model\BattleEntity._handleDeath_pre` to prevent them from dropping their items.
+    
+    [FIXED] The passive on all types of Dredge Hurlers, Distraught, isn't triggering properly. Apparently simply changing "responsePhase" to "POST_COMPLETE" in its corresponding entry in `_ability.index.json` is enought to fix this.
+    
+    [FIXED] Some messiness with how the battle at Arberrang is handled, if you side with the king and call in archers. This took a while because it involved not one but TWO bugs:
+        1. For some reason, the game counts all the barricades in the arberrang fight as part of the enemy team, preventing the battle from ending upon killing all enemies. Changing some vars in btl_arberang_gate.json fixes this.
+        2. Even so, the battle still does not end if the last enemy is killed in a scripted event, a la Oddleif or Nid. The game only checks when for the victory conditions when an enemy (or prop) is killed, not when
+           a turn is ended. This is a hunch, but I suspect the event triggered for the unit's death is discarded when the game is processing a scripted event (or happening), and 'killing' a barricade yourself triggers it again.
+           Unfortunately, the fault is baked in to the game logic and unfeasible to fix, so the workaround used is to relinquish control of Nid and Oddleif to the player when either side is down on units.
+
  3.0
  
     [FIXED] Importing a save using a version of Saga 2 with the BS2 fixpack installed causes discrepancies with Nid's upgrade points. She receives 8 more points than she's supposed to and her base version has -2 points.

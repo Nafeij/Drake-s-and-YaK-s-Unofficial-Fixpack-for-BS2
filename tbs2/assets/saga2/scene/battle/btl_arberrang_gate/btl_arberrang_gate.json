@@ -1,0 +1,3802 @@
+{
+  "ambientParameter": 0,
+  "boards": [
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "0 0",
+              "0 1",
+              "0 2",
+              "0 3",
+              "0 4",
+              "0 5",
+              "0 6",
+              "0 7",
+              "0 8",
+              "0 9",
+              "1 0",
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 5",
+              "1 6",
+              "1 7",
+              "1 8",
+              "1 9",
+              "2 0",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "2 6",
+              "2 7",
+              "3 1",
+              "3 2",
+              "3 3",
+              "3 5",
+              "3 6",
+              "3 7",
+              "4 3",
+              "4 4",
+              "4 5",
+              "4 6"
+            ]
+          },
+          "facing": "SE",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "10 2",
+              "10 3",
+              "10 4",
+              "10 5",
+              "10 6",
+              "10 7",
+              "11 1",
+              "11 2",
+              "11 6",
+              "11 7",
+              "11 8",
+              "12 1",
+              "12 2",
+              "12 4",
+              "12 6",
+              "12 7",
+              "12 8",
+              "13 1",
+              "13 2",
+              "13 3",
+              "13 4",
+              "13 5",
+              "13 6",
+              "13 7",
+              "13 8"
+            ]
+          },
+          "facing": "NW",
+          "id": "bucket_spawn"
+        }
+      ],
+      "id": "board_0",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -524.25,
+        "y": -476.95
+      },
+      "spawners": [
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 10,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 11,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 3,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 6,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 12,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 0,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 2,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 7,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 13,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 14,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "king",
+          "facing": "SE",
+          "location": {
+            "x": 1,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "location": {
+            "x": 3,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "nid",
+          "deactivateUnit": true,
+          "facing": "NE",
+          "id": "archer_spawn1",
+          "ifCondition": "14_arberrang_battle_choice==1",
+          "location": {
+            "x": 3,
+            "y": 12
+          },
+          "notCondition": "nid_state==0",
+          "team": "player0"
+        },
+        {
+          "character": "oddleif",
+          "deactivateUnit": true,
+          "facing": "NE",
+          "id": "archer_spawn2",
+          "ifCondition": "14_arberrang_battle_choice==1",
+          "location": {
+            "x": 6,
+            "y": 12
+          },
+          "team": "player0"
+        },
+        {
+          "character": "alette",
+          "facing": "NE",
+          "id": "archer_spawn3",
+          "ifCondition": "14_arberrang_battle_choice==1",
+          "location": {
+            "x": 10,
+            "y": 11
+          },
+          "requireParty": true,
+          "team": "player0"
+        },
+        {
+          "character": "rook",
+          "facing": "NE",
+          "id": "archer_spawn3",
+          "ifCondition": "14_arberrang_battle_choice == 1",
+          "location": {
+            "x": 10,
+            "y": 11
+          },
+          "requireParty": true,
+          "team": "player0"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 11,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 11,
+            "y": 5
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 11,
+            "y": 3
+          },
+          "team": "npc"
+        },
+        {
+          "entityClass": "barricade_3x3",
+          "facing": "SE",
+          "location": {
+            "x": 5,
+            "y": 4
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_2x2",
+          "facing": "SE",
+          "location": {
+            "x": 4,
+            "y": 0
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_1x2",
+          "facing": "SE",
+          "location": {
+            "x": 10,
+            "y": 1
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "hakon",
+          "facing": "NW",
+          "ifCondition": "14_hakon_with_rugga",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "griss",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==1",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "mogr",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==2",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "gunnulf",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==3",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dagr",
+          "facing": "NW",
+          "ifCondition": "dagr_state==1",
+          "location": {
+            "x": 10,
+            "y": 8
+          },
+          "notCondition": "14_dagr_kod",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 11,
+            "y": 4
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 18
+              },
+              {
+                "stat": "ARMOR_BREAK",
+                "value": 4
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 17
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 11,
+            "y": 5
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 11,
+            "y": 3
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": []
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "-1 0",
+          "-1 1",
+          "-1 10",
+          "-1 11",
+          "-1 12",
+          "-1 13",
+          "-1 2",
+          "-1 3",
+          "-1 4",
+          "-1 5",
+          "-1 6",
+          "-1 7",
+          "-1 8",
+          "-1 9",
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 -1",
+          "1 -2",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 -1",
+          "10 -2",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 -1",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 -1",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 -1",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 -1",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "2 -1",
+          "2 -2",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 -1",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 -1",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 -1",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 -1",
+          "6 -2",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 -1",
+          "7 -2",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 -1",
+          "8 -2",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 -1",
+          "9 -2",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    },
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "0 0",
+              "0 1",
+              "0 2",
+              "0 3",
+              "0 4",
+              "0 5",
+              "0 6",
+              "0 7",
+              "0 8",
+              "0 9",
+              "1 0",
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 5",
+              "1 6",
+              "1 7",
+              "1 8",
+              "1 9",
+              "2 0",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "2 6",
+              "2 7",
+              "3 1",
+              "3 2",
+              "3 3",
+              "3 5",
+              "3 6",
+              "3 7",
+              "4 3",
+              "4 4",
+              "4 5",
+              "4 6"
+            ]
+          },
+          "facing": "SE",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "10 2",
+              "10 6",
+              "10 7",
+              "11 0",
+              "11 1",
+              "11 2",
+              "11 6",
+              "11 7",
+              "11 8",
+              "12 1",
+              "12 7",
+              "12 8",
+              "13 1",
+              "13 10",
+              "13 7",
+              "13 8",
+              "13 9",
+              "14 0",
+              "14 1",
+              "14 10",
+              "14 7",
+              "14 8",
+              "14 9"
+            ]
+          },
+          "facing": "NW",
+          "id": "bucket_spawn"
+        }
+      ],
+      "id": "board_1",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -524.25,
+        "y": -476.95
+      },
+      "spawners": [
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 10,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 11,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 3,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 6,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 12,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 0,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 2,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 7,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 13,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 14,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "king",
+          "facing": "SE",
+          "location": {
+            "x": 1,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "location": {
+            "x": 3,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 11,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 12,
+            "y": 6
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 12,
+            "y": 2
+          },
+          "team": "npc"
+        },
+        {
+          "entityClass": "barricade_3x3",
+          "facing": "SE",
+          "location": {
+            "x": 5,
+            "y": 4
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_2x2",
+          "facing": "SE",
+          "location": {
+            "x": 4,
+            "y": 0
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_1x2",
+          "facing": "SE",
+          "location": {
+            "x": 10,
+            "y": 1
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "scathach",
+          "facing": "SE",
+          "location": {
+            "x": 9,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "hakon",
+          "facing": "NW",
+          "ifCondition": "14_hakon_with_rugga",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "griss",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==1",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "mogr",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==2",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "gunnulf",
+          "facing": "NW",
+          "ifCondition": "14_what_varl==3",
+          "location": {
+            "x": 9,
+            "y": -1
+          },
+          "notCondition": "ludin_state==1",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dagr",
+          "facing": "NW",
+          "ifCondition": "dagr_state==1",
+          "location": {
+            "x": 10,
+            "y": 8
+          },
+          "notCondition": "14_dagr_kod",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 11,
+            "y": 4
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 18
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 17
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 12,
+            "y": 6
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 12,
+            "y": 2
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": []
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "-1 0",
+          "-1 1",
+          "-1 10",
+          "-1 11",
+          "-1 12",
+          "-1 13",
+          "-1 2",
+          "-1 3",
+          "-1 4",
+          "-1 5",
+          "-1 6",
+          "-1 7",
+          "-1 8",
+          "-1 9",
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 -1",
+          "1 -2",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 -1",
+          "10 -2",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 -1",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 -1",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 -1",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 -1",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "2 -1",
+          "2 -2",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 -1",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 -1",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 -1",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 -1",
+          "6 -2",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 -1",
+          "7 -2",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 -1",
+          "8 -2",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 -1",
+          "9 -2",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    },
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "0 0",
+              "0 1",
+              "0 2",
+              "0 3",
+              "0 4",
+              "0 5",
+              "0 6",
+              "0 7",
+              "0 8",
+              "0 9",
+              "1 0",
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 5",
+              "1 6",
+              "1 7",
+              "1 8",
+              "1 9",
+              "2 0",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "2 6",
+              "2 7",
+              "3 1",
+              "3 2",
+              "3 3",
+              "3 5",
+              "3 6",
+              "3 7",
+              "4 3",
+              "4 4",
+              "4 5",
+              "4 6"
+            ]
+          },
+          "facing": "SE",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "12 1",
+              "12 10",
+              "12 2",
+              "12 7",
+              "12 8",
+              "12 9",
+              "13 1",
+              "13 10",
+              "13 2",
+              "13 4",
+              "13 5",
+              "13 7",
+              "13 8",
+              "13 9",
+              "14 1",
+              "14 10",
+              "14 2",
+              "14 3",
+              "14 4",
+              "14 5",
+              "14 6",
+              "14 7",
+              "14 8",
+              "14 9"
+            ]
+          },
+          "facing": "NW",
+          "id": "bucket_spawn"
+        }
+      ],
+      "id": "board_2",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -524.25,
+        "y": -476.95
+      },
+      "spawners": [
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 10,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 11,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 3,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 6,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 12,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 0,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 2,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 7,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 13,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 14,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "king",
+          "facing": "SE",
+          "location": {
+            "x": 1,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "location": {
+            "x": 3,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "hakon",
+          "facing": "SE",
+          "ifCondition": "hero_rook",
+          "location": {
+            "x": 7,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 12,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 12,
+            "y": 6
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 12,
+            "y": 3
+          },
+          "team": "npc"
+        },
+        {
+          "entityClass": "barricade_3x3",
+          "facing": "SE",
+          "location": {
+            "x": 9,
+            "y": 4
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_2x2",
+          "facing": "SE",
+          "location": {
+            "x": 4,
+            "y": 0
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_1x2",
+          "facing": "SE",
+          "location": {
+            "x": 10,
+            "y": 1
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "dagr",
+          "facing": "NW",
+          "ifCondition": "dagr_state==1",
+          "location": {
+            "x": 11,
+            "y": 7
+          },
+          "notCondition": "14_dagr_kod",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "kragsman_animal_trainer",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 12,
+            "y": 4
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 18
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 17
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 12,
+            "y": 6
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warbear",
+          "facing": "NW",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 12,
+            "y": 3
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 16
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 19
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": []
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "-1 0",
+          "-1 1",
+          "-1 10",
+          "-1 11",
+          "-1 12",
+          "-1 13",
+          "-1 2",
+          "-1 3",
+          "-1 4",
+          "-1 5",
+          "-1 6",
+          "-1 7",
+          "-1 8",
+          "-1 9",
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 -1",
+          "1 -2",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 -1",
+          "10 -2",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 -1",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 -1",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 -1",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 -1",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "2 -1",
+          "2 -2",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 -1",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 -1",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 -1",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 -1",
+          "6 -2",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 -1",
+          "7 -2",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 -1",
+          "8 -2",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 -1",
+          "9 -2",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    },
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "10 2",
+              "10 3",
+              "10 4",
+              "10 5",
+              "10 6",
+              "10 7",
+              "11 1",
+              "11 2",
+              "11 3",
+              "11 4",
+              "11 5",
+              "11 6",
+              "11 7",
+              "11 8",
+              "12 1",
+              "12 2",
+              "12 3",
+              "12 4",
+              "12 5",
+              "12 6",
+              "12 7",
+              "12 8",
+              "13 1",
+              "13 2",
+              "13 3",
+              "13 4",
+              "13 5",
+              "13 6",
+              "13 7",
+              "13 8"
+            ]
+          },
+          "facing": "NW",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "0 0",
+              "0 1",
+              "0 2",
+              "0 3",
+              "0 4",
+              "0 5",
+              "0 6",
+              "0 7",
+              "0 8",
+              "0 9",
+              "1 0",
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 4",
+              "1 5",
+              "1 6",
+              "1 7",
+              "1 8",
+              "1 9",
+              "2 0",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 5",
+              "2 6",
+              "2 7",
+              "3 2",
+              "3 3",
+              "3 6",
+              "3 7"
+            ]
+          },
+          "facing": "SE",
+          "id": "bucket_spawn"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "-2 12"
+            ]
+          },
+          "facing": "SE",
+          "id": "bucket_respawn"
+        }
+      ],
+      "id": "board_3",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -524.25,
+        "y": -476.95
+      },
+      "spawners": [
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 10,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 11,
+            "y": 10
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 3,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 6,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 9,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 12,
+            "y": 11
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 0,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 2,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 7,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 8,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 13,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "tut_barricade",
+          "facing": "NE",
+          "location": {
+            "x": 14,
+            "y": 12
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "king",
+          "facing": "SE",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 2,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 3,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "ifCondition": "difficulty<=2",
+          "location": {
+            "x": 3,
+            "y": 5
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "deactivateSpawner": true,
+          "facing": "SE",
+          "id": "guard_spawner_normal",
+          "location": {
+            "x": -2,
+            "y": 5
+          },
+          "team": "npc"
+        },
+        {
+          "entityClass": "kings_archer",
+          "facing": "NE",
+          "id": "archer_spawn1",
+          "location": {
+            "x": 3,
+            "y": 12
+          },
+          "notCondition": "14_arberrang_battle_choice==1",
+          "team": "npc"
+        },
+        {
+          "entityClass": "kings_archer",
+          "facing": "NE",
+          "id": "archer_spawn2",
+          "location": {
+            "x": 6,
+            "y": 12
+          },
+          "notCondition": "14_arberrang_battle_choice==1",
+          "team": "npc"
+        },
+        {
+          "entityClass": "kings_archer",
+          "facing": "NE",
+          "id": "archer_spawn3",
+          "location": {
+            "x": 10,
+            "y": 11
+          },
+          "notCondition": "14_arberrang_battle_choice==1",
+          "team": "npc"
+        },
+        {
+          "character": "oddleif",
+          "deactivateUnit": true,
+          "facing": "NE",
+          "ifCondition": "14_arberrang_battle_choice==1",
+          "location": {
+            "x": 6,
+            "y": 12
+          },
+          "team": "player0"
+        },
+        {
+          "character": "canary",
+          "facing": "NW",
+          "ifCondition": "14_arberrang_battle_choice==2",
+          "location": {
+            "x": 5,
+            "y": 3
+          },
+          "team": "player0"
+        },
+        {
+          "character": "hakon",
+          "facing": "NW",
+          "ifCondition": "14_arberrang_battle_choice==3",
+          "location": {
+            "x": 7,
+            "y": 4
+          },
+          "team": "player0"
+        },
+        {
+          "entityClass": "barricade_3x3",
+          "facing": "SE",
+          "location": {
+            "x": 5,
+            "y": 4
+          },
+          "notCondition": "14_arberrang_battle_choice==3",
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_2x2",
+          "facing": "SE",
+          "location": {
+            "x": 4,
+            "y": 0
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "entityClass": "barricade_1x2",
+          "facing": "SE",
+          "location": {
+            "x": 10,
+            "y": 1
+          },
+          "prop": true,
+          "team": "prop"
+        },
+        {
+          "character": "hakon",
+          "facing": "SE",
+          "ifCondition": "14_hakon_with_king",
+          "location": {
+            "x": 2,
+            "y": 8
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "griss",
+          "facing": "SE",
+          "ifCondition": "14_what_varl==1",
+          "location": {
+            "x": 2,
+            "y": 8
+          },
+          "notCondition": "ludin_state==0",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "mogr",
+          "facing": "SE",
+          "ifCondition": "14_what_varl==2",
+          "location": {
+            "x": 2,
+            "y": 8
+          },
+          "notCondition": "ludin_state==0",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "gunnulf",
+          "facing": "SE",
+          "ifCondition": "14_what_varl==3",
+          "location": {
+            "x": 2,
+            "y": 8
+          },
+          "notCondition": "ludin_state==0",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king",
+          "facing": "SE",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 2,
+            "y": 4
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 17
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 17
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 3,
+            "y": 4
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 13
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 14
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "facing": "SE",
+          "ifCondition": "difficulty>2",
+          "location": {
+            "x": 3,
+            "y": 5
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 13
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 14
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "king_elite_guard",
+          "deactivateSpawner": true,
+          "facing": "SE",
+          "id": "guard_spawner_hard",
+          "location": {
+            "x": -2,
+            "y": 5
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 13
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 14
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": [
+          "-2 12",
+          "-2 5"
+        ]
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "-1 0",
+          "-1 1",
+          "-1 10",
+          "-1 11",
+          "-1 12",
+          "-1 13",
+          "-1 2",
+          "-1 3",
+          "-1 4",
+          "-1 5",
+          "-1 6",
+          "-1 7",
+          "-1 8",
+          "-1 9",
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 -1",
+          "1 -2",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 -1",
+          "10 -2",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 -1",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 -1",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 -1",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 -1",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "2 -1",
+          "2 -2",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 -1",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 -1",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 -1",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 -1",
+          "6 -2",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 -1",
+          "7 -2",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 -1",
+          "8 -2",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 -1",
+          "9 -2",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    }
+  ],
+  "cameraAnchorSpeed": 1000,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1536,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 720,
+  "cameraMinWidth": 1024,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "id": "camera_spline",
+          "time": 10,
+          "type": "CAMERA_SPLINE"
+        },
+        {
+          "type": "CAMERA_SPLINE_PAUSE",
+          "varvalue": 1
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "id": "king",
+          "param": "pas_ruggas_poison",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "type": "CAMERA_SPLINE_PAUSE"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_manual"
+        }
+      ],
+      "automatic": true,
+      "id": "auto"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "14_arberrang_timer",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s2_14_king_gate_speak_00",
+          "param": "camera",
+          "prereq": "battle_turn < 1 && 14_arberrang_timer == 1",
+          "speaker": "king",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "happening": "protect_the_king_friendly",
+          "prereq": "14_not_with_rugga && battle_turn < 1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "kill_the_king_friendly",
+          "prereq": "!14_not_with_rugga && battle_turn < 1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "protect_the_king_hostile",
+          "prereq": "!14_not_with_rugga && battle_turn < 1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "kill_the_king_hostile",
+          "prereq": "14_not_with_rugga && battle_turn < 1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "oddleif_attacks",
+          "prereq": "14_arberrang_battle_choice==1 && (battle_turn<1 || 14_arberrang_timer==5 || 14_arberrang_timer==10) && !14_arberrang_manual",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "nid_attacks",
+          "prereq": "nid_state==1 && 14_not_with_rugga && 14_arberrang_battle_choice==1 && (battle_turn<1 || 14_arberrang_timer==5 || 14_arberrang_timer==10) && !14_arberrang_manual",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "scathach_attacks",
+          "prereq": "14_not_with_rugga && 14_arberrang_battle_choice==2 && battle_turn<1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "canary_attacks",
+          "prereq": "!14_not_with_rugga && 14_arberrang_battle_choice==2 && battle_turn<1",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "kings_reinforcements",
+          "prereq": "!14_not_with_rugga",
+          "type": "HAPPENING"
+        },
+        {
+          "prereq": "14_arberrang_timer==10",
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_timer"
+        }
+      ],
+      "id": "manager",
+      "triggers": [
+        {
+          "enemy_only": false,
+          "player_only": true,
+          "type": "BATTLE_NEXT_TURN_BEGIN",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "oddleif",
+          "prereq": "14_arberrang_battle_choice==1 && !14_arberrang_manual",
+          "type": "BATTLE_UNIT_ACTIVATE",
+          "varvalue": 1
+        },
+        {
+          "id": "nid",
+          "prereq": "nid_state==1 && 14_not_with_rugga && 14_arberrang_battle_choice==1 && !14_arberrang_manual",
+          "type": "BATTLE_UNIT_ACTIVATE",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_manual",
+          "varvalue": 1
+        }
+      ],
+      "id": "give_control",
+      "triggers": [
+        {
+          "type": "BATTLE_REMAINING_ENEMIES",
+          "varvalue": 2
+        },
+        {
+          "type": "BATTLE_REMAINING_ENEMIES",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_REMAINING_PLAYERS",
+          "varvalue": 2
+        },
+        {
+          "type": "BATTLE_REMAINING_PLAYERS",
+          "varvalue": 1
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s2_protect_the_king_friendly_hero_00",
+          "param": "camera",
+          "speaker": "$hero,ludin,egil,*player",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "protect_the_king_friendly"
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s2_protect_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "ludin_state==1 && !14_ludin_kod",
+          "speaker": "ludin",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s2_protect_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "ludin_state==1 && 14_ludin_kod && !14_hakon_kod",
+          "speaker": "hakon",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "prereq": "(ludin_state==1 && !14_ludin_kod) || (ludin_state==1 && 14_ludin_kod && !14_hakon_kod)",
+          "type": "VARIABLE_SET",
+          "varname": "14_protect_shout",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s2_protect_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "!14_protect_shout",
+          "speaker": "king_elite_guard",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "protect_the_king_hostile"
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s2_kill_the_king_friendly_hero_00",
+          "param": "camera",
+          "speaker": "$hero",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "prereq": "rook.party || alette.party",
+          "type": "VARIABLE_SET",
+          "varname": "14_kill_shout",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s2_kill_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "hakon.party && !14_kill_shout",
+          "speaker": "hakon",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "prereq": "hakon.party",
+          "type": "VARIABLE_SET",
+          "varname": "14_kill_shout",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s2_kill_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "!14_kill_shout",
+          "speaker": "*player",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "kill_the_king_friendly"
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s2_kill_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "ludin_state==0",
+          "speaker": "hakon",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "prereq": "ludin_state==0 && !14_hakon_kod",
+          "type": "VARIABLE_SET",
+          "varname": "14_kill_shout",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s2_kill_the_king_friendly_hero_00",
+          "param": "camera",
+          "prereq": "!14_kill_shout",
+          "speaker": "kragsman_animal_trainer",
+          "time": 3,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "kill_the_king_hostile"
+    },
+    {
+      "actions": [
+        {
+          "id": "oddleif",
+          "type": "BATTLE_CAMERA_CENTER"
+        },
+        {
+          "id": "oddleif",
+          "type": "BATTLE_UNIT_ON_START_TURN"
+        },
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "14_arberrang_archer_counter",
+          "varvalue": 1
+        },
+        {
+          "id": "oddleif",
+          "param": "WILLPOWER",
+          "type": "BATTLE_UNIT_STAT",
+          "varvalue": 3
+        },
+        {
+          "anchor": "*",
+          "id": "oddleif",
+          "param": "abl_bow_arm",
+          "prereq": "14_arberrang_archer_counter==1",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "anchor": "*",
+          "id": "oddleif",
+          "param": "abl_bow_str",
+          "prereq": "14_arberrang_archer_counter==2",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "anchor": "@*",
+          "id": "oddleif",
+          "param": "abl_rainofarrows",
+          "prereq": "14_arberrang_archer_counter>2",
+          "type": "BATTLE_UNIT_ABILITY",
+          "varvalue": 3
+        },
+        {
+          "prereq": "14_arberrang_archer_counter>2",
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_archer_counter"
+        },
+        {
+          "id": "oddleif",
+          "type": "BATTLE_UNIT_ON_END_TURN"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        }
+      ],
+      "id": "oddleif_attacks",
+      "prereq": "!14_arberrang_odd_ko"
+    },
+    {
+      "actions": [
+        {
+          "id": "nid",
+          "type": "BATTLE_CAMERA_CENTER"
+        },
+        {
+          "id": "nid",
+          "type": "BATTLE_UNIT_ON_START_TURN"
+        },
+        {
+          "id": "nid",
+          "param": "WILLPOWER",
+          "type": "BATTLE_UNIT_STAT",
+          "varvalue": 3
+        },
+        {
+          "anchor": "*",
+          "id": "nid",
+          "param": "abl_bow_str",
+          "prereq": "14_arberrang_archer_counter==0",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "anchor": "*",
+          "id": "nid",
+          "param": "abl_bow_arm",
+          "prereq": "14_arberrang_archer_counter==1",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "anchor": "*",
+          "id": "nid",
+          "param": "abl_birdofprey",
+          "prereq": "14_arberrang_archer_counter==2",
+          "type": "BATTLE_UNIT_ABILITY",
+          "varvalue": 3
+        },
+        {
+          "id": "nid",
+          "type": "BATTLE_UNIT_ON_END_TURN"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        }
+      ],
+      "id": "nid_attacks",
+      "prereq": "!14_arberrang_nid_ko"
+    },
+    {
+      "actions": [
+        {
+          "id": "scathach",
+          "type": "BATTLE_CAMERA_CENTER"
+        },
+        {
+          "msg": "$SPEAK:s2_scathach_attacks_scathach_00",
+          "speaker": "scathach",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "anchor": "kragsman_animal_trainer",
+          "id": "scathach",
+          "param": "abl_trample",
+          "type": "BATTLE_UNIT_ABILITY",
+          "varvalue": 3
+        },
+        {
+          "id": "scathach",
+          "type": "BATTLE_UNIT_ON_END_TURN"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        }
+      ],
+      "id": "scathach_attacks"
+    },
+    {
+      "actions": [
+        {
+          "id": "canary",
+          "type": "BATTLE_CAMERA_CENTER"
+        },
+        {
+          "msg": "$SPEAK:s2_canary_attacks_canary_00",
+          "speaker": "canary",
+          "time": 3,
+          "type": "SPEAK"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "anchor": "king_elite_guard",
+          "id": "canary",
+          "param": "abl_pin",
+          "type": "BATTLE_UNIT_ABILITY",
+          "varvalue": 3
+        },
+        {
+          "anchor": "@8,3",
+          "id": "canary",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "id": "canary",
+          "type": "BATTLE_UNIT_ON_END_TURN"
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        }
+      ],
+      "id": "canary_attacks"
+    },
+    {
+      "actions": [
+        {
+          "bucket": "king",
+          "param": "bucket_respawn",
+          "prereq": "14_arberrang_timer==6 || 14_arberrang_timer==9",
+          "type": "BATTLE_RESPAWN",
+          "varvalue": 3
+        },
+        {
+          "id": "guard_spawner_normal",
+          "prereq": "14_arberrang_timer==3 && difficulty<=2",
+          "type": "BATTLE_SPAWN"
+        },
+        {
+          "id": "guard_spawner_hard",
+          "prereq": "14_arberrang_timer==3 && difficulty>2",
+          "type": "BATTLE_SPAWN"
+        }
+      ],
+      "id": "kings_reinforcements"
+    },
+    {
+      "actions": [
+        {
+          "param": "victory",
+          "prereq": "!14_not_with_rugga",
+          "type": "BATTLE_END"
+        }
+      ],
+      "id": "enemy_king_dies",
+      "triggers": [
+        {
+          "type": "BATTLE_ENEMY_KILLED",
+          "unit": "king"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "param": "defeat",
+          "prereq": "14_not_with_rugga",
+          "type": "BATTLE_END"
+        }
+      ],
+      "id": "ally_king_dies",
+      "triggers": [
+        {
+          "type": "BATTLE_ALLY_KILLED",
+          "unit": "king"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_odd_ko",
+          "varvalue": 1
+        }
+      ],
+      "id": "odd_dies",
+      "triggers": [
+        {
+          "type": "BATTLE_ALLY_KILLED",
+          "unit": "oddleif"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "14_arberrang_nid_ko",
+          "varvalue": 1
+        }
+      ],
+      "id": "nid_dies",
+      "triggers": [
+        {
+          "type": "BATTLE_ALLY_KILLED",
+          "unit": "nid"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "BATTLE_HALT"
+        },
+        {
+          "msg": "$GUI:s2_14_battle_arb2_00",
+          "param": "disableCloseButton",
+          "prereq": "!14_not_with_rugga",
+          "time": -1,
+          "type": "FLASH_PAGE",
+          "url": "saga_titles.swf/assets.text_page_gameover"
+        },
+        {
+          "msg": "$GUI:s2_14_battle_arb2_01",
+          "param": "disableCloseButton",
+          "prereq": "14_not_with_rugga",
+          "time": -1,
+          "type": "FLASH_PAGE",
+          "url": "saga_titles.swf/assets.text_page_gameover"
+        }
+      ],
+      "id": "game_over",
+      "triggers": [
+        {
+          "type": "BATTLE_FINISHING_LOSE"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 4608.083333333332,
+      "width": 3986.1388888888896,
+      "x": -2389.5,
+      "y": -1280
+    },
+    "layers": [
+      {
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      },
+      {
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.3
+      },
+      {
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.5
+      },
+      {
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.7
+      },
+      {
+        "always": true,
+        "layerSprites": [
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_a.png",
+            "localrect": {
+              "height": 1998,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": -2396,
+              "y": -1282
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_b.png",
+            "localrect": {
+              "height": 1998,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": -396,
+              "y": -1282
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_c.png",
+            "localrect": {
+              "height": 1336,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_c_1",
+            "offset": {
+              "x": -2396,
+              "y": 716
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_d.png",
+            "localrect": {
+              "height": 1364,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_d_1",
+            "offset": {
+              "x": -396,
+              "y": 716
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_e.png",
+            "localrect": {
+              "height": 1293,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_e_1",
+            "offset": {
+              "x": -2396,
+              "y": 2052
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_back_f.png",
+            "localrect": {
+              "height": 1265,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_f_1",
+            "offset": {
+              "x": -396,
+              "y": 2080
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/blocker_shadow_normal.png",
+            "ifCondition": "(14_not_with_rugga && !14_arberrang_battle_choice==3) || !14_not_with_rugga",
+            "localrect": {
+              "height": 160,
+              "width": 437,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "blocker_shadow_normal",
+            "offset": {
+              "x": -621,
+              "y": -145
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/blocker_shadow_pushed.png",
+            "ifCondition": "14_not_with_rugga && 14_arberrang_battle_choice==3",
+            "localrect": {
+              "height": 160,
+              "width": 437,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "blocker_shadow_pushed",
+            "offset": {
+              "x": -375,
+              "y": -9
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/broken_blocker_3x3.png",
+            "ifCondition": "!14_not_with_rugga && 14_arberrang_battle_choice==3",
+            "localrect": {
+              "height": 181,
+              "width": 462,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "broken_blocker_3x3",
+            "offset": {
+              "x": -719,
+              "y": -158
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anchor": true,
+            "nameId": "camera_anchor",
+            "offset": {
+              "x": 962.55,
+              "y": 2407.9
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_front_a.png",
+            "localrect": {
+              "height": 895,
+              "width": 1881,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": -783,
+              "y": -260
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga2/scene/battle/btl_arberrang_gate/3_walk_front_b.png",
+            "localrect": {
+              "height": 741,
+              "width": 1243,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": -1814,
+              "y": -78
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1,
+        "splines": [
+          {
+            "ease": "Linear",
+            "easeIn": true,
+            "easeOut": true,
+            "id": "camera_spline",
+            "points": [
+              {
+                "pos": "728 2522"
+              },
+              {
+                "pos": "965.55 2383.35"
+              },
+              {
+                "pos": "700 985"
+              },
+              {
+                "pos": "-120 -50"
+              },
+              {
+                "pos": "-1550.05 -160"
+              }
+            ],
+            "tailpos": 0.8
+          }
+        ]
+      },
+      {
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.3
+      },
+      {
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.6
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "battles_ext",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

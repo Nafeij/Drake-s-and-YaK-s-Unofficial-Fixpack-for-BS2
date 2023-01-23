@@ -407,7 +407,7 @@
 				"content": [
 					"[rugga] \"But didn't your father...never mind.\"",
 					{
-						"divert": "pageBreakYoureNo"
+						"divert": "HeroYoureNotSure"
 					},
 					{
 						"pageNum": 0

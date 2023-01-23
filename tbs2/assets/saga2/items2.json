@@ -1516,16 +1516,27 @@
           "stat": "DODGE_BONUS"
         },
         {
-          "amount": -1,
-          "stat": "MOVEMENT"
-        },
-        {
           "amount": 2,
           "stat": "RESIST_STRENGTH"
         },
         {
           "amount": 2,
           "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_str_degen_1.png",
+      "id": "itm_2_str_degen_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": -1,
+          "stat": "REGEN_STR"
+        },
+        {
+          "amount": 3,
+          "stat": "KILL_STR"
         }
       ]
     }

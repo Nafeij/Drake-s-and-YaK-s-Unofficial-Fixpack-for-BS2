@@ -11064,6 +11064,9 @@
       "type": "INTEGER"
     },
     {
+      "name": "14_arberrang_manual"
+    },
+    {
       "max": 3,
       "name": "14_arberrang_battle_choice",
       "type": "INTEGER"
