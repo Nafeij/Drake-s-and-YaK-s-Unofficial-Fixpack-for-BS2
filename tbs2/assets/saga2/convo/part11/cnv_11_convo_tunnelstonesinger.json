@@ -306,7 +306,7 @@
 			},
 			"skipMarkbolverkM": {
 				"content": [
-					"{skip} mark1=bolverk mark2=zefr mark3=folka mark4=dredge_stonesinger_ally",
+					"{skip} mark1=folka mark2=zefr mark3=bolverk mark4=dredge_stonesinger_ally",
 					{
 						"divert": "zefrThoseCreatur"
 					},
