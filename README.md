@@ -12,6 +12,10 @@
            a turn is ended. This is a hunch, but I suspect the event triggered for the unit's death is discarded when the game is processing a scripted event (or happening), and 'killing' a barricade yourself triggers it again.
            Unfortunately, the fault is baked in to the game logic and unfeasible to fix; the workaround used is to relinquish control of Nid and Oddleif to the player when either side is down on units.
 
+    [FIXED] Some characters may get obscured in conversations due to poor positioning (e.g. Dusi gets obscured by Juno and Apostate gets obscured by Bolverk).
+    
+    [FIXED] Miscellaneous typos.
+
  3.0
  
     [FIXED] Importing a save using a version of Saga 2 with the BS2 fixpack installed causes discrepancies with Nid's upgrade points. She receives 8 more points than she's supposed to and her base version has -2 points.
