@@ -326,7 +326,7 @@ package engine.gui
       
       public static function cloneDictionary(param1:Dictionary) : Dictionary
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc2_:Dictionary = new Dictionary();
          for(_loc3_ in param1)
          {

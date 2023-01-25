@@ -114,7 +114,7 @@ package com.junkbyte.console.core
          var _loc3_:Object = _loc2_.exec(param1);
          while(_loc3_ != null)
          {
-            _loc6_ = _loc3_[0];
+            _loc6_ = String(_loc3_[0]);
             _loc7_ = _loc6_.charAt(0);
             _loc8_ = _loc6_.indexOf(_loc7_);
             _loc9_ = _loc6_.lastIndexOf(_loc7_);
@@ -155,7 +155,7 @@ package com.junkbyte.console.core
          var _loc8_:int = 0;
          var _loc9_:String = null;
          var _loc10_:Array = null;
-         var _loc11_:* = null;
+         var _loc11_:String = null;
          var _loc12_:ExeValue = null;
          var _loc13_:* = null;
          param1 = this.ignoreWhite(param1);
@@ -249,7 +249,7 @@ package com.junkbyte.console.core
             while(_loc3_ != null)
             {
                _loc12_ = int(_loc3_.index);
-               _loc13_ = _loc3_[0];
+               _loc13_ = String(_loc3_[0]);
                _loc3_ = _loc2_.exec(param1);
                if(_loc3_ == null)
                {
@@ -265,7 +265,7 @@ package com.junkbyte.console.core
                }
             }
          }
-         var _loc5_:int = _loc4_.length;
+         var _loc5_:int = int(_loc4_.length);
          var _loc6_:int = 0;
          while(_loc6_ < _loc5_)
          {
@@ -276,7 +276,7 @@ package com.junkbyte.console.core
          _loc6_ = 1;
          while(_loc6_ < _loc5_)
          {
-            _loc7_ = _loc4_[_loc6_];
+            _loc7_ = String(_loc4_[_loc6_]);
             if(_loc7_.replace(_loc9_,"") != "")
             {
                _loc8_ = this.operate(_loc4_[_loc6_ - 1],_loc7_,_loc4_[_loc6_ + 1]);
@@ -293,7 +293,7 @@ package com.junkbyte.console.core
          _loc6_ = 1;
          while(_loc6_ < _loc5_)
          {
-            _loc7_ = _loc4_[_loc6_];
+            _loc7_ = String(_loc4_[_loc6_]);
             if(_loc7_.replace(_loc9_,"") == "")
             {
                _loc10_ = _loc4_[_loc6_ - 1];
@@ -593,7 +593,7 @@ package com.junkbyte.console.core
             {
                _loc7_ = this.execValue(_loc6_).value;
             }
-            _loc8_ = _loc7_.length;
+            _loc8_ = int(_loc7_.length);
             if(_loc8_ == 0)
             {
                return new _loc4_();

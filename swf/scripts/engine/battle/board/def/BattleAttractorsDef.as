@@ -33,7 +33,7 @@ package engine.battle.board.def
       
       public function get numAttractors() : int
       {
-         return !!this.attractors ? this.attractors.length : 0;
+         return !!this.attractors ? int(this.attractors.length) : 0;
       }
       
       public function fromJson(param1:Object, param2:ILogger) : BattleAttractorsDef

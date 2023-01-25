@@ -257,14 +257,14 @@ package game.gui.pages.saga_market
       
       private function showTutorial_0() : void
       {
-         var _loc1_:String = _context.translateCategory("tut_s2_market_0",LocaleCategory.TUTORIAL);
+         var _loc1_:String = String(_context.translateCategory("tut_s2_market_0",LocaleCategory.TUTORIAL));
          _loc1_ = _context.saga.performStringReplacement_SagaVar(_loc1_);
          _context.createTutorialPopup(this._textSuppliesPerRenown,_loc1_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,true,this.showTutorial_1);
       }
       
       private function showTutorial_1(param1:int) : void
       {
-         var _loc2_:String = _context.translateCategory("tut_s2_market_1",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(_context.translateCategory("tut_s2_market_1",LocaleCategory.TUTORIAL));
          _loc2_ = _context.saga.performStringReplacement_SagaVar(_loc2_);
          _context.createTutorialPopup(this._textTotalDays,_loc2_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,true,this.showTutorial_2);
       }
@@ -279,7 +279,7 @@ package game.gui.pages.saga_market
          this._button_minus.enabled = true;
          this.gp_r1.visible = true;
          this.gp_l1.visible = true;
-         var _loc2_:String = _context.translateCategory("tut_s2_market_2",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(_context.translateCategory("tut_s2_market_2",LocaleCategory.TUTORIAL));
          _context.createTutorialPopup(this._button_plus,_loc2_,TutorialTooltipAlign.TOP,TutorialTooltipAnchor.TOP,true,false,null);
       }
       
@@ -289,7 +289,7 @@ package game.gui.pages.saga_market
          this.tutorial_3_wait = true;
          this._button_confirm.enabled = this._button_confirm.visible = true;
          _context.removeAllTooltips();
-         var _loc2_:String = _context.translateCategory("tut_s2_market_3",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(_context.translateCategory("tut_s2_market_3",LocaleCategory.TUTORIAL));
          _context.createTutorialPopup(this._button_confirm,_loc2_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,false,null);
       }
       
@@ -300,7 +300,7 @@ package game.gui.pages.saga_market
          this.tutorial_4_wait = true;
          this.gp_y.visible = false;
          this._item_tabs.mouseChildren = this._item_tabs.mouseEnabled = true;
-         var _loc2_:String = _context.translateCategory("tut_s2_market_4",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(_context.translateCategory("tut_s2_market_4",LocaleCategory.TUTORIAL));
          _context.createTutorialPopup(this._item_tabs,_loc2_,TutorialTooltipAlign.TOP,TutorialTooltipAnchor.TOP,true,true,this.showTutorial_5);
       }
       
@@ -310,7 +310,7 @@ package game.gui.pages.saga_market
          this.saga.setVar("tutorial_market_purchase_supplies_enabled",0);
          this._button_close.enabled = true;
          this._button_close.visible = this._button_close_can_show;
-         var _loc2_:String = _context.translateCategory("tut_s2_market_5",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(_context.translateCategory("tut_s2_market_5",LocaleCategory.TUTORIAL));
          _context.createTutorialPopup(this._button_close,_loc2_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,true,null);
       }
       

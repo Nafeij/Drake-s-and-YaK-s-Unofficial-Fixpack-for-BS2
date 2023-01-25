@@ -315,7 +315,7 @@ package engine.core.fsm
       
       private function shellCmdFuncState(param1:CmdExec) : *
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc2_:Array = param1.param;
          this.logger.info(this.toString());
          this.logger.info("data: " + this.data);

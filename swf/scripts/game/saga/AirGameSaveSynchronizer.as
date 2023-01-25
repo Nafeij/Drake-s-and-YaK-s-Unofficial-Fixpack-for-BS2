@@ -379,7 +379,7 @@ package game.saga
          var _loc4_:Array = param2.split("/");
          if(_loc4_.length >= 3)
          {
-            _loc7_ = _loc4_[2];
+            _loc7_ = String(_loc4_[2]);
             _loc8_ = int(_loc7_);
             if(_loc8_ >= Saga.PROFILE_COUNT)
             {
@@ -400,7 +400,7 @@ package game.saga
       
       private function cloudSaveEnumerateFilePathsHandler(param1:CloudSave, param2:RegExp, param3:Vector.<String>) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc6_:ByteArray = null;
          if(this.pullState != PULL_STATE_ENUMERATE)
          {
@@ -579,7 +579,7 @@ package game.saga
       private function cloudSavesPullCompleteHandler(param1:Event) : void
       {
          var _loc3_:Boolean = false;
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          if(this.pullState != PULL_STATE_PULL)
          {
             this.finishCancel();
@@ -692,14 +692,14 @@ class SaveComparison
       var _loc5_:Number = Number(param1.id);
       if(_loc5_.toString() != param1.id)
       {
-         _loc4_ = param2.translateCategory(param1.id,LocaleCategory.LOCATION);
+         _loc4_ = String(param2.translateCategory(param1.id,LocaleCategory.LOCATION));
       }
       else
       {
          _loc4_ = param1.id;
       }
       var _loc6_:String = _loc4_;
-      var _loc7_:String = param2.translate("day");
+      var _loc7_:String = String(param2.translate("day"));
       var _loc8_:* = ", <font size=\'-5\'>" + _loc7_ + " " + _loc3_ + "</font>";
       var _loc9_:Date = param1.date;
       var _loc10_:* = ", <font size=\'-10\'>" + StringUtil.dateStringSansTZ(_loc9_) + "</font>";
@@ -717,7 +717,7 @@ class SaveComparison
    
    private function get screenshotPath() : String
    {
-      var _loc1_:String = this.saveFilePath;
+      var _loc1_:String = String(this.saveFilePath);
       if(SaveManager.SAVE_SCREENSHOT_PNG)
       {
          _loc1_ = _loc1_.replace(".save.json",SaveManager.SAVE_SCREENSHOT_PNG_EXT);
@@ -813,7 +813,7 @@ class SaveComparison
       }
       if(param3 != null)
       {
-         _loc4_ = this.saveFilePath;
+         _loc4_ = String(this.saveFilePath);
          if(SaveManager.SAVE_SCREENSHOT_PNG)
          {
             _loc4_ = _loc4_.replace(".save.json",SaveManager.SAVE_SCREENSHOT_PNG_EXT);
@@ -939,7 +939,7 @@ class SaveComparison
          {
             try
             {
-               localDataStr = this.localData.readUTFBytes(this.localData.length);
+               localDataStr = String(this.localData.readUTFBytes(this.localData.length));
                this.localMaster = JSON.parse(localDataStr);
             }
             catch(e:Error)
@@ -949,7 +949,7 @@ class SaveComparison
             }
             try
             {
-               remoteDataStr = this.remoteData.readUTFBytes(this.remoteData.length);
+               remoteDataStr = String(this.remoteData.readUTFBytes(this.remoteData.length));
                this.remoteMaster = JSON.parse(remoteDataStr);
             }
             catch(e:Error)
@@ -1048,11 +1048,11 @@ class SaveComparison
       }
       if(this.sameCampaign)
       {
-         _loc1_ = this.config.context.locale.translateGui("cloudsave_conflict_newer");
+         _loc1_ = String(this.config.context.locale.translateGui("cloudsave_conflict_newer"));
       }
       else
       {
-         _loc1_ = this.config.context.locale.translateGui("cloudsave_conflict_mismatch");
+         _loc1_ = String(this.config.context.locale.translateGui("cloudsave_conflict_mismatch"));
       }
       _loc1_ = _loc1_.replace("$REMOTE_FOLDER",this.cloudSave.id);
       _loc1_ = _loc1_.replace("$PROFILE_INDEX",this.profile_index.toString());

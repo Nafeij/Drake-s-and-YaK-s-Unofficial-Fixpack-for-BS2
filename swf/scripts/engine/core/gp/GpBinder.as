@@ -49,7 +49,7 @@ package engine.core.gp
       
       public function elevate(param1:Cmd) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:Vector.<GpBinderConditionalCmd> = null;
          var _loc4_:GpBinderConditionalCmd = null;
          for(_loc2_ in this.binds)
@@ -114,7 +114,7 @@ package engine.core.gp
          var _loc4_:int = this.topLayer;
          if(_loc3_)
          {
-            _loc5_ = _loc3_.length - 1;
+            _loc5_ = int(_loc3_.length - 1);
             while(_loc5_ >= 0)
             {
                _loc6_ = _loc3_[_loc5_];
@@ -136,7 +136,7 @@ package engine.core.gp
                   }
                   else
                   {
-                     _loc7_ = this.bindsGroup[_loc6_];
+                     _loc7_ = String(this.bindsGroup[_loc6_]);
                      if(!(_loc7_ in this.disabledGroups))
                      {
                         return _loc6_;
@@ -218,7 +218,7 @@ package engine.core.gp
       
       public function unbind(param1:Cmd) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:Vector.<GpBinderConditionalCmd> = null;
          var _loc4_:int = 0;
          var _loc5_:GpBinderConditionalCmd = null;
@@ -265,8 +265,8 @@ package engine.core.gp
       
       public function getDebugDump() : String
       {
-         var _loc2_:* = null;
-         var _loc3_:* = null;
+         var _loc2_:Object = null;
+         var _loc3_:String = null;
          var _loc4_:Object = null;
          var _loc5_:GpControlButton = null;
          var _loc6_:Vector.<GpBinderConditionalCmd> = null;
@@ -283,7 +283,7 @@ package engine.core.gp
                _loc1_ += "   " + StringUtil.padRight(_loc5_.name," ",20) + "\n";
                for each(_loc7_ in _loc6_)
                {
-                  _loc8_ = this.bindsGroup[_loc7_.cmd];
+                  _loc8_ = String(this.bindsGroup[_loc7_.cmd]);
                   _loc1_ += "      " + _loc7_;
                   if(_loc8_)
                   {

@@ -40,7 +40,7 @@ package engine.expression
          while(result && result.index < raw.length && result.index > lastIndex)
          {
             lastIndex = int(result.index);
-            ss = result[0];
+            ss = String(result[0]);
             whites = ss.search(/[\s\r\n]+/);
             if(whites < 0)
             {

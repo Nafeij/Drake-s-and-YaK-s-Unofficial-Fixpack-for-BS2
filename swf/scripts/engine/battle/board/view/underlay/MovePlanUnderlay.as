@@ -148,7 +148,7 @@ package engine.battle.board.view.underlay
       
       private function renderRejectedTiles(param1:DisplayObjectWrapper, param2:IBattleMove, param3:Dictionary) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:Tile = null;
          var _loc6_:String = null;
          var _loc7_:* = null;
@@ -159,7 +159,7 @@ package engine.battle.board.view.underlay
          for(_loc4_ in param2.flood.rejected)
          {
             _loc5_ = _loc4_ as Tile;
-            _loc6_ = param2.flood.rejected[_loc4_];
+            _loc6_ = String(param2.flood.rejected[_loc4_]);
             if(!param2.flood.resultSet[_loc5_])
             {
                _loc7_ = "common/battle/tile/tile_rejected_" + _loc6_ + ".png";

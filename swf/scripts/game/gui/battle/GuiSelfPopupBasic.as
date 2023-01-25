@@ -284,7 +284,7 @@ package game.gui.battle
       public function setValues(param1:Vector.<AbilityDef>, param2:Boolean, param3:Boolean, param4:Boolean) : void
       {
          var _loc5_:AbilityDef = Boolean(param1) && param1.length == 1 ? param1[0] : null;
-         this._ability_button.abilityCount = !!param1 ? param1.length : 0;
+         this._ability_button.abilityCount = !!param1 ? int(param1.length) : 0;
          this._ability_button.abilityDef = _loc5_;
          this.abilityDefs = param1;
          this.moveExecuted = param2;

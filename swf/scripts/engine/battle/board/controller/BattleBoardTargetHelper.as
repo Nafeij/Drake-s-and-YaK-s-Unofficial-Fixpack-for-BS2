@@ -118,12 +118,12 @@ package engine.battle.board.controller
          {
             return;
          }
-         var _loc5_:Number = Math.atan2(Number(param2.centerX) - Number(param1.centerX),Number(param2.centerY) - Number(param1.centerY));
+         var _loc5_:Number = Math.atan2(param2.centerX - param1.centerX,param2.centerY - param1.centerY);
          var _loc6_:Array = [];
          for each(_loc7_ in param3)
          {
-            _loc9_ = _loc7_.centerX - Number(param1.centerX);
-            _loc10_ = _loc7_.centerY - Number(param1.centerY);
+            _loc9_ = _loc7_.centerX - param1.centerX;
+            _loc10_ = _loc7_.centerY - param1.centerY;
             _loc11_ = Math.atan2(_loc9_,_loc10_);
             _loc11_ -= _loc5_;
             _loc11_ = -_loc11_;

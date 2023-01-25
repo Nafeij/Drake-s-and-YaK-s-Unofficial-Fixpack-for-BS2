@@ -55,7 +55,7 @@ package engine.saga.happening
          {
             return;
          }
-         var _loc2_:int = !!_loc3_ ? _loc3_.length : 0;
+         var _loc2_:int = !!_loc3_ ? int(_loc3_.length) : 0;
          for each(_loc4_ in this.def.actions)
          {
             if(_loc4_.enabled)

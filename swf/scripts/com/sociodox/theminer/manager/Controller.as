@@ -164,7 +164,7 @@ package com.sociodox.theminer.manager
          var _loc2_:Array = SampleAnalyzer.GetFunctionTimes();
          _loc2_.sortOn(ENTRY_TIME_PROPERTY,Array.NUMERIC | Array.DESCENDING);
          var _loc3_:ByteArray = new ByteArray();
-         var _loc4_:int = _loc2_.length;
+         var _loc4_:int = int(_loc2_.length);
          var _loc6_:int = 0;
          for each(_loc5_ in _loc2_)
          {

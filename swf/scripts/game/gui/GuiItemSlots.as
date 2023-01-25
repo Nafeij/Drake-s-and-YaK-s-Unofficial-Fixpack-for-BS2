@@ -346,8 +346,8 @@ package game.gui
       
       public function refreshGui() : void
       {
-         var _loc1_:int = !!this.items ? this.items.length : 0;
-         var _loc2_:int = !!this.iconSlots ? this.iconSlots.length : 0;
+         var _loc1_:int = !!this.items ? int(this.items.length) : 0;
+         var _loc2_:int = !!this.iconSlots ? int(this.iconSlots.length) : 0;
          this.maxScrollIndex = Math.max(0,_loc1_ - _loc2_);
          this.scrollIndex = Math.min(this.scrollIndex,this.maxScrollIndex);
          this._$items.visible = _loc1_ > 0;

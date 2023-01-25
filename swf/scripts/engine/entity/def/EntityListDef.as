@@ -203,8 +203,8 @@ package engine.entity.def
          {
             return param1.entityClass.partyTag.localeCompare(param1.entityClass.partyTag);
          }
-         var _loc3_:String = !!param1.entityClass.parentEntityClass ? param1.entityClass.parentEntityClass.name : param1.entityClass.name;
-         var _loc4_:String = !!param2.entityClass.parentEntityClass ? param2.entityClass.parentEntityClass.name : param2.entityClass.name;
+         var _loc3_:String = !!param1.entityClass.parentEntityClass ? String(param1.entityClass.parentEntityClass.name) : String(param1.entityClass.name);
+         var _loc4_:String = !!param2.entityClass.parentEntityClass ? String(param2.entityClass.parentEntityClass.name) : String(param2.entityClass.name);
          if(_loc3_ != _loc4_)
          {
             return _loc3_.localeCompare(_loc4_);

@@ -59,7 +59,7 @@ package engine.battle.board.model
       
       public function get numTriggers() : int
       {
-         return !!this._triggers ? this._triggers.length : 0;
+         return !!this._triggers ? int(this._triggers.length) : 0;
       }
       
       override public function toString() : String
@@ -495,7 +495,7 @@ package engine.battle.board.model
       
       public function get triggeringEntityId() : String
       {
-         return !!this._triggeringEntity ? this._triggeringEntity.id : null;
+         return !!this._triggeringEntity ? String(this._triggeringEntity.id) : null;
       }
       
       public function get triggeringEntity() : IBattleEntity

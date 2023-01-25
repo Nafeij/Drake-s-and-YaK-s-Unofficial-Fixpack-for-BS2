@@ -92,7 +92,7 @@ package engine.battle.entity.view
                   _loc10_.y = param3 + 0.001;
                   this._parentEntity.addChild(_loc10_);
             }
-            _loc10_.x = _loc10_.y = Number(this._parentEntity.entity.diameter) * _loc9_ / 2;
+            _loc10_.x = _loc10_.y = this._parentEntity.entity.diameter * _loc9_ / 2;
             this.updateVfxSequenceViewOffset(_loc10_,this._parentEntity.entity.facing);
             _loc10_.updatePosition();
          }
@@ -152,7 +152,7 @@ package engine.battle.entity.view
       {
          var _loc4_:AttachedVfx = null;
          var _loc5_:VfxSequenceView = null;
-         var _loc2_:int = this._attachedVfxList.length - 1;
+         var _loc2_:int = int(this._attachedVfxList.length - 1);
          while(_loc2_ >= 0)
          {
             _loc4_ = this._attachedVfxList[_loc2_];
@@ -271,7 +271,7 @@ package engine.battle.entity.view
       {
          var _loc3_:AttachedVfx = null;
          var _loc4_:IsoSprite = null;
-         var _loc2_:int = this._attachedVfxList.length - 1;
+         var _loc2_:int = int(this._attachedVfxList.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = this._attachedVfxList[_loc2_];

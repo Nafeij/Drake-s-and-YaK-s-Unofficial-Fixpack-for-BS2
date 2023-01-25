@@ -165,7 +165,7 @@ package engine.core.gp
       
       public static function dpad(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : GpControlButton
       {
-         var _loc5_:uint = (param1 ? 1 : 0) | (param2 ? 2 : 0) | (param3 ? 4 : 0) | (param4 ? 8 : 0);
+         var _loc5_:uint = uint((param1 ? 1 : 0) | (param2 ? 2 : 0) | (param3 ? 4 : 0) | (param4 ? 8 : 0));
          return _dpads[_loc5_];
       }
       

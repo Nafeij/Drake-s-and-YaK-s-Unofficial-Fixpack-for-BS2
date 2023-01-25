@@ -281,7 +281,7 @@ package engine.saga.save
          {
             if(!(param3 && !param3[_loc4_]))
             {
-               _loc5_ = this.vars[_loc4_];
+               _loc5_ = String(this.vars[_loc4_]);
                if(_loc5_)
                {
                   _loc6_ = param1.vars.fetch(_loc4_,null);
@@ -408,7 +408,7 @@ package engine.saga.save
          {
             for(_loc2_ in param1.vars)
             {
-               _loc3_ = param1.vars[_loc2_];
+               _loc3_ = String(param1.vars[_loc2_]);
                this.vars[_loc2_] = _loc3_;
             }
          }
@@ -472,7 +472,7 @@ package engine.saga.save
             _loc1_.vars = {};
             for(_loc2_ in this.vars)
             {
-               _loc3_ = this.vars[_loc2_];
+               _loc3_ = String(this.vars[_loc2_]);
                _loc1_.vars[_loc2_] = _loc3_;
             }
          }

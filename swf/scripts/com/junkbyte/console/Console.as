@@ -420,7 +420,7 @@ package com.junkbyte.console
       {
          var _loc2_:int = getTimer();
          this._logs.update(_loc2_);
-         var _loc3_:uint = _loc2_ - this._lastTime;
+         var _loc3_:uint = uint(_loc2_ - this._lastTime);
          this._lastTime = _loc2_;
          this._refs.update(_loc2_);
          this._mm.update();
@@ -481,7 +481,7 @@ package com.junkbyte.console
       public function addLine(param1:Array, param2:int = 0, param3:* = null, param4:Boolean = false, param5:Boolean = false, param6:int = -1) : void
       {
          var _loc7_:String = "";
-         var _loc8_:int = param1.length;
+         var _loc8_:int = int(param1.length);
          var _loc9_:int = 0;
          while(_loc9_ < _loc8_)
          {

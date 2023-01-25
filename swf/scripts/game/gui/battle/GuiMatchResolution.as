@@ -867,7 +867,7 @@ package game.gui.battle
       private function displayWarRenownClansmen() : void
       {
          context.playSound("ui_stats_promote");
-         var _loc1_:String = context.translate("mr_war_renown_clansmen_desc");
+         var _loc1_:String = String(context.translate("mr_war_renown_clansmen_desc"));
          var _loc2_:String = StringUtil.formatCommaInteger(this.outcome.clansmen_saved);
          _loc1_ = _loc1_.replace("$NUM_CLANSMEN",_loc2_);
          this._war_renown_desc.htmlText = _loc1_;
@@ -1056,7 +1056,7 @@ package game.gui.battle
       private function survivalGameoverCompleteHandler() : void
       {
          this._text_gameover_desc.visible = true;
-         var _loc1_:String = _context.translate("mr_gameover_progress");
+         var _loc1_:String = String(_context.translate("mr_gameover_progress"));
          _loc1_ = _loc1_.replace("{CURRENT}",_context.saga.survivalProgress.toString());
          _loc1_ = _loc1_.replace("{TOTAL}",_context.saga.survivalTotal.toString());
          this._text_gameover_desc.htmlText = _loc1_;

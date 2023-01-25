@@ -350,7 +350,7 @@ package org.gestouch.gestures
       protected function updateCentralPoint() : void
       {
          var _loc1_:Point = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc2_:Number = 0;
          var _loc3_:Number = 0;
          for(_loc4_ in this._touchesMap)

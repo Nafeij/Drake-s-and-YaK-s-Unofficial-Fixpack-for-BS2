@@ -109,7 +109,7 @@ package engine.core.util
          {
             if(_loc4_.enabled)
             {
-               _loc5_ = !!param3 ? param3.length : 0;
+               _loc5_ = !!param3 ? int(param3.length) : 0;
                this.logger.i("SAVE","Saving game " + param1 + " size: " + param2.length + " screenshot: " + _loc5_);
                _loc4_.saveGame(param1,param2,param3);
             }

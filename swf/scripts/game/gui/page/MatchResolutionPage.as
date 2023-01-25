@@ -94,7 +94,7 @@ package game.gui.page
          this.sceneState = config.fsm.current as SceneState;
          logger.info("MatchResolutionPage.handleDelayStart guiResult=" + this.guiResult);
          var _loc1_:BattleFinishedData = this.board.fsm.current.data.getValue(BattleStateDataEnum.FINISHED);
-         var _loc2_:String = this.board.fsm.current.data.getValue(BattleStateDataEnum.VICTORIOUS_TEAM);
+         var _loc2_:String = String(this.board.fsm.current.data.getValue(BattleStateDataEnum.VICTORIOUS_TEAM));
          var _loc3_:IBattleParty = this.board.getPartyById(this.board.fsm.session.credentials.userId.toString());
          var _loc4_:* = _loc3_.team == _loc2_;
          if(this.guiResult)

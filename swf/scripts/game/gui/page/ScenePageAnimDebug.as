@@ -115,7 +115,7 @@ package game.gui.page
       private function removeAll() : void
       {
          var _loc1_:Boolean = false;
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:DebugInfo = null;
          for(_loc2_ in this.ent2Debug)
          {
@@ -143,7 +143,7 @@ package game.gui.page
       
       public function update(param1:int) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:BattleEntity = null;
          var _loc6_:EntityView = null;
          var _loc7_:DebugInfo = null;

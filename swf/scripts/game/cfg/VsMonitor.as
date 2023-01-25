@@ -206,7 +206,7 @@ package game.cfg
                _loc6_.push(int(_loc11_));
             }
          }
-         var _loc7_:int = _loc6_.length;
+         var _loc7_:int = int(_loc6_.length);
          while(_loc7_ < _loc5_.length)
          {
             _loc6_.push(1);

@@ -185,7 +185,7 @@ package game.gui
             return;
          }
          this._value_loc_format = param2;
-         var _loc4_:String = _context.locale.translateGui(param2);
+         var _loc4_:String = String(_context.locale.translateGui(param2));
          var _loc5_:RegExp = /{[[:blank:]]*value[[:blank:]]*}/gi;
          if(this.displayHours)
          {
@@ -373,7 +373,7 @@ package game.gui
       private function getDaysKey(param1:String) : String
       {
          var _loc2_:* = param1 + "_days";
-         var _loc3_:String = _context.locale.translateGui(_loc2_);
+         var _loc3_:String = String(_context.locale.translateGui(_loc2_));
          if(_loc3_ == "{" + _loc2_ + "}")
          {
             return param1;

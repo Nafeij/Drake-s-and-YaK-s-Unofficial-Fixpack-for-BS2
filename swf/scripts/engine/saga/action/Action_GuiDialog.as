@@ -23,13 +23,13 @@ package engine.saga.action
       
       private function _parseButtonHappening(param1:Array, param2:Array) : void
       {
-         var _loc3_:int = this._buttons.length;
-         var _loc4_:String = param1.length > _loc3_ ? param1[_loc3_] : null;
+         var _loc3_:int = int(this._buttons.length);
+         var _loc4_:String = param1.length > _loc3_ ? String(param1[_loc3_]) : null;
          if(!_loc4_ && _loc3_ == 0)
          {
             _loc4_ = "$ok";
          }
-         var _loc5_:String = param2.length > _loc3_ ? param2[_loc3_] : null;
+         var _loc5_:String = param2.length > _loc3_ ? String(param2[_loc3_]) : null;
          _loc4_ = translateMsg(_loc4_);
          this._buttons.push(_loc4_);
          this._happeningIds.push(_loc5_);

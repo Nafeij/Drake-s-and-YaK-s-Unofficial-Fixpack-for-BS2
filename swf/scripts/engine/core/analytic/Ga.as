@@ -372,8 +372,8 @@ package engine.core.analytic
       private static function send(param1:URLVariables) : void
       {
          var _loc2_:String = null;
-         var _loc3_:* = null;
-         var _loc4_:* = null;
+         var _loc3_:String = null;
+         var _loc4_:String = null;
          var _loc5_:String = null;
          var _loc6_:String = null;
          var _loc7_:URLRequest = null;
@@ -420,12 +420,12 @@ package engine.core.analytic
          }
          for(_loc3_ in customDimensions)
          {
-            _loc5_ = customDimensions[_loc3_];
+            _loc5_ = String(customDimensions[_loc3_]);
             param1[_loc3_] = _loc5_;
          }
          for(_loc4_ in customMetrics)
          {
-            _loc6_ = customMetrics[_loc4_];
+            _loc6_ = String(customMetrics[_loc4_]);
             param1[_loc4_] = _loc6_;
          }
          ++_sent;
@@ -496,14 +496,14 @@ class SmartUrlLoader_Ga extends URLLoader
    
    public function get debugStringVars() : String
    {
-      var _loc2_:* = null;
+      var _loc2_:String = null;
       var _loc3_:String = null;
       var _loc1_:* = "";
       if(this.req.data)
       {
          for(_loc2_ in this.req.data)
          {
-            _loc3_ = this.req.data[_loc2_];
+            _loc3_ = String(this.req.data[_loc2_]);
             if(_loc1_)
             {
                _loc1_ += ", ";

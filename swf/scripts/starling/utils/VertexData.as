@@ -94,9 +94,9 @@ package starling.utils
       public function append(param1:VertexData) : void
       {
          this.mRawData.fixed = false;
-         var _loc2_:int = this.mRawData.length;
+         var _loc2_:int = int(this.mRawData.length);
          var _loc3_:Vector.<Number> = param1.mRawData;
-         var _loc4_:int = _loc3_.length;
+         var _loc4_:int = int(_loc3_.length);
          var _loc5_:int = 0;
          while(_loc5_ < _loc4_)
          {
@@ -541,7 +541,7 @@ package starling.utils
          this.mRawData.fixed = false;
          this.mRawData.length = param1 * ELEMENTS_PER_VERTEX;
          var _loc2_:int = this.mNumVertices * ELEMENTS_PER_VERTEX + COLOR_OFFSET + 3;
-         var _loc3_:int = this.mRawData.length;
+         var _loc3_:int = int(this.mRawData.length);
          var _loc4_:int = _loc2_;
          while(_loc4_ < _loc3_)
          {

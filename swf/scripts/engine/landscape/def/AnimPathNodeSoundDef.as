@@ -69,7 +69,7 @@ package engine.landscape.def
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_.length)
          {
-            _loc5_ = _loc3_[_loc4_];
+            _loc5_ = String(_loc3_[_loc4_]);
             _loc6_ = new StringNumberPair().parseString(_loc5_,0,"=");
             this.params[_loc4_] = _loc6_;
             _loc4_++;

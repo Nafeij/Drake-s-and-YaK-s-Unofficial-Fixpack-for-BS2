@@ -65,7 +65,7 @@ package engine.saga
       {
          var _loc2_:String = null;
          var _loc3_:SagaBucket = null;
-         var _loc1_:int = this.buckets.length;
+         var _loc1_:int = int(this.buckets.length);
          while(_loc1_ < 1000)
          {
             _loc2_ = "New Bucket " + _loc1_;

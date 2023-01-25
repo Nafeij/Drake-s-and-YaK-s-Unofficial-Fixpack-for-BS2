@@ -440,7 +440,7 @@ package engine.landscape.travel.view
          }
          var _loc4_:Vector.<Point> = "world_cart_pop" == param3 ? this.truncatedCarts : null;
          var _loc5_:int = param2;
-         var _loc6_:int = this.animTypes.length - 1;
+         var _loc6_:int = int(this.animTypes.length - 1);
          while(_loc6_ >= this.population_index && _loc5_ > param1)
          {
             _loc7_ = this.animTypes[_loc6_];
@@ -550,7 +550,7 @@ package engine.landscape.travel.view
       
       private function createNewAnims(param1:Boolean) : void
       {
-         var _loc2_:int = this.anims.length;
+         var _loc2_:int = int(this.anims.length);
          while(_loc2_ < this.animTypes.length)
          {
             this.addAnimation(_loc2_,param1);

@@ -192,7 +192,7 @@ package com.greensock
       public static function updateAll(param1:Event = null) : void
       {
          var _loc2_:Dictionary = null;
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:Array = null;
          var _loc5_:int = 0;
          rootTimeline.renderTime((getTimer() * 0.001 - rootTimeline.cachedStartTime) * rootTimeline.cachedTimeScale,false,false);
@@ -204,7 +204,7 @@ package com.greensock
             for(_loc3_ in _loc2_)
             {
                _loc4_ = _loc2_[_loc3_];
-               _loc5_ = _loc4_.length;
+               _loc5_ = int(_loc4_.length);
                while(--_loc5_ > -1)
                {
                   if(TweenLite(_loc4_[_loc5_]).gc)
@@ -224,7 +224,7 @@ package com.greensock
       public static function updateTimer(param1:int) : void
       {
          var _loc3_:Dictionary = null;
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:Array = null;
          var _loc6_:int = 0;
          var _loc2_:Number = param1 * 0.001 - rootTimeline.cachedStartTime;
@@ -237,7 +237,7 @@ package com.greensock
             for(_loc4_ in _loc3_)
             {
                _loc5_ = _loc3_[_loc4_];
-               _loc6_ = _loc5_.length;
+               _loc6_ = int(_loc5_.length);
                while(--_loc6_ > -1)
                {
                   if(TweenLite(_loc5_[_loc6_]).gc)
@@ -262,7 +262,7 @@ package com.greensock
          if(param1 in masterList)
          {
             _loc4_ = masterList[param1];
-            _loc5_ = _loc4_.length;
+            _loc5_ = int(_loc4_.length);
             while(--_loc5_ > -1)
             {
                _loc6_ = _loc4_[_loc5_];
@@ -299,7 +299,7 @@ package com.greensock
       
       protected function init() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:int = 0;
          var _loc3_:* = undefined;
          var _loc4_:Boolean = false;
@@ -326,7 +326,7 @@ package com.greensock
             {
                if(_loc1_ in plugins && Boolean((_loc3_ = new (plugins[_loc1_] as Class)()).onInitTween(this.target,this.vars[_loc1_],this)))
                {
-                  this.cachedPT1 = new PropTween(_loc3_,"changeFactor",0,1,_loc3_.overwriteProps.length == 1 ? _loc3_.overwriteProps[0] : "_MULTIPLE_",true,this.cachedPT1);
+                  this.cachedPT1 = new PropTween(_loc3_,"changeFactor",0,1,_loc3_.overwriteProps.length == 1 ? String(_loc3_.overwriteProps[0]) : "_MULTIPLE_",true,this.cachedPT1);
                   if(this.cachedPT1.name == "_MULTIPLE_")
                   {
                      _loc2_ = int(_loc3_.overwriteProps.length);
@@ -352,7 +352,7 @@ package com.greensock
                }
                else
                {
-                  this.cachedPT1 = new PropTween(this.target,_loc1_,Number(this.target[_loc1_]),typeof this.vars[_loc1_] == "number" ? Number(this.vars[_loc1_]) - Number(this.target[_loc1_]) : Number(this.vars[_loc1_]),_loc1_,false,this.cachedPT1);
+                  this.cachedPT1 = new PropTween(this.target,_loc1_,Number(this.target[_loc1_]),typeof this.vars[_loc1_] == "number" ? Number(this.vars[_loc1_]) - this.target[_loc1_] : Number(this.vars[_loc1_]),_loc1_,false,this.cachedPT1);
                   this.propTweenLookup[_loc1_] = this.cachedPT1;
                }
             }
@@ -476,7 +476,7 @@ package com.greensock
       
       public function killVars(param1:Object, param2:Boolean = true) : Boolean
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:PropTween = null;
          var _loc5_:Boolean = false;
          if(this._overwrittenProps == null)

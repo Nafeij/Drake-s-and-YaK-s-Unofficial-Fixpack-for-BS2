@@ -81,7 +81,7 @@ package starling.display
       
       override public function dispose() : void
       {
-         var _loc1_:int = this.mChildren.length - 1;
+         var _loc1_:int = int(this.mChildren.length - 1);
          while(_loc1_ >= 0)
          {
             this.mChildren[_loc1_].dispose();
@@ -98,7 +98,7 @@ package starling.display
       public function addChildAt(param1:DisplayObject, param2:int) : DisplayObject
       {
          var _loc4_:DisplayObjectContainer = null;
-         var _loc3_:int = this.mChildren.length;
+         var _loc3_:int = int(this.mChildren.length);
          if(param2 >= 0 && param2 <= _loc3_)
          {
             if(param1.parent == this)
@@ -197,7 +197,7 @@ package starling.display
       
       public function getChildAt(param1:int) : DisplayObject
       {
-         var _loc2_:int = this.mChildren.length;
+         var _loc2_:int = int(this.mChildren.length);
          if(param1 < 0)
          {
             param1 = _loc2_ + param1;
@@ -211,7 +211,7 @@ package starling.display
       
       public function getChildByName(param1:String) : DisplayObject
       {
-         var _loc2_:int = this.mChildren.length;
+         var _loc2_:int = int(this.mChildren.length);
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
@@ -294,7 +294,7 @@ package starling.display
          {
             param2 = new Rectangle();
          }
-         var _loc3_:int = this.mChildren.length;
+         var _loc3_:int = int(this.mChildren.length);
          if(_loc3_ == 0)
          {
             getTransformationMatrix(param1,sHelperMatrix);
@@ -352,7 +352,7 @@ package starling.display
          var _loc3_:DisplayObject = null;
          var _loc4_:Number = param1.x;
          var _loc5_:Number = param1.y;
-         var _loc6_:int = this.mChildren.length;
+         var _loc6_:int = int(this.mChildren.length);
          var _loc7_:int = _loc6_ - 1;
          while(_loc7_ >= 0)
          {
@@ -379,7 +379,7 @@ package starling.display
          var _loc8_:FragmentFilter = null;
          var _loc9_:DisplayObject = null;
          var _loc3_:Number = param2 * this.alpha;
-         var _loc4_:int = this.mChildren.length;
+         var _loc4_:int = int(this.mChildren.length);
          var _loc5_:String = param1.blendMode;
          var _loc6_:int = 0;
          while(_loc6_ < _loc4_)
@@ -421,9 +421,9 @@ package starling.display
          {
             throw new ArgumentError("Broadcast of bubbling events is prohibited");
          }
-         var _loc2_:int = sBroadcastListeners.length;
+         var _loc2_:int = int(sBroadcastListeners.length);
          this.getChildEventListeners(this,param1.type,sBroadcastListeners);
-         var _loc3_:int = sBroadcastListeners.length;
+         var _loc3_:int = int(sBroadcastListeners.length);
          var _loc4_:int = _loc2_;
          while(_loc4_ < _loc3_)
          {
@@ -470,15 +470,15 @@ package starling.display
          }
          else if(param1 > _loc5_)
          {
-            param1 = _loc5_;
+            param1 = int(_loc5_);
          }
          if(param1 + param2 > _loc5_)
          {
-            param2 = _loc5_ - param1;
+            param2 = uint(_loc5_ - param1);
          }
          var _loc7_:int = !!param3 ? 1 : 0;
          var _loc8_:int = _loc7_ - param2;
-         var _loc9_:uint = _loc5_ + _loc8_;
+         var _loc9_:uint = uint(_loc5_ + _loc8_);
          var _loc10_:int = _loc5_ - param1 - param2;
          if(_loc8_ < 0)
          {
@@ -521,7 +521,7 @@ package starling.display
          if(_loc4_)
          {
             _loc5_ = _loc4_.mChildren;
-            _loc6_ = _loc5_.length;
+            _loc6_ = int(_loc5_.length);
             _loc7_ = 0;
             while(_loc7_ < _loc6_)
             {

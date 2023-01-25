@@ -101,7 +101,7 @@ package engine.resource
          var _loc3_:int = 1;
          while(_loc3_ < param1.length)
          {
-            _loc4_ = param1[_loc3_];
+            _loc4_ = String(param1[_loc3_]);
             if(_loc4_)
             {
                _loc5_ = _loc4_.split(":");
@@ -253,7 +253,7 @@ package engine.resource
             }
             _loc2_ = this.totalSize;
             this.manifest.sort(Entry.comparatorTimestamp);
-            _loc3_ = this.manifest.length - 1;
+            _loc3_ = int(this.manifest.length - 1);
             while(_loc3_ >= 0)
             {
                _loc6_ = this.manifest[_loc3_];

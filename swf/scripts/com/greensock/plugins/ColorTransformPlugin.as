@@ -19,7 +19,7 @@ package com.greensock.plugins
       override public function onInitTween(param1:Object, param2:*, param3:TweenLite) : Boolean
       {
          var _loc4_:ColorTransform = null;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:Number = NaN;
          var _loc5_:ColorTransform = new ColorTransform();
          if(param1 is DisplayObject)
@@ -56,7 +56,7 @@ package com.greensock.plugins
             _loc5_.redOffset *= _loc7_;
             _loc5_.greenOffset *= _loc7_;
             _loc5_.blueOffset *= _loc7_;
-            _loc5_.redMultiplier = _loc5_.greenMultiplier = _loc5_.blueMultiplier = 1 - Number(param2.tintAmount);
+            _loc5_.redMultiplier = _loc5_.greenMultiplier = _loc5_.blueMultiplier = 1 - param2.tintAmount;
          }
          else if(!isNaN(param2.exposure))
          {

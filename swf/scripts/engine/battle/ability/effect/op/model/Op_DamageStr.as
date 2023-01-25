@@ -158,7 +158,7 @@ package engine.battle.ability.effect.op.model
          {
             return 0;
          }
-         var _loc4_:String = param2.def.entityClass.race;
+         var _loc4_:String = String(param2.def.entityClass.race);
          if(_loc4_ != "dredge")
          {
             return 0;
@@ -183,7 +183,7 @@ package engine.battle.ability.effect.op.model
             _loc7_ = _loc6_ - _loc5_;
             if(_loc7_ > 0)
             {
-               return _loc7_ / _loc4_;
+               return int(_loc7_ / _loc4_);
             }
          }
          return 0;
@@ -391,7 +391,7 @@ package engine.battle.ability.effect.op.model
          var _loc3_:int = int(def.params.damage);
          var _loc4_:int = int(def.params.perCasterStrength);
          var _loc5_:int = int(def.params.perTargetArmor);
-         var _loc6_:Number = Number(def.params.maxMissChance) * 0.01;
+         var _loc6_:Number = def.params.maxMissChance * 0.01;
          var _loc7_:int = int(def.params.missChancePer);
          var _loc8_:int = int(def.params.damageOnMiss);
          var _loc9_:Boolean = BooleanVars.parse(def.params.applyEffectTag,true);
@@ -759,7 +759,7 @@ package engine.battle.ability.effect.op.model
             caster.record.addStrengthDamageDone(this.amount);
             if(!_loc2_ || ability.fake || manager.faking)
             {
-               target.stats.getStat(this.damageStat).base = Number(target.stats.getStat(this.damageStat).base) - this.amount;
+               target.stats.getStat(this.damageStat).base = target.stats.getStat(this.damageStat).base - this.amount;
             }
          }
          if(ability.fake || manager.faking)

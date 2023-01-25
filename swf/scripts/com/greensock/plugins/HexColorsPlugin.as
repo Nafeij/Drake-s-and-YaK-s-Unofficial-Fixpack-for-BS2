@@ -20,7 +20,7 @@ package com.greensock.plugins
       
       override public function onInitTween(param1:Object, param2:*, param3:TweenLite) : Boolean
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          for(_loc4_ in param2)
          {
             this.initColor(param1,_loc4_,uint(param1[_loc4_]),uint(param2[_loc4_]));
@@ -45,7 +45,7 @@ package com.greensock.plugins
       
       override public function killProps(param1:Object) : void
       {
-         var _loc2_:int = this._colors.length - 1;
+         var _loc2_:int = int(this._colors.length - 1);
          while(_loc2_ > -1)
          {
             if(param1[this._colors[_loc2_][1]] != undefined)
@@ -60,11 +60,11 @@ package com.greensock.plugins
       override public function set changeFactor(param1:Number) : void
       {
          var _loc3_:Array = null;
-         var _loc2_:int = this._colors.length;
+         var _loc2_:int = int(this._colors.length);
          while(--_loc2_ > -1)
          {
             _loc3_ = this._colors[_loc2_];
-            _loc3_[0][_loc3_[1]] = _loc3_[2] + param1 * Number(_loc3_[3]) << 16 | _loc3_[4] + param1 * Number(_loc3_[5]) << 8 | _loc3_[6] + param1 * Number(_loc3_[7]);
+            _loc3_[0][_loc3_[1]] = _loc3_[2] + param1 * _loc3_[3] << 16 | _loc3_[4] + param1 * _loc3_[5] << 8 | _loc3_[6] + param1 * _loc3_[7];
          }
       }
    }

@@ -74,11 +74,11 @@ package engine.core.locale
       
       public function findTranslationId(param1:String) : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
          for(_loc2_ in this.tokens)
          {
-            _loc3_ = this.tokens[_loc2_];
+            _loc3_ = String(this.tokens[_loc2_]);
             if(_loc3_ == param1)
             {
                return _loc2_;
@@ -253,7 +253,7 @@ package engine.core.locale
          }
          for each(_loc8_ in this.tokenList)
          {
-            _loc7_ = this.tokens[_loc8_];
+            _loc7_ = String(this.tokens[_loc8_]);
             _loc6_ = this.id.name + ":" + _loc8_;
             if(param4 && !StringIdInfo.stringNeedsAttention(_loc7_))
             {
@@ -276,11 +276,11 @@ package engine.core.locale
       
       public function init(param1:Object, param2:Boolean) : Localizer
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          for(_loc3_ in param1)
          {
-            _loc4_ = param1[_loc3_];
+            _loc4_ = String(param1[_loc3_]);
             this.addTranslation(_loc3_,_loc4_);
          }
          if(this.tokenList)

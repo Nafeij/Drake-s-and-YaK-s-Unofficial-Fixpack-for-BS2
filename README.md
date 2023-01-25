@@ -10,7 +10,7 @@
         1. For some reason, the game counts all the barricades in the arberrang fight as part of the enemy team, preventing the battle from ending upon killing all enemies. Changing some vars in btl_arberang_gate.json fixes this.
         2. Even so, the battle still does not end if the last enemy is killed in a scripted event, a la Oddleif or Nid. The game only checks when for the victory conditions when an enemy (or prop) is killed, not when
            a turn is ended. This is a hunch, but I suspect the event triggered for the unit's death is discarded when the game is processing a scripted event (or happening), and 'killing' a barricade yourself triggers it again.
-           Unfortunately, the fault is baked in to the game logic and unfeasible to fix, so the workaround used is to relinquish control of Nid and Oddleif to the player when either side is down on units.
+           Unfortunately, the fault is baked in to the game logic and unfeasible to fix; the workaround used is to relinquish control of Nid and Oddleif to the player when either side is down on units.
 
  3.0
  

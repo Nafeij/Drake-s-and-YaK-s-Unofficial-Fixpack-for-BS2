@@ -103,7 +103,7 @@ package engine.battle.ability.effect.op.model
       private static function _parseAbilityDef(param1:Object, param2:String, param3:BattleAbilityDefFactory) : BattleAbilityDef
       {
          var _loc4_:BattleAbilityDef = null;
-         var _loc5_:String = param1[param2];
+         var _loc5_:String = String(param1[param2]);
          if(_loc5_)
          {
             _loc4_ = param3.fetchBattleAbilityDef(_loc5_);
@@ -117,7 +117,7 @@ package engine.battle.ability.effect.op.model
       
       private static function _parseResponseTargetType(param1:Object, param2:String, param3:BattleAbilityResponseTargetType) : BattleAbilityResponseTargetType
       {
-         var _loc4_:String = param1[param2];
+         var _loc4_:String = String(param1[param2]);
          if(_loc4_)
          {
             return Enum.parse(BattleAbilityResponseTargetType,_loc4_) as BattleAbilityResponseTargetType;
@@ -205,7 +205,7 @@ package engine.battle.ability.effect.op.model
          this.move.forcedMove = true;
          this.move.reactToEntityIntersect = true;
          var _loc5_:* = target.y == this.destinationTile.y;
-         var _loc6_:int = _loc5_ ? this.destinationTile.x - Number(target.x) : this.destinationTile.y - Number(target.y);
+         var _loc6_:int = _loc5_ ? int(this.destinationTile.x - target.x) : int(this.destinationTile.y - target.y);
          var _loc7_:int = _loc6_ > 0 ? 1 : -1;
          var _loc8_:int = _loc7_;
          while(_loc6_ != 0)

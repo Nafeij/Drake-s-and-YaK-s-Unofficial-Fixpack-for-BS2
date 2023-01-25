@@ -479,7 +479,7 @@ package engine.gui
       public function swap(param1:Object, param2:Object, param3:Boolean = false, param4:Boolean = true) : Object
       {
          var _loc7_:int = 0;
-         var _loc8_:* = null;
+         var _loc8_:Object = null;
          var _loc9_:Info = null;
          var _loc10_:int = 0;
          if(!param2)
@@ -1908,7 +1908,7 @@ class Info
    public function setRect(param1:Rectangle) : Info
    {
       this.rect = param1;
-      this.center = new Point(this.rect.x + Number(this.rect.width) / 2,this.rect.y + Number(this.rect.height) / 2);
+      this.center = new Point(this.rect.x + this.rect.width / 2,this.rect.y + this.rect.height / 2);
       this.left = this.rect.left;
       this.right = this.rect.right;
       this.top = this.rect.top;

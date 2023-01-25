@@ -63,7 +63,7 @@ package as3isolib.core
                this.displayListChildrenArray.push(param1);
                if(param2 > this.mainContainer.numChildren)
                {
-                  param2 = this.mainContainer.numChildren;
+                  param2 = uint(this.mainContainer.numChildren);
                }
                _loc3_ = IIsoContainer(param1).container;
                this.mainContainer.addChildAt(_loc3_,param2);

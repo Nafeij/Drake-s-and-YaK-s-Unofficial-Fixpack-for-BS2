@@ -115,8 +115,8 @@ package lib.engine.util.air
          {
             param3.info("migrateApplicationStorageToToDocuments: Application Storage [" + param1 + "] folder found..");
             param3.info("...Moving Folder:");
-            param3.info(!!("... FROM " + _loc5_.nativePath) ? _loc5_.nativePath : _loc5_.url);
-            param3.info(!!("...   TO " + _loc4_.nativePath) ? _loc4_.nativePath : _loc4_.url);
+            param3.info(!!("... FROM " + _loc5_.nativePath) ? String(_loc5_.nativePath) : String(_loc5_.url));
+            param3.info(!!("...   TO " + _loc4_.nativePath) ? String(_loc4_.nativePath) : String(_loc4_.url));
             _loc5_.moveTo(_loc4_);
          }
          else
@@ -143,7 +143,7 @@ package lib.engine.util.air
          var _loc2_:Vector.<NetworkInterface> = _loc1_.findInterfaces();
          for each(_loc4_ in _loc2_)
          {
-            _loc5_ = _loc4_.hardwareAddress;
+            _loc5_ = String(_loc4_.hardwareAddress);
             if(_loc5_)
             {
                for each(_loc6_ in _loc4_.addresses)
@@ -219,7 +219,7 @@ package lib.engine.util.air
                   logger.info("AirAppInfo.loadIni      loading " + type + " iniFile: " + (this._nativePathSupported ? iniFile.nativePath : iniFile.url));
                   fs = new FileStream();
                   fs.open(f,FileMode.READ);
-                  iniContents = fs.readUTFBytes(fs.bytesAvailable);
+                  iniContents = String(fs.readUTFBytes(fs.bytesAvailable));
                   parseIni(iniContents);
                   return true;
                }
@@ -241,7 +241,7 @@ package lib.engine.util.air
          var _loc1_:String = null;
          if(!this._nativeAppUrlRoot)
          {
-            _loc1_ = File.applicationDirectory.nativePath;
+            _loc1_ = String(File.applicationDirectory.nativePath);
             if(_loc1_)
             {
                this._nativeAppUrlRoot = new File(_loc1_).url;
@@ -439,8 +439,8 @@ package lib.engine.util.air
             super.fullscreen = param1;
             if(!param1)
             {
-               _loc3_ = Number(_loc2_.width) - Number(_loc2_.stage.stageWidth);
-               _loc4_ = Number(_loc2_.height) - Number(_loc2_.stage.stageHeight);
+               _loc3_ = _loc2_.width - _loc2_.stage.stageWidth;
+               _loc4_ = _loc2_.height - _loc2_.stage.stageHeight;
                _loc2_.minSize = new Point(minSize.x + _loc3_,minSize.y + _loc4_);
             }
          }
@@ -709,7 +709,7 @@ package lib.engine.util.air
          try
          {
             file = this.processFld(fld);
-            return !!file ? file.url : null;
+            return !!file ? String(file.url) : null;
          }
          catch(e:Error)
          {
@@ -911,7 +911,7 @@ package lib.engine.util.air
          var _loc2_:File = param1.target as File;
          if(this._browseFileCallback != null)
          {
-            _loc3_ = Boolean(_loc2_) && Boolean(_loc2_.exists) ? _loc2_.url : null;
+            _loc3_ = Boolean(_loc2_) && Boolean(_loc2_.exists) ? String(_loc2_.url) : null;
             if(_loc2_.exists)
             {
                this._browseFileCallback(_loc3_);
@@ -1047,7 +1047,7 @@ package lib.engine.util.air
          {
             return;
          }
-         _loc2_.x = Math.max(0,_loc2_.x - (param1 - Number(_loc2_.width)));
+         _loc2_.x = Math.max(0,_loc2_.x - (param1 - _loc2_.width));
          _loc2_.width = param1;
       }
       
@@ -1058,7 +1058,7 @@ package lib.engine.util.air
          {
             return;
          }
-         _loc2_.y = Math.max(0,_loc2_.y - (param1 - Number(_loc2_.height)));
+         _loc2_.y = Math.max(0,_loc2_.y - (param1 - _loc2_.height));
          _loc2_.height = param1;
       }
       

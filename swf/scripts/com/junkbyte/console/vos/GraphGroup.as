@@ -67,13 +67,13 @@ package com.junkbyte.console.vos
          _loc3_.width = param1.readFloat();
          _loc3_.height = param1.readFloat();
          _loc2_.numberDisplayPrecision = param1.readShort();
-         var _loc4_:uint = param1.readShort();
+         var _loc4_:uint = uint(param1.readShort());
          while(_loc4_ > 0)
          {
             _loc2_.interests.push(GraphInterest.FromBytes(param1));
             _loc4_--;
          }
-         _loc4_ = param1.readShort();
+         _loc4_ = uint(param1.readShort());
          while(_loc4_ > 0)
          {
             _loc2_.menus.push(param1.readUTF());
@@ -101,7 +101,7 @@ package com.junkbyte.console.vos
       {
          var _loc2_:GraphInterest = null;
          var _loc3_:Number = NaN;
-         var _loc1_:int = this.interests.length - 1;
+         var _loc1_:int = int(this.interests.length - 1);
          while(_loc1_ >= 0)
          {
             _loc2_ = this.interests[_loc1_];
@@ -112,7 +112,7 @@ package com.junkbyte.console.vos
          this.console_internal::applyUpdateDispather(this._updateArgs);
       }
       
-      console_internal internal function applyUpdateDispather(param1:Array) : void
+      console_internal function applyUpdateDispather(param1:Array) : void
       {
          this._onUpdate.apply(param1);
       }

@@ -242,7 +242,7 @@ package engine.saga.action
          catch(err:Error)
          {
             logger.error("Failed to start action: (" + id + ") [" + this.toStringNoId() + "]");
-            st = err.getStackTrace();
+            st = String(err.getStackTrace());
             if(!logger.isDebugEnabled && !saga.appinfo.isDebugger)
             {
                st = StringUtil.truncateLines(st,3,1000);
@@ -424,7 +424,7 @@ package engine.saga.action
          var _loc4_:IEntityDef = this.saga.getCastMember(param1);
          if(_loc4_)
          {
-            param1 = _loc4_.id;
+            param1 = String(_loc4_.id);
          }
          return _loc3_.getEntityByIdOrByDefId(param1,null,param2);
       }
@@ -461,7 +461,7 @@ package engine.saga.action
             _loc9_ = this.saga.getCastMember(_loc8_);
             if(_loc9_)
             {
-               _loc8_ = _loc9_.id;
+               _loc8_ = String(_loc9_.id);
             }
             _loc10_ = _loc5_.getEntityByIdOrByDefId(_loc8_,null,param2);
             if(_loc10_)

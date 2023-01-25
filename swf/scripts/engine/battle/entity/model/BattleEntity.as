@@ -1870,8 +1870,8 @@ package engine.battle.entity.model
             return null;
          }
          var _loc5_:* = _loc4_.level;
-         var _loc6_:int = param3.targets.length;
-         var _loc7_:int = param3.tiles.length;
+         var _loc6_:int = int(param3.targets.length);
+         var _loc7_:int = int(param3.tiles.length);
          var _loc8_:Boolean = _loc4_.targetRule.isTile;
          var _loc12_:Boolean = false;
          var _loc13_:int = 1;

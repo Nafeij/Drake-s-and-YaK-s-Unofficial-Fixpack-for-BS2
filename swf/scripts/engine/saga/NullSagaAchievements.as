@@ -222,7 +222,7 @@ package engine.saga
             this.saga.logger.info("Acheivement suppressing player kill for " + param1);
             return;
          }
-         var _loc2_:String = param1.def.entityClass.id;
+         var _loc2_:String = String(param1.def.entityClass.id);
          var _loc3_:String = "prg_class_" + _loc2_;
          this.saga.incrementGlobalVar(_loc3_,1);
       }

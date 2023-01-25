@@ -238,12 +238,12 @@ package engine.battle.fsm.state
          for each(_loc4_ in _loc7_)
          {
             this.hashStr += "sync=" + battleFsm.battleId + " " + _loc4_.id;
-            _loc9_ = _loc3_ - Number(_loc4_.id.length);
+            _loc9_ = _loc3_ - _loc4_.id.length;
             if(_loc9_ > 0)
             {
                this.hashStr += _loc8_.substr(0,_loc9_);
             }
-            _loc10_ = _loc4_.tile.toString();
+            _loc10_ = String(_loc4_.tile.toString());
             this.hashStr += " tile=" + _loc10_;
             _loc9_ = 8 - _loc10_.length;
             if(_loc9_ > 0)

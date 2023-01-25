@@ -103,7 +103,7 @@ package engine.battle.ability.effect.op.model
             this.curMove = new BattleMove(_loc1_);
             this.curMove.forcedMove = true;
             this.curMove.reactToEntityIntersect = true;
-            _loc4_ = _loc3_.length - 1;
+            _loc4_ = int(_loc3_.length - 1);
             while(_loc4_ >= 0)
             {
                this.curMove.addStep(_loc3_[_loc4_]);

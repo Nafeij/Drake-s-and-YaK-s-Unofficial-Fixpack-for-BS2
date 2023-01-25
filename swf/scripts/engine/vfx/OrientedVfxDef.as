@@ -34,7 +34,7 @@ package engine.vfx
       
       public function getVfx(param1:IAnimFacing) : String
       {
-         var _loc2_:String = this.vfxByFacing[param1];
+         var _loc2_:String = String(this.vfxByFacing[param1]);
          if(_loc2_)
          {
             return _loc2_;

@@ -92,7 +92,7 @@ package engine.battle.fsm.aimodule
             _loc8_ = _loc5_.getExertionRequiredForMove(param3.numSteps - 1);
             _loc6_ += _loc8_ * AiPlanConsts.WEIGHT_STAR_MOVE;
          }
-         return _loc4_ + MathUtil.lerp(-_loc6_,_loc6_,param1.desperation);
+         return int(_loc4_ + MathUtil.lerp(-_loc6_,_loc6_,param1.desperation));
       }
       
       public static function computePositionalEnemyWeight(param1:AiModuleBase, param2:IBattleAbilityDef, param3:TileLocation, param4:BattleEntity) : int

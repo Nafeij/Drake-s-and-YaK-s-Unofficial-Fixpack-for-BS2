@@ -81,7 +81,7 @@ package engine.battle.ability.effect.op.model
          this.move.reactToEntityIntersect = true;
          this.move.changeFacing = this.changeFacing;
          var _loc1_:* = this.caster.y == this.destinationY;
-         var _loc2_:int = _loc1_ ? this.destinationX - Number(this.caster.x) : this.destinationY - Number(this.caster.y);
+         var _loc2_:int = _loc1_ ? int(this.destinationX - this.caster.x) : int(this.destinationY - this.caster.y);
          var _loc3_:int = _loc2_ > 0 ? 1 : -1;
          var _loc4_:int = _loc3_;
          while(_loc2_ != 0)

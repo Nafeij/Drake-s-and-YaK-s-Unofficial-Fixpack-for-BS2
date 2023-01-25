@@ -44,7 +44,7 @@ package game.cfg
             logger.info("Usage: list");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc5_:Vector.<Resource> = this.config.resman.listResources(IsoAnimLibraryResource);
          if(_loc3_ == "list")
          {

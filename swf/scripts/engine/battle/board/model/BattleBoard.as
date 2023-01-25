@@ -488,7 +488,7 @@ package engine.battle.board.model
       
       public function getDebugEntityList() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:* = "";
          for(_loc2_ in this._entities)
          {
@@ -1178,7 +1178,7 @@ package engine.battle.board.model
       public function getEntityByDefId(param1:String, param2:TileRect, param3:Boolean) : IBattleEntity
       {
          var _loc4_:IBattleEntity = null;
-         var _loc8_:* = null;
+         var _loc8_:String = null;
          var _loc9_:IBattleEntity = null;
          var _loc10_:int = 0;
          if(!param2)
@@ -1441,7 +1441,7 @@ package engine.battle.board.model
       
       public function performBattleUnitEnable(param1:String, param2:Boolean) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc3_:IBattleEntity = this.getEntity(param1);
          if(_loc3_)
          {

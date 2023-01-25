@@ -124,7 +124,7 @@ package engine.saga.action
          var _loc5_:int = param1 * CASUALTY_MAX_FACTOR;
          var _loc6_:int = param1 * CASUALTY_BASE_FACTOR;
          var _loc7_:int = _loc3_ * POWER_CASUALTY_FACTOR;
-         return Math.max(_loc4_,Math.min(_loc5_,_loc6_ + _loc7_));
+         return int(Math.max(_loc4_,Math.min(_loc5_,_loc6_ + _loc7_)));
       }
       
       private function _computeClansmanCasualtyNumber() : int
@@ -137,7 +137,7 @@ package engine.saga.action
          var _loc6_:int = 0;
          var _loc7_:int = _loc3_ * CASUALTY_CLAN_MAX_FACTOR;
          var _loc8_:int = _loc4_ * POWER_CASUALTY_CLAN_FACTOR;
-         return Math.max(_loc5_,Math.min(_loc7_,_loc6_ + _loc8_));
+         return int(Math.max(_loc5_,Math.min(_loc7_,_loc6_ + _loc8_)));
       }
       
       public function determineWarOutcome(param1:WarOutcome) : BattleFinishedData

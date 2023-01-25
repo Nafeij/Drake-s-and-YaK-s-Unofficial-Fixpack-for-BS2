@@ -288,8 +288,8 @@ package engine.saga
             _loc8_ = param2.global;
             for each(_loc3_ in this.globalVars)
             {
-               _loc4_ = _loc3_.src;
-               _loc5_ = _loc3_.dst;
+               _loc4_ = String(_loc3_.src);
+               _loc5_ = String(_loc3_.dst);
                _loc9_ = Boolean(_loc3_.negate);
                _loc10_ = param1.globalVars[_loc4_];
                _loc11_ = _loc8_.fromDictionaryKey(_loc4_,_loc5_,param1.globalVars,_loc6_,_loc9_);
@@ -308,8 +308,8 @@ package engine.saga
          {
             for each(_loc3_ in this.caravans)
             {
-               _loc4_ = _loc3_.src;
-               _loc5_ = _loc3_.dst;
+               _loc4_ = String(_loc3_.src);
+               _loc5_ = String(_loc3_.dst);
                _loc12_ = param1.caravansByName[_loc4_];
                if(!_loc12_)
                {

@@ -292,7 +292,7 @@ package engine.entity.def
                }
                else
                {
-                  _loc3_ = this.passive_abl.descriptionBrief;
+                  _loc3_ = String(this.passive_abl.descriptionBrief);
                }
             }
          }

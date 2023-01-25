@@ -40,7 +40,7 @@ package com.greensock.plugins
          }
          else
          {
-            _loc6_ = _loc4_.length;
+            _loc6_ = int(_loc4_.length);
             while(_loc6_--)
             {
                if(_loc4_[_loc6_] is this._type)
@@ -52,7 +52,7 @@ package com.greensock.plugins
          }
          if(this._index == -1 || _loc4_[this._index] == null || _loc8_.addFilter == true)
          {
-            this._index = _loc8_.index != null ? int(_loc8_.index) : _loc4_.length;
+            this._index = _loc8_.index != null ? int(_loc8_.index) : int(_loc4_.length);
             _loc4_[this._index] = param2;
             this._target.filters = _loc4_;
          }
@@ -62,10 +62,10 @@ package com.greensock.plugins
             this._remove = true;
             this.onComplete = this.onCompleteTween;
          }
-         _loc6_ = param3.length;
+         _loc6_ = int(param3.length);
          while(_loc6_--)
          {
-            _loc5_ = param3[_loc6_];
+            _loc5_ = String(param3[_loc6_]);
             if(_loc5_ in param1 && this._filter[_loc5_] != param1[_loc5_])
             {
                if(_loc5_ == "color" || _loc5_ == "highlightColor" || _loc5_ == "shadowColor")
@@ -95,7 +95,7 @@ package com.greensock.plugins
             _loc1_ = this._target.filters;
             if(!(_loc1_[this._index] is this._type))
             {
-               _loc2_ = _loc1_.length;
+               _loc2_ = int(_loc1_.length);
                while(_loc2_--)
                {
                   if(_loc1_[_loc2_] is this._type)
@@ -116,7 +116,7 @@ package com.greensock.plugins
       override public function set changeFactor(param1:Number) : void
       {
          var _loc3_:PropTween = null;
-         var _loc2_:int = _tweens.length;
+         var _loc2_:int = int(_tweens.length);
          var _loc4_:Array = this._target.filters;
          while(_loc2_--)
          {

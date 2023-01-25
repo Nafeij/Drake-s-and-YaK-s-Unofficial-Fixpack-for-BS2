@@ -33,7 +33,7 @@ package engine.battle.ability.effect.op.model
          }
          var _loc1_:IEntityDef = target.def;
          var _loc2_:Stats = target.stats;
-         _loc2_.setBase(StatType.STRENGTH,Number(_loc1_.stats.getValue(StatType.STRENGTH)) / 2);
+         _loc2_.setBase(StatType.STRENGTH,_loc1_.stats.getValue(StatType.STRENGTH) / 2);
          _loc2_.setBase(StatType.WILLPOWER,caster.stats.getValue(StatType.WILLPOWER));
          var _loc3_:BattleEntity = target as BattleEntity;
          _loc3_.active = true;

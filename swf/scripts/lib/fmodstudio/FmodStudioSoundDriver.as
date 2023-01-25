@@ -356,7 +356,7 @@ package lib.fmodstudio
          {
             return;
          }
-         var _loc2_:String = this._playing[param1];
+         var _loc2_:String = String(this._playing[param1]);
          if(_loc2_)
          {
             if(_debug && this.logger.isDebugEnabled)
@@ -479,7 +479,7 @@ package lib.fmodstudio
       
       public function checkPlaying() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:ISoundEventId = null;
          var _loc3_:int = 0;
          var _loc4_:int = 0;
@@ -606,9 +606,9 @@ package lib.fmodstudio
       private function eventCallbackHandler(param1:String) : void
       {
          var _loc2_:Array = param1.split(" ");
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : "<unknown systemid>";
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : "<unknown systemid>";
          var _loc4_:int = _loc2_.length > 2 ? int(_loc2_[2]) : 0;
-         var _loc5_:String = _loc4_ >= 0 && _loc4_ < this.fmod_event_callbacktype.length ? this.fmod_event_callbacktype[_loc4_] : null;
+         var _loc5_:String = _loc4_ >= 0 && _loc4_ < this.fmod_event_callbacktype.length ? String(this.fmod_event_callbacktype[_loc4_]) : null;
          var _loc6_:* = _loc2_.length > 3 ? _loc2_[3] : null;
          var _loc7_:* = _loc2_.length > 4 ? _loc2_[4] : null;
          this.logger.info("FMOD event_callback " + _loc3_ + " " + _loc5_ + " " + _loc6_ + " " + _loc7_);

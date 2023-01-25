@@ -150,7 +150,7 @@ class SagaLogEntry
    {
       var _loc3_:String = "";
       var _loc4_:int = param2 / 1000;
-      var _loc5_:int = Number(_reportLastTime) / 1000;
+      var _loc5_:int = _reportLastTime / 1000;
       _loc3_ += _reportLastFrame != param1 ? "=" : " ";
       _loc3_ += StringUtil.padLeft(param1.toString()," ",6) + " ";
       _loc3_ += _loc4_ != _loc5_ ? "_" : " ";
@@ -167,7 +167,7 @@ class SagaLogEntry
       var _loc8_:SagaLogEntry = null;
       var _loc9_:SagaLogEntry = null;
       var _loc3_:String = "";
-      var _loc4_:String = this._makeTimestamp(this.frameStart,this.timeStart);
+      var _loc4_:String = String(this._makeTimestamp(this.frameStart,this.timeStart));
       if(this.frameEnd == this.frameStart)
       {
          if(!this.children)
@@ -210,7 +210,7 @@ class SagaLogEntry
       }
       if(this.frameEnd)
       {
-         _loc4_ = this._makeTimestamp(this.frameEnd,this.timeEnd);
+         _loc4_ = String(this._makeTimestamp(this.frameEnd,this.timeEnd));
          _loc3_ += _loc4_ + param1 + "<   END " + this.msg + "\n";
       }
       return _loc3_;

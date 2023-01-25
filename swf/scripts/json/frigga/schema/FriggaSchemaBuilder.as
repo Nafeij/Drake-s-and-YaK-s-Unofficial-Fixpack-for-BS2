@@ -25,7 +25,7 @@ package json.frigga.schema
       
       public function extractPropertyDescriptorsFrom(param1:Object) : FriggaSchemaBuilder
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:FriggaPropertyDescriptor = null;
          var _loc2_:Object = this.extractValueFromObject(param1,"properties");
          var _loc3_:Dictionary = new Dictionary();

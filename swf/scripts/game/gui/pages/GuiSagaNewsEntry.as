@@ -227,7 +227,7 @@ package game.gui.pages
          {
             if(_loc2_.label == param1)
             {
-               _loc3_ = _loc2_.hyperlink;
+               _loc3_ = String(_loc2_.hyperlink);
                if(_loc3_)
                {
                   _loc4_ = new URLRequest(_loc3_);

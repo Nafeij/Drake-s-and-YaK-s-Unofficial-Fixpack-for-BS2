@@ -51,7 +51,7 @@ package engine.core.logging
          {
             param1 += StringUtil.repeat(" ",_loc2_);
          }
-         var _loc3_:* = _catStrings[param1];
+         var _loc3_:* = String(_catStrings[param1]);
          if(!_loc3_)
          {
             _loc3_ = "(" + param1 + ") ";

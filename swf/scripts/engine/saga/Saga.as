@@ -822,7 +822,7 @@ package engine.saga
       
       private function checkCensorVars() : void
       {
-         var _loc1_:String = !!this.resman ? this.resman.censorId : null;
+         var _loc1_:String = String(!!this.resman ? this.resman.censorId : null);
          if(!_loc1_)
          {
             this.logger.i("CENS","Saga null censor id, no variable possible");
@@ -2214,7 +2214,7 @@ package engine.saga
       
       public function triggerBattleUnitAttacked(param1:IBattleEntity, param2:IBattleEntity) : void
       {
-         var _loc3_:String = param2.def.entityClass.race;
+         var _loc3_:String = String(param2.def.entityClass.race);
          if(param1.def.id == "alette" && (_loc3_ == "human" || _loc3_ == "varl"))
          {
             if(!this.inTrainingBattle)
@@ -4094,7 +4094,7 @@ package engine.saga
             if(!(_loc3_.ended || _loc3_ == param1 || _loc3_.def.allow_saves))
             {
                _loc4_ = !!_loc3_.def ? _loc3_.def.id : "UNKNOWN";
-               _loc5_ = Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN";
+               _loc5_ = String(Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN");
                _loc6_ = Boolean(_loc3_.action) && Boolean(_loc3_.action.def) ? _loc3_.action.def.labelString : "UNKNOWN";
                this.cannotSaveReason = "happening: [" + _loc4_ + "] action [ " + _loc6_ + "] in [" + _loc5_ + "] bag";
                return false;
@@ -5642,7 +5642,7 @@ package engine.saga
          _loc3_--;
          _loc4_--;
          var _loc5_:Vector.<ItemDef> = this.generateRandomItemList(_loc3_,_loc4_);
-         var _loc6_:int = _loc5_.length;
+         var _loc6_:int = int(_loc5_.length);
          if(_loc6_ <= 0)
          {
             return null;
@@ -5661,7 +5661,7 @@ package engine.saga
             return null;
          }
          var _loc3_:Vector.<ItemDef> = this.def.itemDefs.marketitems.concat();
-         var _loc4_:int = _loc3_.length;
+         var _loc4_:int = int(_loc3_.length);
          if(_loc4_ <= 0)
          {
             return _loc3_;
@@ -5671,7 +5671,7 @@ package engine.saga
          var _loc7_:Dictionary = new Dictionary();
          this.removeOwnedItems(_loc7_);
          var _loc9_:Vector.<ItemDef> = new Vector.<ItemDef>();
-         var _loc10_:int = _loc3_.length;
+         var _loc10_:int = int(_loc3_.length);
          var _loc11_:int = 0;
          while(_loc11_ < _loc10_)
          {

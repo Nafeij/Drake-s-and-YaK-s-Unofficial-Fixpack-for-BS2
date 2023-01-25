@@ -99,7 +99,7 @@ package engine.gui
       
       public static function handlePrimaryDeviceChanged() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:GuiGpBitmap = null;
          var _loc4_:GpControlButton = null;
          var _loc5_:BitmapData = null;

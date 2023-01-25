@@ -22,7 +22,7 @@ package com.sociodox.theminer.window
          Cc.config.commandLineAllowed = true;
          Cc.y = 17;
          Cc.width = Stage2D.stageWidth;
-         Cc.height = Number(Stage2D.stageHeight) - 17;
+         Cc.height = Stage2D.stageHeight - 17;
          Analytics.Track("Tab","Console","Console Enter");
       }
       

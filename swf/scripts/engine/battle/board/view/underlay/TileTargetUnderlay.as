@@ -96,7 +96,7 @@ package engine.battle.board.view.underlay
          var _loc1_:DisplayObjectWrapper = null;
          var _loc2_:BattleAbility = null;
          var _loc4_:Tile = null;
-         var _loc5_:* = null;
+         var _loc5_:Object = null;
          if(!view || !view.underlay || !view.underlay.tilesUnderlay || !view.bitmapPool)
          {
             return;

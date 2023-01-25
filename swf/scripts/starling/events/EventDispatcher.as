@@ -45,7 +45,7 @@ package starling.events
          if(this.mEventListeners)
          {
             _loc3_ = this.mEventListeners[param1] as Vector.<Function>;
-            _loc4_ = !!_loc3_ ? _loc3_.length : 0;
+            _loc4_ = !!_loc3_ ? int(_loc3_.length) : 0;
             if(_loc4_ > 0)
             {
                _loc5_ = 0;
@@ -106,7 +106,7 @@ package starling.events
          var _loc5_:Function = null;
          var _loc6_:int = 0;
          var _loc2_:Vector.<Function> = !!this.mEventListeners ? this.mEventListeners[param1.type] as Vector.<Function> : null;
-         var _loc3_:int = _loc2_ == null ? 0 : _loc2_.length;
+         var _loc3_:int = _loc2_ == null ? 0 : int(_loc2_.length);
          if(_loc3_)
          {
             param1.setCurrentTarget(this);

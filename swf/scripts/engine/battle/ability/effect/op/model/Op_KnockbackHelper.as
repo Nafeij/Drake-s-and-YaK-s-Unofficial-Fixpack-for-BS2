@@ -32,8 +32,8 @@ package engine.battle.ability.effect.op.model
             param4.logger.info("using KNOCKBACK_DEFERRED " + _loc7_ + " on target " + param4);
             _loc6_ += _loc7_;
          }
-         var _loc8_:int = Number(param4.centerX) - param3.center.x;
-         var _loc9_:int = Number(param4.centerY) - param3.center.y;
+         var _loc8_:int = param4.centerX - param3.center.x;
+         var _loc9_:int = param4.centerY - param3.center.y;
          if(Math.abs(_loc8_) > Math.abs(_loc9_))
          {
             _loc9_ = 0;

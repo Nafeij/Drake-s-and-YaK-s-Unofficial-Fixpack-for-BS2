@@ -142,7 +142,7 @@ package lib.engine.resource.air
          var _loc3_:uint = 0;
          var _loc1_:ByteArray = new ByteArray();
          _loc1_.endian = Endian.LITTLE_ENDIAN;
-         var _loc2_:Number = Number(this.zipFile.size) - 22;
+         var _loc2_:Number = this.zipFile.size - 22;
          while(_loc2_ >= 0)
          {
             this.zipStream.position = _loc2_;
@@ -312,7 +312,7 @@ package lib.engine.resource.air
          _loc3_.position = 28;
          var _loc8_:int = _loc3_.readShort();
          _loc6_ += _loc8_;
-         var _loc9_:uint = _loc4_ + _loc6_;
+         var _loc9_:uint = uint(_loc4_ + _loc6_);
          var _loc10_:ZipFileResourceFileInfo = new ZipFileResourceFileInfo(_loc9_,this.compressedSize,this.uncompressedSize,this.compressionMethod);
          if(param2)
          {

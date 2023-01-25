@@ -25,7 +25,7 @@ package engine.saga
       
       private function shellFuncAbList(param1:CmdExec) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:SagaAssetBundle = null;
          var _loc2_:SagaAssetBundles = this.saga.sagaAssetBundles;
          for(_loc3_ in _loc2_.bundles)
@@ -43,7 +43,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id> (. for auto id)");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          if(_loc3_ == ".")
          {
             _loc3_ = null;
@@ -61,7 +61,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:SagaAssetBundles = this.saga.sagaAssetBundles;
          _loc4_.removeSagaAssetBundle(_loc3_);
       }
@@ -74,8 +74,8 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id> <url>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
-         var _loc4_:String = _loc2_[2];
+         var _loc3_:String = String(_loc2_[1]);
+         var _loc4_:String = String(_loc2_[2]);
          var _loc5_:SagaAssetBundles = this.saga.sagaAssetBundles;
          var _loc6_:SagaAssetBundle = _loc5_.getSagaAssetBundle(_loc3_);
          if(!_loc6_)

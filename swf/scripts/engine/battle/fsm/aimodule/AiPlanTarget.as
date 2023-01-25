@@ -152,7 +152,7 @@ package engine.battle.fsm.aimodule
          _loc3_ += _loc2_.getValue(StatType.WILLPOWER) / 3;
          _loc3_ += _loc2_.getValue(StatType.STRENGTH);
          _loc3_ += _loc2_.getValue(StatType.ARMOR_BREAK);
-         return _loc3_ + _loc2_.getValue(StatType.ARMOR) / 2;
+         return int(_loc3_ + _loc2_.getValue(StatType.ARMOR) / 2);
       }
       
       private function computeWeight() : void

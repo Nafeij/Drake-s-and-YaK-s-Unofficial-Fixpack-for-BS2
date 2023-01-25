@@ -92,7 +92,7 @@ package starling.animation
          return param1;
       }
       
-      starling_internal internal static function fromPool(param1:Object, param2:Number, param3:Object = "linear") : Tween
+      starling_internal static function fromPool(param1:Object, param2:Number, param3:Object = "linear") : Tween
       {
          if(sTweenPool.length)
          {
@@ -101,7 +101,7 @@ package starling.animation
          return new Tween(param1,param2,param3);
       }
       
-      starling_internal internal static function toPool(param1:Tween) : void
+      starling_internal static function toPool(param1:Tween) : void
       {
          param1.mOnStart = param1.mOnUpdate = param1.mOnRepeat = param1.mOnComplete = null;
          param1.mOnStartArgs = param1.mOnUpdateArgs = param1.mOnRepeatArgs = param1.mOnCompleteArgs = null;
@@ -177,7 +177,7 @@ package starling.animation
          {
             return;
          }
-         var _loc3_:int = this.mProperties.length;
+         var _loc3_:int = int(this.mProperties.length);
          var _loc4_:Function = this.getUpdateFuncFromProperty(param1);
          this.mProperties[_loc3_] = getPropertyName(param1);
          this.mStartValues[_loc3_] = Number.NaN;
@@ -239,7 +239,7 @@ package starling.animation
          }
          var _loc6_:Number = this.mCurrentTime / this.mTotalTime;
          var _loc7_:Boolean = this.mReverse && this.mCurrentCycle % 2 == 1;
-         var _loc8_:int = this.mStartValues.length;
+         var _loc8_:int = int(this.mStartValues.length);
          this.mProgress = _loc7_ ? this.mTransitionFunc(1 - _loc6_) : this.mTransitionFunc(_loc6_);
          _loc2_ = 0;
          while(_loc2_ < _loc8_)
@@ -326,14 +326,14 @@ package starling.animation
       {
          var _loc4_:uint = uint(param2);
          var _loc5_:uint = uint(param3);
-         var _loc6_:uint = _loc4_ >> 24 & 255;
-         var _loc7_:uint = _loc4_ >> 16 & 255;
-         var _loc8_:uint = _loc4_ >> 8 & 255;
-         var _loc9_:uint = _loc4_ & 255;
-         var _loc10_:uint = _loc5_ >> 24 & 255;
-         var _loc11_:uint = _loc5_ >> 16 & 255;
-         var _loc12_:uint = _loc5_ >> 8 & 255;
-         var _loc13_:uint = _loc5_ & 255;
+         var _loc6_:uint = uint(_loc4_ >> 24 & 255);
+         var _loc7_:uint = uint(_loc4_ >> 16 & 255);
+         var _loc8_:uint = uint(_loc4_ >> 8 & 255);
+         var _loc9_:uint = uint(_loc4_ & 255);
+         var _loc10_:uint = uint(_loc5_ >> 24 & 255);
+         var _loc11_:uint = uint(_loc5_ >> 16 & 255);
+         var _loc12_:uint = uint(_loc5_ >> 8 & 255);
+         var _loc13_:uint = uint(_loc5_ & 255);
          var _loc14_:uint = _loc6_ + (_loc10_ - _loc6_) * this.mProgress;
          var _loc15_:uint = _loc7_ + (_loc11_ - _loc7_) * this.mProgress;
          var _loc16_:uint = _loc8_ + (_loc12_ - _loc8_) * this.mProgress;

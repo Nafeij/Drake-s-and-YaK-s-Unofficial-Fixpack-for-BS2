@@ -613,7 +613,7 @@ package game.cfg
                   {
                      map = mod.root + "/" + f;
                      remap = this.mod_remapping[f];
-                     other = remap.other;
+                     other = String(remap.other);
                      if(remap)
                      {
                         this.context.logger.error("GameConfig.preloadMods incompatible mod [" + mod_root + "] conflicts with [" + other + "] on file [" + f + "]");

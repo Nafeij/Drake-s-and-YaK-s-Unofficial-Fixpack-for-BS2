@@ -36,7 +36,7 @@ package air.fmodstudio.ane
          {
             return "<invalid number of event id bytes: " + param1.length + ">";
          }
-         var _loc3_:* = Number(param1[16]) << 24 | Number(param1[17]) << 16 | Number(param1[18]) << 8 | Number(param1[19]);
+         var _loc3_:* = param1[16] << 24 | param1[17] << 16 | param1[18] << 8 | param1[19];
          if(param2)
          {
             _loc4_ = "{";

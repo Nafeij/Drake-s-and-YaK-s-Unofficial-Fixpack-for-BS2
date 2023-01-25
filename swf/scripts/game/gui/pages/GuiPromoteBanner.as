@@ -121,7 +121,7 @@ package game.gui.pages
       private function localeHandler(param1:GuiContextEvent) : void
       {
          this.gp_x.x = this._cross.x - this._cross.width - this.gp_x.width;
-         var _loc2_:int = !!this._text$promote ? this._text$promote.height : 0;
+         var _loc2_:int = !!this._text$promote ? int(this._text$promote.height) : 0;
          this.gp_x.y = this._text$promote.y + _loc2_ - this.gp_x.height;
          if(this._text$promote)
          {

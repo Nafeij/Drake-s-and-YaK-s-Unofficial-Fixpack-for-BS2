@@ -371,7 +371,7 @@ package game.gui.battle
             }
             this._tooltip_miss_shown_this_battle = true;
             this._tooltip_miss_ok = true;
-            _loc3_ = _context.translateCategory("tut_tip_miss",LocaleCategory.TUTORIAL);
+            _loc3_ = String(_context.translateCategory("tut_tip_miss",LocaleCategory.TUTORIAL));
             this._tooltip_miss = _context.createTutorialPopup(this._buttonStr._missText,_loc3_,TutorialTooltipAlign.RIGHT,TutorialTooltipAnchor.RIGHT,true,false,null);
             _context.setTutorialTooltipNeverClamp(this._tooltip_miss,true);
          }

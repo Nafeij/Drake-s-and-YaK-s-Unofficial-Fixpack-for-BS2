@@ -107,7 +107,7 @@ package engine.anim.def
       
       public function get numEvents() : int
       {
-         return !!this._events ? this._events.length : 0;
+         return !!this._events ? int(this._events.length) : 0;
       }
       
       public function cleanup() : void
@@ -158,7 +158,7 @@ package engine.anim.def
       
       public function get numChildren() : int
       {
-         return !!this.children ? this.children.length : 0;
+         return !!this.children ? int(this.children.length) : 0;
       }
       
       public function getClipChild(param1:int) : AnimClipChildDef
@@ -408,7 +408,7 @@ package engine.anim.def
          var _loc6_:int = 0;
          if(_loc4_)
          {
-            _loc9_ = param1.readUnsignedByte();
+            _loc9_ = int(param1.readUnsignedByte());
             _loc6_ = 0;
             while(_loc6_ < _loc9_)
             {
@@ -420,7 +420,7 @@ package engine.anim.def
          }
          if(_loc5_)
          {
-            _loc11_ = param1.readUnsignedByte();
+            _loc11_ = int(param1.readUnsignedByte());
             this.children = new Vector.<AnimClipChildDef>(_loc11_);
             _loc6_ = 0;
             while(_loc6_ < _loc11_)
@@ -431,8 +431,8 @@ package engine.anim.def
                _loc6_++;
             }
          }
-         var _loc7_:int = !!this.children ? this.children.length : 0;
-         var _loc8_:int = param1.readUnsignedShort();
+         var _loc7_:int = !!this.children ? int(this.children.length) : 0;
+         var _loc8_:int = int(param1.readUnsignedShort());
          if(_loc8_)
          {
             this._frames = new Vector.<AnimFrame>(_loc8_);
@@ -530,7 +530,7 @@ package engine.anim.def
          {
             throw new ArgumentError("Too many frames: " + this._frames.length);
          }
-         param1.writeShort(!!this._frames ? this._frames.length : 0);
+         param1.writeShort(!!this._frames ? int(this._frames.length) : 0);
          if(this._frames)
          {
             _loc4_ = 0;

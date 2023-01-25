@@ -24,7 +24,7 @@ package engine.battle.fsm
       
       public function setupTeams(param1:int) : void
       {
-         var _loc2_:int = this.rewards.length;
+         var _loc2_:int = int(this.rewards.length);
          while(_loc2_ < param1)
          {
             this.rewards.push(new BattleRewardData());

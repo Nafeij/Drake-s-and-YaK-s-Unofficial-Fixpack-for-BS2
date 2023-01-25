@@ -94,12 +94,12 @@ package engine.battle.ability.effect.op.def
          this.responseCaster = BattleAbilityResponseTargetType.CASTER;
          super();
          EffectDefOpVars.parse(this,param1,param2,schema);
-         var _loc3_:String = param1.params.responseTarget;
+         var _loc3_:String = String(param1.params.responseTarget);
          if(_loc3_)
          {
             this.responseTarget = Enum.parse(BattleAbilityResponseTargetType,_loc3_) as BattleAbilityResponseTargetType;
          }
-         var _loc4_:String = param1.params.responseCaster;
+         var _loc4_:String = String(param1.params.responseCaster);
          if(_loc4_)
          {
             this.responseCaster = Enum.parse(BattleAbilityResponseTargetType,_loc4_) as BattleAbilityResponseTargetType;
@@ -127,7 +127,7 @@ package engine.battle.ability.effect.op.def
             this.mustHaveAbility = new Vector.<Boolean>();
             for each(_loc2_ in params.random)
             {
-               _loc3_ = _loc2_.ability;
+               _loc3_ = String(_loc2_.ability);
                _loc4_ = Number(_loc2_.weight);
                _loc5_ = Boolean(_loc2_.entityMustHaveAbility);
                _loc6_ = param1.fetchIBattleAbilityDef(_loc3_) as BattleAbilityDef;

@@ -549,7 +549,6 @@ package game.view
                      this.arrow.rotation = 180;
                      break;
                   case TutorialTooltipAlign.CENTER:
-                     break;
                   case TutorialTooltipAlign.NONE:
                }
             }

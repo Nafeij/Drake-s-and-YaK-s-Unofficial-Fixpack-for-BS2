@@ -56,7 +56,7 @@ package engine.resource.def
          var _loc3_:String = null;
          if(this.jo)
          {
-            _loc1_ = this.jo.resourceClass;
+            _loc1_ = String(this.jo.resourceClass);
             _loc2_ = !!_loc1_ ? getDefinitionByName(_loc1_) as Class : DefResource;
             if(this.jo.resources != undefined)
             {

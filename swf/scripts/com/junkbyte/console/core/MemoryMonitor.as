@@ -57,7 +57,7 @@ package com.junkbyte.console.core
       
       public function unwatch(param1:String) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          for(_loc2_ in this._objectsList)
          {
             if(this._objectsList[_loc2_] == param1)
@@ -74,8 +74,8 @@ package com.junkbyte.console.core
       
       public function update() : void
       {
-         var _loc3_:* = null;
-         var _loc4_:* = null;
+         var _loc3_:Object = null;
+         var _loc4_:String = null;
          if(this._count == 0)
          {
             return;

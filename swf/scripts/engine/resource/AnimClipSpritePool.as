@@ -162,7 +162,7 @@ package engine.resource
       
       public function update(param1:int) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:DisplayObjectWrapper = null;
          var _loc4_:XAnimClipSpriteBase = null;
          if(this.autoDriving)

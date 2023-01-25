@@ -409,7 +409,7 @@ package engine.saga.save
          }
          if(SAVE_HASH_ENABLED)
          {
-            md5_actual = r["_"];
+            md5_actual = String(r["_"]);
             delete r["_"];
             ss = StableJson.stringifyObject(r," ");
             md5_expected = MD5.hash(ss);
@@ -445,7 +445,7 @@ package engine.saga.save
          var o:Object = param2;
          if(SAVE_HASH_ENABLED)
          {
-            oldmd5 = o["_"];
+            oldmd5 = String(o["_"]);
             if(oldmd5 != "ignore")
             {
                delete o["_"];

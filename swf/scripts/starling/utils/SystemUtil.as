@@ -53,7 +53,7 @@ package starling.utils
             nativeApp.addEventListener(Event.DEACTIVATE,onDeactivate,false,0,true);
             appDescriptor = nativeApp["applicationDescriptor"];
             ns = appDescriptor.namespace();
-            ds = appDescriptor.ns::initialWindow.ns::depthAndStencil.toString().toLowerCase();
+            ds = String(appDescriptor.ns::initialWindow.ns::depthAndStencil.toString().toLowerCase());
             sSupportsDepthAndStencil = ds == "true";
             sAIR = true;
          }

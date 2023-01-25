@@ -368,7 +368,7 @@ package as3isolib.core
       
       private function createObjectFromDescriptor(param1:Object) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          for(_loc2_ in param1)
          {
             if(this.hasOwnProperty(_loc2_))

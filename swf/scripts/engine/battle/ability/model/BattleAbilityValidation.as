@@ -271,8 +271,8 @@ package engine.battle.ability.model
             return null;
          }
          var _loc3_:IBattleBoard = param1.board;
-         var _loc5_:int = Number(param1.x) - param2.x;
-         var _loc6_:int = Number(param1.y) - param2.y;
+         var _loc5_:int = param1.x - param2.x;
+         var _loc6_:int = param1.y - param2.y;
          var _loc7_:BattleFacing = BattleFacing.findFacing(_loc5_,_loc6_);
          if(_checkTileTail(_loc3_,param2,_loc7_))
          {

@@ -88,7 +88,7 @@ package game.gui.page
       
       public function update(param1:int) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          for(_loc2_ in this.anchor2talkies)
          {
             this.updateAnchor(_loc2_);
@@ -261,7 +261,7 @@ package game.gui.page
             return;
          }
          var _loc2_:IEntityDef = (param1.target as IGuiCharacterIconSlot).character;
-         var _loc3_:String = _loc2_.id;
+         var _loc3_:String = String(_loc2_.id);
          var _loc4_:IVariable = _loc2_.vars.fetch(SagaVar.VAR_UNIT_TALK,null);
          _loc4_.asAny = 0;
          this.saga.triggerTalk(_loc3_);
@@ -310,7 +310,7 @@ package game.gui.page
       private function hideTalkie(param1:IEntityDef) : void
       {
          var _loc3_:IGuiCharacterIconSlot = null;
-         var _loc2_:String = this.entity2anchors[param1.id];
+         var _loc2_:String = String(this.entity2anchors[param1.id]);
          if(_loc2_)
          {
             _loc3_ = this.anchor2talkies[_loc2_];
@@ -378,7 +378,7 @@ package game.gui.page
       
       public function gpPointerHandler() : void
       {
-         var _loc7_:* = null;
+         var _loc7_:String = null;
          var _loc8_:IGuiCharacterIconSlot = null;
          if(!this.controller || !this.controller.gpPointerAllowHover)
          {
@@ -424,7 +424,7 @@ package game.gui.page
       {
          var _loc5_:IGuiCharacterIconSlot = null;
          var _loc8_:IGuiCharacterIconSlot = null;
-         var _loc9_:* = null;
+         var _loc9_:String = null;
          var _loc10_:IGuiCharacterIconSlot = null;
          var _loc11_:MovieClip = null;
          var _loc12_:Point = null;
@@ -470,7 +470,7 @@ package game.gui.page
       {
          var _loc5_:IGuiCharacterIconSlot = null;
          var _loc8_:IGuiCharacterIconSlot = null;
-         var _loc9_:* = null;
+         var _loc9_:String = null;
          var _loc10_:IGuiCharacterIconSlot = null;
          var _loc11_:MovieClip = null;
          var _loc12_:Point = null;

@@ -42,7 +42,7 @@ package engine.saga
             logger.info("Usage: next <happening id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          for each(_loc4_ in this.saga.happenings)
          {
             if(_loc4_.def.id == _loc3_)
@@ -71,7 +71,7 @@ package engine.saga
             logger.info("Usage: end <happening id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          for each(_loc4_ in this.saga.happenings)
          {
             if(_loc4_.def.id == _loc3_)

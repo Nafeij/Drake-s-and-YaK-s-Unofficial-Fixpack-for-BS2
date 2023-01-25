@@ -108,7 +108,7 @@ package engine.gui
       {
          var _loc3_:Object = null;
          var _loc4_:int = 0;
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          this.id = param1.id;
          if(!param1.text)
          {

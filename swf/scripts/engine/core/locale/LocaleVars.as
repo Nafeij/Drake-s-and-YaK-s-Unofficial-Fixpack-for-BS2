@@ -10,7 +10,7 @@ package engine.core.locale
       
       public function LocaleVars(param1:LocaleId, param2:IGuiGpTextHelperFactory, param3:Object, param4:Class, param5:Boolean, param6:ILogger)
       {
-         var _loc7_:* = null;
+         var _loc7_:String = null;
          var _loc8_:Object = null;
          var _loc9_:LocaleCategory = null;
          var _loc10_:Localizer = null;

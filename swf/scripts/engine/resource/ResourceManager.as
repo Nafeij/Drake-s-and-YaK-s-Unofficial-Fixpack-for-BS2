@@ -329,7 +329,7 @@ package engine.resource
                return this.assetPath + _loc3_;
             }
          }
-         var _loc2_:String = this.remapping[param1];
+         var _loc2_:String = String(this.remapping[param1]);
          if(_loc2_)
          {
             return _loc2_;
@@ -411,7 +411,7 @@ package engine.resource
             }
             this._loading_processing_delay_elapsed = 0;
          }
-         var _loc2_:int = this._loaderCompletedResources.length;
+         var _loc2_:int = int(this._loaderCompletedResources.length);
          if(_loc2_)
          {
             _loc3_ = getTimer();
@@ -450,7 +450,7 @@ package engine.resource
       
       public function purgeUnreferencedResources() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Resource = null;
          var _loc1_:Vector.<Resource> = new Vector.<Resource>();
          for(_loc2_ in this.m_resources)
@@ -480,7 +480,7 @@ package engine.resource
       
       public function listResources(param1:Class) : Vector.<Resource>
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Resource = null;
          var _loc2_:Vector.<Resource> = new Vector.<Resource>();
          for(_loc3_ in this.m_resources)

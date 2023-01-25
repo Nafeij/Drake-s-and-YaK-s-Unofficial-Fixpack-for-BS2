@@ -482,7 +482,7 @@ package com.sociodox.theminer.manager
                         }
                         if(!_loc32_)
                         {
-                           _loc23_ = _loc7_.length;
+                           _loc23_ = int(_loc7_.length);
                            _loc24_ = _loc20_;
                            _loc22_ = 0;
                            while(_loc24_ >= 1)
@@ -531,14 +531,14 @@ package com.sociodox.theminer.manager
                               _loc25_--;
                            }
                            this.tempArrayOut.writeByte(9);
-                           _loc33_ = this.mLineString[_loc2_.size];
+                           _loc33_ = String(this.mLineString[_loc2_.size]);
                            if(_loc33_ == null)
                            {
                               this.mLineString[_loc2_.size] = _loc33_ = String(_loc2_.size);
                            }
                            this.tempArrayOut.writeUTFBytes(_loc33_);
                            this.tempArrayOut.writeByte(9);
-                           _loc16_ = this.mClassNameBuffer[_loc27_];
+                           _loc16_ = String(this.mClassNameBuffer[_loc27_]);
                            if(_loc16_ == null)
                            {
                               this.mClassNameBuffer[_loc27_] = _loc16_ = String(_loc27_);
@@ -570,7 +570,7 @@ package com.sociodox.theminer.manager
                                  if(_loc15_.line > 0)
                                  {
                                     this.tempArrayOut.writeByte(58);
-                                    _loc33_ = this.mLineString[_loc15_.line];
+                                    _loc33_ = String(this.mLineString[_loc15_.line]);
                                     if(_loc33_ == null)
                                     {
                                        this.mLineString[_loc15_.line] = _loc33_ = String(_loc15_.line);
@@ -730,7 +730,7 @@ package com.sociodox.theminer.manager
                               _loc25_--;
                            }
                            this.tempArrayOut.writeByte(9);
-                           _loc37_ = this.mLineString[_loc3_.size];
+                           _loc37_ = String(this.mLineString[_loc3_.size]);
                            if(_loc37_ == null)
                            {
                               this.mLineString[_loc3_.size] = _loc37_ = String(_loc3_.size);
@@ -739,7 +739,7 @@ package com.sociodox.theminer.manager
                            if(_loc4_ != null)
                            {
                               this.tempArrayOut.writeByte(9);
-                              _loc16_ = this.mClassNameBuffer[_loc4_.Type];
+                              _loc16_ = String(this.mClassNameBuffer[_loc4_.Type]);
                               if(_loc16_ == null)
                               {
                                  this.mClassNameBuffer[_loc4_.Type] = _loc16_ = String(_loc4_.Type);
@@ -784,7 +784,7 @@ package com.sociodox.theminer.manager
                }
                else
                {
-                  _loc23_ = _loc7_.length;
+                  _loc23_ = int(_loc7_.length);
                   if(_loc8_)
                   {
                      if(_loc7_ != null)
@@ -855,7 +855,7 @@ package com.sociodox.theminer.manager
                                  if(_loc15_.line > 0)
                                  {
                                     this.tempArrayOut.writeByte(58);
-                                    _loc33_ = this.mLineString[_loc15_.line];
+                                    _loc33_ = String(this.mLineString[_loc15_.line]);
                                     if(_loc33_ == null)
                                     {
                                        this.mLineString[_loc15_.line] = _loc33_ = String(_loc15_.line);
@@ -917,7 +917,7 @@ package com.sociodox.theminer.manager
                      _loc48_ = null;
                      if(_loc48_ == null)
                      {
-                        _loc48_ = _loc7_[_loc23_ - 1].name;
+                        _loc48_ = String(_loc7_[_loc23_ - 1].name);
                      }
                      switch(_loc48_)
                      {

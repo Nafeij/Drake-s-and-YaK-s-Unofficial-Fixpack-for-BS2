@@ -101,7 +101,7 @@ package com.junkbyte.console.core
       
       private function printBinds(... rest) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          report("Key binds:",-2);
          var _loc2_:uint = 0;
          for(_loc3_ in this._binds)

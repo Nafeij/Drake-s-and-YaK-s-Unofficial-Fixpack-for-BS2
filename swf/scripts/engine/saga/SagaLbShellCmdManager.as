@@ -33,7 +33,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <board id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          SagaLeaderboards.fetchLeaderboard(_loc3_);
       }
       
@@ -45,7 +45,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <board id> <score> [force]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:int = int(_loc2_[2]);
          var _loc5_:Boolean = false;
          if(_loc2_.length > 3)
@@ -58,7 +58,7 @@ package engine.saga
       private function shellFuncLbPeek(param1:CmdExec) : void
       {
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:LeaderboardData = SagaLeaderboards.getLeaderboard_friends(_loc3_);
          var _loc5_:LeaderboardData = SagaLeaderboards.getLeaderboard_global(_loc3_);
          logger.info("FRIENDS:\n" + (!!_loc4_ ? _loc4_.getDebugString() : "NULL"));
@@ -73,11 +73,11 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <board id> [<allTime|today|week> [<friends only>]]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:String = "allTime";
          if(_loc2_.length > 2)
          {
-            _loc4_ = _loc2_[2];
+            _loc4_ = String(_loc2_[2]);
          }
          var _loc5_:Boolean = false;
          if(_loc2_.length > 3)

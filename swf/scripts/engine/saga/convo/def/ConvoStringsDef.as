@@ -125,7 +125,7 @@ package engine.saga.convo.def
       public function getStringIdInfos(param1:Vector.<StringIdInfo>, param2:Dictionary, param3:Boolean, param4:LocaleId) : void
       {
          var _loc5_:StringIdInfo = null;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:String = null;
          var _loc11_:StringIdInfo = null;
          var _loc12_:String = null;
@@ -142,7 +142,7 @@ package engine.saga.convo.def
          var _loc10_:Array = [];
          for(_loc6_ in this.stitches)
          {
-            _loc7_ = this.stitches[_loc6_];
+            _loc7_ = String(this.stitches[_loc6_]);
             if(!(!_loc7_ || _loc7_.indexOf("{skip}") >= 0))
             {
                if(param3)
@@ -175,7 +175,7 @@ package engine.saga.convo.def
             for(; _loc15_ < _loc13_.length; _loc15_++)
             {
                _loc16_ = _loc6_ + "[" + _loc15_ + "]" + _loc14_;
-               _loc7_ = _loc13_[_loc15_];
+               _loc7_ = String(_loc13_[_loc15_]);
                if(!(!_loc7_ || _loc7_.indexOf("{skip}") >= 0))
                {
                   if(param3)
@@ -211,7 +211,7 @@ package engine.saga.convo.def
       public function getStitchString(param1:String) : String
       {
          var _loc2_:String = param1;
-         return !!_loc2_ ? this.stitches[_loc2_] : null;
+         return !!_loc2_ ? String(this.stitches[_loc2_]) : null;
       }
       
       public function hasStitch(param1:String) : Boolean
@@ -234,7 +234,7 @@ package engine.saga.convo.def
       
       public function fromJson(param1:Object, param2:ILogger, param3:Boolean) : ConvoStringsDef
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:String = null;
          var _loc6_:Array = null;
          var _loc7_:int = 0;
@@ -243,7 +243,7 @@ package engine.saga.convo.def
          this.urlKey = param1.urlKey;
          for(_loc4_ in param1.stitches)
          {
-            _loc5_ = param1.stitches[_loc4_];
+            _loc5_ = String(param1.stitches[_loc4_]);
             if(param3)
             {
                _loc5_ = ConvoNodeDef.stripText(_loc4_,_loc5_,false);
@@ -258,7 +258,7 @@ package engine.saga.convo.def
                _loc7_ = 0;
                while(_loc7_ < _loc6_.length)
                {
-                  _loc5_ = _loc6_[_loc7_];
+                  _loc5_ = String(_loc6_[_loc7_]);
                   if(param3)
                   {
                      _loc5_ = ConvoNodeDef.parseInkleCodes(_loc5_);
@@ -313,7 +313,7 @@ package engine.saga.convo.def
       
       private function purgeNonGendered(param1:ILogger) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
          var _loc4_:Array = null;
          var _loc5_:Array = null;
@@ -374,7 +374,7 @@ package engine.saga.convo.def
       
       public function save() : Object
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
          var _loc4_:Array = null;
          var _loc1_:Object = {
@@ -385,7 +385,7 @@ package engine.saga.convo.def
          };
          for(_loc2_ in this.stitches)
          {
-            _loc3_ = this.stitches[_loc2_];
+            _loc3_ = String(this.stitches[_loc2_]);
             _loc1_.stitches[_loc2_] = _loc3_;
          }
          for(_loc2_ in this.options)

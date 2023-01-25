@@ -402,7 +402,7 @@ package game.gui.pages
                who = this.determineWho(ss,importing);
                if(who)
                {
-                  who = _context.translateCategory("ent_" + who,LocaleCategory.ENTITY);
+                  who = String(_context.translateCategory("ent_" + who,LocaleCategory.ENTITY));
                }
                try
                {

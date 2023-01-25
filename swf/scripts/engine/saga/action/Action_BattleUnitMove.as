@@ -123,7 +123,7 @@ package engine.saga.action
          var _loc2_:IEntityDef = saga.getCastMember(_loc1_);
          if(_loc2_)
          {
-            _loc1_ = _loc2_.id;
+            _loc1_ = String(_loc2_.id);
          }
          var _loc3_:Boolean = Boolean(def.param) && def.param.indexOf("camera") >= 0;
          var _loc4_:Boolean = Boolean(def.param) && def.param.indexOf("follow") >= 0;

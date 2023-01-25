@@ -95,7 +95,7 @@ package game.gui
          {
             _loc2_ = 16718876;
          }
-         this._battleHudPage.bhpLoadHelper.guihud.initiative.infobar.setEntityName(!!param1 ? param1.name : "",_loc2_);
+         this._battleHudPage.bhpLoadHelper.guihud.initiative.infobar.setEntityName(!!param1 ? String(param1.name) : "",_loc2_);
       }
       
       private function showErrorPage(param1:BattleStateError) : void
@@ -158,7 +158,7 @@ package game.gui
             _loc6_ = _loc4_.id;
             _loc7_ = _loc5_.def.actives;
             _loc8_ = _loc7_.getAbilityDefLevelById(_loc6_);
-            _loc9_ = !!_loc8_ ? Math.min(_loc8_.level,_loc8_.def.maxLevel) : 1;
+            _loc9_ = !!_loc8_ ? int(Math.min(_loc8_.level,_loc8_.def.maxLevel)) : 1;
             _loc1_.showAbilityInfo(_loc4_,_loc9_);
          }
       }

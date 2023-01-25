@@ -91,19 +91,19 @@ package engine.battle.board.view.overlay
          {
             _loc7_ = Op_RunThroughHelper.findLandingTileBehind(_loc3_,_loc3_.rect,_loc5_.rect,true);
             _loc6_ = _loc2_.caster.tile.location;
-            _loc8_ = Number(_loc3_.diameter) / 2;
+            _loc8_ = _loc3_.diameter / 2;
          }
          else if(_loc4_ == BattleAbilityTargetRule.SPECIAL_RUN_TO)
          {
             _loc7_ = Op_RunThroughHelper.findLandingTileBefore(_loc3_,_loc3_.rect,_loc5_.rect,true);
             _loc6_ = _loc2_.caster.tile.location;
-            _loc8_ = Number(_loc3_.diameter) / 2;
+            _loc8_ = _loc3_.diameter / 2;
          }
          else if(_loc4_ == BattleAbilityTargetRule.SPECIAL_TRAMPLE)
          {
             _loc7_ = Op_RunThroughHelper.findLandingTileBehind(_loc3_,_loc3_.rect,_loc5_.rect,false);
             _loc6_ = _loc2_.caster.tile.location;
-            _loc8_ = Number(_loc3_.diameter) / 2;
+            _loc8_ = _loc3_.diameter / 2;
          }
          else
          {
@@ -117,7 +117,7 @@ package engine.battle.board.view.overlay
             }
             _loc7_ = Op_KnockbackHelper.getKnockbackStopTile(_loc2_.def,_loc3_,_loc3_.rect,_loc5_,true);
             _loc6_ = _loc5_.tile.location;
-            _loc8_ = Number(_loc5_.diameter) / 2;
+            _loc8_ = _loc5_.diameter / 2;
          }
          var _loc9_:TileLocation = _loc7_.location;
          var _loc10_:int = _loc9_.x - _loc6_.x;

@@ -70,7 +70,7 @@ package engine.battle.ability.effect.op.model
          }
          if(Boolean(_loc7_) && Boolean(_loc7_.length))
          {
-            _loc14_ = param2.targetSet.targets.length;
+            _loc14_ = int(param2.targetSet.targets.length);
             while(_loc14_ < param2.def.targetCount && Boolean(_loc7_.length))
             {
                _loc15_ = MathUtil.randomInt(0,_loc7_.length - 1);

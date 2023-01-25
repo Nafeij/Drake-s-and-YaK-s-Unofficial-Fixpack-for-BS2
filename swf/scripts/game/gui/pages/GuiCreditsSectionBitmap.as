@@ -69,7 +69,7 @@ package game.gui.pages
          {
             throw new ArgumentError("bmp line does not have size token after a comma: [" + param2 + "]");
          }
-         var _loc7_:String = _loc3_[1];
+         var _loc7_:String = String(_loc3_[1]);
          var _loc8_:Array = _loc7_.split("x");
          if(_loc8_.length < 2)
          {

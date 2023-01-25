@@ -184,7 +184,7 @@ package game.entry
          {
             throw new ArgumentError("FAILED TO FIND SKU IN CONFIG");
          }
-         var _loc1_:String = this.appInfo.ini["locale"];
+         var _loc1_:String = String(this.appInfo.ini["locale"]);
          if(_loc1_)
          {
             this.locale_id = new LocaleId(_loc1_);
@@ -224,7 +224,7 @@ package game.entry
                _loc9_ = _loc8_.split(":");
                if(_loc9_.length == 2)
                {
-                  _loc10_ = _loc9_[0];
+                  _loc10_ = String(_loc9_[0]);
                   _loc11_ = int(_loc9_[1]);
                   VariableDefVars.setSagaVarStartOverride(_loc10_,_loc11_);
                }
@@ -446,7 +446,7 @@ package game.entry
             appInfo.logger.error("Failed to update tweens\n" + e.getStackTrace());
             TweenMax.killAll();
          }
-         wl = this.wrappers.length;
+         wl = int(this.wrappers.length);
          i = 0;
          while(i < wl)
          {

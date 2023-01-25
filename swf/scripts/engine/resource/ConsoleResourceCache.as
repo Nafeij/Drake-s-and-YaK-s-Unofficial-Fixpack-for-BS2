@@ -171,7 +171,7 @@ package engine.resource
             {
                _loc3_ = this.m_numBytes <= MAX_NUM_BYTES;
                _loc5_ = null;
-               _loc6_ = this.m_resources.length - 1;
+               _loc6_ = int(this.m_resources.length - 1);
                while(_loc6_ >= 0)
                {
                   _loc7_ = this.m_resources[_loc6_];

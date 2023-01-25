@@ -25,7 +25,7 @@ package engine.saga
       public function fromBattleEnt(param1:IBattleEntity) : SagaSurvivalRecord_Ent
       {
          this.id = param1.def.id;
-         this.item = !!param1.item ? param1.item.defid : null;
+         this.item = !!param1.item ? String(param1.item.defid) : null;
          this.recordStats(param1.def.stats);
          return this;
       }

@@ -37,8 +37,8 @@ package engine.saga.action
             {
                throw new ArgumentError("invalid token [" + _loc5_ + "] in [" + _loc3_ + "]");
             }
-            _loc7_ = _loc6_[0];
-            _loc8_ = _loc6_[1];
+            _loc7_ = String(_loc6_[0]);
+            _loc8_ = String(_loc6_[1]);
             this.setFromKvp(_loc1_,_loc7_,_loc8_);
          }
          _loc2_.notify();

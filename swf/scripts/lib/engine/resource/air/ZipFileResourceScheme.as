@@ -177,7 +177,7 @@ package lib.engine.resource.air
             else
             {
                _loc7_ = _loc4_[0];
-               _loc8_ = _loc4_[1];
+               _loc8_ = String(_loc4_[1]);
                _loc5_ = _loc7_.loadFile(_loc8_);
                if(_loc5_ != null)
                {
@@ -267,7 +267,7 @@ package lib.engine.resource.air
                _loc6_ = param1.substr(_loc7_ + 1);
             }
             this.copyTo(_loc6_,_loc5_);
-            _loc2_ = _loc5_.url;
+            _loc2_ = String(_loc5_.url);
          }
          return _loc2_;
       }
@@ -340,7 +340,7 @@ package lib.engine.resource.air
             return null;
          }
          zipFile = pathComponents[0];
-         fileName = pathComponents[1];
+         fileName = String(pathComponents[1]);
          result = null;
          try
          {

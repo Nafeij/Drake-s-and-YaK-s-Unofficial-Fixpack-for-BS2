@@ -76,7 +76,7 @@ package game.gui.battle
       
       public function setupAwards(param1:BattleRewardData) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          this.brd = param1;
          this.awardCount = 0;
          if(!param1)
@@ -185,17 +185,17 @@ package game.gui.battle
          var _loc6_:String = this.awardIds[this.currentAwardIndex];
          if(_loc6_ == "bst_rally")
          {
-            _loc1_ = this._context.translate("boost_subcat");
-            _loc2_ = this._context.translate("bst_rally");
-            _loc3_ = this._context.translate("bst_rally_description");
+            _loc1_ = String(this._context.translate("boost_subcat"));
+            _loc2_ = String(this._context.translate("bst_rally"));
+            _loc3_ = String(this._context.translate("bst_rally_description"));
             _loc4_ = "common/achievement/icons/renownboost_achievement_icon.png";
             _loc5_ = this.brd.getAward(BattleRenownAwardType.BOOST);
          }
          else if(_loc6_ == "ref_friend")
          {
-            _loc1_ = this._context.translate("referral_subcat");
-            _loc2_ = this._context.translate("ref_friend");
-            _loc3_ = this._context.translate("ref_friend_description");
+            _loc1_ = String(this._context.translate("referral_subcat"));
+            _loc2_ = String(this._context.translate("ref_friend"));
+            _loc3_ = String(this._context.translate("ref_friend_description"));
             _loc4_ = "common/achievement/icons/friendmatch_achievement_icon.png";
             _loc5_ = this.brd.getAward(BattleRenownAwardType.FRIEND);
          }
@@ -206,7 +206,7 @@ package game.gui.battle
             _loc3_ = _loc7_.description;
             _loc4_ = _loc7_.iconUrl;
             _loc5_ = _loc7_.renownAwardAmount;
-            _loc1_ = this._context.translate("achievement_subcat");
+            _loc1_ = String(this._context.translate("achievement_subcat"));
          }
          if(!_loc4_)
          {

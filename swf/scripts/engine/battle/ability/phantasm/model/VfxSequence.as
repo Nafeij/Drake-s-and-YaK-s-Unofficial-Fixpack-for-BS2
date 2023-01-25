@@ -181,7 +181,7 @@ package engine.battle.ability.phantasm.model
       {
          var _loc4_:VfxDef = null;
          var _loc7_:IResource = null;
-         var _loc3_:String = this.def[param1];
+         var _loc3_:String = String(this.def[param1]);
          if(!_loc3_ || !this.lib)
          {
             return;

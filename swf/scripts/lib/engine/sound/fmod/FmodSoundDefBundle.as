@@ -77,7 +77,7 @@ package lib.engine.sound.fmod
          {
             if(!_loc6_.sku)
             {
-               _loc7_ = param2.inferSkuFromEventPath(_loc6_.eventName);
+               _loc7_ = String(param2.inferSkuFromEventPath(_loc6_.eventName));
                _loc6_.updateSku(_loc7_);
             }
          }
@@ -105,7 +105,7 @@ package lib.engine.sound.fmod
             return;
          }
          param1.debug("FmodSoundDefBundle.checkBundlesFinishing n=" + bundlesFinishing.length);
-         var _loc2_:int = bundlesFinishing.length;
+         var _loc2_:int = int(bundlesFinishing.length);
          var _loc3_:int = _loc2_ - 1;
          while(_loc3_ >= 0)
          {
@@ -127,7 +127,7 @@ package lib.engine.sound.fmod
       
       public function toString() : String
       {
-         var _loc1_:int = !!this.listeners ? this.listeners.length : 0;
+         var _loc1_:int = !!this.listeners ? int(this.listeners.length) : 0;
          return "Fsdb[ " + this._nonce + " [" + this._id + "] ls=" + _loc1_ + " wait=" + this.numBanksWaiting + "]";
       }
       
@@ -312,7 +312,7 @@ package lib.engine.sound.fmod
          {
             this.listeners.splice(_loc2_,1);
          }
-         var _loc3_:int = !!this.listeners ? this.listeners.length : 0;
+         var _loc3_:int = !!this.listeners ? int(this.listeners.length) : 0;
          var _loc4_:Boolean = this.soundDriver.isDebug && this.logger.isDebugEnabled;
          if(_loc4_)
          {
@@ -394,7 +394,7 @@ package lib.engine.sound.fmod
          }
          var _loc1_:int = getTimer() - this._startWaitingSoundsFinishedTime;
          var _loc2_:* = _loc1_ >= FORCE_FINISH_MS;
-         var _loc3_:int = this._waitingSounds.length;
+         var _loc3_:int = int(this._waitingSounds.length);
          var _loc4_:int = _loc3_ - 1;
          for(; _loc4_ >= 0; _loc4_--)
          {

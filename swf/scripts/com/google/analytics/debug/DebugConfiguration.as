@@ -123,7 +123,7 @@ package com.google.analytics.debug
          {
             _loc2_.push(_loc3_ + param1);
          }
-         var _loc5_:int = _loc2_.length;
+         var _loc5_:int = int(_loc2_.length);
          var _loc6_:int = 0;
          while(_loc6_ < _loc5_)
          {

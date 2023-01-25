@@ -133,7 +133,7 @@ package com.sociodox.theminer.window
          this.mBitmapLine.y = -20;
          addChild(this.mBitmapBackground);
          addChild(this.mBitmapLine);
-         this.mCumulColumnStartPos = Number(Stage2D.stageWidth) - 110;
+         this.mCumulColumnStartPos = Stage2D.stageWidth - 110;
          this.mCurrentColumnStartPos = this.mCumulColumnStartPos - 80;
          this.mDeletedColumnStartPos = this.mCurrentColumnStartPos - 80;
          this.mAddedColumnStartPos = this.mDeletedColumnStartPos - 80;
@@ -163,7 +163,7 @@ package com.sociodox.theminer.window
          this.mCurrentSortButton = new MenuButton(this.mCumulColumnStartPos - this.mTempWidthTextfield.textWidth,_loc1_,MenuButton.ICON_ARROW_DOWN,null,-1,Localization.Lbl_MFP_Sort,true,"");
          addChild(this.mCurrentSortButton);
          this.mTempWidthTextfield.text = Localization.Lbl_MP_HEADERS_CUMUL;
-         this.mCumulSortButton = new MenuButton(Number(Stage2D.stageWidth) - this.mTempWidthTextfield.textWidth - 30,_loc1_,MenuButton.ICON_ARROW_DOWN,null,-1,Localization.Lbl_MFP_Sort,true,"");
+         this.mCumulSortButton = new MenuButton(Stage2D.stageWidth - this.mTempWidthTextfield.textWidth - 30,_loc1_,MenuButton.ICON_ARROW_DOWN,null,-1,Localization.Lbl_MFP_Sort,true,"");
          addChild(this.mCumulSortButton);
          this.mBlittingTextField = new TextField();
          this.mBlittingTextField.autoSize = TextFieldAutoSize.LEFT;
@@ -289,7 +289,7 @@ package com.sociodox.theminer.window
          _loc1_ -= 25;
          _loc1_ /= 14;
          var _loc3_:int = getTimer() - this.mLastTime;
-         if(_loc3_ < 1000 / Number(Commands.RefreshRate) || this.mPauseButton.mIsSelected)
+         if(_loc3_ < 1000 / Commands.RefreshRate || this.mPauseButton.mIsSelected)
          {
             return;
          }
@@ -314,8 +314,8 @@ package com.sociodox.theminer.window
             _loc4_.sortOn(this.SORT_ON_CURRENT,Array.NUMERIC | Array.DESCENDING);
          }
          var _loc5_:ClassTypeStatsHolder = null;
-         var _loc6_:int = _loc4_.length;
-         var _loc7_:int = _loc4_.length;
+         var _loc6_:int = int(_loc4_.length);
+         var _loc7_:int = int(_loc4_.length);
          var _loc8_:int = (stage.stageHeight - 25) / 15;
          if(_loc6_ > _loc8_)
          {
@@ -382,7 +382,7 @@ package com.sociodox.theminer.window
                this.mBlittingTextFieldMatrix.tx = this.mAddedColumnStartPos;
                if(this.mPerFrame.mIsSelected)
                {
-                  this.mBlittingTextFieldARight.text = (int(100 * _loc5_.Added / Number(SampleAnalyzer.mSamplerFrameCounter)) / 100).toString();
+                  this.mBlittingTextFieldARight.text = (int(100 * _loc5_.Added / SampleAnalyzer.mSamplerFrameCounter) / 100).toString();
                }
                else
                {
@@ -392,7 +392,7 @@ package com.sociodox.theminer.window
                this.mBlittingTextFieldMatrix.tx = this.mDeletedColumnStartPos;
                if(this.mPerFrame.mIsSelected)
                {
-                  this.mBlittingTextFieldARight.text = (int(100 * _loc5_.Removed / Number(SampleAnalyzer.mSamplerFrameCounter)) / 100).toString();
+                  this.mBlittingTextFieldARight.text = (int(100 * _loc5_.Removed / SampleAnalyzer.mSamplerFrameCounter) / 100).toString();
                }
                else
                {
@@ -431,7 +431,7 @@ package com.sociodox.theminer.window
       
       private function Render() : void
       {
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
       }
       
       public function Dispose() : void

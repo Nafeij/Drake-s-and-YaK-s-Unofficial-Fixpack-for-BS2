@@ -218,7 +218,7 @@ package game.gui.pages
          var _loc1_:int = 0;
          while(_loc1_ < this._visualSelectionTypes.length)
          {
-            _loc2_ = this._visualSelectionTypes[_loc1_];
+            _loc2_ = String(this._visualSelectionTypes[_loc1_]);
             _loc3_ = GuiGp.ctorBitmapForVisualCategory(_loc2_,GpControlButton.BUTTON_CLUSTER);
             _loc3_.alwaysHint = true;
             _loc3_.scale = 1.5;
@@ -255,7 +255,7 @@ package game.gui.pages
          var _loc1_:int = 0;
          while(_loc1_ < this._visualSelectionTypes.length)
          {
-            _loc2_ = this._visualSelectionTypes[_loc1_];
+            _loc2_ = String(this._visualSelectionTypes[_loc1_]);
             _loc3_ = this._gp_chooser.getChildByName("gp_icon" + _loc1_.toString()) as MovieClip;
             if(_loc3_)
             {
@@ -314,7 +314,7 @@ package game.gui.pages
                this.gp_dpad_up.createCaption(context,GuiGpBitmap.CAPTION_RIGHT).setToken("cfg_confirm");
                this.gp_dpad_left_right.updateCaptionPlacement();
                this.gp_dpad_up.updateCaptionPlacement();
-               _loc5_ = this._visualSelectionTypes[_loc3_];
+               _loc5_ = String(this._visualSelectionTypes[_loc3_]);
                this.device.type.visualCategory = _loc5_;
                GuiGp.handlePrimaryDeviceChanged();
             }
@@ -512,7 +512,7 @@ package game.gui.pages
          {
             this.dialog.closeDialog(null);
          }
-         var _loc5_:String = context.translate("ok");
+         var _loc5_:String = String(context.translate("ok"));
          if(param1)
          {
             param1.type.cacheMapping();
@@ -520,18 +520,18 @@ package game.gui.pages
             GpDevice.allwatcher = this.gpDeviceInputHandler;
             if(param1.type.unknown)
             {
-               _loc3_ = context.translateCategory("cfg_dialog_unknown_body",LocaleCategory.GP);
+               _loc3_ = String(context.translateCategory("cfg_dialog_unknown_body",LocaleCategory.GP));
                _loc3_ = _loc3_.replace("$DESC",param1.desc);
-               _loc4_ = context.translateCategory("cfg_dialog_unknown_title",LocaleCategory.GP);
+               _loc4_ = String(context.translateCategory("cfg_dialog_unknown_title",LocaleCategory.GP));
                this.dialog = context.createDialog();
                this.dialog.openDialog(_loc4_,_loc3_,null,this.dialogCloseHandler);
                this.dialog.setCloseButtonVisible(true);
             }
             else if(_loc2_)
             {
-               _loc3_ = context.translateCategory("cfg_dialog_changed_body",LocaleCategory.GP);
+               _loc3_ = String(context.translateCategory("cfg_dialog_changed_body",LocaleCategory.GP));
                _loc3_ = _loc3_.replace("$DESC",param1.desc);
-               _loc4_ = context.translateCategory("cfg_dialog_changed_title",LocaleCategory.GP);
+               _loc4_ = String(context.translateCategory("cfg_dialog_changed_title",LocaleCategory.GP));
                this.dialog = context.createDialog();
                this.dialog.openDialog(_loc4_,_loc3_,null,this.dialogCloseHandler);
                this.dialog.setCloseButtonVisible(true);
@@ -546,8 +546,8 @@ package game.gui.pages
          GpDevice.allwatcher = null;
          param1 = null;
          this.dialog = context.createDialog();
-         _loc4_ = context.translateCategory("cfg_dialog_no_gamepad_title",LocaleCategory.GP);
-         _loc3_ = context.translateCategory("cfg_dialog_no_gamepad_body",LocaleCategory.GP);
+         _loc4_ = String(context.translateCategory("cfg_dialog_no_gamepad_title",LocaleCategory.GP));
+         _loc3_ = String(context.translateCategory("cfg_dialog_no_gamepad_body",LocaleCategory.GP));
          this.dialog.openDialog(_loc4_,_loc3_,_loc5_,this.dialogCloseHandler);
       }
       
@@ -927,7 +927,7 @@ package game.gui.pages
             this._text_error.visible = false;
             return;
          }
-         var _loc3_:String = context.translateCategory(param1,LocaleCategory.GP);
+         var _loc3_:String = String(context.translateCategory(param1,LocaleCategory.GP));
          var _loc4_:String = this.getControlString(param2,this.device.type.visualCategory);
          if(_loc4_)
          {

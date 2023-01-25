@@ -71,7 +71,7 @@ package com.sociodox.theminer.window
          var _loc1_:int = int(Stage2D.stageWidth);
          var _loc2_:Sprite = new Sprite();
          this.mInterface.graphics.beginFill(SkinManager.COLOR_GLOBAL_BG,1);
-         this.mInterface.graphics.drawRect(0,16,_loc1_,Number(Stage2D.stageHeight) - 18);
+         this.mInterface.graphics.drawRect(0,16,_loc1_,Stage2D.stageHeight - 18);
          this.mInterface.graphics.endFill();
          this.mInterface.graphics.beginFill(SkinManager.COLOR_GLOBAL_LINE_DARK,1);
          this.mInterface.graphics.drawRect(0,17,_loc1_,1);
@@ -83,11 +83,11 @@ package com.sociodox.theminer.window
          var _loc4_:TextFormat = new TextFormat("_sans",11,SkinManager.COLOR_GLOBAL_TEXT,false,null,null,null,null,TextFormatAlign.RIGHT);
          var _loc5_:GlowFilter = new GlowFilter(SkinManager.COLOR_GLOBAL_TEXT_GLOW,1,2,2,3,2,false,false);
          var _loc7_:int = 20;
-         this.mFrameDivisionData = new BitmapData(Stage2D.stageWidth,Number(Stage2D.stageHeight) - 50 - 20,false,0);
+         this.mFrameDivisionData = new BitmapData(Stage2D.stageWidth,Stage2D.stageHeight - 50 - 20,false,0);
          this.mFrameDivision = new Bitmap(this.mFrameDivisionData);
          this.mInterface.addChild(this.mFrameDivision);
          this.mFrameDivision.x = 0;
-         this.mFrameDivision.y = Number(Stage2D.stageHeight) - this.mFrameDivisionData.height;
+         this.mFrameDivision.y = Stage2D.stageHeight - this.mFrameDivisionData.height;
          _loc8_ = new BitmapData(Stage2D.stageWidth,50,false,0);
          var _loc9_:Bitmap = new Bitmap(_loc8_);
          _loc9_.y = 20;
@@ -195,7 +195,7 @@ package com.sociodox.theminer.window
          _loc10_.width = _loc8_.width;
          _loc10_.height = 1;
          _loc8_.fillRect(_loc10_,SkinManager.COLOR_GLOBAL_LINE);
-         this.mPauseButton = new MenuButton(Number(Stage2D.stage.stageWidth) - 16,_loc8_.height,MenuButton.ICON_PAUSE,null,-1,Localization.Lbl_MFP_PauseRefresh,true,Localization.Lbl_MFP_ResumeRefresh);
+         this.mPauseButton = new MenuButton(Stage2D.stage.stageWidth - 16,_loc8_.height,MenuButton.ICON_PAUSE,null,-1,Localization.Lbl_MFP_PauseRefresh,true,Localization.Lbl_MFP_ResumeRefresh);
          addChild(this.mPauseButton);
       }
       
@@ -206,7 +206,7 @@ package com.sociodox.theminer.window
             return;
          }
          var _loc1_:int = getTimer() - this.mLastTime;
-         if(_loc1_ < 1000 / Number(Commands.RefreshRate))
+         if(_loc1_ < 1000 / Commands.RefreshRate)
          {
             return;
          }
@@ -257,7 +257,7 @@ package com.sociodox.theminer.window
          this.mBitmapBackgroundData.floodFill(0,0,0);
          this.mBitmapBackgroundData.draw(this.mInterface,null);
          this.mBitmapBackgroundData.unlock(this.mBitmapBackgroundData.rect);
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
       }
       
       public function Dispose() : void

@@ -98,7 +98,7 @@ package engine.entity
          var _loc2_:int = param1 - 1;
          if(param1 >= this.titleRenownCosts.length)
          {
-            param1 = this.titleRenownCosts.length - 1;
+            param1 = int(this.titleRenownCosts.length - 1);
          }
          if(_loc2_ < 0)
          {

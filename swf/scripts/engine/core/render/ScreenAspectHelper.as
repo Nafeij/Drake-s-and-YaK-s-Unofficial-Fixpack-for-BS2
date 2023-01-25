@@ -51,14 +51,14 @@ package engine.core.render
          if(param3.cinemascope || param3.minHeight == param3.maxHeight)
          {
             _loc7_ = param1 / param2;
-            _loc8_ = (_loc7_ - Number(ScreenAspectHelper.RATIO_STANDARD)) / (Number(ScreenAspectHelper.RATIO_WIDESCREEN) - Number(ScreenAspectHelper.RATIO_STANDARD));
+            _loc8_ = (_loc7_ - ScreenAspectHelper.RATIO_STANDARD) / (ScreenAspectHelper.RATIO_WIDESCREEN - ScreenAspectHelper.RATIO_STANDARD);
             _loc8_ = Math.max(0,Math.min(1,_loc8_));
             param4.width = MathUtil.lerp(param3.minWidth,param3.maxWidth,_loc8_);
             if(param3.cinemascope)
             {
                if(_loc7_ < ScreenAspectHelper.RATIO_WIDESCREEN)
                {
-                  _loc9_ = param4.width / Number(ScreenAspectHelper.RATIO_WIDESCREEN);
+                  _loc9_ = param4.width / ScreenAspectHelper.RATIO_WIDESCREEN;
                   param4.height = Math.max(param4.height,_loc9_);
                }
             }

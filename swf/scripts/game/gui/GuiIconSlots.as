@@ -52,7 +52,7 @@ package game.gui
       
       public function get numSlots() : int
       {
-         return !!this.iconSlots ? this.iconSlots.length : 0;
+         return !!this.iconSlots ? int(this.iconSlots.length) : 0;
       }
       
       public function getIconSlot(param1:int) : IGuiIconSlot

@@ -103,14 +103,14 @@ package game.gui.pages
          if(_loc4_.toString() != param1.id)
          {
             _loc10_ = SaveManager.fixupMigrateSaveId(param1.id);
-            _loc3_ = _context.translateCategory(_loc10_,LocaleCategory.LOCATION);
+            _loc3_ = String(_context.translateCategory(_loc10_,LocaleCategory.LOCATION));
          }
          else
          {
             _loc3_ = param1.id;
          }
          var _loc5_:String = _loc3_;
-         var _loc6_:String = _context.translate("day");
+         var _loc6_:String = String(_context.translate("day"));
          var _loc7_:* = "\n<font size=\'-5\'>" + _loc6_ + " " + _loc2_ + "</font>";
          var _loc8_:Date = param1.date;
          var _loc9_:* = "\n<font size=\'-15\'>" + StringUtil.dateStringSansTZ(_loc8_) + "</font>";

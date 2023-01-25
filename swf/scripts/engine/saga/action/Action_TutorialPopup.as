@@ -67,8 +67,8 @@ package engine.saga.action
             for each(_loc4_ in _loc3_)
             {
                _loc5_ = _loc4_.split("=");
-               _loc6_ = _loc5_[0];
-               _loc7_ = _loc5_.length > 1 ? _loc5_[1] : null;
+               _loc6_ = String(_loc5_[0]);
+               _loc7_ = _loc5_.length > 1 ? String(_loc5_[1]) : null;
                switch(_loc6_)
                {
                   case "arrow":

@@ -370,7 +370,7 @@ package game.gui.pages
       
       private function get lastSaveIndex() : int
       {
-         return this._sss.length < this.buttons.length - 1 ? this._sss.length : this.buttons.length - 1;
+         return this._sss.length < this.buttons.length - 1 ? int(this._sss.length) : int(this.buttons.length - 1);
       }
       
       public function renderSavesPage() : void

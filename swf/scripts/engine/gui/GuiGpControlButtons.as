@@ -38,7 +38,7 @@ package engine.gui
       
       public function printControlButton2BitmapData() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:GpControlButton = null;
          var _loc4_:Class = null;
          var _loc1_:String = "";

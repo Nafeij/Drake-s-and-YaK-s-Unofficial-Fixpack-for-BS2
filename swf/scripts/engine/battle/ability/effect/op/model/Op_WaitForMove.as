@@ -21,7 +21,7 @@ package engine.battle.ability.effect.op.model
       public function Op_WaitForMove(param1:EffectDefOp, param2:Effect)
       {
          super(param1,param2);
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          this.abilityResponseDef = manager.factory.fetchBattleAbilityDef(_loc3_);
          if(!this.abilityResponseDef)
          {

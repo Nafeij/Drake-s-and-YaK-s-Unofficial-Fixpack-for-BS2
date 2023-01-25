@@ -103,14 +103,14 @@ class SmartUrlLoader_LocMon extends URLLoader
    
    public function get debugStringVars() : String
    {
-      var _loc2_:* = null;
+      var _loc2_:String = null;
       var _loc3_:String = null;
       var _loc1_:* = "";
       if(this.req.data)
       {
          for(_loc2_ in this.req.data)
          {
-            _loc3_ = this.req.data[_loc2_];
+            _loc3_ = String(this.req.data[_loc2_]);
             if(_loc1_)
             {
                _loc1_ += ", ";

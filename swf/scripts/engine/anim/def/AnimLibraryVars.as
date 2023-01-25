@@ -121,7 +121,7 @@ package engine.anim.def
          var _loc7_:Object = null;
          var _loc8_:Object = null;
          var _loc9_:Object = null;
-         var _loc10_:* = null;
+         var _loc10_:String = null;
          var _loc11_:IAnimFacing = null;
          var _loc12_:String = null;
          var _loc13_:Point = null;
@@ -160,7 +160,7 @@ package engine.anim.def
             for(_loc10_ in param2.offsets)
             {
                _loc11_ = Enum.parse(param3,_loc10_) as IAnimFacing;
-               _loc12_ = param2.offsets[_loc10_];
+               _loc12_ = String(param2.offsets[_loc10_]);
                _loc13_ = PointVars.parseString(_loc12_,null);
                _offsetsByFacing[_loc11_] = _loc13_;
             }
@@ -175,13 +175,13 @@ package engine.anim.def
          {
             for each(_loc15_ in param2.layers)
             {
-               _loc16_ = _loc15_.layerId;
+               _loc16_ = String(_loc15_.layerId);
                if(_loc15_.sourceLayerId != undefined)
                {
-                  _loc17_ = _loc15_.sourceLayerId;
+                  _loc17_ = String(_loc15_.sourceLayerId);
                   _loc18_ = getAllAnimDefs(_loc17_);
-                  _loc19_ = _loc15_.replace;
-                  _loc20_ = _loc15_.replacement;
+                  _loc19_ = String(_loc15_.replace);
+                  _loc20_ = String(_loc15_.replacement);
                   _loc21_ = addAnimLayer(_loc16_,_loc17_,_loc15_.omitAnims,_loc15_.omitOrients);
                   for each(_loc22_ in _loc18_)
                   {

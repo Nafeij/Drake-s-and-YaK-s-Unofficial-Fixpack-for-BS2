@@ -261,7 +261,7 @@ package game.gui.page
          }
          var _loc2_:int = int(param1.entity.stats.getValue(StatType.EXERTION));
          var _loc3_:int = int(param1.entity.stats.getValue(StatType.WILLPOWER));
-         return Math.min(_loc2_,_loc3_);
+         return int(Math.min(_loc2_,_loc3_));
       }
       
       override public function set visible(param1:Boolean) : void
@@ -1642,7 +1642,7 @@ package game.gui.page
          {
             return;
          }
-         var _loc1_:Number = Number(this.turn.entity.diameter) / 2;
+         var _loc1_:Number = this.turn.entity.diameter / 2;
          var _loc2_:Number = this.turn.move.wayPointTile.x + _loc1_;
          var _loc3_:Number = this.turn.move.wayPointTile.y + _loc1_;
          var _loc4_:Number = _loc2_ * this.view.units;
@@ -1919,12 +1919,12 @@ package game.gui.page
          {
             return;
          }
-         var _loc5_:Number = Math.atan2(Number(param2.centerX) - Number(param1.centerX),Number(param2.centerY) - Number(param1.centerY));
+         var _loc5_:Number = Math.atan2(param2.centerX - param1.centerX,param2.centerY - param1.centerY);
          var _loc6_:Array = [];
          for each(_loc7_ in param3)
          {
-            _loc9_ = _loc7_.centerX - Number(param1.centerX);
-            _loc10_ = _loc7_.centerY - Number(param1.centerY);
+            _loc9_ = _loc7_.centerX - param1.centerX;
+            _loc10_ = _loc7_.centerY - param1.centerY;
             _loc11_ = Math.atan2(_loc9_,_loc10_);
             _loc11_ -= _loc5_;
             _loc11_ = -_loc11_;
@@ -1966,7 +1966,7 @@ package game.gui.page
          {
             this.bhpLoadingOverlayHelper.update(param1);
          }
-         var _loc2_:int = this.camera.viewChangeCounter;
+         var _loc2_:int = int(this.camera.viewChangeCounter);
          if(_loc2_ > this._lastCameraViewChangeCounter)
          {
             this._lastCameraViewChangeCounter = _loc2_;

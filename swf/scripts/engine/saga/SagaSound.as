@@ -480,7 +480,7 @@ package engine.saga
       public function ensureCurrentMusicIdPlaying() : void
       {
          var _loc1_:ISound = null;
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Number = NaN;
          if(!this.sagadef || !this._currentMusicDef)
          {

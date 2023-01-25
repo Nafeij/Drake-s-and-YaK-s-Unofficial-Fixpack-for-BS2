@@ -43,7 +43,7 @@ package engine.saga.convo.def
       
       public function fromDivertJson(param1:Object) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Object = null;
          for(_loc2_ in param1)
          {

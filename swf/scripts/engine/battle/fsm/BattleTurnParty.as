@@ -109,7 +109,7 @@ package engine.battle.fsm
          var _loc3_:IBattleEntity = null;
          var _loc4_:int = 0;
          var _loc1_:int = 0;
-         var _loc2_:int = this.members.length - 1;
+         var _loc2_:int = int(this.members.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = this.members[_loc2_];

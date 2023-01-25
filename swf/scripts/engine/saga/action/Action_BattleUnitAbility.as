@@ -46,14 +46,14 @@ package engine.saga.action
          _loc7_ = saga.getCastMember(_loc1_);
          if(_loc7_)
          {
-            _loc1_ = _loc7_.id;
+            _loc1_ = String(_loc7_.id);
          }
          var _loc8_:IBattleEntity = _loc6_.getEntityByIdOrByDefId(_loc1_,null,true);
          if(!_loc8_)
          {
             throw new ArgumentError("No such casterid [" + _loc1_ + "] for [" + def.id + "]");
          }
-         _loc1_ = _loc8_.id;
+         _loc1_ = String(_loc8_.id);
          this._processTargets(_loc8_,_loc4_,_loc5_);
          var _loc9_:Function = def.instant ? null : this.battleAbilityHandler;
          saga.performBattleUnitAbility(_loc1_,_loc2_,_loc3_,_loc4_,_loc5_,_loc9_);
@@ -293,7 +293,7 @@ class TileLocationInfo
                      continue;
                   }
                }
-               _loc10_ = Number(this.PROX_LIMIT) - _loc8_;
+               _loc10_ = this.PROX_LIMIT - _loc8_;
                if(_loc7_.party == param1.party)
                {
                   this.allyProximity += _loc10_ * _loc10_ * _loc10_;

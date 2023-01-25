@@ -210,9 +210,9 @@ package game.gui
          if(context.legend.roster.numCombatants <= 6)
          {
             _loc2_ = context.createDialog();
-            _loc3_ = context.translate("pg_cannot_dismiss_limit_title");
-            _loc4_ = context.translate("pg_cannot_dismiss_limit_body");
-            _loc5_ = context.translate("ok");
+            _loc3_ = String(context.translate("pg_cannot_dismiss_limit_title"));
+            _loc4_ = String(context.translate("pg_cannot_dismiss_limit_body"));
+            _loc5_ = String(context.translate("ok"));
             _loc2_.openDialog(_loc3_,_loc4_,_loc5_,null);
             return;
          }

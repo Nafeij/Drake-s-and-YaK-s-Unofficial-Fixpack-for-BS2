@@ -187,7 +187,7 @@ package com.sociodox.theminer.window
          addEventListener(SAVE_SNAPSHOT_EVENT,this.OnSaveSnapshot);
          this.mActivateFilterButton = new MenuButton(16 + 15,_loc8_,MenuButton.ICON_FILTER,null,-1,Localization.Lbl_L_ShowLoadersWithErrors,true,Localization.Lbl_Done);
          addChild(this.mActivateFilterButton);
-         var _loc9_:int = (Number(Stage2D.stageHeight) - 25) / 15;
+         var _loc9_:int = (Stage2D.stageHeight - 25) / 15;
          this.mStackButtonArray = new Array();
          this.mSaveButtonArray = new Array();
          this.mLinkButtonArray = new Array();
@@ -248,7 +248,7 @@ package com.sociodox.theminer.window
          var mbt:MenuButton = null;
          var name:String = null;
          var e:Event = param1;
-         var len:int = this.mLinkButtonArray.length;
+         var len:int = int(this.mLinkButtonArray.length);
          var i:int = 0;
          while(i < len)
          {
@@ -287,7 +287,7 @@ package com.sociodox.theminer.window
          var name:String = null;
          var date:Date = null;
          var e:Event = param1;
-         var len:int = this.mSaveButtonArray.length;
+         var len:int = int(this.mSaveButtonArray.length);
          var i:int = 0;
          while(i < len)
          {
@@ -418,7 +418,7 @@ package com.sociodox.theminer.window
          var _loc1_:Array = LoaderAnalyser.GetInstance().GetLoadersData();
          _loc1_.sortOn(FIRST_EVENT_PROPERTY,Array.NUMERIC | Array.DESCENDING);
          var _loc2_:ByteArray = new ByteArray();
-         var _loc3_:int = _loc1_.length;
+         var _loc3_:int = int(_loc1_.length);
          for each(_loc4_ in _loc1_)
          {
             if(_loc4_.mFirstEvent != -1)
@@ -477,7 +477,7 @@ package com.sociodox.theminer.window
       private function OnSaveStack(param1:Event) : void
       {
          var _loc4_:MenuButton = null;
-         var _loc2_:int = this.mStackButtonArray.length;
+         var _loc2_:int = int(this.mStackButtonArray.length);
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
@@ -517,18 +517,18 @@ package com.sociodox.theminer.window
             this.mBitmapLine.y = -20;
          }
          var _loc1_:int = getTimer() - this.mLastTime;
-         if(_loc1_ < 1000 / Number(Commands.RefreshRate))
+         if(_loc1_ < 1000 / Commands.RefreshRate)
          {
             return;
          }
          this.mLastTime = getTimer();
          this.mBitmapBackgroundData.fillRect(this.mBitmapBackgroundData.rect,SkinManager.COLOR_GLOBAL_BG);
-         var _loc2_:int = this.mStackButtonArray.length;
+         var _loc2_:int = int(this.mStackButtonArray.length);
          var _loc3_:int = 0;
          var _loc4_:Array = LoaderAnalyser.GetInstance().GetLoadersData();
          _loc4_.sortOn(SORT_ON_KEY,Array.NUMERIC | Array.DESCENDING);
-         var _loc5_:int = _loc4_.length;
-         _loc2_ = _loc4_.length;
+         var _loc5_:int = int(_loc4_.length);
+         _loc2_ = int(_loc4_.length);
          var _loc6_:int = (stage.stageHeight - 25) / 15;
          this.mBlittingTextFieldMatrix.identity();
          this.mBlittingTextFieldMatrix.ty = 20;
@@ -658,7 +658,7 @@ package com.sociodox.theminer.window
       
       private function Render() : void
       {
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
       }
       
       private function DrawProgress(param1:LoaderData, param2:int) : void

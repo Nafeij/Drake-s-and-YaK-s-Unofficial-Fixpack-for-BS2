@@ -398,17 +398,17 @@ package game.gui.pages
             if(param1)
             {
                _loc5_ = "ctl_" + this.display.name.toLowerCase() + "_" + param1 + "_name";
-               _loc2_ = this.context.translateCategoryRaw(_loc5_,LocaleCategory.GP);
+               _loc2_ = String(this.context.translateCategoryRaw(_loc5_,LocaleCategory.GP));
                if(!_loc2_)
                {
                   _loc5_ = "ctl_" + this.display.name.toLowerCase() + "_" + param1.charAt(0) + "_name";
-                  _loc2_ = this.context.translateCategoryRaw(_loc5_,LocaleCategory.GP);
+                  _loc2_ = String(this.context.translateCategoryRaw(_loc5_,LocaleCategory.GP));
                }
             }
             if(!_loc2_)
             {
                _loc5_ = "ctl_" + this.display.name.toLowerCase() + "_name";
-               _loc2_ = this.context.translateCategory(_loc5_,LocaleCategory.GP);
+               _loc2_ = String(this.context.translateCategory(_loc5_,LocaleCategory.GP));
             }
          }
          else
@@ -419,7 +419,7 @@ package game.gui.pages
          {
             if(this.optional)
             {
-               _loc6_ = this.context.translateCategory("cfg_optional",LocaleCategory.GP);
+               _loc6_ = String(this.context.translateCategory("cfg_optional",LocaleCategory.GP));
                _loc2_ += "\n" + _loc6_;
             }
          }

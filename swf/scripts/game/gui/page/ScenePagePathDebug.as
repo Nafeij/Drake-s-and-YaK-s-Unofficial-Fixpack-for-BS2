@@ -264,7 +264,7 @@ package game.gui.page
          var _loc6_:Number = Math.min(1,param1.gg / 16);
          var _loc7_:uint = MathUtil.lerp(0,255,_loc6_);
          var _loc8_:uint = MathUtil.lerp(255,0,_loc6_);
-         var _loc9_:uint = _loc7_ << 16 | _loc8_ << 8;
+         var _loc9_:uint = uint(_loc7_ << 16 | _loc8_ << 8);
          _loc2_.lineStyle(2,_loc9_,1);
          _loc2_.beginFill(_loc9_,0.5);
          var _loc10_:Number = (_loc5_.x + _loc5_.y) / 2;
@@ -290,7 +290,7 @@ package game.gui.page
          var _loc6_:Number = Math.min(1,param1.gg / 16);
          var _loc7_:uint = MathUtil.lerp(0,255,_loc6_);
          var _loc8_:uint = MathUtil.lerp(255,0,_loc6_);
-         var _loc9_:uint = _loc7_ << 16 | _loc8_ << 8;
+         var _loc9_:uint = uint(_loc7_ << 16 | _loc8_ << 8);
          if(param1.parent)
          {
             _loc10_ = param1.parent.node.key as Tile;
@@ -425,10 +425,10 @@ class DebugInfo
       }
       if(this.str)
       {
-         _loc2_ = Math.min(1,Number(this.pfsn.gg) / Number(this.topGG));
+         _loc2_ = Math.min(1,this.pfsn.gg / this.topGG);
          _loc3_ = MathUtil.lerp(0,255,_loc2_);
          _loc4_ = MathUtil.lerp(255,0,_loc2_);
-         _loc5_ = _loc3_ << 16 | _loc4_ << 8;
+         _loc5_ = uint(_loc3_ << 16 | _loc4_ << 8);
          _loc5_ = ColorUtil.lerpColor(_loc5_,16777215,0.75);
          this.bmpd = this.gen.generateTextBitmap("minion",14,_loc5_,0,this.str,2000);
          this.bmp.bitmapData = this.bmpd;

@@ -364,7 +364,7 @@ package engine.battle.board.view
       private function addParties() : void
       {
          var _loc2_:IBattleParty = null;
-         var _loc1_:int = this.parties.length;
+         var _loc1_:int = int(this.parties.length);
          while(_loc1_ < this.board.numParties)
          {
             _loc2_ = this.board.getParty(this.board.numParties - 1);
@@ -439,7 +439,7 @@ package engine.battle.board.view
             this.isoScenes.getIsoScene(ev.layer).removeChild(ev);
             if(ev.entity)
             {
-               evid = ev.entity.id;
+               evid = String(ev.entity.id);
                ev.entity.removeEventListener(BattleEntityEvent.MOVED,this.entityMovedHandler);
             }
             try

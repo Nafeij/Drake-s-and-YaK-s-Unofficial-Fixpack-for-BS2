@@ -139,9 +139,9 @@ package com.sociodox.theminer.window
          }
          this.mBitmapBackgroundData = new BitmapData(Stage2D.stageWidth,Stage2D.stageHeight,true,0);
          this.mMemoryUseBitmapData = new BitmapData(Stage2D.stageWidth,128,false,SkinManager.COLOR_STATS_BG);
-         this.mGraphPos = new Point(0,Number(Stage2D.stageHeight) - 128);
+         this.mGraphPos = new Point(0,Stage2D.stageHeight - 128);
          this.mDrawGraphics = new Sprite();
-         this.mDrawGraphicsMatrix = new Matrix(1,0,0,1,Number(Stage2D.stageWidth) - 5);
+         this.mDrawGraphicsMatrix = new Matrix(1,0,0,1,Stage2D.stageWidth - 5);
          this.mDrawGraphics.graphics.lineStyle(3,4294901760);
          this.mGridLine.width = Stage2D.stageWidth;
          this.mGridLine.height = 1;
@@ -185,7 +185,7 @@ package com.sociodox.theminer.window
          this.timer = getTimer();
          var _loc1_:int = this.timer - this.mLastTime;
          ++this.fps;
-         if(_loc1_ < 1000 / Number(Commands.RefreshRate))
+         if(_loc1_ < 1000 / Commands.RefreshRate)
          {
             return;
          }
@@ -394,10 +394,10 @@ package com.sociodox.theminer.window
       {
          this.bitmapData.copyPixels(this.mMemoryUseBitmapData,this.mMemoryUseBitmapData.rect,this.mGraphPos);
          this.mBitmapBackgroundData.copyPixels(SkinManager.mSkinBitmapData,SkinManager.mDebugGraphScrollRect,this.mGraphPos);
-         this.mBlittingTextFieldMatrix.tx = Number(Stage2D.stageWidth) - this.mTextFieldMaxMemGraphARight.textWidth - 5;
-         this.mBlittingTextFieldMatrix.ty = Number(Stage2D.stageHeight) - this.mMemoryUseBitmapData.rect.height - 15;
+         this.mBlittingTextFieldMatrix.tx = Stage2D.stageWidth - this.mTextFieldMaxMemGraphARight.textWidth - 5;
+         this.mBlittingTextFieldMatrix.ty = Stage2D.stageHeight - this.mMemoryUseBitmapData.rect.height - 15;
          this.bitmapData.draw(this.mTextFieldMaxMemGraphARight,this.mBlittingTextFieldMatrix);
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
       }
       
       public function Dispose() : void

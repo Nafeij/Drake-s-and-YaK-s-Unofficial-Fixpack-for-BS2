@@ -186,7 +186,7 @@ package engine.battle.ability.phantasm.def
          }
          if(param1.waitEffectPhase)
          {
-            _loc15_ = param1.waitEffectPhase.effect;
+            _loc15_ = String(param1.waitEffectPhase.effect);
             waitEffectPhase = Enum.parse(EffectPhase,param1.waitEffectPhase.phase) as EffectPhase;
             waitEffect = param2.getEffectDefByName(_loc15_);
             if(!waitEffect)

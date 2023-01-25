@@ -374,7 +374,7 @@ package game.gui
          var _loc1_:TextField = null;
          var _loc2_:Object = null;
          var _loc3_:String = null;
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:Rectangle = null;
          var _loc6_:int = 0;
          var _loc7_:int = 0;
@@ -387,7 +387,7 @@ package game.gui
                _loc1_ = _loc4_ as TextField;
                _loc2_ = this.scalableTextfields[_loc4_];
                _loc5_ = _loc2_.orig_rect;
-               _loc3_ = _loc2_.align;
+               _loc3_ = String(_loc2_.align);
                GuiUtil.scaleTextToFitAlign(_loc1_,_loc3_,_loc5_);
             }
          }

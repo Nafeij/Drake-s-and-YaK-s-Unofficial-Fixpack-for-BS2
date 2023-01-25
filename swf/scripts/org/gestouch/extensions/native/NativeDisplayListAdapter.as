@@ -24,7 +24,7 @@ package org.gestouch.extensions.native
       
       public function get target() : Object
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:int = 0;
          var _loc3_:* = this._targetWeekStorage;
          for(_loc1_ in _loc3_)

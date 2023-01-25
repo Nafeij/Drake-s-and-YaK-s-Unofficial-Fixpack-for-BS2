@@ -368,7 +368,7 @@ package game.saga
          param1.enabled = true;
          this.battleBoard.fsm.order.addEntity(param1);
          var _loc2_:int = int(param1.stats.getValue(StatType.MOVEMENT));
-         var _loc3_:Tile = this.battleBoard.tiles.getTile(param1.x,Number(param1.y) - _loc2_);
+         var _loc3_:Tile = this.battleBoard.tiles.getTile(param1.x,param1.y - _loc2_);
          param1.enabled = true;
          var _loc4_:BattleMove = new BattleMove(param1);
          var _loc5_:int = param1.y - 1;

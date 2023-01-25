@@ -85,7 +85,7 @@ package game.entry
          }
          else
          {
-            _loc2_ = param1.error.toString();
+            _loc2_ = String(param1.error.toString());
          }
          if(this.entry && this.entry.appInfo && Boolean(this.entry.appInfo.logger))
          {

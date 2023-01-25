@@ -680,7 +680,7 @@ package engine.battle.fsm
          var _loc2_:Array = param1.param;
          if(_loc2_.length > 1)
          {
-            _loc3_ = _loc2_[1];
+            _loc3_ = String(_loc2_[1]);
             this.logger.info("shellCmdFuncAbility id = " + _loc3_);
             if(_loc3_ == "exec")
             {
@@ -746,7 +746,7 @@ package engine.battle.fsm
          var _loc4_:IBattleEntity = null;
          if(param2.length > 2)
          {
-            _loc3_ = param2[2];
+            _loc3_ = String(param2[2]);
             _loc4_ = this.findBattleEntity(_loc3_);
             if(_loc4_ != null)
             {
@@ -814,7 +814,7 @@ package engine.battle.fsm
          var _loc4_:IBattleEntity = null;
          if(param2.length > 2)
          {
-            _loc3_ = param2[2];
+            _loc3_ = String(param2[2]);
             _loc4_ = this.findBattleEntity(_loc3_);
             if(_loc4_ != null)
             {
@@ -881,7 +881,7 @@ package engine.battle.fsm
          var _loc4_:IBattleEntity = null;
          if(param2.length > 2)
          {
-            _loc3_ = param2[2];
+            _loc3_ = String(param2[2]);
             _loc4_ = this.findBattleEntity(_loc3_);
             if(_loc4_ != null)
             {

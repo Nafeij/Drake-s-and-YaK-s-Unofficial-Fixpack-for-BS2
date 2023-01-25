@@ -73,7 +73,7 @@ package com.google.analytics.data
          {
             this._projectData[param1][param2] = undefined;
             _loc3_ = true;
-            _loc5_ = this._set.length;
+            _loc5_ = int(this._set.length);
             _loc4_ = 0;
             while(_loc4_ < _loc5_)
             {
@@ -87,7 +87,7 @@ package com.google.analytics.data
             if(_loc3_)
             {
                this._projectData[param1] = undefined;
-               this._hasData = this._hasData - 1;
+               --this._hasData;
             }
          }
       }
@@ -102,7 +102,7 @@ package com.google.analytics.data
          while(_loc3_ < param1.length)
          {
             _loc4_ = param1.charAt(_loc3_);
-            _loc5_ = this._escapeCharMap[_loc4_];
+            _loc5_ = String(this._escapeCharMap[_loc4_]);
             if(_loc5_)
             {
                _loc2_ += _loc5_;
@@ -146,7 +146,7 @@ package com.google.analytics.data
          var _loc5_:Array = null;
          var _loc2_:String = "";
          var _loc3_:Boolean = false;
-         var _loc6_:int = this._set.length;
+         var _loc6_:int = int(this._set.length);
          _loc4_ = 0;
          while(_loc4_ < _loc6_)
          {
@@ -222,7 +222,7 @@ package com.google.analytics.data
       
       public function renderUrlString() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:Array = [];
          for(_loc2_ in this._projectData)
          {
@@ -236,7 +236,7 @@ package com.google.analytics.data
       
       public function renderMergedUrlString(param1:X10 = null) : String
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          if(!param1)
          {
             return this.renderUrlString();

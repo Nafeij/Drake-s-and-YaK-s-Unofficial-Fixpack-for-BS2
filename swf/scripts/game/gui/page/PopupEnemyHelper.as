@@ -118,7 +118,7 @@ package game.gui.page
          var _loc15_:BattleAbilityDef = null;
          var _loc16_:int = 0;
          var _loc17_:int = 0;
-         var _loc18_:* = null;
+         var _loc18_:Object = null;
          if(!this.checkPopup(param1) || !battleHudConfig.enemyPopup)
          {
             this.popupEnemy.entity = null;

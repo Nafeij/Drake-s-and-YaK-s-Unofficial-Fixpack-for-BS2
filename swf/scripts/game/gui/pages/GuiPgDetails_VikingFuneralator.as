@@ -63,7 +63,7 @@ package game.gui.pages
       private function startMusic() : void
       {
          var _loc1_:int = MathUtil.randomInt(0,this.musics.length - 1);
-         var _loc2_:String = this.musics[_loc1_];
+         var _loc2_:String = String(this.musics[_loc1_]);
          var _loc3_:ActionDef = new ActionDef(null);
          _loc3_.type = ActionType.MUSIC_ONESHOT;
          _loc3_.id = _loc2_;

@@ -37,7 +37,7 @@ package engine.path
       
       public function toString() : String
       {
-         return !!this.m_key ? this.m_key.toString() : "NULL";
+         return !!this.m_key ? String(this.m_key.toString()) : "NULL";
       }
       
       public function addLink(param1:IPathGraphNode, param2:Number) : IPathGraphLink

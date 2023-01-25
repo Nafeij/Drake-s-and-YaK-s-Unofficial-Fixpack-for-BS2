@@ -50,7 +50,7 @@ package engine.entity.def
       {
          var _loc4_:ItemDef = null;
          var _loc5_:int = 0;
-         var _loc2_:int = this.marketitems.length;
+         var _loc2_:int = int(this.marketitems.length);
          var _loc3_:int = _loc2_ - 1;
          while(_loc3_ >= 0)
          {

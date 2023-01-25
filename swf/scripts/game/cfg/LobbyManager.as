@@ -44,7 +44,7 @@ package game.cfg
          var _loc4_:LobbyOptionsData = null;
          var _loc5_:LobbyPartyData = null;
          var _loc6_:LobbyVariationData = null;
-         var _loc2_:String = param1["class"];
+         var _loc2_:String = String(param1["class"]);
          switch(_loc2_)
          {
             case "tbs.srv.data.LobbyData":

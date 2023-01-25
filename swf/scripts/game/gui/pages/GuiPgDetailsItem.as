@@ -174,12 +174,12 @@ package game.gui.pages
          {
             this.dialog = context.createDialog();
             _loc4_ = param1.def.colorizedName;
-            _loc5_ = context.translate("item_too_powerful_title");
-            _loc6_ = context.translate("item_too_powerful_body");
+            _loc5_ = String(context.translate("item_too_powerful_title"));
+            _loc6_ = String(context.translate("item_too_powerful_body"));
             _loc6_ = _loc6_.replace("$NAME",this._entity.name);
             _loc6_ = _loc6_.replace("$RANK",_loc3_.toString());
             _loc6_ = _loc6_.replace("$ITEM",_loc4_);
-            _loc7_ = context.translate("ok");
+            _loc7_ = String(context.translate("ok"));
             this._isDialogOpen = true;
             this.dialog.openDialog(_loc5_,_loc6_,_loc7_,this.dialogClosedHandler);
             context.playSound("ui_error");
@@ -306,7 +306,7 @@ package game.gui.pages
       private function updateModButtons() : void
       {
          var _loc1_:Item = !!this._entity ? this._entity.defItem : null;
-         var _loc2_:int = !!this._items.items ? this._items.items.length : int(null);
+         var _loc2_:int = !!this._items.items ? int(this._items.items.length) : int(null);
          if(_loc1_)
          {
             _loc2_--;

@@ -26,7 +26,7 @@ package starling.events
          this.mCtrlKey = param4;
          this.mTimestamp = -1;
          this.mVisitedObjects = new Vector.<EventDispatcher>(0);
-         var _loc6_:int = param2.length;
+         var _loc6_:int = int(param2.length);
          var _loc7_:int = 0;
          while(_loc7_ < _loc6_)
          {
@@ -48,7 +48,7 @@ package starling.events
             param3 = new Vector.<Touch>(0);
          }
          var _loc4_:Vector.<Touch> = data as Vector.<Touch>;
-         var _loc5_:int = _loc4_.length;
+         var _loc5_:int = int(_loc4_.length);
          var _loc6_:int = 0;
          while(_loc6_ < _loc5_)
          {
@@ -69,7 +69,7 @@ package starling.events
          var _loc5_:Touch = null;
          var _loc6_:int = 0;
          this.getTouches(param1,param2,sTouches);
-         var _loc4_:int = sTouches.length;
+         var _loc4_:int = int(sTouches.length);
          if(_loc4_ > 0)
          {
             _loc5_ = null;
@@ -100,7 +100,7 @@ package starling.events
       {
          var _loc2_:Boolean = false;
          this.getTouches(param1,null,sTouches);
-         var _loc3_:int = sTouches.length - 1;
+         var _loc3_:int = int(sTouches.length - 1);
          while(_loc3_ >= 0)
          {
             if(sTouches[_loc3_].phase != TouchPhase.ENDED)
@@ -123,7 +123,7 @@ package starling.events
          var _loc6_:Boolean = false;
          if(Boolean(param1) && Boolean(param1.length))
          {
-            _loc2_ = bubbles ? param1.length : 1;
+            _loc2_ = bubbles ? int(param1.length) : 1;
             _loc3_ = target;
             setTarget(param1[0] as EventDispatcher);
             _loc4_ = 0;

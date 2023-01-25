@@ -164,7 +164,7 @@ package game.gui.page
       
       private function cachePartyPortraits() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:int = 0;
          var _loc3_:IEntityDef = null;
          var _loc4_:IEntityAppearanceDef = null;

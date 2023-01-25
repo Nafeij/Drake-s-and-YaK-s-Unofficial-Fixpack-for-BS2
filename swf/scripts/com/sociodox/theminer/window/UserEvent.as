@@ -172,7 +172,7 @@ package com.sociodox.theminer.window
          addEventListener(SAVE_SNAPSHOT_EVENT,this.OnSaveSnapshot);
          this.mActivateFilterButton = new MenuButton(16 + 15,_loc8_,MenuButton.ICON_FILTER,null,-1,Localization.Lbl_L_ShowLoadersWithErrors,true,Localization.Lbl_Done);
          addChild(this.mActivateFilterButton);
-         var _loc9_:int = (Number(Stage2D.stageHeight) - 25) / 15;
+         var _loc9_:int = (Stage2D.stageHeight - 25) / 15;
          this.mStackButtonArray = new Array();
          var _loc10_:int = 0;
          while(_loc10_ < _loc9_)
@@ -275,7 +275,7 @@ package com.sociodox.theminer.window
          var _loc1_:Vector.<UserEventEntry> = this.mEventMgr.GetUserEvents();
          _loc1_.sort(this.EventSort);
          var _loc2_:ByteArray = new ByteArray();
-         var _loc3_:int = _loc1_.length;
+         var _loc3_:int = int(_loc1_.length);
          _loc5_ = "Name";
          _loc5_ += "\tValue1";
          _loc5_ += "\tValue2";
@@ -306,7 +306,7 @@ package com.sociodox.theminer.window
       {
          var _loc4_:MenuButton = null;
          var _loc5_:String = null;
-         var _loc2_:int = this.mStackButtonArray.length;
+         var _loc2_:int = int(this.mStackButtonArray.length);
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
@@ -346,18 +346,18 @@ package com.sociodox.theminer.window
             this.mBitmapLine.y = -20;
          }
          var _loc1_:int = getTimer() - this.mLastTime;
-         if(_loc1_ < 1000 / Number(Commands.RefreshRate))
+         if(_loc1_ < 1000 / Commands.RefreshRate)
          {
             return;
          }
          this.mLastTime = getTimer();
          this.mBitmapBackgroundData.fillRect(this.mBitmapBackgroundData.rect,SkinManager.COLOR_GLOBAL_BG);
-         var _loc2_:int = this.mStackButtonArray.length;
+         var _loc2_:int = int(this.mStackButtonArray.length);
          var _loc3_:int = 0;
          var _loc4_:Vector.<UserEventEntry> = this.mEventMgr.GetUserEvents();
          _loc4_.sort(this.EventSort);
-         var _loc5_:int = _loc4_.length;
-         _loc2_ = _loc4_.length;
+         var _loc5_:int = int(_loc4_.length);
+         _loc2_ = int(_loc4_.length);
          var _loc6_:int = (stage.stageHeight - 25) / 15;
          this.mBlittingTextFieldMatrix.identity();
          this.mBlittingTextFieldMatrix.ty = 20;
@@ -517,7 +517,7 @@ package com.sociodox.theminer.window
       
       private function Render() : void
       {
-         var _loc1_:Number = Number(Commands.Opacity) / 10;
+         var _loc1_:Number = Commands.Opacity / 10;
          if(_loc1_ != this.mLastAlpha)
          {
             this.mLastAlpha = _loc1_;

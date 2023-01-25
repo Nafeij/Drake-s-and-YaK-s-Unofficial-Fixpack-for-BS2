@@ -229,19 +229,19 @@ class Fill
       if(this.pulseMs > this.pulsePeriodMs)
       {
          this.pulseMs %= this.pulsePeriodMs;
-         this.pulsePeriodMs = this.vars.BASE_PULSE_PERIOD_MS + Math.random() * Number(this.vars.BASE_PULSE_PERIOD_VARIANCE_MS);
+         this.pulsePeriodMs = this.vars.BASE_PULSE_PERIOD_MS + Math.random() * this.vars.BASE_PULSE_PERIOD_VARIANCE_MS;
       }
-      var _loc3_:Number = Number(this.pulseMs) / Number(this.pulsePeriodMs) * 2;
+      var _loc3_:Number = this.pulseMs / this.pulsePeriodMs * 2;
       if(_loc3_ > 1)
       {
          _loc3_ = 2 - _loc3_;
       }
       var _loc4_:Number = MathUtil.lerp(1,this.vars.PULSE_SCALE,_loc3_);
-      var _loc5_:Number = param2 / Number(this.baseWidth) * _loc4_ * Number(this.vars.FILL_SCALE_BIAS);
+      var _loc5_:Number = param2 / this.baseWidth * _loc4_ * this.vars.FILL_SCALE_BIAS;
       this.fill.alpha = MathUtil.lerp(this.vars.ALPHA_BASE,this.vars.ALPHA_PULSE,_loc3_);
       this.fill.scale = _loc5_;
-      this.fill.x = -Number(this.fill.width) / 2;
-      this.fill.y = -Number(this.fill.height) / 2;
+      this.fill.x = -this.fill.width / 2;
+      this.fill.y = -this.fill.height / 2;
    }
 }
 
@@ -320,8 +320,8 @@ class GlowRing
    public function update(param1:Number, param2:Number) : void
    {
       var _loc4_:Matrix = null;
-      this.scale += param1 * Number(this.scaleMultiplier);
-      var _loc3_:Number = Math.min(1,(Number(this.scale) - Number(this.startingScale)) / Number(this.maxScaleLifetime));
+      this.scale += param1 * this.scaleMultiplier;
+      var _loc3_:Number = Math.min(1,(this.scale - this.startingScale) / this.maxScaleLifetime);
       if(_loc3_ < 1)
       {
          _loc4_ = this.glow.transformMatrix;
@@ -335,11 +335,11 @@ class GlowRing
       }
       if(_loc3_ < this.vars.ALPHA_IN_OUT_FADE_VARIANCE)
       {
-         this.glow.alpha = Math.min(_loc3_ / Number(this.vars.ALPHA_IN_OUT_FADE_VARIANCE),this.vars.ALPHA_DEFAULT);
+         this.glow.alpha = Math.min(_loc3_ / this.vars.ALPHA_IN_OUT_FADE_VARIANCE,this.vars.ALPHA_DEFAULT);
       }
-      else if(_loc3_ > 1 - Number(this.vars.ALPHA_IN_OUT_FADE_VARIANCE))
+      else if(_loc3_ > 1 - this.vars.ALPHA_IN_OUT_FADE_VARIANCE)
       {
-         this.glow.alpha = Math.min((1 - _loc3_) / (1 - (1 - Number(this.vars.ALPHA_IN_OUT_FADE_VARIANCE))),this.vars.ALPHA_DEFAULT);
+         this.glow.alpha = Math.min((1 - _loc3_) / (1 - (1 - this.vars.ALPHA_IN_OUT_FADE_VARIANCE)),this.vars.ALPHA_DEFAULT);
       }
       else
       {
@@ -349,11 +349,11 @@ class GlowRing
    
    public function resetGlow() : void
    {
-      this.startingScale = MathUtil.randomInt(Math.max(Number(this.vars.SCALE_DEFAULT) - Number(this.vars.SCALE_VARIANCE),0) * 1000,Math.max(this.vars.SCALE_DEFAULT + this.vars.SCALE_VARIANCE,0) * 1000) / 1000 * Number(this.scaleMultiplier);
+      this.startingScale = MathUtil.randomInt(Math.max(this.vars.SCALE_DEFAULT - this.vars.SCALE_VARIANCE,0) * 1000,Math.max(this.vars.SCALE_DEFAULT + this.vars.SCALE_VARIANCE,0) * 1000) / 1000 * this.scaleMultiplier;
       this.scale = this.startingScale;
-      this.maxScaleLifetime = Number(this.vars.SCALE_MAXIMUM) * Number(this.scaleMultiplier) - Number(this.startingScale);
-      this.rotationSpeed = MathUtil.randomInt(Math.max(Number(this.vars.ROTATION_SPEED) - Number(this.vars.ROTATION_SPEED_VARIANCE),0) * 1000,Math.max(this.vars.ROTATION_SPEED + this.vars.ROTATION_SPEED_VARIANCE,0) * 1000) / 1000;
-      this.rotationSpeed = Number(this.rotationSpeed) / 180 * Math.PI;
+      this.maxScaleLifetime = this.vars.SCALE_MAXIMUM * this.scaleMultiplier - this.startingScale;
+      this.rotationSpeed = MathUtil.randomInt(Math.max(this.vars.ROTATION_SPEED - this.vars.ROTATION_SPEED_VARIANCE,0) * 1000,Math.max(this.vars.ROTATION_SPEED + this.vars.ROTATION_SPEED_VARIANCE,0) * 1000) / 1000;
+      this.rotationSpeed = this.rotationSpeed / 180 * Math.PI;
       this.glow.blendMode = "add";
       this.glow.alpha = 0;
       var _loc1_:Matrix = new Matrix();
@@ -401,11 +401,11 @@ class Glow
    public function update(param1:int, param2:int) : void
    {
       var _loc5_:Number = NaN;
-      var _loc3_:Number = param1 / 1000 * Number(this.vars.SCALE_SPEED);
+      var _loc3_:Number = param1 / 1000 * this.vars.SCALE_SPEED;
       var _loc4_:int = 0;
       while(_loc4_ < this.glowRings.length)
       {
-         _loc5_ = param1 / 1000 * Number(this.glowRings[_loc4_].rotationSpeed);
+         _loc5_ = param1 / 1000 * this.glowRings[_loc4_].rotationSpeed;
          this.glowRings[_loc4_].update(_loc3_,_loc5_);
          _loc4_++;
       }
@@ -527,12 +527,12 @@ class RimStreak
    public function reset(param1:Number) : void
    {
       this.angleRadians = param1;
-      this.b.rotationRadians = param1 + Number(this.ANGLE_BIAS_DEGREES) * MathUtil.PI_OVER_180;
+      this.b.rotationRadians = param1 + this.ANGLE_BIAS_DEGREES * MathUtil.PI_OVER_180;
       this.acos = Math.cos(param1);
       this.asin = Math.sin(param1);
       this.t = 0;
       this.elapsed_ms = 0;
-      this.lifespan_ms = this.BASE_LIFESPAN_MS + Math.random() * Number(this.BASE_LIFESPAN_VARIANCE_MS);
+      this.lifespan_ms = this.BASE_LIFESPAN_MS + Math.random() * this.BASE_LIFESPAN_VARIANCE_MS;
       this.b.alpha = 0;
    }
    
@@ -545,28 +545,28 @@ class RimStreak
    public function update(param1:int, param2:Number) : void
    {
       this.elapsed_ms += param1;
-      this.t = Number(this.elapsed_ms) / Number(this.lifespan_ms);
+      this.t = this.elapsed_ms / this.lifespan_ms;
       this.t = Math.min(1,this.t);
       param2 *= MathUtil.lerp(this.RADIUS_LIFESPAN_START,this.RADIUS_LIFESPAN_END,this.t);
       if(this.ANGLE_DELTA_DEGREES_PER_S)
       {
-         this.angleRadians += param1 * Number(this.ANGLE_DELTA_DEGREES_PER_S) * 0.001 * MathUtil.PI_OVER_180;
-         this.b.rotationRadians = this.angleRadians + Number(this.ANGLE_BIAS_DEGREES) * MathUtil.PI_OVER_180;
+         this.angleRadians += param1 * this.ANGLE_DELTA_DEGREES_PER_S * 0.001 * MathUtil.PI_OVER_180;
+         this.b.rotationRadians = this.angleRadians + this.ANGLE_BIAS_DEGREES * MathUtil.PI_OVER_180;
          this.acos = Math.cos(this.angleRadians);
          this.asin = Math.sin(this.angleRadians);
       }
-      var _loc3_:Number = param2 * Number(this.acos);
-      var _loc4_:Number = param2 * Number(this.asin);
+      var _loc3_:Number = param2 * this.acos;
+      var _loc4_:Number = param2 * this.asin;
       this.b.x = _loc3_;
       this.b.y = _loc4_;
       var _loc5_:Number = 1;
       if(this.t < this.ALPHA_T_IN)
       {
-         _loc5_ = Math.min(Number(this.t) / Number(this.ALPHA_T_IN),this.MAX_ALPHA);
+         _loc5_ = Math.min(this.t / this.ALPHA_T_IN,this.MAX_ALPHA);
       }
       else if(this.t > this.ALPHA_T_OUT)
       {
-         _loc5_ = Math.min((1 - Number(this.t)) / (1 - Number(this.ALPHA_T_OUT)),this.MAX_ALPHA);
+         _loc5_ = Math.min((1 - this.t) / (1 - this.ALPHA_T_OUT),this.MAX_ALPHA);
       }
       else
       {

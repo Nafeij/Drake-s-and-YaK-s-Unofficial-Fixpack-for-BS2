@@ -17,7 +17,7 @@ package lib.fmodstudio
       
       override protected function loadBanks() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:ISoundDef = null;
          var _loc3_:String = null;
          var _loc4_:FmodFsbResource = null;

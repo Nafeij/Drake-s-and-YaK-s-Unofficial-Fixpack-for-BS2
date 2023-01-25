@@ -418,7 +418,7 @@ package engine.core.util
          param1.position = 0;
          while(param1.bytesAvailable)
          {
-            _loc3_ = param1.readUnsignedByte();
+            _loc3_ = int(param1.readUnsignedByte());
             _loc4_ = _loc3_.toString(16);
             if(_loc4_.length == 0)
             {
@@ -445,7 +445,7 @@ package engine.core.util
          {
             return 0;
          }
-         return param1.match(/[^\s]+/g).length;
+         return int(param1.match(/[^\s]+/g).length);
       }
       
       public static function countTokens(param1:String, param2:String) : int
@@ -549,8 +549,8 @@ package engine.core.util
             return 0;
          }
          var _loc3_:Array = new Array();
-         var _loc5_:uint = param1.length;
-         var _loc6_:uint = param2.length;
+         var _loc5_:uint = uint(param1.length);
+         var _loc6_:uint = uint(param2.length);
          if(_loc5_ == 0)
          {
             return _loc6_;

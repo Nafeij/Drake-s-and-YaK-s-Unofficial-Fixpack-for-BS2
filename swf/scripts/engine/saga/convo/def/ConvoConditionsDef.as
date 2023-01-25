@@ -224,7 +224,7 @@ package engine.saga.convo.def
       private function writeConditionsVector(param1:ByteArray, param2:Vector.<String>) : void
       {
          var _loc5_:String = null;
-         var _loc3_:int = !!param2 ? param2.length : 0;
+         var _loc3_:int = !!param2 ? int(param2.length) : 0;
          param1.writeInt(_loc3_);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)

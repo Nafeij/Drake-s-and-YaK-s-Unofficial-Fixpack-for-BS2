@@ -50,8 +50,8 @@ package engine.core.cmd
       
       public function getDebugDump(param1:ILogger) : void
       {
-         var _loc2_:* = null;
-         var _loc3_:* = null;
+         var _loc2_:String = null;
+         var _loc3_:String = null;
          var _loc4_:Vector.<Cmd> = null;
          var _loc5_:String = null;
          var _loc6_:Cmd = null;
@@ -67,7 +67,7 @@ package engine.core.cmd
                param1.info("   " + StringUtil.padRight(_loc2_," ",20) + " " + StringUtil.padRight(_loc5_," ",20));
                for each(_loc6_ in _loc4_)
                {
-                  _loc7_ = this.bindsGroup[_loc6_];
+                  _loc7_ = String(this.bindsGroup[_loc6_]);
                   _loc8_ = "      " + _loc6_.name;
                   if(_loc7_)
                   {
@@ -92,11 +92,11 @@ package engine.core.cmd
          var _loc2_:Vector.<Cmd> = this.binds[param1];
          if(_loc2_)
          {
-            _loc3_ = _loc2_.length - 1;
+            _loc3_ = int(_loc2_.length - 1);
             while(_loc3_ >= 0)
             {
                _loc4_ = _loc2_[_loc3_];
-               _loc5_ = this.bindsGroup[_loc4_];
+               _loc5_ = String(this.bindsGroup[_loc4_]);
                if(!(_loc5_ in this.disabledGroups))
                {
                   if(!_loc5_ || !this._disabledAllBindsGroups)
@@ -163,7 +163,7 @@ package engine.core.cmd
       
       public function unbind(param1:Cmd) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Vector.<Cmd> = null;
          var _loc4_:int = 0;
          for(_loc2_ in this.binds)

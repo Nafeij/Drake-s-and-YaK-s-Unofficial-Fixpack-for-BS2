@@ -75,10 +75,10 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          if(_loc2_.length > 2)
          {
-            _loc5_ = _loc2_[2];
+            _loc5_ = String(_loc2_[2]);
             _loc4_ = _loc5_ != "0" && _loc5_ != "false";
          }
          SagaAchievements.unlockAchievementById(_loc3_,0,_loc4_);
@@ -102,7 +102,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          if(_loc3_ == "*")
          {
             for each(_loc4_ in this.saga.def.achievements.defs)
@@ -124,7 +124,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Boolean = SagaAchievements.isUnlocked(_loc3_);
          logger.info("saga=" + _loc4_);
       }

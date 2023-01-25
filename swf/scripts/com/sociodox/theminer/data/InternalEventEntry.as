@@ -38,14 +38,14 @@ package com.sociodox.theminer.data
          var _loc3_:int = 0;
          this.mStackFrame = param1;
          this.mStack = "";
-         var _loc2_:int = param1.length - 1;
+         var _loc2_:int = int(param1.length - 1);
          while(_loc2_ >= 0)
          {
             this.mStack += CHARACTER_UNION + param1[_loc2_].name;
             if(_loc2_ > 0)
             {
                this.mStack += CHARACTER_ENTER;
-               _loc3_ = param1.length - 1;
+               _loc3_ = int(param1.length - 1);
                while(_loc3_ >= _loc2_)
                {
                   this.mStack += CHARACTER_TAB;

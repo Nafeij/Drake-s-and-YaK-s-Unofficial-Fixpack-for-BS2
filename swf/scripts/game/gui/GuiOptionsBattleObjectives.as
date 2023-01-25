@@ -147,7 +147,7 @@ package game.gui
          var _loc3_:BattleObjective = this._scenario.objectives[_loc2_];
          if(_loc3_)
          {
-            _loc4_ = _context.translateCategory(_loc3_.def.token + "_desc",LocaleCategory.BATTLE_OBJ);
+            _loc4_ = String(_context.translateCategory(_loc3_.def.token + "_desc",LocaleCategory.BATTLE_OBJ));
             this._body.htmlText = _loc4_;
             _context.locale.fixTextFieldFormat(this._body);
             if(_context.saga)
@@ -235,7 +235,7 @@ package game.gui
                _loc4_ = (_loc4_ + 1) % this._scenario.objectives.length;
                break;
             case 0:
-               _loc4_ = _loc4_ - 1 >= 0 ? _loc4_ - 1 : this._scenario.objectives.length - 1;
+               _loc4_ = _loc4_ - 1 >= 0 ? _loc4_ - 1 : int(this._scenario.objectives.length - 1);
          }
          this.nav.selected = this.buttons[_loc4_];
          this.objectiveHandler(this.buttons[_loc4_]);

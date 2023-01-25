@@ -180,7 +180,7 @@ package engine.path
       public function update(param1:int, param2:Function) : void
       {
          var _loc4_:Array = null;
-         var _loc5_:* = null;
+         var _loc5_:Object = null;
          var _loc6_:int = 0;
          var _loc7_:PathFloodSolverNode = null;
          var _loc8_:Object = null;
@@ -332,9 +332,9 @@ package engine.path
                }
             }
          }
-         _loc3_ = this.openQueue.length;
+         _loc3_ = int(this.openQueue.length);
          this.openQueue.sort(this.openQueueComparator);
-         _loc4_ = this.openQueue.length;
+         _loc4_ = int(this.openQueue.length);
          if(_loc4_ != _loc3_)
          {
             throw new IllegalOperationError("Failed to sort the array: resulted " + _loc4_ + " length, expected " + _loc3_);

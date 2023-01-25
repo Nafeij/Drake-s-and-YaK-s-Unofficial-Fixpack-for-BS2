@@ -16,7 +16,7 @@ package mx.core
       
       public function newInstance() : *
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:Object = new this.generator();
          if(this.properties != null)
          {

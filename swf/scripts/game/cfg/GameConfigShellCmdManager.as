@@ -212,7 +212,7 @@ package game.cfg
          var _loc3_:Array = param1.param;
          if(_loc3_.length > 1)
          {
-            _loc2_ = _loc3_[1];
+            _loc2_ = String(_loc3_[1]);
          }
          performResourceCheck(_loc2_,this.config);
       }
@@ -228,7 +228,7 @@ package game.cfg
          var _loc2_:Array = param1.param;
          if(_loc2_.length >= 2)
          {
-            _loc3_ = _loc2_[1];
+            _loc3_ = String(_loc2_[1]);
             this.config.pageManager.holder.stage.quality = _loc3_;
          }
          logger.info("stage quality=" + this.config.pageManager.holder.stage.quality);
@@ -308,10 +308,10 @@ package game.cfg
          var _loc2_:Array = param1.param;
          var _loc3_:AlertOrientationType = Enum.parse(AlertOrientationType,_loc2_[1]) as AlertOrientationType;
          var _loc4_:AlertStyleType = Enum.parse(AlertStyleType,_loc2_[2]) as AlertStyleType;
-         var _loc5_:String = _loc2_[3];
-         var _loc6_:String = _loc2_[4];
-         var _loc7_:String = _loc2_.length > 4 ? _loc2_[5] : "Proving Grounds";
-         var _loc8_:String = _loc2_.length > 5 ? _loc2_[6] : null;
+         var _loc5_:String = String(_loc2_[3]);
+         var _loc6_:String = String(_loc2_[4]);
+         var _loc7_:String = _loc2_.length > 4 ? String(_loc2_[5]) : "Proving Grounds";
+         var _loc8_:String = _loc2_.length > 5 ? String(_loc2_[6]) : null;
          var _loc9_:Alert = Alert.create(0,_loc5_,_loc6_,_loc7_,_loc8_,_loc3_,_loc4_,null);
          this.config.alerts.addAlert(_loc9_);
       }
@@ -516,7 +516,7 @@ package game.cfg
       
       private function shellFuncDisplayList(param1:CmdExec) : void
       {
-         var _loc2_:String = param1.param[1];
+         var _loc2_:String = String(param1.param[1]);
          var _loc3_:int = int(param1.param[2]);
          TutorialLayer.printDisplayListStatic(this.config.pageManager.holder,_loc2_,_loc3_,logger,false);
       }
@@ -526,7 +526,7 @@ package game.cfg
          var _loc2_:String = null;
          var _loc4_:Boolean = false;
          var _loc5_:Array = null;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:String = null;
          var _loc8_:Object = null;
          var _loc3_:Array = param1.param;
@@ -535,7 +535,7 @@ package game.cfg
             _loc5_ = [];
             for(_loc6_ in _aliases)
             {
-               _loc7_ = _aliases[_loc6_];
+               _loc7_ = String(_aliases[_loc6_]);
                if(_loc7_)
                {
                   _loc5_.push({
@@ -551,8 +551,8 @@ package game.cfg
                logger.info("------------------");
                for each(_loc8_ in _loc5_)
                {
-                  _loc6_ = _loc8_.key;
-                  _loc7_ = _loc8_.value;
+                  _loc6_ = String(_loc8_.key);
+                  _loc7_ = String(_loc8_.value);
                   logger.info("    " + StringUtil.padRight(_loc6_," ",20) + " " + _loc7_);
                }
                logger.info("------------------");
@@ -564,7 +564,7 @@ package game.cfg
             logger.info("Usage: alias [-]<alias name> [alias value]");
             return;
          }
-         _loc6_ = _loc3_[1];
+         _loc6_ = String(_loc3_[1]);
          _loc6_ = _loc6_.toLowerCase();
          if(Boolean(_loc6_) && _loc6_.charAt(0) == "-")
          {
@@ -680,7 +680,7 @@ package game.cfg
       private function shellFuncFly(param1:CmdExec) : void
       {
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : null;
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : null;
          var _loc4_:uint = _loc2_.length > 2 ? uint(_loc2_[2]) : 16755370;
          if(!_loc3_)
          {
@@ -737,7 +737,7 @@ package game.cfg
       private function shellFuncSubtitleLoad(param1:CmdExec) : void
       {
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:SubtitleSequenceResource = this.config.resman.getResource(_loc3_,SubtitleSequenceResource) as SubtitleSequenceResource;
          _loc4_.addResourceListener(this.subtitleSequenceResourceHandler);
       }
@@ -745,7 +745,7 @@ package game.cfg
       private function shellFuncFpsCap(param1:CmdExec) : void
       {
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : null;
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : null;
          if(_loc3_)
          {
             this.config.context.appInfo.root.stage.frameRate = Number(_loc3_);

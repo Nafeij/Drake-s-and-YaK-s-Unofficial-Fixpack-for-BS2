@@ -711,7 +711,7 @@ package game.gui
             _loc1_.push(new StatPurchaseInfo(_loc2_,_loc7_));
          }
          _loc3_ = this.context.legend as Legend;
-         _loc4_ = this.currentCharacter.id;
+         _loc4_ = String(this.currentCharacter.id);
          _loc3_.purchaseStats(_loc4_,_loc1_);
          this.currentCharacter.talents = this._talentsMod;
          this.listener.onPurchaseStats();
@@ -911,7 +911,7 @@ package game.gui
       
       private function _showTipHeroesTalent(param1:GuiPgStatDisplay) : void
       {
-         var _loc2_:String = this.context.translateCategory("tut_heroes_talent",LocaleCategory.TUTORIAL);
+         var _loc2_:String = String(this.context.translateCategory("tut_heroes_talent",LocaleCategory.TUTORIAL));
          this.tutorial_id = this.context.createTutorialPopup(param1._buttonStat,_loc2_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,false,null);
          this.showing_tip_heroes_talent = true;
       }
@@ -947,14 +947,14 @@ package game.gui
          {
             _loc2_ = "tut_heroes_points_notalents";
          }
-         var _loc3_:String = this.context.translateCategory(_loc2_,LocaleCategory.TUTORIAL);
+         var _loc3_:String = String(this.context.translateCategory(_loc2_,LocaleCategory.TUTORIAL));
          this.tutorial_id = this.context.createTutorialPopup(this.available_points,_loc3_,TutorialTooltipAlign.LEFT,TutorialTooltipAnchor.LEFT,true,false,null);
          this.showing_tip_heroes_points = true;
       }
       
       private function _showTipHeroesAbility() : void
       {
-         var _loc1_:String = this.context.translateCategory("tut_heroes_ability",LocaleCategory.TUTORIAL);
+         var _loc1_:String = String(this.context.translateCategory("tut_heroes_ability",LocaleCategory.TUTORIAL));
          this.tutorial_id = this.context.createTutorialPopup(this._abilityButton,_loc1_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,false,null);
          this.showing_tip_heroes_ability = true;
       }

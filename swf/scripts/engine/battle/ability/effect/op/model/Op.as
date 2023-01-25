@@ -175,7 +175,7 @@ package engine.battle.ability.effect.op.model
          var _loc7_:Stats = param2.stats;
          if(param4 == StatType.STRENGTH)
          {
-            _loc8_ = param1.def.entityClass.race;
+            _loc8_ = String(param1.def.entityClass.race);
             if(_loc8_ == "dredge")
             {
                _loc6_ += _loc7_.getValue(StatType.RESIST_STRENGTH_DREDGE);

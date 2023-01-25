@@ -46,7 +46,7 @@ package starling.display
          if(this.mFlattenedContents)
          {
             _loc1_ = 0;
-            _loc2_ = this.mFlattenedContents.length;
+            _loc2_ = int(this.mFlattenedContents.length);
             while(_loc1_ < _loc2_)
             {
                this.mFlattenedContents[_loc1_].dispose();
@@ -208,7 +208,7 @@ package starling.display
                this.mFlattenRequested = false;
             }
             _loc4_ = param2 * this.alpha;
-            _loc5_ = this.mFlattenedContents.length;
+            _loc5_ = int(this.mFlattenedContents.length);
             _loc6_ = param1.mvpMatrix3D;
             param1.finishQuadBatch();
             param1.raiseDrawCount(_loc5_);

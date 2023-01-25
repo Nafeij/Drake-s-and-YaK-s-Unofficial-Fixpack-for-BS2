@@ -527,7 +527,7 @@ package engine.landscape.travel.def
       
       public function get numTravelLocations() : int
       {
-         return !!this.locations ? this.locations.length : 0;
+         return !!this.locations ? int(this.locations.length) : 0;
       }
       
       public function getTravelLocation(param1:int) : ITravelLocationDef

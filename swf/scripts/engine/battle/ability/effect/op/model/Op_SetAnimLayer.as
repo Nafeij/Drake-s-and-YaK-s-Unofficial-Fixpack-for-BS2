@@ -27,7 +27,7 @@ package engine.battle.ability.effect.op.model
       override public function apply() : void
       {
          var _loc1_:BattleEntity = target as BattleEntity;
-         var _loc2_:String = def.params.layerId;
+         var _loc2_:String = String(def.params.layerId);
          if(_loc1_.animController)
          {
             _loc1_.animController.layer = _loc2_;

@@ -54,7 +54,7 @@ package engine.battle.ability.effect.op.model
          this.responseCaster = BattleAbilityResponseTargetType.CASTER;
          this.responseTarget = BattleAbilityResponseTargetType.TARGET;
          super(param1,param2);
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          this.abilityResponseDef = manager.factory.fetchBattleAbilityDef(_loc3_);
          if(!this.abilityResponseDef)
          {

@@ -66,7 +66,7 @@ package engine.saga.action
          var _loc10_:String = param1.substring(_loc3_ + 1);
          if(_loc7_.indexOf(_loc8_) < 0)
          {
-            _loc8_ = _loc7_[_loc7_.length - 1];
+            _loc8_ = String(_loc7_[_loc7_.length - 1]);
          }
          if(_loc8_)
          {

@@ -43,7 +43,7 @@ package uk.co.bigroom.input
       
       private function keyDownListener(param1:KeyboardEvent) : void
       {
-         var _loc2_:uint = param1.keyCode >>> 3;
+         var _loc2_:uint = uint(param1.keyCode >>> 3);
          var _loc3_:uint = uint(this.states[_loc2_]);
          this.states[_loc2_] |= 1 << (param1.keyCode & 7);
          if(this.states[_loc2_] != _loc3_)
@@ -54,7 +54,7 @@ package uk.co.bigroom.input
       
       private function keyUpListener(param1:KeyboardEvent) : void
       {
-         var _loc2_:uint = param1.keyCode >>> 3;
+         var _loc2_:uint = uint(param1.keyCode >>> 3);
          var _loc3_:uint = uint(this.states[_loc2_]);
          this.states[_loc2_] &= ~(1 << (param1.keyCode & 7));
          if(this.states[_loc2_] != _loc3_)
@@ -85,12 +85,12 @@ package uk.co.bigroom.input
       
       public function isDown(param1:uint) : Boolean
       {
-         return (Number(this.states[param1 >>> 3]) & 1 << (param1 & 7)) != 0;
+         return (this.states[param1 >>> 3] & 1 << (param1 & 7)) != 0;
       }
       
       public function isUp(param1:uint) : Boolean
       {
-         return (Number(this.states[param1 >>> 3]) & 1 << (param1 & 7)) == 0;
+         return (this.states[param1 >>> 3] & 1 << (param1 & 7)) == 0;
       }
    }
 }

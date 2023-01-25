@@ -221,7 +221,7 @@ package com.demonsters.debugger
             _loc1_ = this._bytes.bytesAvailable;
             if(_loc1_ > this._length - this._package.length)
             {
-               _loc1_ = this._length - this._package.length;
+               _loc1_ = uint(this._length - this._package.length);
             }
             this._bytes.readBytes(this._package,this._package.length,_loc1_);
          }

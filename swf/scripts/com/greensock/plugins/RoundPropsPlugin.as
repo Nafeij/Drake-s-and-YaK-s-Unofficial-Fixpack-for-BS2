@@ -34,10 +34,10 @@ package com.greensock.plugins
          var _loc2_:* = null;
          var _loc4_:PropTween = null;
          var _loc3_:Array = this._tween.vars.roundProps;
-         var _loc5_:int = _loc3_.length;
+         var _loc5_:int = int(_loc3_.length);
          while(--_loc5_ > -1)
          {
-            _loc1_ = _loc3_[_loc5_];
+            _loc1_ = String(_loc3_[_loc5_]);
             _loc4_ = this._tween.cachedPT1;
             while(_loc4_)
             {

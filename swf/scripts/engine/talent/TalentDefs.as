@@ -68,10 +68,10 @@ package engine.talent
          this.maxAvailableRanks = param1.maxAvailableRanks;
          for each(_loc3_ in param1.sounds)
          {
-            _loc5_ = _loc3_.stat;
+            _loc5_ = String(_loc3_.stat);
             _loc6_ = Enum.parse(StatType,_loc5_) as StatType;
-            _loc7_ = _loc3_.sound_ui;
-            _loc8_ = _loc3_.sound_combat;
+            _loc7_ = String(_loc3_.sound_ui);
+            _loc8_ = String(_loc3_.sound_combat);
             this._soundsUiByParentStatType[_loc6_] = _loc7_;
             this._soundsCombatByParentStatType[_loc6_] = _loc8_;
          }

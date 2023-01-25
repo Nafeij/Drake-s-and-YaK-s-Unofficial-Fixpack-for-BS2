@@ -1439,7 +1439,7 @@ package game.gui.page
          var _loc5_:Function = Quad.easeInOut;
          if(_loc2_.length > 3)
          {
-            _loc8_ = _loc2_[3];
+            _loc8_ = String(_loc2_[3]);
             _loc5_ = LandscapeSplineDef.computeEaseFunction(_loc8_,true,true);
          }
          var _loc6_:Number = 0;
@@ -1648,7 +1648,7 @@ package game.gui.page
       {
          var _loc6_:String = null;
          var _loc7_:int = 0;
-         var _loc2_:String = param1[0];
+         var _loc2_:String = String(param1[0]);
          var _loc3_:Function = param1[1];
          var _loc4_:Array = _loc2_.split(";");
          var _loc5_:int = 0;

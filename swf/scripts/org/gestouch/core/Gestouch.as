@@ -95,7 +95,7 @@ package org.gestouch.core
       
       gestouch_internal static function getDisplayListAdapter(param1:Object) : IDisplayListAdapter
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:Class = null;
          for(_loc2_ in _displayListAdaptersMap)
          {

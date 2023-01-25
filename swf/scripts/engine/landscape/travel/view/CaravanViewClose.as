@@ -542,14 +542,14 @@ package engine.landscape.travel.view
          if(Boolean(_loc3_) && _loc3_.length > 0)
          {
             randomizeAddedTypes(_loc3_);
-            _loc9_ = _loc3_[0];
+            _loc9_ = String(_loc3_[0]);
             _loc10_ = getTypeInfo(_loc9_);
             if(_loc10_.disallow_first)
             {
-               _loc11_ = _loc3_.length - 1;
+               _loc11_ = int(_loc3_.length - 1);
                while(_loc11_ >= 1)
                {
-                  _loc12_ = _loc3_[_loc11_];
+                  _loc12_ = String(_loc3_[_loc11_]);
                   if(_loc12_ != _loc9_)
                   {
                      _loc3_[_loc11_] = _loc9_;

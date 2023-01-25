@@ -214,7 +214,7 @@ package engine.resource
       {
          if(this.isRestoring)
          {
-            this.restoreCount = this.restoreCount - 1;
+            --this.restoreCount;
             if(this.restoreCount > 0)
             {
                this.uncacheAndReload();

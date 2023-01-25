@@ -37,7 +37,7 @@ package engine.saga
             logger.info("Usage: recruit <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:IEntityListDef = this.saga.caravan._legend.roster;
          if(!_loc4_)
          {

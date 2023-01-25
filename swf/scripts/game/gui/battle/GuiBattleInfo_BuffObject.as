@@ -146,7 +146,7 @@ package game.gui.battle
             return null;
          }
          var _loc1_:String = this._ability.def.id;
-         var _loc2_:String = this.context.translateCategoryRaw(_loc1_ + "_buff_verbose",LocaleCategory.ABILITY);
+         var _loc2_:String = String(this.context.translateCategoryRaw(_loc1_ + "_buff_verbose",LocaleCategory.ABILITY));
          if(_loc2_)
          {
             return this.performStringReplacement(_loc2_);

@@ -14,7 +14,7 @@ package com.google.analytics.utils
       
       public function get protocol() : Protocols
       {
-         var _loc1_:String = this._url.split("://")[0];
+         var _loc1_:String = String(this._url.split("://")[0]);
          switch(_loc1_)
          {
             case "file":
@@ -33,15 +33,15 @@ package com.google.analytics.utils
          var _loc1_:String = this._url;
          if(_loc1_.indexOf("://") > -1)
          {
-            _loc1_ = _loc1_.split("://")[1];
+            _loc1_ = String(_loc1_.split("://")[1]);
          }
          if(_loc1_.indexOf("/") > -1)
          {
-            _loc1_ = _loc1_.split("/")[0];
+            _loc1_ = String(_loc1_.split("/")[0]);
          }
          if(_loc1_.indexOf("?") > -1)
          {
-            _loc1_ = _loc1_.split("?")[0];
+            _loc1_ = String(_loc1_.split("?")[0]);
          }
          if(this.protocol == Protocols.file || this.protocol == Protocols.none)
          {
@@ -90,7 +90,7 @@ package com.google.analytics.utils
          var _loc1_:String = this._url;
          if(_loc1_.indexOf("://") > -1)
          {
-            _loc1_ = _loc1_.split("://")[1];
+            _loc1_ = String(_loc1_.split("://")[1]);
          }
          if(_loc1_.indexOf(this.hostName) == 0)
          {
@@ -98,7 +98,7 @@ package com.google.analytics.utils
          }
          if(_loc1_.indexOf("?") > -1)
          {
-            _loc1_ = _loc1_.split("?")[0];
+            _loc1_ = String(_loc1_.split("?")[0]);
          }
          if(_loc1_.charAt(0) != "/")
          {
@@ -112,7 +112,7 @@ package com.google.analytics.utils
          var _loc1_:String = this._url;
          if(_loc1_.indexOf("://") > -1)
          {
-            _loc1_ = _loc1_.split("://")[1];
+            _loc1_ = String(_loc1_.split("://")[1]);
          }
          if(_loc1_.indexOf(this.hostName) == 0)
          {
@@ -120,7 +120,7 @@ package com.google.analytics.utils
          }
          if(_loc1_.indexOf("?") > -1)
          {
-            _loc1_ = _loc1_.split("?")[1];
+            _loc1_ = String(_loc1_.split("?")[1]);
          }
          else
          {

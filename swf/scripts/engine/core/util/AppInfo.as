@@ -144,7 +144,7 @@ package engine.core.util
          {
             if(StringUtil.startsWith(_loc1_,LOCALE_PREFIX))
             {
-               _loc2_ = this.ini[_loc1_];
+               _loc2_ = String(this.ini[_loc1_]);
                if(!this.locale_mapping[_loc1_])
                {
                   if(this.locales.indexOf(_loc2_) == -1)
@@ -223,11 +223,11 @@ package engine.core.util
       {
          var _loc2_:String = LOCALE_PREFIX + param1.replace(LOCALE_REGEX,"-");
          _loc2_ = _loc2_.toLowerCase();
-         var _loc3_:String = this.locale_mapping[_loc2_];
+         var _loc3_:String = String(this.locale_mapping[_loc2_]);
          if(_loc3_ == null)
          {
             _loc2_ = _loc2_.replace(LOCALE_EXTENSION_REGEX,"");
-            _loc3_ = this.locale_mapping[_loc2_];
+            _loc3_ = String(this.locale_mapping[_loc2_]);
          }
          return _loc3_;
       }
@@ -241,12 +241,12 @@ package engine.core.util
       {
          this.handleLoadIni(param1);
          this.cacheLocales();
-         var _loc2_:String = this.ini["saveSkus"];
+         var _loc2_:String = String(this.ini["saveSkus"]);
          if(_loc2_)
          {
             this.saveSkus = _loc2_.split(",");
          }
-         _loc2_ = this.ini["finaleSaveSkus"];
+         _loc2_ = String(this.ini["finaleSaveSkus"]);
          if(_loc2_)
          {
             this.finaleSaveSkus = _loc2_.split(",");
@@ -270,7 +270,7 @@ package engine.core.util
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_.length)
          {
-            _loc4_ = _loc2_[_loc3_];
+            _loc4_ = String(_loc2_[_loc3_]);
             if(this.logger.isDebugEnabled)
             {
                this.logger.debug("parseIni scanning line " + _loc3_ + ":[" + _loc4_ + "]");
@@ -599,10 +599,10 @@ package engine.core.util
          {
             _loc3_ = param2;
          }
-         var _loc4_:* = this.ini[param1 + "." + _loc3_];
+         var _loc4_:* = String(this.ini[param1 + "." + _loc3_]);
          if(!_loc4_)
          {
-            _loc4_ = this.ini[param1 + ".en"];
+            _loc4_ = String(this.ini[param1 + ".en"]);
          }
          if(_loc4_)
          {

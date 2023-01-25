@@ -149,21 +149,21 @@ package game.gui.pages.saga_market
          var _loc8_:* = null;
          this.item = param1.itemDef;
          var _loc2_:IGuiDialog = context.createDialog();
-         var _loc3_:String = context.translate("ok");
-         var _loc4_:String = context.translate("cancel");
+         var _loc3_:String = String(context.translate("ok"));
+         var _loc4_:String = String(context.translate("cancel"));
          var _loc7_:int = this.market.sagaRenown;
          if(this.item.price > _loc7_)
          {
-            _loc5_ = context.translate("mkt_insufficient_renown_title");
-            _loc6_ = context.translate("mkt_insufficient_renown_body");
+            _loc5_ = String(context.translate("mkt_insufficient_renown_title"));
+            _loc6_ = String(context.translate("mkt_insufficient_renown_body"));
             _loc6_ = _loc6_.replace("$RENOWN",this.item.price.toString());
             _loc6_ = _loc6_.replace("$ITEM",this.item.colorizedName);
             _loc2_.openDialog(_loc5_,_loc6_,_loc3_);
          }
          else
          {
-            _loc5_ = context.translate("mkt_confirm_purchase_title");
-            _loc6_ = context.translate("mkt_confirm_purchase_body");
+            _loc5_ = String(context.translate("mkt_confirm_purchase_title"));
+            _loc6_ = String(context.translate("mkt_confirm_purchase_body"));
             _loc6_ = _loc6_.replace("$RENOWN",this.item.price.toString());
             _loc8_ = this.item.colorizedName + "<br>";
             _loc8_ += this.item.description + "<br><br>";
@@ -192,7 +192,7 @@ package game.gui.pages.saga_market
       
       private function dialogHandler(param1:String) : void
       {
-         var _loc2_:String = context.translate("ok");
+         var _loc2_:String = String(context.translate("ok"));
          if(param1 == _loc2_)
          {
             this.market.handleItemPurchase(this.item);

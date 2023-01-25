@@ -184,15 +184,15 @@ package game.cfg
       
       private function shellFuncIap(param1:CmdExec) : void
       {
-         var _loc2_:String = param1.param[1];
+         var _loc2_:String = String(param1.param[1]);
          this.iapManager.purchase(_loc2_);
       }
       
       private function shellFuncVsmon(param1:CmdExec) : void
       {
-         var _loc2_:String = param1.param[1];
-         var _loc3_:String = param1.param.length > 1 ? param1.param[2] : null;
-         var _loc4_:String = param1.param.length > 2 ? param1.param[3] : null;
+         var _loc2_:String = String(param1.param[1]);
+         var _loc3_:String = param1.param.length > 1 ? String(param1.param[2]) : null;
+         var _loc4_:String = param1.param.length > 2 ? String(param1.param[3]) : null;
          this.vsmonitor.debugUpdateEnry(_loc2_,_loc3_,_loc4_);
       }
       

@@ -368,7 +368,7 @@ package com.stoicstudio.platform.steam
          if(this.steamworks)
          {
             _loc2_ = param1.param;
-            _loc3_ = _loc2_[1];
+            _loc3_ = String(_loc2_[1]);
             this.steamworks.SteamFriends_ActivateGameOverlay(_loc3_);
          }
       }
@@ -381,8 +381,8 @@ package com.stoicstudio.platform.steam
          if(this.steamworks)
          {
             _loc2_ = param1.param;
-            _loc3_ = _loc2_[1];
-            _loc4_ = _loc2_[2];
+            _loc3_ = String(_loc2_[1]);
+            _loc4_ = String(_loc2_[2]);
             this.steamworks.SteamFriends_ActivateGameOverlayToUser(_loc3_,_loc4_);
          }
       }
@@ -394,7 +394,7 @@ package com.stoicstudio.platform.steam
          if(this.steamworks)
          {
             _loc2_ = param1.param;
-            _loc3_ = _loc2_[1];
+            _loc3_ = String(_loc2_[1]);
             this.steamworks.SteamFriends_ActivateGameOverlayToWebPage(_loc3_);
          }
       }

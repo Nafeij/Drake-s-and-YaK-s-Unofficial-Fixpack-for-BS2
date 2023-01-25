@@ -35,7 +35,7 @@ package com.google.analytics.utils
       
       private function _join(param1:Variables) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          if(!param1)
          {
             return;
@@ -72,11 +72,11 @@ package com.google.analytics.utils
          var _loc7_:int = 0;
          while(_loc7_ < _loc2_.length)
          {
-            _loc3_ = _loc2_[_loc7_];
+            _loc3_ = String(_loc2_[_loc7_]);
             if(_loc3_.indexOf("=") > -1)
             {
                _loc6_ = _loc3_.split("=");
-               _loc4_ = _loc6_[0];
+               _loc4_ = String(_loc6_[0]);
                _loc5_ = decodeURI(_loc6_[1]);
                this[_loc4_] = _loc5_;
             }
@@ -101,7 +101,7 @@ package com.google.analytics.utils
       public function toString() : String
       {
          var _loc2_:String = null;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          var _loc5_:int = 0;
          var _loc6_:int = 0;
@@ -110,7 +110,7 @@ package com.google.analytics.utils
          var _loc1_:Array = [];
          for(_loc3_ in this)
          {
-            _loc2_ = this[_loc3_];
+            _loc2_ = String(this[_loc3_]);
             if(this.URIencode)
             {
                _loc2_ = encodeURI(_loc2_);
@@ -127,11 +127,11 @@ package com.google.analytics.utils
             _loc5_ = 0;
             while(_loc5_ < this.pre.length)
             {
-               _loc7_ = this.pre[_loc5_];
+               _loc7_ = String(this.pre[_loc5_]);
                _loc6_ = 0;
                while(_loc6_ < _loc1_.length)
                {
-                  _loc4_ = _loc1_[_loc6_];
+                  _loc4_ = String(_loc1_[_loc6_]);
                   if(_loc4_.indexOf(_loc7_) == 0)
                   {
                      _loc1_.unshift(_loc1_.splice(_loc6_,1)[0]);
@@ -147,11 +147,11 @@ package com.google.analytics.utils
             _loc5_ = 0;
             while(_loc5_ < this.post.length)
             {
-               _loc8_ = this.post[_loc5_];
+               _loc8_ = String(this.post[_loc5_]);
                _loc6_ = 0;
                while(_loc6_ < _loc1_.length)
                {
-                  _loc4_ = _loc1_[_loc6_];
+                  _loc4_ = String(_loc1_[_loc6_]);
                   if(_loc4_.indexOf(_loc8_) == 0)
                   {
                      _loc1_.push(_loc1_.splice(_loc6_,1)[0]);
@@ -166,7 +166,7 @@ package com.google.analytics.utils
       
       public function toURLVariables() : URLVariables
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:URLVariables = new URLVariables();
          for(_loc2_ in this)
          {

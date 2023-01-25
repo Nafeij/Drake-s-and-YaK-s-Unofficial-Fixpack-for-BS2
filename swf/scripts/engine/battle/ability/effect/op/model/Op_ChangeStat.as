@@ -165,7 +165,7 @@ package engine.battle.ability.effect.op.model
          this.amount = param1.params.amount;
          if(param1.params.amount_expression)
          {
-            _loc3_ = param1.params.amount_expression;
+            _loc3_ = String(param1.params.amount_expression);
             _loc4_ = new Parser(_loc3_,logger);
             this.exp_amount = _loc4_.exp;
             if(!this.exp_amount)
@@ -183,7 +183,7 @@ package engine.battle.ability.effect.op.model
             this.casterBonusAddPreMultiply = param1.params.casterBonusAddPreMultiply != undefined ? int(param1.params.casterBonusAddPreMultiply) : 0;
             if(param1.params.amount_param != undefined)
             {
-               _loc6_ = param1.params.amount_param;
+               _loc6_ = String(param1.params.amount_param);
                if(_loc6_)
                {
                   _loc7_ = manager.factory;
@@ -305,7 +305,7 @@ package engine.battle.ability.effect.op.model
          {
             _loc3_ = Math.max(0,_loc3_);
          }
-         return Math.max(this.clamp_min,_loc3_);
+         return int(Math.max(this.clamp_min,_loc3_));
       }
       
       override public function apply() : void

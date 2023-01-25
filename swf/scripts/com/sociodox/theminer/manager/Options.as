@@ -513,7 +513,7 @@ package com.sociodox.theminer.manager
          var _loc3_:String = null;
          if(this.mLastFps != this.mFps)
          {
-            _loc2_ = SampleAnalyzer.mLineString[this.mFps];
+            _loc2_ = String(SampleAnalyzer.mLineString[this.mFps]);
             if(_loc2_ == null)
             {
                SampleAnalyzer.mLineString[this.mFps] = _loc2_ = String(this.mFps);
@@ -524,7 +524,7 @@ package com.sociodox.theminer.manager
          var _loc1_:int = int(System.totalMemory / 1024 / 1024);
          if(this.mLastMem != _loc1_)
          {
-            _loc3_ = SampleAnalyzer.mLineString[_loc1_];
+            _loc3_ = String(SampleAnalyzer.mLineString[_loc1_]);
             if(_loc3_ == null)
             {
                SampleAnalyzer.mLineString[_loc1_] = _loc3_ = String(_loc1_);

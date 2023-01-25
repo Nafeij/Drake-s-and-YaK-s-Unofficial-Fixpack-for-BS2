@@ -75,8 +75,8 @@ package by.blooddy.crypto.image
             Error.throwError(RangeError,2006,"quality");
          }
          var _loc3_:ByteArray = ApplicationDomain.currentDomain.domainMemory;
-         var _loc4_:uint = param1.width;
-         var _loc5_:uint = param1.height;
+         var _loc4_:uint = uint(param1.width);
+         var _loc5_:uint = uint(param1.height);
          var _loc6_:ByteArray = new ByteArray();
          _loc6_.position = 1792;
          _loc6_.writeBytes(JPEGTable.getTable(param2));
@@ -120,8 +120,8 @@ package by.blooddy.crypto.image
          si8(0,_loc7_ + 4);
          si8(1,_loc7_ + 69);
          _loc7_ = 201835;
-         var _loc8_:uint = param1.width;
-         _loc9_ = param1.height;
+         var _loc8_:uint = uint(param1.width);
+         _loc9_ = uint(param1.height);
          si16(49407,_loc7_);
          si16(4352,_loc7_ + 2);
          si8(8,_loc7_ + 4);
@@ -161,16 +161,16 @@ package by.blooddy.crypto.image
             do
             {
                _loc9_ = 0;
-               _loc16_ = _loc7_ + 8;
-               _loc17_ = _loc8_ + 8;
+               _loc16_ = uint(_loc7_ + 8);
+               _loc17_ = uint(_loc8_ + 8);
                do
                {
                   do
                   {
                      _loc18_ = param1.getPixel(_loc7_,_loc8_);
-                     _loc19_ = _loc18_ >>> 16;
-                     _loc20_ = _loc18_ >> 8 & 255;
-                     _loc21_ = _loc18_ & 255;
+                     _loc19_ = uint(_loc18_ >>> 16);
+                     _loc20_ = uint(_loc18_ >> 8 & 255);
+                     _loc21_ = uint(_loc18_ & 255);
                      sf64(0.299 * _loc19_ + 0.587 * _loc20_ + 0.114 * _loc21_ - 128,256 + _loc9_);
                      sf64(-0.16874 * _loc19_ - 0.33126 * _loc20_ + 0.5 * _loc21_,768 + _loc9_);
                      sf64(0.5 * _loc19_ - 0.41869 * _loc20_ - 0.08131 * _loc21_,1280 + _loc9_);
@@ -281,7 +281,7 @@ package by.blooddy.crypto.image
                do
                {
                   _loc50_ = lf64(_loc9_ + (_loc19_ << 3)) * lf64(1922 + (_loc19_ << 3));
-                  si32(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5),li8(2946 + _loc19_) << 2);
+                  si32(int(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5)),li8(2946 + _loc19_) << 2);
                }
                while(++_loc19_ < 64);
                
@@ -322,8 +322,8 @@ package by.blooddy.crypto.image
                }
                else
                {
-                  _loc18_ = (32767 + _loc52_) * 3;
-                  _loc19_ = _loc16_ + li8(5004 + _loc18_) * 3;
+                  _loc18_ = uint((32767 + _loc52_) * 3);
+                  _loc19_ = uint(_loc16_ + li8(5004 + _loc18_) * 3);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -353,7 +353,7 @@ package by.blooddy.crypto.image
                         _loc12_ = 0;
                      }
                   }
-                  _loc19_ = 5004 + _loc18_;
+                  _loc19_ = uint(5004 + _loc18_);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -394,7 +394,7 @@ package by.blooddy.crypto.image
                   _loc20_ = 1;
                   while(_loc20_ <= _loc19_)
                   {
-                     _loc54_ = _loc20_;
+                     _loc54_ = int(_loc20_);
                      while(_loc20_ <= _loc19_ && li32(_loc20_ << 2) == 0)
                      {
                         _loc20_++;
@@ -406,7 +406,7 @@ package by.blooddy.crypto.image
                         _loc56_ = 1;
                         while(_loc56_ <= _loc53_)
                         {
-                           _loc21_ = _loc17_ + 720;
+                           _loc21_ = uint(_loc17_ + 720);
                            _loc57_ = li8(_loc21_);
                            while(true)
                            {
@@ -440,8 +440,8 @@ package by.blooddy.crypto.image
                         }
                         _loc55_ &= 15;
                      }
-                     _loc18_ = (32767 + li32(_loc20_ << 2)) * 3;
-                     _loc21_ = _loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3;
+                     _loc18_ = uint((32767 + li32(_loc20_ << 2)) * 3);
+                     _loc21_ = uint(_loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {
@@ -471,7 +471,7 @@ package by.blooddy.crypto.image
                            _loc12_ = 0;
                         }
                      }
-                     _loc21_ = 5004 + _loc18_;
+                     _loc21_ = uint(5004 + _loc18_);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {
@@ -635,7 +635,7 @@ package by.blooddy.crypto.image
                do
                {
                   _loc50_ = lf64(_loc9_ + (_loc19_ << 3)) * lf64(2434 + (_loc19_ << 3));
-                  si32(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5),li8(2946 + _loc19_) << 2);
+                  si32(int(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5)),li8(2946 + _loc19_) << 2);
                }
                while(++_loc19_ < 64);
                
@@ -676,8 +676,8 @@ package by.blooddy.crypto.image
                }
                else
                {
-                  _loc18_ = (32767 + _loc52_) * 3;
-                  _loc19_ = _loc16_ + li8(5004 + _loc18_) * 3;
+                  _loc18_ = uint((32767 + _loc52_) * 3);
+                  _loc19_ = uint(_loc16_ + li8(5004 + _loc18_) * 3);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -707,7 +707,7 @@ package by.blooddy.crypto.image
                         _loc12_ = 0;
                      }
                   }
-                  _loc19_ = 5004 + _loc18_;
+                  _loc19_ = uint(5004 + _loc18_);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -748,7 +748,7 @@ package by.blooddy.crypto.image
                   _loc20_ = 1;
                   while(_loc20_ <= _loc19_)
                   {
-                     _loc54_ = _loc20_;
+                     _loc54_ = int(_loc20_);
                      while(_loc20_ <= _loc19_ && li32(_loc20_ << 2) == 0)
                      {
                         _loc20_++;
@@ -760,7 +760,7 @@ package by.blooddy.crypto.image
                         _loc56_ = 1;
                         while(_loc56_ <= _loc53_)
                         {
-                           _loc21_ = _loc17_ + 720;
+                           _loc21_ = uint(_loc17_ + 720);
                            _loc57_ = li8(_loc21_);
                            while(true)
                            {
@@ -794,8 +794,8 @@ package by.blooddy.crypto.image
                         }
                         _loc55_ &= 15;
                      }
-                     _loc18_ = (32767 + li32(_loc20_ << 2)) * 3;
-                     _loc21_ = _loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3;
+                     _loc18_ = uint((32767 + li32(_loc20_ << 2)) * 3);
+                     _loc21_ = uint(_loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {
@@ -825,7 +825,7 @@ package by.blooddy.crypto.image
                            _loc12_ = 0;
                         }
                      }
-                     _loc21_ = 5004 + _loc18_;
+                     _loc21_ = uint(5004 + _loc18_);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {
@@ -989,7 +989,7 @@ package by.blooddy.crypto.image
                do
                {
                   _loc50_ = lf64(_loc9_ + (_loc19_ << 3)) * lf64(2434 + (_loc19_ << 3));
-                  si32(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5),li8(2946 + _loc19_) << 2);
+                  si32(int(_loc50_ + (_loc50_ > 0 ? 0.5 : -0.5)),li8(2946 + _loc19_) << 2);
                }
                while(++_loc19_ < 64);
                
@@ -1030,8 +1030,8 @@ package by.blooddy.crypto.image
                }
                else
                {
-                  _loc18_ = (32767 + _loc52_) * 3;
-                  _loc19_ = _loc16_ + li8(5004 + _loc18_) * 3;
+                  _loc18_ = uint((32767 + _loc52_) * 3);
+                  _loc19_ = uint(_loc16_ + li8(5004 + _loc18_) * 3);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -1061,7 +1061,7 @@ package by.blooddy.crypto.image
                         _loc12_ = 0;
                      }
                   }
-                  _loc19_ = 5004 + _loc18_;
+                  _loc19_ = uint(5004 + _loc18_);
                   _loc53_ = li8(_loc19_);
                   while(true)
                   {
@@ -1102,7 +1102,7 @@ package by.blooddy.crypto.image
                   _loc20_ = 1;
                   while(_loc20_ <= _loc19_)
                   {
-                     _loc54_ = _loc20_;
+                     _loc54_ = int(_loc20_);
                      while(_loc20_ <= _loc19_ && li32(_loc20_ << 2) == 0)
                      {
                         _loc20_++;
@@ -1114,7 +1114,7 @@ package by.blooddy.crypto.image
                         _loc56_ = 1;
                         while(_loc56_ <= _loc53_)
                         {
-                           _loc21_ = _loc17_ + 720;
+                           _loc21_ = uint(_loc17_ + 720);
                            _loc57_ = li8(_loc21_);
                            while(true)
                            {
@@ -1148,8 +1148,8 @@ package by.blooddy.crypto.image
                         }
                         _loc55_ &= 15;
                      }
-                     _loc18_ = (32767 + li32(_loc20_ << 2)) * 3;
-                     _loc21_ = _loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3;
+                     _loc18_ = uint((32767 + li32(_loc20_ << 2)) * 3);
+                     _loc21_ = uint(_loc17_ + (_loc55_ << 4) * 3 + li8(5004 + _loc18_) * 3);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {
@@ -1179,7 +1179,7 @@ package by.blooddy.crypto.image
                            _loc12_ = 0;
                         }
                      }
-                     _loc21_ = 5004 + _loc18_;
+                     _loc21_ = uint(5004 + _loc18_);
                      _loc57_ = li8(_loc21_);
                      while(true)
                      {

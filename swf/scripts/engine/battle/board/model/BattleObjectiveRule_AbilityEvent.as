@@ -33,7 +33,7 @@ package engine.battle.board.model
       {
          var _loc6_:Effect = null;
          var _loc7_:Boolean = false;
-         var _loc8_:* = null;
+         var _loc8_:Object = null;
          var _loc9_:IBattleAbility = null;
          var _loc10_:int = 0;
          var _loc11_:StatRange = null;
@@ -61,7 +61,7 @@ package engine.battle.board.model
          }
          if(param3.minimumTargets)
          {
-            _loc14_ = param1.targetSet.targets.length;
+            _loc14_ = int(param1.targetSet.targets.length);
             if(param3.targetRule)
             {
                for each(_loc15_ in param1.targetSet.targets)

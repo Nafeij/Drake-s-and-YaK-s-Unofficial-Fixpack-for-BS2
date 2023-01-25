@@ -174,10 +174,10 @@ package com.google.analytics.campaign
                switch(_loc4_.length)
                {
                   case 2:
-                     _loc3_ = _loc4_[0];
+                     _loc3_ = String(_loc4_[0]);
                      break;
                   case 3:
-                     _loc3_ = _loc4_[1];
+                     _loc3_ = String(_loc4_[1]);
                }
             }
          }
@@ -236,7 +236,7 @@ package com.google.analytics.campaign
          var _loc4_:String = "";
          if(_loc3_.hasOwnProperty(_loc2_.UCNO))
          {
-            _loc4_ = _loc3_[_loc2_.UCNO];
+            _loc4_ = String(_loc3_[_loc2_.UCNO]);
             switch(_loc4_)
             {
                case "1":

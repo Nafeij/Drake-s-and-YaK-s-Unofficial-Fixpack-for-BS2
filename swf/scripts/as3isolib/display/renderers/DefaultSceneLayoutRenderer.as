@@ -37,7 +37,7 @@ package as3isolib.display.renderers
          var _loc12_:uint = 0;
          var _loc13_:IsoDisplayObject = null;
          this.scene = param1;
-         var _loc2_:uint = getTimer();
+         var _loc2_:uint = uint(getTimer());
          this.dependency = new Dictionary();
          var _loc3_:Array = param1.displayListChildren;
          var _loc4_:uint = _loc3_.length;

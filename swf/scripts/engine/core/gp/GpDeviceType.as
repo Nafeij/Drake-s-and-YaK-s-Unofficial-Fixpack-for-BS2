@@ -151,13 +151,13 @@ package engine.core.gp
       
       public static function toJsonUserCfgs() : Object
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:GpDeviceType = null;
          var _loc4_:String = null;
          var _loc5_:Object = null;
          var _loc6_:Object = null;
          var _loc7_:Object = null;
-         var _loc8_:* = null;
+         var _loc8_:String = null;
          var _loc9_:GpDeviceType = null;
          var _loc10_:Array = null;
          var _loc1_:Object = {"version":VERSION};
@@ -224,7 +224,7 @@ package engine.core.gp
          var j:Object = param1;
          var logger:ILogger = param2;
          var userCfg:Boolean = param3;
-         var version:int = j.version;
+         var version:int = int(j.version);
          if(userCfg && version != VERSION)
          {
             logger.i("GP  ","GpDeviceType skipping version [" + version + "]");
@@ -254,7 +254,7 @@ package engine.core.gp
                      {
                         for(mk in map)
                         {
-                           mv = map[mk];
+                           mv = String(map[mk]);
                            if(mv)
                            {
                               cb = Enum.parse(GpControlButton,mv) as GpControlButton;
@@ -458,7 +458,7 @@ class MappingInfo
    
    private function cloneDict(param1:Dictionary, param2:Dictionary) : Dictionary
    {
-      var _loc3_:* = null;
+      var _loc3_:Object = null;
       var _loc4_:Object = null;
       var _loc5_:Vector.<String> = null;
       for(_loc3_ in param2)
@@ -476,9 +476,9 @@ class MappingInfo
    
    public function toJson(param1:Object) : Object
    {
-      var _loc3_:* = null;
+      var _loc3_:Object = null;
       var _loc4_:Object = null;
-      var _loc5_:* = null;
+      var _loc5_:Object = null;
       var _loc6_:GpControlButton = null;
       var _loc7_:GpControlButton = null;
       var _loc8_:Vector.<String> = null;

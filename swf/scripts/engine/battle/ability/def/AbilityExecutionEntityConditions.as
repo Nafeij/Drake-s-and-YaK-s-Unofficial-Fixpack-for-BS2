@@ -162,7 +162,7 @@ package engine.battle.ability.def
          }
          if(this.race)
          {
-            _loc6_ = param1.def.entityClass.race;
+            _loc6_ = String(param1.def.entityClass.race);
             if(!this.race.checkValue(_loc6_,param2))
             {
                param4.value = "race";
@@ -185,7 +185,7 @@ package engine.battle.ability.def
          }
          if(this.entityClass)
          {
-            _loc8_ = param1.def.entityClass.id;
+            _loc8_ = String(param1.def.entityClass.id);
             if(!this.entityClass.checkValue(_loc8_,param2))
             {
                param4.value = "entityClass";
@@ -194,7 +194,7 @@ package engine.battle.ability.def
          }
          if(this.entityDefId)
          {
-            _loc9_ = param1.def.id;
+            _loc9_ = String(param1.def.id);
             if(!this.entityDefId.checkValue(_loc9_,param2))
             {
                param4.value = "entityDefId";

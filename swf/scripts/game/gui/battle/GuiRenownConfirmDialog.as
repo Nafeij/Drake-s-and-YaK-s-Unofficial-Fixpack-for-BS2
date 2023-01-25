@@ -42,8 +42,8 @@ package game.gui.battle
          var dialog:IGuiDialog = context.createDialog();
          dialog.setColors(this.confirmColor,this.cancelColor);
          dialog.setSounds(this._confirmSound,this._cancelSound);
-         confirm = context.translate("confirm");
-         cancel = context.translate("cancel");
+         confirm = String(context.translate("confirm"));
+         cancel = String(context.translate("cancel"));
          dialog.openTwoBtnDialog(context.translate(titleId),body,confirm,cancel,function(param1:String):void
          {
             if(param1 == confirm)

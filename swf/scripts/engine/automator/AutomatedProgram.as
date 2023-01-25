@@ -37,7 +37,7 @@ package engine.automator
          {
             try
             {
-               line = lines[i];
+               line = String(lines[i]);
                line = StringUtil.trim(line);
                if(line)
                {

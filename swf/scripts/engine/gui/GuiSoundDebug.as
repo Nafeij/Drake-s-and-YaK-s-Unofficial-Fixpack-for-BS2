@@ -172,7 +172,7 @@ package engine.gui
       
       private function updateCurrent() : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:ISoundEventId = null;
          var _loc5_:String = null;
          var _loc6_:String = null;
@@ -191,7 +191,7 @@ package engine.gui
          for(_loc3_ in this._driver.playing)
          {
             _loc4_ = _loc3_ as ISoundEventId;
-            _loc5_ = this._driver.playing[_loc4_];
+            _loc5_ = String(this._driver.playing[_loc4_]);
             if(_loc5_)
             {
                _loc6_ = _loc4_.toString();
@@ -373,7 +373,7 @@ package engine.gui
          var _loc3_:String = "";
          var _loc4_:int = 13;
          var _loc5_:int = 0;
-         var _loc6_:int = this.logs.length - 1;
+         var _loc6_:int = int(this.logs.length - 1);
          while(_loc6_ >= 0)
          {
             _loc7_ = this.logs[_loc6_];

@@ -73,7 +73,7 @@ package com.sociodox.theminer.window
       
       public function Update() : void
       {
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
          this.mRenderTargetData.fillRect(this.mRenderTargetData.rect,SkinManager.COLOR_GLOBAL_BG);
          this.mRenderTargetData.lock();
          this.ParseStage(Stage2D);

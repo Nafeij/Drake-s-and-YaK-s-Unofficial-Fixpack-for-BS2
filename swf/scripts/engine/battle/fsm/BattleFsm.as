@@ -646,7 +646,7 @@ package engine.battle.fsm
       
       public function get nextTurnNumber() : int
       {
-         return !!this.turns ? this.turns.length : 0;
+         return !!this.turns ? int(this.turns.length) : 0;
       }
       
       public function set turn(param1:IBattleTurn) : void

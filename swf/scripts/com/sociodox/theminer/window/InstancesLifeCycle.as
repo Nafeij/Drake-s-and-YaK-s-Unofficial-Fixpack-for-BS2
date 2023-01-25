@@ -114,7 +114,7 @@ package com.sociodox.theminer.window
          _loc2_.graphics.drawRect(0,0,_loc1_,1);
          _loc2_.graphics.endFill();
          addChild(_loc2_);
-         _loc2_.y = Number(Stage2D.stageHeight) - _loc2_.height;
+         _loc2_.y = Stage2D.stageHeight - _loc2_.height;
          var _loc3_:TextFormat = new TextFormat("_sans",11,SkinManager.COLOR_GLOBAL_TEXT,false);
          var _loc4_:TextFormat = new TextFormat("_sans",9,SkinManager.COLOR_GLOBAL_TEXT,false);
          var _loc5_:GlowFilter = new GlowFilter(SkinManager.COLOR_GLOBAL_TEXT_GLOW,1,2,2,3,2,false,false);
@@ -126,7 +126,7 @@ package com.sociodox.theminer.window
          this.mInfos.filters = [_loc5_];
          this.mInfos.x = 2;
          addChild(this.mInfos);
-         this.mInfos.y = Number(Stage2D.stageHeight) - _loc2_.height;
+         this.mInfos.y = Stage2D.stageHeight - _loc2_.height;
          this.mLegendTxt = [new TextField(),new TextField(),new TextField(),new TextField()];
          var _loc6_:int = 0;
          while(_loc6_ < 4)
@@ -139,7 +139,7 @@ package com.sociodox.theminer.window
             this.mLegendTxt[_loc6_].y = -4;
             _loc6_++;
          }
-         this.mLegend.y = Number(Stage2D.stageHeight) - 28;
+         this.mLegend.y = Stage2D.stageHeight - 28;
          this.mLegend.graphics.clear();
          this.mLegend.graphics.beginFill(SkinManager.COLOR_LIFLECYCLE_CREATE,1);
          this.mLegend.graphics.drawRect(3,0,10,7);
@@ -211,7 +211,7 @@ package com.sociodox.theminer.window
       
       public function Update() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:* = null;
          if(getTimer() - this.mLastTick >= 1000)
          {

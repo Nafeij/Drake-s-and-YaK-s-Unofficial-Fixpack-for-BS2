@@ -45,7 +45,7 @@ package game.cfg
             }
             return;
          }
-         var _loc5_:String = _loc2_[1];
+         var _loc5_:String = String(_loc2_[1]);
          _loc5_ = _loc5_.toUpperCase();
          _loc3_ = Enum.parse(BattleFacing,_loc5_) as BattleFacing;
          if(!_loc3_)

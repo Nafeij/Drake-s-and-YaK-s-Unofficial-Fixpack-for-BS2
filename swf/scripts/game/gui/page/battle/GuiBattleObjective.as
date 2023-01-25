@@ -47,7 +47,7 @@ package game.gui.page.battle
          var _loc4_:String = param1.def.token;
          if(_loc4_)
          {
-            _loc3_ = param2.translateCategory(_loc4_,LocaleCategory.BATTLE_OBJ);
+            _loc3_ = String(param2.translateCategory(_loc4_,LocaleCategory.BATTLE_OBJ));
          }
          if(param1.def.count)
          {

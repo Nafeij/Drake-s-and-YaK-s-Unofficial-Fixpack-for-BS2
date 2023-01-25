@@ -36,7 +36,7 @@ package engine.saga.action
                _loc7_ = saga.getCastMember(_loc5_);
                if(_loc7_)
                {
-                  _loc5_ = _loc7_.id;
+                  _loc5_ = String(_loc7_.id);
                }
                _loc6_ = _loc1_.getEntityByIdOrByDefId(_loc5_,_loc4_,false);
                if(!_loc6_)

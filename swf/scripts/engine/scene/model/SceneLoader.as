@@ -339,7 +339,7 @@ package engine.scene.model
                   if(Boolean(bbs) && bbs.length > 0)
                   {
                      bbsi = Math.round(this.context.rng.nextNumber() * (bbs.length - 1));
-                     board_id = bbs[bbsi];
+                     board_id = String(bbs[bbsi]);
                      this.logger.info("SceneLoader random board [" + board_id + "]");
                   }
                }

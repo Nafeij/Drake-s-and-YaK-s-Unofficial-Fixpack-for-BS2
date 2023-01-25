@@ -320,7 +320,7 @@ package engine.saga
       {
          var _loc2_:String = null;
          var _loc3_:CaravanDef = null;
-         var _loc1_:int = this.caravans.length;
+         var _loc1_:int = int(this.caravans.length);
          while(_loc1_ < 1000)
          {
             _loc2_ = "New Caravan " + _loc1_;
@@ -383,7 +383,7 @@ package engine.saga
          if(this.variablesByName[_loc2_])
          {
             _loc2_ = null;
-            _loc3_ = this.variables.length;
+            _loc3_ = int(this.variables.length);
             while(_loc3_ < 1000)
             {
                _loc2_ = param1 + " " + _loc3_;

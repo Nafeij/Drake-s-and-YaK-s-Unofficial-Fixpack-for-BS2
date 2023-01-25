@@ -501,7 +501,7 @@ package game.gui
          }
          this.speaker = param1.speaker;
          var _loc2_:Boolean = param1.isAudioBlockingInput();
-         var _loc3_:String = !!this.speaker ? this.speaker.id : null;
+         var _loc3_:String = !!this.speaker ? String(this.speaker.id) : null;
          if(!param1.text)
          {
             this.appendText("[error]",null,"___CONVO ERROR___NO TEXT TO DISPLAY FOR\nURL=" + this.convo.def.url + "\nNODE=" + param1.nodeIds);
@@ -624,7 +624,7 @@ package game.gui
       private function checkIconCache() : void
       {
          var _loc1_:IResource = null;
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:IEntityDef = null;
          var _loc4_:String = null;
          if(!this.iconType)
@@ -730,7 +730,7 @@ package game.gui
       {
          if(this._textName)
          {
-            this._textName.htmlText = !!this._speaker ? this._speaker.name : "";
+            this._textName.htmlText = !!this._speaker ? String(this._speaker.name) : "";
             this._textName.visible = this._speaker != null;
             context.currentLocale.fixTextFieldFormat(this._textName);
             scaleTextfields();

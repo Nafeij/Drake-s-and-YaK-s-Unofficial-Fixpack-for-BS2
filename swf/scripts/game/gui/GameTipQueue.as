@@ -52,7 +52,7 @@ package game.gui
          var _loc1_:TipEntry = this.entries[0];
          this.entries.splice(0,1);
          this.current = this.context.createDialog();
-         var _loc2_:String = this.context.translate("ok");
+         var _loc2_:String = String(this.context.translate("ok"));
          this.current.openDialog(_loc1_.title,_loc1_.body,_loc2_,this.dialogCloseHandler);
          _loc1_.saga.setVar(_loc1_.varname,true);
       }

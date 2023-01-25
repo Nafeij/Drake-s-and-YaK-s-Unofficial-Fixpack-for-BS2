@@ -40,7 +40,7 @@ package engine.anim.def
          flipsFacing = param1.flipsFacing;
          for each(_loc4_ in param1.facings)
          {
-            _loc6_ = _loc4_.anim;
+            _loc6_ = String(_loc4_.anim);
             _loc7_ = Enum.parse(param2,_loc4_.facing) as IAnimFacing;
             addAnim(_loc7_,_loc6_);
          }
@@ -50,7 +50,7 @@ package engine.anim.def
       
       public static function save(param1:OrientedAnimsDef) : Object
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:IAnimFacing = null;
          var _loc5_:String = null;
          var _loc6_:Object = null;
@@ -62,7 +62,7 @@ package engine.anim.def
          for(_loc3_ in param1.animsByFacing)
          {
             _loc4_ = _loc3_ as IAnimFacing;
-            _loc5_ = param1.animsByFacing[_loc4_];
+            _loc5_ = String(param1.animsByFacing[_loc4_]);
             _loc6_ = {
                "facing":_loc4_.name,
                "anim":_loc5_

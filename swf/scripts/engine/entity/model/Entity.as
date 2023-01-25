@@ -75,7 +75,7 @@ package engine.entity.model
       
       public function get name() : String
       {
-         return !!this._def ? this._def.name : null;
+         return !!this._def ? String(this._def.name) : null;
       }
       
       public function get stats() : Stats

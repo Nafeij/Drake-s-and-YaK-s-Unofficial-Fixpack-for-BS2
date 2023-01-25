@@ -63,7 +63,7 @@ package starling.animation
          {
             return;
          }
-         var _loc2_:int = this.mObjects.length - 1;
+         var _loc2_:int = int(this.mObjects.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = this.mObjects[_loc2_] as Tween;
@@ -83,7 +83,7 @@ package starling.animation
          {
             return false;
          }
-         var _loc2_:int = this.mObjects.length - 1;
+         var _loc2_:int = int(this.mObjects.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = this.mObjects[_loc2_] as Tween;
@@ -99,7 +99,7 @@ package starling.animation
       public function purge() : void
       {
          var _loc2_:EventDispatcher = null;
-         var _loc1_:int = this.mObjects.length - 1;
+         var _loc1_:int = int(this.mObjects.length - 1);
          while(_loc1_ >= 0)
          {
             _loc2_ = this.mObjects[_loc1_] as EventDispatcher;
@@ -144,7 +144,7 @@ package starling.animation
       
       public function tween(param1:Object, param2:Number, param3:Object) : IAnimatable
       {
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          var _loc6_:Object = null;
          if(param1 == null)
          {
@@ -181,7 +181,7 @@ package starling.animation
       {
          var _loc4_:int = 0;
          var _loc5_:IAnimatable = null;
-         var _loc2_:int = this.mObjects.length;
+         var _loc2_:int = int(this.mObjects.length);
          var _loc3_:int = 0;
          this.mElapsedTime += param1;
          if(_loc2_ == 0)
@@ -206,7 +206,7 @@ package starling.animation
          }
          if(_loc3_ != _loc4_)
          {
-            _loc2_ = this.mObjects.length;
+            _loc2_ = int(this.mObjects.length);
             while(_loc4_ < _loc2_)
             {
                this.mObjects[int(_loc3_++)] = this.mObjects[int(_loc4_++)];

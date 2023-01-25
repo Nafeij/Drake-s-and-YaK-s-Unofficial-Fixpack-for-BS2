@@ -225,7 +225,7 @@ package game.gui
          if(this._ability)
          {
             this._textAblName.text = this._ability.name;
-            _loc2_ = context.translateCategory(this._ability.id + "_pg_desc",LocaleCategory.ABILITY);
+            _loc2_ = String(context.translateCategory(this._ability.id + "_pg_desc",LocaleCategory.ABILITY));
             _loc2_ = this._ability.makeSubstitutions(_loc2_,logger);
             this._textAblDesc.htmlText = _loc2_;
             this.icon = _context.getLargeAbilityIcon(this._ability);

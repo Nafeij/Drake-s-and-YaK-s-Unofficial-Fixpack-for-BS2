@@ -269,7 +269,7 @@ package engine.saga.convo.def
       public static function writeFlagsVector(param1:ByteArray, param2:Vector.<ConvoFlagDef>) : void
       {
          var _loc3_:ConvoFlagDef = null;
-         param1.writeByte(!!param2 ? param2.length : 0);
+         param1.writeByte(!!param2 ? int(param2.length) : 0);
          if(param2)
          {
             for each(_loc3_ in param2)
@@ -446,15 +446,15 @@ package engine.saga.convo.def
          {
             if(param1)
             {
-               _loc3_ = this.convo.strings.stitches[this.id + param1];
+               _loc3_ = String(this.convo.strings.stitches[this.id + param1]);
             }
             if(!_loc3_)
             {
-               _loc3_ = this.convo.strings.stitches[this.id];
+               _loc3_ = String(this.convo.strings.stitches[this.id]);
             }
             if(!_loc3_ && !param1)
             {
-               _loc3_ = this.convo.strings.stitches[this.id + "^m"];
+               _loc3_ = String(this.convo.strings.stitches[this.id + "^m"]);
                if(!_loc3_)
                {
                }
@@ -817,7 +817,7 @@ package engine.saga.convo.def
          {
             this.link.writeBytes(param1);
          }
-         param1.writeByte(!!this.options ? this.options.length : 0);
+         param1.writeByte(!!this.options ? int(this.options.length) : 0);
          if(this.options)
          {
             for each(_loc3_ in this.options)

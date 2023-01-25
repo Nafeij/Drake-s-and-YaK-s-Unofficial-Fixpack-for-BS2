@@ -129,7 +129,7 @@ package engine.saga.action
       
       public static function getPropsByType(param1:ActionType) : Array
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:ActionType = null;
          var _loc5_:Array = null;
          var _loc6_:Dictionary = null;
@@ -426,7 +426,7 @@ package engine.saga.action
                }
                else
                {
-                  _loc5_ = this[_loc3_];
+                  _loc5_ = String(this[_loc3_]);
                   if(_loc5_)
                   {
                      if(_loc3_ == "msg")

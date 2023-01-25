@@ -50,7 +50,7 @@ package game.gui
       
       public function cleanup() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:BitmapResource = null;
          for(_loc1_ in this.bmpholders)
          {

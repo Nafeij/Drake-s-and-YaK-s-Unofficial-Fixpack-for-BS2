@@ -161,7 +161,7 @@ package com.junkbyte.console.core
       
       public function getChannels() : Array
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc1_:Array = new Array(ConsoleChannel.GLOBAL_CHANNEL);
          this.addIfexist(ConsoleChannel.DEFAULT_CHANNEL,_loc1_);
          this.addIfexist(ConsoleChannel.FILTER_CHANNEL,_loc1_);

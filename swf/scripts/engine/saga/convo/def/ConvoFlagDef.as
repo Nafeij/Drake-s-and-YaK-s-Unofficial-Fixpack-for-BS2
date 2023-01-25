@@ -95,7 +95,7 @@ package engine.saga.convo.def
          {
             return false;
          }
-         var _loc3_:int = param1.length;
+         var _loc3_:int = int(param1.length);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {
@@ -241,9 +241,9 @@ package engine.saga.convo.def
          {
             throw new ArgumentError("Malformed Ga [" + _loc1_ + "] expected 4 segments: [category/action/label/value]");
          }
-         var _loc3_:String = _loc2_[0];
-         var _loc4_:String = _loc2_[1];
-         var _loc5_:String = _loc2_[2];
+         var _loc3_:String = String(_loc2_[0]);
+         var _loc4_:String = String(_loc2_[1]);
+         var _loc5_:String = String(_loc2_[2]);
          var _loc6_:int = int(_loc2_[3]);
          Ga.normal(_loc3_,_loc4_,_loc5_,_loc6_);
       }

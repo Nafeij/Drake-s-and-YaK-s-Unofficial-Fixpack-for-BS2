@@ -69,7 +69,7 @@ package game.entry
          {
             return;
          }
-         _loc2_.x = Math.max(0,_loc2_.x - (param1 - Number(_loc2_.width)));
+         _loc2_.x = Math.max(0,_loc2_.x - (param1 - _loc2_.width));
          _loc2_.width = param1;
       }
       
@@ -80,7 +80,7 @@ package game.entry
          {
             return;
          }
-         _loc2_.y = Math.max(0,_loc2_.y - (param1 - Number(_loc2_.height)));
+         _loc2_.y = Math.max(0,_loc2_.y - (param1 - _loc2_.height));
          _loc2_.height = param1;
       }
       
@@ -112,7 +112,7 @@ package game.entry
          root.invoked = true;
          this.invoked = true;
          logInfo("INVOKE approot=[" + appInfo.nativeAppUrlRoot + "]");
-         var _loc3_:String = param1.currentDirectory.nativePath;
+         var _loc3_:String = String(param1.currentDirectory.nativePath);
          logInfo("INVOKE CWD=[" + _loc3_ + "]");
          invokeArguments = param1.arguments;
          this.readyToSetup = true;
@@ -223,7 +223,7 @@ package game.entry
          var _loc2_:String = Hash.DJBHash(_loc1_).toString(16);
          var _loc3_:String = appInfo.buildVersion;
          var _loc4_:ILogger = appInfo.logger;
-         var _loc5_:String = appInfo.ini["google_uid"];
+         var _loc5_:String = String(appInfo.ini["google_uid"]);
          var _loc6_:Vector.<String> = null;
          if(_loc5_)
          {
@@ -273,7 +273,7 @@ package game.entry
          var _loc3_:int = 0;
          while(_loc3_ < invokeArguments.length)
          {
-            _loc4_ = invokeArguments[_loc3_];
+            _loc4_ = String(invokeArguments[_loc3_]);
             Ga.minimal("unknown","invoke_arg",_loc4_,_loc2_);
             _loc3_++;
          }

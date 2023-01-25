@@ -345,7 +345,7 @@ package game.gui
       
       private function onDialogChoiceSelected(param1:String) : void
       {
-         var _loc2_:String = context.translate("yes");
+         var _loc2_:String = String(context.translate("yes"));
          if(param1 == _loc2_)
          {
             this.dialogYesFunction();
@@ -367,13 +367,13 @@ package game.gui
          _loc3_ = context.createDialog();
          if(context.isSagaStartPage || _loc2_.isQuitToDesktop)
          {
-            _loc5_ = context.translate("start_quit_confirm_title");
-            _loc4_ = context.locale.translateAppTitleToken("start_quit_confirm_text");
+            _loc5_ = String(context.translate("start_quit_confirm_title"));
+            _loc4_ = String(context.locale.translateAppTitleToken("start_quit_confirm_text"));
          }
          else if(_loc2_.isQuitToStartHappening)
          {
-            _loc5_ = context.translate("quit_game_title_start");
-            _loc4_ = context.translate("quit_game_body_start");
+            _loc5_ = String(context.translate("quit_game_title_start"));
+            _loc4_ = String(context.translate("quit_game_body_start"));
          }
          else if(_loc2_.isSurvival)
          {
@@ -381,29 +381,29 @@ package game.gui
             {
                if(_loc2_.survivalReloadCount >= _loc2_.survivalReloadLimit)
                {
-                  _loc5_ = context.translate("survival_quit_battle_limit_title");
-                  _loc4_ = context.translate("survival_quit_battle_limit_body");
+                  _loc5_ = String(context.translate("survival_quit_battle_limit_title"));
+                  _loc4_ = String(context.translate("survival_quit_battle_limit_body"));
                }
                else
                {
-                  _loc5_ = context.translate("survival_quit_battle_title");
-                  _loc4_ = context.translate("survival_quit_battle_body");
+                  _loc5_ = String(context.translate("survival_quit_battle_title"));
+                  _loc4_ = String(context.translate("survival_quit_battle_body"));
                }
             }
             else
             {
-               _loc5_ = context.translate("survival_quit_game_title");
-               _loc4_ = context.translate("survival_quit_game_body");
+               _loc5_ = String(context.translate("survival_quit_game_title"));
+               _loc4_ = String(context.translate("survival_quit_game_body"));
             }
          }
          else
          {
-            _loc5_ = context.translate("quit_game_title");
-            _loc4_ = context.translate("quit_game_body_saga");
+            _loc5_ = String(context.translate("quit_game_title"));
+            _loc4_ = String(context.translate("quit_game_body_saga"));
          }
          _loc4_ = _loc2_.performStringReplacement_SagaVar(_loc4_);
-         var _loc6_:String = context.translate("yes");
-         var _loc7_:String = context.translate("no");
+         var _loc6_:String = String(context.translate("yes"));
+         var _loc7_:String = String(context.translate("no"));
          _loc3_.openTwoBtnDialog(_loc5_,_loc4_,_loc6_,_loc7_,this.onDialogChoiceSelected);
       }
       

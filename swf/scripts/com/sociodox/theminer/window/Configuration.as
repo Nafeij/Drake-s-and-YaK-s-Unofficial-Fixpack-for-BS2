@@ -501,7 +501,7 @@ package com.sociodox.theminer.window
          var _loc1_:int = int(Stage2D.stage.stageWidth);
          this.graphics.clear();
          this.graphics.beginFill(SkinManager.COLOR_GLOBAL_BG,1);
-         this.graphics.drawRect(0,16,_loc1_,Number(Stage2D.stage.stageHeight) - 18);
+         this.graphics.drawRect(0,16,_loc1_,Stage2D.stage.stageHeight - 18);
          this.graphics.endFill();
          this.graphics.beginFill(SkinManager.COLOR_GLOBAL_LINE_DARK,0.6);
          this.graphics.drawRect(0,17,_loc1_,1);
@@ -528,7 +528,7 @@ package com.sociodox.theminer.window
       
       private function Init() : void
       {
-         this.alpha = Number(Commands.Opacity) / 10;
+         this.alpha = Commands.Opacity / 10;
          this.mouseEnabled = false;
          var _loc1_:int = int(Stage2D.stage.stageWidth);
          var _loc2_:Sprite = new Sprite();
@@ -764,7 +764,7 @@ package com.sociodox.theminer.window
             {
                --Commands.Opacity;
             }
-            this.alpha = Number(Commands.Opacity) / 10;
+            this.alpha = Commands.Opacity / 10;
             this.mOpacityDown.Reset();
             Configuration.INTERFACE_OPACITY = Commands.Opacity;
             Save();
@@ -775,7 +775,7 @@ package com.sociodox.theminer.window
             {
                ++Commands.Opacity;
             }
-            this.alpha = Number(Commands.Opacity) / 10;
+            this.alpha = Commands.Opacity / 10;
             this.mOpacityUp.Reset();
             Configuration.INTERFACE_OPACITY = Commands.Opacity;
             Save();

@@ -330,7 +330,7 @@ package lib.engine.util.air
       {
          var _loc1_:Number = this.getTotalFontHeight();
          var _loc2_:Number = Math.max(0,Math.round(this._width - this.borderThickness * 2.5));
-         var _loc3_:Number = Math.max(0,Math.round((_loc1_ + (_loc1_ - Number(this.st.fontSize))) * this.numberOfLines));
+         var _loc3_:Number = Math.max(0,Math.round((_loc1_ + (_loc1_ - this.st.fontSize)) * this.numberOfLines));
          return new Rectangle(this.x + this.borderThickness,this.y + this.borderThickness,_loc2_,_loc3_ + 8);
       }
       

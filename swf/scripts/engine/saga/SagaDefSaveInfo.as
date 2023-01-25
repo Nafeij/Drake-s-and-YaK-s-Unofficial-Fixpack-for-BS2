@@ -47,7 +47,7 @@ package engine.saga
          var _loc3_:int = 0;
          while(_loc3_ < this.filenames.length)
          {
-            _loc4_ = this.filenames[_loc3_];
+            _loc4_ = String(this.filenames[_loc3_]);
             _loc5_ = this.jsons[_loc3_];
             param1.push(_loc5_);
             param2.push(_loc4_);

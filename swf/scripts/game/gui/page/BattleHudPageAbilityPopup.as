@@ -142,7 +142,7 @@ package game.gui.page
          var _loc12_:int = 0;
          var _loc13_:BattleAbilityDef = null;
          var _loc14_:int = 0;
-         var _loc15_:* = null;
+         var _loc15_:Object = null;
          var _loc16_:int = 0;
          var _loc17_:StatChangeData = null;
          if(!this.gui)
@@ -185,8 +185,8 @@ package game.gui.page
             {
                if(_loc4_)
                {
-                  _loc6_ = _loc4_.x + Number(_loc4_.diameter) / 2;
-                  _loc7_ = _loc4_.y + Number(_loc4_.diameter) / 2;
+                  _loc6_ = _loc4_.x + _loc4_.diameter / 2;
+                  _loc7_ = _loc4_.y + _loc4_.diameter / 2;
                }
                else
                {

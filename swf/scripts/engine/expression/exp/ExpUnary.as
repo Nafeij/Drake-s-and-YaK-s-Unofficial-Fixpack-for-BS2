@@ -18,7 +18,7 @@ package engine.expression.exp
       
       public function fromTokens(param1:Array, param2:Array) : ExpUnary
       {
-         var _loc3_:String = param1[0];
+         var _loc3_:String = String(param1[0]);
          this.operator = OperatorUnary.fetch(_loc3_);
          if(!this.operator)
          {

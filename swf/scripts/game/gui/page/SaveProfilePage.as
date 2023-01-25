@@ -569,7 +569,7 @@ package game.gui.page
             _loc7_ = config.context.appInfo.findFilesUnderUrl(AppInfo.DIR_ABSOLUTE,_loc5_,_loc4_);
             if(Boolean(_loc7_) && Boolean(_loc7_.length))
             {
-               _loc5_ = _loc7_[0];
+               _loc5_ = String(_loc7_[0]);
                break;
             }
          }

@@ -72,7 +72,7 @@ package com.stoicstudio.platform.gog
          if(_loc1_)
          {
             this._appInfo.logger.i("GOG","Gog api init ok");
-            _loc2_ = 3000 + getTimer();
+            _loc2_ = uint(3000 + getTimer());
             while(!this.galaxy.GalaxyAPI_IsLoggedIn() && getTimer() < _loc2_)
             {
             }

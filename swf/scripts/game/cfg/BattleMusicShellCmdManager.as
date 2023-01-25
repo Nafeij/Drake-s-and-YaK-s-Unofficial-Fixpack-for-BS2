@@ -35,7 +35,7 @@ package game.cfg
             logger.info("Usage:");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          if(this._music)
          {
             this._music.cleanup();

@@ -377,7 +377,7 @@ package game.gui.pages
             _loc1_ = UserLifecycleManager.Instance().userName;
             if(UserLifecycleManager.Instance().userNeedsTranslation)
             {
-               _loc1_ = _context.translateCategory(_loc1_,LocaleCategory.PLATFORM);
+               _loc1_ = String(_context.translateCategory(_loc1_,LocaleCategory.PLATFORM));
             }
             _loc2_ = 40;
             this._button$xbox_gamertag.buttonText = StringUtil.truncate(_loc1_,_loc2_);

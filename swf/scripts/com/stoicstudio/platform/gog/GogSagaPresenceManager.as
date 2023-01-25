@@ -50,7 +50,7 @@ package com.stoicstudio.platform.gog
       
       private function lookUpPresenceText(param1:String) : String
       {
-         var _loc2_:String = this.presenceTable[param1];
+         var _loc2_:String = String(this.presenceTable[param1]);
          var _loc3_:String = "";
          if(!_loc2_)
          {

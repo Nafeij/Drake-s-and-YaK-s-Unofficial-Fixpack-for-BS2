@@ -26,7 +26,7 @@ package com.greensock.plugins
          var _loc4_:Array = _target.currentLabels;
          var _loc5_:String = param2;
          var _loc6_:int = _target.currentFrame;
-         var _loc7_:int = _loc4_.length;
+         var _loc7_:int = int(_loc4_.length);
          while(_loc7_--)
          {
             if(_loc4_[_loc7_].name == _loc5_)

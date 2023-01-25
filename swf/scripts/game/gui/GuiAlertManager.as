@@ -363,7 +363,7 @@ package game.gui
       
       private function getOrientationForTimer(param1:Timer) : AlertOrientationType
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:AlertOrientationType = null;
          var _loc4_:Timer = null;
          for(_loc2_ in this.reappearTimersByOrientation)

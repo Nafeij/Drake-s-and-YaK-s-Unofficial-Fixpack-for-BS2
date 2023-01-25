@@ -130,7 +130,7 @@ package com.junkbyte.console.view
       protected function init(param1:Number, param2:Number, param3:Boolean = false, param4:Number = -1, param5:Number = -1, param6:int = -1) : void
       {
          this.bg.graphics.clear();
-         this.bg.graphics.beginFill(param4 >= 0 ? param4 : this.style.backgroundColor,param5 >= 0 ? param5 : this.style.backgroundAlpha);
+         this.bg.graphics.beginFill(param4 >= 0 ? uint(param4) : this.style.backgroundColor,param5 >= 0 ? param5 : this.style.backgroundAlpha);
          if(param6 < 0)
          {
             param6 = this.style.roundBorder;

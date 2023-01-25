@@ -185,7 +185,7 @@ package engine.battle.behavior
                         return;
                      }
                      this.consumedWillpower = _loc13_;
-                     entity.stats.getStat(StatType.WILLPOWER).base = Number(entity.stats.getStat(StatType.WILLPOWER).base) - _loc14_;
+                     entity.stats.getStat(StatType.WILLPOWER).base = entity.stats.getStat(StatType.WILLPOWER).base - _loc14_;
                      if(_loc5_.isDebugEnabled)
                      {
                         _loc15_ = entity.stats.getStat(StatType.WILLPOWER);

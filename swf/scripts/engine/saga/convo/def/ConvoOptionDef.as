@@ -76,7 +76,7 @@ package engine.saga.convo.def
             makeReason(param3,"ConvoOptionDef.comparatorVectors(len)");
             return false;
          }
-         var _loc5_:int = param1.length;
+         var _loc5_:int = int(param1.length);
          var _loc6_:int = 0;
          while(_loc6_ < _loc5_)
          {
@@ -202,14 +202,14 @@ package engine.saga.convo.def
                _loc5_ = param1.strings.options[this.nodeId + param2];
                if(Boolean(_loc5_) && _loc5_.length > this.index)
                {
-                  _loc4_ = _loc5_[this.index];
+                  _loc4_ = String(_loc5_[this.index]);
                }
             }
             if(!_loc4_)
             {
                if(Boolean(_loc3_) && _loc3_.length > this.index)
                {
-                  _loc4_ = _loc3_[this.index];
+                  _loc4_ = String(_loc3_[this.index]);
                }
             }
             if(!_loc4_ && !param2)

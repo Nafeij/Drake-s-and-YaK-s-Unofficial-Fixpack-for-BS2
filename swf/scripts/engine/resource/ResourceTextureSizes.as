@@ -41,7 +41,7 @@ package engine.resource
                      toks = line.split(" ");
                      if(toks.length == 3)
                      {
-                        url = toks[0];
+                        url = String(toks[0]);
                         p = new Point(toks[1],toks[2]);
                         this.originalSizes[url] = p;
                      }

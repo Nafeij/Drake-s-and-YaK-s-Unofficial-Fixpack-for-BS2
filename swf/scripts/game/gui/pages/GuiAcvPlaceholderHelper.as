@@ -245,7 +245,7 @@ package game.gui.pages
             this._context.logger.error("Bogus achievement [" + param1 + "]");
             return null;
          }
-         var _loc4_:int = this.acv_icons.length;
+         var _loc4_:int = int(this.acv_icons.length);
          if(_loc4_ >= this.acv_placeholders.length)
          {
             this._context.logger.error("Too many achievements?");

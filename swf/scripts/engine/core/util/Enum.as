@@ -53,7 +53,7 @@ package engine.core.util
          }
          b = new Dictionary();
          v = new Vector.<Enum>();
-         n = pending.length;
+         n = int(pending.length);
          i = 0;
          while(i < n)
          {
@@ -127,7 +127,7 @@ package engine.core.util
       public static function fuzzyParse(param1:Class, param2:String, param3:ILogger) : Enum
       {
          var _loc5_:String = null;
-         var _loc7_:* = null;
+         var _loc7_:String = null;
          var _loc8_:int = 0;
          var _loc4_:Dictionary = getByName(param1,param3);
          if(!_loc4_)

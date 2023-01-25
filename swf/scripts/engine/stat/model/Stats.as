@@ -174,7 +174,7 @@ package engine.stat.model
       
       public function clone(param1:IStatsProvider) : Stats
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc2_:Stats = new Stats(param1,this.locked);
          for(_loc3_ in this._stats)
          {

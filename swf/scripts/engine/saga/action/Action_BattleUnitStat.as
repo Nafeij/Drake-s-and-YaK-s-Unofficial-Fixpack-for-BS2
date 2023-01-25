@@ -36,7 +36,7 @@ package engine.saga.action
          var _loc5_:IEntityDef = saga.getCastMember(_loc1_);
          if(_loc5_)
          {
-            _loc1_ = _loc5_.id;
+            _loc1_ = String(_loc5_.id);
          }
          var _loc6_:BattleBoard = saga.getBattleBoard();
          if(!_loc6_)

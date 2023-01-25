@@ -345,7 +345,7 @@ package engine.anim.def
          {
             return this._mixDefaultName;
          }
-         var _loc1_:* = "mix_idle";
+         var _loc1_:String = "mix_idle";
          if(this.mixes[_loc1_])
          {
             return _loc1_;

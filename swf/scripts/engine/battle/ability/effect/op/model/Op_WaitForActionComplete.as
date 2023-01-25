@@ -170,7 +170,7 @@ package engine.battle.ability.effect.op.model
             {
                _loc4_ = Enum.parse(StatType,_loc3_.stat) as StatType;
                _loc5_ = int(_loc3_.delta);
-               _loc6_ = _loc3_.comparator;
+               _loc6_ = String(_loc3_.comparator);
                _loc7_ = BooleanVars.parse(_loc3_.globally,false);
                _loc8_ = new WatchStat(_loc4_,_loc6_,_loc5_,_loc7_);
                this.watchStats.push(_loc8_);

@@ -655,7 +655,7 @@ package game.gui.pages
             _loc2_.toggled = param1 == _loc2_;
             if(_loc2_.toggled)
             {
-               _loc3_ = this.buttonTagNames[_loc2_];
+               _loc3_ = String(this.buttonTagNames[_loc2_]);
                _loc4_ = 16777215;
                if(_loc3_)
                {

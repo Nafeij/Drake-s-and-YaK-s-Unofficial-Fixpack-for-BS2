@@ -45,15 +45,15 @@ package com.greensock.plugins
       public function init(param1:ColorTransform, param2:ColorTransform) : void
       {
          var _loc4_:String = null;
-         var _loc3_:int = _props.length;
-         var _loc5_:int = _tweens.length;
+         var _loc3_:int = int(_props.length);
+         var _loc5_:int = int(_tweens.length);
          while(_loc3_--)
          {
-            _loc4_ = _props[_loc3_];
+            _loc4_ = String(_props[_loc3_]);
             if(param1[_loc4_] != param2[_loc4_])
             {
                var _loc6_:* = _loc5_++;
-               _tweens[_loc6_] = new PropTween(param1,_loc4_,param1[_loc4_],Number(param2[_loc4_]) - Number(param1[_loc4_]),"tint",false);
+               _tweens[_loc6_] = new PropTween(param1,_loc4_,param1[_loc4_],param2[_loc4_] - param1[_loc4_],"tint",false);
             }
          }
       }
@@ -66,7 +66,7 @@ package com.greensock.plugins
          if(this._transform)
          {
             _loc2_ = this._transform.colorTransform;
-            _loc4_ = _tweens.length;
+            _loc4_ = int(_tweens.length);
             while(--_loc4_ > -1)
             {
                _loc3_ = _tweens[_loc4_];

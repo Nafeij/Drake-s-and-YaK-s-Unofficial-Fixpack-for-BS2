@@ -73,7 +73,7 @@ package com.demonsters.debugger
             }
             catch(e:Error)
             {
-               stack = e.getStackTrace();
+               stack = String(e.getStackTrace());
                if(stack != null && stack != "")
                {
                   stack = stack.split("\t").join("");
@@ -82,7 +82,7 @@ package com.demonsters.debugger
                   {
                      lines.shift();
                      lines.shift();
-                     s = lines[0];
+                     s = String(lines[0]);
                      s = s.substring(3,s.length);
                      bracketIndex = s.indexOf("[");
                      methodIndex = s.indexOf("/");

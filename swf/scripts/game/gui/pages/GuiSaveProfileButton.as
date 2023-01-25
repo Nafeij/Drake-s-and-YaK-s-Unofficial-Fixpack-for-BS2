@@ -73,7 +73,7 @@ package game.gui.pages
          var _loc6_:Number = Number(param2.id);
          if(_loc6_.toString() != param2.id)
          {
-            _loc5_ = _context.translateCategory(param2.id,LocaleCategory.LOCATION);
+            _loc5_ = String(_context.translateCategory(param2.id,LocaleCategory.LOCATION));
          }
          else
          {

@@ -35,7 +35,7 @@ package engine.battle.ability.effect.op.def
          EffectDefOpVars.parse(this,param1,param2,schema);
          this.damage = params.damage;
          this.damage_param = params.damage_param;
-         var _loc3_:String = params.casterBonus;
+         var _loc3_:String = String(params.casterBonus);
          if(_loc3_)
          {
             this.statType_casterBonus = Enum.parse(StatType,_loc3_) as StatType;

@@ -742,7 +742,7 @@ package engine.battle.fsm.aimodule
          var _loc6_:int = this.caster.stats.getValue(StatType.EXERTION);
          var _loc7_:int = this.caster.stats.getValue(StatType.WILLPOWER);
          var _loc8_:int = this.caster.stats.getValue(StatType.WILLPOWER_MOVE,1);
-         var _loc9_:int = _loc5_ ? _loc7_ : Math.min(_loc6_,_loc7_);
+         var _loc9_:int = _loc5_ ? _loc7_ : int(Math.min(_loc6_,_loc7_));
          var _loc10_:int = this.caster.stats.getStat(StatType.WILLPOWER).original;
          var _loc11_:int = int(this.caster.def.stats.getValue(StatType.MOVEMENT));
          var _loc12_:AiPlan = null;
@@ -777,7 +777,7 @@ package engine.battle.fsm.aimodule
                      this.ss.logger.i(" AI ","DEBUG_AI reduce available willpower from " + _loc7_ + " to " + _loc23_ + " for move " + _loc13_);
                   }
                   _loc7_ = _loc23_;
-                  _loc9_ = _loc5_ ? _loc7_ : Math.min(_loc6_,_loc7_);
+                  _loc9_ = _loc5_ ? _loc7_ : int(Math.min(_loc6_,_loc7_));
                }
                if(!gtg.value)
                {

@@ -143,7 +143,7 @@ package com.junkbyte.console.core
             else
             {
                _loc5_ = _loc4_.interests;
-               _loc6_ = _loc5_.length - 1;
+               _loc6_ = int(_loc5_.length - 1);
                while(_loc6_ >= 0)
                {
                   _loc7_ = _loc5_[_loc6_];
@@ -281,7 +281,7 @@ package com.junkbyte.console.core
       
       protected function onRemotingRemoveGraphGroup(param1:ByteArray) : void
       {
-         var _loc2_:uint = param1.readShort();
+         var _loc2_:uint = uint(param1.readShort());
          var _loc3_:GraphGroup = this._groups[_loc2_];
          if(_loc3_)
          {
@@ -291,7 +291,7 @@ package com.junkbyte.console.core
       
       protected function onRemotingMenuGraphGroup(param1:ByteArray) : void
       {
-         var _loc2_:uint = param1.readShort();
+         var _loc2_:uint = uint(param1.readShort());
          var _loc3_:String = param1.readUTF();
          var _loc4_:GraphGroup = this._groups[_loc2_];
          if(_loc4_)

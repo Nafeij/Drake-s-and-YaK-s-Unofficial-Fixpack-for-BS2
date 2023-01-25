@@ -416,7 +416,7 @@ package engine.sound.config
       public function updateSoundSystem(param1:int) : void
       {
          var _loc2_:ISound = null;
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc5_:ISoundDefBundle = null;
          for(_loc3_ in this.bundlePlayingBySound)
          {

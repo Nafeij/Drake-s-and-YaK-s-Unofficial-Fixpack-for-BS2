@@ -57,7 +57,7 @@ package game.gui.pages
       
       private function updatePrompt() : void
       {
-         var _loc1_:String = context.translateCategory("prompt",LocaleCategory.PLATFORM);
+         var _loc1_:String = String(context.translateCategory("prompt",LocaleCategory.PLATFORM));
          context.locale.updateDisplayObjectTranslation(this._text_prompt,_loc1_,null,0);
       }
    }

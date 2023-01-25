@@ -117,7 +117,7 @@ package game.gui
             symbols["RUB"] = "p.";
             symbols["BRL"] = "R$";
          }
-         var _loc3_:String = symbols[param1];
+         var _loc3_:String = String(symbols[param1]);
          if(!_loc3_)
          {
             param2.error("Invalid currency: " + param1);

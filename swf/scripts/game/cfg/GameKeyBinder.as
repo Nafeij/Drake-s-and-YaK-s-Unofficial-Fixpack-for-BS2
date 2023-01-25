@@ -197,7 +197,7 @@ package game.cfg
          {
             return;
          }
-         var _loc2_:int = Keyboard.NUMBER_1;
+         var _loc2_:int = int(Keyboard.NUMBER_1);
          var _loc3_:int = param1 - _loc2_;
          if(_loc3_ >= 0)
          {

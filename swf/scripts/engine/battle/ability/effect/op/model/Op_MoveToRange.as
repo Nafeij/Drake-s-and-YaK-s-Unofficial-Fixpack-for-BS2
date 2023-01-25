@@ -204,7 +204,7 @@ package engine.battle.ability.effect.op.model
                }
             }
          }
-         logger.info(!!("Op_MoveToRange random choose NOT GTG " + this.mvTarget) ? this.mvTarget.id : "(NO MOVE TARGET AVAILABLE)");
+         logger.info(!!("Op_MoveToRange random choose NOT GTG " + this.mvTarget) ? String(this.mvTarget.id) : "(NO MOVE TARGET AVAILABLE)");
          return false;
       }
       

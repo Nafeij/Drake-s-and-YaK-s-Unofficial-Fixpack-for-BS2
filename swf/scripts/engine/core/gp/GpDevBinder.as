@@ -43,7 +43,7 @@ package engine.core.gp
          var _loc4_:Object = null;
          for each(_loc2_ in this.binds)
          {
-            _loc3_ = _loc2_.length - 1;
+            _loc3_ = int(_loc2_.length - 1);
             while(_loc3_ >= 0)
             {
                _loc4_ = _loc2_[_loc3_];
@@ -66,7 +66,7 @@ package engine.core.gp
          var _loc5_:Array = this.binds[_loc4_];
          if(_loc5_)
          {
-            _loc6_ = _loc5_.length - 1;
+            _loc6_ = int(_loc5_.length - 1);
             while(_loc6_ >= 0)
             {
                _loc7_ = _loc5_[_loc6_];

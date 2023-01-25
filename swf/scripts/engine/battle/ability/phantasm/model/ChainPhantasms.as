@@ -381,7 +381,7 @@ package engine.battle.ability.phantasm.model
       
       private function handleGuaranteedTriggers() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:PhantasmDef = null;
          var _loc3_:Timer = null;
          var _loc4_:Object = null;

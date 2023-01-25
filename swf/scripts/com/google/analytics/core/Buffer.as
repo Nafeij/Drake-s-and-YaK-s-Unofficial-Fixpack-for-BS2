@@ -46,7 +46,7 @@ package com.google.analytics.core
       
       public function Buffer(param1:Configuration, param2:DebugConfiguration, param3:Boolean = false, param4:Object = null)
       {
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          super();
          this._config = param1;
          this._debug = param2;
@@ -503,7 +503,7 @@ package com.google.analytics.core
             }
             else
             {
-               _loc4_ = _loc5_[0];
+               _loc4_ = String(_loc5_[0]);
                if(param1.indexOf("?") > -1)
                {
                   _loc4_ += "&";

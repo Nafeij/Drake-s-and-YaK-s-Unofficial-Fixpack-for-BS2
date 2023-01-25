@@ -160,11 +160,11 @@ package engine.saga
             logger.info("      " + _loc3_[0] + " cnvn           [filter]");
             return;
          }
-         _loc2_ = _loc3_[1];
+         _loc2_ = String(_loc3_[1]);
          var _loc4_:String = "";
          if(_loc3_.length > 2)
          {
-            _loc4_ = _loc3_[2];
+            _loc4_ = String(_loc3_[2]);
          }
          if(StringUtil.startsWith(_loc2_,"g"))
          {
@@ -277,7 +277,7 @@ package engine.saga
             logger.error("Usage: set <varname> <value>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:IVariable = this.saga.getVar(_loc3_,null);
          if(!_loc4_)
          {
@@ -299,7 +299,7 @@ package engine.saga
             logger.info("Current value " + _loc6_);
             return;
          }
-         var _loc5_:String = _loc2_[2];
+         var _loc5_:String = String(_loc2_[2]);
          this.saga.setVar(_loc3_,_loc5_);
       }
       
@@ -311,7 +311,7 @@ package engine.saga
             logger.error("Usage: exec <happening id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          this.saga.endAllHappenings();
          this.saga.executeHappeningById(_loc3_,null,param1.cmdline);
       }
@@ -354,8 +354,8 @@ package engine.saga
             logger.error("Usage: item_unit <unit> [item]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
-         var _loc4_:String = _loc2_.length >= 3 ? _loc2_[2] : null;
+         var _loc3_:String = String(_loc2_[1]);
+         var _loc4_:String = _loc2_.length >= 3 ? String(_loc2_[2]) : null;
          var _loc5_:Caravan = this.saga.caravan;
          var _loc6_:IEntityDef = _loc5_._legend.roster.getEntityDefById(_loc3_);
          if(!_loc6_)
@@ -389,7 +389,7 @@ package engine.saga
             logger.error("Usage: kills <unit> <killcount>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:int = int(_loc2_[2]);
          var _loc5_:Caravan = this.saga.caravan;
          var _loc6_:IEntityDef = _loc5_._legend.roster.getEntityDefById(_loc3_);
@@ -409,7 +409,7 @@ package engine.saga
             logger.error("Usage: injury <unit> <days>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:int = int(_loc2_[2]);
          var _loc5_:Caravan = this.saga.caravan;
          var _loc6_:IEntityDef = _loc5_._legend.roster.getEntityDefById(_loc3_);
@@ -440,7 +440,7 @@ package engine.saga
             logger.error("Usage: item_add <itemdef>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Caravan = this.saga.caravan;
          var _loc5_:ItemDef = this.saga.def.itemDefs.getItemDef(_loc3_);
          if(!_loc5_)
@@ -465,7 +465,7 @@ package engine.saga
             logger.error("Usage: item_remove <itemid>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Caravan = this.saga.caravan;
          var _loc5_:Item = _loc4_._legend._items.removeItemById(_loc3_);
          if(!_loc5_)
@@ -560,7 +560,7 @@ package engine.saga
          var _loc3_:Array = param1.param;
          if(_loc3_.length > 1)
          {
-            _loc2_ = _loc3_[1];
+            _loc2_ = String(_loc3_[1]);
          }
          logger.info(" CAST:");
          var _loc4_:Vector.<Enum> = Enum.getVector(StatType);
@@ -627,7 +627,7 @@ package engine.saga
             }
             return;
          }
-         var _loc5_:String = _loc3_[1];
+         var _loc5_:String = String(_loc3_[1]);
          this.saga.gotoBookmark(_loc5_,true);
       }
       
@@ -671,7 +671,7 @@ package engine.saga
             }
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:int = this.saga.profile_index;
          if(_loc2_.length > 2)
          {
@@ -695,7 +695,7 @@ package engine.saga
             logger.info("Usage: save_store <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          this.saga.saveSaga(_loc3_,null,null);
       }
       
@@ -712,8 +712,8 @@ package engine.saga
             }
             return;
          }
-         var _loc3_:String = _loc2_[1];
-         var _loc4_:String = _loc2_[2] != "." ? _loc2_[2] : null;
+         var _loc3_:String = String(_loc2_[1]);
+         var _loc4_:String = _loc2_[2] != "." ? String(_loc2_[2]) : null;
          var _loc5_:Number = Number(_loc2_[3]);
          this.saga.caravan.setMapSpline(_loc3_,_loc4_,_loc5_);
       }
@@ -726,7 +726,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          this.saga.battleMusicDefUrl = _loc3_;
       }
       
@@ -738,7 +738,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:ActionDef = new ActionDef(null);
          _loc4_.type = ActionType.ROSTER_ADD;
          _loc4_.also_party = this.saga.caravan._legend.party.numMembers < 6;
@@ -754,13 +754,13 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <speaker> <time> <anchor> <msg>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          if(_loc3_ == ".")
          {
             _loc3_ = null;
          }
          var _loc4_:Number = Number(_loc2_[2]);
-         var _loc5_:String = _loc2_[3];
+         var _loc5_:String = String(_loc2_[3]);
          _loc2_.splice(0,3);
          var _loc6_:String = _loc2_.join(" ");
          var _loc7_:ActionDef = new ActionDef(null);

@@ -22,7 +22,7 @@ package com.dncompute.graphics
       
       public function ArrowStyle(param1:Object = null)
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          super();
          if(param1 != null)
          {

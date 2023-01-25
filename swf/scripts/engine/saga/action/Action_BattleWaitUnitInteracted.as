@@ -29,7 +29,7 @@ package engine.saga.action
             _loc2_ = saga.getCastMember(_loc1_);
             if(_loc2_)
             {
-               _loc1_ = _loc2_.id;
+               _loc1_ = String(_loc2_.id);
             }
             _loc3_ = saga.getBattleBoard();
             if(Boolean(_loc3_) && Boolean(_loc3_.fsm))

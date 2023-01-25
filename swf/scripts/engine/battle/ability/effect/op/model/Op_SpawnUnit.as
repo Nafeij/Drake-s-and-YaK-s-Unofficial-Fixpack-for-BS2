@@ -102,17 +102,17 @@ package engine.battle.ability.effect.op.model
          this.location = param1.params.location;
          this.despawn = BooleanVars.parse(param1.params.despawn,this.despawn);
          this.renownCasterLimit = BooleanVars.parse(param1.params.renownCasterLimit,this.renownCasterLimit);
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          if(_loc3_)
          {
             this.abldef = manager.factory.fetch(_loc3_) as BattleAbilityDef;
          }
-         var _loc4_:String = param1.params.abilityOnRemove;
+         var _loc4_:String = String(param1.params.abilityOnRemove);
          if(_loc4_)
          {
             this.abldefOnRemove = manager.factory.fetch(_loc4_) as BattleAbilityDef;
          }
-         var _loc5_:String = param1.params.abilityOnKilled;
+         var _loc5_:String = String(param1.params.abilityOnKilled);
          if(_loc5_)
          {
             this.abldefOnKilled = manager.factory.fetch(_loc5_) as BattleAbilityDef;
@@ -196,7 +196,7 @@ package engine.battle.ability.effect.op.model
       
       public static function preloadAssets(param1:EffectDefOp, param2:IAbilityAssetBundle) : void
       {
-         var _loc3_:String = param1.params.id;
+         var _loc3_:String = String(param1.params.id);
          if(!_loc3_)
          {
             param2.logger.error("No id on spawn op? " + param1);
@@ -278,7 +278,7 @@ package engine.battle.ability.effect.op.model
          }
          else
          {
-            facing = BattleFacing.findFacing(Number(caster.x) - spawnloc.x,Number(caster.y) - spawnloc.y);
+            facing = BattleFacing.findFacing(caster.x - spawnloc.x,caster.y - spawnloc.y);
          }
          if(!facing)
          {

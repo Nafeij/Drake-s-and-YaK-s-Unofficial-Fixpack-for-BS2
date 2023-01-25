@@ -98,7 +98,7 @@ package engine.landscape.def
       
       public function get numSplines() : int
       {
-         return !!this.splines ? this.splines.length : 0;
+         return !!this.splines ? int(this.splines.length) : 0;
       }
       
       public function getPoint(param1:String) : Point

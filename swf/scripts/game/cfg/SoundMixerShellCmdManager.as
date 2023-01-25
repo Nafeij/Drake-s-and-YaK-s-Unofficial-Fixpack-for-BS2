@@ -39,7 +39,7 @@ package game.cfg
             logger.info("Usage: " + _loc2_[0] + " <category name> [volume]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          this._manipulate("volume",_loc3_,_loc2_.length > 2 ? _loc2_[2] : undefined);
       }
       
@@ -51,7 +51,7 @@ package game.cfg
             logger.info("Usage: " + _loc2_[0] + " <category name> [mute]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:* = _loc2_.length > 2 ? BooleanVars.parse(_loc2_[2]) : undefined;
          this._manipulate("mute",_loc3_,_loc4_);
       }
@@ -78,7 +78,7 @@ package game.cfg
             logger.info("Usage: " + _loc4_[0] + " <category name> [mute]");
             return;
          }
-         var _loc5_:String = _loc4_[1];
+         var _loc5_:String = String(_loc4_[1]);
          var _loc6_:* = _loc4_.length > 2 ? _loc4_[2] : undefined;
          if(_loc6_ != undefined)
          {

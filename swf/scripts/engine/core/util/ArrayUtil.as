@@ -21,7 +21,7 @@ package engine.core.util
       
       public static function combineDictionaries(param1:Dictionary, param2:Dictionary) : Dictionary
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          if(!param2)
          {
             param2 = new Dictionary();
@@ -35,7 +35,7 @@ package engine.core.util
       
       public static function subtractDictionaries(param1:Dictionary, param2:Dictionary) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          for(_loc3_ in param1)
          {
             delete param2[_loc3_];
@@ -378,7 +378,7 @@ package engine.core.util
       public static function getDictionaryKeys(param1:Dictionary) : Array
       {
          var _loc2_:Array = null;
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          if(param1)
          {
             _loc2_ = [];
@@ -411,7 +411,7 @@ package engine.core.util
          {
             return null;
          }
-         var _loc3_:String = param1[0];
+         var _loc3_:String = String(param1[0]);
          var _loc4_:int = 1;
          while(_loc4_ < param1.length)
          {
@@ -437,7 +437,7 @@ package engine.core.util
          {
             return false;
          }
-         var _loc3_:int = param1.length;
+         var _loc3_:int = int(param1.length);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {
@@ -464,12 +464,12 @@ package engine.core.util
          {
             return false;
          }
-         var _loc3_:int = param1.length;
+         var _loc3_:int = int(param1.length);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {
             _loc5_ = param1[_loc4_];
-            _loc6_ = param2[_loc4_];
+            _loc6_ = String(param2[_loc4_]);
             if(_loc5_ != _loc6_)
             {
                return false;
@@ -481,7 +481,7 @@ package engine.core.util
       
       public static function isDictEqualKeys(param1:Dictionary, param2:Dictionary) : Boolean
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          if(param1 == param2)
          {
             return true;
@@ -510,7 +510,7 @@ package engine.core.util
       public static function getDictionaryLength(param1:Dictionary) : int
       {
          var _loc2_:int = 0;
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          for(_loc3_ in param1)
          {
             _loc2_++;
@@ -589,7 +589,7 @@ package engine.core.util
          }
          else if(param2 >= _loc3_)
          {
-            param2 = _loc3_ - 1;
+            param2 = int(_loc3_ - 1);
          }
          _loc4_ = param1[param2];
          _loc5_ = param2 + 1;
@@ -620,7 +620,7 @@ package engine.core.util
             param1[_loc4_] = null;
             _loc4_--;
          }
-         _loc4_ = _loc5_;
+         _loc4_ = int(_loc5_);
          while(_loc4_ > param2)
          {
             param1[_loc4_] = param1[int(_loc4_ - 1)];

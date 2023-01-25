@@ -632,7 +632,7 @@ package engine.anim.view
       
       public function get numChildren() : int
       {
-         return !!this._children ? this._children.length : 0;
+         return !!this._children ? int(this._children.length) : 0;
       }
       
       public function getClipChild(param1:int) : AnimClip

@@ -545,7 +545,7 @@ package engine.gui
          {
             return;
          }
-         var _loc1_:int = this.scrollToLine >= 0 ? this.scrollToLine : this.logs.length - 1;
+         var _loc1_:int = this.scrollToLine >= 0 ? this.scrollToLine : int(this.logs.length - 1);
          var _loc2_:int = 2;
          var _loc3_:int = this.output.height - _loc2_;
          var _loc4_:int = 0;
@@ -564,7 +564,7 @@ package engine.gui
             _loc7_ = this.getOutputLabel(_loc4_);
             _loc8_ = this.logs[_loc6_];
             _loc9_ = this.infoTf;
-            _loc10_ = _loc8_.txt;
+            _loc10_ = String(_loc8_.txt);
             if(_loc8_.error)
             {
                _loc9_ = this.errorTf;
@@ -574,7 +574,7 @@ package engine.gui
                for each(_loc11_ in this.regexpTfs)
                {
                   _loc12_ = _loc11_.regexp;
-                  _loc13_ = _loc11_.match;
+                  _loc13_ = String(_loc11_.match);
                   if(_loc13_)
                   {
                      if(_loc10_.indexOf(_loc13_) >= 0)

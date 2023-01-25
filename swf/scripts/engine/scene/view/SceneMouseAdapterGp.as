@@ -151,8 +151,8 @@ package engine.scene.view
          {
             this.touches[0].clearPoints();
          }
-         var _loc7_:Number = Number(this.touches[0].curr.x) - Number(this.touches[0].start.x);
-         var _loc8_:Number = Number(this.touches[0].curr.y) - Number(this.touches[0].start.y);
+         var _loc7_:Number = this.touches[0].curr.x - this.touches[0].start.x;
+         var _loc8_:Number = this.touches[0].curr.y - this.touches[0].start.y;
          var _loc9_:Number = MathUtil.map(_loc7_,-this.TOUCH_PAD_MAX_X,this.TOUCH_PAD_MAX_X,-1,1);
          var _loc10_:Number = MathUtil.map(_loc8_,-this.TOUCH_PAD_MAX_Y,this.TOUCH_PAD_MAX_Y,-1,1);
          var _loc11_:Number = _loc5_.getStickValue(GpControlButton.AXIS_RIGHT_H);
@@ -180,8 +180,8 @@ package engine.scene.view
             {
                if(!this.pointIsZero(this.touches[0].prev))
                {
-                  _loc15_ = (Number(this.touches[0].prev.x) - Number(this.touches[0].curr.x)) * this.TOUCH_PAD_PAN_SPEED;
-                  _loc16_ = (Number(this.touches[0].prev.y) - Number(this.touches[0].curr.y)) * this.TOUCH_PAD_PAN_SPEED;
+                  _loc15_ = (this.touches[0].prev.x - this.touches[0].curr.x) * this.TOUCH_PAD_PAN_SPEED;
+                  _loc16_ = (this.touches[0].prev.y - this.touches[0].curr.y) * this.TOUCH_PAD_PAN_SPEED;
                }
             }
             else

@@ -84,7 +84,7 @@ package com.sociodox.theminer.window
          _loc2_.graphics.drawRect(0,0,_loc1_,1);
          _loc2_.graphics.endFill();
          addChild(_loc2_);
-         _loc2_.y = Number(Stage2D.stageHeight) - _loc2_.height;
+         _loc2_.y = Stage2D.stageHeight - _loc2_.height;
          var _loc3_:TextFormat = new TextFormat("_sans",11,SkinManager.COLOR_GLOBAL_TEXT,false);
          var _loc4_:GlowFilter = new GlowFilter(SkinManager.COLOR_GLOBAL_TEXT_GLOW,1,2,2,3,2,false,false);
          this.mInfos = new TextField();
@@ -95,7 +95,7 @@ package com.sociodox.theminer.window
          this.mInfos.filters = [_loc4_];
          this.mInfos.x = 2;
          addChild(this.mInfos);
-         this.mInfos.y = Number(Stage2D.stageHeight) - _loc2_.height;
+         this.mInfos.y = Stage2D.stageHeight - _loc2_.height;
       }
       
       public function Dispose() : void

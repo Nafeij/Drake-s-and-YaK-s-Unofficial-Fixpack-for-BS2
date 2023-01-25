@@ -85,7 +85,7 @@ package com.google.analytics.debug
             {
                this._linediff += param1;
             }
-            _loc3_ = this._lines.length - this.maxLines + this._linediff;
+            _loc3_ = uint(this._lines.length - this.maxLines + this._linediff);
             _loc4_ = _loc3_ + this.maxLines;
             _loc2_ = this._lines.slice(_loc3_,_loc4_);
          }

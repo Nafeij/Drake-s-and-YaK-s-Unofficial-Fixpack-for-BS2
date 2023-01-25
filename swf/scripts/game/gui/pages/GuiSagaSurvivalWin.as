@@ -210,7 +210,7 @@ package game.gui.pages
             return;
          }
          this._$ss_win_acv.visible = true;
-         var _loc1_:String = this.unlockedAcvIds[this._achievementIndex];
+         var _loc1_:String = String(this.unlockedAcvIds[this._achievementIndex]);
          _loc2_ = this._acv.addAchievement(_loc1_);
          if(_loc2_)
          {

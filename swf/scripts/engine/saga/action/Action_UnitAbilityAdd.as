@@ -43,7 +43,7 @@ package engine.saga.action
          }
          if(!_loc3_)
          {
-            _loc3_ = 1 + (Number(_loc1_.stats.rank) - _loc5_) / 2;
+            _loc3_ = 1 + (_loc1_.stats.rank - _loc5_) / 2;
          }
          _loc3_ = Math.max(1,_loc3_);
          _loc3_ = Math.min(_loc2_.maxLevel,_loc3_);

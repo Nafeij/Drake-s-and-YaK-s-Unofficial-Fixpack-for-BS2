@@ -39,11 +39,11 @@ package game.gui.page
                for each(_loc4_ in _loc3_)
                {
                   _loc5_ = _loc4_.split("=");
-                  _loc6_ = _loc5_[0];
+                  _loc6_ = String(_loc5_[0]);
                   _loc7_ = null;
                   if(_loc5_.length > 1)
                   {
-                     _loc7_ = _loc5_[1];
+                     _loc7_ = String(_loc5_[1]);
                   }
                   this._processKvp(_loc6_,_loc7_);
                }

@@ -362,7 +362,7 @@ package game.gui
          this.fillItemSlots();
          if(param2.showTutorialDetails)
          {
-            _loc8_ = param1.translateCategory("tut_heroes_details",LocaleCategory.TUTORIAL);
+            _loc8_ = String(param1.translateCategory("tut_heroes_details",LocaleCategory.TUTORIAL));
             this._tooltip_id = param1.createTutorialPopup(this.partyRow,_loc8_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,false,null);
          }
          this._expand.init(this);
@@ -575,9 +575,9 @@ package game.gui
             return;
          }
          var _loc2_:IGuiDialog = context.createDialog();
-         var _loc3_:String = context.translate("party_required_title");
-         var _loc4_:String = context.translate("party_required_body");
-         var _loc5_:String = context.translate("ok");
+         var _loc3_:String = String(context.translate("party_required_title"));
+         var _loc4_:String = String(context.translate("party_required_body"));
+         var _loc5_:String = String(context.translate("ok"));
          _loc4_ = _loc4_.replace("$NAME",param1.name);
          _loc2_.openDialog(_loc3_,_loc4_,_loc5_,null);
       }
@@ -977,15 +977,15 @@ package game.gui
       
       private function showDialog(param1:String, param2:String) : IGuiDialog
       {
-         var _loc3_:String = context.translateRaw(param1);
+         var _loc3_:String = String(context.translateRaw(param1));
          if(!_loc3_)
          {
             return null;
          }
          this.setMouseEnabled(false);
          var _loc4_:IGuiDialog = context.createDialog();
-         var _loc5_:String = context.translate(param2);
-         var _loc6_:String = context.translate("ok");
+         var _loc5_:String = String(context.translate(param2));
+         var _loc6_:String = String(context.translate("ok"));
          _loc4_.openDialog(_loc3_,_loc5_,_loc6_,this.handleDialogClose);
          return _loc4_;
       }
@@ -1110,10 +1110,10 @@ package game.gui
          {
             _context.saga.setMasterSaveKey("setup_assembled",true);
             var _loc3_:IGuiDialog = context.createDialog();
-            var _loc4_:String = context.translate(param1);
-            var _loc5_:String = context.translate(param2);
-            var _loc6_:String = context.translate("yes");
-            var _loc7_:String = context.translate("no");
+            var _loc4_:String = String(context.translate(param1));
+            var _loc5_:String = String(context.translate(param2));
+            var _loc6_:String = String(context.translate("yes"));
+            var _loc7_:String = String(context.translate("no"));
             _loc3_.openTwoBtnDialog(_loc4_,_loc5_,_loc6_,_loc7_,this.dialogWarnAssembleCompleteHandler);
             return;
          }
@@ -1122,7 +1122,7 @@ package game.gui
       
       private function dialogWarnAssembleCompleteHandler(param1:String) : void
       {
-         var _loc2_:String = context.translate("yes");
+         var _loc2_:String = String(context.translate("yes"));
          if(param1 != _loc2_)
          {
             this.survivalAnimateOut_recoverState();

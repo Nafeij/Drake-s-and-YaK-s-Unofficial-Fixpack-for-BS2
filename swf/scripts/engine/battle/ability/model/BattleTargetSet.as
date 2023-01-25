@@ -233,7 +233,7 @@ package engine.battle.ability.model
       
       public function hasTile(param1:Tile) : Boolean
       {
-         var _loc2_:int = !!param1 ? this.tiles.indexOf(param1) : -1;
+         var _loc2_:int = !!param1 ? int(this.tiles.indexOf(param1)) : -1;
          return _loc2_ >= 0;
       }
       

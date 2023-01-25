@@ -387,9 +387,9 @@ package game.gui.pages
          if(Boolean(_loc2_) && _loc2_.isSurvival)
          {
             _loc3_ = context.createDialog();
-            _loc4_ = _context.translate("survival_tip_renown_title");
-            _loc5_ = _context.translate("survival_tip_renown_body");
-            _loc6_ = _context.translate("ok");
+            _loc4_ = String(_context.translate("survival_tip_renown_title"));
+            _loc5_ = String(_context.translate("survival_tip_renown_body"));
+            _loc6_ = String(_context.translate("ok"));
             _loc3_.openDialog(_loc4_,_loc5_,_loc6_);
             return;
          }

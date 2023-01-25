@@ -46,7 +46,7 @@ package com.google.analytics.core
             }
             param2 = param2.split("+").join("%20");
             _loc4_ = new Variables(param2);
-            _loc3_ = _loc4_[param1];
+            _loc3_ = String(_loc4_[param1]);
          }
          return _loc3_;
       }

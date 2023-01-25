@@ -130,7 +130,7 @@ package engine.entity.def
       
       public function get numBundles() : int
       {
-         return !!this._bundles ? this._bundles.length : 0;
+         return !!this._bundles ? int(this._bundles.length) : 0;
       }
       
       public function getDebugSummaryLine() : String

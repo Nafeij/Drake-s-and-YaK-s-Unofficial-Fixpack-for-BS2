@@ -121,8 +121,8 @@ package com.google.analytics.debug
             {
                return;
             }
-            _loc3_ = this.stage.stageHeight;
-            _loc4_ = this.stage.stageWidth;
+            _loc3_ = uint(this.stage.stageHeight);
+            _loc4_ = uint(this.stage.stageWidth);
             _loc5_ = 0;
             _loc6_ = 0;
          }

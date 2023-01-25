@@ -113,7 +113,7 @@ package com.google.analytics.utils
          this.userAgent.applicationVersion = param1.toString(4);
       }
       
-      ga_internal internal function set url(param1:String) : void
+      ga_internal function set url(param1:String) : void
       {
          this._url = param1;
       }

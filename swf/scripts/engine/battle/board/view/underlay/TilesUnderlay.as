@@ -128,7 +128,7 @@ package engine.battle.board.view.underlay
          {
             throw new IllegalOperationError("too... many... bits");
          }
-         var _loc2_:uint = 1 << Number(lastBit++);
+         var _loc2_:uint = uint(1 << lastBit++);
          s_bitnames.push({
             "bit":_loc2_,
             "name":param1
@@ -229,7 +229,7 @@ package engine.battle.board.view.underlay
          {
             this.hiddenBytes.position = _loc4_ * 4;
             _loc5_ = this.hiddenBytes.readUnsignedInt();
-            _loc6_ = _loc5_ & ~param1;
+            _loc6_ = uint(_loc5_ & ~param1);
             if(_loc6_ != _loc5_)
             {
                this.hiddenBytes.position = _loc4_ * 4;
@@ -256,7 +256,7 @@ package engine.battle.board.view.underlay
          var _loc4_:int = 4 * (param1 - this.board_x + (param2 - this.board_y) * this.board_width);
          this.hiddenBytes.position = _loc4_;
          var _loc5_:uint = this.hiddenBytes.readUnsignedInt();
-         var _loc6_:uint = _loc5_ & ~param3;
+         var _loc6_:uint = uint(_loc5_ & ~param3);
          if(_loc6_ != _loc5_)
          {
             this.hiddenBytes.position = _loc4_;
@@ -281,7 +281,7 @@ package engine.battle.board.view.underlay
             param3 = param3;
          }
          var _loc5_:uint = this.hiddenBytes.readUnsignedInt();
-         var _loc6_:uint = _loc5_ | param3;
+         var _loc6_:uint = uint(_loc5_ | param3);
          if(_loc6_ != _loc5_)
          {
             this.hiddenBytes.position = _loc4_;
@@ -561,7 +561,7 @@ package engine.battle.board.view.underlay
       
       private function renderDestinationTiles() : void
       {
-         var _loc8_:* = null;
+         var _loc8_:Object = null;
          var _loc9_:Tile = null;
          var _loc10_:DisplayObjectWrapper = null;
          var _loc11_:DisplayObjectWrapper = null;
@@ -726,7 +726,7 @@ package engine.battle.board.view.underlay
       
       private function hideAllTiles() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:TileLocation = null;
          var _loc3_:DisplayObjectWrapper = null;
          for(_loc1_ in this.tiles)
@@ -739,7 +739,7 @@ package engine.battle.board.view.underlay
       
       private function renderTiles() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:TileLocation = null;
          var _loc3_:DisplayObjectWrapper = null;
          var _loc4_:Boolean = false;
@@ -811,7 +811,7 @@ package engine.battle.board.view.underlay
       
       private function renderRangeTiles() : void
       {
-         var _loc5_:* = null;
+         var _loc5_:Object = null;
          var _loc6_:TileLocation = null;
          var _loc7_:DisplayObjectWrapper = null;
          var _loc8_:BattleAbilityTargetRule = null;

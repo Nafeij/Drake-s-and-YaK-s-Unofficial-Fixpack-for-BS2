@@ -158,7 +158,7 @@ package engine.battle.fsm
       public static function flushCache() : void
       {
          var _loc1_:Boolean = false;
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:PathFloodSolver = null;
          if(!_floodCache)
          {
@@ -368,7 +368,7 @@ package engine.battle.fsm
       
       public function get numSteps() : int
       {
-         return !!this.steps ? this.steps.length : 0;
+         return !!this.steps ? int(this.steps.length) : 0;
       }
       
       public function getStep(param1:int) : Tile
@@ -894,7 +894,7 @@ package engine.battle.fsm
             return true;
          }
          var _loc5_:TileRectContainer = new TileRectContainer(_loc4_,param1);
-         var _loc6_:int = this.steps.length - 1;
+         var _loc6_:int = int(this.steps.length - 1);
          for each(_loc7_ in _loc5_.hugs)
          {
             _loc8_ = this.entity.board.tiles.getTile(_loc7_.x,_loc7_.y);
@@ -958,7 +958,7 @@ package engine.battle.fsm
                   }
                   _loc16_ = _loc7_.getNode(_loc15_);
                   _loc17_ = this._flood.getNode(_loc16_);
-                  _loc18_ = !!_loc17_ ? _loc17_.gg - _loc17_.g : 0;
+                  _loc18_ = !!_loc17_ ? int(_loc17_.gg - _loc17_.g) : 0;
                   if(_loc17_.g <= param3)
                   {
                      _loc19_ = TileRectRange.computeTileRange(_loc15_.location,param1);
@@ -1029,7 +1029,7 @@ package engine.battle.fsm
          {
             return true;
          }
-         var _loc7_:int = this.steps.length - 1;
+         var _loc7_:int = int(this.steps.length - 1);
          for each(_loc8_ in _loc6_.hugs)
          {
             _loc9_ = this.entity.board.tiles.getTile(_loc8_.x,_loc8_.y);
@@ -1097,7 +1097,7 @@ package engine.battle.fsm
                this.reset(null);
             }
          }
-         var _loc3_:int = this.steps.length;
+         var _loc3_:int = int(this.steps.length);
          var _loc4_:IPathGraphNode = this.entity.board.tiles.pathGraph.getNode(param1);
          var _loc6_:Boolean = this.trimStepsToWaypoint(false);
          this.needsDispatch_MOVE_CHANGED = _loc6_ || this.needsDispatch_MOVE_CHANGED;
@@ -1292,7 +1292,7 @@ package engine.battle.fsm
          {
             _loc1_ = Math.min(this._clampMovement,_loc1_);
          }
-         return Math.max(0,_loc1_);
+         return int(Math.max(0,_loc1_));
       }
       
       private function makePathFloodCacheKey(param1:Tile, param2:int) : String
@@ -1523,7 +1523,7 @@ package engine.battle.fsm
          var _loc1_:Tiles = this._entity.board.tiles;
          while(this.steps.length > 2)
          {
-            _loc3_ = this.steps.length - 1;
+            _loc3_ = int(this.steps.length - 1);
             _loc4_ = this.steps[_loc3_];
             _scratchEntities.splice(0,_scratchEntities.length);
             _loc5_ = !_loc2_;

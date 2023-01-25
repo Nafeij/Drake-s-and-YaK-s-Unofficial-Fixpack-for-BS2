@@ -23,7 +23,7 @@ package engine.battle.board.model
       {
          var _loc2_:BattleEntity = null;
          var _loc3_:BattleBoard_Spawn = null;
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:IBattleFsm = null;
          var _loc6_:BattleEntitySnapshot = null;
          var _loc7_:int = 0;
@@ -56,7 +56,7 @@ package engine.battle.board.model
       
       public function applySnapshot(param1:BattleBoard) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:Dictionary = null;
          var _loc5_:BattleEntitySnapshot = null;
          var _loc6_:String = null;

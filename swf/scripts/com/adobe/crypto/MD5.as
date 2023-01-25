@@ -37,7 +37,7 @@ package com.adobe.crypto
          var _loc4_:int = -1732584194;
          var _loc5_:int = 271733878;
          var _loc10_:Array = createBlocks(param1);
-         var _loc11_:int = _loc10_.length;
+         var _loc11_:int = int(_loc10_.length);
          var _loc12_:int = 0;
          while(_loc12_ < _loc11_)
          {
@@ -178,10 +178,10 @@ package com.adobe.crypto
          var _loc5_:int = 0;
          while(_loc5_ < _loc3_)
          {
-            _loc2_[int(_loc5_ >> 5)] = Number(_loc2_[int(_loc5_ >> 5)]) | (Number(param1[_loc5_ / 8]) & _loc4_) << _loc5_ % 32;
+            _loc2_[int(_loc5_ >> 5)] = _loc2_[int(_loc5_ >> 5)] | (param1[_loc5_ / 8] & _loc4_) << _loc5_ % 32;
             _loc5_ += 8;
          }
-         _loc2_[int(_loc3_ >> 5)] = Number(_loc2_[int(_loc3_ >> 5)]) | 128 << _loc3_ % 32;
+         _loc2_[int(_loc3_ >> 5)] = _loc2_[int(_loc3_ >> 5)] | 128 << _loc3_ % 32;
          _loc2_[int((_loc3_ + 64 >>> 9 << 4) + 14)] = _loc3_;
          return _loc2_;
       }

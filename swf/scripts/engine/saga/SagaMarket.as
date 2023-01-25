@@ -47,7 +47,7 @@ package engine.saga
       
       public function get numItemDefs() : int
       {
-         return !!this.items ? this.items.length : 0;
+         return !!this.items ? int(this.items.length) : 0;
       }
       
       public function getItemDef(param1:int) : ItemDef

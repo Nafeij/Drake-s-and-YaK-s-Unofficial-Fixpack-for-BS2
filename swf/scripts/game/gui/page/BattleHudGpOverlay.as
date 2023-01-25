@@ -346,8 +346,8 @@ package game.gui.page
          {
             return;
          }
-         var _loc9_:Number = _loc5_.x + Number(_loc4_.boardWidth) / 2;
-         var _loc10_:Number = _loc5_.y + Number(_loc4_.boardLength) / 2;
+         var _loc9_:Number = _loc5_.x + _loc4_.boardWidth / 2;
+         var _loc10_:Number = _loc5_.y + _loc4_.boardLength / 2;
          var _loc11_:Number = this.board.scene.camera.scale;
          _loc6_ = this.boardView.getScreenPointFromBoardPoint(_loc9_,_loc10_);
          _loc6_.x *= _loc11_;

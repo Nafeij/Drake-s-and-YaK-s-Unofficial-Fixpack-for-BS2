@@ -76,7 +76,7 @@ package engine.battle.ability.def
             }
             else
             {
-               _loc6_ = _loc5_[0];
+               _loc6_ = String(_loc5_[0]);
                _loc7_ = int(_loc5_[1]);
                param1[_loc6_] = _loc7_;
             }

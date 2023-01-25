@@ -17,7 +17,7 @@ package com.greensock.plugins
       
       override public function onInitTween(param1:Object, param2:*, param3:TweenLite) : Boolean
       {
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          if(typeof param2 == "number")
          {
             return false;

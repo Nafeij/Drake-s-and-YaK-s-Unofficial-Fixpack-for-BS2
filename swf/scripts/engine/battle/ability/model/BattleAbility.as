@@ -230,7 +230,7 @@ package engine.battle.ability.model
       
       private function get debugCasterId() : String
       {
-         return !!this.caster ? this.caster.id : "null";
+         return !!this.caster ? String(this.caster.id) : "null";
       }
       
       override public function toString() : String
@@ -618,7 +618,7 @@ package engine.battle.ability.model
                while(_loc2_ < _loc1_)
                {
                   _loc3_ = this.def.costs.getStatByIndex(_loc2_);
-                  this.caster.stats.getStat(_loc3_.type).base = Number(this.caster.stats.getStat(_loc3_.type).base) - _loc3_.value;
+                  this.caster.stats.getStat(_loc3_.type).base = this.caster.stats.getStat(_loc3_.type).base - _loc3_.value;
                   _loc2_++;
                }
             }
@@ -704,7 +704,7 @@ package engine.battle.ability.model
                _loc4_ = this.caster.board.getSaga();
                if(_loc4_)
                {
-                  _loc5_ = this.caster.def.id;
+                  _loc5_ = String(this.caster.def.id);
                   _loc6_ = this.def.id;
                   _loc4_.triggerBattleAbilityExecuted(_loc5_,_loc6_,this.caster.isPlayer);
                }
@@ -1066,7 +1066,7 @@ package engine.battle.ability.model
                _loc1_ = this.caster.board.getSaga();
                if(_loc1_)
                {
-                  _loc2_ = this.caster.def.id;
+                  _loc2_ = String(this.caster.def.id);
                   _loc3_ = this.def.id;
                   _loc1_.triggerBattleAbilityCompleted(_loc2_,_loc3_,this.caster.isPlayer);
                }

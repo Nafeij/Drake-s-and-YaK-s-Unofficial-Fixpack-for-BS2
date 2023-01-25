@@ -125,7 +125,7 @@ package com.google.analytics.core
                _loc3_ = param1.url;
                if(_loc3_.indexOf("?") > -1)
                {
-                  _loc3_ = _loc3_.split("?")[0];
+                  _loc3_ = String(_loc3_.split("?")[0]);
                }
                _loc3_ = this._shortenURL(_loc3_);
                _loc2_ = "Send Gif Request #" + this._alertcount + ":\n" + _loc3_ + " ?";
@@ -172,7 +172,7 @@ package com.google.analytics.core
             {
                if(_loc2_.indexOf("?") > -1)
                {
-                  _loc2_ = _loc2_.split("?")[0];
+                  _loc2_ = String(_loc2_.split("?")[0]);
                }
                _loc2_ = this._shortenURL(_loc2_);
             }
@@ -191,17 +191,17 @@ package com.google.analytics.core
       
       public function onComplete(param1:Event) : void
       {
-         var _loc2_:String = param1.target.loader.name;
+         var _loc2_:String = String(param1.target.loader.name);
          this._requests[_loc2_].complete();
          var _loc3_:* = "Gif Request #" + _loc2_ + " sent";
-         var _loc4_:String = this._requests[_loc2_].request.url;
+         var _loc4_:String = String(this._requests[_loc2_].request.url);
          if(this._debug.GIFRequests)
          {
             if(!this._debug.verbose)
             {
                if(_loc4_.indexOf("?") > -1)
                {
-                  _loc4_ = _loc4_.split("?")[0];
+                  _loc4_ = String(_loc4_.split("?")[0]);
                }
                _loc4_ = this._shortenURL(_loc4_);
             }

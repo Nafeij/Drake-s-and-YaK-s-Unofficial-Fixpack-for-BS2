@@ -52,10 +52,10 @@ package lib.fmodstudio
       
       private function resourceGroupCompleteHandler(param1:Event) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:DefResource = null;
          var _loc4_:FmodStudioSoundDriver = null;
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          var _loc6_:String = null;
          var _loc7_:String = null;
          var _loc8_:FmodFsbResource = null;

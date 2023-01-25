@@ -452,7 +452,7 @@ package engine.landscape.view
       private function preloadSpeechBubbleIcons() : void
       {
          var _loc3_:IEntityDef = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:Legend = null;
          var _loc6_:int = 0;
          var _loc7_:IBattleEntity = null;
@@ -960,7 +960,7 @@ package engine.landscape.view
       {
          var _loc3_:DisplayObjectWrapper = null;
          var _loc4_:LandscapeView_TravelParamSprite = null;
-         var _loc5_:* = null;
+         var _loc5_:Object = null;
          var _loc6_:AnimPathView = null;
          var _loc7_:ColorPulsator = null;
          var _loc8_:DisplayObjectWrapper = null;
@@ -1166,7 +1166,7 @@ package engine.landscape.view
          {
             return;
          }
-         var _loc2_:int = this._selectedLayerDefs.length - 1;
+         var _loc2_:int = int(this._selectedLayerDefs.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = this._selectedLayerDefs[_loc2_];
@@ -1177,7 +1177,7 @@ package engine.landscape.view
                   _loc4_ = 0;
                   while(_loc4_ < _loc3_.occludes.length)
                   {
-                     _loc5_ = _loc3_.occludes[_loc4_];
+                     _loc5_ = String(_loc3_.occludes[_loc4_]);
                      if(_loc5_ == "*")
                      {
                         _loc7_ = _loc2_ - 1;
@@ -1210,7 +1210,7 @@ package engine.landscape.view
       
       private function stripOccludedNulls() : void
       {
-         var _loc1_:int = this._selectedLayerDefs.length - 1;
+         var _loc1_:int = int(this._selectedLayerDefs.length - 1);
          while(_loc1_ >= 0)
          {
             if(!this._selectedLayerDefs[_loc1_])
@@ -1368,7 +1368,7 @@ package engine.landscape.view
             {
                if(this._logger.isDebugEnabled)
                {
-                  _loc6_ = !!_loc4_.localrect ? _loc4_.localrect.width * _loc4_.localrect.height : 0;
+                  _loc6_ = !!_loc4_.localrect ? int(_loc4_.localrect.width * _loc4_.localrect.height) : 0;
                   _loc6_ *= 4;
                   _loc6_ /= 1024;
                   _loc7_ = !!_loc4_.bmp ? _loc4_.bmp : _loc4_.anim;
@@ -1441,7 +1441,7 @@ package engine.landscape.view
       private function isSpriteDefCulledByClickableBlocker(param1:LandscapeSpriteDef) : Boolean
       {
          var _loc4_:LandscapeLayerDef = null;
-         var _loc2_:int = this._selectedClickableLayerDefs.length;
+         var _loc2_:int = int(this._selectedClickableLayerDefs.length);
          if(!param1.clickable || !_loc2_)
          {
             return false;
@@ -2248,7 +2248,7 @@ package engine.landscape.view
       
       protected function get isWaiting() : Boolean
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:int = 0;
          var _loc3_:* = this.waitingResources;
          for(_loc1_ in _loc3_)
@@ -2454,7 +2454,7 @@ package engine.landscape.view
       
       public function set showHelp(param1:Boolean) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:LandscapeSpriteDef = null;
          var _loc4_:DisplayObjectWrapper = null;
          var _loc5_:DisplayObjectWrapper = null;
@@ -2640,7 +2640,7 @@ package engine.landscape.view
       
       public function setGuidepostEnabled(param1:String, param2:Boolean) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:LandscapeSpriteDef = null;
          var _loc5_:DisplayObjectWrapper = null;
          var _loc6_:DisplayObjectWrapper = null;
@@ -2866,7 +2866,7 @@ package engine.landscape.view
       
       public function set showAnchors(param1:Boolean) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:LandscapeSpriteDef = null;
          var _loc4_:DisplayObjectWrapper = null;
          var _loc5_:Array = null;
@@ -3385,7 +3385,7 @@ package engine.landscape.view
       
       public function updateLangs(param1:String) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:LandscapeSpriteDef = null;
          var _loc4_:DisplayObjectWrapper = null;
          for(_loc2_ in this.spriteDef2Sprite)

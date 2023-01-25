@@ -93,7 +93,7 @@ package engine.battle.board.view.phantasm
       
       private function _playSound() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:Number = NaN;
          var _loc3_:Number = NaN;
          var _loc4_:Number = NaN;
@@ -233,7 +233,7 @@ package engine.battle.board.view.phantasm
       override public function update(param1:int) : Boolean
       {
          var _loc2_:Boolean = false;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:SoundTrackingInfo = null;
          var _loc5_:Number = NaN;
          var _loc6_:Number = NaN;

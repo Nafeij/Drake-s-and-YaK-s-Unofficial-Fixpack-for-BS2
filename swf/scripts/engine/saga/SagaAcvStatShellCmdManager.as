@@ -76,7 +76,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Number = SagaAchievements.getStat(_loc3_);
          logger.info(_loc3_ + "=" + _loc4_);
       }
@@ -94,7 +94,7 @@ package engine.saga
             logger.info("Usage: " + _loc2_[0] + " <id> <value>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Number = Number(_loc2_[2]);
          SagaAchievements.setStat(_loc3_,_loc4_);
       }

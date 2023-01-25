@@ -118,7 +118,7 @@ package lib.engine.logging.targets.air
       
       public function getLogFilePath() : String
       {
-         return !!this.file ? this.file.nativePath : null;
+         return !!this.file ? String(this.file.nativePath) : null;
       }
    }
 }

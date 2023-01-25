@@ -89,7 +89,7 @@ package game.gui.page
       
       public function speechBubbler(param1:SpeakEvent, param2:*, param3:ISpeechBubblePositioner) : SpeechBubble
       {
-         var _loc4_:String = !!param1.speakerDef ? param1.speakerDef.id : null;
+         var _loc4_:String = !!param1.speakerDef ? String(param1.speakerDef.id) : null;
          return this.createSpeechBubble(param1.msg,param1.timeout,param1.speakerEnt,param1.speakerDef,_loc4_,param1.anchor,param2,param3,param1.direction,param1.notranslate);
       }
       

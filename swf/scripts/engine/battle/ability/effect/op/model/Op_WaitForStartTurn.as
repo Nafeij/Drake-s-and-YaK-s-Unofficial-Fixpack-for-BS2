@@ -92,7 +92,7 @@ package engine.battle.ability.effect.op.model
       
       public static function preloadAssets(param1:EffectDefOp, param2:IAbilityAssetBundle) : void
       {
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          if(!_loc3_)
          {
             param2.logger.error("No id on spawn op? " + param1);

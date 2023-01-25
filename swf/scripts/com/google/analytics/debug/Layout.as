@@ -52,8 +52,8 @@ package com.google.analytics.debug
       public function init() : void
       {
          var _loc1_:int = 10;
-         var _loc2_:uint = this._display.stage.stageWidth - _loc1_ * 2;
-         var _loc3_:uint = this._display.stage.stageHeight - _loc1_ * 2;
+         var _loc2_:uint = uint(this._display.stage.stageWidth - _loc1_ * 2);
+         var _loc3_:uint = uint(this._display.stage.stageHeight - _loc1_ * 2);
          var _loc4_:Panel = new Panel("analytics",_loc2_,_loc3_);
          _loc4_.alignement = Align.top;
          _loc4_.stickToEdge = false;
@@ -127,7 +127,7 @@ package com.google.analytics.debug
          var _loc7_:int = 0;
          while(_loc7_ < _loc5_.length)
          {
-            _loc6_ = _loc5_[_loc7_];
+            _loc6_ = String(_loc5_[_loc7_]);
             while(_loc6_.length > param2)
             {
                _loc4_.push(_loc6_.substr(0,param2));

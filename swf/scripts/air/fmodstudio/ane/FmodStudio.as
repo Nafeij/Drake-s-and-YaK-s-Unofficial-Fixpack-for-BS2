@@ -22,7 +22,7 @@ package air.fmodstudio.ane
          var _loc1_:String = "";
          if(NativeApplication.nativeApplication != null)
          {
-            _loc1_ = NativeApplication.nativeApplication.applicationID;
+            _loc1_ = String(NativeApplication.nativeApplication.applicationID);
             if(_loc1_.indexOf("air.") != 0)
             {
                _loc1_ = "air." + _loc1_ + "/" + _loc1_;

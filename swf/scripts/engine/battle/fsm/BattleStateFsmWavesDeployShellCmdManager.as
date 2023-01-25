@@ -55,7 +55,7 @@ package engine.battle.fsm
             logger.info("Usage: <id> <slotnum>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:int = int(_loc2_[2]);
          this.board.redeploy.insertPartyMember(_loc3_,_loc4_);
       }
@@ -68,7 +68,7 @@ package engine.battle.fsm
             logger.info("Usage: <id>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          this.board.redeploy.removePartyMemberById(_loc3_);
       }
       

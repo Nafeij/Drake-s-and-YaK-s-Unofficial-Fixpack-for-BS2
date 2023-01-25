@@ -433,7 +433,7 @@ package engine.battle.fsm.aimodule
                if(_loc2_.target)
                {
                   _loc1_ += _loc2_.target.stats.getValue(StatType.ARMOR) * AiPlanConsts.WEIGHT_ABL_DAMAGE_ARM;
-                  _loc1_ += Number(_loc2_.target.def.stats.getValue(StatType.STRENGTH)) * 0.5 * AiPlanConsts.WEIGHT_ABL_DAMAGE_STR;
+                  _loc1_ += _loc2_.target.def.stats.getValue(StatType.STRENGTH) * 0.5 * AiPlanConsts.WEIGHT_ABL_DAMAGE_STR;
                }
             }
          }

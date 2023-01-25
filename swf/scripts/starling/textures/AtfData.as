@@ -63,8 +63,8 @@ package starling.textures
          this.mData = param1;
          if(param1[5] != 0 && param1[6] == 255)
          {
-            _loc3_ = (Number(param1[5]) & 1) == 1;
-            _loc4_ = Number(param1[5]) >> 1 & 127;
+            _loc3_ = (param1[5] & 1) == 1;
+            _loc4_ = param1[5] >> 1 & 127;
             this.mNumTextures = _loc3_ ? 1 : _loc4_;
          }
       }

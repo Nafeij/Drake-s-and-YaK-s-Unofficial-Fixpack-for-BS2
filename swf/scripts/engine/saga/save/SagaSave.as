@@ -190,7 +190,7 @@ package engine.saga.save
                param3.info("Save hash skip due to old camp travel locator " + param1);
                return true;
             }
-            _loc5_ = param2["_"];
+            _loc5_ = String(param2["_"]);
             if(!_loc5_)
             {
                param3.error("Save hash missing [" + param1 + "]");
@@ -356,7 +356,7 @@ package engine.saga.save
       
       private function _fromSaga_Music(param1:Saga) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Number = NaN;
          this.currentMusicId = param1.sound.currentMusicId;
          var _loc2_:Dictionary = param1.sound.currentMusicParams;
@@ -376,7 +376,7 @@ package engine.saga.save
       
       public function applyCastInfo(param1:Saga, param2:Dictionary) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:SagaSaveCastEntity = null;
          var _loc6_:IEntityDef = null;
          var _loc3_:ILogger = param1.logger;
@@ -426,7 +426,7 @@ package engine.saga.save
       
       private function fromJsonCastInfo(param1:*) : Dictionary
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Object = null;
          var _loc5_:SagaSaveCastEntity = null;
          var _loc2_:Dictionary = new Dictionary();
@@ -448,7 +448,7 @@ package engine.saga.save
       
       private function toJsonCastInfo() : Object
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:SagaSaveCastEntity = null;
          var _loc1_:Object = {};
          for(_loc2_ in this.cast_info)
@@ -593,7 +593,7 @@ package engine.saga.save
       
       private function _fromJson_Music(param1:Object) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Number = NaN;
          this.currentMusicId = param1.currentMusicId;
          if(param1.currentMusicParams != undefined)
@@ -631,7 +631,7 @@ package engine.saga.save
       {
          var _loc2_:CaravanSave = null;
          var _loc3_:String = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:Number = NaN;
          var _loc1_:Object = {
             "version":this.version,
@@ -745,7 +745,7 @@ package engine.saga.save
       
       public function applyMusicToSaga(param1:Saga) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Number = NaN;
          param1.sound.setCurrentMusicById(this.currentMusicId);
          var _loc2_:String = param1.sound.currentMusicEvent;

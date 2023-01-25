@@ -154,12 +154,12 @@ package com.junkbyte.console.core
          if(v is Error)
          {
             err = v as Error;
-            stackstr = err.hasOwnProperty("getStackTrace") ? err.getStackTrace() : err.toString();
+            stackstr = err.hasOwnProperty("getStackTrace") ? err.getStackTrace() : String(err.toString());
             if(stackstr)
             {
                txt = stackstr;
             }
-            txt = err.toString();
+            txt = String(err.toString());
          }
          else if(v is XML || v is XMLList)
          {
@@ -530,8 +530,8 @@ package com.junkbyte.console.core
             for each(metadataX in nodes)
             {
                mn = metadataX.arg;
-               en = mn.(@key == "name").@value;
-               et = mn.(@key == "type").@value;
+               en = String(mn.(@key == "name").@value);
+               et = String(mn.(@key == "type").@value);
                if(refIndex)
                {
                   props.push("<a href=\'event:cl_" + refIndex + "_dispatchEvent(new " + et + "(\"" + en + "\"))\'>" + en + "</a><p0>(" + et + ")</p0>");

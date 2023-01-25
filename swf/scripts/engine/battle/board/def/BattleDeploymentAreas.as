@@ -33,7 +33,7 @@ package engine.battle.board.def
       
       public function get numDeployments() : int
       {
-         return !!this.deployments ? this.deployments.length : 0;
+         return !!this.deployments ? int(this.deployments.length) : 0;
       }
       
       public function get numTiles() : int

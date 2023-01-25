@@ -130,7 +130,7 @@ package game.gui.page
          this._scenePage = param2;
          this.userName = param3;
          allowPageScaling = false;
-         var _loc4_:String = param1.context.appInfo.ini["recap"];
+         var _loc4_:String = String(param1.context.appInfo.ini["recap"]);
          this._enableRecap = _loc4_ == "1" || _loc4_ == "true";
          if(GameSaveSynchronizer.instance.pull_complete)
          {
@@ -1061,7 +1061,7 @@ package game.gui.page
       
       public function loadNews() : void
       {
-         var _loc1_:String = config.context.appInfo.ini["news"];
+         var _loc1_:String = String(config.context.appInfo.ini["news"]);
          if(NEWS_URL_OVERRIDE)
          {
             _loc1_ = NEWS_URL_OVERRIDE;

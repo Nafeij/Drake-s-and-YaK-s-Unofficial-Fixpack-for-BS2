@@ -183,7 +183,7 @@ package starling.text
          var _loc14_:CharLocation = null;
          var _loc15_:Image = null;
          var _loc10_:Vector.<CharLocation> = this.arrangeChars(param1,param2,param3,param4,param6,param7,param8,param9);
-         var _loc11_:int = _loc10_.length;
+         var _loc11_:int = int(_loc10_.length);
          var _loc12_:Sprite = new Sprite();
          var _loc13_:int = 0;
          while(_loc13_ < _loc11_)
@@ -205,7 +205,7 @@ package starling.text
       {
          var _loc15_:CharLocation = null;
          var _loc12_:Vector.<CharLocation> = this.arrangeChars(param2,param3,param4,param5,param7,param8,param9,param10,param11);
-         var _loc13_:int = _loc12_.length;
+         var _loc13_:int = int(_loc12_.length);
          this.mHelperImage.color = param6;
          var _loc14_:int = 0;
          while(_loc14_ < _loc13_)
@@ -346,7 +346,7 @@ package starling.text
             }
          }
          var _loc16_:Vector.<CharLocation> = CharLocation.vectorFromPool();
-         var _loc17_:int = sLines.length;
+         var _loc17_:int = int(sLines.length);
          var _loc18_:Number = _loc24_ + this.mLineHeight;
          var _loc19_:int = 0;
          if(param6 == VAlign.BOTTOM)
@@ -361,7 +361,7 @@ package starling.text
          while(_loc20_ < _loc17_)
          {
             _loc32_ = sLines[_loc20_];
-            _loc12_ = _loc32_.length;
+            _loc12_ = int(_loc32_.length);
             if(_loc12_ != 0)
             {
                _loc33_ = 0;

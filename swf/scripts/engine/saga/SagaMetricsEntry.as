@@ -22,7 +22,7 @@ package engine.saga
       
       private static function cloneDict(param1:Dictionary, param2:Dictionary) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          for(_loc3_ in param1)
          {
             param2[_loc3_] = param1[_loc3_];
@@ -31,7 +31,7 @@ package engine.saga
       
       private static function dictionaryToJson(param1:Dictionary) : Object
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:int = 0;
          var _loc2_:Object = {};
          for(_loc3_ in param1)

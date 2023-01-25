@@ -71,7 +71,7 @@ package engine.battle.board.view.phantasm
          var _loc2_:Vector.<PhantasmView> = null;
          var _loc5_:PhantasmView = null;
          var _loc6_:Boolean = false;
-         var _loc3_:int = this.views.length - 1;
+         var _loc3_:int = int(this.views.length - 1);
          var _loc4_:int = 0;
          while(_loc4_ <= _loc3_)
          {

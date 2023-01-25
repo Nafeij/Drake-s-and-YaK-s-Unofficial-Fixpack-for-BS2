@@ -50,13 +50,13 @@ package engine.battle.ability.effect.op.model
       public function Op_WaitForChangeStat(param1:EffectDefOp, param2:Effect)
       {
          super(param1,param2);
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          this.ablDef = manager.factory.fetchBattleAbilityDef(_loc3_);
          if(!this.ablDef)
          {
             manager.logger.error("Op_WaitForChangeStat " + this + " invalid ability [" + _loc3_ + "]");
          }
-         var _loc4_:String = param1.params.stat;
+         var _loc4_:String = String(param1.params.stat);
          this.statType = Enum.parse(StatType,_loc4_,false) as StatType;
          if(!this.statType)
          {

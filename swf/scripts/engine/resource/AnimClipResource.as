@@ -202,7 +202,7 @@ package engine.resource
                if(_loc5_._compressedBitmapData)
                {
                   _loc1_.writeInt(_loc5_.frameNum);
-                  _loc6_ = _loc2_.length;
+                  _loc6_ = int(_loc2_.length);
                   _loc1_.writeInt(_loc6_);
                   _loc5_._compressedBitmapData.position = 0;
                   _loc2_.writeBytes(_loc5_._compressedBitmapData);

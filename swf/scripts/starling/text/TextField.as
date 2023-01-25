@@ -150,7 +150,7 @@ package starling.text
       
       private static function convertToLowerCase(param1:String) : String
       {
-         var _loc2_:String = sStringCache[param1];
+         var _loc2_:String = String(sStringCache[param1]);
          if(_loc2_ == null)
          {
             _loc2_ = param1.toLowerCase();

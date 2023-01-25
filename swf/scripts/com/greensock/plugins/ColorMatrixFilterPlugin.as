@@ -131,7 +131,7 @@ package com.greensock.plugins
                {
                   _loc5_ = 0;
                }
-               _loc3_[_loc4_ + _loc7_] = Number(param1[_loc4_]) * Number(param2[_loc7_]) + Number(param1[_loc4_ + 1]) * Number(param2[_loc7_ + 5]) + Number(param1[_loc4_ + 2]) * Number(param2[_loc7_ + 10]) + Number(param1[_loc4_ + 3]) * Number(param2[_loc7_ + 15]) + _loc5_;
+               _loc3_[_loc4_ + _loc7_] = param1[_loc4_] * param2[_loc7_] + param1[_loc4_ + 1] * param2[_loc7_ + 5] + param1[_loc4_ + 2] * param2[_loc7_ + 10] + param1[_loc4_ + 3] * param2[_loc7_ + 15] + _loc5_;
                _loc7_ += 1;
             }
             _loc4_ += 5;

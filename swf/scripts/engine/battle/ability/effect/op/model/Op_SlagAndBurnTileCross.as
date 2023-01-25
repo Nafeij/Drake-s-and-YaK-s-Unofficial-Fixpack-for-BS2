@@ -103,7 +103,7 @@ package engine.battle.ability.effect.op.model
             _loc4_ = effect.ability.manager.rng.nextMax(_loc1_.length);
             if(_loc4_ > _loc1_.length - 1)
             {
-               _loc4_ = _loc1_.length - 1;
+               _loc4_ = int(_loc1_.length - 1);
             }
             if(logger.isDebugEnabled)
             {

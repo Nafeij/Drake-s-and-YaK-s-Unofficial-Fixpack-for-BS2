@@ -207,13 +207,13 @@ package com.junkbyte.console.view
          var _loc12_:int = 0;
          var _loc13_:Number = NaN;
          var _loc2_:Number = this.highestValue - this.lowestValue;
-         var _loc3_:uint = this._bmd.width - 1;
+         var _loc3_:uint = uint(this._bmd.width - 1);
          var _loc4_:int = this._bmd.height;
          this._bmd.lock();
          this._bmd.scroll(-1,0);
          this._bmd.fillRect(new Rectangle(_loc3_,0,1,this._bmd.height),0);
          var _loc5_:Array = this._group.interests;
-         var _loc6_:int = _loc5_.length - 1;
+         var _loc6_:int = int(_loc5_.length - 1);
          while(_loc6_ >= 0)
          {
             _loc7_ = _loc5_[_loc6_];

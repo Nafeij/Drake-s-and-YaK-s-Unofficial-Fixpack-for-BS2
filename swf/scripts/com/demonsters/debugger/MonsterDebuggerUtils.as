@@ -161,7 +161,7 @@ package com.demonsters.debugger
          }
          catch(e:Error)
          {
-            stack = e.getStackTrace();
+            stack = String(e.getStackTrace());
             if(stack == null || stack == "")
             {
                return <root><error>Stack unavailable</error></root>;
@@ -179,7 +179,7 @@ package com.demonsters.debugger
             i = 0;
             while(i < lines.length)
             {
-               s = lines[i];
+               s = String(lines[i]);
                s = s.substring(3,s.length);
                bracketIndex = s.indexOf("[");
                methodIndex = s.indexOf("/");
@@ -239,7 +239,7 @@ package com.demonsters.debugger
          }
          for(_loc2_ in _references)
          {
-            _loc3_ = _references[_loc2_];
+            _loc3_ = String(_references[_loc2_]);
             if(_loc3_ == param1)
             {
                return _loc2_;
@@ -788,7 +788,7 @@ package com.demonsters.debugger
          var variables:XMLList = description..variable;
          var accessors:XMLList = description..accessor;
          var constants:XMLList = description..constant;
-         var isDynamic:Boolean = description.@isDynamic;
+         var isDynamic:Boolean = Boolean(description.@isDynamic);
          var variablesLength:int = variables.length();
          var accessorsLength:int = accessors.length();
          var constantsLength:int = constants.length();
@@ -948,16 +948,16 @@ package com.demonsters.debugger
             displayObjects.sortOn("name",Array.CASEINSENSITIVE);
             itemsArray = displayObjects.concat(itemsArray);
          }
-         itemsArrayLength = itemsArray.length;
+         itemsArrayLength = int(itemsArray.length);
          i = 0;
          while(i < itemsArrayLength)
          {
-            itemType = itemsArray[i].type;
-            itemName = itemsArray[i].name;
-            itemTarget = itemsArray[i].target;
-            itemPermission = itemsArray[i].permission;
-            itemAccess = itemsArray[i].access;
-            itemIcon = itemsArray[i].icon;
+            itemType = String(itemsArray[i].type);
+            itemName = String(itemsArray[i].name);
+            itemTarget = String(itemsArray[i].target);
+            itemPermission = String(itemsArray[i].permission);
+            itemAccess = String(itemsArray[i].access);
+            itemIcon = String(itemsArray[i].icon);
             try
             {
                if(itemAccess == MonsterDebuggerConstants.ACCESS_DISPLAY_OBJECT)
@@ -1090,12 +1090,12 @@ package com.demonsters.debugger
             }
          }
          _loc13_.sortOn("name",Array.CASEINSENSITIVE);
-         _loc14_ = _loc13_.length;
+         _loc14_ = int(_loc13_.length);
          _loc21_ = 0;
          while(_loc21_ < _loc14_)
          {
             _loc7_ = MonsterDebuggerConstants.TYPE_FUNCTION;
-            _loc8_ = _loc13_[_loc21_].xml.@name;
+            _loc8_ = String(_loc13_[_loc21_].xml.@name);
             _loc9_ = param2 + MonsterDebuggerConstants.DELIMITER + _loc8_;
             _loc15_ = parseType(_loc13_[_loc21_].xml.@returnType);
             _loc16_ = _loc13_[_loc21_].xml..parameter;

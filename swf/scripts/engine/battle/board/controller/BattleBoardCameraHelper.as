@@ -174,8 +174,8 @@ package engine.battle.board.controller
       
       private function getDistanceSq(param1:IBattleEntity, param2:Point) : Number
       {
-         var _loc3_:Number = Number(param1.x) - param2.x;
-         var _loc4_:Number = Number(param1.y) - param2.y;
+         var _loc3_:Number = param1.x - param2.x;
+         var _loc4_:Number = param1.y - param2.y;
          return _loc3_ * _loc3_ + _loc4_ * _loc4_;
       }
       

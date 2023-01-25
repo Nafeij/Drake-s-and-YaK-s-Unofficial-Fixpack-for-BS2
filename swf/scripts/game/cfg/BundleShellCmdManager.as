@@ -51,7 +51,7 @@ package game.cfg
          var _loc3_:IAssetBundleManager = this._findManager(_loc2_[1]);
          if(_loc2_.length > 2)
          {
-            _loc4_ = _loc2_[2];
+            _loc4_ = String(_loc2_[2]);
             logger.info(_loc3_.getDebugInfo(_loc4_));
          }
          else

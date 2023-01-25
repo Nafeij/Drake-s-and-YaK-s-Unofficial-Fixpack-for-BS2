@@ -388,13 +388,13 @@ package com.junkbyte.console.core
          var _loc3_:Array = _loc2_.split(/\n\s*/);
          var _loc4_:int = 10;
          var _loc5_:int = 0;
-         var _loc6_:int = _loc3_.length;
+         var _loc6_:int = int(_loc3_.length);
          var _loc7_:Array = [];
          var _loc8_:RegExp = new RegExp("\\s*at\\s+(" + Executer.CLASSES + "|" + getQualifiedClassName(this) + ")");
          var _loc9_:int = 0;
          while(_loc9_ < _loc6_)
          {
-            _loc10_ = _loc3_[_loc9_];
+            _loc10_ = String(_loc3_[_loc9_]);
             if(_loc10_.search(_loc8_) == 0)
             {
                if(_loc5_ > 0 && _loc9_ > 0)
@@ -447,7 +447,7 @@ package com.junkbyte.console.core
       
       private function savedCmd(... rest) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:WeakRef = null;
          report("Saved vars: ",-1);
          var _loc2_:uint = 0;

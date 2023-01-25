@@ -20,11 +20,11 @@ package engine.resource
       
       public function appendJson(param1:Object, param2:ILogger) : ResourceCensor
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          for(_loc3_ in param1)
          {
-            _loc4_ = param1[_loc3_];
+            _loc4_ = String(param1[_loc3_]);
             this.map[_loc3_] = _loc4_;
             if(param2.isDebugEnabled)
             {
@@ -36,7 +36,7 @@ package engine.resource
       
       public function getCensoredUrl(param1:String) : String
       {
-         var _loc2_:String = this.map[param1];
+         var _loc2_:String = String(this.map[param1]);
          return !!_loc2_ ? _loc2_ : param1;
       }
    }

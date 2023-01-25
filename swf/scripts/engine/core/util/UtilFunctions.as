@@ -43,7 +43,7 @@ package engine.core.util
       {
          var _loc3_:XML = null;
          var _loc4_:XML = null;
-         var _loc5_:* = null;
+         var _loc5_:String = null;
          if(Boolean(param1) && Boolean(param2))
          {
             _loc3_ = describeType(param1);

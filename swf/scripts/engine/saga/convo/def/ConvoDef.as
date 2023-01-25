@@ -129,7 +129,7 @@ package engine.saga.convo.def
       private static function writeStringsVector(param1:ByteArray, param2:Vector.<String>) : void
       {
          var _loc3_:String = null;
-         param1.writeByte(!!param2 ? param2.length : 0);
+         param1.writeByte(!!param2 ? int(param2.length) : 0);
          if(param2)
          {
             for each(_loc3_ in param2)
@@ -142,7 +142,7 @@ package engine.saga.convo.def
       private static function writeStringsArray(param1:ByteArray, param2:Array) : void
       {
          var _loc3_:String = null;
-         param1.writeByte(!!param2 ? param2.length : 0);
+         param1.writeByte(!!param2 ? int(param2.length) : 0);
          if(param2)
          {
             for each(_loc3_ in param2)

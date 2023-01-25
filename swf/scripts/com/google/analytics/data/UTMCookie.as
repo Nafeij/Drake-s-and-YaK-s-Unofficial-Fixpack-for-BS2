@@ -75,11 +75,11 @@ package com.google.analytics.data
       public function fromSharedObject(param1:Object) : void
       {
          var _loc2_:String = null;
-         var _loc3_:int = this.fields.length;
+         var _loc3_:int = int(this.fields.length);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {
-            _loc2_ = this.fields[_loc4_];
+            _loc2_ = String(this.fields[_loc4_]);
             if(param1[_loc2_])
             {
                this[_loc2_] = param1[_loc2_];
@@ -103,7 +103,7 @@ package com.google.analytics.data
          var _loc3_:int = 0;
          while(_loc3_ < this.fields.length)
          {
-            _loc2_ = this.fields[_loc3_];
+            _loc2_ = String(this.fields[_loc3_]);
             if(this[_loc2_] is Number && isNaN(this[_loc2_]))
             {
                _loc1_++;
@@ -138,7 +138,7 @@ package com.google.analytics.data
          var _loc2_:int = 0;
          while(_loc2_ < this.fields.length)
          {
-            _loc1_ = this.fields[_loc2_];
+            _loc1_ = String(this.fields[_loc2_]);
             if(this[_loc1_] is Number)
             {
                this[_loc1_] = NaN;
@@ -177,7 +177,7 @@ package com.google.analytics.data
          var _loc4_:int = 0;
          while(_loc4_ < this.fields.length)
          {
-            _loc2_ = this.fields[_loc4_];
+            _loc2_ = String(this.fields[_loc4_]);
             _loc3_ = this[_loc2_];
             if(_loc3_ is String)
             {
@@ -203,11 +203,11 @@ package com.google.analytics.data
          var _loc3_:String = null;
          var _loc4_:* = undefined;
          var _loc2_:Array = [];
-         var _loc5_:int = this.fields.length;
+         var _loc5_:int = int(this.fields.length);
          var _loc6_:int = 0;
          while(_loc6_ < _loc5_)
          {
-            _loc3_ = this.fields[_loc6_];
+            _loc3_ = String(this.fields[_loc6_]);
             _loc4_ = this[_loc3_];
             if(_loc4_ is String)
             {
@@ -241,7 +241,7 @@ package com.google.analytics.data
          var _loc6_:int = 0;
          while(_loc6_ < this.fields.length)
          {
-            _loc2_ = this.fields[_loc6_];
+            _loc2_ = String(this.fields[_loc6_]);
             _loc3_ = this[_loc2_];
             if(_loc3_ is String)
             {

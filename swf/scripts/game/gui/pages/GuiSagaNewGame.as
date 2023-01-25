@@ -116,9 +116,9 @@ package game.gui.pages
       public function showImportFailedPopup(param1:String) : void
       {
          var _loc2_:IGuiDialog = _context.createDialog();
-         var _loc3_:String = _context.translate("ok");
-         var _loc4_:String = _context.translate(param1);
-         var _loc5_:String = _context.translate("import_err_title");
+         var _loc3_:String = String(_context.translate("ok"));
+         var _loc4_:String = String(_context.translate(param1));
+         var _loc5_:String = String(_context.translate("import_err_title"));
          _loc2_.openDialog(_loc5_,_loc4_,_loc3_,null);
       }
       
@@ -129,7 +129,7 @@ package game.gui.pages
          var title:String;
          this.hideWaitPopup();
          this.dialogImportSaveWait = _context.createDialog();
-         yes = _context.translate("yes");
+         yes = String(_context.translate("yes"));
          text = "Waiting for import...";
          title = "Waiting for import...";
          this.dialogImportSaveWait.openDialog(title,text,null,function(param1:String):void

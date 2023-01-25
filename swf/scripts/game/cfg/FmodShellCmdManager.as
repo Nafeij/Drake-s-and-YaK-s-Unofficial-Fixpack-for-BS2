@@ -52,7 +52,7 @@ package game.cfg
             logger.info("Usage: play <event> [<param> <value>]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          logger.info("event=" + _loc3_);
          _loc3_ = this.soundSystem.driver.normalizeEventId(_loc3_);
          var _loc4_:ISoundEventId = this.soundSystem.driver.playEvent(_loc3_);
@@ -61,7 +61,7 @@ package game.cfg
             this.soundSystem.driver.systemUpdate();
             if(param1.param.length >= 3)
             {
-               _loc5_ = _loc2_[2];
+               _loc5_ = String(_loc2_[2]);
                _loc6_ = Number(_loc2_[3]);
                logger.info("param=" + _loc5_ + ", value=" + _loc6_);
                this.soundSystem.driver.setEventParameterValueByName(_loc4_,_loc5_,_loc6_);
@@ -79,7 +79,7 @@ package game.cfg
             logger.error("Usage: " + param1.param[0] + " <bundleId>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:Vector.<ISoundDefBundle> = this.soundSystem.driver.allSoundDefBundles;
          for each(_loc5_ in _loc4_)
          {
@@ -105,7 +105,7 @@ package game.cfg
             logger.error("Usage: " + param1.param[0] + " <event>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:String = "fmod-shell-cmd-" + ++this._last_fmod_shell_id;
          logger.info("event=" + _loc3_ + " + bundle=" + _loc4_);
          _loc3_ = this.soundSystem.driver.normalizeEventId(_loc3_);
@@ -130,11 +130,11 @@ package game.cfg
             logger.error("Usage: " + param1.param[0] + " <event/systemid> <param> <value>");
             return;
          }
-         var _loc2_:String = param1.param[1];
+         var _loc2_:String = String(param1.param[1]);
          var _loc3_:ISoundEventId = this.findPlayingEventIdFromDesc(_loc2_,false);
          logger.info("event=" + _loc2_);
          _loc2_ = this.soundSystem.driver.normalizeEventId(_loc2_);
-         var _loc4_:String = param1.param[2];
+         var _loc4_:String = String(param1.param[2]);
          var _loc5_:Number = Number(param1.param[3]);
          logger.info("param=" + _loc4_ + ", value=" + _loc5_);
          if(_loc3_ != null)
@@ -270,7 +270,7 @@ package game.cfg
          }
          if(_loc2_.length > 1)
          {
-            _loc3_ = _loc2_[1];
+            _loc3_ = String(_loc2_[1]);
             this.soundSystem.driver.reverbAmbientPreset(_loc3_);
          }
          logger.info("reverb=" + this.soundSystem.driver.reverb);
@@ -278,13 +278,13 @@ package game.cfg
       
       private function shellFuncBanks(param1:CmdExec) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:Object = null;
          var _loc7_:ISoundDefBundle = null;
          var _loc8_:ISoundDef = null;
          var _loc9_:Array = null;
-         var _loc10_:* = null;
-         var _loc11_:* = null;
+         var _loc10_:String = null;
+         var _loc11_:String = null;
          var _loc2_:Dictionary = new Dictionary();
          var _loc3_:Vector.<ISoundDefBundle> = this.soundSystem.driver.allSoundDefBundles;
          logger.info("...computing bank info for " + _loc3_.length);
@@ -332,21 +332,21 @@ package game.cfg
       
       private function shellFuncPlaying(param1:CmdExec) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:ISoundEventId = null;
          var _loc4_:String = null;
          logger.info("Events Playing:");
          for(_loc2_ in this.soundSystem.driver.playing)
          {
             _loc3_ = _loc2_ as ISoundEventId;
-            _loc4_ = this.soundSystem.driver.playing[_loc2_];
+            _loc4_ = String(this.soundSystem.driver.playing[_loc2_]);
             logger.info("name: " + _loc4_ + " id: " + _loc3_.toString());
          }
       }
       
       private function findPlayingEventIdFromDesc(param1:String, param2:Boolean) : ISoundEventId
       {
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:ISoundEventId = null;
          var _loc6_:String = null;
          var _loc3_:ISoundEventId = this.createEventIdFromDesc(param1);
@@ -366,7 +366,7 @@ package game.cfg
             for(_loc4_ in this.soundSystem.driver.playing)
             {
                _loc5_ = _loc4_ as ISoundEventId;
-               _loc6_ = this.soundSystem.driver.playing[_loc4_];
+               _loc6_ = String(this.soundSystem.driver.playing[_loc4_]);
                if(_loc6_ == param1)
                {
                   return _loc5_;
@@ -416,14 +416,14 @@ class FmodCategoryShellCmdManager extends ShellCmdManager
       var _loc3_:Array = param1.param;
       if(_loc3_.length > 1)
       {
-         _loc2_ = _loc3_[1];
+         _loc2_ = String(_loc3_[1]);
       }
       var _loc4_:int = int(this.soundSystem.driver.getNumEventCategories(_loc2_));
       logger.info("Categories " + _loc4_);
       var _loc5_:int = 0;
       while(_loc5_ < _loc4_)
       {
-         _loc6_ = this.driver.getEventCategoryName(_loc2_,_loc5_);
+         _loc6_ = String(this.driver.getEventCategoryName(_loc2_,_loc5_));
          logger.info("   " + StringUtil.padLeft(_loc5_.toString()," ",2) + " " + _loc6_);
          _loc5_++;
       }
@@ -438,7 +438,7 @@ class FmodCategoryShellCmdManager extends ShellCmdManager
          logger.info("Usage: " + _loc2_[0] + " <category name> [mute]");
          return;
       }
-      var _loc3_:String = _loc2_[1];
+      var _loc3_:String = String(_loc2_[1]);
       if(_loc2_.length > 2)
       {
          _loc4_ = BooleanVars.parse(_loc2_[2],false);
@@ -459,7 +459,7 @@ class FmodCategoryShellCmdManager extends ShellCmdManager
          logger.info("Usage: " + _loc2_[0] + " <category name> [volume]");
          return;
       }
-      var _loc3_:String = _loc2_[1];
+      var _loc3_:String = String(_loc2_[1]);
       var _loc4_:Number = 0;
       if(_loc2_.length > 2)
       {

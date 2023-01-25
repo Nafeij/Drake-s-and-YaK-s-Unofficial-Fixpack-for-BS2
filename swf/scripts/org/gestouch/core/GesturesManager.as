@@ -49,7 +49,7 @@ package org.gestouch.core
       
       protected function resetDirtyGestures() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          for(_loc1_ in this._dirtyGesturesMap)
          {
             (_loc1_ as Gesture).reset();
@@ -142,7 +142,7 @@ package org.gestouch.core
       
       gestouch_internal function onGestureRecognized(param1:Gesture) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:Gesture = null;
          var _loc5_:Object = null;
          var _loc2_:Object = param1.target;

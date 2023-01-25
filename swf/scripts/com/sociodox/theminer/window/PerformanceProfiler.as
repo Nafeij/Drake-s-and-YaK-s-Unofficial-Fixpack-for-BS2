@@ -159,7 +159,7 @@ package com.sociodox.theminer.window
          this.mouseEnabled = false;
          this.mGridLine.width = Stage2D.stageWidth;
          this.mGridLine.height = 1;
-         this.mCumulColumnStartPos = Number(Stage2D.stageWidth) - 110;
+         this.mCumulColumnStartPos = Stage2D.stageWidth - 110;
          this.mCurrentColumnStartPos = this.mCumulColumnStartPos - 40;
          this.mDeletedColumnStartPos = this.mCurrentColumnStartPos - 100;
          this.mAddedColumnStartPos = this.mDeletedColumnStartPos - 40;
@@ -181,7 +181,7 @@ package com.sociodox.theminer.window
          this.mBlittingTextFieldARight.filters = [_loc6_];
          this.mBlittingTextFieldARight.mouseEnabled = false;
          this.mBlittingTextFieldMatrix = new Matrix();
-         var _loc7_:int = (Number(Stage2D.stageHeight) - 25) / 15;
+         var _loc7_:int = (Stage2D.stageHeight - 25) / 15;
          this.mStackButtonArray = new Array();
          var _loc8_:int = 0;
          while(_loc8_ < _loc7_)
@@ -282,7 +282,7 @@ package com.sociodox.theminer.window
       {
          var _loc4_:MenuButton = null;
          var _loc5_:String = null;
-         var _loc2_:int = this.mStackButtonArray.length;
+         var _loc2_:int = int(this.mStackButtonArray.length);
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
@@ -338,7 +338,7 @@ package com.sociodox.theminer.window
             this.mBitmapLine.y = -20;
          }
          var _loc1_:int = getTimer() - this.mLastTime;
-         if(_loc1_ < 1000 / Number(Commands.RefreshRate) || this.mPauseButton.mIsSelected)
+         if(_loc1_ < 1000 / Commands.RefreshRate || this.mPauseButton.mIsSelected)
          {
             return;
          }
@@ -353,11 +353,11 @@ package com.sociodox.theminer.window
          {
             _loc2_.sortOn(ENTRY_TIME_TOTAL_PROPERTY,Array.NUMERIC | Array.DESCENDING);
          }
-         var _loc3_:int = this.mStackButtonArray.length;
-         var _loc4_:int = _loc2_.length;
+         var _loc3_:int = int(this.mStackButtonArray.length);
+         var _loc4_:int = int(_loc2_.length);
          var _loc5_:int = 0;
          var _loc6_:InternalEventEntry = null;
-         _loc3_ = _loc2_.length;
+         _loc3_ = int(_loc2_.length);
          var _loc7_:int = 0;
          this.mLastLen = _loc3_;
          _loc5_ = 0;
@@ -474,7 +474,7 @@ package com.sociodox.theminer.window
                }
                else
                {
-                  this.mBlittingTextFieldARight.text = (int(1000 * _loc6_.entryTime / Number(SampleAnalyzer.mFrameCounter)) / 1000).toString();
+                  this.mBlittingTextFieldARight.text = (int(1000 * _loc6_.entryTime / SampleAnalyzer.mFrameCounter) / 1000).toString();
                }
                this.mBitmapBackgroundData.draw(this.mBlittingTextFieldARight,this.mBlittingTextFieldMatrix);
                this.mBlittingTextFieldMatrix.tx = this.mCurrentColumnStartPos;
@@ -501,9 +501,9 @@ package com.sociodox.theminer.window
       
       private function Render() : void
       {
-         if(this.alpha != Number(Commands.Opacity) / 10)
+         if(this.alpha != Commands.Opacity / 10)
          {
-            this.alpha = Number(Commands.Opacity) / 10;
+            this.alpha = Commands.Opacity / 10;
          }
       }
       

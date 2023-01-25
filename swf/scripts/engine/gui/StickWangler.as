@@ -156,7 +156,7 @@ package engine.gui
       
       private function hoverButton(param1:IGuiGpNavButton) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:Point = null;
          var _loc4_:Point = null;
          var _loc5_:IGuiGpNavButton = null;
@@ -198,7 +198,7 @@ package engine.gui
       {
          var _loc3_:IGuiGpNavButton = null;
          var _loc5_:IGuiGpNavButton = null;
-         var _loc6_:* = null;
+         var _loc6_:Object = null;
          var _loc7_:IGuiGpNavButton = null;
          var _loc8_:Point = null;
          var _loc9_:Point = null;

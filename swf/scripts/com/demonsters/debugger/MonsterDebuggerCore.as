@@ -305,12 +305,12 @@ package com.demonsters.debugger
                   if(Capabilities.os.toLowerCase().indexOf("windows") != -1)
                   {
                      _loc14_ += ".exe";
-                     _loc6_ = _loc15_["applicationDirectory"]["resolvePath"](_loc14_)["nativePath"];
+                     _loc6_ = String(_loc15_["applicationDirectory"]["resolvePath"](_loc14_)["nativePath"]);
                   }
                   else if(Capabilities.os.toLowerCase().indexOf("mac") != -1)
                   {
                      _loc14_ += ".app";
-                     _loc6_ = _loc15_["applicationDirectory"]["resolvePath"](_loc14_)["nativePath"];
+                     _loc6_ = String(_loc15_["applicationDirectory"]["resolvePath"](_loc14_)["nativePath"]);
                   }
                }
             }

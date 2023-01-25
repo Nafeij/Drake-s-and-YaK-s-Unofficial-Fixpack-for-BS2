@@ -825,7 +825,7 @@ package game.saga
          {
             if(_loc10_.targetRule != BattleAbilityTargetRule.TILE_EMPTY_RANDOM)
             {
-               _loc22_ = _loc13_ ? _loc14_.targetSet.tiles.length : _loc14_.targetSet.targets.length;
+               _loc22_ = _loc13_ ? int(_loc14_.targetSet.tiles.length) : int(_loc14_.targetSet.targets.length);
                if(_loc22_ < _loc10_.targetCount)
                {
                   logger.info("GameSaga.performBattleUnitAbility insufficient targets found " + _loc22_ + " expected " + _loc10_.targetCount);

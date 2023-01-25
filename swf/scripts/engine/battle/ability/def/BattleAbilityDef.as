@@ -666,7 +666,7 @@ package engine.battle.ability.def
                   {
                      for each(ovr in autolevelv.overrides)
                      {
-                        key = ovr.key;
+                        key = String(ovr.key);
                         val = ovr.value;
                         BattleAbilityDefVars.replaceVars(lvlvars,key,val);
                      }

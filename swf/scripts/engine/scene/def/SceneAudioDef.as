@@ -57,7 +57,7 @@ package engine.scene.def
       {
          var _loc7_:SceneAudioEmitterDefAudibility = null;
          var _loc8_:SceneAudioEmitterDef = null;
-         var _loc6_:int = this.emitters.length;
+         var _loc6_:int = int(this.emitters.length);
          if(param3)
          {
             _loc6_ += param3.length;

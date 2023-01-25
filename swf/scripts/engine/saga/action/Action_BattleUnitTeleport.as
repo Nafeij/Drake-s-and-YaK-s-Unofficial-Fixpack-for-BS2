@@ -32,7 +32,7 @@ package engine.saga.action
             _loc4_ = saga.getCastMember(_loc1_);
             if(_loc4_)
             {
-               _loc1_ = _loc4_.id;
+               _loc1_ = String(_loc4_.id);
             }
          }
          var _loc2_:BattleBoard = saga.getBattleBoard();

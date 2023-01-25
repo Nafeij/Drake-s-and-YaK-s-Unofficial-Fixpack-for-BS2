@@ -564,7 +564,7 @@ package engine.scene.model
          dispatchEvent(new SceneEvent(SceneEvent.READY));
          if(this._context.saga)
          {
-            _loc2_ = Boolean(this.landscape) && Boolean(this.landscape.travel) ? this.landscape.travel.position : -1;
+            _loc2_ = Boolean(this.landscape) && Boolean(this.landscape.travel) ? int(this.landscape.travel.position) : -1;
             (this._context.saga as Saga).triggerSceneLoaded(this._def.url,_loc2_,this.focusedBoard != null,this.uniqueId);
          }
       }

@@ -166,7 +166,7 @@ package game.gui
          {
             if(this.tooltip_injury_text)
             {
-               _loc2_ = context.translate("injury_tooltip");
+               _loc2_ = String(context.translate("injury_tooltip"));
                _loc2_ = _loc2_.replace("$INJURY",(-_injuryDays).toString());
                this.tooltip_injury_text.htmlText = _loc2_;
                if(_context)

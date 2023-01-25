@@ -52,7 +52,7 @@ package engine.battle.ability.effect.model
       private static function purgeRemovedEffectsFrom(param1:Vector.<IEffect>, param2:Boolean) : void
       {
          var _loc3_:IEffect = null;
-         var _loc4_:int = param1.length;
+         var _loc4_:int = int(param1.length);
          var _loc5_:int = 0;
          while(_loc5_ < _loc4_)
          {
@@ -530,7 +530,7 @@ package engine.battle.ability.effect.model
          if(this.deferredEffectAdds.length)
          {
             this.addingDeferred = true;
-            _loc2_ = this.deferredEffectAdds.length - 1;
+            _loc2_ = int(this.deferredEffectAdds.length - 1);
             while(_loc2_ >= 0)
             {
                _loc3_ = ArrayUtil.removeAt(this.deferredEffectAdds,_loc2_) as IEffect;
@@ -549,7 +549,7 @@ package engine.battle.ability.effect.model
       
       public function getDebugTagInfo() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:EffectTag = null;
          var _loc1_:String = "";
          for(_loc2_ in this.tags)

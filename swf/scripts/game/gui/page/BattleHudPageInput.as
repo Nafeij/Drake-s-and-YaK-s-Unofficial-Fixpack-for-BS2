@@ -879,7 +879,7 @@ package game.gui.page
             _loc6_.selectedTile = _loc10_;
             _loc6_.hoverTile = _loc10_;
             BattleBoardController.handleMoveHover_static(this.fsm,this.fsm._turn,null,false);
-            this.bhp.view.centerOnBoardPoint(_loc10_.x + Number(_loc4_.boardWidth) / 2,_loc10_.y + Number(_loc4_.boardLength) / 2);
+            this.bhp.view.centerOnBoardPoint(_loc10_.x + _loc4_.boardWidth / 2,_loc10_.y + _loc4_.boardLength / 2);
             this.bhp.config.gameGuiContext.playSound("ui_tile_select");
             return true;
          }
@@ -913,7 +913,7 @@ package game.gui.page
             if(!_loc5_.targetSet.baseTile)
             {
             }
-            this.bhp.view.centerOnBoardPoint(_loc9_.x + Number(_loc6_.boardWidth) / 2,_loc9_.y + Number(_loc6_.boardLength) / 2);
+            this.bhp.view.centerOnBoardPoint(_loc9_.x + _loc6_.boardWidth / 2,_loc9_.y + _loc6_.boardLength / 2);
             this.bhp.config.gameGuiContext.playSound("ui_tile_select");
             return true;
          }
@@ -951,7 +951,7 @@ package game.gui.page
          {
             _loc4_.selectedTile = _loc8_;
             _loc4_.hoverTile = _loc8_;
-            this.bhp.view.centerOnBoardPoint(_loc8_.x + Number(_loc3_.boardWidth) / 2,_loc8_.y + Number(_loc3_.boardLength) / 2);
+            this.bhp.view.centerOnBoardPoint(_loc8_.x + _loc3_.boardWidth / 2,_loc8_.y + _loc3_.boardLength / 2);
             this.bhp.config.gameGuiContext.playSound("ui_tile_select");
             return true;
          }
@@ -1641,7 +1641,7 @@ package game.gui.page
                   {
                      if(_loc3_ == _loc9_)
                      {
-                        _loc4_ = this.valids.length;
+                        _loc4_ = int(this.valids.length);
                      }
                      this.valids.push(_loc9_);
                   }

@@ -519,7 +519,7 @@ package com.junkbyte.console.view
       
       public function get reportChannel() : String
       {
-         return this._viewingChannels.length == 1 ? this._viewingChannels[0] : ConsoleChannel.CONSOLE_CHANNEL;
+         return this._viewingChannels.length == 1 ? String(this._viewingChannels[0]) : ConsoleChannel.CONSOLE_CHANNEL;
       }
       
       public function setViewingChannels(... rest) : void
@@ -668,7 +668,7 @@ package com.junkbyte.console.view
             while(_loc2_ != null)
             {
                _loc3_ = int(_loc2_.index);
-               _loc4_ = _loc2_[0];
+               _loc4_ = String(_loc2_[0]);
                if(_loc4_.search("<|>") >= 0)
                {
                   this._filterRegExp.lastIndex -= _loc4_.length - _loc4_.search("<|>");
@@ -928,7 +928,7 @@ package com.junkbyte.console.view
          var _loc8_:String = null;
          var _loc2_:String = "<chs>";
          var _loc3_:Array = console.logs.getChannels();
-         var _loc4_:int = _loc3_.length;
+         var _loc4_:int = int(_loc3_.length);
          if(param1 && _loc4_ > style.maxChannelsInMenu)
          {
             _loc4_ = style.maxChannelsInMenu;
@@ -937,7 +937,7 @@ package com.junkbyte.console.view
          var _loc6_:int = 0;
          while(_loc6_ < _loc4_)
          {
-            _loc7_ = _loc3_[_loc6_];
+            _loc7_ = String(_loc3_[_loc6_]);
             _loc8_ = !_loc5_ && _loc6_ == 0 || _loc5_ && _loc6_ != 0 && this.chShouldShow(_loc7_) ? "<ch><b>" + _loc7_ + "</b></ch>" : _loc7_;
             _loc2_ += "<a href=\"event:channel_" + _loc7_ + "\">[" + _loc8_ + "]</a> ";
             _loc6_++;
@@ -1008,7 +1008,7 @@ package com.junkbyte.console.view
             _loc4_ = this._extraMenus[_loc3_.substring(9)];
             if(_loc4_)
             {
-               _loc3_ = _loc4_[2];
+               _loc3_ = String(_loc4_[2]);
             }
          }
          else
@@ -1024,7 +1024,7 @@ package com.junkbyte.console.view
                "channels":"Expand channels",
                "close":"Close"
             };
-            _loc3_ = _loc5_[_loc3_];
+            _loc3_ = String(_loc5_[_loc3_]);
          }
          console.panels.tooltip(_loc3_,param2);
       }
@@ -1213,7 +1213,7 @@ package com.junkbyte.console.view
          var _loc3_:uint = 0;
          var _loc2_:uint = 10;
          var _loc4_:Log = console.logs.last;
-         var _loc5_:int = this._priority;
+         var _loc5_:int = int(this._priority);
          this._priority = 0;
          var _loc6_:uint = 32000;
          while(Boolean(_loc4_) && _loc6_ > 0)
@@ -1223,11 +1223,11 @@ package com.junkbyte.console.view
             {
                if(_loc4_.priority > _loc5_ && _loc2_ > _loc4_.priority)
                {
-                  _loc2_ = _loc4_.priority;
+                  _loc2_ = uint(_loc4_.priority);
                }
                if(_loc4_.priority < _loc5_ && _loc3_ < _loc4_.priority)
                {
-                  _loc3_ = _loc4_.priority;
+                  _loc3_ = uint(_loc4_.priority);
                }
             }
             _loc4_ = _loc4_.prev;
@@ -1240,7 +1240,7 @@ package com.junkbyte.console.view
             }
             else
             {
-               _loc5_ = _loc3_;
+               _loc5_ = int(_loc3_);
             }
          }
          else if(_loc2_ == _loc5_)
@@ -1249,7 +1249,7 @@ package com.junkbyte.console.view
          }
          else
          {
-            _loc5_ = _loc2_;
+            _loc5_ = int(_loc2_);
          }
          this.priority = _loc5_;
       }
@@ -1411,7 +1411,7 @@ package com.junkbyte.console.view
             this._hint = param1[0][0];
             if(param1.length > 1)
             {
-               _loc6_ = param1[1][0];
+               _loc6_ = String(param1[1][0]);
                _loc7_ = false;
                _loc8_ = 0;
                while(_loc8_ < _loc6_.length)

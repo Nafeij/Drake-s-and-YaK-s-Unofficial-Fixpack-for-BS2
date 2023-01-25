@@ -102,10 +102,10 @@ package game.gui.battle
          {
             return;
          }
-         var _loc3_:String = this._entity.name;
+         var _loc3_:String = String(this._entity.name);
          this._tooltip.setText(_loc3_);
          var _loc4_:IBattleAbilityDef = _loc2_.abilityDef;
-         _loc5_ = !!_loc4_ ? _loc4_.name : "";
+         _loc5_ = !!_loc4_ ? String(_loc4_.name) : "";
          if(_loc2_.def.limit)
          {
             _loc5_ += " Uses: " + _loc2_.useCount + "/" + _loc2_.def.limit;

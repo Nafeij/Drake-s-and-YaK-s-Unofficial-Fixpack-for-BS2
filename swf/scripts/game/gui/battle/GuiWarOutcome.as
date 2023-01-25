@@ -274,7 +274,7 @@ class BonusMovieAndIcon
          if(this._movieClip)
          {
             _loc4_ = this._icon.leftBoundary + this._icon.x - 10;
-            this._movieClip.imposeRightBoundary(_loc4_ - Number(this._movieClip.x));
+            this._movieClip.imposeRightBoundary(_loc4_ - this._movieClip.x);
          }
       }
       else

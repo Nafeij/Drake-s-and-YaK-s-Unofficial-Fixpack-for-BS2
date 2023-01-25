@@ -212,7 +212,7 @@ package engine.battle.ability.effect.op.model
       
       public static function preloadAssets(param1:EffectDefOp, param2:IAbilityAssetBundle) : void
       {
-         var _loc3_:String = param1.params.tileIconUrl;
+         var _loc3_:String = String(param1.params.tileIconUrl);
          if(_loc3_)
          {
             param2.addExtraResource(_loc3_,BitmapResource);
@@ -297,8 +297,8 @@ package engine.battle.ability.effect.op.model
          }
          var _loc2_:Boolean = Boolean(def.params.hazard);
          var _loc3_:Boolean = Boolean(def.params.pulse);
-         var _loc4_:String = def.params.stringId;
-         var _loc5_:String = def.params.tileIconUrl;
+         var _loc4_:String = String(def.params.stringId);
+         var _loc5_:String = String(def.params.tileIconUrl);
          this.triggerDef.id = this.toString();
          this.triggerDef.tileIconUrl = _loc5_;
          this.triggerDef.stringId = _loc4_;

@@ -82,7 +82,7 @@ package game.cfg
          iap_sandbox = param1.iap_sandbox;
          if(param1.server_time != undefined)
          {
-            server_delta_time = Number(param1.server_time) - new Date().time;
+            server_delta_time = param1.server_time - new Date().time;
             logger.info("AccountInfoDefVars server_delta_time=" + server_delta_time);
          }
          completed_tutorial = BooleanVars.parse(param1.completed_tutorial,false);

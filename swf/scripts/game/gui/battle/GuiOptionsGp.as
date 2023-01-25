@@ -141,7 +141,7 @@ package game.gui.battle
          else
          {
             this.nav.deactivate();
-            _loc1_ = context.translate("options_gp_name_none");
+            _loc1_ = String(context.translate("options_gp_name_none"));
          }
          this._holder.visible = _loc2_ != null;
          this._text_gp_name.htmlText = _loc1_;
@@ -182,16 +182,16 @@ package game.gui.battle
       private function buttonRebindHandler(param1:ButtonWithIndex) : void
       {
          var _loc2_:IGuiDialog = context.createDialog();
-         var _loc3_:String = context.translate("ok");
-         var _loc4_:String = context.translate("cancel");
-         var _loc5_:String = context.translate("options_gp_rebind_title");
-         var _loc6_:String = context.translate("options_gp_rebind_body");
+         var _loc3_:String = String(context.translate("ok"));
+         var _loc4_:String = String(context.translate("cancel"));
+         var _loc5_:String = String(context.translate("options_gp_rebind_title"));
+         var _loc6_:String = String(context.translate("options_gp_rebind_body"));
          _loc2_.openTwoBtnDialog(_loc5_,_loc6_,_loc3_,_loc4_,this.dialogConfirmHandler);
       }
       
       private function dialogConfirmHandler(param1:String) : void
       {
-         var _loc2_:String = context.translate("ok");
+         var _loc2_:String = String(context.translate("ok"));
          if(param1 == _loc2_)
          {
             this.listener.guiOptionsGpRebind();

@@ -130,7 +130,7 @@ package starling.display
          if(param2 == Event.ENTER_FRAME && param1 == this)
          {
             _loc4_ = 0;
-            _loc5_ = this.mEnterFrameListeners.length;
+            _loc5_ = int(this.mEnterFrameListeners.length);
             while(_loc4_ < _loc5_)
             {
                param3[param3.length] = this.mEnterFrameListeners[_loc4_];

@@ -98,7 +98,7 @@ package game.gui
          }
          else
          {
-            _loc2_ = this.context.translate("renown_confirm_body_expand_roster");
+            _loc2_ = String(this.context.translate("renown_confirm_body_expand_roster"));
             _loc2_ = _loc2_.replace("$RENOWN",this.context.statCosts.roster_row_cost.toString());
             this.guiRenownConfirmDialog.display("renown_confirm_title_expand_roster",_loc2_,this.confirmRenownPurchase);
          }
@@ -132,8 +132,8 @@ package game.gui
             this.unlockingDialog.closeDialog(null);
          }
          this.unlockingDialog = this.context.createDialog();
-         var _loc2_:String = this.context.translate("pg_expanding_barracks_title");
-         var _loc3_:String = this.context.translate("pg_expanding_barracks_body");
+         var _loc2_:String = String(this.context.translate("pg_expanding_barracks_title"));
+         var _loc3_:String = String(this.context.translate("pg_expanding_barracks_body"));
          this.unlockingDialog.openDialog(_loc2_,_loc3_,null,null);
          this.legend.unlockRosterRow(this.onRosterRowDoneUnlocking);
       }

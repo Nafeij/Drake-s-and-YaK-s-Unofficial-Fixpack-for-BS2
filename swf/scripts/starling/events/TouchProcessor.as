@@ -75,7 +75,7 @@ package starling.events
          sUpdatedTouches.length = 0;
          if(this.mLastTaps.length > 0)
          {
-            _loc2_ = this.mLastTaps.length - 1;
+            _loc2_ = int(this.mLastTaps.length - 1);
             while(_loc2_ >= 0)
             {
                if(this.mElapsedTime - this.mLastTaps[_loc2_].timestamp > this.mMultitapTime)
@@ -101,7 +101,7 @@ package starling.events
                sUpdatedTouches[sUpdatedTouches.length] = _loc3_;
             }
             this.processTouches(sUpdatedTouches,this.mShiftDown,this.mCtrlDown);
-            _loc2_ = this.mCurrentTouches.length - 1;
+            _loc2_ = int(this.mCurrentTouches.length - 1);
             while(_loc2_ >= 0)
             {
                if(this.mCurrentTouches[_loc2_].phase == TouchPhase.ENDED)
@@ -263,7 +263,7 @@ package starling.events
       
       private function addCurrentTouch(param1:Touch) : void
       {
-         var _loc2_:int = this.mCurrentTouches.length - 1;
+         var _loc2_:int = int(this.mCurrentTouches.length - 1);
          while(_loc2_ >= 0)
          {
             if(this.mCurrentTouches[_loc2_].id == param1.id)

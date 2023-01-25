@@ -370,7 +370,7 @@ package game.gui
          }
          else
          {
-            _loc2_ = this._entity.id;
+            _loc2_ = String(this._entity.id);
             if(this.activeClassIndex >= 0 && this.activeClassIndex < this.characterClassesArray.length)
             {
                _loc3_ = this.characterClassesArray[this.activeClassIndex];
@@ -422,7 +422,7 @@ package game.gui
          {
             return;
          }
-         var _loc5_:String = context.translate(_loc3_).replace("$RENOWN",_loc2_.toString());
+         var _loc5_:String = String(context.translate(_loc3_).replace("$RENOWN",_loc2_.toString()));
          if(!this.guiConfig.disabled)
          {
             this.guiRenownConfirmDialog.display(_loc4_,_loc5_,this.renownDialogCallback);
@@ -467,10 +467,10 @@ package game.gui
                this.renownBanner.setStateForCertainTimeframe(GuiButtonState.HOVER,20);
             }
             _loc2_ = context.createDialog();
-            _loc3_ = context.translate("pg_promote_insufficient_renown_title");
-            _loc4_ = context.translate("pg_promote_insufficient_renown_body");
+            _loc3_ = String(context.translate("pg_promote_insufficient_renown_title"));
+            _loc4_ = String(context.translate("pg_promote_insufficient_renown_body"));
             _loc4_ = _loc4_.replace("$RENOWN",param1.toString());
-            _loc5_ = context.translate("ok");
+            _loc5_ = String(context.translate("ok"));
             _loc2_.openDialog(_loc3_,_loc4_,_loc5_);
             return false;
          }
@@ -699,7 +699,7 @@ package game.gui
          }
          else if(param1 < 0)
          {
-            param1 = this.characterClassesArray.length - 1;
+            param1 = int(this.characterClassesArray.length - 1);
          }
          this.setBaseStatValues(this.characterClassesArray[param1].statRanges);
          this.className.text = this.characterClassesArray[param1].name;
@@ -859,7 +859,7 @@ package game.gui
          this.use_unit_name = param2;
          if(!this.show_class_id)
          {
-            this.show_class_id = this.characterClassesArray.length > this.activeClassIndex ? this.characterClassesArray[this.activeClassIndex].id : null;
+            this.show_class_id = this.characterClassesArray.length > this.activeClassIndex ? String(this.characterClassesArray[this.activeClassIndex].id) : null;
             if(!this.show_class_id)
             {
                return;

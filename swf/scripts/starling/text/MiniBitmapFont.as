@@ -240,7 +240,7 @@ package starling.text
       {
          var _loc1_:BitmapData = new BitmapData(BITMAP_WIDTH,BITMAP_HEIGHT);
          var _loc2_:ByteArray = new ByteArray();
-         var _loc3_:int = BITMAP_DATA.length;
+         var _loc3_:int = int(BITMAP_DATA.length);
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {

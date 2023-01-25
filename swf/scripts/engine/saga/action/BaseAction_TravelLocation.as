@@ -104,7 +104,7 @@ package engine.saga.action
          var _loc4_:int = 0;
          for(; _loc4_ < _loc3_.length; _loc4_++)
          {
-            _loc5_ = _loc3_[_loc4_];
+            _loc5_ = String(_loc3_[_loc4_]);
             _loc6_ = _loc5_.split("=");
             if(_loc6_.length != 2)
             {

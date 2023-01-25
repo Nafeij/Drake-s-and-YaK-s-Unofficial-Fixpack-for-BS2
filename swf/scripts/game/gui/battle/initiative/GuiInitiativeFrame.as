@@ -481,7 +481,7 @@ package game.gui.battle.initiative
       
       public function updateBuffs(param1:IPersistedEffects) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:int = 0;
          var _loc5_:IEffect = null;
          var _loc6_:int = 0;

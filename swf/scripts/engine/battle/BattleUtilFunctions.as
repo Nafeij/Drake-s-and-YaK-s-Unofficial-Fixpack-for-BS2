@@ -308,7 +308,7 @@ package engine.battle
             _loc10_ = 0;
             while(_loc10_ < param5)
             {
-               _loc11_ = MathUtil.randomInt(0,_loc7_.length - 1);
+               _loc11_ = uint(MathUtil.randomInt(0,_loc7_.length - 1));
                _loc8_ = _loc7_[_loc11_];
                param4.push(_loc8_);
                _loc7_.splice(_loc11_,1);

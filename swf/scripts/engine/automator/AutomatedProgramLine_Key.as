@@ -28,7 +28,7 @@ package engine.automator
          var _loc7_:String = null;
          super(param1,param2,param3,param4);
          this.keybinder = param1.context.keybinder;
-         var _loc5_:String = param4[1];
+         var _loc5_:String = String(param4[1]);
          _loc5_ = _loc5_.toUpperCase();
          this.down = _loc5_ == "DOWN" || _loc5_ == "CLICK";
          this.up = _loc5_ == "UP" || _loc5_ == "CLICK";
@@ -45,7 +45,7 @@ package engine.automator
          var _loc6_:int = 2;
          while(_loc6_ < param4.length)
          {
-            _loc7_ = param4[_loc6_];
+            _loc7_ = String(param4[_loc6_]);
             _loc7_ = _loc7_.toUpperCase();
             this.ctrlKey = this.ctrlKey || _loc7_ == "CTRL";
             this.altKey = this.altKey || _loc7_ == "ALT";

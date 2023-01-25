@@ -425,7 +425,7 @@ package starling.filters
          this.disposeCache();
       }
       
-      starling_internal internal function compile(param1:DisplayObject) : QuadBatch
+      starling_internal function compile(param1:DisplayObject) : QuadBatch
       {
          var _loc2_:RenderSupport = null;
          var _loc3_:Stage = null;

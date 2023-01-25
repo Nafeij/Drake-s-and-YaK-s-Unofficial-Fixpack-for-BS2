@@ -28,7 +28,7 @@ package engine.expression.exp
          var _loc2_:Object = param1[0];
          var _loc3_:Object = param1[1];
          var _loc4_:Object = param1[2];
-         var _loc5_:String = _loc3_[0];
+         var _loc5_:String = String(_loc3_[0]);
          this.operator = OperatorBinary.fetch(_loc5_);
          if(!this.operator)
          {

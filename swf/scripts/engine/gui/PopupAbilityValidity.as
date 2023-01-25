@@ -120,7 +120,7 @@ package engine.gui
          this.leastReason = null;
          if(param1)
          {
-            _loc2_ = this.reasons.length;
+            _loc2_ = int(this.reasons.length);
             while(_loc2_ <= param1.level + 1)
             {
                this.reasons.push(null);

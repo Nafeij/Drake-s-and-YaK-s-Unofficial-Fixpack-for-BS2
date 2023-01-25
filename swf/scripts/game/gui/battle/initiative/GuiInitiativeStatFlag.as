@@ -260,9 +260,9 @@ package game.gui.battle.initiative
             if(this._tooltip.setContent(this._entity as IBattleEntity,_loc1_))
             {
                _loc2_ = this._statTexts[_loc1_];
-               _loc3_ = !!_loc2_ ? _loc2_.x + _loc2_.width : this.mouseX;
+               _loc3_ = !!_loc2_ ? int(_loc2_.x + _loc2_.width) : int(this.mouseX);
                _loc3_ += 10;
-               _loc4_ = !!_loc2_ ? _loc2_.y : this.mouseY;
+               _loc4_ = !!_loc2_ ? int(_loc2_.y) : int(this.mouseY);
                _loc5_ = new Point(_loc3_,_loc4_);
                _loc6_ = this.localToGlobal(_loc5_);
                if(this._tooltip.parent == this)
@@ -332,7 +332,7 @@ package game.gui.battle.initiative
       
       private function clearIcons() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:StatType = null;
          var _loc3_:Vector.<GuiIcon> = null;
          var _loc4_:GuiIcon = null;
@@ -431,7 +431,7 @@ package game.gui.battle.initiative
          if(_loc3_ >= 0 && _loc4_ >= 0 && _loc3_ <= MAX_STAT_CACHE && _loc4_ <= MAX_STAT_CACHE)
          {
             _loc6_ = _loc4_ * (MAX_STAT_CACHE + 1) + _loc3_;
-            _loc5_ = _statTextCache[_loc6_];
+            _loc5_ = String(_statTextCache[_loc6_]);
             if(!_loc5_)
             {
                _loc5_ = "<font size=\'22\'>" + _loc3_ + "/</font><font size=\'16.5\'>" + _loc4_ + "</font>";

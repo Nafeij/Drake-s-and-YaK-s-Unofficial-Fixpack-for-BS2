@@ -33,12 +33,12 @@ package com.greensock.plugins
       public function init(param1:Array, param2:Array) : void
       {
          this._a = param1;
-         var _loc3_:int = param2.length;
+         var _loc3_:int = int(param2.length);
          while(_loc3_--)
          {
             if(param1[_loc3_] != param2[_loc3_] && param1[_loc3_] != null)
             {
-               this._info[this._info.length] = new ArrayTweenInfo(_loc3_,this._a[_loc3_],Number(param2[_loc3_]) - Number(this._a[_loc3_]));
+               this._info[this._info.length] = new ArrayTweenInfo(_loc3_,this._a[_loc3_],param2[_loc3_] - this._a[_loc3_]);
             }
          }
       }
@@ -47,7 +47,7 @@ package com.greensock.plugins
       {
          var _loc3_:ArrayTweenInfo = null;
          var _loc4_:Number = NaN;
-         var _loc2_:int = this._info.length;
+         var _loc2_:int = int(this._info.length);
          if(this.round)
          {
             while(_loc2_--)

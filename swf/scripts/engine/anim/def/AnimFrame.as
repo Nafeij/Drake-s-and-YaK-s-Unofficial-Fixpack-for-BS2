@@ -165,7 +165,7 @@ package engine.anim.def
             while(_loc4_ < param1.height)
             {
                _loc5_ = param1.getPixel32(_loc3_,_loc4_);
-               _loc6_ = _loc5_ & 4278190080;
+               _loc6_ = uint(_loc5_ & 4278190080);
                if(_loc6_)
                {
                   _loc7_ = true;
@@ -184,7 +184,7 @@ package engine.anim.def
             while(_loc3_ < param1.width)
             {
                _loc5_ = param1.getPixel32(_loc3_,_loc4_);
-               _loc6_ = _loc5_ & 4278190080;
+               _loc6_ = uint(_loc5_ & 4278190080);
                if(_loc6_)
                {
                   _loc7_ = true;
@@ -203,7 +203,7 @@ package engine.anim.def
             while(_loc4_ < param1.height)
             {
                _loc5_ = param1.getPixel32(_loc3_,_loc4_);
-               _loc6_ = _loc5_ & 4278190080;
+               _loc6_ = uint(_loc5_ & 4278190080);
                if(_loc6_)
                {
                   _loc7_ = true;
@@ -222,7 +222,7 @@ package engine.anim.def
             while(_loc3_ <= _loc8_)
             {
                _loc5_ = param1.getPixel32(_loc3_,_loc4_);
-               _loc6_ = _loc5_ & 4278190080;
+               _loc6_ = uint(_loc5_ & 4278190080);
                if(_loc6_)
                {
                   _loc7_ = true;
@@ -561,7 +561,7 @@ package engine.anim.def
          var _loc5_:int = 0;
          for each(_loc6_ in param1.children)
          {
-            _loc5_ = this.children.length;
+            _loc5_ = int(this.children.length);
             _loc7_ = param2.getChildByName(_loc6_.name) as MovieClip;
             if(!_loc7_)
             {
@@ -995,7 +995,7 @@ package engine.anim.def
          var _loc12_:int = 0;
          var _loc13_:int = 0;
          var _loc14_:AnimFrameChild = null;
-         var _loc6_:int = param1.position;
+         var _loc6_:int = int(param1.position);
          this.frameNum = param1.readShort();
          if(this.frameNum != param3)
          {
@@ -1033,7 +1033,7 @@ package engine.anim.def
          if(_loc9_)
          {
             this.children = new Vector.<AnimFrameChild>(param4);
-            _loc12_ = param1.readUnsignedByte();
+            _loc12_ = int(param1.readUnsignedByte());
             _loc13_ = 0;
             while(_loc13_ < _loc12_)
             {

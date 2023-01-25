@@ -168,7 +168,7 @@ package engine.battle.ability.effect.op.model
          this.move.forcedMove = true;
          this.move.reactToEntityIntersect = true;
          var _loc1_:* = target.y == this.destinationTile.y;
-         var _loc2_:int = _loc1_ ? this.destinationTile.x - Number(target.x) : this.destinationTile.y - Number(target.y);
+         var _loc2_:int = _loc1_ ? int(this.destinationTile.x - target.x) : int(this.destinationTile.y - target.y);
          var _loc3_:int = _loc2_ > 0 ? 1 : -1;
          var _loc4_:int = _loc3_;
          while(_loc2_ != 0)

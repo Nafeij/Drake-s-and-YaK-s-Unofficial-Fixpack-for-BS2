@@ -36,7 +36,7 @@ package engine.vfx
          name = param1.name;
          for each(_loc4_ in param1.facings)
          {
-            _loc6_ = _loc4_.vfx;
+            _loc6_ = String(_loc4_.vfx);
             _loc7_ = Enum.parse(param2,_loc4_.facing) as IAnimFacing;
             addVfx(_loc7_,_loc6_);
          }
@@ -46,7 +46,7 @@ package engine.vfx
       
       public static function save(param1:OrientedVfxDef) : Object
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:IAnimFacing = null;
          var _loc5_:String = null;
          var _loc6_:Object = null;
@@ -58,7 +58,7 @@ package engine.vfx
          for(_loc3_ in param1.vfxByFacing)
          {
             _loc4_ = _loc3_ as IAnimFacing;
-            _loc5_ = param1.vfxByFacing[_loc4_];
+            _loc5_ = String(param1.vfxByFacing[_loc4_]);
             _loc6_ = {
                "facing":_loc4_.name,
                "vfx":_loc5_

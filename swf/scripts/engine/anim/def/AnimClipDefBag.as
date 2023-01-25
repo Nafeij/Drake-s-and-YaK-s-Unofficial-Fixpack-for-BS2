@@ -82,7 +82,7 @@ package engine.anim.def
          }
          while(param1.bytesAvailable)
          {
-            _loc7_ = param1.position;
+            _loc7_ = int(param1.position);
             _loc8_ = new AnimClipDef(this.logger);
             _loc8_.readBytes(param1);
             if(_loc5_)

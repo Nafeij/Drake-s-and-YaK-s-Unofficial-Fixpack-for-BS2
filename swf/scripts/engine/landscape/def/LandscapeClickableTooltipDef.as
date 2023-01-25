@@ -84,7 +84,7 @@ package engine.landscape.def
       
       public function get tooltipX() : int
       {
-         return !!this.center ? this.center.x : 0;
+         return !!this.center ? int(this.center.x) : 0;
       }
       
       public function set tooltipX(param1:int) : void
@@ -95,7 +95,7 @@ package engine.landscape.def
       
       public function get tooltipY() : int
       {
-         return !!this.center ? this.center.y : 0;
+         return !!this.center ? int(this.center.y) : 0;
       }
       
       public function set tooltipY(param1:int) : void

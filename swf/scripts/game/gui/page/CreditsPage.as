@@ -467,12 +467,12 @@ class SectionData
    public function addBody(param1:String) : void
    {
       this.bodies[this.index] += param1;
-      this.index = (this.index + 1) % Number(this.config.cols);
+      this.index = (this.index + 1) % this.config.cols;
       ++this.count;
    }
    
    public function get isFull() : Boolean
    {
-      return Number(this.count) / Number(this.config.cols) >= this.MAX_ROWS;
+      return this.count / this.config.cols >= this.MAX_ROWS;
    }
 }

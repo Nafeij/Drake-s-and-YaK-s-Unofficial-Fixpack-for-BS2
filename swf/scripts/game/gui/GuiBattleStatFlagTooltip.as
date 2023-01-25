@@ -79,7 +79,7 @@ package game.gui
             {
                if(param3)
                {
-                  _loc4_ = param1.translateRaw("tt_battle_morale");
+                  _loc4_ = String(param1.translateRaw("tt_battle_morale"));
                   if(!_loc4_)
                   {
                      return null;
@@ -111,12 +111,12 @@ package game.gui
             _loc6_ = param1.getAbilityDefById("pas_injury") as BattleAbilityDef;
             if(param3)
             {
-               _loc4_ = param1.translateRaw("tt_battle_injury");
+               _loc4_ = String(param1.translateRaw("tt_battle_injury"));
                if(!_loc4_)
                {
                   return null;
                }
-               _loc7_ = -Number(param2.stats.getValue(StatType.INJURY));
+               _loc7_ = -param2.stats.getValue(StatType.INJURY);
                _loc4_ = _loc4_.replace("$AMOUNT",StringUtil.numberWithSign(_loc7_,0));
             }
             _loc5_ = param1.getIconResourceGroup(_loc6_.iconBuffUrl,param2.resourceGroup);
@@ -280,7 +280,7 @@ package game.gui
             return false;
          }
          this.startContent();
-         _loc3_ = _context.translate(stat_tokens[param2]);
+         _loc3_ = String(_context.translate(stat_tokens[param2]));
          this.addContent(null,_loc3_);
          if(param2 == StatType.WILLPOWER)
          {

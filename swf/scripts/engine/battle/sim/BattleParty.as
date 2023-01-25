@@ -360,7 +360,7 @@ package engine.battle.sim
       
       public function get numMembers() : int
       {
-         return !!this.members ? this.members.length : 0;
+         return !!this.members ? int(this.members.length) : 0;
       }
       
       public function get numActive() : int
@@ -675,7 +675,7 @@ package engine.battle.sim
          this.members.splice(_loc3_,1);
          if(param2 > this.members.length)
          {
-            param2 = this.members.length;
+            param2 = int(this.members.length);
          }
          ArrayUtil.insertAt(this.members,param2,param1);
       }

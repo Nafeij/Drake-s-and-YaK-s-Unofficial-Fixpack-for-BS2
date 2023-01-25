@@ -156,7 +156,7 @@ package engine.ability.def
          var _loc8_:* = "**" + _loc5_ + "**";
          if(_loc5_ in this.factory.params)
          {
-            _loc8_ = this.factory.params[_loc5_];
+            _loc8_ = String(this.factory.params[_loc5_]);
             if(_loc7_)
             {
                if(Boolean(_loc8_) && _loc8_.charAt(0) == "-")

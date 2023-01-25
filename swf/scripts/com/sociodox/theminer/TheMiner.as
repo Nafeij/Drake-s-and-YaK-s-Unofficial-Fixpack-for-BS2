@@ -470,7 +470,7 @@ package com.sociodox.theminer
          ++this._frames;
          var _loc3_:int = getTimer();
          var _loc4_:int = _loc3_ - this._startTime;
-         if(_loc4_ >= 1000 / Number(Commands.RefreshRate))
+         if(_loc4_ >= 1000 / Commands.RefreshRate)
          {
             OptionInterface.mFps = Math.round(this._frames * (1000 / _loc4_));
             this._frames = 0;
@@ -486,7 +486,7 @@ package com.sociodox.theminer
             _loc5_ = getTimer();
             if(_loc5_ >= this.ms_prev + 300)
             {
-               _loc6_ = System.totalMemory;
+               _loc6_ = int(System.totalMemory);
                --FlashStats.mSamplingStartIdx;
                if(FlashStats.mSamplingStartIdx < 0)
                {
@@ -562,7 +562,7 @@ package com.sociodox.theminer
          var _loc2_:Boolean = Configuration.IsSamplingRequired();
          pauseSampling();
          _loc3_ = LoaderInfo(param1.target);
-         var _loc4_:int = this.mSWFList.length;
+         var _loc4_:int = int(this.mSWFList.length);
          var _loc5_:int = 0;
          while(_loc5_ < _loc4_)
          {
@@ -680,7 +680,7 @@ package com.sociodox.theminer
       {
          var _loc2_:String = null;
          var _loc3_:String = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          Cc.debugch("TM","Tracing Flash vars...");
          for(_loc4_ in param1.parameters)
          {

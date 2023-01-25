@@ -13,7 +13,7 @@ package com.adobe.utils
       
       public static function getKeys(param1:Dictionary) : Array
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc2_:Array = new Array();
          for(_loc3_ in param1)
          {

@@ -172,7 +172,7 @@ package engine.heraldry
          var _loc2_:uint = uint(this.tagsBitByName[param1]);
          if(!_loc2_)
          {
-            _loc2_ = 1 << this.tags.length;
+            _loc2_ = uint(1 << this.tags.length);
             this.tagsBitByName[param1] = _loc2_;
             this.tags.push(param1);
          }
@@ -181,7 +181,7 @@ package engine.heraldry
       
       public function makeTagsArray(param1:uint) : Array
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:uint = 0;
          var _loc2_:Array = [];
          for(_loc3_ in this.tagsBitByName)

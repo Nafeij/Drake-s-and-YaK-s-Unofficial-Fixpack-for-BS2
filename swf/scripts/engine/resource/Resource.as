@@ -125,7 +125,7 @@ package engine.resource
       public static function reportGlobalResourceTiming(param1:ILogger) : void
       {
          var _loc3_:TimingInfo = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:int = 0;
          var _loc6_:int = 0;
          var _loc7_:int = 0;

@@ -216,12 +216,12 @@ class DisplayFps extends GuiSprite
       }
       _loc1_ = 100;
       _loc2_ = 20;
-      var _loc3_:int = Math.max(0,Math.min(255,(Number(this.lastDelta) - _loc2_) * 255 / (_loc1_ - _loc2_)));
+      var _loc3_:int = Math.max(0,Math.min(255,(this.lastDelta - _loc2_) * 255 / (_loc1_ - _loc2_)));
       var _loc4_:* = 0;
       _loc4_ |= _loc3_ << 16;
       _loc4_ |= 255 - _loc3_ << 8;
       graphics.lineStyle(1,_loc4_);
-      var _loc5_:int = Number(height) - int(_loc3_ * Number(height) / 255);
+      var _loc5_:int = height - int(_loc3_ * height / 255);
       var _loc6_:int = 0;
       while(_loc6_ < this.lastDelta)
       {
@@ -255,7 +255,7 @@ class DisplayFps extends GuiSprite
       }
       this.lastDelta = param1;
       var _loc2_:int = 50;
-      this.avg = (Number(this.avg) * _loc2_ + param1) / (_loc2_ + 1);
+      this.avg = (this.avg * _loc2_ + param1) / (_loc2_ + 1);
       this.avgInt = this.avg;
       if(this.lastAvgInt != this.avgInt)
       {
@@ -354,8 +354,8 @@ class DisplayMem extends GuiSprite
       var _loc8_:* = _loc6_ << 16 | _loc7_ << 8;
       graphics.lineStyle(1,_loc8_);
       var _loc9_:Number = 1600;
-      var _loc10_:Number = Number(height) - Number(height) * Number(this.lastM) / _loc9_;
-      var _loc11_:Number = Number(height) - Number(height) * Number(this.m) / _loc9_;
+      var _loc10_:Number = height - height * this.lastM / _loc9_;
+      var _loc11_:Number = height - height * this.m / _loc9_;
       graphics.moveTo(this.lastX,_loc10_);
       graphics.lineTo(this.tickx,_loc11_);
       this.lastM = this.m;

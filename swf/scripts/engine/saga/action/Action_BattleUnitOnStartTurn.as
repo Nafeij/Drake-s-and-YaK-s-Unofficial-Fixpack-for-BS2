@@ -23,7 +23,7 @@ package engine.saga.action
          _loc3_ = saga.getCastMember(_loc1_);
          if(_loc3_)
          {
-            _loc1_ = _loc3_.id;
+            _loc1_ = String(_loc3_.id);
          }
          var _loc4_:IBattleEntity = _loc2_.getEntityByIdOrByDefId(_loc1_,null,false);
          if(Boolean(_loc4_) && Boolean(_loc4_.effects))

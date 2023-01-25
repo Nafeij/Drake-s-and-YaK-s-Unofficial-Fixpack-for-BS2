@@ -131,7 +131,7 @@ package engine.battle.ability.effect.op.model
          {
             return;
          }
-         logger.debug(!!("Op_NoneAdjacent removing applied ability " + this._appliedAbility.def.name + " because of adjacent unit: " + param1) ? param1.id : null);
+         logger.debug(!!("Op_NoneAdjacent removing applied ability " + this._appliedAbility.def.name + " because of adjacent unit: " + param1) ? String(param1.id) : null);
          this._appliedAbility.removeAllEffects(EffectRemoveReason.DEFAULT);
          this._appliedAbility = null;
       }

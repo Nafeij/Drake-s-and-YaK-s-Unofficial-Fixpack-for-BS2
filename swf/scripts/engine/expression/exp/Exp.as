@@ -128,7 +128,7 @@ package engine.expression.exp
          var _loc3_:int = -1;
          for each(_loc4_ in param1)
          {
-            _loc5_ = param2.length - 1;
+            _loc5_ = int(param2.length - 1);
             while(_loc5_ >= _loc3_)
             {
                _loc5_ = _findLastTokenIndex(_loc4_.str,param2,_loc5_);

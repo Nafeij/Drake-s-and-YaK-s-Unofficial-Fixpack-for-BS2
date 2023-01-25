@@ -56,7 +56,7 @@ package com.google.analytics.core
          }
          if(this.size() > 0)
          {
-            _loc4_ = this._ar.length;
+            _loc4_ = int(this._ar.length);
             while(_loc5_ < _loc4_)
             {
                _loc1_ = this._ar.shift();

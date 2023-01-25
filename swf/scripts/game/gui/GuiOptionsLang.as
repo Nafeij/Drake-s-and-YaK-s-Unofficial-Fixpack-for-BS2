@@ -168,7 +168,7 @@ package game.gui
       private function buttonHandler(param1:ButtonWithIndex) : void
       {
          var _loc2_:int = param1.index + this._chits.activeChitIndex;
-         var _loc3_:String = context.getLocale(_loc2_);
+         var _loc3_:String = String(context.getLocale(_loc2_));
          this.listener.guiOptionsLangSet(_loc3_);
          this.showOptionsLang(_loc3_);
       }

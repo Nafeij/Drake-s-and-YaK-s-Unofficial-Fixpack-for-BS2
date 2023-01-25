@@ -26,7 +26,7 @@ package starling.animation
          this.reset(param1,param2,param3);
       }
       
-      starling_internal internal static function fromPool(param1:Function, param2:Number, param3:Array = null) : DelayedCall
+      starling_internal static function fromPool(param1:Function, param2:Number, param3:Array = null) : DelayedCall
       {
          if(sPool.length)
          {
@@ -35,7 +35,7 @@ package starling.animation
          return new DelayedCall(param1,param2,param3);
       }
       
-      starling_internal internal static function toPool(param1:DelayedCall) : void
+      starling_internal static function toPool(param1:DelayedCall) : void
       {
          param1.mCall = null;
          param1.mArgs = null;
@@ -70,7 +70,7 @@ package starling.animation
                this.mCall.apply(null,this.mArgs);
                if(this.mRepeatCount > 0)
                {
-                  this.mRepeatCount = this.mRepeatCount - 1;
+                  --this.mRepeatCount;
                }
                this.mCurrentTime = 0;
                this.advanceTime(_loc2_ + param1 - this.mTotalTime);

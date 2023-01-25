@@ -121,7 +121,7 @@ package engine.saga
          var _loc2_:String = null;
          if(Boolean(this.campUrls) && this.campUrls.length > param1)
          {
-            _loc2_ = this.campUrls[param1];
+            _loc2_ = String(this.campUrls[param1]);
          }
          if(!_loc2_)
          {

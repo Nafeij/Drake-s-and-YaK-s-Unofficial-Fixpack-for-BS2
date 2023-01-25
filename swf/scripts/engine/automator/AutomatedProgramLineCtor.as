@@ -20,7 +20,7 @@ package engine.automator
          {
             throw new ArgumentError("Invalid program line string [" + str + "]");
          }
-         verb = argv[0];
+         verb = String(argv[0]);
          try
          {
             switch(verb)

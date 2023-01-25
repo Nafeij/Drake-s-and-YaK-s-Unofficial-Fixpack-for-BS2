@@ -89,7 +89,7 @@ package game.entry
          else if(_loc3_[0] == "ok")
          {
             this.ok = true;
-            _loc4_ = _loc3_[1];
+            _loc4_ = String(_loc3_[1]);
             if(_loc4_ != this.hash)
             {
                this.logger.error("SimpleSteamAuth response with invalid ticket");

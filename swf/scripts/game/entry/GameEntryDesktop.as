@@ -440,7 +440,7 @@ package game.entry
          var _loc2_:int = 0;
          while(_loc2_ < param1.length)
          {
-            _loc3_ = param1[_loc2_];
+            _loc3_ = String(param1[_loc2_]);
             if(_loc3_.indexOf("//") == 0)
             {
                this.logInfo("parseArguments hit comment marker, skipping");
@@ -1254,7 +1254,7 @@ package game.entry
             {
                throw new ArgumentError("Invalid saga selector disable [" + _loc3_ + "] for value [" + param1 + "]");
             }
-            _loc5_ = _loc4_[0];
+            _loc5_ = String(_loc4_[0]);
             _loc6_ = _loc4_.length > 1 ? _loc4_[1] : true;
             if(!_loc5_)
             {
@@ -1288,7 +1288,7 @@ package game.entry
             {
                throw new ArgumentError("Invalid force var [" + _loc3_ + "] for force vars [" + param1 + "]");
             }
-            _loc5_ = _loc4_[0];
+            _loc5_ = String(_loc4_[0]);
             _loc6_ = _loc4_.length > 1 ? _loc4_[1] : true;
             if(!_loc5_)
             {
@@ -1319,7 +1319,7 @@ package game.entry
          var _loc2_:String = Hash.DJBHash(_loc1_).toString(16);
          var _loc3_:String = appInfo.buildVersion;
          var _loc4_:ILogger = appInfo.logger;
-         var _loc5_:String = appInfo.ini["google_uid"];
+         var _loc5_:String = String(appInfo.ini["google_uid"]);
          if(_loc5_)
          {
             _loc6_ = "tbs/" + master_sku;
@@ -1390,7 +1390,7 @@ package game.entry
          }
          this.logInfo("ARGS (" + this.invokeArguments.length + ") [" + this.invokeArguments + "]");
          var _loc1_:Array = this.invokeArguments.concat();
-         var _loc2_:String = appInfo.ini["args"];
+         var _loc2_:String = String(appInfo.ini["args"]);
          if(_loc1_.length == 0)
          {
             if(_loc2_)
@@ -1424,7 +1424,7 @@ package game.entry
          }
          this.developer = BooleanVars.parse(appInfo.ini["developer"],this.developer);
          this.debug = BooleanVars.parse(appInfo.ini["debug"],this.debug);
-         var _loc5_:String = appInfo.ini["saga_selector_disable"];
+         var _loc5_:String = String(appInfo.ini["saga_selector_disable"]);
          this.parseSagaSelectorDisable(_loc5_);
          this.parseArguments(_loc1_);
          if(this.e3demo)

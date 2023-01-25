@@ -61,16 +61,16 @@ package engine.subtitle
          var _loc3_:int = -3 + _loc2_.length;
          var _loc4_:int = -2 + _loc2_.length;
          var _loc5_:int = -1 + _loc2_.length;
-         var _loc6_:String = _loc2_[_loc5_];
-         var _loc7_:String = _loc4_ >= 0 ? _loc2_[_loc4_] : "0";
-         var _loc8_:String = _loc3_ >= 0 ? _loc2_[_loc3_] : "0";
+         var _loc6_:String = String(_loc2_[_loc5_]);
+         var _loc7_:String = _loc4_ >= 0 ? String(_loc2_[_loc4_]) : "0";
+         var _loc8_:String = _loc3_ >= 0 ? String(_loc2_[_loc3_]) : "0";
          var _loc9_:int = _loc6_.indexOf(".");
          var _loc10_:int = 0;
          if(_loc9_ > 0)
          {
             _loc2_[2] = _loc6_.substr(0,_loc9_);
             _loc11_ = _loc6_.substr(_loc9_);
-            _loc6_ = _loc2_[2];
+            _loc6_ = String(_loc2_[2]);
             _loc10_ += 1000 * Number(_loc11_);
          }
          _loc10_ += int(_loc6_) * 1000;
@@ -231,7 +231,7 @@ package engine.subtitle
          linenum = 0;
          while(linenum < lines.length)
          {
-            line = lines[linenum];
+            line = String(lines[linenum]);
             if(!line)
             {
                if(cs)

@@ -199,7 +199,7 @@ package engine.anim.def
          }
          param1.position = param2;
          var _loc4_:int = param1.readInt() + param2;
-         var _loc6_:int = param1.position;
+         var _loc6_:int = int(param1.position);
          while(_loc6_ < _loc4_)
          {
             param1.position = _loc6_;
@@ -208,7 +208,7 @@ package engine.anim.def
             _loc12_ = param1.readInt();
             _loc13_ = param1.readInt();
             _loc14_ = param1.readInt();
-            _loc6_ = param1.position;
+            _loc6_ = int(param1.position);
             _loc5_ = this._aframes.frames[_loc10_];
             _loc5_.actualSheetBmpdWidth = _loc13_;
             _loc5_.actualSheetBmpdHeight = _loc14_;
@@ -385,7 +385,7 @@ package engine.anim.def
                if(_loc5_._compressedBitmapData)
                {
                   _loc1_.writeInt(_loc5_.frameNum);
-                  _loc6_ = _loc2_.length;
+                  _loc6_ = int(_loc2_.length);
                   _loc1_.writeInt(_loc6_);
                   _loc5_._compressedBitmapData.position = 0;
                   _loc2_.writeBytes(_loc5_._compressedBitmapData);
@@ -409,7 +409,7 @@ package engine.anim.def
       
       public function readBytes(param1:ByteArray) : AnimClipDef
       {
-         var _loc2_:int = param1.position;
+         var _loc2_:int = int(param1.position);
          this._id = param1.readUTF();
          this._url = param1.readUTF();
          var _loc3_:uint = param1.readUnsignedByte();
@@ -441,8 +441,8 @@ package engine.anim.def
          {
             this.shrunkenScale = param1.readFloat();
          }
-         var _loc8_:int = param1.readUnsignedShort();
-         var _loc9_:int = param1.readUnsignedByte();
+         var _loc8_:int = int(param1.readUnsignedShort());
+         var _loc9_:int = int(param1.readUnsignedByte());
          this.setup(_loc8_,_loc9_);
          this._aframes = new AnimFrames(this,this.logger);
          this._aframes.readBytes(param1,_loc2_);
@@ -456,7 +456,7 @@ package engine.anim.def
       
       public function writeBytes(param1:ByteArray) : void
       {
-         var _loc2_:int = param1.position;
+         var _loc2_:int = int(param1.position);
          param1.writeUTF(!!this._id ? this._id : "");
          param1.writeUTF(!!this._url ? this._url : "");
          var _loc3_:uint = 0;

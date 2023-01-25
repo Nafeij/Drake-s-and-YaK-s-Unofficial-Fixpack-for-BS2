@@ -151,7 +151,7 @@ package com.greensock
          var stagger:Number = param4;
          var onCompleteAll:Function = param5;
          var onCompleteAllParams:Array = param6;
-         var l:int = targets.length;
+         var l:int = int(targets.length);
          var a:Array = [];
          if(vars.isGSVars)
          {
@@ -240,7 +240,7 @@ package com.greensock
          var _loc3_:Array = [];
          if(_loc2_)
          {
-            _loc4_ = _loc2_.length;
+            _loc4_ = int(_loc2_.length);
             _loc5_ = 0;
             while(--_loc4_ > -1)
             {
@@ -258,7 +258,7 @@ package com.greensock
       {
          var _loc4_:TweenLite = null;
          var _loc2_:Array = getTweensOf(param1);
-         var _loc3_:int = _loc2_.length;
+         var _loc3_:int = int(_loc2_.length);
          while(--_loc3_ > -1)
          {
             _loc4_ = _loc2_[_loc3_];
@@ -279,7 +279,7 @@ package com.greensock
          var _loc3_:Array = [];
          for each(_loc4_ in _loc1_)
          {
-            _loc5_ = _loc4_.length;
+            _loc5_ = int(_loc4_.length);
             while(--_loc5_ > -1)
             {
                if(!TweenLite(_loc4_[_loc5_]).gc)
@@ -296,7 +296,7 @@ package com.greensock
       {
          var _loc5_:* = false;
          var _loc4_:Array = getAllTweens();
-         var _loc6_:int = _loc4_.length;
+         var _loc6_:int = int(_loc4_.length);
          while(--_loc6_ > -1)
          {
             _loc5_ = _loc4_[_loc6_].target == _loc4_[_loc6_].vars.onComplete;
@@ -319,7 +319,7 @@ package com.greensock
          var _loc4_:Object = null;
          var _loc5_:DisplayObjectContainer = null;
          var _loc3_:Array = getAllTweens();
-         var _loc6_:int = _loc3_.length;
+         var _loc6_:int = int(_loc3_.length);
          while(--_loc6_ > -1)
          {
             _loc4_ = _loc3_[_loc6_].target;
@@ -359,7 +359,7 @@ package com.greensock
       {
          var _loc5_:* = false;
          var _loc4_:Array = getAllTweens();
-         var _loc6_:int = _loc4_.length;
+         var _loc6_:int = int(_loc4_.length);
          while(--_loc6_ > -1)
          {
             _loc5_ = TweenLite(_loc4_[_loc6_]).target == TweenLite(_loc4_[_loc6_]).vars.onComplete;
@@ -446,7 +446,7 @@ package com.greensock
       override public function invalidate() : void
       {
          this.yoyo = Boolean(this.vars.yoyo == true);
-         this._repeat = !!this.vars.repeat ? Number(this.vars.repeat) : 0;
+         this._repeat = !!this.vars.repeat ? int(Number(this.vars.repeat)) : 0;
          this._repeatDelay = !!this.vars.repeatDelay ? Number(this.vars.repeatDelay) : 0;
          this._hasUpdateListener = false;
          if(this.vars.onCompleteListener != null || this.vars.onUpdateListener != null || this.vars.onStartListener != null)
@@ -459,7 +459,7 @@ package com.greensock
       
       public function updateTo(param1:Object, param2:Boolean = false) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:Number = NaN;
          var _loc6_:Number = NaN;
          var _loc7_:PropTween = null;
@@ -529,7 +529,7 @@ package com.greensock
       public function killProperties(param1:Array) : void
       {
          var _loc2_:Object = {};
-         var _loc3_:int = param1.length;
+         var _loc3_:int = int(param1.length);
          while(--_loc3_ > -1)
          {
             _loc2_[param1[_loc3_]] = true;

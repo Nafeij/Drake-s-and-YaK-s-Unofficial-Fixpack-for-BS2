@@ -47,9 +47,9 @@ package game.entry
          SagaDlcEntry.dlcCheck = new NullSagaDlc();
          PreAuthState.authenticator = new NullAuthentication();
          StartState.authenticator = PreAuthState.authenticator;
-         var _loc2_:String = param1.ini["url_platform_rating"];
-         var _loc3_:String = param1.ini["url_platform_soundtrack"];
-         var _loc4_:String = param1.ini["url_platform_share"];
+         var _loc2_:String = String(param1.ini["url_platform_rating"]);
+         var _loc3_:String = String(param1.ini["url_platform_soundtrack"]);
+         var _loc4_:String = String(param1.ini["url_platform_share"]);
          if(_loc2_)
          {
             _loc5_ = new UrlPlatformRating(_loc2_);

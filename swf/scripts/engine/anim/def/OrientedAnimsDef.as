@@ -35,7 +35,7 @@ package engine.anim.def
       
       public function getAnim(param1:IAnimFacing) : String
       {
-         var _loc2_:String = this.animsByFacing[param1];
+         var _loc2_:String = String(this.animsByFacing[param1]);
          if(_loc2_)
          {
             return _loc2_;

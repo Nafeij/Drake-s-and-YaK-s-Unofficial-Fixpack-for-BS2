@@ -47,7 +47,7 @@ package engine.battle.wave
          this._saga = param1.board.getSaga();
          if(Boolean(param2.bucket) && Boolean(param2.bucket.guaranteedSpawns))
          {
-            _loc6_ = param2.bucket.guaranteedSpawns.length;
+            _loc6_ = int(param2.bucket.guaranteedSpawns.length);
          }
          var _loc8_:int = 0;
          while(_loc8_ < _loc6_)

@@ -371,8 +371,8 @@ package game.view
          logger.info("Creating controller lost prompt");
          var _loc1_:IGuiContext = this.config.gameGuiContext;
          var _loc2_:IGuiDialog = _loc1_.createDialog();
-         _loc4_ = _loc1_.translateCategory("controller_lost_title",LocaleCategory.PLATFORM);
-         _loc3_ = _loc1_.translateCategory("controller_lost_message",LocaleCategory.PLATFORM);
+         _loc4_ = String(_loc1_.translateCategory("controller_lost_title",LocaleCategory.PLATFORM));
+         _loc3_ = String(_loc1_.translateCategory("controller_lost_message",LocaleCategory.PLATFORM));
          _loc2_.openDialog(_loc4_,_loc3_,null);
          UserLifecycleManager.Instance().addEventListener(InputDeviceEvent.CONTROLLER_REESTABLISHED,this.controllerReestablished);
          this.controllerLostPrompt = _loc2_;
@@ -386,8 +386,8 @@ package game.view
          var _loc1_:IGuiContext = this.config.gameGuiContext;
          var _loc2_:IGuiDialog = _loc1_.createDialog();
          this.userLostPrompt = _loc2_;
-         _loc4_ = _loc1_.translateCategory("active_user_lost_title",LocaleCategory.PLATFORM);
-         _loc3_ = _loc1_.translateCategory("active_user_lost_body",LocaleCategory.PLATFORM);
+         _loc4_ = String(_loc1_.translateCategory("active_user_lost_title",LocaleCategory.PLATFORM));
+         _loc3_ = String(_loc1_.translateCategory("active_user_lost_body",LocaleCategory.PLATFORM));
          _loc2_.openNoButtonDialog(_loc4_,_loc3_,null);
          var _loc5_:Timer = new Timer(5000,1);
          this.config.saga.pause(this);
@@ -935,7 +935,7 @@ package game.view
                   _loc4_ = _loc2_.def.msg;
                   if(StringUtil.startsWith(_loc4_,"$"))
                   {
-                     _loc5_ = _loc2_.def["msg"].substr(1);
+                     _loc5_ = String(_loc2_.def["msg"].substr(1));
                      _loc4_ = null;
                      if(PlatformInput.lastInputGp)
                      {

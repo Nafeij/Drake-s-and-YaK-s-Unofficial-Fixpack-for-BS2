@@ -125,7 +125,7 @@ package com.junkbyte.console.core
          var _loc7_:String = null;
          var _loc9_:XML = null;
          var _loc10_:XML = null;
-         var _loc11_:* = null;
+         var _loc11_:String = null;
          var _loc4_:* = typeof param1;
          if(param1 == null)
          {
@@ -198,7 +198,7 @@ package com.junkbyte.console.core
          }
          var _loc5_:String = "";
          var _loc6_:Array = _loc4_.split(/\n\sat\s/);
-         var _loc7_:int = _loc6_.length;
+         var _loc7_:int = int(_loc6_.length);
          var _loc8_:RegExp = config.stackTraceIgnoreExpression;
          var _loc9_:Boolean = false;
          var _loc10_:int = 2;

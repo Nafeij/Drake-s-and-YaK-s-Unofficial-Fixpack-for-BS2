@@ -966,7 +966,7 @@ package engine.entity.def
          {
             _loc2_ = _loc1_.getVarInt(SagaVar.VAR_SURVIVAL_FUNERAL_RENOWN_PER_RANK);
             _loc3_ = _loc2_ * (this.stats.rank - 3);
-            return Math.max(0,_loc3_);
+            return int(Math.max(0,_loc3_));
          }
          return 1;
       }

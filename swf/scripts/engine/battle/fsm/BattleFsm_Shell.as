@@ -87,7 +87,7 @@ package engine.battle.fsm
       {
          var _loc4_:IBattleEntity = null;
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : null;
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : null;
          for each(_loc4_ in this.board.entities)
          {
             if(!_loc3_ || _loc4_.id.indexOf(_loc3_) >= 0)
@@ -102,7 +102,7 @@ package engine.battle.fsm
          var _loc4_:IBattleParty = null;
          var _loc6_:int = 0;
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : null;
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : null;
          if(!_loc3_)
          {
             this.logger.info("Usage: party [index]");
@@ -234,7 +234,7 @@ package engine.battle.fsm
             this.logger.info("Usage: stat <entity> [<stat> [value]]");
             return;
          }
-         var _loc3_:String = _loc2_[1];
+         var _loc3_:String = String(_loc2_[1]);
          var _loc4_:IBattleBoard = this.board;
          _loc5_ = _loc4_.getEntityByIdOrByDefId(_loc3_,null,true);
          if(!_loc5_)
@@ -264,7 +264,7 @@ package engine.battle.fsm
          var _loc7_:int = 0;
          var _loc8_:int = 0;
          var _loc2_:Array = param1.param;
-         var _loc3_:String = _loc2_.length > 1 ? _loc2_[1] : null;
+         var _loc3_:String = _loc2_.length > 1 ? String(_loc2_[1]) : null;
          if(!_loc3_)
          {
             this.logger.info("Usage: entity [index]");
@@ -326,7 +326,7 @@ package engine.battle.fsm
       {
          var _loc2_:Array = param1.param;
          var _loc3_:Number = Number(_loc2_[1]);
-         var _loc4_:String = _loc2_[2];
+         var _loc4_:String = String(_loc2_[2]);
          var _loc5_:ActionDef = new ActionDef(null);
          _loc5_.type = ActionType.BATTLE_WALKABLE;
          _loc5_.varvalue = _loc3_;

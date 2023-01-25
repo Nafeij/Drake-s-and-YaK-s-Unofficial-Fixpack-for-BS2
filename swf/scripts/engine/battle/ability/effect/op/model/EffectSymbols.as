@@ -92,9 +92,9 @@ package engine.battle.ability.effect.op.model
          {
             throw new ArgumentError("Invalid format for symbol [" + param1 + "], expected [a.b]");
          }
-         var _loc4_:String = _loc3_[0];
+         var _loc4_:String = String(_loc3_[0]);
          _loc4_ = _loc4_.toLowerCase();
-         var _loc5_:String = _loc3_[1];
+         var _loc5_:String = String(_loc3_[1]);
          if(_loc4_ == "saga")
          {
             if(!this.symbols)

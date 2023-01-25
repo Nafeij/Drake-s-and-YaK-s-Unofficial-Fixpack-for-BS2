@@ -82,7 +82,7 @@ package com.greensock.plugins
       {
          var _loc3_:Object = null;
          TweenLite.onPluginEvent = TweenPlugin.onTweenEvent;
-         var _loc2_:int = param1.length;
+         var _loc2_:int = int(param1.length);
          while(_loc2_--)
          {
             if(param1[_loc2_].hasOwnProperty("API"))
@@ -117,7 +117,7 @@ package com.greensock.plugins
       {
          var _loc3_:PropTween = null;
          var _loc4_:Number = NaN;
-         var _loc2_:int = this._tweens.length;
+         var _loc2_:int = int(this._tweens.length);
          if(this.round)
          {
             while(--_loc2_ > -1)
@@ -157,7 +157,7 @@ package com.greensock.plugins
       
       public function killProps(param1:Object) : void
       {
-         var _loc2_:int = this.overwriteProps.length;
+         var _loc2_:int = int(this.overwriteProps.length);
          while(--_loc2_ > -1)
          {
             if(this.overwriteProps[_loc2_] in param1)
@@ -165,7 +165,7 @@ package com.greensock.plugins
                this.overwriteProps.splice(_loc2_,1);
             }
          }
-         _loc2_ = this._tweens.length;
+         _loc2_ = int(this._tweens.length);
          while(--_loc2_ > -1)
          {
             if(PropTween(this._tweens[_loc2_]).name in param1)

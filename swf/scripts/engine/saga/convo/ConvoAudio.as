@@ -71,7 +71,7 @@ package engine.saga.convo
       
       public function cleanup() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:Array = null;
          var _loc3_:ISoundEventId = null;
          for(_loc1_ in this.events)
@@ -144,7 +144,7 @@ package engine.saga.convo
       
       public function updatePitches() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:Array = null;
          var _loc3_:ISoundEventId = null;
          for(_loc1_ in this.events)
@@ -178,7 +178,7 @@ package engine.saga.convo
          {
             if(this._deferredAudioCmdDefs)
             {
-               _loc1_ = this._deferredAudioCmdDefs.length;
+               _loc1_ = int(this._deferredAudioCmdDefs.length);
                _loc2_ = 0;
                while(_loc2_ < _loc1_)
                {
@@ -246,7 +246,6 @@ package engine.saga.convo
                this.handleCmdStart_delayed(param1);
                break;
             case ConvoAudioCmdType.MODIFY:
-               break;
             case ConvoAudioCmdType.END:
          }
       }

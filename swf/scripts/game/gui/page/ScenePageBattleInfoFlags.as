@@ -110,7 +110,7 @@ package game.gui.page
       
       public function cleanup() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:BattleEntity = null;
          var _loc3_:String = null;
          var _loc4_:IGuiBattleInfoFlag = null;
@@ -194,7 +194,7 @@ package game.gui.page
          {
             return null;
          }
-         var _loc2_:String = param1.id;
+         var _loc2_:String = String(param1.id);
          var _loc3_:IGuiBattleInfoFlag = this.idToFlag[_loc2_];
          var _loc4_:Class = this.getFlagClass(param1);
          if(Boolean(_loc3_) && _loc3_.ctorClazz != _loc4_)

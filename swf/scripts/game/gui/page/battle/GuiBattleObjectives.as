@@ -110,7 +110,7 @@ package game.gui.page.battle
                _loc3_++;
             }
          }
-         var _loc2_:int = !!param1 ? param1.length : 0;
+         var _loc2_:int = !!param1 ? int(param1.length) : 0;
          if(this.gbos.length > _loc2_)
          {
             this.gbos.splice(_loc2_,this.gbos.length - _loc2_);
@@ -174,13 +174,13 @@ package game.gui.page.battle
          if(this._hoverGbo)
          {
             this._hoverDialog = this._context.createDialog();
-            _loc2_ = this._context.translateCategory("_dialog_title",LocaleCategory.BATTLE_OBJ);
-            _loc3_ = this._context.translateCategory(this._hoverGbo.def.token + "_desc",LocaleCategory.BATTLE_OBJ);
+            _loc2_ = String(this._context.translateCategory("_dialog_title",LocaleCategory.BATTLE_OBJ));
+            _loc3_ = String(this._context.translateCategory(this._hoverGbo.def.token + "_desc",LocaleCategory.BATTLE_OBJ));
             if(this._hoverGbo.complete)
             {
                _loc3_ = this._context.translateCategory("_complete",LocaleCategory.BATTLE_OBJ) + "\n\n\n" + _loc3_;
             }
-            _loc4_ = this._context.translate("ok");
+            _loc4_ = String(this._context.translate("ok"));
             this._hoverDialog.openDialog(_loc2_,_loc3_,_loc4_,this.hoverDialogClosedHandler);
          }
          if(this._context.saga)

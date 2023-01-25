@@ -200,7 +200,7 @@ package starling.textures
          }
       }
       
-      starling_internal internal function createBase() : void
+      starling_internal function createBase() : void
       {
          var _loc1_:Context3D = Starling.context;
          var _loc2_:String = getQualifiedClassName(this.mBase);

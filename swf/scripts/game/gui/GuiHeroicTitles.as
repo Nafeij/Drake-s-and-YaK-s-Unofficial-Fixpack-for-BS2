@@ -347,7 +347,7 @@ package game.gui
          }
          var _loc4_:String = "renown_confirm_title_heroic_title";
          var _loc5_:String = "renown_confirm_body_heroic_title";
-         var _loc6_:String = context.translate(_loc5_);
+         var _loc6_:String = String(context.translate(_loc5_));
          _loc6_ = _loc6_.replace("$RENOWN",_loc2_);
          var _loc7_:String = !!this._curCharacter ? this._curCharacter.gender : null;
          _loc6_ = _loc6_.replace("$TITLE",this.curTitle.getName(_loc7_));

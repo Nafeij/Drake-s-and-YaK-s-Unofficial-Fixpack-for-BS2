@@ -199,7 +199,7 @@ package game.gui.battle
          if(!this.validity.valid && Boolean(this.validity.leastReason))
          {
             _loc4_ = "ability_invalid_" + this.validity.leastReason;
-            _loc5_ = _context.translate(_loc4_.toLowerCase());
+            _loc5_ = String(_context.translate(_loc4_.toLowerCase()));
             this._blockedReason = _loc5_;
             if(this._tt_whynot)
             {

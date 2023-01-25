@@ -233,7 +233,7 @@ package starling.display
          }
          if(_loc10_)
          {
-            _loc8_ = param2.length - 1;
+            _loc8_ = int(param2.length - 1);
             while(_loc8_ > param3)
             {
                param2.pop().dispose();
@@ -274,7 +274,7 @@ package starling.display
          {
             _loc6_ |= 1 << 6;
          }
-         var _loc7_:String = sProgramNameCache[_loc6_];
+         var _loc7_:String = String(sProgramNameCache[_loc6_]);
          if(_loc7_ == null)
          {
             _loc7_ = "QB_i." + _loc6_.toString(16);
@@ -336,7 +336,7 @@ package starling.display
       {
          this.destroyBuffers();
          var _loc1_:int = this.mVertexData.numVertices;
-         var _loc2_:int = this.mIndexData.length;
+         var _loc2_:int = int(this.mIndexData.length);
          var _loc3_:Context3D = Starling.context;
          if(_loc1_ == 0)
          {

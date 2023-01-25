@@ -110,7 +110,7 @@ package com.junkbyte.console.view
          }
       }
       
-      console_internal internal function update(param1:Boolean, param2:Boolean) : void
+      console_internal function update(param1:Boolean, param2:Boolean) : void
       {
          this._canDraw = !param1;
          this._mainPanel.update(!param1 && param2);
@@ -217,7 +217,7 @@ package com.junkbyte.console.view
          if(param1)
          {
             _loc3_ = param1.split("::");
-            param1 = _loc3_[0];
+            param1 = String(_loc3_[0]);
             if(_loc3_.length > 1)
             {
                param1 += "<br/><low>" + _loc3_[1] + "</low>";

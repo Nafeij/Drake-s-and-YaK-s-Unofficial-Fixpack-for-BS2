@@ -82,7 +82,7 @@ package starling.events
          this.mData = param3;
       }
       
-      starling_internal internal static function fromPool(param1:String, param2:Boolean = false, param3:Object = null) : Event
+      starling_internal static function fromPool(param1:String, param2:Boolean = false, param3:Object = null) : Event
       {
          if(sEventPool.length)
          {
@@ -91,7 +91,7 @@ package starling.events
          return new Event(param1,param2,param3);
       }
       
-      starling_internal internal static function toPool(param1:Event) : void
+      starling_internal static function toPool(param1:Event) : void
       {
          param1.mData = param1.mTarget = param1.mCurrentTarget = null;
          sEventPool[sEventPool.length] = param1;
@@ -162,7 +162,7 @@ package starling.events
          return this.mStopsImmediatePropagation;
       }
       
-      starling_internal internal function reset(param1:String, param2:Boolean = false, param3:Object = null) : Event
+      starling_internal function reset(param1:String, param2:Boolean = false, param3:Object = null) : Event
       {
          this.mType = param1;
          this.mBubbles = param2;

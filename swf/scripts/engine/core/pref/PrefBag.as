@@ -63,7 +63,7 @@ package engine.core.pref
          this.latestVersion = param2;
          for each(_loc6_ in param5)
          {
-            _loc7_ = _loc6_.key;
+            _loc7_ = String(_loc6_.key);
             _loc8_ = _loc6_.value;
             this.defaults[_loc7_] = _loc8_;
          }
@@ -102,7 +102,7 @@ package engine.core.pref
       
       protected function loadDefaults() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:* = undefined;
          if(!this.defaults)
          {

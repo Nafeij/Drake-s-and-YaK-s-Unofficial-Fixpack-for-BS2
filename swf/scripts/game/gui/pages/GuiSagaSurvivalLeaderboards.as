@@ -254,7 +254,7 @@ package game.gui.pages
          _context.currentLocale.fixTextFieldFormat(this._text_board_filter);
          this._text_info_desc.htmlText = _context.translateCategory(_loc7_ + "_desc",LocaleCategory.LEADERBOARD);
          _context.currentLocale.fixTextFieldFormat(this._text_info_desc);
-         var _loc13_:int = !!_loc2_ ? Math.min(_loc2_.entries.length,this.rows.length) : 0;
+         var _loc13_:int = !!_loc2_ ? int(Math.min(_loc2_.entries.length,this.rows.length)) : 0;
          var _loc14_:int = 0;
          while(_loc14_ < _loc13_)
          {
@@ -262,7 +262,7 @@ package game.gui.pages
             _loc16_ = _loc15_.value;
             _loc17_ = _loc15_.display_name;
             _loc18_ = _loc15_.account_id;
-            _loc19_ = this.color_name;
+            _loc19_ = uint(this.color_name);
             _loc20_ = _loc14_ + 1;
             if(_loc20_ == _loc13_)
             {
@@ -272,16 +272,16 @@ package game.gui.pages
                   _loc16_ = _loc2_.user_value;
                   _loc20_ = _loc2_.user_rank;
                   _loc18_ = _loc2_.user_account_id;
-                  _loc19_ = this.color_name_self;
+                  _loc19_ = uint(this.color_name_self);
                }
             }
             if(_loc2_.entryBelongsToUser(_loc15_))
             {
-               _loc19_ = this.color_name_self;
+               _loc19_ = uint(this.color_name_self);
             }
             else if(_loc14_ == 0)
             {
-               _loc19_ = this.color_name_leader;
+               _loc19_ = uint(this.color_name_leader);
             }
             this.rows[_loc14_].showEntry(_loc20_,_loc19_,_loc17_,_loc16_,_loc18_);
             _loc14_++;
@@ -465,9 +465,9 @@ package game.gui.pages
          {
             this.networkErrorDialog.cleanup();
          }
-         var _loc2_:String = _context.translate("ok");
-         var _loc3_:String = _context.translateCategory("platform_network_error",LocaleCategory.PLATFORM);
-         var _loc4_:String = _context.translateCategory("platform_leaderboard_inaccessible",LocaleCategory.PLATFORM);
+         var _loc2_:String = String(_context.translate("ok"));
+         var _loc3_:String = String(_context.translateCategory("platform_network_error",LocaleCategory.PLATFORM));
+         var _loc4_:String = String(_context.translateCategory("platform_leaderboard_inaccessible",LocaleCategory.PLATFORM));
          this.networkErrorDialog = _context.createDialog();
          this.networkErrorDialog.openDialog(_loc3_,_loc4_,_loc2_);
          SagaSurvival.dispatcher.removeEventListener(SagaLeaderboardsEvent.FETCH_ERROR,this.survivalLeaderboardErrorHandler);

@@ -55,7 +55,7 @@ package com.junkbyte.console.core
       
       public function update() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:ByteArray = null;
          var _loc3_:ByteArray = null;
          if(this._sendBuffer.length)
@@ -127,10 +127,10 @@ package com.junkbyte.console.core
          buffer = this._recBuffers[id];
          try
          {
-            pointer = buffer.position = 0;
+            pointer = uint(buffer.position = 0);
             while(buffer.bytesAvailable)
             {
-               cmdlen = buffer.readByte();
+               cmdlen = uint(buffer.readByte());
                if(buffer.bytesAvailable == 0)
                {
                   break;

@@ -119,7 +119,7 @@ package game.gui.battle
       
       override public function get maxCount() : int
       {
-         return !!this._charges ? this._charges.length : 0;
+         return !!this._charges ? int(this._charges.length) : 0;
       }
       
       public function set enemyCount(param1:int) : void

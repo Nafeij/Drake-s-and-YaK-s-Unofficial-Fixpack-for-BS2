@@ -38,7 +38,7 @@ package engine.fmod
       
       public function addManifest(param1:FmodManifest) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          for(_loc2_ in param1._events)
          {
             this.addEvent(param1._events[_loc2_]);
@@ -62,7 +62,7 @@ package engine.fmod
       
       public function debugDump(param1:ILogger) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:String = null;
          var _loc4_:FmodManifestEvent = null;
          var _loc5_:String = null;

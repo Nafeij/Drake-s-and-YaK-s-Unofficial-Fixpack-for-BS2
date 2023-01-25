@@ -40,7 +40,7 @@ package engine.battle.ability.effect.op.model
       {
          var _loc4_:BattleAbilityDef = null;
          super(param1,param2);
-         var _loc3_:String = param1.params.ability;
+         var _loc3_:String = String(param1.params.ability);
          this.abilityDef = manager.factory.fetchBattleAbilityDef(_loc3_);
          this.abilityLevel = param1.params.level;
          this.maxPerTurn = param1.params.maxPerTurn != undefined ? int(param1.params.maxPerTurn) : this.maxPerTurn;

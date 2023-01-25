@@ -371,7 +371,7 @@ package com.adobe.utils
          var _loc48_:uint = 0;
          var _loc49_:uint = 0;
          var _loc50_:String = null;
-         var _loc5_:uint = getTimer();
+         var _loc5_:uint = uint(getTimer());
          this._agalcode = new ByteArray();
          this._error = "";
          var _loc6_:Boolean = false;
@@ -392,7 +392,7 @@ package com.adobe.utils
          var _loc7_:Array = param2.replace(/[\f\n\r\v]+/g,"\n").split("\n");
          var _loc8_:int = 0;
          var _loc9_:int = 0;
-         var _loc11_:int = _loc7_.length;
+         var _loc11_:int = int(_loc7_.length);
          _loc10_ = 0;
          while(_loc10_ < _loc11_ && this._error == "")
          {
@@ -463,7 +463,7 @@ package com.adobe.utils
                      break;
                   }
                   _loc19_ = false;
-                  _loc20_ = 64 + 64 + 32;
+                  _loc20_ = uint(64 + 64 + 32);
                   _loc21_ = _loc18_.length;
                   _loc22_ = 0;
                   while(_loc22_ < _loc21_)
@@ -549,7 +549,7 @@ package com.adobe.utils
                         _loc38_ = 1;
                         while(_loc38_ < _loc37_)
                         {
-                           _loc36_ = Number(_loc30_[0].charCodeAt(_loc38_)) - "x".charCodeAt(0);
+                           _loc36_ = _loc30_[0].charCodeAt(_loc38_) - "x".charCodeAt(0);
                            if(_loc36_ > 2)
                            {
                               _loc36_ = 3;
@@ -595,7 +595,7 @@ package com.adobe.utils
                            _loc19_ = true;
                            break;
                         }
-                        _loc34_ = Number(_loc41_[0].charCodeAt(1)) - "x".charCodeAt(0);
+                        _loc34_ = _loc41_[0].charCodeAt(1) - "x".charCodeAt(0);
                         if(_loc34_ > 2)
                         {
                            _loc34_ = 3;
@@ -717,7 +717,7 @@ package com.adobe.utils
                {
                   _loc47_ += " ";
                }
-               _loc50_ = this.agalcode[_loc49_].toString(16);
+               _loc50_ = String(this.agalcode[_loc49_].toString(16));
                if(_loc50_.length < 2)
                {
                   _loc50_ = "0" + _loc50_;
@@ -743,7 +743,7 @@ package com.adobe.utils
          REGMAP[FT] = new Register(FT,"fragment temporary",2,param2 ? 1024 : (param1 == 1 ? 7 : 25),REG_FRAG | REG_WRITE | REG_READ);
          REGMAP[FS] = new Register(FS,"texture sampler",5,param2 ? 1024 : 7,REG_FRAG | REG_READ);
          REGMAP[FO] = new Register(FO,"fragment output",3,param2 ? 1024 : (param1 == 1 ? 0 : 3),REG_FRAG | REG_WRITE);
-         REGMAP[FD] = new Register(FD,"fragment depth output",6,param2 ? 1024 : (param1 == 1 ? -1 : 0),REG_FRAG | REG_WRITE);
+         REGMAP[FD] = new Register(FD,"fragment depth output",6,param2 ? 1024 : (param1 == 1 ? uint(-1) : 0),REG_FRAG | REG_WRITE);
          REGMAP["op"] = REGMAP[VO];
          REGMAP["i"] = REGMAP[VI];
          REGMAP["v"] = REGMAP[VI];

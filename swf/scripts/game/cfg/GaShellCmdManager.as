@@ -31,7 +31,7 @@ package game.cfg
          var _loc3_:Array = param1.param;
          if(_loc3_.length > 1)
          {
-            _loc2_ = _loc3_[1];
+            _loc2_ = String(_loc3_[1]);
          }
          if(_loc2_)
          {

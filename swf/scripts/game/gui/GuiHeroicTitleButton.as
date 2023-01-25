@@ -70,7 +70,7 @@ package game.gui
       
       private function _showTipHeroicTitles() : void
       {
-         var _loc1_:String = _context.translateCategory("tut_heroeic_title",LocaleCategory.TUTORIAL);
+         var _loc1_:String = String(_context.translateCategory("tut_heroeic_title",LocaleCategory.TUTORIAL));
          this.tutorial_id = _context.createTutorialPopup(this,_loc1_,TutorialTooltipAlign.RIGHT,TutorialTooltipAnchor.RIGHT,true,false,null);
          this.showing_tip_heroic_title = true;
       }

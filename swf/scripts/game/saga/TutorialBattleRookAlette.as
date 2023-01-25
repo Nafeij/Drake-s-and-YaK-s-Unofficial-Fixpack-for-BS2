@@ -148,7 +148,7 @@ package game.saga
          var self:Function = param1;
          this.logger.info("TutorialBattleRookAlette mode_turn_attack");
          e = this.battleFsm.turn.entity;
-         eid = e.id;
+         eid = String(e.id);
          lid = "tut_battle_rook_alette_attack";
          msg = this.config.context.locale.translate(LocaleCategory.TUTORIAL,lid);
          this.helper.tt = this.config.tutorialLayer.createTooltip("ScenePage|scene_view|boards|focusedBoardView|entityViews|" + eid + "|indicator|displayObjectWrapper",TutorialTooltipAlign.TOP,TutorialTooltipAnchor.NONE,-128,msg,false,true,0);

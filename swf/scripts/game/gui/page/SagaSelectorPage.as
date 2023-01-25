@@ -119,7 +119,7 @@ package game.gui.page
          _loc3_["saga1"] = "saga1/saga1.json.z";
          _loc3_["saga2"] = "saga2/saga2.json.z";
          _loc3_["saga3"] = "saga3/saga3.json.z";
-         var _loc4_:String = _loc3_[param1];
+         var _loc4_:String = String(_loc3_[param1]);
          config.saga.launchSagaByUrl(_loc4_,null,0,config.saga.def.url);
       }
    }

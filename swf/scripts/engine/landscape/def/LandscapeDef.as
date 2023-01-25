@@ -125,7 +125,7 @@ package engine.landscape.def
       
       public function get numTravelDefs() : int
       {
-         return !!this.travels ? this.travels.length : 0;
+         return !!this.travels ? int(this.travels.length) : 0;
       }
       
       public function getSplineDef(param1:String) : LandscapeSplineDef

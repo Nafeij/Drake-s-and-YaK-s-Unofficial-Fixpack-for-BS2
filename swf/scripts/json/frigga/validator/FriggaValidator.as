@@ -29,7 +29,7 @@ package json.frigga.validator
       
       public function traverse(param1:Object, param2:FriggaWriter, param3:String = "") : void
       {
-         var _loc7_:* = null;
+         var _loc7_:String = null;
          var _loc8_:String = null;
          var _loc9_:* = undefined;
          var _loc10_:FriggaPropertyDescriptor = null;

@@ -926,7 +926,7 @@ package engine.battle.entity.view
                this.propAnimClipSprite = _loc2_.animClipSprite;
                this.propAnimClipSprite.clip.start();
                this.propAnimClipSprite.x = 0;
-               this.propAnimClipSprite.y = Number(this.entity.boardWidth) * this.isoSprite.height / 2;
+               this.propAnimClipSprite.y = this.entity.boardWidth * this.isoSprite.height / 2;
                this.killFadeTweensToVisibility();
                if(this.shadowBitmapWrapper)
                {
@@ -987,11 +987,11 @@ package engine.battle.entity.view
             return;
          }
          var _loc1_:Number = this.battleBoardView.units;
-         var _loc2_:Number = _loc1_ * Number(this.entity.diameter);
-         var _loc3_:Number = _loc1_ * Number(this.entity.boardWidth);
-         var _loc4_:Number = _loc1_ * Number(this.entity.boardLength);
+         var _loc2_:Number = _loc1_ * this.entity.diameter;
+         var _loc3_:Number = _loc1_ * this.entity.boardWidth;
+         var _loc4_:Number = _loc1_ * this.entity.boardLength;
          var _loc5_:Number = _loc1_ * this.entity.height;
-         var _loc6_:Number = _loc1_ * (Number(this.entity.localLength) - Number(this.entity.diameter));
+         var _loc6_:Number = _loc1_ * (this.entity.localLength - this.entity.diameter);
          this.isoSprite.setSize(_loc3_,_loc4_,_loc5_);
          setSize(_loc3_,_loc4_,_loc5_);
          var _loc7_:DisplayObjectWrapper = this.animSprite.displayObjectWrapper;
@@ -1173,8 +1173,8 @@ package engine.battle.entity.view
             return this._scratchCenter;
          }
          var _loc1_:Number = this.battleBoardView.units;
-         var _loc2_:int = Number(this.entity.boardWidth) * _loc1_;
-         var _loc3_:int = Number(this.entity.boardLength) * _loc1_;
+         var _loc2_:int = this.entity.boardWidth * _loc1_;
+         var _loc3_:int = this.entity.boardLength * _loc1_;
          this._scratchCenter.setTo(x + _loc2_ / 2,y + _loc3_ / 2);
          return this.battleBoardView.getScreenPointGlobalPt(this._scratchCenter);
       }

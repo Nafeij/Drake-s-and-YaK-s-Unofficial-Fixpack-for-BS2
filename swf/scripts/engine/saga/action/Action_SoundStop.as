@@ -29,14 +29,14 @@ package engine.saga.action
       
       private function findPlayingSoundByName(param1:String) : ISoundEventId
       {
-         var _loc3_:* = null;
+         var _loc3_:Object = null;
          var _loc4_:ISoundEventId = null;
          var _loc5_:String = null;
          var _loc2_:ISoundDriver = saga.sound.system.driver;
          for(_loc3_ in _loc2_.playing)
          {
             _loc4_ = _loc3_ as ISoundEventId;
-            _loc5_ = _loc2_.playing[_loc3_];
+            _loc5_ = String(_loc2_.playing[_loc3_]);
             if(_loc5_ == param1)
             {
                return _loc4_;

@@ -160,8 +160,8 @@ package engine.anim.view
       
       public function toJson() : Object
       {
-         var _loc1_:uint = this.a >> 24 & 255;
-         var _loc2_:uint = this.b >> 24 & 255;
+         var _loc1_:uint = uint(this.a >> 24 & 255);
+         var _loc2_:uint = uint(this.b >> 24 & 255);
          var _loc3_:Object = {
             "periodMs":this.periodMs,
             "exponent":this.exponent

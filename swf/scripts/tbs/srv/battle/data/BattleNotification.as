@@ -62,7 +62,7 @@ package tbs.srv.battle.data
       
       private function generateStartString() : String
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          var _loc1_:String = "Starting ";
          var _loc2_:int = 0;
@@ -84,7 +84,7 @@ package tbs.srv.battle.data
       
       private function generateVictoryString() : String
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:String = null;
          var _loc1_:String = "";
          var _loc2_:String = this.generateTeamString(this.victor);

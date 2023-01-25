@@ -25,7 +25,7 @@ package engine.battle.fsm
       
       public function parseJson(param1:Object) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:BattleRenownAwardType = null;
          if(param1 == null)
          {
@@ -55,7 +55,7 @@ package engine.battle.fsm
       
       public function mergeAchievements(param1:BattleRewardData) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          for(_loc2_ in param1.achievements)
          {
             this.achievements[_loc2_] = param1.achievements[_loc2_];

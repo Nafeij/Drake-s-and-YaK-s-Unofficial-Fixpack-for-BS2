@@ -170,13 +170,13 @@ package engine.core.locale
       public function consumeOverlay(param1:Locale) : void
       {
          var _loc2_:Localizer = null;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          for each(_loc2_ in param1.localizerList)
          {
             for(_loc3_ in _loc2_.tokens)
             {
-               _loc4_ = _loc2_.tokens[_loc3_];
+               _loc4_ = String(_loc2_.tokens[_loc3_]);
                this.addTranslation(_loc2_.id,_loc3_,_loc4_);
             }
          }
@@ -378,7 +378,7 @@ package engine.core.locale
                   _loc7_ = "%";
                   continue;
                case "s":
-                  _loc7_ = param2[_loc5_];
+                  _loc7_ = String(param2[_loc5_]);
                   _loc5_++;
                   continue;
                default:
@@ -503,12 +503,12 @@ package engine.core.locale
       
       public function deIce(param1:String) : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
          var _loc4_:RegExp = null;
          for(_loc2_ in deIceChars)
          {
-            _loc3_ = deIceChars[_loc2_];
+            _loc3_ = String(deIceChars[_loc2_]);
             _loc4_ = new RegExp(_loc2_,"g");
             param1 = param1.replace(_loc4_,_loc3_);
          }

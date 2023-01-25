@@ -182,7 +182,7 @@ package game.view
       
       public static function printDisplayListInternal(param1:Object, param2:String, param3:String, param4:int, param5:int, param6:ILogger, param7:Boolean) : void
       {
-         var _loc12_:* = null;
+         var _loc12_:String = null;
          var _loc13_:* = null;
          var _loc14_:EventDispatcher = null;
          var _loc15_:int = 0;

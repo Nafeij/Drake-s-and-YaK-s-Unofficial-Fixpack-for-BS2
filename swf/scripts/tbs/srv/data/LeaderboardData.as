@@ -52,7 +52,7 @@ package tbs.srv.data
             return;
          }
          var _loc1_:int = -1;
-         var _loc2_:int = this.entries.length - 1;
+         var _loc2_:int = int(this.entries.length - 1);
          while(_loc2_ >= 0)
          {
             if(this.entryBelongsToUser(this.entries[_loc2_]))

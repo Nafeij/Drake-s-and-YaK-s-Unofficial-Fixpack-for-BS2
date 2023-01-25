@@ -26,9 +26,9 @@ package engine.core.util
             param2 = new ColorTransform();
          }
          param2.color = param1;
-         var _loc3_:uint = param1 >> 16 & 255;
-         var _loc4_:uint = param1 >> 8 & 255;
-         var _loc5_:uint = param1 >> 0 & 255;
+         var _loc3_:uint = uint(param1 >> 16 & 255);
+         var _loc4_:uint = uint(param1 >> 8 & 255);
+         var _loc5_:uint = uint(param1 >> 0 & 255);
          param2.redMultiplier = _loc3_ / 255;
          param2.greenMultiplier = _loc4_ / 255;
          param2.blueMultiplier = _loc5_ / 255;
@@ -80,19 +80,19 @@ package engine.core.util
       
       public static function lerpColor(param1:uint, param2:uint, param3:Number) : uint
       {
-         var _loc4_:uint = param1 >> 24 & 255;
-         var _loc5_:uint = param1 >> 16 & 255;
-         var _loc6_:uint = param1 >> 8 & 255;
-         var _loc7_:uint = param1 >> 0 & 255;
-         var _loc8_:uint = param2 >> 24 & 255;
-         var _loc9_:uint = param2 >> 16 & 255;
-         var _loc10_:uint = param2 >> 8 & 255;
-         var _loc11_:uint = param2 >> 0 & 255;
+         var _loc4_:uint = uint(param1 >> 24 & 255);
+         var _loc5_:uint = uint(param1 >> 16 & 255);
+         var _loc6_:uint = uint(param1 >> 8 & 255);
+         var _loc7_:uint = uint(param1 >> 0 & 255);
+         var _loc8_:uint = uint(param2 >> 24 & 255);
+         var _loc9_:uint = uint(param2 >> 16 & 255);
+         var _loc10_:uint = uint(param2 >> 8 & 255);
+         var _loc11_:uint = uint(param2 >> 0 & 255);
          var _loc12_:uint = MathUtil.lerp(_loc4_,_loc8_,param3);
          var _loc13_:uint = MathUtil.lerp(_loc5_,_loc9_,param3);
          var _loc14_:uint = MathUtil.lerp(_loc6_,_loc10_,param3);
          var _loc15_:uint = MathUtil.lerp(_loc7_,_loc11_,param3);
-         return _loc12_ << 24 | _loc13_ << 16 | _loc14_ << 8 | _loc15_;
+         return uint(_loc12_ << 24 | _loc13_ << 16 | _loc14_ << 8 | _loc15_);
       }
       
       public static function greyen(param1:uint, param2:Number) : uint
@@ -102,24 +102,24 @@ package engine.core.util
       
       public static function multiply(param1:uint, param2:uint) : uint
       {
-         var _loc3_:uint = param1 >> 24 & 255;
-         var _loc4_:uint = param1 >> 16 & 255;
-         var _loc5_:uint = param1 >> 8 & 255;
-         var _loc6_:uint = param1 >> 0 & 255;
-         var _loc7_:uint = param2 >> 24 & 255;
-         var _loc8_:uint = param2 >> 16 & 255;
-         var _loc9_:uint = param2 >> 8 & 255;
-         var _loc10_:uint = param2 >> 0 & 255;
+         var _loc3_:uint = uint(param1 >> 24 & 255);
+         var _loc4_:uint = uint(param1 >> 16 & 255);
+         var _loc5_:uint = uint(param1 >> 8 & 255);
+         var _loc6_:uint = uint(param1 >> 0 & 255);
+         var _loc7_:uint = uint(param2 >> 24 & 255);
+         var _loc8_:uint = uint(param2 >> 16 & 255);
+         var _loc9_:uint = uint(param2 >> 8 & 255);
+         var _loc10_:uint = uint(param2 >> 0 & 255);
          var _loc11_:Number = 1 / 255;
          var _loc12_:uint = _loc3_ * _loc7_ * _loc11_;
          var _loc13_:uint = _loc4_ * _loc8_ * _loc11_;
          var _loc14_:uint = _loc5_ * _loc9_ * _loc11_;
          var _loc15_:uint = _loc6_ * _loc10_ * _loc11_;
-         _loc12_ = _loc12_ << 24 & 4278190080;
-         _loc13_ = _loc13_ << 16 & 16711680;
-         _loc14_ = _loc14_ << 8 & 65280;
-         _loc15_ = _loc15_ << 0 & 255;
-         return _loc12_ | _loc13_ | _loc14_ | _loc15_;
+         _loc12_ = uint(_loc12_ << 24 & 4278190080);
+         _loc13_ = uint(_loc13_ << 16 & 16711680);
+         _loc14_ = uint(_loc14_ << 8 & 65280);
+         _loc15_ = uint(_loc15_ << 0 & 255);
+         return uint(_loc12_ | _loc13_ | _loc14_ | _loc15_);
       }
    }
 }

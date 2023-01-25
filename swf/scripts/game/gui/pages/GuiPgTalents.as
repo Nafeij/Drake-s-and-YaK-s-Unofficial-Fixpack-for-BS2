@@ -92,7 +92,7 @@ package game.gui.pages
       
       public function GuiPgTalents()
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:StatType = null;
          var _loc3_:GuiStatButton = null;
          this._buttons_stat = new Dictionary();
@@ -220,7 +220,7 @@ package game.gui.pages
       
       public function init(param1:IGuiContext, param2:Function, param3:Function) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:StatType = null;
          var _loc6_:GuiStatButton = null;
          super.initGuiBase(param1);
@@ -309,8 +309,8 @@ package game.gui.pages
             return;
          }
          this._lastStat = param1;
-         var _loc2_:String = tokens[param1];
-         var _loc3_:String = _context.translate(_loc2_);
+         var _loc2_:String = String(tokens[param1]);
+         var _loc3_:String = String(_context.translate(_loc2_));
          this._text_stat.htmlText = !!_loc3_ ? _loc3_ : "";
          var _loc4_:Locale = _context.locale;
          _loc4_.fixTextFieldFormat(this._text_stat);
@@ -353,7 +353,7 @@ package game.gui.pages
       
       private function buttonStatHandler(param1:GuiStatButton) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:StatType = null;
          var _loc4_:GuiStatButton = null;
          if(param1.toggled)
@@ -463,7 +463,7 @@ package game.gui.pages
          }
          if(_loc8_)
          {
-            _loc18_ = _context.translate("pg_talent_item_pfx");
+            _loc18_ = String(_context.translate("pg_talent_item_pfx"));
             this._text_item.htmlText = _loc18_ + _loc8_.toString();
             this._text_item.visible = true;
             _loc3_.fixTextFieldFormat(this._text_item);

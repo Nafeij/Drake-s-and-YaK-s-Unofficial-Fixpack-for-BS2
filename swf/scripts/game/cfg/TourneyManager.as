@@ -179,7 +179,7 @@ package game.cfg
       
       public function handleOneMsg(param1:Object) : Boolean
       {
-         var _loc2_:String = param1["class"];
+         var _loc2_:String = String(param1["class"]);
          switch(_loc2_)
          {
             case "tbs.srv.util.Tourney":

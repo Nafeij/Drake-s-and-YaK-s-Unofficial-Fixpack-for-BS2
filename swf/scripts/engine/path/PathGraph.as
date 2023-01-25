@@ -246,7 +246,7 @@ package engine.path
                else
                {
                   _loc6_.update(param1,this.timingFunction);
-                  _loc4_ = param1 >= 0 ? this.timingFunction() - _loc3_ : param1;
+                  _loc4_ = param1 >= 0 ? int(this.timingFunction() - _loc3_) : param1;
                   if(param1 >= 0)
                   {
                      _loc5_ = _loc4_ > param1;
@@ -271,7 +271,7 @@ package engine.path
       
       private function destroyNodeIslands() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:Object = null;
          var _loc2_:PathGraphNode = null;
          for(_loc1_ in this._nodes)
          {
@@ -310,7 +310,7 @@ package engine.path
       
       private function createOpenSet() : Dictionary
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:PathGraphNode = null;
          var _loc1_:Dictionary = new Dictionary();
          for(_loc2_ in this._nodes)
@@ -323,7 +323,7 @@ package engine.path
       
       private function assignNodeIslands() : void
       {
-         var _loc4_:* = null;
+         var _loc4_:Object = null;
          var _loc5_:PathGraphNode = null;
          var _loc6_:int = 0;
          var _loc1_:Dictionary = this.createOpenSet();
@@ -351,7 +351,7 @@ package engine.path
       
       public function cullNodeIslands(param1:int, param2:Function) : void
       {
-         var _loc5_:* = null;
+         var _loc5_:Object = null;
          var _loc7_:int = 0;
          var _loc8_:int = 0;
          var _loc9_:PathGraphNode = null;

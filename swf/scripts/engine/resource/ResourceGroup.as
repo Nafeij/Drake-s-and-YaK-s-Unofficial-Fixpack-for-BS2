@@ -59,7 +59,7 @@ package engine.resource
          var _loc2_:String = null;
          if(this.urlMappings)
          {
-            _loc2_ = this.urlMappings[param1];
+            _loc2_ = String(this.urlMappings[param1]);
             if(_loc2_)
             {
                return this.resources[_loc2_];
@@ -73,7 +73,7 @@ package engine.resource
          var _loc2_:String = null;
          if(this.urlMappings)
          {
-            _loc2_ = this.urlMappings[param1];
+            _loc2_ = String(this.urlMappings[param1]);
             if(_loc2_)
             {
                return _loc2_ in this.resources;
