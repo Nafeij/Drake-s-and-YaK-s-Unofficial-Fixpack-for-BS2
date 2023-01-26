@@ -126,26 +126,29 @@
    
 ------------------------------------------------------------------
 
-Drake's & YaK's Fixpack for BS2 - version 2.0
-[Works with the current version of Banner Saga 2, 2.39.02]
+# Drake's & YaK's Fixpack for BS2 - version 2.0
+[Works with the current steam version of Banner Saga 2, 2.39.02]
 
 This is the active branch of the original Fixpack for Banner Saga 2, by YaK of all Trades (YaK#2186) and Drake713.
 
 This corrects nasty bugs, inconsistencies and typos in the video game Banner Saga 2 by Stoic Studios.
 
 Many thanks to:
-Gestaltzerfall, who updated TBSDecompiler - http://www.mediafire.com/file/wun36alp6ojlkjk/TBS_Decompiler3.2.3.air/file
-Ratatoskr
-Drake713
-Nafeij
-Aleo
+ - Gestaltzerfall, who updated TBSDecompiler - http://www.mediafire.com/file/wun36alp6ojlkjk/TBS_Decompiler3.2.3.air/file
+ - Ratatoskr
+ - Drake713
+ - Nafeij
+ - Aleo
 
-Please report any bugs in Issues.
+Please report any bugs in `Issues`.
 
 ------------------------------------------------------------------
 INSTALLATION:
-    Select 'CODE > Download ZIP'. Uncompress the zip archive and place the /tbs2 folder in your "../steamapps/common" folder. It will ask you to overwrite some files.
+
+    Download links are in the `Releases` tab. Uncompress the zip archive and place the /tbs2 folder in your "../steamapps/common" folder. It will ask you to overwrite some files.
     
+    GOG INSTALLATION:
+
 UNINSTALLATION:
     Just delete the files and rename the backups OR verify the integrity of game files in Steam.
     
