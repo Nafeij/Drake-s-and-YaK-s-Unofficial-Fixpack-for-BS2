@@ -2,7 +2,7 @@
 
 > for Banner Saga 2, Steam version 2.59.01 / GOG version 2.61.02
 
-Drake's & YaK's Fixpack for BS2 is a QoL mod for Banner Saga 2, build on top of the original unofficial patch by YaK of all Trades (YaK#2186) and Drake713.
+Drake's & YaK's Fixpack for BS2 is a legacy-support mod for Banner Saga 2, build on top of the original unofficial patch by YaK of all Trades (YaK#2186) and Drake713.
 
 The mod corrects bugs, inconsistencies and typos in the video game Banner Saga 2 by Stoic Studios. It also restores some never-before-seen cut-content and features various QoL improvements.
 
