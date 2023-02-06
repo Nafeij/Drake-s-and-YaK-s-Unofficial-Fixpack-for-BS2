@@ -1,4 +1,9 @@
 # Release Notes
+
+> ## 3.2
+> 6 Feb 2023
+> - Fixed variation of previous Ekkill import bug where his state is not correctly set if you have Ekkill has a prisoner and release him afterwards.
+
 > ## 3.1
 > 26 Jan 2023
 > - Classed-based achievements for kills continue to trigger and grant 5 Renown after the first time unlocking them, per battle, within the same playthrough. Fortunately, the game saves a variable named in the format `"acv_..._unlk"` when this happens, so we can check for it in `\engine\saga\Saga.triggerVariableHandler` and prevent multiple unlocks in the same save.

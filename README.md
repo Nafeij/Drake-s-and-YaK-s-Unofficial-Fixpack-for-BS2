@@ -15,7 +15,11 @@ Many thanks to:
 
 Please report any bugs in [Issues](../../issues).
 
-# Latest release
+# Latest releases
+
+> ## 3.2
+> 6 Feb 2023
+> - Fixed variation of previous Ekkill import bug where his state is not correctly set if you have Ekkill has a prisoner and release him afterwards.
 
 > ## 3.1
 > 26 Jan 2023
