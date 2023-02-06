@@ -8643,12 +8643,12 @@
           "varvalue": 1
         },
         {
-          "prereq": "!4 ekkilljoins || ekkilldied",
+          "prereq": "!6_ekkillunbound && (!4_ekkilljoins || ekkilldied)",
           "type": "VARIABLE_SET",
           "varname": "ekkill_state"
         },
         {
-          "prereq": "4_ekkilljoins && !ekkilldied",
+          "prereq": "6_ekkillunbound || (4_ekkilljoins && !ekkilldied)",
           "type": "VARIABLE_SET",
           "varname": "ekkill_state",
           "varvalue": 1
@@ -10487,6 +10487,10 @@
       {
         "dst": "4_ekkilljoins",
         "src": "4_ekkilljoins"
+      },
+      {
+        "dst": "6_ekkillunbound",
+        "src": "6_ekkillunbound"
       },
       {
         "dst": "ludin_state",
@@ -13041,6 +13045,9 @@
     },
     {
       "name": "4_ekkilljoins"
+    },
+    {
+      "name": "6_ekkillunbound"
     }
   ],
   "voUrl": "",
