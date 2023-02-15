@@ -574,7 +574,7 @@
 			},
 			"junoYouWouldTurn": {
 				"content": [
-					"[juno] \"You would turn down the mender Council's coin?\"",
+					"[juno] \"You would turn down the Mender Council's coin?\"",
 					{
 						"divert": "junoBolverkYouWo"
 					},
