@@ -61,7 +61,7 @@
 				"content": [
 					"[egil] \"And you don't have to love me back, but I had to say it.\"",
 					{
-						"divert": "pageBreakHeExhal"
+						"divert": "heExhalesRelieve"
 					},
 					{
 						"pageNum": 0
@@ -622,17 +622,6 @@
 					"/=His wonder is refreshing. You smile at him. He looks up at the godstone and takes a deep breath.=/",
 					{
 						"divert": "egilAletteItsAMi"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"pageBreakHeExhal": {
-				"content": [
-					"/=He exhales, relieved of a great burden.=/",
-					{
-						"divert": "heExhalesRelieve"
 					},
 					{
 						"pageNum": 0

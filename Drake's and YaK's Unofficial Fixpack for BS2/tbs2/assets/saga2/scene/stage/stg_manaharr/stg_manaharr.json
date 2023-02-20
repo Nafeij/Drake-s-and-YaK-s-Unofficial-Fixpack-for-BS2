@@ -344,7 +344,7 @@
           "x": -1365.5,
           "y": -581
         },
-        "speed": 0.5,
+        "speed": 0.4,
         "view_index": 1
       },
       {
@@ -1025,7 +1025,7 @@
         "always": true,
         "nameId": "layer_actors_back",
         "offset": {
-          "x": -2265.5,
+          "x": -1665.5,
           "y": -581
         },
         "speed": 3
