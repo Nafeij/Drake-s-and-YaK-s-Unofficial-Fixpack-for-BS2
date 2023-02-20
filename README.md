@@ -18,7 +18,8 @@ Please report any bugs in [Issues](../../issues).
 # Latest releases
 
 > ## 3.3
-> 16 Feb 2023
+> 20 Feb 2023
+> - Fixed bug where the skulker eggs thrown by barb hurlers would not spawn skulkers. The `_abl_hatch` ability was targeting the wrong entity (`ENEMY` instead of `OTHER`).
 > - Spelling corrections.
 
 > ## 3.2
@@ -37,6 +38,8 @@ Please report any bugs in [Issues](../../issues).
     Unfortunately, the fault is baked in to the game logic and unfeasible to fix; the workaround used is to relinquish control of Nid and Oddleif to the player when either side is down on units.
 > - Some characters may get obscured in conversations due to poor positioning (e.g. Dusi gets obscured by Juno and Apostate gets obscured by Bolverk).
 > - Miscellaneous typos.
+
+[Read More](/CHANGELOG.md)
 
 ---
 
