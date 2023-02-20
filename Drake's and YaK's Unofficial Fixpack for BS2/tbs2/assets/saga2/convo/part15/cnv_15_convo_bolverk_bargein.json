@@ -1,0 +1,360 @@
+{
+	"data": {
+		"initial": "skipMarkiverMark",
+		"stitches": {
+			"anotherValkaEnte": {
+				"content": [
+					"/=Another Valka enters the room. She looks concerned for the barely conscious Dusi and mortified by Juno.=/",
+					{
+						"divert": "bolverkYouLiedTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkAfterIKil": {
+				"content": [
+					"[bolverk] \"After I kill you, Yngvar, I'll rip their bodies apart. I'll pull this arrow and--\"",
+					{
+						"divert": "junoNo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"BolverkBolverkLo": {
+				"content": [
+					"/=Bolverk looks at you and his eyes go wide before a cold hatred settles into his stare.=/",
+					{
+						"divert": "bolverkWeKnowYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkGrowlsDee": {
+				"content": [
+					"/=Bolverk growls deeply and stands to his full height, brandishing his axes. He looks stronger than ever.=/",
+					{
+						"divert": "zefrStayWhereYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkImGoingTo": {
+				"content": [
+					"[bolverk] \"I'm going to fix that. I'll kill her! And you! And him! I'll pull out this damn arrow and--\"",
+					{
+						"divert": "junoNo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkIverWeKno": {
+				"content": [
+					"[bolverk iver] \"We know you murdered Raze. And her child.\"",
+					{
+						"linkPath": "bolverkAfterIKil",
+						"option": "Step forward and draw your weapon"
+					},
+					{
+						"linkPath": "junoHeWasSuppose",
+						"option": "\"Why in the depths is Bellower's body here?\""
+					},
+					{
+						"linkPath": "bolverkThoseOfUs",
+						"option": "\"Who are you talking about? 'We' who?\""
+					},
+					{
+						"linkPath": "bolverkIveSeenTh",
+						"option": "\"And I know you've lost your damn mind.\""
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkIveSeenTh": {
+				"content": [
+					"[bolverk] \"I've seen things from the other side. The dredge lives warped and ruined by the two you stand with.\"",
+					{
+						"divert": "bolverkTheyLayWa"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkPointsPas": {
+				"content": [
+					"/=Bolverk points past you to Eyvind.=/",
+					{
+						"divert": "bolverkAfterIKil"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkShesSuppo": {
+				"content": [
+					"[bolverk] \"She's supposed to be dead - killed by her own!\"",
+					{
+						"divert": "bolverkImGoingTo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverksRageIsCo": {
+				"content": [
+					"/=Bolverk's rage is consuming him and he is spitting more than speaking.=/",
+					{
+						"divert": "iverIsThatBellow"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkTheyLayWa": {
+				"content": [
+					"[bolverk] \"They lay waste to everything they're near!\"",
+					{
+						"divert": "junoBolverkICan"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkThoseOfUs": {
+				"content": [
+					"[bolverk] \"Those of us forced below! We who are already paying for /=his =/crime!\"",
+					{
+						"divert": "bolverkPointsPas"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkWeKnowYou": {
+				"content": [
+					"[bolverk] \"We know you murdered Raze. And her child.\"",
+					{
+						"divert": "bolverkIverWeKno"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouLiedTo": {
+				"content": [
+					"[bolverk] \"/=You lied to us! Your oaths meant nothing!=/\"",
+					{
+						"divert": "bolverksRageIsCo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"bolverkYouWontDo": {
+				"content": [
+					"[bolverk] \"You won't do anything again! I'll pull you apart. I'll kill Eyvind and Yngvar. I'll pull out this arrow and--\"",
+					{
+						"divert": "junoNo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"eyvindReactsToHe": {
+				"content": [
+					"/=Eyvind reacts to her by screaming, and the whole tower pulses with crackling energy, shaking violently.=/",
+					{
+						"divert": "junoIverIllHelpE"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"iverIsThatBellow": {
+				"content": [
+					"[iver] \"Is that Bellower's faen body?!\"",
+					{
+						"divert": "junoNotJustHisBo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoBolverkICan": {
+				"content": [
+					"[juno] \"Bolverk...I can--\"",
+					{
+						"divert": "bolverkYouWontDo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoHeWasSuppose": {
+				"content": [
+					"[juno] \"He was supposed to--\"",
+					{
+						"divert": "bolverkShesSuppo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoIverIllHelpE": {
+				"content": [
+					"[juno] \"Iver, I'll help Eyvind and hold off Dusi.\"",
+					{
+						"divert": "junoKillBolverkY"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoKillBolverkY": {
+				"content": [
+					"[juno] \"Kill Bolverk! You're the only one who can!\"",
+					{
+						"divert": "bolverkGrowlsDee"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoNo": {
+				"content": [
+					"[juno] \"No!\"",
+					{
+						"divert": "pageBreakTheFear"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoNotJustHisBo": {
+				"content": [
+					"[juno] \"Not just his body, I fear. Bolverk's mind is...not his own.\"",
+					{
+						"divert": "BolverkBolverkLo"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"junoNoZefrNowYou": {
+				"content": [
+					"[juno] \"No, Zefr! Now, you will do as /=I=/ say!\"",
+					{
+						"divert": "pageBreakTheValk"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakTheFear": {
+				"content": [
+					" /=The fear in her voice is infinite.=/",
+					{
+						"divert": "eyvindReactsToHe"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakTheFloo": {
+				"content": [
+					"/=The floor and walls are now glowing, floating, and breaking apart.=/",
+					{
+						"divert": "anotherValkaEnte"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"pageBreakTheValk": {
+				"content": [
+					"/=The Valka Zefr looks shocked by Juno's control, but you waste no time in charging Bolverk. =/",
+					{
+						"divert": "youSlamYourHeadI"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"skipMarkiverMark": {
+				"content": [
+					"{skip} mark1=iver mark2=bolverk mark3=juno mark4=zefr",
+					{
+						"linkPath": "pageBreakTheFloo",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
+			"youSlamYourHeadI": {
+				"content": [
+					"/=You slam your head into him with tremendous force, sending him reeling across the room.=/",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"youStepForwardBu": {
+				"content": [
+					"/=You step forward, but feel the air thicken around you for a moment, stopping you. Then, it suddenly releases its grip.=/",
+					{
+						"divert": "junoNoZefrNowYou"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"zefrStayWhereYou": {
+				"content": [
+					"[zefr] \"Stay where you are, Yngvar!\"",
+					{
+						"divert": "youStepForwardBu"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			}
+		}
+	},
+	"url_key": "5q5m"
+}
