@@ -1,4 +1,4 @@
-# Drake's & YaK's Fixpack for BS2 - version 3.1
+# Drake's & YaK's Fixpack for BS2 - version 3.3
 
 > for Banner Saga 2, Steam version 2.59.01 / GOG version 2.61.02
 
