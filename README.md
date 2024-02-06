@@ -18,7 +18,7 @@ Please report any bugs in [Issues](../../issues).
 # Latest releases
 
 > ## 3.3
-> 20 Feb 2023
+> 6 Feb 2024
 > - Fixed bug where the skulker eggs thrown by barb hurlers would not spawn skulkers. The `_abl_hatch` ability was targeting the wrong entity (`ENEMY` instead of `OTHER`).
 > - Spelling corrections.
 
